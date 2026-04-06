@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "index.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/llm-wiki.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для llm-wiki"
+              "title": "Обратные ссылки для index"
             }
           },
           {
@@ -186,15 +186,27 @@
   },
   "active": "f1f3564624e3d76f",
   "lastOpenFiles": [
-    "1С MCP серверы.md",
+    "log.md",
     "index.md",
-    "wiki/concepts/llm-wiki.md",
-    "raw/llm-wiki-gist.md",
+    "1С MCP серверы.md",
+    "wiki/tech/defuddle.md",
+    "wiki/tech/dataview.md",
+    "tech/sdd-deep-guide.md",
+    "tech/openspec-usage.md",
+    "tech/openspec.md",
+    "wiki/1c/mcp-vs-builtin-token-analysis.md",
+    "wiki/1c/mcp-1c-setup.md",
+    "tech/sdd-instruments.md",
     "tech/1c-mcp.md",
     "SDD инструменты сравнение.md",
+    "wiki/tech/proxy-acpx-x.md",
+    "wiki/tech/openclaw-billing-proxy.md",
+    "wiki/books/ne-otkladyvay-na-zavtra.md",
+    "wiki/books",
+    "wiki/1c",
+    "wiki/concepts/llm-wiki.md",
+    "raw/llm-wiki-gist.md",
     "wiki/concepts/sdd.md",
-    "tech/sdd-deep-guide.md",
-    "log.md",
     "SCHEMA.md"
   ]
 }
