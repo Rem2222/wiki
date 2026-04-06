@@ -7,7 +7,7 @@ created: 2026-04-06
 updated: 2026-04-06
 tags: [прокрастинация, продуктивность, самоконтроль, психология]
 source: https://libking.ru/books/sci-/sci-psychology/1116172-timoti-pichil-ne-otkladyvaj-na-zavtra-kratkij-gid-po-borbe-s-prokrastinaciej.html
-related: [[prokrastinacia]]
+related: [[rag]], [[llm-wiki]]
 ---
 
 # Не откладывай на завтра. Краткий гид по борьбе с прокрастинацией

@@ -1,3 +1,12 @@
+---
+title: SDD — Spec-Driven Development
+type: concept
+created: 2026-04-06
+updated: 2026-04-06
+tags: [SDD, разработка, спецификации, AI]
+related: [[llm-wiki]], [[rag]]
+---
+
 # SDD — Spec-Driven Development
 
 **Spec-Driven Development** — подход к разработке, где спецификация является первичным артефактом, а код генерируется из неё.
@@ -18,11 +27,11 @@
 
 ## Инструменты SDD
 
-- [[SDD инструменты сравнение]]
-- [[OpenSpec]]
-- [[Kiro]]
-- [[Spec-kit]]
-- [[Tessl]]
+- SDD инструменты сравнение
+- OpenSpec
+- Kiro
+- Spec-kit
+- Tessl
 
 ## SDD vs Vibe Coding
 
