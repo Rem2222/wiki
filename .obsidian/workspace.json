@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech/sdd-deep-guide.md",
+                "file": "tech/sdd-deep-guide-ru.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sdd-deep-guide"
+              "title": "sdd-deep-guide-ru"
             }
           }
         ]
@@ -186,6 +186,8 @@
   },
   "active": "f1f3564624e3d76f",
   "lastOpenFiles": [
+    "tech/sdd-deep-guide.md",
+    "tech/sdd-deep-guide-ru.md",
     "wiki/1c/mcp-1c-setup.md",
     "index.md",
     "wiki/tech/tessl.md",
@@ -195,7 +197,6 @@
     "1С MCP серверы.md",
     "wiki/tech/defuddle.md",
     "wiki/tech/dataview.md",
-    "tech/sdd-deep-guide.md",
     "tech/openspec-usage.md",
     "tech/openspec.md",
     "wiki/1c/mcp-vs-builtin-token-analysis.md",
