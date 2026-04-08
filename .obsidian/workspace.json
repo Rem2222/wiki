@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/rag.md",
+                "file": "raw/naiveproxy-guide-swrneko.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "rag"
+              "title": "naiveproxy-guide-swrneko"
             }
           }
         ]
@@ -186,6 +186,10 @@
   },
   "active": "f1f3564624e3d76f",
   "lastOpenFiles": [
+    "tech/cursor-proxy-fix.md",
+    "raw/cursor-proxy-fix.md",
+    "wiki/tech/kiro.md",
+    "wiki/concepts/rag.md",
     "tech/naiveproxy.md",
     "raw/naiveproxy-guide-swrneko.md",
     "misc/calendar-events.md",
@@ -200,7 +204,6 @@
     "wiki/1c/mcp-1c-setup.md",
     "wiki/tech/tessl.md",
     "wiki/tech/spec-kit.md",
-    "wiki/tech/kiro.md",
     "log.md",
     "1С MCP серверы.md",
     "wiki/tech/defuddle.md",
@@ -215,9 +218,6 @@
     "wiki/tech/openclaw-billing-proxy.md",
     "wiki/books/ne-otkladyvay-na-zavtra.md",
     "wiki/books",
-    "wiki/1c",
-    "wiki/concepts/llm-wiki.md",
-    "raw/llm-wiki-gist.md",
-    "wiki/concepts/sdd.md"
+    "wiki/1c"
   ]
 }
