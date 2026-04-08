@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech/sdd-deep-guide-ru.md",
+                "file": "wiki/concepts/rag.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sdd-deep-guide-ru"
+              "title": "rag"
             }
           }
         ]
@@ -186,10 +186,18 @@
   },
   "active": "f1f3564624e3d76f",
   "lastOpenFiles": [
-    "tech/sdd-deep-guide.md",
-    "tech/sdd-deep-guide-ru.md",
-    "wiki/1c/mcp-1c-setup.md",
+    "tech/naiveproxy.md",
+    "raw/naiveproxy-guide-swrneko.md",
+    "misc/calendar-events.md",
+    "misc",
+    "graphify-out/semantic_extract.json",
+    "graphify-out/graph.json",
+    "graphify-out/communities.json",
+    "graphify-out",
     "index.md",
+    "tech/sdd-deep-guide-ru.md",
+    "tech/sdd-deep-guide.md",
+    "wiki/1c/mcp-1c-setup.md",
     "wiki/tech/tessl.md",
     "wiki/tech/spec-kit.md",
     "wiki/tech/kiro.md",
@@ -210,7 +218,6 @@
     "wiki/1c",
     "wiki/concepts/llm-wiki.md",
     "raw/llm-wiki-gist.md",
-    "wiki/concepts/sdd.md",
-    "SCHEMA.md"
+    "wiki/concepts/sdd.md"
   ]
 }
