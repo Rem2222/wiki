@@ -41,3 +41,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Обновлён index.md и log.md
 - Добавлены клиенты: v2rayN, NekoRay, NekoBox
 - Добавлены хостинг-провайдеры: RuVDS, 62yun, Zomro, Reg.ru
+
+## [2026-04-08] ingest | Cursor Proxy Fix
+
+- Источник: forwarded message от Дарт Вейдер
+- Создан [[Cursor Proxy Fix]] (wiki/tech/cursor-proxy-fix.md)
+- Сохранён raw-источник: raw/cursor-proxy-fix.md
+- Обновлён index.md и log.md
+- Добавлены: OneXRay, Hiddify, VLESS, HTTP/2 fix для Cursor
