@@ -65,3 +65,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Конвертер: PDF, Word, Excel, PowerPoint, Images (OCR), Audio, YouTube, HTML
 - Установлен: pip install 'markitdown[all]'
 - Обновлён index.md и log.md
+
+## [2026-04-09] ingest | OpenAI Routing
+
+- Источник: OpenClaw Lab (forwarded)
+- Создан [[OpenAI Routing]] (wiki/tech/openai-routing.md)
+- OmniRoute для балансировки между несколькими OpenAI подписками
+- Автопереключение при исчерпании лимитов
+- Обновлён index.md и log.md

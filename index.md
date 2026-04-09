@@ -43,3 +43,4 @@ _(пока пусто)_
 - [[Cursor Proxy Fix]] — как починить доступ к Claude Sonnet в Cursor через прокси (2026-04-08)
 - [[Heisenberg Team]] — production-ready мультиагентный шаблон для OpenClaw (2026-04-09)
 - [[MarkItDown]] — Microsoft конвертер документов в Markdown (2026-04-09)
+- [[OpenAI Routing]] — настройка нескольких OpenAI подписок через OmniRoute (2026-04-09)
