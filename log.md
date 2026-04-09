@@ -49,3 +49,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Сохранён raw-источник: raw/cursor-proxy-fix.md
 - Обновлён index.md и log.md
 - Добавлены: OneXRay, Hiddify, VLESS, HTTP/2 fix для Cursor
+
+## [2026-04-09] ingest | Heisenberg Team
+
+- Источник: https://github.com/ai-operacionka/heisenberg-team-GPT
+- Создан [[Heisenberg Team]] (wiki/tech/heisenberg-team-gpt.md)
+- 8 агентов, 34 скилла, Board-First протокол
+- Обновлён index.md и log.md
+- Статус: на рассмотрении
