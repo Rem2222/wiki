@@ -1,4 +1,11 @@
 ---
+title: "CodexBar-Win Cookie Decryption"
+description: ""
+tags: [browser, cookies, DPAPI, AES-GCM, Windows, Chromium]
+related: [[cookie-decryptor]]
+---
+
+---
 description: CodexBar-Win умеет расшифровывать Chromium cookies через DPAPI + AES-GCM. Эта технология позволяет создавать API для извлечения кукисов из Chrome/Edge/Brave.
 ---
 

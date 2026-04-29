@@ -1,4 +1,11 @@
 ---
+title: "Spec-kit"
+description: ""
+tags: [SDD, VS Code, AI coding, spec-first, specification]
+related: [[sdd-instruments]], [[openspec]]
+---
+
+---
 title: Spec-kit
 type: tool
 url: https://github.com/github/spec-kit

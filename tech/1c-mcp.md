@@ -1,3 +1,10 @@
+---
+title: "1С MCP Серверы"
+description: ""
+tags: [1С, MCP, AI, Claude Code]
+related: [[1С MCP серверы]], [[cursor-rules-1c]], [[v8std-mcp]]
+---
+
 # 1С MCP Серверы
 
 ## Готовые MCP серверы (vibecoding1c.ru)

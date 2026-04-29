@@ -1,3 +1,10 @@
+---
+title: "Cursor rules for 1С"
+description: ""
+tags: [cursor, 1С, AI coding, rules]
+related: 
+---
+
 # cursor_rules_1c
 
 **GitHub:** github.com/comol/cursor_rules_1c  

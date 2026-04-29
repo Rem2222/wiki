@@ -1,5 +1,12 @@
 ---
 title: "Cursor + Proxy Fix"
+description: ""
+tags: [cursor, proxy, Vless, Xray, Claude, API]
+related: [[naiveproxy]], [[multica]]
+---
+
+---
+title: "Cursor + Proxy Fix"
 description: "Как починить доступ к Claude Sonnet в Cursor через Hiddify / OneXRay (VLESS/Xray)"
 tags: [cursor, proxy, vless, xray, onexray, hiddify, claude]
 related: [[naiveproxy]], [[cursor-rules-1c]]

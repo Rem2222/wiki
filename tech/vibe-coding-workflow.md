@@ -1,3 +1,10 @@
+---
+title: "Vibe Coding Workflow"
+description: ""
+tags: [vibe-coding, workflow, AI-assisted, development]
+related: 
+---
+
 # Vibe Coding Workflow
 
 **SKILL:** vibe-coding-workflow на ClawHub  

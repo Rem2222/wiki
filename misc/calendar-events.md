@@ -1,3 +1,10 @@
+---
+title: "Calendar Events"
+description: ""
+tags: [calendar, events, planning]
+related: 
+---
+
 # Calendar Events
 
 ## 2026

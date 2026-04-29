@@ -1,3 +1,10 @@
+---
+title: "Сравнение Dashboard для OpenClaw"
+description: ""
+tags: [OpenClaw, dashboard, monitoring, agents]
+related: 
+---
+
 # Сравнение Dashboard-ов для OpenClaw
 
 _Обзор: 2026-04-29_

@@ -1,3 +1,10 @@
+---
+title: "OpenSpec: Практическое руководство"
+description: ""
+tags: [SDD, OpenSpec, spec-first, AI coding]
+related: [[openspec]], [[sdd-instruments]]
+---
+
 # OpenSpec: Практическое руководство
 
 **Версия:** 1.2.0  

@@ -1,3 +1,10 @@
+---
+title: "SDD Инструменты — Сравнение"
+description: ""
+tags: [SDD, Kiro, Spec-kit, Tessl, OpenSpec, AI coding]
+related: [[openspec]], [[sdd-deep-guide]]
+---
+
 # SDD Инструменты — Сравнение
 
 ## Сравнительная таблица

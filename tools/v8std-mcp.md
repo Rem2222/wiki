@@ -1,3 +1,10 @@
+---
+title: "MCP v8std — Стандарты разработки 1С"
+description: ""
+tags: [MCP, 1С, v8std, стандарты, BSL]
+related: 
+---
+
 # MCP v8std — Стандарты разработки 1С для ИИ-помощников
 
 **Сайт:** [v8std.ru/mcp](https://v8std.ru/mcp/)

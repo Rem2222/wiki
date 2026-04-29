@@ -1,4 +1,11 @@
 ---
+title: "Tessl Framework"
+description: ""
+tags: [SDD, AI coding, specification, framework]
+related: [[sdd-instruments]], [[openspec]]
+---
+
+---
 title: Tessl Framework
 type: tool
 url: https://docs.tessl.io

@@ -1,3 +1,10 @@
+---
+title: "OpenClawfice"
+description: ""
+tags: [OpenClaw, AI agents, Sims, automation]
+related: 
+---
+
 # OpenClawfice — AI-агенты как в Sims
 
 **Сайт:** [openclawfice.com](https://openclawfice.com)

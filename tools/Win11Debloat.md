@@ -1,3 +1,10 @@
+---
+title: "Win11Debloat"
+description: ""
+tags: [Windows, PowerShell, debloat, privacy]
+related: 
+---
+
 # Win11Debloat
 
 **URL:** https://github.com/raphire/win11debloat

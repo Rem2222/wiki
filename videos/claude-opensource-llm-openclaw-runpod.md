@@ -1,3 +1,10 @@
+---
+title: "Claude без подписки — Opensource LLM + OpenClaw на RunPod"
+description: ""
+tags: [OpenClaw, RunPod, open source, LLM, self-hosted]
+related: 
+---
+
 # Claude без подписки — Opensource LLM + свой агент OpenClaw на RunPod
 
 **Видео:** [YouTube](https://www.youtube.com/watch?v=mUB2gbenbUg) | [RuTube](https://rutube.ru/video/1480b2a7bc69d8f0f4566e5e6125c225/)

@@ -1,4 +1,11 @@
 ---
+title: "MCP для 1С — Настройка"
+description: ""
+tags: [MCP, 1С, BSL, настройка, Claude Code]
+related: [[1С MCP серверы]], [[v8std-mcp]]
+---
+
+---
 title: MCP для 1С — Настройка и использование
 type: guide
 created: 2026-04-06

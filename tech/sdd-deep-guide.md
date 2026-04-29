@@ -1,3 +1,10 @@
+---
+title: "SDD Deep Guide"
+description: ""
+tags: [SDD, AI coding, specifications, documentation]
+related: [[sdd-deep-guide-ru]], [[sdd-instruments]]
+---
+
 # SDD: Глубокое погружение для опытного программиста
 
 **Версия:** 2026-04-05  

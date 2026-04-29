@@ -1,3 +1,10 @@
+---
+title: "OpenSpec"
+description: ""
+tags: [SDD, OpenSpec, spec-first, AI coding]
+related: 
+---
+
 # OpenSpec
 
 **OpenSpec** — легковесный, open-source (MIT) SDD-фреймворк от Fission-AI.

@@ -1,4 +1,11 @@
 ---
+title: "MCP vs Built-in Tools: анализ токенов"
+description: ""
+tags: [MCP, 1С, токены, оптимизация, Claude Code]
+related: [[mcp-1c-setup]]
+---
+
+---
 title: MCP vs Built-in Tools — Анализ токенов
 type: analysis
 author: Антон Миняков (Anton Miagkov)
