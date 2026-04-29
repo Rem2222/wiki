@@ -11,10 +11,14 @@
             "id": "f1f3564624e3d76f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "type": "markdown",
+              "state": {
+                "file": "tools/dashboards-comparison.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "dashboards-comparison"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "дашбор",
+                "query": "tag:#dashboard",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,13 +187,19 @@
   },
   "active": "f1f3564624e3d76f",
   "lastOpenFiles": [
+    "SDD инструменты сравнение.md",
+    "SCHEMA.md",
+    "log.md",
+    "links-from-sessions.md",
+    "index.md",
+    "1С MCP серверы.md",
+    "2026-04-30.md",
     "tools/dashboards-comparison.md",
     "videos/claude-opensource-llm-openclaw-runpod.md",
     "videos",
     "tools/v8std-mcp.md",
     "tools/openclawfice.md",
     "tools/Win11Debloat.md",
-    "index.md",
     "tech/jawl.md",
     "tools/linear-cli.md",
     "tools",
@@ -197,7 +207,6 @@
     "tech/mcp-inspector.md",
     "tech/cookie-decryptor.md",
     "tech/codexbar-win-cookie-decryption.md",
-    "links-from-sessions.md",
     "events/1cvibeconf-2026.md",
     "events",
     "articles/orchestrator-year.md",
@@ -208,11 +217,6 @@
     "tech/openai-routing.md",
     "tech/markitdown.md",
     "tech/heisenberg-team-gpt.md",
-    "tech/cursor-proxy-fix.md",
-    "raw/cursor-proxy-fix.md",
-    "wiki/tech/kiro.md",
-    "wiki/concepts/rag.md",
-    "tech/naiveproxy.md",
     "misc",
     "graphify-out/semantic_extract.json",
     "graphify-out/graph.json",
