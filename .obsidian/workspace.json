@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "дашбор",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -182,6 +183,12 @@
   },
   "active": "f1f3564624e3d76f",
   "lastOpenFiles": [
+    "tools/dashboards-comparison.md",
+    "videos/claude-opensource-llm-openclaw-runpod.md",
+    "videos",
+    "tools/v8std-mcp.md",
+    "tools/openclawfice.md",
+    "tools/Win11Debloat.md",
     "index.md",
     "tech/jawl.md",
     "tools/linear-cli.md",
@@ -206,17 +213,11 @@
     "wiki/tech/kiro.md",
     "wiki/concepts/rag.md",
     "tech/naiveproxy.md",
-    "misc/calendar-events.md",
     "misc",
     "graphify-out/semantic_extract.json",
     "graphify-out/graph.json",
     "graphify-out/communities.json",
     "graphify-out",
-    "tech/sdd-deep-guide-ru.md",
-    "tech/sdd-deep-guide.md",
-    "wiki/1c/mcp-1c-setup.md",
-    "wiki/tech/tessl.md",
-    "wiki/books",
-    "wiki/1c"
+    "wiki/books"
   ]
 }
