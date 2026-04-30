@@ -187,6 +187,7 @@
   },
   "active": "f1f3564624e3d76f",
   "lastOpenFiles": [
+    "tools/rtk.md",
     "SDD инструменты сравнение.md",
     "SCHEMA.md",
     "log.md",
@@ -216,7 +217,6 @@
     "raw/naiveproxy-guide-swrneko.md",
     "tech/openai-routing.md",
     "tech/markitdown.md",
-    "tech/heisenberg-team-gpt.md",
     "misc",
     "graphify-out/semantic_extract.json",
     "graphify-out/graph.json",
