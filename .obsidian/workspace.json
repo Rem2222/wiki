@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "460033dc82cbc031",
+        "id": "b6162e355f52dca2",
         "type": "tabs",
         "children": [
           {
-            "id": "f1f3564624e3d76f",
+            "id": "7615297728ff6133",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "log.md",
+                "file": "tech/jawl.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "jawl"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#dashboard",
+                "query": "jawl",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,15 +185,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f1f3564624e3d76f",
+  "active": "7615297728ff6133",
   "lastOpenFiles": [
+    "index.md",
+    "log.md",
     "tools/dashboards-comparison.md",
     "tools/rtk.md",
     "SDD инструменты сравнение.md",
     "SCHEMA.md",
-    "log.md",
     "links-from-sessions.md",
-    "index.md",
     "1С MCP серверы.md",
     "2026-04-30.md",
     "videos/claude-opensource-llm-openclaw-runpod.md",
