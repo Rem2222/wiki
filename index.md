@@ -16,7 +16,19 @@ _Обновлено: 2026-04-29_
 - [[tech/cursor-proxy-fix]] — как починить доступ к Claude Sonnet в Cursor через прокси
 - [[tech/cursor-rules-1c]] — полный набор правил и агентов для 1С в Cursor IDE
 - [[tech/heisenberg-team-gpt]] — production-ready мультиагентный шаблон для OpenClaw
-- [[tech/jawl]] — Just Another Workflow Library, автономный агент фреймворк
+- [[tech/jawl]] — Just Another Workflow Library, автономный агент (Jinx)
+- [[tech/jawl-architecture]] — L0-L3 архитектура JAWL
+- [[tech/jawl-react-loop]] — ReAct Loop: reasoning → action → observation
+- [[tech/jawl-events]] — EventBus: 22 события Pub/Sub
+- [[tech/jawl-heartbeat]] — Heartbeat: driving system + periodic tick
+- [[tech/jawl-context]] — Context Builder: сборка промпта
+- [[tech/jawl-config]] — Конфигурация: models.json, settings.yaml, .env
+- [[tech/jawl-dashboard]] — Dashboard: Flask мониторинг
+- [[tech/jawl-skills-registry]] — Реестр всех навыков по интерфейсам
+- [[tech/jawl-howto-add-skill]] — HOWTO: добавить навык
+- [[tech/jawl-howto-add-provider]] — HOWTO: добавить LLM провайдера
+- [[tech/jawl-howto-add-event]] — HOWTO: добавить событие EventBus
+- [[tech/jawl-howto-add-interface]] — HOWTO: добавить L2 интерфейс
 - [[tech/markitdown]] — Microsoft конвертер документов в Markdown
 - [[tech/mcp-inspector]] — MCP Inspector, отладка MCP серверов
 - [[tech/multica]] — Open-source managed agents platform
