@@ -187,6 +187,7 @@
   },
   "active": "7615297728ff6133",
   "lastOpenFiles": [
+    "wiki/tech/ai-agents-2026-review.md",
     "wiki/tech/minimal-embodiment.md",
     "tech/jawl-config.md",
     "tech/jawl.md",
@@ -213,7 +214,6 @@
     "videos/claude-opensource-llm-openclaw-runpod.md",
     "videos",
     "tools/v8std-mcp.md",
-    "tools/openclawfice.md",
     "tools",
     "events",
     "articles",
