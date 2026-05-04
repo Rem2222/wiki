@@ -74,8 +74,7 @@
               "title": "Закладки"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7615297728ff6133",
+  "active": "76cef7aa8d3784cb",
   "lastOpenFiles": [
     "tech/openspec.md",
     "index.md",
