@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech/openspec.md",
+                "file": "tech/vibe-coding-workflow.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "openspec"
+              "title": "vibe-coding-workflow"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spec",
+                "query": "sdd",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "76cef7aa8d3784cb",
+  "active": "7615297728ff6133",
   "lastOpenFiles": [
+    "tech/openspec.md",
     "index.md",
     "tech/jawl.md",
     "wiki/tech/ai-agents-2026-review.md",
@@ -212,7 +214,6 @@
     "2026-04-30.md",
     "videos/claude-opensource-llm-openclaw-runpod.md",
     "videos",
-    "tools/v8std-mcp.md",
     "tools",
     "events",
     "articles",
