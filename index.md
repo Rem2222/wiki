@@ -1,6 +1,9 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-04-29_
+_Обновлено: 2026-05-05_
+
+## Projects
+- [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
 
 ## Концепции
 - [[wiki/concepts/llm-wiki]] — паттерн персональных баз знаний с помощью LLM
@@ -8,12 +11,21 @@ _Обновлено: 2026-04-29_
 - [[wiki/concepts/memex]] — проект Вэнивара Буша 1945, ассоциативное хранилище знаний
 - [[wiki/concepts/sdd]] — Spec-Driven Development, подход к разработке через спецификации
 - [[wiki/concepts/mcp]] — Model Context Protocol, открытый протокол для AI-интеграций
+- [[wiki/concepts/tradingagents]] — Multi-agent LLM фреймворк для алгоритмической торговли (UCLA + MIT)
+
+## SDD-Orchestrator v2 (2026-05-04)
+- [[wiki/tech/sdd-openspec-orchestrator-integration]] — Orchestrator Integration (что хотели для Оркестратора: QA Gate, multi-layer SDD, hybrid context)
+- [[wiki/tech/sdd-openspec-sdd-developer]] — SDD Developer Agent (детали SDD Developer: RFC 2119, workflow, self-validation, QA Gate)
+- [[wiki/tech/sdd-orchestrator-v2]] — Overview (старая версия, но содержит acceptance criteria)
+- [[wiki/tech/sdd-openspec-precommit]] — Pre-commit hook
+- [[wiki/tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
 - [[tech/1c-mcp]] — MCP серверы для экосистемы 1С (vibecoding1c.ru)
 - [[tech/codexbar-win-cookie-decryption]] — расшифровка Chromium cookies через DPAPI + AES-GCM
 - [[tech/cookie-decryptor]] — извлечённые процедуры из CodexBar-Win для расшифровки cookies
 - [[tech/cursor-proxy-fix]] — как починить доступ к Claude Sonnet в Cursor через прокси
+- [[tech/codex-harness]] — Codex Harness plugin для нативного Codex app-server runtime
 - [[tech/cursor-rules-1c]] — полный набор правил и агентов для 1С в Cursor IDE
 - [[tech/heisenberg-team-gpt]] — production-ready мультиагентный шаблон для OpenClaw
 - [[tech/jawl]] — Just Another Workflow Library, автономный агент (Jinx)
@@ -34,11 +46,14 @@ _Обновлено: 2026-04-29_
 - [[tech/multica]] — Open-source managed agents platform
 - [[tech/naiveproxy]] — лучший способ обхода DPI в 2026
 - [[tech/openai-routing]] — настройка нескольких OpenAI подписок через OmniRoute
+- [[tech/playsvideo]] — Chrome-расширение для локального воспроизведения видео
+- [[tech/pre-mortem]] — Pre-Mortem анализ провала по Gary Klein
 - [[tech/openspec]] — легковесный SDD-фреймворк от Fission-AI
 - [[tech/openspec-usage]] — детальное руководство по использованию OpenSpec
 - [[tech/sdd-deep-guide]] — полное погружение в SDD для опытного программиста
 - [[tech/sdd-deep-guide-ru]] — русская версия глубокого погружения в SDD
 - [[tech/sdd-instruments]] — сравнение SDD-инструментов: Kiro, Spec-kit, Tessl, OpenSpec
+- [[tech/specsmaxxing]] — Spec-Driven Development с ACID tracking (Acai.sh)
 - [[tech/vibe-coding-workflow]] — 5-phase structured workflow для AI-assisted development
 
 ## 1С
@@ -47,6 +62,7 @@ _Обновлено: 2026-04-29_
 
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
+- [[tools/beads]] — Git-backed issue tracker для AI агентов (steveyegge/beads)
 - [[tools/dashboards-comparison]] — сравнение Dashboard-ов для OpenClaw
 - [[tools/linear-cli]] — CLI-утилита для работы с Linear
 - [[tools/openclawfice]] — AI-агенты как в Sims (openclawfice.com)
@@ -86,3 +102,38 @@ _Обновлено: 2026-04-29_
 
 ## Книги
 - [[wiki/books/ne-otkladyvay-na-zavtra]] — «Не откладывай на завтра» — Тимоти Пичил
+
+## Generated
+<!-- openclaw:wiki:index:start -->
+- Render mode: `obsidian`
+- Total pages: 10
+- Claims: 0
+- Sources: 0
+- Entities: 0
+- Concepts: 1
+- Syntheses: 0
+- Reports: 9
+
+### Sources
+- No sources yet.
+
+### Entities
+- No entities yet.
+
+### Concepts
+- [[concepts/tradingagents|TradingAgents]]
+
+### Syntheses
+- No syntheses yet.
+
+### Reports
+- [[reports/claim-health|Claim Health]]
+- [[reports/contradictions|Contradictions]]
+- [[reports/low-confidence|Low Confidence]]
+- [[reports/open-questions|Open Questions]]
+- [[reports/person-agent-directory|Person Agent Directory]]
+- [[reports/privacy-review|Privacy Review]]
+- [[reports/provenance-coverage|Provenance Coverage]]
+- [[reports/relationship-graph|Relationship Graph]]
+- [[reports/stale-pages|Stale Pages]]
+<!-- openclaw:wiki:index:end -->
