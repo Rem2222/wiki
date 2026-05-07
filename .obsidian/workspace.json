@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech/openai-routing.md",
+                "file": "SCHEMA.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "openai-routing"
+              "title": "SCHEMA"
             }
           }
         ]
@@ -186,10 +186,21 @@
   },
   "active": "7615297728ff6133",
   "lastOpenFiles": [
+    "index.md",
+    "reports/privacy-review.md",
+    "reports/claim-health.md",
+    "reports",
+    "raw/naiveproxy-guide-swrneko.md",
+    "raw/llm-wiki-gist.md",
+    "raw/cursor-proxy-fix.md",
+    "events/1cvibeconf-2026.md",
+    "wiki/1c/mcp-vs-builtin-token-analysis.md",
+    "wiki/1c/mcp-1c-setup.md",
+    "SDD инструменты сравнение.md",
+    "tech/openai-routing.md",
     "tech/jawl-howto-add-provider.md",
     "wiki/tech/ai-agents-2026-review.md",
     "tech/pre-mortem.md",
-    "index.md",
     "tech/vibe-coding-workflow.md",
     "tech/openspec.md",
     "tech/jawl.md",
@@ -202,16 +213,6 @@
     "tech/jawl-howto-add-event.md",
     "tech/jawl-heartbeat.md",
     "tech/jawl-events.md",
-    "tech/jawl-dashboard.md",
-    "tech/jawl-context.md",
-    "tech/jawl-architecture.md",
-    "log.md",
-    "tools/dashboards-comparison.md",
-    "tools/rtk.md",
-    "SDD инструменты сравнение.md",
-    "SCHEMA.md",
-    "links-from-sessions.md",
-    "1С MCP серверы.md",
     "videos",
     "tools",
     "events",
@@ -220,7 +221,6 @@
     "graphify-out/semantic_extract.json",
     "graphify-out/graph.json",
     "graphify-out/communities.json",
-    "graphify-out",
-    "wiki/books"
+    "graphify-out"
   ]
 }
