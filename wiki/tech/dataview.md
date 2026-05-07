@@ -5,7 +5,7 @@ created: 2026-04-05
 updated: 2026-04-05
 tags: [obsidian-plugin, query, metadata]
 sources: [raw/llm-wiki-gist.md]
-related: [[LLM Wiki]], [[Obsidian]]
+related: [[concepts/llm-wiki]], [[Obsidian]]
 ---
 
 # Dataview
@@ -27,4 +27,4 @@ related: [[LLM Wiki]], [[Obsidian]]
 
 ## Связь
 
-Используется в [[LLM Wiki]] для динамической навигации по wiki.
+Используется в [[concepts/llm-wiki]] для динамической навигации по wiki.

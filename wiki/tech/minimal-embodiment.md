@@ -2,7 +2,7 @@
 title: "Minimal Embodiment — физическое тело для AI-агента"
 description: "ESP32 + сенсоры дают LLM тело с self-perception闭环"
 tags: [AI, agents, hardware, ESP32, self-perception, embodiment, open-source]
-related: [[vibe-coding-workflow]], [[heisenberg-team-gpt]]
+related: [[vibe-coding-workflow]], [[tech/heisenberg-team-gpt]]
 ---
 
 # Minimal Embodiment

@@ -2,7 +2,7 @@
 title: "MCP для 1С — Настройка"
 description: ""
 tags: [MCP, 1С, BSL, настройка, Claude Code]
-related: [[1С MCP серверы]], [[v8std-mcp]]
+related: [[1c-mcp]], [[v8std-mcp]]
 ---
 
 ---
@@ -11,7 +11,7 @@ type: guide
 created: 2026-04-06
 updated: 2026-04-06
 tags: [MCP, 1C, BSL, настройка, Claude Code]
-related: [[mcp]], [[sdd]], [[mcp-vs-builtin-token-analysis]]
+related: [[mcp]], [[sdd]], [[mcp-vs-builtin-token-analysis]], [[cursor-rules-1c]]
 ---
 
 # MCP для 1С — Настройка

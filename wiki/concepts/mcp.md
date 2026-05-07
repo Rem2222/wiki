@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-06
 updated: 2026-04-06
 tags: [MCP, Anthropic, AI, tools, protocol]
-related: [[mcp-1c-setup]], [[tessl]], [[llm-wiki]]
+related: [[mcp-1c-setup]], [[tessl]], [[concepts/llm-wiki]]
 ---
 
 # MCP — Model Context Protocol

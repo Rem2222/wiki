@@ -12,7 +12,7 @@ author: zacdcook
 created: 2026-04-06
 updated: 2026-04-06
 tags: [OpenClaw, Anthropic, billing, proxy, Claude Code]
-related: [[llm-wiki]]
+related: [[concepts/llm-wiki]]
 ---
 
 # OpenClaw Billing Proxy
@@ -104,4 +104,4 @@ openclaw gateway restart
 ## См. также
 
 - [GitHub: zacdcook/openclaw-billing-proxy](https://github.com/zacdcook/openclaw-billing-proxy)
-- [[llm-wiki]] — куда это добавлено
+- [[concepts/llm-wiki]] — куда это добавлено

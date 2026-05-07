@@ -5,7 +5,7 @@ created: 2026-04-05
 updated: 2026-04-05
 tags: [notes, markdown, knowledge-management]
 sources: []
-related: [[LLM Wiki]]
+related: [[concepts/llm-wiki]]
 ---
 
 # Obsidian
@@ -14,7 +14,7 @@ related: [[LLM Wiki]]
 
 ## Ключевые особенности
 
-- **Связи между заметками** — `[[название]]` создаёт связь, Obsidian строит граф
+- **Связи между заметками** — `название` создаёт связь, Obsidian строит граф
 - **Всё локально** — обычные `.md` файлы, не облако
 - **Плагины** — Dataview, Marp, Graph View и др.
 - **Git-дружелюбен** — markdown можно версионировать

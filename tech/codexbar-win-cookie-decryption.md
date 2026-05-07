@@ -2,7 +2,7 @@
 title: "CodexBar-Win Cookie Decryption"
 description: ""
 tags: [browser, cookies, DPAPI, AES-GCM, Windows, Chromium]
-related: [[cookie-decryptor]]
+related: [[tech/cookie-decryptor]]
 ---
 
 ---
@@ -119,8 +119,8 @@ print(cookie.value)  # xxxxxx...
 
 ## Связанные страницы
 
-- [[codexbar-win]] — CodexBar-Win
-- [[opencode]] — OpenCode
+- [[tech/codexbar-win-cookie-decryption]] — CodexBar-Win
+- opencode — OpenCode
 - [[minimax]] — MiniMax (китайский AI)
 
 ---

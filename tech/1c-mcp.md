@@ -2,7 +2,7 @@
 title: "1С MCP Серверы"
 description: ""
 tags: [1С, MCP, AI, Claude Code]
-related: [[1С MCP серверы]], [[cursor-rules-1c]], [[v8std-mcp]]
+related: [[1c-mcp]], [[cursor-rules-1c]], [[v8std-mcp]]
 ---
 
 # 1С MCP Серверы

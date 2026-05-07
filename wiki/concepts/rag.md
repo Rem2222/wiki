@@ -5,7 +5,7 @@ created: 2026-04-05
 updated: 2026-04-05
 tags: [LLM, search, knowledge-retrieval]
 sources: []
-related: [[LLM Wiki]]
+related: [[concepts/llm-wiki]]
 ---
 
 # RAG (Retrieval-Augmented Generation)
@@ -18,7 +18,7 @@ related: [[LLM Wiki]]
 
 ## Альтернатива
 
-[[LLM Wiki]] — вместо извлечения на лету, LLM строит постоянную вики с перекрёстными ссылками и синтезом.
+[[concepts/llm-wiki]] — вместо извлечения на лету, LLM строит постоянную вики с перекрёстными ссылками и синтезом.
 
 ## Примеры систем
 

@@ -2,7 +2,7 @@
 title: "OpenSpec: Практическое руководство"
 description: ""
 tags: [SDD, OpenSpec, spec-first, AI coding]
-related: [[openspec]], [[sdd-instruments]]
+related: [[openspec]], [[tech/sdd-instruments]]
 ---
 
 # OpenSpec: Практическое руководство

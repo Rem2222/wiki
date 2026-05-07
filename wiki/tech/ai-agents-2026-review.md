@@ -2,7 +2,7 @@
 title: "AI-агенты 2026: Hermes, DeerFlow, Multica, Claude Code Game Studios, MarkItDown"
 description: "Обзор пяти AI-агентов 2026: архитектура, плюсы, минусы, кому что подходит"
 tags: [AI, agents, hermes, deerflow, multica, claude-code, open-source, multi-agent]
-related: [[openclaw-alternatives]], [[vibe-coding-workflow]], [[heisenberg-team-gpt]], [[minimal-embodiment]]
+related: openclaw-alternatives, [[vibe-coding-workflow]], [[tech/heisenberg-team-gpt]], [[minimal-embodiment]]
 source: https://habr.com/ru/articles/1026926/
 author: kardanShurup
 date: 2026-04-23

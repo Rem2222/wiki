@@ -5,7 +5,7 @@ url: https://kiro.dev
 created: 2026-04-06
 updated: 2026-04-06
 tags: [SDD, VS Code, AI coding, spec-first]
-related: [[sdd]], [[spec-kit]], [[tessl]], [[openspec]]
+related: [[sdd]], [[tech/spec-kit]], [[tessl]], [[openspec]]
 ---
 
 # Kiro
@@ -44,6 +44,6 @@ Requirements → Design → Tasks
 ## См. также
 
 - [[sdd]] — обзор Spec-Driven Development
-- [[spec-kit]] — GitHub-версия SDD
+- [[tech/spec-kit]] — GitHub-версия SDD
 - [[tessl]] — spec-anchored подход
 - [[openspec]] — наиболее популярный фреймворк

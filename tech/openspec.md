@@ -1,85 +1,149 @@
 ---
-title: "OpenSpec"
-description: ""
+title: "OpenSpec — Spec-Driven Development"
+description: "Spec-driven workflow для AI-агентов: proposal → specs → design → tasks → validate → archive"
 tags: [SDD, OpenSpec, spec-first, AI coding]
-related: 
+related: [[openspec-usage]], [[superpowers]], [[tech/sdd-orchestrator-v2]]
 ---
 
 # OpenSpec
 
-**OpenSpec** — легковесный, open-source (MIT) SDD-фреймворк от Fission-AI.
+**Status:** Интегрирован в workspace | **Date:** 2026-05-03  
+**Репозиторий:** [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)  
+**NPM:** `npm install -g openspec`
 
-## Philosophy
+## Концепция
 
-```
-fluid not rigid
-iterative not waterfall
-easy not complex
-built for brownfield not just greenfield
-scalable from personal projects to enterprises
-```
+Spec-driven development для AI-агентов. Вместо "пишу код как придётся" — сначала фиксируем требования, затем реализуем по чеклисту, в конце архивируем с мержащей specs.
 
-## Установка
+Отличается от Specsmaxxing (Acai.sh) тем, что:
+- Не требует нумерованных ACID-требований
+- Валидация через RFC 2119 keywords (SHALL/MUST)
+- Artifact-based workflow с явными dependencies
+- Поддержка OpenCode, Claude Code, Cursor и др.
+
+## Быстрый старт
 
 ```bash
-npm install -g @fission-ai/openspec@latest
-cd your-project
-openspec init
+# Инициализация
+openspec init --tools opencode
+
+# Создать change
+openspec new change my-feature
+
+# Генерация артефактов (в порядке зависимостей)
+openspec instructions proposal --change my-feature   # template для proposal.md
+openspec instructions specs --change my-feature     # template для spec.md
+openspec instructions design --change my-feature     # template для design.md
+openspec instructions tasks --change my-feature      # template для tasks.md
+
+# Статус
+openspec status --change my-feature
+
+# Валидация
+openspec validate my-feature
+
+# Архивация (мерджит specs)
+openspec archive my-feature --yes
 ```
 
-## Workflow
+## Artifact Pipeline
 
 ```
-/opsx:propose → Review Artifacts → /opsx:apply → Run Tests → /opsx:archive
-                (Human reviewing AI-generated specs)
+proposal ──► specs ──► design ──► tasks
+   │           │          │          │
+   ▼           ▼          ▼          ▼
+Зачем?     Что?       Как?      Чеклист
 ```
 
-### 1. /opsx:propose — Начать изменение
+- **proposal.md** — зачем это нужно, мотивация
+- **spec.md** — что конкретно должно быть (RFC 2119: SHALL/MUST)
+- **design.md** — как это будет устроено
+- **tasks.md** — чеклист для выполнения
 
-Генерирует 4 артефакта:
+## Структура workspace
 
-| Артефакт | Фаза SDD | Содержимое |
-|----------|----------|-------------|
-| proposal.md | WHY | Зачем мы это делаем |
-| specs/ | WHAT | Требования и acceptance scenarios (WHEN/THEN) |
-| design.md | HOW | Технический подход, архитектура |
-| tasks.md | Checklist | Атомарный чеклист реализации |
+```
+openspec/
+├── config.yaml
+├── specs/                        # мердженные specs из archive
+│   └── <spec-name>/
+│       └── spec.md
+└── changes/
+    ├── <active-change>/
+    │   ├── .openspec.yaml
+    │   ├── proposal.md
+    │   ├── specs/<name>/spec.md
+    │   ├── design.md
+    │   └── tasks.md
+    └── archive/
+        └── <yyyy-mm-dd>-<change-name>/
 
-### 2. Review Artifacts
+.opencode/
+├── commands/                     # 4 slash-команды
+│   ├── opsx-apply.md
+│   ├── opsx-archive.md
+│   ├── opsx-explore.md
+│   └── opsx-propose.md
+└── skills/                      # 4 скилла
+    ├── openspec-apply-change/
+    ├── openspec-archive-change/
+    ├── openspec-explore/
+    └── openspec-propose/
+```
 
-Человек ревьюит сгенерированные артефакты. Нет жёстких gates — можно редактировать в любой момент.
+## Команды
 
-### 3. /opsx:apply — Выполнить таски
+| Команда | Описание |
+|---------|---------|
+| `openspec init --tools opencode` | Инициализация |
+| `openspec new change <name>` | Новый change |
+| `openspec status --change <name>` | Прогресс артефактов |
+| `openspec list` | Список active changes |
+| `openspec instructions <artifact> --change <name>` | Template + deps |
+| `openspec validate <name>` | Валидация (SHALL/MUST) |
+| `openspec archive <name> --yes` | Архивировать + смерджить specs |
+| `openspec show <name>` | Показать change |
+| `openspec specs` | Все specs |
 
-AI выполняет таски по одной. Читает только один таск и релевантный spec-контекст → меньше галлюцинаций.
+## ⚠️ Known Issues
 
-### 4. Verification
+### Валидация требует английского SHALL/MUST
 
-Автоматические тесты подтверждают соответствие acceptance criteria.
+Requirements в `spec.md` должны содержать **английские** ключевые слова `SHALL` или `MUST` (RFC 2119). Русские "ДОЛЖЕН" **НЕ** проходят валидацию.
 
-### 5. /opsx:archive
+❌ **Неправильно:**
+```markdown
+### Requirement: OpenSpec структура создаётся в workspace
+OpenSpec CLI ДОЛЖЕН создавать директорию `openspec/`.
+```
 
-Архивирует в `openspec/changes/archive/` с timestamp.
+✅ **Правильно:**
+```markdown
+### Requirement: OpenSpec структура создаётся в workspace
+The system SHALL create an `openspec/` directory with `config.yaml`.
+```
 
-## Преимущества над другими SDD
+### Scenario-формат
 
-| Аспект | OpenSpec | Spec-kit | Kiro |
-|--------|----------|----------|------|
-| Open Source | MIT | MIT | Proprietary |
-| Lock-in | None (20+ assistants) | Limited | VS Code + Claude |
-| Learning Curve | Very low (3 commands) | Higher | Medium |
-| Brownfield | ✅ | ❌ | ❌ |
-| Не требует MCP | ✅ | ❌ | ❌ |
+Scenario-часть можно оставлять на русском:
+```markdown
+#### Scenario: Успешная инициализация
+- **WHEN** выполнена команда `openspec init --tools opencode`
+- **THEN** создана директория `openspec/` с файлом `config.yaml`
+```
 
-## Для 1С
+## Интеграция с Оркестратором
 
-OpenSpec можно использовать для:
-1. Структурирования фич перед кодом
-2. Документирования принятых решений
-3. Командной работы (Specs + Archives как единый источник)
+OpenSpec можно использовать как spec-first этап:
 
-## Ссылки
+1. Оркестратор: `openspec new change <project>-<task>`
+2. Пишет proposal и specs с требованиями
+3. Subagent-ы реализуют по tasks.md (через `/opsx-apply <name>`)
+4. После завершения: `openspec archive <name> --yes`
 
-- [openspec.pro](https://openspec.pro)
-- [github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)
-- [docs.openspec.dev](https://docs.openspec.dev)
+## Links
+
+- [GitHub](https://github.com/Fission-AI/OpenSpec)
+- [Docs](https://fission-ai.github.io/OpenSpec)
+- Specsmaxxing (вдохновение): [acai.sh](https://acai.sh/blog/specsmaxxing)
+- Детальное руководство: [[openspec-usage]]

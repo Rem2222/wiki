@@ -2,7 +2,9 @@
 title: "Cursor rules for 1С"
 description: ""
 tags: [cursor, 1С, AI coding, rules]
-related: 
+related:
+  - [[mcp-1c-setup]]
+  - [[1c-mcp]]
 ---
 
 # cursor_rules_1c
