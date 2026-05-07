@@ -1,7 +1,7 @@
 ---
 description: Open-source managed agents platform. Turn coding agents into real teammates.
 tags: [agents, openclaw, claude-code, codebase]
-related: [[openclaw]], [[heisenberg-team-gpt]], [[mcp]]
+related: openclaw, [[tech/heisenberg-team-gpt]], [[mcp]]
 ---
 
 # Multica

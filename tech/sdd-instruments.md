@@ -2,7 +2,7 @@
 title: "SDD Инструменты — Сравнение"
 description: ""
 tags: [SDD, Kiro, Spec-kit, Tessl, OpenSpec, AI coding]
-related: [[openspec]], [[sdd-deep-guide]]
+related: [[openspec]], [[tech/sdd-deep-guide]], [[specsmaxxing]]
 ---
 
 # SDD Инструменты — Сравнение

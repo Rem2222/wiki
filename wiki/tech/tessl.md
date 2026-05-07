@@ -2,7 +2,7 @@
 title: "Tessl Framework"
 description: ""
 tags: [SDD, AI coding, specification, framework]
-related: [[sdd-instruments]], [[openspec]]
+related: [[tech/sdd-instruments]], [[openspec]]
 ---
 
 ---
@@ -12,7 +12,7 @@ url: https://docs.tessl.io
 created: 2026-04-06
 updated: 2026-04-06
 tags: [SDD, MCP, CLI, spec-anchored, beta]
-related: [[sdd]], [[kiro]], [[spec-kit]], [[openspec]], [[mcp]]
+related: [[sdd]], [[kiro]], [[tech/spec-kit]], [[openspec]], [[mcp]]
 ---
 
 # Tessl Framework
@@ -66,6 +66,6 @@ tessl init
 
 - [[sdd]] — обзор Spec-Driven Development
 - [[kiro]] — spec-first only
-- [[spec-kit]] — GitHub-версия
+- [[tech/spec-kit]] — GitHub-версия
 - [[openspec]] — наиболее популярный
 - [[mcp]] — Model Context Protocol (Tessl работает как MCP server)

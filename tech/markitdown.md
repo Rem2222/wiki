@@ -2,7 +2,7 @@
 title: "MarkItDown"
 description: "Microsoft tool for converting documents to Markdown"
 tags: [microsoft, markdown, converter, documents, pdf, office, mcp]
-related: [[defuddle]], [[mcp]], [[cursor-proxy-fix]]
+related: [[defuddle]], [[mcp]], [[tech/cursor-proxy-fix]]
 ---
 
 # MarkItDown

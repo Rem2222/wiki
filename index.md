@@ -11,6 +11,7 @@ _Обновлено: 2026-05-05_
 - [[wiki/concepts/memex]] — проект Вэнивара Буша 1945, ассоциативное хранилище знаний
 - [[wiki/concepts/sdd]] — Spec-Driven Development, подход к разработке через спецификации
 - [[wiki/concepts/mcp]] — Model Context Protocol, открытый протокол для AI-интеграций
+- [[wiki/concepts/doxygen]] — генератор документации из исходного кода (C++, Java, Python...)
 - [[wiki/concepts/tradingagents]] — Multi-agent LLM фреймворк для алгоритмической торговли (UCLA + MIT)
 
 ## SDD-Orchestrator v2 (2026-05-04)
@@ -101,7 +102,7 @@ _Обновлено: 2026-05-05_
 - [[wiki/tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
 
 ## Книги
-- [[wiki/books/ne-otkladyvay-na-zavtra]] — «Не откладывай на завтра» — Тимоти Пичил
+- [[books/ne-otkladyvay-na-zavtra]] — «Не откладывай на завтра» — Тимоти Пичил
 
 ## Generated
 <!-- openclaw:wiki:index:start -->

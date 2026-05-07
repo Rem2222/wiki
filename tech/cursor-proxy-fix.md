@@ -2,14 +2,14 @@
 title: "Cursor + Proxy Fix"
 description: ""
 tags: [cursor, proxy, Vless, Xray, Claude, API]
-related: [[naiveproxy]], [[multica]]
+related: [[tech/naiveproxy]], [[multica]]
 ---
 
 ---
 title: "Cursor + Proxy Fix"
 description: "Как починить доступ к Claude Sonnet в Cursor через Hiddify / OneXRay (VLESS/Xray)"
 tags: [cursor, proxy, vless, xray, onexray, hiddify, claude]
-related: [[naiveproxy]], [[cursor-rules-1c]]
+related: [[tech/naiveproxy]], [[cursor-rules-1c]]
 ---
 
 # Cursor + Proxy Fix
@@ -71,5 +71,5 @@ related: [[naiveproxy]], [[cursor-rules-1c]]
 
 ## Связанные темы
 
-- [[NaiveProxy]] — альтернативный способ обхода DPI
+- [[tech/naiveproxy]] — альтернативный способ обхода DPI
 - [[cursor-rules-1c]] — правила Cursor для 1С

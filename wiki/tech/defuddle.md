@@ -4,7 +4,7 @@ type: tool
 created: 2026-04-06
 updated: 2026-04-06
 tags: [CLI, markdown, веб, OpenClaw]
-related: [[obsidian-web-clipper]], [[llm-wiki]]
+related: [[obsidian-web-clipper]], [[concepts/llm-wiki]]
 ---
 
 # Defuddle
@@ -19,9 +19,9 @@ defuddle <URL>
 
 ## Назначение
 
-Используется в [[obsidian-web-clipper|Obsidian Web Clipper]] для быстрого добавления веб-статей в коллекцию raw/ для [[llm-wiki|LLM Wiki]].
+Используется в [[obsidian-web-clipper|Obsidian Web Clipper]] для быстрого добавления веб-статей в коллекцию raw/ для [[concepts/llm-wiki]].
 
 ## См. также
 
 - [[obsidian-web-clipper]] — плагин Obsidian для веб-клиппинга
-- [[llm-wiki]] — вики, куда попадают обработанные статьи
+- [[concepts/llm-wiki]] — вики, куда попадают обработанные статьи

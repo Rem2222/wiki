@@ -57,5 +57,5 @@ CookieDecryptor
 
 ## Связанные страницы
 
-- [[codexbar-win]] — CodexBar-Win
+- [[tech/codexbar-win-cookie-decryption]] — CodexBar-Win
 - [[codexbar-win-cookie-decryption]] — оригинальная документация

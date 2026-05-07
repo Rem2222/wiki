@@ -5,7 +5,7 @@ author: clonn
 created: 2026-04-06
 updated: 2026-04-06
 tags: [OpenClaw, Anthropic, billing, proxy, Claude Code]
-related: [[openclaw-billing-proxy]], [[llm-wiki]]
+related: [[openclaw-billing-proxy]], [[concepts/llm-wiki]]
 ---
 
 # proxy-acpx-x

@@ -2,7 +2,7 @@
 title: "SDD Deep Guide"
 description: ""
 tags: [SDD, AI coding, specifications, documentation]
-related: [[sdd-deep-guide-ru]], [[sdd-instruments]]
+related: [[sdd-deep-guide-ru]], [[tech/sdd-instruments]]
 ---
 
 # SDD: Глубокое погружение для опытного программиста

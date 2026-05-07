@@ -5,7 +5,7 @@ created: 2026-04-05
 updated: 2026-04-05
 tags: [knowledge, LLM, productivity, wiki, knowledge-management]
 sources: [raw/llm-wiki-gist.md]
-related: [[Obsidian]], [[RAG]], [[Memex]], [[qmd]], [[Obsidian Web Clipper]], [[Marp]], [[Dataview]]
+related: [[Obsidian]], [[RAG]], [[concepts/memex]], [[qmd]], [[tech/obsidian-web-clipper]], [[tech/marp]], [[Dataview]]
 ---
 
 # LLM Wiki
@@ -68,14 +68,14 @@ related: [[Obsidian]], [[RAG]], [[Memex]], [[qmd]], [[Obsidian Web Clipper]], [[
 
 - [[Obsidian]] — IDE для вики
 - [[qmd]] — локальный поиск по markdown
-- [[Obsidian Web Clipper]] — конвертация веб-статей в markdown
-- [[Marp]] — презентации из markdown
+- [[tech/obsidian-web-clipper]] — конвертация веб-статей в markdown
+- [[tech/marp]] — презентации из markdown
 - [[Dataview]] — запросы к метаданным страниц
 - Git — версионность (wiki = git-репозиторий .md файлов)
 
 ## Историческая параллель
 
-Перекликается с **[[Memex]]** Вэнивара Буша (1945) — личное курируемое хранилище знаний с ассоциативными связями. Буш не мог решить кто будет поддерживать систему. Теперь эту задачу берёт на себя LLM.
+Перекликается с **[[concepts/memex]]** Вэнивара Буша (1945) — личное курируемое хранилище знаний с ассоциативными связями. Буш не мог решить кто будет поддерживать систему. Теперь эту задачу берёт на себя LLM.
 
 ## Источник
 

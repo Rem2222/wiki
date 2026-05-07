@@ -2,14 +2,14 @@
 title: "SDD Deep Guide RU"
 description: ""
 tags: [SDD, AI coding, спецификации, документация]
-related: [[sdd-deep-guide]], [[sdd-instruments]]
+related: [[tech/sdd-deep-guide]], [[tech/sdd-instruments]]
 ---
 
 # SDD: Глубокое погружение для опытного программиста
 
 **Версия:** 2026-04-05  
 **Источники:** Martin Fowler, Wikipedia, GitHub, OpenSpec.pro, Hashrocket  
-**Перевод:** 2026-04-06 (оригинал: [[sdd-deep-guide]])
+**Перевод:** 2026-04-06 (оригинал: [[tech/sdd-deep-guide]])
 
 ---
 

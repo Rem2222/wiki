@@ -9,7 +9,7 @@ related:
 title: "NaiveProxy"
 description: "Лучший способ обхода DPI в 2026. Использует сетевой стек Chromium для маскировки трафика."
 tags: [dpi-bypass, censorship, vpn, chromium, caddy]
-related: [[v2ray]], [[vless]], [[wireguard]]
+related: v2ray, vless, wireguard
 ---
 
 # NaiveProxy

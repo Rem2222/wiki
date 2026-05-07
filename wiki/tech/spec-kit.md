@@ -2,7 +2,7 @@
 title: "Spec-kit"
 description: ""
 tags: [SDD, VS Code, AI coding, spec-first, specification]
-related: [[sdd-instruments]], [[openspec]]
+related: [[tech/sdd-instruments]], [[openspec]]
 ---
 
 ---

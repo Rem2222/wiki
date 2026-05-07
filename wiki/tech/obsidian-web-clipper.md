@@ -5,7 +5,7 @@ created: 2026-04-05
 updated: 2026-04-05
 tags: [browser-extension, web-clipping, markdown]
 sources: [raw/llm-wiki-gist.md]
-related: [[LLM Wiki]], [[Obsidian]], [[defuddle]]
+related: [[concepts/llm-wiki]], [[Obsidian]], [[defuddle]]
 ---
 
 # Obsidian Web Clipper
@@ -14,7 +14,7 @@ related: [[LLM Wiki]], [[Obsidian]], [[defuddle]]
 
 ## Назначение
 
-Быстрое добавление источников в коллекцию raw/ для [[LLM Wiki]].
+Быстрое добавление источников в коллекцию raw/ для [[concepts/llm-wiki]].
 
 ## Альтернатива
 

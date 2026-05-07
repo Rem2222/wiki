@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-06
 updated: 2026-04-06
 tags: [SDD, разработка, спецификации, AI, Kiro, Spec-kit, Tessl, OpenSpec]
-related: [[llm-wiki]], [[rag]], [[kiro]], [[spec-kit]], [[tessl]], [[openspec]]
+related: [[concepts/llm-wiki]], [[rag]], [[kiro]], [[tech/spec-kit]], [[tessl]], [[openspec]], [[specsmaxxing]]
 ---
 
 # SDD — Spec-Driven Development
@@ -38,7 +38,7 @@ Workflow: Requirements → Design → Tasks
 
 Память (steering): product.md, structure.md, tech.md
 
-### [[spec-kit|Spec-kit]] (GitHub)
+### [[tech/spec-kit]] (GitHub)
 CLI-инструмент от GitHub. Наиболее кастомизируемый.
 
 Workflow: Constitution → Specify → Plan → Tasks

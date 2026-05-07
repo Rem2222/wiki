@@ -45,7 +45,7 @@ linear issues list --assignee me
 
 ## Linear API Key
 
-Нужен API ключ Linear.см. [[calendar-events]] для хранения ключей.
+Нужен API ключ Linear.см. [[misc/calendar-events]] для хранения ключей.
 
 ```bash
 export LINEAR_API_KEY="lin_api_..."
