@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SCHEMA.md",
+                "file": "tech/pre-mortem.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SCHEMA"
+              "title": "pre-mortem"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "morte",
+                "query": "mortem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -187,6 +188,7 @@
   "active": "7615297728ff6133",
   "lastOpenFiles": [
     "index.md",
+    "SCHEMA.md",
     "reports/privacy-review.md",
     "reports/claim-health.md",
     "reports",
@@ -212,7 +214,6 @@
     "tech/jawl-howto-add-interface.md",
     "tech/jawl-howto-add-event.md",
     "tech/jawl-heartbeat.md",
-    "tech/jawl-events.md",
     "videos",
     "tools",
     "events",
