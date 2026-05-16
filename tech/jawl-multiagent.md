@@ -1,6 +1,7 @@
 ---
 created: 2026-05-16
 updated: 2026-05-16
+path: /home/rem/jawl_multi
 tags:
   - ai-agents
   - multiagent
@@ -22,10 +23,10 @@ type: guide
 
 Ветка: `main`
 
-Директория на сервере: `/tmp/jawl_repo/` — полный git worktree со всеми мультиагентными изменениями (незакоммичены).
+Директория на сервере: `/home/rem/jawl_multi/` — полный git worktree со всеми мультиагентными изменениями (незакоммичены).
 
 ```
-/tmp/jawl_repo/
+/home/rem/jawl_multi/
 ├── config/
 │   ├── agents.example.yaml     # пример конфига для 2 агентов
 │   └── agents.yaml             # рабочая конфигурация
@@ -161,7 +162,7 @@ agents:
 ### Обычный запуск (мультиагент если есть agents.yaml)
 
 ```bash
-cd /tmp/jawl_repo
+cd /home/rem/jawl_multi
 python -m src.main
 ```
 
@@ -265,7 +266,7 @@ curl http://localhost:8080/api/agents
 ### 3. Логи
 
 ```
-/tmp/jawl_repo/logs/
+/home/rem/jawl_multi/logs/
 ├── jawl.log              — общие логи
 ├── jawl.error.log        — только ошибки
 └── agents/<agent_id>/   — per-agent логи (если настроено)
@@ -301,11 +302,11 @@ curl http://localhost:8080/api/agents
 
 ## Запуск на VPS
 
-Код в `/tmp/jawl_repo/` — это git worktree. Для продакшена:
+Код в `/home/rem/jawl_multi/` — это git worktree. Для продакшена:
 
 ```bash
 # скопировать в постоянное место или сделать deploy-скрипт
-cp -r /tmp/jawl_repo /opt/jawl-multiagent/
+cp -r /home/rem/jawl_multi /opt/jawl-multiagent/
 cd /opt/jawl-multiagent
 cp .env.example .env  # настроить ключи
 nano config/agents.yaml  # настроить агентов
