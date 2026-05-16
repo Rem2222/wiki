@@ -1,0 +1,8 @@
+# Внешние интеграции
+
+Интеграции — такие же инструменты (или MCP), только направленные на внешние системы. Каталогов готовых решений достаточно:
+
+- **[aci.dev/tools](https://aci.dev/tools)** — 600+ готовых инструментов, open source
+- **[composio.dev/toolkits](https://composio.dev/toolkits)** — 1000+ тулкитов с OAuth из коробки
+- **[arcade.dev](https://arcade.dev)** — MCP runtime, фокус на безопасной авторизации агентов
+- **[mcp.so](https://mcp.so)** — каталог MCP-серверов (community)
