@@ -13,15 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "tech/jawl.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "jawl"
+            }
+          },
+          {
+            "id": "07f1f0ff315a85a9",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Zenflow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,10 +196,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa8ef7ea5f00502a",
+  "active": "9e2521d7ee1ee82d",
   "lastOpenFiles": [
-    "tech/pre-mortem.md",
+    "tech/jawl.md",
     "index.md",
+    "tech/pre-mortem.md",
     "raw/tradingagents.md",
     "tech/spec-kit.md",
     "tech/anythingllm.md",
@@ -215,7 +227,6 @@
     "reports/person-agent-directory.md",
     "reports/open-questions.md",
     "reports/low-confidence.md",
-    "reports/index.md",
     "projects",
     "entities",
     "concepts",
