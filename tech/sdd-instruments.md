@@ -73,7 +73,26 @@ OpenSpec        | CLI         | ❌            | ❌             | Низкая 
 
 ---
 
-## 4. OpenSpec
+## 4. Zenflow
+
+**Сайт:** zenflow.ai
+**Тип:** Desktop (Windows/Mac/Linux)
+**Статус:** Free (Zenflow), платный (Zenflow Work)
+
+### Плюсы
+- Бесплатный (базовая версия)
+- Spec-driven workflows + встроенная верификация
+- Multi-agent execution (несколько агентов параллельно)
+- Встроенный браузер + task flows (с March 2026)
+- Zenflow Work — расширение за пределы инженерных задач (Jira, Notion, Slack, Gmail)
+
+### Минусы
+- Desktop-приложение (не CLI)
+- Меньше интеграций чем у конкурентов
+
+---
+
+## 5. OpenSpec
 
 **Сайт:** openspec.pro, github.com/Fission-AI/OpenSpec  
 **Тип:** CLI (MIT license)  
