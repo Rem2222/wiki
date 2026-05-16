@@ -11,10 +11,14 @@
             "id": "d8b446653b98d8ed",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "type": "markdown",
+              "state": {
+                "file": "tech/jawl-architecture.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "jawl-architecture"
             }
           }
         ]
@@ -162,8 +166,15 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "99c2dcdbb06ee3bf",
+  "active": "d8b446653b98d8ed",
   "lastOpenFiles": [
+    "tech/jawl.md",
+    "tech/jawl-config.md",
+    "tech/sdd-openspec-orchestrator-integration.md",
+    "reports/index.md",
+    "reports/person-agent-directory.md",
+    "log.md",
+    "tech/openmanus.md",
     "wiki/tech/qmd.md",
     "wiki/tech/obsidian-web-clipper.md",
     "raw/llm-wiki-gist.md",
