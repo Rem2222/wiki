@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Zenflow",
+                "query": "jawl-multiagent",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
