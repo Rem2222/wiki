@@ -20,19 +20,8 @@
               "icon": "lucide-file",
               "title": "jawl"
             }
-          },
-          {
-            "id": "07f1f0ff315a85a9",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,8 +187,9 @@
   },
   "active": "9e2521d7ee1ee82d",
   "lastOpenFiles": [
-    "tech/jawl.md",
+    "tech/sdd-instruments.md",
     "index.md",
+    "tech/jawl.md",
     "tech/pre-mortem.md",
     "raw/tradingagents.md",
     "tech/spec-kit.md",
@@ -226,7 +216,6 @@
     "reports/provenance-coverage.md",
     "reports/person-agent-directory.md",
     "reports/open-questions.md",
-    "reports/low-confidence.md",
     "projects",
     "entities",
     "concepts",
