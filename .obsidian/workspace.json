@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "tech/jawl-multiagent.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "jawl-multiagent"
             }
           }
         ]
@@ -185,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9e2521d7ee1ee82d",
+  "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
+    "index.md",
     "tech/tencentdb-agent-memory.md",
     "tech/rtk.md",
     "tech/poe-chutes-comparison.md",
@@ -201,7 +202,6 @@
     "tech/free-claude-code.md",
     "tech/jawl.md",
     "tech/sdd-instruments.md",
-    "index.md",
     "tech/pre-mortem.md",
     "raw/tradingagents.md",
     "tech/spec-kit.md",
