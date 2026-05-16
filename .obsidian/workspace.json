@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/tradingagents.md",
+                "file": "index.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tradingagents"
+              "title": "index"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "trad",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,8 +185,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "76cef7aa8d3784cb",
+  "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
+    "tech/pre-mortem.md",
+    "index.md",
+    "raw/tradingagents.md",
+    "tech/spec-kit.md",
+    "tech/anythingllm.md",
+    "tech/Mercury Agent Skills.md",
+    "tech/MemPalace-Hermes-Integration.md",
+    "tech/9router-vs-openrouter.md",
     "tech/openmanus.md",
     "wiki/concepts/tradingagents.md",
     "videos/trading/claude-tradingview-connection.md",
@@ -207,16 +216,8 @@
     "reports/open-questions.md",
     "reports/low-confidence.md",
     "reports/index.md",
-    "reports/contradictions.md",
-    "raw/tradingagents.md",
-    "projects/Оркестратор_v3_Руководство.md",
-    "projects/veritas-kanban.md",
     "projects",
-    "inbox.md",
-    "entities/index.md",
     "entities",
-    "concepts/tradingagents.md",
-    "concepts/index.md",
     "concepts",
     "reports",
     "videos",
