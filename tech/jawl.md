@@ -69,6 +69,12 @@ L3 Agent        → ReAct loop, Context Builder, RAG
 Flask на порту 5000. 15 API маршрутов, realtime polling, provider/model switching.
 → [[tech/jawl-dashboard]]
 
+## Мультиагентный режим
+
+С версии 0.15.x — возможность запускать N независимых агентов в одном процессе.
+Каждый агент: изолированная БД, свой Telegram, своя личность (SOUL.md), свой Heartbeat.
+→ [[tech/jawl-multiagent]]
+
 ## HOWTO
 
 - [[tech/jawl-howto-add-skill]] — добавить навык

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b6162e355f52dca2",
+        "id": "42096d9472c2ed0e",
         "type": "tabs",
         "children": [
           {
-            "id": "7615297728ff6133",
+            "id": "aa8ef7ea5f00502a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/tradingagents.md",
+                "file": "tech/jawl-multiagent.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tradingagents"
+              "title": "jawl-multiagent"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "trad",
+                "query": "multiagent",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,43 +185,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7615297728ff6133",
+  "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
-    "index.md",
-    "wiki/concepts/tradingagents.md",
-    "tech/pre-mortem.md",
-    "SCHEMA.md",
-    "reports/privacy-review.md",
-    "reports/claim-health.md",
-    "reports",
-    "raw/naiveproxy-guide-swrneko.md",
-    "raw/llm-wiki-gist.md",
-    "raw/cursor-proxy-fix.md",
-    "events/1cvibeconf-2026.md",
-    "wiki/1c/mcp-vs-builtin-token-analysis.md",
-    "wiki/1c/mcp-1c-setup.md",
-    "SDD инструменты сравнение.md",
-    "tech/openai-routing.md",
-    "tech/jawl-howto-add-provider.md",
-    "wiki/tech/ai-agents-2026-review.md",
-    "tech/vibe-coding-workflow.md",
-    "tech/openspec.md",
     "tech/jawl.md",
-    "wiki/tech/minimal-embodiment.md",
-    "tech/jawl-config.md",
-    "tech/jawl-skills-registry.md",
-    "tech/jawl-react-loop.md",
-    "tech/jawl-howto-add-skill.md",
-    "tech/jawl-howto-add-interface.md",
-    "tech/jawl-howto-add-event.md",
+    "index.md",
+    "tech/jawl-multiagent.md",
+    "tech/tencentdb-agent-memory.md",
+    "tech/rtk.md",
+    "tech/poe-chutes-comparison.md",
+    "tech/poe-api-models.md",
+    "tech/peekaboowin.md",
+    "tech/optimizing-llm-api-calls-for-coding.md",
+    "tech/opencode.md",
+    "tech/nexus-dashboard.md",
+    "tech/nerve-recovery-timeline.md",
+    "tech/hermes-external-integrations.md",
+    "tech/free-claude-code.md",
+    "tech/sdd-instruments.md",
+    "tech/pre-mortem.md",
+    "raw/tradingagents.md",
+    "tech/spec-kit.md",
+    "tech/anythingllm.md",
+    "tech/Mercury Agent Skills.md",
+    "tech/MemPalace-Hermes-Integration.md",
+    "tech/9router-vs-openrouter.md",
+    "tech/openmanus.md",
+    "wiki/concepts/tradingagents.md",
+    "videos/trading/claude-tradingview-connection.md",
+    "videos/trading",
+    "tech/sdd-openspec-precommit.md",
+    "syntheses",
+    "sources",
+    "projects",
+    "entities",
+    "concepts",
+    "reports",
     "videos",
     "tools",
-    "events",
-    "articles",
-    "misc",
-    "graphify-out/semantic_extract.json",
-    "graphify-out/graph.json",
-    "graphify-out/communities.json",
-    "graphify-out"
+    "events"
   ]
 }
