@@ -40,6 +40,59 @@ related: [[1c-mcp]], [[cursor-rules-1c]], [[v8std-mcp]]
 - `yaxunit-mcp` — запуск тестов
 - `bsl-ls-mcp` — LSP → MCP транслятор
 
+### Graph Metadata Search (onerpa.ru) — детально
+
+**Docker образ:** `comol/1c_graph_metadata:latest`
+**Порт:** 8006
+**Тип:** HTTP (MCP через `/mcp` или по REST)
+**Основа:** Neo4j граф + FastAPI
+
+**Из чего состоит:**
+- **Neo4j** (:7474 browser, :7687 bolt) — графовая БД связей метаданных
+- **MCP сервер** (:8006) — HTTP API + веб-интерфейс
+
+**Требования:**
+1. Docker Desktop
+2. LM Studio (или OpenAI API) для эмбеддингов — модель Qwen3-Embedding-4B
+3. Экспорт метаданных из Конфигуратора 1С
+4. **LICENSE_KEY** — лицензионный ключ (получить у onerpa.ru)
+
+**Compose:**
+```yaml
+services:
+  neo4j:
+    image: neo4j:latest
+    ports: ["7474:7474", "7687:7687"]
+    environment:
+      NEO4J_AUTH=neo4j/password123
+    volumes:
+      - ./neo4j:/data
+  mcp-app:
+    image: comol/1c_graph_metadata:latest
+    ports: ["8006:8006"]
+    environment:
+      LICENSE_KEY: YOUR_LICENSE_KEY       # ← обязателен
+      NEO4J_URI: bolt://neo4j:7687
+      NEO4J_USERNAME: neo4j
+      NEO4J_PASSWORD: password123
+      METADATA_DIRECTORY: /app/metadata
+      RESET_DATABASE: "false"
+      OPENAI_API_BASE: http://host.docker.internal:1234/v1
+      OPENAI_API_KEY: lm-studio
+      OPENAI_EMBEDDING_MODEL: Qwen3-Embedding-4B
+      TEMPLATE_MODE_ENABLED: "true"
+      LOAD_BSL_SIGNATURES: "true"
+    volumes:
+      - ./Report:/app/metadata
+      - ./Files:/app/metadata_files
+```
+
+**18 MCP инструментов:** search_metadata, search_metadata_by_description, get_metadata_prompt, execute_metadata_cypher, find_objects_using_object, find_usages_of_object, find_register_movement_docs, search_code, business_search, answer_metadata_question, get_object_dossier, trace_impact, trace_call_chain, find_by_guid, resolve_qualified_name, compare_base_and_extension, + Template Mode операции
+
+**Время индексации:** от часов (маленькая конфа) до 20-60ч (большая) + 5-10ч с BSL графом.
+
+**Источник:** https://docs.onerpa.ru/mcp-servery-1c/servery/graph-metadata-search
+
 ### Интеграции
 - `1c-naparnik-mcp` — чат с 1С:Напарник
 - `1c-buh-mcp` — интеграция с Бухгалтерией

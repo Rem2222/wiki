@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-05-05_
+_Обновлено: 2026-05-22_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
@@ -23,40 +23,47 @@ _Обновлено: 2026-05-05_
 
 ## Технологии
 - [[tech/1c-mcp]] — MCP серверы для экосистемы 1С (vibecoding1c.ru)
+- [[tech/authelia]] — Self-hosted SSO (Authelia) + nginx auth_request, Docker compose
+- [[tech/beszel]] — Лёгкая система мониторинга серверов (Hub + Agent)
+- [[tech/cockpit]] — веб-администрирование сервера, reverse proxy, SSO, плагины
+- [[tech/codex-harness]] — Codex Harness plugin для нативного Codex app-server runtime
 - [[tech/codexbar-win-cookie-decryption]] — расшифровка Chromium cookies через DPAPI + AES-GCM
 - [[tech/cookie-decryptor]] — извлечённые процедуры из CodexBar-Win для расшифровки cookies
 - [[tech/cursor-proxy-fix]] — как починить доступ к Claude Sonnet в Cursor через прокси
-- [[tech/codex-harness]] — Codex Harness plugin для нативного Codex app-server runtime
 - [[tech/cursor-rules-1c]] — полный набор правил и агентов для 1С в Cursor IDE
+- [[tech/duc]] — визуализация дискового пространства (sunburst), фикс CGI redirect
 - [[tech/heisenberg-team-gpt]] — production-ready мультиагентный шаблон для OpenClaw
 - [[tech/jawl]] — Just Another Workflow Library, автономный агент (Jinx)
 - [[tech/jawl-architecture]] — L0-L3 архитектура JAWL
-- [[tech/jawl-react-loop]] — ReAct Loop: reasoning → action → observation
+- [[tech/jawl-config]] — Конфигурация: models.json, settings.yaml, .env
+- [[tech/jawl-context]] — Context Builder: сборка промпта
+- [[tech/jawl-dashboard]] — Dashboard: Flask мониторинг
 - [[tech/jawl-events]] — EventBus: 22 события Pub/Sub
 - [[tech/jawl-heartbeat]] — Heartbeat: driving system + periodic tick
-- [[tech/jawl-context]] — Context Builder: сборка промпта
-- [[tech/jawl-config]] — Конфигурация: models.json, settings.yaml, .env
-- [[tech/jawl-dashboard]] — Dashboard: Flask мониторинг
-- [[tech/jawl-skills-registry]] — Реестр всех навыков по интерфейсам
-- [[tech/jawl-howto-add-skill]] — HOWTO: добавить навык
-- [[tech/jawl-howto-add-provider]] — HOWTO: добавить LLM провайдера
 - [[tech/jawl-howto-add-event]] — HOWTO: добавить событие EventBus
 - [[tech/jawl-howto-add-interface]] — HOWTO: добавить L2 интерфейс
+- [[tech/jawl-howto-add-provider]] — HOWTO: добавить LLM провайдера
+- [[tech/jawl-howto-add-skill]] — HOWTO: добавить навык
+- [[tech/jawl-react-loop]] — ReAct Loop: reasoning → action → observation
+- [[tech/jawl-skills-registry]] — Реестр всех навыков по интерфейсам
+- [[tech/landing]] — Лендинг rem2222.top с карточками сервисов
 - [[tech/markitdown]] — Microsoft конвертер документов в Markdown
 - [[tech/mcp-inspector]] — MCP Inspector, отладка MCP серверов
 - [[tech/multica]] — Open-source managed agents platform
 - [[tech/naiveproxy]] — лучший способ обхода DPI в 2026
+- [[tech/obsidian-livesync]] — Self-hosted синхронизация Obsidian через CouchDB
+- [[tech/obsidian-plugins]] — Рекомендованные плагины Obsidian (Dataview, Templater, MCP)
 - [[tech/openai-routing]] — настройка нескольких OpenAI подписок через OmniRoute
-- [[tech/playsvideo]] — Chrome-расширение для локального воспроизведения видео
-- [[tech/pre-mortem]] — Pre-Mortem анализ провала по Gary Klein
 - [[tech/openspec]] — легковесный SDD-фреймворк от Fission-AI
 - [[tech/openspec-usage]] — детальное руководство по использованию OpenSpec
+- [[tech/playsvideo]] — Chrome-расширение для локального воспроизведения видео
+- [[tech/pre-mortem]] — Pre-Mortem анализ провала по Gary Klein
 - [[tech/sdd-deep-guide]] — полное погружение в SDD для опытного программиста
 - [[tech/sdd-deep-guide-ru]] — русская версия глубокого погружения в SDD
 - [[tech/sdd-instruments]] — сравнение SDD-инструментов: Kiro, Spec-kit, Tessl, OpenSpec
+- [[tech/smoon-docker]] — Остановка SMOON, очистка Docker, команды и структура
 - [[tech/specsmaxxing]] — Spec-Driven Development с ACID tracking (Acai.sh)
 - [[tech/vibe-coding-workflow]] — 5-phase structured workflow для AI-assisted development
-
 ## 1С
 - [[wiki/1c/mcp-1c-setup]] — настройка и использование MCP для 1С
 - [[wiki/1c/mcp-vs-builtin-token-analysis]] — MCP vs Built-in Tools, анализ токенов
