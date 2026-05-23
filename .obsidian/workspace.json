@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech/jawl-multiagent.md",
+                "file": "WIKI.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jawl-multiagent"
+              "title": "WIKI"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Закладки"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -165,6 +164,15 @@
               "icon": "lucide-list",
               "title": "Структура llm-wiki"
             }
+          },
+          {
+            "id": "1dd1bfab73e7ec71",
+            "type": "leaf",
+            "state": {
+              "type": "infranodus-graph-view",
+              "state": {},
+              "icon": "infranodus-icon"
+            }
           }
         ]
       }
@@ -182,14 +190,36 @@
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
       "bases:Создать новую базу": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-livesync:P2P Status": false,
+      "obsidian-livesync:Replicate": false,
+      "obsidian-livesync:Show Log": false,
+      "obsidian-livesync:Показать синхронизацию настроек": false,
+      "templater-obsidian:Templater": false,
+      "infranodus-graph-view:InfraNodus Graph View": false
     }
   },
   "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
+    "tech/smoon-docker.md",
+    "tech/onebase.md",
+    "tech/obsidian-plugins.md",
+    "tech/obsidian-livesync.md",
+    "tech/mcpservers.md",
+    "tech/landing.md",
+    "tech/hysteria-realm.md",
+    "tech/hysteria-clients.md",
+    "tech/gbrain-lossless-agent-memory.md",
+    "tech/freellmapi.md",
+    "tech/duc.md",
+    "tech/cockpit.md",
+    "tech/cloakbrowser.md",
+    "tech/beszel.md",
+    "tech/authelia.md",
+    "tech/agentmemory-vs-current.md",
+    "tech/jawl-multiagent.md",
     "tech/jawl.md",
     "index.md",
-    "tech/jawl-multiagent.md",
     "tech/tencentdb-agent-memory.md",
     "tech/rtk.md",
     "tech/poe-chutes-comparison.md",
@@ -197,23 +227,7 @@
     "tech/peekaboowin.md",
     "tech/optimizing-llm-api-calls-for-coding.md",
     "tech/opencode.md",
-    "tech/nexus-dashboard.md",
-    "tech/nerve-recovery-timeline.md",
-    "tech/hermes-external-integrations.md",
-    "tech/free-claude-code.md",
-    "tech/sdd-instruments.md",
-    "tech/pre-mortem.md",
-    "raw/tradingagents.md",
-    "tech/spec-kit.md",
-    "tech/anythingllm.md",
-    "tech/Mercury Agent Skills.md",
-    "tech/MemPalace-Hermes-Integration.md",
-    "tech/9router-vs-openrouter.md",
-    "tech/openmanus.md",
-    "wiki/concepts/tradingagents.md",
-    "videos/trading/claude-tradingview-connection.md",
     "videos/trading",
-    "tech/sdd-openspec-precommit.md",
     "syntheses",
     "sources",
     "projects",
