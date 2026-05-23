@@ -69,10 +69,17 @@
   "syncAfterMerge": false,
   "configPassphraseStore": "",
   "encryptedPassphrase": "",
-  "encryptedCouchDBConnection": "",
+  "encryptedCouchDBConnection": "%$9C1/E2C1m21PpX4PN5KNIvVth1V8cqVJNTnB5K0QwrfTiUOeCiBh7mKPAGY10o7bbjCOrTAvhB2JV05HwcjbpErNLB+NXueSboE8oez3BbRN67FuJSdrTEjkEDwR5wlfcOfD0YGBSqAOFPN+3Uu86RyzIF7kd24Zta+A0UAq+18trDriWRI/JbPjA+3OSibulCyy8X5oPNR/DcRFZTFaidELoq9zp/NrhoPkdGLRfJSoYFTVqQm4Bkcag1FSaN9vA+qM1WcxDjy4lyRlJxoCjHAMPJdG4fFP4CsuWdzjoymfIkQQScG2iAhkxwUq8fuhATdZvvFhFMYPlhGV+Y5p/wMaqUSkzW80wnP42WITaUIWQc+AJHWO+u06aapb3XvJ4LHhah5tUy8CMTc5wm9kVxjFFCHbYNZzY5lZ6ey5Fvi9ACQ91zWj1bix2Or0pN8+LOu6920A+DJWpID8RRdGzJZdbO0S42Rc+CoO06ycNvrQBqLF+nFRr1iSnbOVD4QF6bPswMZjdsm53iEiaNf9dvEbxvUMMz430n+4Ep71nnRnTRI/ftN1nf5WoJzwIvfkHqui3QtLH2osHy8DrENub/4mFQL3hximMoUYmgY/mh4964rTmNo6ofS0tPULvcDFITVSaU/pneQyuVWaz7j7XTte9FDoCQaAk0Eamr6/5qkAPhCj/Fm+qObd75j9LJJYXZ6KerP12g==",
   "permitEmptyPassphrase": false,
-  "remoteConfigurations": {},
-  "activeConfigurationId": "",
+  "remoteConfigurations": {
+    "legacy-couchdb": {
+      "id": "legacy-couchdb",
+      "name": "CouchDB Remote",
+      "uri": "%$9C1/E2C1m21PpX4PN5KNIvVth1V8cqVJNTnB5K0QwrfaKTUKZr1cw0YGwAP/22+svAGsQyP1cfc9TkIJ5GFnquxLmSUB8TMt+0jqYPHq2f8yD7LnCEbGT6gVHY2VBmux1imKxtelVNpqERCDPX8sqn8vTeSy78aP1AxCWZlX52IaQ//rkDCXcl+X5JYc7w9oqzoEuUwIAidtObaP4959Saxus2d17RK0rlQg6oHJPdmI2ZTPLQ==",
+      "isEncrypted": true
+    }
+  },
+  "activeConfigurationId": "legacy-couchdb",
   "P2P_ActiveRemoteConfigurationId": "",
   "useIndexedDBAdapter": false,
   "useTimeouts": false,
@@ -99,7 +106,7 @@
   "accessKey": "",
   "bucket": "",
   "endpoint": "",
-  "region": "auto",
+  "region": "",
   "secretKey": "",
   "useEden": false,
   "maxChunksInEden": 10,
@@ -153,7 +160,7 @@
   "jwtKid": "",
   "jwtSub": "",
   "jwtExpDuration": 5,
-  "useRequestAPI": false,
+  "useRequestAPI": true,
   "bucketPrefix": "",
   "chunkSplitterVersion": "v3-rabin-karp",
   "E2EEAlgorithm": "v2",

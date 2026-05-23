@@ -183,6 +183,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-livesync:Show Customization sync": false,
       "switcher:Меню быстрого перехода": false,
       "graph:Граф": false,
       "canvas:Создать новый холст": false,
@@ -194,13 +195,13 @@
       "obsidian-livesync:P2P Status": false,
       "obsidian-livesync:Replicate": false,
       "obsidian-livesync:Show Log": false,
-      "obsidian-livesync:Показать синхронизацию настроек": false,
       "templater-obsidian:Templater": false,
       "infranodus-graph-view:InfraNodus Graph View": false
     }
   },
   "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
+    "flag_fetch.md",
     "tech/smoon-docker.md",
     "tech/onebase.md",
     "tech/obsidian-plugins.md",
@@ -226,7 +227,6 @@
     "tech/poe-api-models.md",
     "tech/peekaboowin.md",
     "tech/optimizing-llm-api-calls-for-coding.md",
-    "tech/opencode.md",
     "videos/trading",
     "syntheses",
     "sources",
