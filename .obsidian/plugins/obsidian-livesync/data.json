@@ -59,7 +59,7 @@
   "deleteMetadataOfDeletedFiles": false,
   "syncIgnoreRegEx": "",
   "syncOnlyRegEx": "",
-  "customChunkSize": 0,
+  "customChunkSize": 60,
   "readChunksOnline": true,
   "watchInternalFileChanges": true,
   "automaticallyDeleteMetadataOfDeletedFiles": 0,
@@ -69,13 +69,13 @@
   "syncAfterMerge": false,
   "configPassphraseStore": "",
   "encryptedPassphrase": "",
-  "encryptedCouchDBConnection": "%$9C1/E2C1m21PpX4PN5KNIvVth1V8cqVJNTnB5K0QwrfTiUOeCiBh7mKPAGY10o7bbjCOrTAvhB2JV05HwcjbpErNLB+NXueSboE8oez3BbRN67FuJSdrTEjkEDwR5wlfcOfD0YGBSqAOFPN+3Uu86RyzIF7kd24Zta+A0UAq+18trDriWRI/JbPjA+3OSibulCyy8X5oPNR/DcRFZTFaidELoq9zp/NrhoPkdGLRfJSoYFTVqQm4Bkcag1FSaN9vA+qM1WcxDjy4lyRlJxoCjHAMPJdG4fFP4CsuWdzjoymfIkQQScG2iAhkxwUq8fuhATdZvvFhFMYPlhGV+Y5p/wMaqUSkzW80wnP42WITaUIWQc+AJHWO+u06aapb3XvJ4LHhah5tUy8CMTc5wm9kVxjFFCHbYNZzY5lZ6ey5Fvi9ACQ91zWj1bix2Or0pN8+LOu6920A+DJWpID8RRdGzJZdbO0S42Rc+CoO06ycNvrQBqLF+nFRr1iSnbOVD4QF6bPswMZjdsm53iEiaNf9dvEbxvUMMz430n+4Ep71nnRnTRI/ftN1nf5WoJzwIvfkHqui3QtLH2osHy8DrENub/4mFQL3hximMoUYmgY/mh4964rTmNo6ofS0tPULvcDFITVSaU/pneQyuVWaz7j7XTte9FDoCQaAk0Eamr6/5qkAPhCj/Fm+qObd75j9LJJYXZ6KerP12g==",
+  "encryptedCouchDBConnection": "%$9C1/E2C1m21PpX4PN5KNIvVth1V8cqVJNTnB5K0QwreJNsmbZIonQCCvM4bsvPXDzWajD19B5OawRD6z+LjgR/wX8BGa19jTNJQxJrRfnwN2TnZaEi7gP8Zg/qmu7C5cpUjkCRuy8lYN9Z63QemeZbEUcuCIMLrZCg+DupYOMKyRwBX5yIMvlU6Z7RG3jEUpX78b3CmR2HVDa2gfoKavsoVsc9GYgXSZ0xO3MPqa1wAT4l3ZVktXz5Z4CQtnySVcLxDAtKTH62XGywgg08vxnFX6PXS7WjhpTfXinR2m8/nQA3qjfO4Pih3TJHRKkAmGAk6EJKzEOWoITnqeQHGJBZYLkg/xNS/wTorL6u9e72Jrwa4xCt4LYUNuPNi5Gh2KYHJykaeqAOKJU2wMz5GfHndJqBi//bw1EBfJDcDEi1jZh+y5ZCH+oooLd51QwPElKxtR9zsKucnPPxQnrzXTxRUWX91eqLF1t88T8UciVxlNlWBWkUAtrokbXahWTOy/QNPFWv/sSQ3dShvqT8FcFPdpLtMPb1GneSGMN40tstOmNs/itfnTGxGypUDFIw24SPc5JCMwDmuH66Sxr642eT+YQ3tTNTjwD9RLXEnV8VSDiLYSosKagPkg8gUCDQr+J6uvG6LCqon8JP91/Q0Nk8CN0X22xdmS9N1x4HhmfmmuRG9BpvnvA3jtD9+wtr8j1rzC028DQw==",
   "permitEmptyPassphrase": false,
   "remoteConfigurations": {
     "legacy-couchdb": {
       "id": "legacy-couchdb",
       "name": "CouchDB Remote",
-      "uri": "%$9C1/E2C1m21PpX4PN5KNIvVth1V8cqVJNTnB5K0QwrfaKTUKZr1cw0YGwAP/22+svAGsQyP1cfc9TkIJ5GFnquxLmSUB8TMt+0jqYPHq2f8yD7LnCEbGT6gVHY2VBmux1imKxtelVNpqERCDPX8sqn8vTeSy78aP1AxCWZlX52IaQ//rkDCXcl+X5JYc7w9oqzoEuUwIAidtObaP4959Saxus2d17RK0rlQg6oHJPdmI2ZTPLQ==",
+      "uri": "%$9C1/E2C1m21PpX4PN5KNIvVth1V8cqVJNTnB5K0QwrfycgbHn6DvBzcy/uKdJN/A8vmp2LJqFGKpx/UadYej8sKzNF0s/JeMQ8jnORDvGT5ACShox+8najWcK15tUMtuki1cb3binZT5/hDJT+L5pCAPObgFRkpAMlSZIeilbSepLfO6qZY7b/UsEuEkCqEYCFawpxdFbpD+UBRpZduo71lETpgFpwJ7knm1qRtGcE1NUprTAg==",
       "isEncrypted": true
     }
   },
@@ -118,8 +118,9 @@
   "disableWorkerForGeneratingChunks": false,
   "processSmallFilesInUIThread": false,
   "notifyThresholdOfRemoteStorageSize": -1,
-  "usePluginSyncV2": false,
+  "usePluginSyncV2": true,
   "usePluginEtc": false,
+  "handleFilenameCaseSensitive": false,
   "doNotUseFixedRevisionForChunks": true,
   "showLongerLogInsideEditor": false,
   "sendChunksBulk": false,
@@ -151,7 +152,7 @@
   "P2P_turnUsername": "",
   "P2P_turnCredential": "",
   "P2P_useDiagRTC": false,
-  "doctorProcessedVersion": "",
+  "doctorProcessedVersion": "0.25.27",
   "bucketCustomHeaders": "",
   "couchDB_CustomHeaders": "",
   "useJWT": false,
@@ -168,5 +169,6 @@
   "forcePathStyle": true,
   "syncInternalFileOverwritePatterns": "",
   "useOnlyLocalChunk": false,
-  "maxMTimeForReflectEvents": 0
+  "maxMTimeForReflectEvents": 0,
+  "tweakModified": 1779566984571
 }

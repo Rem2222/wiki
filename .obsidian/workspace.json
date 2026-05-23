@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WIKI.md",
+                "file": "concepts/tradingagents.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WIKI"
+              "title": "tradingagents"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "multiagent",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,7 +183,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-livesync:Show Customization sync": false,
       "switcher:Меню быстрого перехода": false,
       "graph:Граф": false,
       "canvas:Создать новый холст": false,
@@ -196,11 +195,18 @@
       "obsidian-livesync:Replicate": false,
       "obsidian-livesync:Show Log": false,
       "templater-obsidian:Templater": false,
-      "infranodus-graph-view:InfraNodus Graph View": false
+      "infranodus-graph-view:InfraNodus Graph View": false,
+      "obsidian-livesync:Show Customization sync": false
     }
   },
   "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
+    "concepts/index.md",
+    "concepts/doxygen.md",
+    "tech/beszel.md",
+    "tools/beads.md",
+    "WIKI.md",
+    "flag_rebuild.md",
     "flag_fetch.md",
     "tech/smoon-docker.md",
     "tech/onebase.md",
@@ -215,18 +221,12 @@
     "tech/duc.md",
     "tech/cockpit.md",
     "tech/cloakbrowser.md",
-    "tech/beszel.md",
     "tech/authelia.md",
     "tech/agentmemory-vs-current.md",
     "tech/jawl-multiagent.md",
     "tech/jawl.md",
     "index.md",
     "tech/tencentdb-agent-memory.md",
-    "tech/rtk.md",
-    "tech/poe-chutes-comparison.md",
-    "tech/poe-api-models.md",
-    "tech/peekaboowin.md",
-    "tech/optimizing-llm-api-calls-for-coding.md",
     "videos/trading",
     "syntheses",
     "sources",
