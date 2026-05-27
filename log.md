@@ -97,3 +97,22 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 ## [2026-05-05] ingest | TradingAgents
 Создана страница [[wiki/concepts/tradingagents]] — мультиагентный LLM фреймворк для торговли. Источник: https://tradingagents-ai.github.io/. Создан raw/tradingagents.md. 5 ролей: Analysts → Researchers (Bull/Bear debate) → Trader → Risk Manager → Fund Manager. Ключевое: ReAct prompting, structured reports + natural language debate, quick/deep thinking models. Результаты: AAPL +26.6% (B&H -5.2%), Sharpe 8.21, MaxDD 0.91%.
+
+## [2026-05-27] ingest | MemPalaceViz
+Создана страница [[tech/mempalace-viz]] — визуализация графа знаний для MemPalace (D3.js force-directed graph, MCP интеграция, Crystal Palace тема). Автор: Joe Guarino / G5 Labs. Репозиторий: https://github.com/JoeDoesJits/mempalace-viz. Версия v1.5.0, 25 коммитов, MIT лицензия. Zero-build single-file SPA. Cloudflare zero-trust hosting.
+
+## [2026-05-27] ingest | 8 источников (батч)
+Созданы страницы:
+- [[tech/assemblyai]] — AssemblyAI, API-first Speech-to-Text и аудиоинтеллект
+- [[tech/skillopt]] — Microsoft Research SkillOpt: оптимизация агентных скиллов через ReflACT
+- [[tech/webwright]] — Microsoft Research Webwright: веб-агенты через code-as-action
+- [[events/gpt5-free-announcement]] — GPT-5 стал полностью бесплатным (Greg Brockman, 27 мая 2026)
+- [[tech/agents-best-practices]] — provider-agnostic best practices для агентных систем (Denis Shiryaev)
+- [[tech/agentation]] — Enterprise-платформа оркестрации AI-агентов
+- [[tech/metadata-1c]] — генератор DevOps-отчётов по конфигурации 1С из XML
+- [[tools/find-skills]] — мета-скилл для поиска agent-скиллов (Vercel Labs, skills.sh)
+
+## [2026-05-27] ingest | Agent Memory Research
+- Создана [[tech/agent-memory-research-2026]] — исследование 40+ решений для долговременной памяти агентов
+- Обновлён index.md — добавлена секция "Память AI-агентов (Memory)"
+- Итог: выбраны связка agentmemory + GBrain для установки

@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-05-22_
+_Обновлено: 2026-05-27_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
@@ -23,6 +23,10 @@ _Обновлено: 2026-05-22_
 
 ## Технологии
 - [[tech/1c-mcp]] — MCP серверы для экосистемы 1С (vibecoding1c.ru)
+- [[tech/mempalace-viz]] — визуализация графа знаний для MemPalace (D3.js, MCP, Cloudflare)
+- [[tech/agents-best-practices]] — best practices для проектирования агентных систем (provider-agnostic)
+- [[tech/agentation]] — Enterprise-платформа для оркестрации AI-агентов (no-code, HITL, on-premise)
+- [[tech/assemblyai]] — API-first распознавание речи и аудиоинтеллект (STT, LeMUR)
 - [[tech/authelia]] — Self-hosted SSO (Authelia) + nginx auth_request, Docker compose
 - [[tech/beszel]] — Лёгкая система мониторинга серверов (Hub + Agent)
 - [[tech/cockpit]] — веб-администрирование сервера, reverse proxy, SSO, плагины
@@ -48,6 +52,7 @@ _Обновлено: 2026-05-22_
 - [[tech/jawl-skills-registry]] — Реестр всех навыков по интерфейсам
 - [[tech/landing]] — Лендинг rem2222.top с карточками сервисов
 - [[tech/markitdown]] — Microsoft конвертер документов в Markdown
+- [[tech/metadata-1c]] — генератор DevOps-отчётов по конфигурации 1С из XML
 - [[tech/mcp-inspector]] — MCP Inspector, отладка MCP серверов
 - [[tech/multica]] — Open-source managed agents platform
 - [[tech/naiveproxy]] — лучший способ обхода DPI в 2026
@@ -64,6 +69,8 @@ _Обновлено: 2026-05-22_
 - [[tech/smoon-docker]] — Остановка SMOON, очистка Docker, команды и структура
 - [[tech/specsmaxxing]] — Spec-Driven Development с ACID tracking (Acai.sh)
 - [[tech/vibe-coding-workflow]] — 5-phase structured workflow для AI-assisted development
+- [[tech/skillopt]] — Microsoft Research: оптимизация skill-документов через ReflACT тренировочный цикл
+- [[tech/webwright]] — Microsoft Research: веб-агенты через code-as-action (Python + Playwright)
 ## 1С
 - [[wiki/1c/mcp-1c-setup]] — настройка и использование MCP для 1С
 - [[wiki/1c/mcp-vs-builtin-token-analysis]] — MCP vs Built-in Tools, анализ токенов
@@ -76,6 +83,14 @@ _Обновлено: 2026-05-22_
 - [[tools/openclawfice]] — AI-агенты как в Sims (openclawfice.com)
 - [[tools/v8std-mcp]] — стандарты разработки 1С для ИИ-помощников (v8std.ru/mcp)
 
+## Память AI-агентов (Memory)
+- [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)
+- [[tech/gbrain-lossless-agent-memory]] — GBrain + Lossless для OpenClaw и Hermes
+- [[tech/MemPalace-Hermes-Integration]] — MemPalace × Hermes через gateway hook
+- [[tech/agentmemory-vs-current]] — agentmemory vs текущий стек памяти
+- [[tech/tencentdb-agent-memory]] — TencentDB Agent Memory
+- [[tools/find-skills]] — мета-скилл для поиска agent-скиллов через CLI (npx skills, skills.sh)
+
 ## Статьи
 - [[articles/adam-multiagent]] — мультиагентная система Adam
 - [[articles/anthropic-claude-code]] — использование Claude Code от Anthropic
@@ -83,6 +98,7 @@ _Обновлено: 2026-05-22_
 
 ## События
 - [[events/1cvibeconf-2026]] — 2-я практическая конференция по вайбкодингу в 1С (22-23 мая 2026)
+- [[events/gpt5-free-announcement]] — GPT-5 стал полностью бесплатным для всех (27 мая 2026, Greg Brockman)
 
 ## Видео
 - [[videos/claude-opensource-llm-openclaw-runpod]] — Claude без подписки: Opensource LLM + OpenClaw на RunPod
