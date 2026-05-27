@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-05-27_
+_Обновлено: 2026-05-28_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
@@ -71,6 +71,20 @@ _Обновлено: 2026-05-27_
 - [[tech/vibe-coding-workflow]] — 5-phase structured workflow для AI-assisted development
 - [[tech/skillopt]] — Microsoft Research: оптимизация skill-документов через ReflACT тренировочный цикл
 - [[tech/webwright]] — Microsoft Research: веб-агенты через code-as-action (Python + Playwright)
+- [[tech/cc-websearch]] — поисковый плагин для Claude Code (multi-engine: Google, Bing, SerpAPI, Tavily)
+- [[tech/context7]] — MCP-сервер документации библиотек для AI-агентов
+- [[tech/z-ai]] — AI-поисковик с MCP для Claude Code
+- [[tech/serena-mcp]] — LSP MCP-сервер — IDE-интеллект для Claude Code
+- [[tech/caveman]] — skill для Claude Code, сокращает многословие модели на ~75%
+- [[tech/sequential-thinking]] — Sequential Thinking skill для Claude Code
+- [[tech/go-skills-claude-code]] — набор Go-плагинов для Claude Code (modern-go-guidelines, cc-skills-golang, go-best-practices)
+- [[tech/gopilot]] — Go AI coding agent для Claude Code
+- [[tech/claude-plugin-dev-tools]] — три официальных инструмента Anthropic для разработки плагинов (plugin-dev, skill-creator, mcp-server-dev)
+- [[tech/gsd]] — GSD (Get Shit Done) SDD-фреймворк
+- [[tech/bmad-method]] — BMAD-METHOD SDD-фреймворк (Architecture First)
+- [[tech/agent-skills-marketplace]] — skillsmp.com — агрегатор skills для Claude Code
+- [[tech/sourcecraft]] — AI-помощник для понимания кода (sourcecraft.dev)
+- [[tech/deepseek-error400-fix]] — фикс Error 400 для DeepSeek V4 в Claude Code
 ## 1С
 - [[wiki/1c/mcp-1c-setup]] — настройка и использование MCP для 1С
 - [[wiki/1c/mcp-vs-builtin-token-analysis]] — MCP vs Built-in Tools, анализ токенов
@@ -82,8 +96,10 @@ _Обновлено: 2026-05-27_
 - [[tools/linear-cli]] — CLI-утилита для работы с Linear
 - [[tools/openclawfice]] — AI-агенты как в Sims (openclawfice.com)
 - [[tools/v8std-mcp]] — стандарты разработки 1С для ИИ-помощников (v8std.ru/mcp)
+- [[tools/go-enumsafety]] — Go-линтер для безопасной работы с enum (sum types)
 
 ## Память AI-агентов (Memory)
+- [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
 - [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)
 - [[tech/gbrain-lossless-agent-memory]] — GBrain + Lossless для OpenClaw и Hermes
 - [[tech/MemPalace-Hermes-Integration]] — MemPalace × Hermes через gateway hook

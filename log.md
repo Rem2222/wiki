@@ -116,3 +116,22 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Создана [[tech/agent-memory-research-2026]] — исследование 40+ решений для долговременной памяти агентов
 - Обновлён index.md — добавлена секция "Память AI-агентов (Memory)"
 - Итог: выбраны связка agentmemory + GBrain для установки
+
+## 2026-05-27 18:00: ingest | 16 источников (статья на Habr про harness для Claude Code)
+
+Добавлены страницы из статьи «Рабочее место не-вайбкодера: настраиваем harness» (https://habr.com/ru/companies/yadro/articles/1038084/):
+- [[tech/cc-websearch]] — поисковый плагин для Claude Code
+- [[tech/context7]] — MCP документации библиотек
+- [[tech/z-ai]] — AI-поисковик с MCP
+- [[tech/serena-mcp]] — LSP через MCP
+- [[tech/caveman]] — сокращение многословия модели
+- [[tech/sequential-thinking]] — пошаговые рассуждения
+- [[tech/go-skills-claude-code]] — Go-плагины (3 шт.)
+- [[tech/gopilot]] — Go AI coding agent
+- [[tech/claude-plugin-dev-tools]] — plugin-dev, skill-creator, mcp-server-dev
+- [[tech/gsd]] — Get Shit Done SDD-фреймворк
+- [[tech/bmad-method]] — BMAD SDD-фреймворк
+- [[tech/agent-skills-marketplace]] — skillsmp.com
+- [[tech/sourcecraft]] — AI-объяснение кода
+- [[tech/deepseek-error400-fix]] — фикс DeepSeek V4
+- [[tools/go-enumsafety]] — Go enum linter
