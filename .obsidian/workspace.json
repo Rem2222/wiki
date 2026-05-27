@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/tradingagents.md",
+                "file": "tech/MemPalace-Hermes-Integration.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tradingagents"
+              "title": "MemPalace-Hermes-Integration"
             }
           }
         ]
@@ -201,6 +201,21 @@
   },
   "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
+    "wiki/tools/find-skills.md",
+    "wiki/tech/webwright.md",
+    "wiki/tech/skillopt.md",
+    "wiki/tech/metadata-1c.md",
+    "wiki/tech/mempalace-viz.md",
+    "wiki/tech/assemblyai.md",
+    "wiki/tech/agents-best-practices.md",
+    "wiki/tech/agentation.md",
+    "wiki/events/gpt5-free-announcement.md",
+    "wiki/tools",
+    "wiki/tech",
+    "wiki/events",
+    "wiki",
+    "tech/agent-memory-research-2026.md",
+    "concepts/tradingagents.md",
     "concepts/index.md",
     "concepts/doxygen.md",
     "tech/beszel.md",
@@ -216,26 +231,11 @@
     "tech/landing.md",
     "tech/hysteria-realm.md",
     "tech/hysteria-clients.md",
-    "tech/gbrain-lossless-agent-memory.md",
-    "tech/freellmapi.md",
-    "tech/duc.md",
-    "tech/cockpit.md",
-    "tech/cloakbrowser.md",
-    "tech/authelia.md",
-    "tech/agentmemory-vs-current.md",
-    "tech/jawl-multiagent.md",
-    "tech/jawl.md",
-    "index.md",
-    "tech/tencentdb-agent-memory.md",
     "videos/trading",
     "syntheses",
     "sources",
     "projects",
     "entities",
-    "concepts",
-    "reports",
-    "videos",
-    "tools",
-    "events"
+    "concepts"
   ]
 }
