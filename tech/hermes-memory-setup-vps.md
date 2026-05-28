@@ -39,6 +39,19 @@ agentmemory (npm) → MCP Server (@agentmemory/mcp) → iii-engine (демон l
 | `memory_audit` | Аудит операций памяти |
 | `memory_governance_delete` | Удаление с аудит-трейлом |
 
+### Авто-хуки (plugin для Hermes, 6 шт.)
+
+Установлен официальный plugin от agentmemory в `~/.hermes/plugins/agentmemory/`:
+
+| Хук | Когда срабатывает | Что делает |
+|-----|------------------|-----------|
+| `system_prompt_block()` | Старт сессии | Инжектит project profile (концепции, файлы, паттерны) |
+| `prefetch()` | Перед каждым LLM-вызовом | Ищет релевантные воспоминания, вставляет в контекст |
+| `sync_turn()` | После ответа агента | Сохраняет user+assistant как наблюдение |
+| `on_session_end()` | Завершение сессии | Маркирует сессию для суммаризации |
+| `on_pre_compress()` | Перед сжатием контекста | Ре-инжектит контекст из памяти |
+| `on_memory_write()` | Запись MEMORY.md | Дублирует запись в agentmemory |
+
 ### Установка
 
 ```bash
