@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tech/MemPalace-Hermes-Integration.md",
-                "mode": "preview",
+                "file": "tech/sdd-deep-guide.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MemPalace-Hermes-Integration"
+              "title": "sdd-deep-guide"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "sdd",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,6 +201,8 @@
   },
   "active": "aa8ef7ea5f00502a",
   "lastOpenFiles": [
+    "wiki/tech/gsd.md",
+    "tech/MemPalace-Hermes-Integration.md",
     "wiki/tech/openspec.md",
     "wiki/tech/gsd-multica-integration.md",
     "wiki/tech/bmad-multica-integration.md",
@@ -210,7 +212,6 @@
     "wiki/tech/sourcecraft.md",
     "wiki/tech/serena-mcp.md",
     "wiki/tech/sequential-thinking.md",
-    "wiki/tech/gsd.md",
     "wiki/tech/gopilot.md",
     "wiki/tech/go-skills-claude-code.md",
     "wiki/tech/deepseek-error400-fix.md",
@@ -226,7 +227,6 @@
     "wiki/tech/skillopt.md",
     "wiki/tech/metadata-1c.md",
     "wiki/tech/mempalace-viz.md",
-    "wiki/tech/assemblyai.md",
     "wiki/tools",
     "wiki/tech",
     "wiki/events",
