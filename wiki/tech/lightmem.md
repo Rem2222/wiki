@@ -1,7 +1,7 @@
 ---
 description: LightMem — лёгкий и эффективный фреймворк управления памятью для LLM/агентов (ICLR 2026)
 tags: [memory, agents, llm, mcp, iclr2026, removed]
-related: [[tech/hermes-memory-setup-vps]] [[tech/agentmemory-vs-current]] [[wiki/tech/context7]]
+related: [[tech/hermes-memory-setup-vps]] [[tech/agentmemory-vs-current]] [[tech/context7]]
 status: removed
 removed_at: 2026-05-30
 removed_reason: Не даёт преимуществ перед уже установленными agentmemory + gbrain. Академическая поделка без автоматики и веб-морды.
@@ -76,4 +76,4 @@ LightMem/
 
 - [[tech/hermes-memory-setup-vps]] — настройка памяти в Hermes
 - [[tech/agentmemory-vs-current]] — сравнение memory провайдеров
-- [[wiki/tech/context7]] — MCP сервер документации
+- [[tech/context7]] — MCP сервер документации

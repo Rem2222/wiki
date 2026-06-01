@@ -1,7 +1,7 @@
 ---
 description: Визуализация графа знаний для MemPalace — D3.js force-directed graph с семантической кластеризацией, MCP интеграцией и Cloudflare zero-trust хостингом
 tags: [mempalace, vizualization, d3js, mcp, knowledge-graph]
-related: [[wiki/concepts/mcp]]
+related: [[concepts/mcp]]
 source: https://github.com/JoeDoesJits/mempalace-viz
 author: Joe Guarino / G5 Labs
 license: MIT
@@ -20,7 +20,7 @@ updated: 2026-05-27
 - **Граф:** D3.js v7 (force simulation)
 - **Рендеринг:** SVG nodes + Canvas particles
 - **Кластеризация:** TF-IDF + k-means++ на клиенте
-- **Данные:** MCP Streamable HTTP протокол ([[wiki/concepts/mcp]])
+- **Данные:** MCP Streamable HTTP протокол ([[concepts/mcp]])
 - **Хостинг:** Cloudflare Pages (free tier), CF Access + Tunnel
 - **Сборка:** ноль — единый HTML-файл, всё inline
 

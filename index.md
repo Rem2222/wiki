@@ -1,25 +1,25 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-05-28_
+_Обновлено: 2026-06-01_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
 
 ## Концепции
-- [[wiki/concepts/llm-wiki]] — паттерн персональных баз знаний с помощью LLM
-- [[wiki/concepts/rag]] — Retrieval-Augmented Generation, альтернативный подход
-- [[wiki/concepts/memex]] — проект Вэнивара Буша 1945, ассоциативное хранилище знаний
-- [[wiki/concepts/sdd]] — Spec-Driven Development, подход к разработке через спецификации
-- [[wiki/concepts/mcp]] — Model Context Protocol, открытый протокол для AI-интеграций
-- [[wiki/concepts/doxygen]] — генератор документации из исходного кода (C++, Java, Python...)
-- [[wiki/concepts/tradingagents]] — Multi-agent LLM фреймворк для алгоритмической торговли (UCLA + MIT)
+- [[concepts/llm-wiki]] — паттерн персональных баз знаний с помощью LLM
+- [[concepts/rag]] — Retrieval-Augmented Generation, альтернативный подход
+- [[concepts/memex]] — проект Вэнивара Буша 1945, ассоциативное хранилище знаний
+- [[concepts/sdd]] — Spec-Driven Development, подход к разработке через спецификации
+- [[concepts/mcp]] — Model Context Protocol, открытый протокол для AI-интеграций
+- [[concepts/doxygen]] — генератор документации из исходного кода (C++, Java, Python...)
+- [[concepts/tradingagents]] — Multi-agent LLM фреймворк для алгоритмической торговли (UCLA + MIT)
 
 ## SDD-Orchestrator v2 (2026-05-04)
-- [[wiki/tech/sdd-openspec-orchestrator-integration]] — Orchestrator Integration (что хотели для Оркестратора: QA Gate, multi-layer SDD, hybrid context)
-- [[wiki/tech/sdd-openspec-sdd-developer]] — SDD Developer Agent (детали SDD Developer: RFC 2119, workflow, self-validation, QA Gate)
-- [[wiki/tech/sdd-orchestrator-v2]] — Overview (старая версия, но содержит acceptance criteria)
-- [[wiki/tech/sdd-openspec-precommit]] — Pre-commit hook
-- [[wiki/tech/sdd-openspec-real-project]] — Real project integration
+- [[tech/sdd-openspec-orchestrator-integration]] — Orchestrator Integration (что хотели для Оркестратора: QA Gate, multi-layer SDD, hybrid context)
+- [[tech/sdd-openspec-sdd-developer]] — SDD Developer Agent (детали SDD Developer: RFC 2119, workflow, self-validation, QA Gate)
+- [[tech/sdd-orchestrator-v2]] — Overview (старая версия, но содержит acceptance criteria)
+- [[tech/sdd-openspec-precommit]] — Pre-commit hook
+- [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
 - [[tech/1c-mcp]] — MCP серверы для экосистемы 1С (vibecoding1c.ru)
@@ -87,8 +87,8 @@ _Обновлено: 2026-05-28_
 - [[tech/deepseek-error400-fix]] — фикс Error 400 для DeepSeek V4 в Claude Code
 - [[tech/revealjs]] — HTML Presentation Framework (презентации из Markdown, 71.5k ⭐)
 ## 1С
-- [[wiki/1c/mcp-1c-setup]] — настройка и использование MCP для 1С
-- [[wiki/1c/mcp-vs-builtin-token-analysis]] — MCP vs Built-in Tools, анализ токенов
+- [[tech/1c-mcp]] — настройка и использование MCP для 1С
+- [[tech/1c-mcp]] — MCP vs Built-in Tools, анализ токенов
 
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
@@ -126,21 +126,21 @@ _Обновлено: 2026-05-28_
 - [[misc/calendar-events]] — календарь событий 2026
 
 ## SDD-инструменты (детали)
-- [[wiki/tech/kiro]] — Kiro SDD-инструмент (kiro.dev)
-- [[wiki/tech/spec-kit]] — Spec-kit от GitHub
-- [[wiki/tech/tessl]] — Tessl Framework (docs.tessl.io)
+- [[tech/kiro]] — Kiro SDD-инструмент (kiro.dev)
+- [[tech/spec-kit]] — Spec-kit от GitHub
+- [[tech/tessl]] — Tessl Framework (docs.tessl.io)
 
 ## Obsidian & экосистема
-- [[wiki/tech/obsidian]] — приложение для заметок на основе markdown
-- [[wiki/tech/obsidian-web-clipper]] — браузерное расширение для конвертации статей
-- [[wiki/tech/qmd]] — локальная поисковая система для markdown
-- [[wiki/tech/dataview]] — плагин для запросов к метаданным Obsidian
-- [[wiki/tech/marp]] — презентации на основе markdown
-- [[wiki/tech/defuddle]] — инструмент для извлечения контента из веб-страниц
+- [[tech/obsidian]] — приложение для заметок на основе markdown
+- [[tech/obsidian-web-clipper]] — браузерное расширение для конвертации статей
+- [[tech/qmd]] — локальная поисковая система для markdown
+- [[tech/dataview]] — плагин для запросов к метаданным Obsidian
+- [[tech/marp]] — презентации на основе markdown
+- [[tech/defuddle]] — инструмент для извлечения контента из веб-страниц
 
 ## Прокси и инфраструктура
-- [[wiki/tech/openclaw-billing-proxy]] — OpenClaw Billing Proxy (автор: zacdcook)
-- [[wiki/tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
+- [[tech/openclaw-billing-proxy]] — OpenClaw Billing Proxy (автор: zacdcook)
+- [[tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
 
 ## Книги
 - [[books/ne-otkladyvay-na-zavtra]] — «Не откладывай на завтра» — Тимоти Пичил

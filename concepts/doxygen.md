@@ -39,14 +39,14 @@ Doxygen часто используется в [[tech/github-actions]] для а
 - `doxygen-action`
 - `Doxygen GitHub Pages Deploy Action`
 
-См. также: [[wiki/concepts/github-actions]]
+См. также: [[concepts/github-actions]]
 
 ## Альтернативы
 
 | Инструмент | Язык | Примечания |
 |---|---|---|
-| [[wiki/concepts/javadoc]] | Java | Аналог для Java |
-| [[wiki/concepts/sphinx]] | Python | Особенно для Python |
+| [[concepts/javadoc]] | Java | Аналог для Java |
+| [[concepts/sphinx]] | Python | Особенно для Python |
 | Doxygen | C/C++ | Стандарт де-факто |
 
 ## Ресурсы

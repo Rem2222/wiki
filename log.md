@@ -96,7 +96,7 @@ _Append-only. Формат: `## [дата] type | описание`_
 - [[articles/orchestrator-year]] — Год оркестраторов статья (2026-04-25)
 
 ## [2026-05-05] ingest | TradingAgents
-Создана страница [[wiki/concepts/tradingagents]] — мультиагентный LLM фреймворк для торговли. Источник: https://tradingagents-ai.github.io/. Создан raw/tradingagents.md. 5 ролей: Analysts → Researchers (Bull/Bear debate) → Trader → Risk Manager → Fund Manager. Ключевое: ReAct prompting, structured reports + natural language debate, quick/deep thinking models. Результаты: AAPL +26.6% (B&H -5.2%), Sharpe 8.21, MaxDD 0.91%.
+Создана страница [[concepts/tradingagents]] — мультиагентный LLM фреймворк для торговли. Источник: https://tradingagents-ai.github.io/. Создан raw/tradingagents.md. 5 ролей: Analysts → Researchers (Bull/Bear debate) → Trader → Risk Manager → Fund Manager. Ключевое: ReAct prompting, structured reports + natural language debate, quick/deep thinking models. Результаты: AAPL +26.6% (B&H -5.2%), Sharpe 8.21, MaxDD 0.91%.
 
 ## [2026-05-30] ingest | Moonin Papa — крипто-сканер
 Создана страница [[videos/moonin-papa-crypto-pumps-scanner]] — обзор видео Aaron Dishner (Moonin Papa) про бесплатный крипто-сканер bettertrader.io для поиска монет после пампа через spread и near 24h low фильтры. Расшифровка получена через Tor.
@@ -142,3 +142,15 @@ _Append-only. Формат: `## [дата] type | описание`_
 ## 2026-05-28 18:30: ingest | reveal.js
 
 - [[tech/revealjs]] — HTML Presentation Framework (Hakim El Hattab, 71.5k ⭐)
+
+## 2026-06-01 16:00: maintenance | полный аудит вики
+
+Полный аудит и обслуживание вики:
+- Созданы недостающие страницы концепций: concepts/sdd, concepts/mcp, concepts/rag, concepts/llm-wiki, concepts/memex, concepts/github-actions, concepts/javadoc, concepts/sphinx
+- Созданы tech/kiro и tech/tessl
+- Исправлены ~20 битых вики-ссылок (wiki/ → правильный путь)
+- Переименован tech/Mercury Agent Skills.md → tech/Mercury-Agent-Skills.md
+- Добавлен frontmatter tech/Mercury-Agent-Skills.md
+- Исправлены пути в index.md и log.md
+- Обновлён SCHEMA.md (удалены template artifacts)
+- Все wiki/ префиксы приведены к единому стандарту

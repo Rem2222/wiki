@@ -1,7 +1,7 @@
 ---
 description: Self-hosted синхронизация Obsidian через CouchDB за nginx reverse proxy с HTTPS. Установка CouchDB в Docker, настройка nginx, подключение LiveSync plugin.
 tags: [obsidian, livesync, couchdb, sync, docker, self-hosted, nginx, https]
-related: [[wiki/tech/obsidian]], [[tech/obsidian-plugins]], couchdb
+related: [[tech/obsidian]], [[tech/obsidian-plugins]], couchdb
 ---
 
 # Obsidian LiveSync

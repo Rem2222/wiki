@@ -1,7 +1,7 @@
 ---
 description: SDD-фреймворк «Get Shit Done» — интервью-ориентированный подход к SDD
 tags: [sdd, framework, specification, claude-code]
-related: [[concepts/sdd]] [[tech/bmad-method]] [[tech/openspec]] [[wiki/tech/spec-kit]]
+related: [[concepts/sdd]] [[tech/bmad-method]] [[tech/openspec]] [[tech/spec-kit]]
 ---
 
 # GSD — Get Shit Done

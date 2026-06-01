@@ -1,4 +1,10 @@
+---
+description: Исследование AI-агентов и Mercury Agent
+tags: [agent, ai, research]
+---
+
 # Mercury Agent Skills
+
 
 ## Описание
 
