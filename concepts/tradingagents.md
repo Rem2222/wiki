@@ -1,12 +1,7 @@
-# TradingAgents
-
-**Type:** concept
-**Created:** 2026-05-05
-**Updated:** 2026-05-05
-**Tags:** [multi-agent, llm, trading, fintech, react, rag]
-**Sources:** [raw/tradingagents.md]
-**Related:** [[concepts/multi-agent]], [[concepts/react]], Stock Trading
-
+---
+description: Мультиагентный LLM-фреймворк для алгоритмической торговли (UCLA + MIT)
+tags: [multi-agent, llm, trading, fintech]
+related: [[concepts/sdd]] [[concepts/mcp]]
 ---
 
 # TradingAgents

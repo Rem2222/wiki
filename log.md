@@ -154,3 +154,9 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Исправлены пути в index.md и log.md
 - Обновлён SCHEMA.md (удалены template artifacts)
 - Все wiki/ префиксы приведены к единому стандарту
+
+## [2026-06-01] ingest | Ozon API инструменты (2 страницы)
+
+- Создана [[tech/ozon-seller-api]] — MCP-серверы, SDK, библиотеки, парсеры для Ozon Seller API
+- Создана [[tech/ozon-purchase-history]] — расширение Chrome + Python-парсер для скачивания покупок из ЛК
+- Обновлён index.md

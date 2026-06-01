@@ -86,6 +86,8 @@ _Обновлено: 2026-06-01_
 - [[tech/sourcecraft]] — AI-помощник для понимания кода (sourcecraft.dev)
 - [[tech/deepseek-error400-fix]] — фикс Error 400 для DeepSeek V4 в Claude Code
 - [[tech/revealjs]] — HTML Presentation Framework (презентации из Markdown, 71.5k ⭐)
+- [[tech/ozon-seller-api]] — Ozon Seller API: MCP, SDK, библиотеки для Python/Go/PHP/TS/C#
+- [[tech/ozon-purchase-history]] — Ozon история покупок: Chrome-расширение и Python-парсер для экспорта заказов
 ## 1С
 - [[tech/1c-mcp]] — настройка и использование MCP для 1С
 - [[tech/1c-mcp]] — MCP vs Built-in Tools, анализ токенов
