@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sdd",
+                "query": "Game",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Закладки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,34 +200,36 @@
       "obsidian-livesync:Show Customization sync": false
     }
   },
-  "active": "aa8ef7ea5f00502a",
+  "active": "9e2521d7ee1ee82d",
   "lastOpenFiles": [
-    "wiki/tech/gsd.md",
-    "tech/MemPalace-Hermes-Integration.md",
-    "wiki/tech/openspec.md",
-    "wiki/tech/gsd-multica-integration.md",
-    "wiki/tech/bmad-multica-integration.md",
-    "tech/gsd-multica-integration.md",
-    "wiki/tools/go-enumsafety.md",
-    "wiki/tech/z-ai.md",
-    "wiki/tech/sourcecraft.md",
-    "wiki/tech/serena-mcp.md",
-    "wiki/tech/sequential-thinking.md",
-    "wiki/tech/gopilot.md",
-    "wiki/tech/go-skills-claude-code.md",
-    "wiki/tech/deepseek-error400-fix.md",
-    "wiki/tech/context7.md",
-    "wiki/tech/claude-plugin-dev-tools.md",
-    "wiki/tech/cc-websearch.md",
-    "wiki/tech/caveman.md",
-    "wiki/tech/bmad-method.md",
-    "wiki/tech/agent-skills-marketplace.md",
-    "tech/hermes-memory-setup-vps.md",
-    "wiki/tools/find-skills.md",
-    "wiki/tech/webwright.md",
-    "wiki/tech/skillopt.md",
-    "wiki/tech/metadata-1c.md",
-    "wiki/tech/mempalace-viz.md",
+    "wiki/videos/moonin-papa-crypto-pumps-scanner.md",
+    "wiki/videos",
+    "wiki/tech/lightmem.md",
+    "wiki/tech/cli-printing-press.md",
+    "tools/go-enumsafety.md",
+    "tools/find-skills.md",
+    "tech/z-ai.md",
+    "tech/webwright.md",
+    "tech/sourcecraft.md",
+    "tech/skillopt.md",
+    "tech/serena-mcp.md",
+    "tech/sequential-thinking.md",
+    "tech/metadata-1c.md",
+    "tech/mempalace-viz.md",
+    "tech/gsd.md",
+    "tech/gopilot.md",
+    "tech/go-skills-claude-code.md",
+    "tech/deepseek-error400-fix.md",
+    "tech/context7.md",
+    "tech/claude-plugin-dev-tools.md",
+    "tech/cc-websearch.md",
+    "tech/caveman.md",
+    "tech/bmad-multica-integration.md",
+    "tech/bmad-method.md",
+    "tech/assemblyai.md",
+    "tech/agents-best-practices.md",
+    "tech/agentation.md",
+    "gamedev",
     "wiki/tools",
     "wiki/tech",
     "wiki/events",
@@ -234,8 +237,6 @@
     "videos/trading",
     "syntheses",
     "sources",
-    "projects",
-    "entities",
-    "concepts"
+    "projects"
   ]
 }
