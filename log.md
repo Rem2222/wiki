@@ -138,3 +138,7 @@ _Append-only. Формат: `## [дата] type | описание`_
 - [[tech/sourcecraft]] — AI-объяснение кода
 - [[tech/deepseek-error400-fix]] — фикс DeepSeek V4
 - [[tools/go-enumsafety]] — Go enum linter
+
+## 2026-05-28 18:30: ingest | reveal.js
+
+- [[tech/revealjs]] — HTML Presentation Framework (Hakim El Hattab, 71.5k ⭐)

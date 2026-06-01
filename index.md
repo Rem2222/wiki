@@ -85,6 +85,7 @@ _Обновлено: 2026-05-28_
 - [[tech/agent-skills-marketplace]] — skillsmp.com — агрегатор skills для Claude Code
 - [[tech/sourcecraft]] — AI-помощник для понимания кода (sourcecraft.dev)
 - [[tech/deepseek-error400-fix]] — фикс Error 400 для DeepSeek V4 в Claude Code
+- [[tech/revealjs]] — HTML Presentation Framework (презентации из Markdown, 71.5k ⭐)
 ## 1С
 - [[wiki/1c/mcp-1c-setup]] — настройка и использование MCP для 1С
 - [[wiki/1c/mcp-vs-builtin-token-analysis]] — MCP vs Built-in Tools, анализ токенов
