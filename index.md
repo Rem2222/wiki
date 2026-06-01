@@ -118,6 +118,7 @@ _Обновлено: 2026-05-28_
 
 ## Видео
 - [[videos/claude-opensource-llm-openclaw-runpod]] — Claude без подписки: Opensource LLM + OpenClaw на RunPod
+- [[videos/moonin-papa-crypto-pumps-scanner]] — Moonin Papa: бесплатный крипто-сканер для поиска монет после пампа
 
 ## Разное
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki
