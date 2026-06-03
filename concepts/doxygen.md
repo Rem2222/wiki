@@ -1,4 +1,9 @@
-# Doxygen
+---
+description: | Разработчик | Dimitri van Heesch |
+tags: [concept]
+---
+
+# doxygen
 
 **Doxygen** — генератор документации из исходного кода. Извлекает информацию из специально форматированных комментариев и генерирует документацию в различных форматах.
 
@@ -35,7 +40,7 @@ C/C++ (основной), Java, Python, C#, PHP, Fortran, Objective-C, VHDL, IDL
 
 ## GitHub интеграция
 
-Doxygen часто используется в [[tech/github-actions]] для автоматической сборки документации и деплоя на GitHub Pages. Доступны экшены:
+Doxygen часто используется в [[concepts/github-actions]] для автоматической сборки документации и деплоя на GitHub Pages. Доступны экшены:
 - `doxygen-action`
 - `Doxygen GitHub Pages Deploy Action`
 

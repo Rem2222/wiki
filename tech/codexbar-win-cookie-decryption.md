@@ -1,6 +1,6 @@
 ---
 title: "CodexBar-Win Cookie Decryption"
-description: ""
+description: description: CodexBar-Win умеет расшифровывать Chromium cookies через DPAPI + AES-GCM. Эта технология позволяет создавать API для извлечения кукисов из Chrome/Edge/Brave.
 tags: [browser, cookies, DPAPI, AES-GCM, Windows, Chromium]
 related: [[tech/cookie-decryptor]]
 ---
@@ -82,7 +82,7 @@ from cookie_decryptor import CookieDecryptor
 
 decryptor = CookieDecryptor(browser='chrome')
 
-# Получить кукис для домена
+## Получить кукис для домена
 cookie = decryptor.get_cookie('.opencode.ai', 'sessionKey')
 print(cookie.value)  # sess_xxxxx...
 

@@ -29,13 +29,13 @@ Go best practices (создан для Gemini, ставится руками).
 ## Установка
 
 ```bash
-# modern-go-guidelines — стандартный claude plugin
+## modern-go-guidelines — стандартный claude plugin
 claude plugin install modern-go-guidelines
 
-# cc-skills-golang
+## cc-skills-golang
 claude plugin install cc-skills-golang
 
-# go-best-practices — руками в .claude/skills/
+## go-best-practices — руками в .claude/skills/
 ```
 
 ## Нужно ли

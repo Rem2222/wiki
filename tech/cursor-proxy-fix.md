@@ -1,6 +1,6 @@
 ---
 title: "Cursor + Proxy Fix"
-description: ""
+description: title: "Cursor + Proxy Fix"
 tags: [cursor, proxy, Vless, Xray, Claude, API]
 related: [[tech/naiveproxy]], [[multica]]
 ---

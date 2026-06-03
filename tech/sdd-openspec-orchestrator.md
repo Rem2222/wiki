@@ -96,7 +96,7 @@ Each implementation artifact SHALL reference the requirement it satisfies.
 
 Example in code:
 ```python
-# Requirement: jawl-uptime-display.spec.md §3.1
+## Requirement: jawl-uptime-display.spec.md §3.1
 # "The system SHALL display uptime in format Xd Xh Xm"
 def format_uptime(start_time: float) -> str:
     ...

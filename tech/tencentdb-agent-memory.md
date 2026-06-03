@@ -1,4 +1,9 @@
-# TencentDB Agent Memory
+---
+description: Полностью локальная система долговременной памяти для AI-агентов, без внешних API-зависимостей.
+tags: [tech]
+---
+
+# tencentdb-agent-memory
 
 **Репозиторий:** https://github.com/Tencent/TencentDB-Agent-Memory
 **Лицензия:** MIT

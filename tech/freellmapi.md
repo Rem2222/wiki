@@ -1,4 +1,9 @@
-# FreeLLMAPI
+---
+description: OpenAI-совместимый прокси, агрегирующий бесплатные tier'ы от 11+ AI-провайдеров в единый `/v1/chat/completions` endpoint. Суммарно ~1.3 млрд токенов/мес.
+tags: [tech]
+---
+
+# freellmapi
 
 **Репозиторий:** https://github.com/tashfeenahmed/freellmapi
 **Звёзд:** ~2k, **Форков:** ~286

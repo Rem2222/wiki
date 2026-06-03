@@ -1,4 +1,9 @@
-# CloakBrowser
+---
+description: Заметка о CloakBrowser
+tags: [tech]
+---
+
+# cloakbrowser
 
 **CloakHQ/CloakBrowser** — Stealth Chromium с изменёнными fingerprint-ами на уровне C++ исходников.
 

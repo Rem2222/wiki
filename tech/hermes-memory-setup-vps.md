@@ -1,4 +1,9 @@
-# Настройка памяти Hermes Agent на VPS (80.241.218.110)
+---
+description: На VPS настроены две системы долговременной памяти для Hermes Agent:
+tags: [tech]
+---
+
+# hermes-memory-setup-vps
 
 **Дата настройки:** 27-28 мая 2026
 **Сервер:** Contabo VPS, IP 80.241.218.110
@@ -55,10 +60,10 @@ agentmemory (npm) → MCP Server (@agentmemory/mcp) → iii-engine (демон l
 ### Установка
 
 ```bash
-# iii-engine (установился через MCP сервер, Option 1)
-# Бинарник: ~/.local/bin/iii
+## iii-engine (установился через MCP сервер, Option 1)
+## Бинарник: ~/.local/bin/iii
 
-# MCP-сервер в config.yaml:
+## MCP-сервер в config.yaml:
 npx -y @agentmemory/mcp
 ```
 
@@ -86,7 +91,7 @@ gbrain (Bun/TypeScript) → PGLite (встроенная БД) → Embbeddings (
 ### Что внутри
 
 ```bash
-# После импорта:
+## После импорта:
 gbrain status
 #   Sync: default  130 pages  embed=100%
 ```

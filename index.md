@@ -133,10 +133,10 @@ _Обновлено: 2026-06-01_
 - [[tech/tessl]] — Tessl Framework (docs.tessl.io)
 
 ## Obsidian & экосистема
-- [[tech/obsidian]] — приложение для заметок на основе markdown
+- [[tech/obsidian-plugins]] — приложение для заметок на основе markdown
 - [[tech/obsidian-web-clipper]] — браузерное расширение для конвертации статей
 - [[tech/qmd]] — локальная поисковая система для markdown
-- [[tech/dataview]] — плагин для запросов к метаданным Obsidian
+- [[tech/obsidian-plugins]] — плагин для запросов к метаданным Obsidian
 - [[tech/marp]] — презентации на основе markdown
 - [[tech/defuddle]] — инструмент для извлечения контента из веб-страниц
 

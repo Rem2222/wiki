@@ -24,25 +24,25 @@ Spec-driven development для AI-агентов. Вместо "пишу код 
 ## Быстрый старт
 
 ```bash
-# Инициализация
+## Инициализация
 openspec init --tools opencode
 
-# Создать change
+## Создать change
 openspec new change my-feature
 
-# Генерация артефактов (в порядке зависимостей)
+## Генерация артефактов (в порядке зависимостей)
 openspec instructions proposal --change my-feature   # template для proposal.md
 openspec instructions specs --change my-feature     # template для spec.md
 openspec instructions design --change my-feature     # template для design.md
 openspec instructions tasks --change my-feature      # template для tasks.md
 
-# Статус
+## Статус
 openspec status --change my-feature
 
-# Валидация
+## Валидация
 openspec validate my-feature
 
-# Архивация (мерджит specs)
+## Архивация (мерджит specs)
 openspec archive my-feature --yes
 ```
 

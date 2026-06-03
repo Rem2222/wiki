@@ -1,4 +1,5 @@
 ---
+description: Параметры конфигурации JAWL.
 created: 2026-05-01
 tags: [jawl, config, models, reference]
 parent: "[[tech/jawl]]"

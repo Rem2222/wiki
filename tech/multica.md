@@ -37,7 +37,7 @@ Open-source платформа для управления AI-агентами. 
 git clone https://github.com/multica-ai/multica.git
 cd multica
 cp .env.example .env
-# Edit .env — change JWT_SECRET at minimum
+## Edit .env — change JWT_SECRET at minimum
 docker compose -f docker-compose.selfhost.yml up -d
 ```
 
@@ -50,11 +50,11 @@ https://multica.ai/app — без установки
 ## OpenClaw Integration
 
 ```bash
-# Установить CLI
+## Установить CLI
 brew tap multica-ai/tap
 brew install multica
 
-# Авторизоваться и запустить daemon
+## Авторизоваться и запустить daemon
 multica login
 multica daemon start
 ```

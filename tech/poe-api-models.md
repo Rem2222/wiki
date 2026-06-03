@@ -1,4 +1,9 @@
-# Poe API — Models & Pricing
+---
+description: Подписки Poe включают API-доступ. OpenAI-compatible.
+tags: [tech]
+---
+
+# poe-api-models
 
 **API Key:** `sk-poe-gF8zqW-x7iDLO_jLCbR1eW0Ogn9llHGj3CoIN4mELQY`
 

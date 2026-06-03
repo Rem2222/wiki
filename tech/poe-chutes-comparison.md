@@ -1,4 +1,9 @@
-# Poe & Chutes AI — Comparison
+---
+description: Unified API for hundreds of models. OpenAI-compatible.
+tags: [tech]
+---
+
+# poe-chutes-comparison
 
 **Date:** 2026-05-11
 **Context:** Gist mcowger/892fb83ca3bbaf4cdc7a9f2d7c45b081 (KiloCode related), testing new providers for coding

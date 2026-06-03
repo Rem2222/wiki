@@ -1,4 +1,5 @@
 ---
+description: Бесконечный цикл reasoning → action → observation. Сердце агента.
 created: 2026-05-01
 tags: [jawl, react, flow, reference]
 parent: "[[tech/jawl]]"

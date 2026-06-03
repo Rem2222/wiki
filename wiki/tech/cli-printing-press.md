@@ -44,13 +44,13 @@ curl -fsSL https://raw.githubusercontent.com/mvanhorn/cli-printing-press/main/sc
 ## Использование
 
 ```bash
-# Напечатать CLI для API по имени
+## Напечатать CLI для API по имени
 /printing-press Notion
 
-# По URL (даже без OpenAPI specs)
+## По URL (даже без OpenAPI specs)
 /printing-press https://postman.com/explore
 
-# Перепечатать существующий
+## Перепечатать существующий
 /printing-press-reprint notion
 ```
 

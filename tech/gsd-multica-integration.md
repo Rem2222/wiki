@@ -127,7 +127,7 @@ GSD поставляет 33 агента с ролями, инструмента
 git clone https://github.com/multica-ai/multica.git
 cd multica
 cp .env.example .env
-# Отредактировать .env — минимум JWT_SECRET
+## Отредактировать .env — минимум JWT_SECRET
 docker compose -f docker-compose.selfhost.yml up -d
 ```
 
@@ -145,10 +145,10 @@ multica daemon start
 Для каждого GSD-агента, который будет работать через Multica:
 
 ```bash
-# Установить GSD (если агент — Claude Code или Codex)
+## Установить GSD (если агент — Claude Code или Codex)
 gsd install
 
-# Проверить установку
+## Проверить установку
 gsd --version
 ```
 
@@ -160,7 +160,7 @@ Multica runtime (`AGENTS.md`) будет содержать:
 
 ```markdown
 <!-- BEGIN MULTICA-RUNTIME (auto-managed; do not edit) -->
-# Multica Agent Runtime
+## Multica Agent Runtime
 
 You are a GSD agent in the Multica platform.
 
@@ -177,7 +177,7 @@ You are a GSD agent in the Multica platform.
 Поверх него GSD добавляет свой Agent Card:
 
 ```markdown
-# GSD Agent Role
+## GSD Agent Role
 
 **You are gsd-planner.** You create executable phase plans.
 - Tools: Read, Write, Bash, Glob, Grep, WebFetch, mcp
@@ -196,22 +196,22 @@ You are a GSD agent in the Multica platform.
 #### Исполнение агентом
 
 ```bash
-# Агент получает задачу
+## Агент получает задачу
 multica issue get MUL-123 --output json
 
-# Переключает статус
+## Переключает статус
 multica issue status MUL-123 in_progress
 
-# Чекаутит репозиторий
+## Чекаутит репозиторий
 multica repo checkout https://github.com/user/project.git
 
-# Запускает GSD-пайплайн
+## Запускает GSD-пайплайн
 /gsd-plan-phase          # или эквивалент gsd CLI
 
-# По окончании — комментарий
+## По окончании — комментарий
 multica issue comment add MUL-123 --content "Phase plan created: auth-1-PLAN.md. 3 tasks, dependency wave 1→2. Ready for review."
 
-# Переключает статус
+## Переключает статус
 multica issue status MUL-123 done
 ```
 

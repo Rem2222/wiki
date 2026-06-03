@@ -1,10 +1,10 @@
 ---
+description: Hermes Agent перешагнул отметку в 90 000 звезд на GitHub за два месяца. Разработчики тихо строят персональных ИИ-агентов, которые изучают их рабочий процесс, помнят контекст и работают 24/7.
 title: "Hermes Agent Masterclass"
 tags: [hermes-agent, tutorial, guide, перевод]
 source: "https://x.com/akshay_pachaar/status/2054564519280804028"
 author: "Akshay 🚀 (@akshay_pachaar)"
 date: 2026-05-13
----
 
 # Hermes Agent Masterclass — перевод
 
@@ -109,7 +109,7 @@ Hermes решает это одним файлом: `SOUL.md`.
 Он лежит в `~/.hermes/SOUL.md` и занимает слот №1 в системном промпте, перед всем остальным. Он определяет личность агента, тон, стиль общения и жёсткие границы.
 
 ```markdown
-# SOUL.md
+## SOUL.md
 You are a pragmatic senior engineer with strong taste.
 You optimize for truth, clarity, and usefulness
 over politeness theater.
@@ -414,7 +414,7 @@ hermes -p researcher gateway setup
 **Дизайнер** (`~/.hermes/profiles/designer/SOUL.md`):
 
 ```markdown
-# Soul
+## Soul
 
 You are an expert at creating hand-drawn illustrations that explain
 AI, machine learning, and software engineering concepts. Think
@@ -431,7 +431,7 @@ illustration would hurt more than help.
 **Программист** (`~/.hermes/profiles/programmer/SOUL.md`):
 
 ```markdown
-# Soul
+## Soul
 
 You are my staff engineer. Terse, direct, pragmatic.
 
@@ -446,7 +446,7 @@ tests? What breaks if this fails? Run the tests before saying "done."
 **Исследователь** (`~/.hermes/profiles/researcher/SOUL.md`):
 
 ```markdown
-# Soul
+## Soul
 
 You are my deep researcher for the AI and machine learning space.
 Your main job is a daily Telegram digest of what's new and what

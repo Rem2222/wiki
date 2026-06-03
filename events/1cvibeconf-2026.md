@@ -1,4 +1,5 @@
 ---
+description: Организаторы: канал IT Does Matter + vibecoding1c.ru
 title: 1CVibeConf 2026
 created: 2026-04-18
 source: https://t.me/comol_it_does_matter/1564

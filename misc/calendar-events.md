@@ -1,6 +1,6 @@
 ---
 title: "Calendar Events"
-description: ""
+description: Заметка о Calendar Events
 tags: [calendar, events, planning]
 related: 
 ---

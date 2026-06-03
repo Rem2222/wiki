@@ -1,4 +1,9 @@
-# UI/UX Pro Max vs Наш скилл — Анализ
+---
+description: | | UI/UX Pro Max | Наш скилл |
+tags: [tech]
+---
+
+# ui-ux-pro-max-analysis
 
 **Дата:** 2026-05-02
 **Автор:** Romul

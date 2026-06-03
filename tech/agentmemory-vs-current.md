@@ -1,4 +1,9 @@
-# agentmemory vs текущий стек памяти
+---
+description: | Параметр | Текущий стек | agentmemory |
+tags: [tech]
+---
+
+# agentmemory-vs-current
 
 **agentmemory** (rohitg00/agentmemory) — npm-пакет для персистентной памяти AI-агентов.
 

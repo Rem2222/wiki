@@ -1,4 +1,9 @@
-# mcpservers.org
+---
+description: Featured, All, Official 🌟, Search, Web Scraping, Communication, Productivity, Marketing, Design, Memory, Finance, Development, Database, Cloud Service, File System, Cloud Storage, Version Control, ...
+tags: [tech]
+---
+
+# mcpservers
 
 **Сайт:** https://mcpservers.org
 **Суть:** Каталог MCP (Model Context Protocol) серверов — поиск, категории, фичеринг.

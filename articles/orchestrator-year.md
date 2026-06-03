@@ -1,6 +1,7 @@
 ---
+description: Adam (adamdotdev) — AI developer.
+tags: [article]
 created: 2026-04-25
-tags:
   - ai-agents
   - orchestration
   - architecture
@@ -51,7 +52,7 @@ Orchestrator (главный)
 
 ## Статус
 
-[[status.toread]]
+`status: toread`
 
 ## Источник
 

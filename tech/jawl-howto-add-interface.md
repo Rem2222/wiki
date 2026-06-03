@@ -1,8 +1,8 @@
 ---
+description: Каждый L2 интерфейс состоит из 3 файлов:
 created: 2026-05-01
 tags: [jawl, howto, interface]
 parent: "[[tech/jawl]]"
----
 
 # HOWTO: Добавить L2 интерфейс в JAWL
 
@@ -86,7 +86,7 @@ class MyBootstrap:
 ```python
 from src.l2_interfaces.my_interface.bootstrap import MyBootstrap
 
-# В методе инициализации
+## В методе инициализации
 self.my_interface = MyBootstrap(self.bus, self.agent_state)
 await self.my_interface.start()
 ```

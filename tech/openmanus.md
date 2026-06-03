@@ -1,3 +1,8 @@
+---
+description: OpenManus — open-source фреймворк-агент (MIT) от команды MetaGPT. Не LLM и не Ollama, а агент-фреймворк, аналогичный Hermes Agent.
+tags: [tech]
+---
+
 # OpenManus
 
 ## Что это
@@ -34,28 +39,28 @@ OpenManus (фреймворк-агент)
 ## Установка (uv, рекомендуется)
 
 ```bash
-# 1. uv
+## 1. uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# 2. Клонировать
+## 2. Клонировать
 git clone https://github.com/FoundationAgents/OpenManus.git
 cd OpenManus
 
-# 3. Виртуалка
+## 3. Виртуалка
 uv venv --python 3.12
 source .venv/bin/activate
 
-# 4. Зависимости
+## 4. Зависимости
 uv pip install -r requirements.txt
 
-# 5. Конфиг
+## 5. Конфиг
 cp config/config.example.toml config/config.toml
-# редактировать config.toml — добавить API ключ
+## редактировать config.toml — добавить API ключ
 
-# 6. Опционально (браузерная автоматизация)
+## 6. Опционально (браузерная автоматизация)
 playwright install
 
-# 7. Запуск
+## 7. Запуск
 python main.py
 ```
 
@@ -64,19 +69,19 @@ python main.py
 Поддерживает множество LLM провайдеров:
 
 ```toml
-# OpenAI
+## OpenAI
 [llm]
 model = "gpt-4o"
 base_url = "https://api.openai.com/v1"
 api_key = "sk-..."
 
-# Anthropic
+## Anthropic
 [llm]
 model = "claude-3-7-sonnet-20250219"
 base_url = "https://api.anthropic.com/v1/"
 api_key = "sk-ant-..."
 
-# Ollama (локально, бесплатно)
+## Ollama (локально, бесплатно)
 [llm]
 api_type = 'ollama'
 model = "llama3.2"

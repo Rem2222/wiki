@@ -17,10 +17,10 @@ related: [[tech/context7]] [[tech/z-ai]]
 **WebFetch** — HTTP-запрос → Mozilla Readability (выделение контента, тот же движок во Firefox Reader View) → Turndown (Markdown). Без LLM в пайплайне.
 
 ```bash
-# Поиск
+## Поиск
 echo '{"query":"latest ECMAScript specification"}' | node "skills/websearch/scripts/websearch.cjs"
 
-# Чтение страницы
+## Чтение страницы
 echo '{"url":"https://example.com","prompt":"Summarize"}' | node "skills/webfetch/scripts/webfetch.cjs"
 ```
 

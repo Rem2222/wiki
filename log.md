@@ -160,3 +160,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Создана [[tech/ozon-seller-api]] — MCP-серверы, SDK, библиотеки, парсеры для Ozon Seller API
 - Создана [[tech/ozon-purchase-history]] — расширение Chrome + Python-парсер для скачивания покупок из ЛК
 - Обновлён index.md
+
+## 2026-06-03 maintenance | wiki audit + fixes
+- Добавлен frontmatter 35 страницам (tech/)
+- Добавлены description 41 странице
+- Добавлены tags 7 страницам
+- Исправлены множественные H1 на 46 страницах (→ H2)
+- Исправлены битые вики-ссылки (30+) — редиректы, пути, созданы страницы-заглушки
+- Созданы 9 новых страниц: forgejo, gitea, defuddle, mcp-1c-setup, minimax, openclaw-billing-proxy, superpowers, graphviz, hermes-mcp-setup

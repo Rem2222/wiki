@@ -1,6 +1,6 @@
 ---
 title: "SDD Инструменты — Сравнение"
-description: ""
+description: Инструмент      | Тип         | Spec-anchored | Spec-as-source | Сложность | Lock-in
 tags: [SDD, Kiro, Spec-kit, Tessl, OpenSpec, AI coding]
 related: [[openspec]], [[tech/sdd-deep-guide]], [[specsmaxxing]]
 ---

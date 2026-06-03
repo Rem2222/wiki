@@ -1,7 +1,8 @@
 ---
+description: Автономный AI-агент (персона "Jinx") с infinite ReAct loop, SQLite, Qdrant и Telegram.
+tags: [tech]
 created: 2026-05-01
 updated: 2026-05-01
-tags:
   - ai-agents
   - autonomous
   - python

@@ -1,4 +1,9 @@
-# AnythingLLM — Self-Hosted RAG Workspace
+---
+description: AnythingLLM — это open-source замена связке Ollama + LangChain + векторная БД + UI. Один workspace вместо кучи отдельных сервисов.
+tags: [tech]
+---
+
+# anythingllm
 
 **Тип:** Open-source AI workspace (локальный RAG)  
 **Канал:** Better Stack  

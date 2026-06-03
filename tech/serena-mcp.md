@@ -30,7 +30,7 @@ MCP-сервер, который подключает Language Server Protocol (
 
 ```bash
 pip install serena-mcp
-# или
+## или
 uvx serena-mcp
 ```
 

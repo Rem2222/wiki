@@ -1,4 +1,9 @@
-# Veritas Kanban
+---
+description: Lightweight orchestration platform built for the agentic AI era. Kanban-доска для AI-агентов.
+tags: [project]
+---
+
+# veritas-kanban
 
 **URL:** https://github.com/BradGroux/veritas-kanban
 

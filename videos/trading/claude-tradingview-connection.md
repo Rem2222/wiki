@@ -1,4 +1,9 @@
-# Claude Code + TradingView: Подключение AI к торговле
+---
+description: https://www.youtube.com/watch?v=2LvuxpXNNw8
+tags: [video]
+---
+
+# claude-tradingview-connection
 
 **Тег:** #AIтрейдинг #TradingView #Claude #automation
 

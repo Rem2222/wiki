@@ -179,7 +179,7 @@ Every requirement SHALL be traceable:
 
 **In code:**
 ```python
-# Requirement: auth.spec.md §3.1
+## Requirement: auth.spec.md §3.1
 # "The system SHALL validate token on each request"
 def validate_token(token: str) -> bool:
     ...
@@ -359,19 +359,19 @@ All existing agents (Backend, Frontend, etc.) SHALL be updated to:
 
 **Before starting work:**
 ```python
-# Read and understand specs
+## Read and understand specs
 spec_files = read_from_attachments("SDD_CONTEXT.txt")
 for path in spec_files:
     read(path)
 
-# Identify relevant requirements
+## Identify relevant requirements
 # §1, §2, §3...
 ```
 
 **During implementation:**
 ```python
-# Every significant code block references a requirement
-# Requirement: auth.spec.md §3.1
+## Every significant code block references a requirement
+## Requirement: auth.spec.md §3.1
 # "The system SHALL validate token on each request"
 def validate_token(token: str) -> bool:
     ...
@@ -379,8 +379,8 @@ def validate_token(token: str) -> bool:
 
 **After completion:**
 ```python
-# Self-check: did I cover all §N from tasks.md?
-# If §4 is missing → implement it before declaring done
+## Self-check: did I cover all §N from tasks.md?
+## If §4 is missing → implement it before declaring done
 ```
 
 ---
@@ -420,7 +420,7 @@ openspec init --tools opencode
 ### Create change
 ```bash
 openspec new change <project>-<stage>
-# Example: openspec new change jawl-auth
+## Example: openspec new change jawl-auth
 ```
 
 ### Get instructions
@@ -434,13 +434,13 @@ openspec instructions tasks --change jawl-auth
 ### Validate
 ```bash
 openspec validate jawl-auth
-# Must pass: all requirements have SHALL/MUST
+## Must pass: all requirements have SHALL/MUST
 ```
 
 ### Archive
 ```bash
 openspec archive jawl-auth --yes
-# Merges specs to openspec/specs/
+## Merges specs to openspec/specs/
 ```
 
 ---

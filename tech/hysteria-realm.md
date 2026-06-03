@@ -1,3 +1,8 @@
+---
+description: P2P-режим Hysteria, не требующий публичного IP и проброса портов. Сервер регистрирует realm (имя) в сервисе рандеву (rendezvous), клиент подключается к тому же realm — они пробивают UDP hole punchi...
+tags: [tech]
+---
+
 # Hysteria 2 Realm — P2P-режим без публичного IP
 
 ## Что такое Realm
@@ -42,7 +47,7 @@ realm://public@realm.hy2.io/твой-realm-name
 ## Конфигурация сервера
 
 ```yaml
-# server.yaml
+## server.yaml
 realm:
   addr: realm://public@realm.hy2.io/moy-server
 
@@ -59,7 +64,7 @@ bandwidth:
 ## Конфигурация клиента
 
 ```yaml
-# client.yaml
+## client.yaml
 server: realm://public@realm.hy2.io/moy-server
 auth: ПАРОЛЬ_ОТ_СЕРВЕРА
 

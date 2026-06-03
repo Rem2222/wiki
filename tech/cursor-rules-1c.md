@@ -1,6 +1,6 @@
 ---
 title: "Cursor rules for 1С"
-description: ""
+description: ├── agents/           # 11 AI-агентов
 tags: [cursor, 1С, AI coding, rules]
 related:
   - [[mcp-1c-setup]]
@@ -168,16 +168,16 @@ cursor_rules_1c поддерживает **несколько SDD-фреймво
 ## Установка
 
 ```bash
-# Скопировать в проект
+## Скопировать в проект
 cd your-1c-project
 git init  # если нет git
 git clone https://github.com/comol/cursor_rules_1c .cursor
 
-# Создать infobasesettings.md
+## Создать infobasesettings.md
 echo "Путь к базе: C:\Users\...\InfoBase" > infobasesettings.md
 echo "URL публикации: http://localhost/MyBase/ru/" >> infobasesettings.md
 
-# Настроить MCP-серверы (vibecoding1c.ru)
+## Настроить MCP-серверы (vibecoding1c.ru)
 ```
 
 ## Для чего это нужно

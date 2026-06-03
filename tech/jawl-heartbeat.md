@@ -1,8 +1,8 @@
 ---
+description: Периодический тик, поддерживающий жизнь агента. Интервал: 300 секунд.
 created: 2026-05-01
 tags: [jawl, heartbeat, flow, reference]
 parent: "[[tech/jawl]]"
----
 
 # JAWL Heartbeat
 
@@ -48,7 +48,7 @@ main.py
 События с `requires_attention=True` прерывают sleep:
 
 ```python
-# bus.py — publish проверяет level
+## bus.py — publish проверяет level
 if event.requires_attention:
     # Прервать текущий sleep, запустить ReAct немедленно
 ```

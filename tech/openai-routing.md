@@ -1,6 +1,6 @@
 ---
 title: "OpenAI Routing в OpenClaw"
-description: ""
+description: title: "OpenAI Routing в OpenClaw"
 tags: [openai, openclaw, routing, omniroute, api]
 related: 
 ---
@@ -42,7 +42,7 @@ openclaw models auth login --provider openai-codex
 
 Можно установить через OpenClaw или Codex:
 ```bash
-# Прислать ссылку агенту и попросить установить
+## Прислать ссылку агенту и попросить установить
 ```
 
 ### Настройка OmniRoute

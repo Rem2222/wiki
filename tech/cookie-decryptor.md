@@ -1,6 +1,6 @@
 ---
 title: "Cookie Decryptor"
-description: ""
+description: description: Извлечённые процедуры из CodexBar-Win для расшифровки Chromium cookies. Windows-only, DPAPI + AES-GCM.
 tags: [browser, cookies, decryption, Python, Chromium]
 related: 
 ---
@@ -18,10 +18,10 @@ description: Извлечённые процедуры из CodexBar-Win для 
 ```python
 from cookie_decryptor import CookieDecryptor
 
-# sessionKey для Claude
+## sessionKey для Claude
 value, browser = CookieDecryptor.get_session_key()
 
-# Cookies для любого хоста
+## Cookies для любого хоста
 cookies = CookieDecryptor.get_cookies('.opencode.ai', 'sessionKey')
 ```
 

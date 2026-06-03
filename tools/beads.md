@@ -1,4 +1,9 @@
-# Beads — Git-backed Issue Tracker для AI Agents
+---
+description: Beads — это git-backed база данных для задач (issues). Хранит данные в JSONL файлах в директории `.beads/`. Создан для AI агентов, не для людей.
+tags: [tools]
+---
+
+# beads
 
 **Автор:** Steve Yegge (steveyegge)  
 **Репозиторий:** https://github.com/gastownhall/beads  

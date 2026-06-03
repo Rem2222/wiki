@@ -43,7 +43,7 @@ related: [[openspec]], [[openspec-usage]], [[sdd-openspec-orchestrator]]
 When `git commit` is run, the hook SHALL check all staged `spec.md` files for RFC 2119 keywords.
 
 ```bash
-# Проверяемые keywords
+## Проверяемые keywords
 SHALL
 MUST
 SHOULD
@@ -75,11 +75,11 @@ The hook SHALL NOT block commits that don't touch spec.md files.
 
 Example:
 ```bash
-# Эти коммиты НЕ вызывают проверку
+## Эти коммиты НЕ вызывают проверку
 git commit -m "fix: typo in code"
 git commit -m "refactor: extract method"
 
-# Эти вызывают
+## Эти вызывают
 git commit -m "docs: update spec"    # только если spec.md изменён
 git commit -m "feat: new feature"   # только если spec.md изменён
 ```
@@ -89,11 +89,11 @@ git commit -m "feat: new feature"   # только если spec.md изменё
 The hook SHALL be installable via a script or manual copy.
 
 ```bash
-# Manual
+## Manual
 cp pre-commit-hook.sh /home/rem/JAWL/.git/hooks/pre-commit
 chmod +x /home/rem/JAWL/.git/hooks/pre-commit
 
-# Или через install script
+## Или через install script
 ./install-precommit-hook.sh /path/to/project
 ```
 
@@ -105,11 +105,11 @@ chmod +x /home/rem/JAWL/.git/hooks/pre-commit
 
 ```bash
 #!/bin/bash
-# pre-commit-hook.sh — OpenSpec RFC 2119 validator
+## pre-commit-hook.sh — OpenSpec RFC 2119 validator
 
 echo "🔍 Checking spec.md files for RFC 2119 keywords..."
 
-# Найти все staged spec.md
+## Найти все staged spec.md
 spec_files=$(git diff --cached --name-only | grep 'spec\.md$')
 
 if [ -z "$spec_files" ]; then

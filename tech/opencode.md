@@ -1,3 +1,8 @@
+---
+description: wget https://github.com/anomalyco/opencode/releases/latest/download/opencode-linux-x64.tar.gz
+tags: [tech]
+---
+
 # OpenCode v1.14.48 — VPS Setup
 
 ## Версия
@@ -5,12 +10,12 @@
 
 ## Установка на VPS 81.17.100.103
 ```bash
-# Скачать с GitHub (актуальная версия)
+## Скачать с GitHub (актуальная версия)
 wget https://github.com/anomalyco/opencode/releases/latest/download/opencode-linux-x64.tar.gz
 tar -xzf opencode-linux-x64.tar.gz
 sudo cp opencode /usr/bin/opencode
 
-# Старая версия (v0.0.55 из opencode.ai/releases) НЕ поддерживает `web` команду
+## Старая версия (v0.0.55 из opencode.ai/releases) НЕ поддерживает `web` команду
 ```
 
 ## Веб-интерфейс

@@ -1,4 +1,5 @@
 ---
+description: Полная архитектура JAWL. 85 файлов Python, ~13,200 строк кода.
 created: 2026-05-01
 tags: [jawl, architecture, reference]
 parent: "[[tech/jawl]]"

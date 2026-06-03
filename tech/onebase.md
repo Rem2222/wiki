@@ -1,4 +1,9 @@
-# OneBase
+---
+description: Заметка о OneBase
+tags: [tech]
+---
+
+# onebase
 
 **Open-source бизнес-платформа с 1С-подобным DSL** — лёгкая ERP/low-code платформа для пет-проектов, MVP и автоматизаций без лицензий.
 

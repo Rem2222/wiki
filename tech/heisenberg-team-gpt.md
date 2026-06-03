@@ -1,6 +1,6 @@
 ---
 title: "Heisenberg Team"
-description: ""
+description: title: "Heisenberg Team"
 tags: [openclaw, multi-agent, heisenberg, automation, production]
 related: 
 ---

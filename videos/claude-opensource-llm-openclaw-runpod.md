@@ -1,6 +1,6 @@
 ---
 title: "Claude без подписки — Opensource LLM + OpenClaw на RunPod"
-description: ""
+description: Claude ввёл верификацию телефона и паспорта — и $100 в месяц за подписку. Показываю как запустить opensource LLM через OpenClaw на RunPod: плачу только когда использую.
 tags: [OpenClaw, RunPod, open source, LLM, self-hosted]
 related: 
 ---

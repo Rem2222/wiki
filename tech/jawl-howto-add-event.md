@@ -1,8 +1,8 @@
 ---
+description: MY_EVENT = EventConfig(
 created: 2026-05-01
 tags: [jawl, howto, event, eventbus]
 parent: "[[tech/jawl]]"
----
 
 # HOWTO: Добавить событие в JAWL EventBus
 
@@ -11,7 +11,7 @@ parent: "[[tech/jawl]]"
 ### 1. Определить в registry.py
 
 ```python
-# src/utils/event/registry.py → class Events
+## src/utils/event/registry.py → class Events
 
 MY_EVENT = EventConfig(
     name="my_event",

@@ -1,4 +1,5 @@
 ---
+description: 20.4k звёзд, 3k форков, стабильный v1.0.0. Автор: Donchitos, активно с февраля 2026.
 title: "Анализ Claude Code Game Studios — скилы для геймдева"
 created: 2026-05-30
 tags: [gamedev, ccgs, skills, research, hermes-agent]

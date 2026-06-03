@@ -1,4 +1,9 @@
-# Nexus Dashboard — анализ на апгрейд вебок
+---
+description: Готовый шаблон админ-панели для SaaS-проектов. Тёмная и светлая темы, 3 цветовых варианта:
+tags: [tech]
+---
+
+# nexus-dashboard
 
 **Ссылки:** [GitHub](https://github.com/Pinky057/nexus-dashboard) | [Демо](https://nexus-dashboard-phi-five.vercel.app/)
 

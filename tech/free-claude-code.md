@@ -1,3 +1,8 @@
+---
+description: Прокси для Claude Code, который перенаправляет запросы с Anthropic API на бесплатные LLM-провайдеры.
+tags: [tech]
+---
+
 # Free Claude Code (fcc-server)
 
 Прокси для Claude Code, который перенаправляет запросы с Anthropic API на бесплатные LLM-провайдеры.
@@ -21,7 +26,7 @@ ssh root@81.17.100.103
 Скрипт `claude-free` установлен в `/usr/local/bin/`:
 
 ```bash
-# На VPS:
+## На VPS:
 claude-free
 ```
 
@@ -62,7 +67,7 @@ claude
 
 **Через WSL (Windows Subsystem for Linux, рекомендую):**
 ```bash
-# В терминале WSL (Ubuntu):
+## В терминале WSL (Ubuntu):
 npm install -g @anthropic-ai/claude-code
 ANTHROPIC_BASE_URL="http://81.17.100.103:8082" ANTHROPIC_AUTH_TOKEN="freecc" CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY=1 claude
 ```

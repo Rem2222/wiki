@@ -1,6 +1,6 @@
 ---
 title: "Сравнение Dashboard для OpenClaw"
-description: ""
+description: | Инструмент | Репозиторий | Стек | Порты |
 tags: [OpenClaw, dashboard, monitoring, agents]
 related: 
 ---

@@ -1,6 +1,6 @@
 ---
 title: "NaiveProxy"
-description: ""
+description: description: "Лучший способ обхода DPI в 2026. Использует сетевой стек Chromium для маскировки трафика."
 tags: [naiveproxy, dpi-bypass, censorship, vpn, proxy]
 related: 
 ---
@@ -76,7 +76,7 @@ source ~/.profile
 ```bash
 go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 
-# Увеличиваем /tmp если мало места
+## Увеличиваем /tmp если мало места
 mkdir /root/tmp
 export TMPDIR=/root/tmp
 

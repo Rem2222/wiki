@@ -1,6 +1,6 @@
 ---
 title: "1С MCP Серверы"
-description: ""
+description: | № | Сервер | Порт | Что делает |
 tags: [1С, MCP, AI, Claude Code]
 related: [[1c-mcp]], [[cursor-rules-1c]], [[v8std-mcp]]
 ---
@@ -100,10 +100,10 @@ services:
 ## Как работает MCP Server (Python + FastMCP)
 
 ```python
-# Установка
+## Установка
 pip install mcp
 
-# Простой пример
+## Простой пример
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("my_1c_server")
@@ -118,7 +118,7 @@ def get_metadata(config_path: str) -> dict:
     """Получить метаданные конфигурации"""
     return metadata
 
-# Запуск
+## Запуск
 mcp.run(transport="stdio")
 ```
 
@@ -135,10 +135,10 @@ mcp.run(transport="stdio")
 ## Быстрый старт
 
 ```bash
-# HelpSearchServer — поиск по справке
+## HelpSearchServer — поиск по справке
 docker run -p 8003:8000 vibecoding/helps...
 
-# SyntaxCheckServer — проверка синтаксиса  
+## SyntaxCheckServer — проверка синтаксиса  
 docker run -p 8002:8000 vibecoding/syntaxcheck...
 ```
 

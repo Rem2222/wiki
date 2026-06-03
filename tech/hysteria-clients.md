@@ -1,3 +1,8 @@
+---
+description: Официальный список 3rd-party приложений с поддержкой Hysteria 2.
+tags: [tech]
+---
+
 # Hysteria 2 — клиенты для Windows и Android
 
 Официальный список 3rd-party приложений с поддержкой Hysteria 2.
