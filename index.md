@@ -4,6 +4,10 @@ _Обновлено: 2026-06-01_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
+- [[projects/Оркестратор_v3_Руководство]] — руководство по Оркестратору v3, ИИ-ассистенту для распределения задач между субагентами
+
+## GameDev
+- [[gamedev/ccgs-skills-research]] — анализ Claude Code Game Studios (49 AI-агентов, 73 скилла) для геймдева
 
 ## Концепции
 - [[concepts/llm-wiki]] — паттерн персональных баз знаний с помощью LLM
@@ -22,6 +26,8 @@ _Обновлено: 2026-06-01_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/rag-projects-summary]] — обзор RAG-проектов из Hands-On AI Engineering
+- [[tech/mcp-projects-summary]] — обзор MCP-проектов из Hands-On AI Engineering
 - [[tech/1c-mcp]] — MCP серверы для экосистемы 1С (vibecoding1c.ru)
 - [[tech/mempalace-viz]] — визуализация графа знаний для MemPalace (D3.js, MCP, Cloudflare)
 - [[tech/agents-best-practices]] — best practices для проектирования агентных систем (provider-agnostic)
@@ -88,9 +94,21 @@ _Обновлено: 2026-06-01_
 - [[tech/revealjs]] — HTML Presentation Framework (презентации из Markdown, 71.5k ⭐)
 - [[tech/ozon-seller-api]] — Ozon Seller API: MCP, SDK, библиотеки для Python/Go/PHP/TS/C#
 - [[tech/ozon-purchase-history]] — Ozon история покупок: Chrome-расширение и Python-парсер для экспорта заказов
+- [[tech/hermes-external-integrations]] — каталоги готовых интеграций для AI-агентов (aci.dev, composio, arcade.dev)
+- [[tech/mcpservers]] — каталог MCP-серверов (mcpservers.org)
+- [[tech/opencode]] — установка и настройка OpenCode на VPS (anomalyco/opencode)
+- [[tech/free-claude-code]] — прокси для бесплатного Claude Code через альтернативные LLM-провайдеры
+- [[tech/poe-api-models]] — модели и цены Poe API
+- [[tech/poe-chutes-comparison]] — сравнение Poe API и Chutes AI
+- [[tech/optimizing-llm-api-calls-for-coding]] — оптимизация вызовов LLM API для кодинг-агентов
+
+## Hermes Agent
+- [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам
+
 ## 1С
 - [[tech/1c-mcp]] — настройка и использование MCP для 1С
 - [[tech/1c-mcp]] — MCP vs Built-in Tools, анализ токенов
+- [[tech/onebase]] — open-source бизнес-платформа с 1С-подобным DSL (ERP/low-code)
 
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
@@ -109,8 +127,10 @@ _Обновлено: 2026-06-01_
 - [[tech/agentmemory-vs-current]] — agentmemory vs текущий стек памяти
 - [[tech/tencentdb-agent-memory]] — TencentDB Agent Memory
 - [[tools/find-skills]] — мета-скилл для поиска agent-скиллов через CLI (npx skills, skills.sh)
+- [[tech/Mercury-Agent-Skills]] — библиотека скиллов Mercury Agent, совместимая с Hermes
 
 ## Статьи
+- [[articles/hands-on-ai-engineering]] — обзор коллекции AI-проектов (RAG, MCP, агенты)
 - [[articles/adam-multiagent]] — мультиагентная система Adam
 - [[articles/anthropic-claude-code]] — использование Claude Code от Anthropic
 - [[articles/orchestrator-year]] — оркестрация AI-агентов, год работы
@@ -134,8 +154,6 @@ _Обновлено: 2026-06-01_
 
 ## Obsidian & экосистема
 - [[tech/obsidian-plugins]] — приложение для заметок на основе markdown
-- [[tech/obsidian-web-clipper]] — браузерное расширение для конвертации статей
-- [[tech/qmd]] — локальная поисковая система для markdown
 - [[tech/obsidian-plugins]] — плагин для запросов к метаданным Obsidian
 - [[tech/marp]] — презентации на основе markdown
 - [[tech/defuddle]] — инструмент для извлечения контента из веб-страниц
