@@ -1,6 +1,7 @@
 ---
 description: Lightweight orchestration platform built for the agentic AI era. Kanban-доска для AI-агентов.
 tags: [project]
+related: [[projects/Оркестратор_v3_Руководство]] [[tech/multica]] [[tech/jawl]]
 ---
 
 # veritas-kanban

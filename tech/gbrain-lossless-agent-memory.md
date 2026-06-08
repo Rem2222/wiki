@@ -1,6 +1,7 @@
 ---
 description: Увеличение контекстного окна помогает агенту дольше держать текущие детали перед глазами, но не превращает его в систему памяти. Для OpenClaw и Hermes устойчивее работает другая схема: отдельный сл...
 tags: [tech]
+related: [[tech/hermes-memory-setup-vps]] [[tech/agentmemory-vs-current]] [[tech/MemPalace-Hermes-Integration]]
 ---
 
 # gbrain-lossless-agent-memory

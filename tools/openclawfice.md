@@ -2,7 +2,7 @@
 title: "OpenClawfice"
 description: OpenClawfice превращает мониторинг AI-агентов из查询驱动ного процесса (гипотеза → поиск в логах → доказательство) в наблюдательный (смотришь на офис → видишь кто работает → кликаешь чтобы проверить).
 tags: [OpenClaw, AI agents, Sims, automation]
-related: 
+related: [[tech/openclaw-billing-proxy]] [[tech/multica]]
 ---
 
 # OpenClawfice — AI-агенты как в Sims

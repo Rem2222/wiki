@@ -1,6 +1,7 @@
 ---
 description: Moonin Papa (Aaron Dishner) — бесплатный крипто-сканер на bettertrader.io для поиска монет после пампа и торговли follow-up волатильностью
 tags: [crypto, trading, scanner, bettertrader, moonin-papa]
+related: [[concepts/tradingagents]] [[videos/trading/claude-tradingview-connection]]
 source: https://www.youtube.com/watch?v=7jgfMa8T8Zc
 channel: Aaron Dishner aka Moonin Papa
 channel_url: https://www.youtube.com/@MooninPapa

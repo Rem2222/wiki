@@ -2,6 +2,7 @@
 description: Асинхронная Pub/Sub шина для слабосвязанного взаимодействия модулей.
 created: 2026-05-01
 tags: [jawl, events, eventbus, reference]
+related: [[tech/jawl]] [[tech/jawl-architecture]] [[tech/jawl-heartbeat]]
 parent: "[[tech/jawl]]"
 
 # JAWL EventBus

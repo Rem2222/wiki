@@ -1,6 +1,7 @@
 ---
 description: Unified API for hundreds of models. OpenAI-compatible.
 tags: [tech]
+related: [[tech/poe-api-models]] [[tech/free-claude-code]] [[tech/openai-routing]]
 ---
 
 # poe-chutes-comparison
@@ -97,5 +98,5 @@ providers:
 
 ## Related
 
-- [Poe API Models](poe-api-models.md) — full model list with pricing
+- [[tech/poe-api-models]] — полный список моделей и цен Poe API
 - KiloCode (mcowger) — alternative open-source coding agent

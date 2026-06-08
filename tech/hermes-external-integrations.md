@@ -1,6 +1,7 @@
 ---
 description: Интеграции — такие же инструменты (или MCP), только направленные на внешние системы. Каталогов готовых решений достаточно:
 tags: [tech]
+related: [[concepts/mcp]] [[tech/hermes-mcp-setup]] [[tech/mcpservers]]
 ---
 
 # Внешние интеграции

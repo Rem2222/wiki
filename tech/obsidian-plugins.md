@@ -1,7 +1,7 @@
 ---
 description: Рекомендованные плагины Obsidian: Dataview, Templater, MCP Plugin, InfraNodus AI Graph.
 tags: [obsidian, plugins, dataview, templater, mcp, infranodus, ai]
-related: [[tech/obsidian-plugins]], [[tech/obsidian-plugins]], [[tech/obsidian-livesync]]
+related: [[tech/obsidian-livesync]]
 ---
 
 # Плагины Obsidian: рекомендованные

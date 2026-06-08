@@ -1,6 +1,7 @@
 ---
 description: Веб-интерфейс для хостинга Git-репозиториев — как GitHub, только self-hosted. Можно поставить на свой сервер, бесплатно и под полным контролем.
 tags: [tech]
+related: [[tech/gitea]] [[tech/forgejo]]
 ---
 
 # GitNexus

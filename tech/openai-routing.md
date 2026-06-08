@@ -1,15 +1,8 @@
 ---
 title: "OpenAI Routing в OpenClaw"
-description: title: "OpenAI Routing в OpenClaw"
-tags: [openai, openclaw, routing, omniroute, api]
-related: 
----
-
----
-title: "OpenAI Routing в OpenClaw"
 description: "Настройка нескольких OpenAI подписок через OmniRoute"
 tags: [openai, openclaw, routing, omniroute, api]
-related: openclaw, [[openclaw-billing-proxy]]
+related: [[tech/poe-api-models]] [[tech/9router-vs-openrouter]] [[tech/optimizing-llm-api-calls-for-coding]]
 ---
 
 # OpenAI Routing в OpenClaw

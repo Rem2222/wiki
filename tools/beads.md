@@ -1,6 +1,7 @@
 ---
 description: Beads — это git-backed база данных для задач (issues). Хранит данные в JSONL файлах в директории `.beads/`. Создан для AI агентов, не для людей.
 tags: [tools]
+related: [[projects/veritas-kanban]] [[tech/jawl]]
 ---
 
 # beads

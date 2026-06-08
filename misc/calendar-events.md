@@ -2,7 +2,7 @@
 title: "Calendar Events"
 description: Заметка о Calendar Events
 tags: [calendar, events, planning]
-related: 
+related: [[tech/nerve-recovery-timeline]] [[events/1cvibeconf-2026]]
 ---
 
 # Calendar Events

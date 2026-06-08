@@ -1,6 +1,7 @@
 ---
 description: | | UI/UX Pro Max | Наш скилл |
 tags: [tech]
+related: [[tech/gsd]] [[tech/skillopt]] [[tech/hermes-memory-setup-vps]]
 ---
 
 # ui-ux-pro-max-analysis

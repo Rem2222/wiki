@@ -2,7 +2,7 @@
 title: "MCP v8std — Стандарты разработки 1С"
 description: MCP v8std — это подключение к базе стандартов v8std.ru из редактора кода с ИИ.
 tags: [MCP, 1С, v8std, стандарты, BSL]
-related: 
+related: [[tech/1c-mcp]] [[tech/cursor-rules-1c]] [[tech/mcp-1c-setup]]
 ---
 
 # MCP v8std — Стандарты разработки 1С для ИИ-помощников

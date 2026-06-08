@@ -1,6 +1,7 @@
 ---
 description: _Записано: 2026-05-03_
 tags: [tech]
+related: [[concepts/sdd]] [[tech/gsd]] [[tech/openspec]]
 ---
 
 # Specsmaxxing / Acai.sh — Spec-Driven Development с ACID tracking

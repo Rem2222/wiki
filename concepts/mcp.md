@@ -19,6 +19,10 @@ related: [[tech/context7]] [[tech/serena-mcp]] [[tech/claude-plugin-dev-tools]]
 - [[tech/context7]] — документация библиотек
 - [[tech/serena-mcp]] — LSP для Claude Code
 - [[tech/claude-plugin-dev-tools]] — создание своих MCP
+- [[tech/mcpservers]] — каталог MCP-серверов (mcpservers.org)
+- [[tech/hermes-external-integrations]] — каталоги готовых интеграций (aci.dev, composio, arcade.dev)
+- [[wiki/tech/cli-printing-press]] — генератор CLI/MCP-серверов для любых API
+- [[tech/peekaboowin]] — Windows desktop automation через MCP
 
 ## Skills vs MCP
 

@@ -1,7 +1,7 @@
 ---
 description: Retrieval-Augmented Generation — дополнение LLM внешними данными
 tags: [rag, llm, retrieval, ai]
-related: [[concepts/llm-wiki]] [[concepts/mcp]]
+related: [[concepts/llm-wiki]] [[concepts/mcp]] [[tech/anythingllm]]
 ---
 
 # Retrieval-Augmented Generation (RAG)

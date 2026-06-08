@@ -2,6 +2,7 @@
 description: MY_EVENT = EventConfig(
 created: 2026-05-01
 tags: [jawl, howto, event, eventbus]
+related: [[tech/jawl]] [[tech/jawl-events]] [[tech/jawl-heartbeat]]
 parent: "[[tech/jawl]]"
 
 # HOWTO: Добавить событие в JAWL EventBus

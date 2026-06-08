@@ -2,6 +2,7 @@
 description: Параметры конфигурации JAWL.
 created: 2026-05-01
 tags: [jawl, config, models, reference]
+related: [[tech/jawl]] [[tech/jawl-architecture]] [[tech/jawl-context]]
 parent: "[[tech/jawl]]"
 ---
 

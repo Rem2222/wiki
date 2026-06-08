@@ -1,6 +1,7 @@
 ---
 description: Готовый шаблон админ-панели для SaaS-проектов. Тёмная и светлая темы, 3 цветовых варианта:
 tags: [tech]
+related: [[tech/jawl-dashboard]] [[tech/landing]]
 ---
 
 # nexus-dashboard

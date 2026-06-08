@@ -4,6 +4,7 @@ title: 1CVibeConf 2026
 created: 2026-04-18
 source: https://t.me/comol_it_does_matter/1564
 tags: [1с, вайбкодинг, конференция, ai]
+related: [[events/gpt5-free-announcement]] [[tech/1c-mcp]] [[tech/cursor-rules-1c]]
 ---
 
 # 1CVibeConf 2026

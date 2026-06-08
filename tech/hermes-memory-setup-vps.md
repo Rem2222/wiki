@@ -1,6 +1,7 @@
 ---
 description: На VPS настроены две системы долговременной памяти для Hermes Agent:
 tags: [tech]
+related: [[tech/agentmemory-vs-current]] [[tech/gbrain-lossless-agent-memory]] [[tech/MemPalace-Hermes-Integration]]
 ---
 
 # hermes-memory-setup-vps
@@ -14,6 +15,8 @@ tags: [tech]
 На VPS настроены две системы долговременной памяти для Hermes Agent:
 
 1. **[agentmemory](https://github.com/rohitg00/agentmemory)** (rohitg00/agentmemory, 18.5k⭐) — MCP-сервер на Node.js/TypeScript, 7-53 MCP-инструментов, 0 внешних БД.
+2. **[[wiki/tech/lightmem]]** — ~~LightMem~~ (ICLR 2026, удалён — не дал преимуществ)
+
 2. **[GBrain](https://github.com/garrytan/gbrain)** (Garry Tan / YC CEO) — граф знаний, индексирует markdown-репозитории, синтезирует факты.
 
 ---

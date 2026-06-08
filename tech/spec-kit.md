@@ -1,6 +1,7 @@
 ---
 description: 94k stars, 8.2k forks, 931 commits (as of May 2026)
 tags: [tech]
+related: [[tech/sdd-instruments]] [[tech/openspec]] [[tech/specsmaxxing]]
 ---
 
 # Spec Kit (GitHub)

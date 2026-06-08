@@ -1,6 +1,7 @@
 ---
 description: Graphviz — утилита для визуализации графов (DOT language)
 tags: [tech, visualization]
+related: [[concepts/doxygen]] [[tech/sourcecraft]]
 ---
 
 # graphviz

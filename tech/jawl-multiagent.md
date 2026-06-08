@@ -1,6 +1,7 @@
 ---
 description: Мультиагентный режим позволяет запускать N независимых AI-агентов в одном процессе. Каждый агент имеет изолированную базу данных, свои настройки LLM, личную папку с конфигами SOUL.md/STYLE.md, собс...
 tags: [tech]
+related: [[tech/jawl]] [[tech/jawl-architecture]] [[tech/jawl-skills-registry]]
 created: 2026-05-16
 updated: 2026-05-16
 path: /home/rem/jawl_multi

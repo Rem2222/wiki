@@ -2,6 +2,7 @@
 description: Полный список навыков (skills) по интерфейсам.
 created: 2026-05-01
 tags: [jawl, skills, registry, reference]
+related: [[tech/jawl]] [[tech/jawl-howto-add-skill]] [[tech/jawl-architecture]]
 parent: "[[tech/jawl]]"
 ---
 

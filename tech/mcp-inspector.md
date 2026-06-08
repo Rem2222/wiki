@@ -1,6 +1,7 @@
 ---
 description: Официальный инструмент от Model Context Protocol для отладки MCP серверов и клиентов.
 tags: [tech]
+related: [[concepts/mcp]] [[tech/hermes-mcp-setup]] [[tech/mcpservers]]
 created: 2026-04-25
   - mcp
   - debugging

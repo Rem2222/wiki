@@ -1,6 +1,7 @@
 ---
 description: Анонс GPT-5 в бесплатном доступе для всех — Greg Brockman объявил о полном снятии лимитов и paywall
 tags: [openai, gpt-5, announcement, free, agi]
+related: [[events/1cvibeconf-2026]] [[tech/free-claude-code]] [[tech/poe-api-models]]
 source: https://x.com/gdb/status/2055646916499714488
 date: 2026-05-27
 author: Greg Brockman (@gdb)

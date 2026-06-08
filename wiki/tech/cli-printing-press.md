@@ -1,7 +1,7 @@
 ---
 description: CLI Printing Press — генератор CLI/MCP-серверов для любых API, оптимизированных для AI-агентов
 tags: [cli, mcp, api, ai-agents, go, generator]
-related: [[tech/hermes-mcp-setup]] [[tech/context7]] [[tech/gsd]]
+related: [[concepts/mcp]] [[tech/hermes-mcp-setup]] [[tech/context7]]
 ---
 
 # CLI Printing Press

@@ -1,6 +1,7 @@
 ---
 description: Windows-first desktop automation sidecar (port of macOS Peekaboo by steipete).
 tags: [tech]
+related: [[tech/cloakbrowser]] [[concepts/mcp]]
 ---
 
 # peekaboowin
@@ -52,3 +53,5 @@ npm run mcp
 
 - [Peekaboo (macOS)](https://github.com/steipete/Peekaboo) — оригинальный macOS проект
 - [Peekaboo site](https://peekaboo.boo)
+## See also
+- [[tech/cloakbrowser]] — stealth Chromium с антифingerprint

@@ -1,6 +1,7 @@
 ---
 description: Featured, All, Official 🌟, Search, Web Scraping, Communication, Productivity, Marketing, Design, Memory, Finance, Development, Database, Cloud Service, File System, Cloud Storage, Version Control, ...
 tags: [tech]
+related: [[concepts/mcp]] [[tech/hermes-mcp-setup]] [[tech/hermes-external-integrations]]
 ---
 
 # mcpservers

@@ -1,6 +1,7 @@
 ---
 description: Adam (adamdotdev) — AI developer.
 tags: [article]
+related: [[articles/adam-multiagent]] [[tech/multica]] [[concepts/sdd]]
 created: 2026-04-25
   - ai-agents
   - orchestration

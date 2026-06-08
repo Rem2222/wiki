@@ -1,6 +1,7 @@
 ---
 description: Прокси для Claude Code, который перенаправляет запросы с Anthropic API на бесплатные LLM-провайдеры.
 tags: [tech]
+related: [[tech/opencode]] [[tech/poe-api-models]] [[tech/subquadratic]]
 ---
 
 # Free Claude Code (fcc-server)
@@ -9,7 +10,7 @@ tags: [tech]
 
 **Репозиторий:** https://github.com/Alishahryar1/free-claude-code
 **Развёрнут на:** VPS 81.17.100.103:8082
-**Провайдер:** OpenCode Zen (через opencode.ai)
+**Провайдер:** OpenCode Zen (через [[tech/opencode]])
 
 ---
 
@@ -164,3 +165,8 @@ systemctl restart fcc-server   # перезапуск
 systemctl stop fcc-server      # остановка
 journalctl -u fcc-server -f    # логи в реальном времени
 ```
+
+## Альтернативные провайдеры
+
+- [[tech/poe-api-models]] — подписки Poe включают API-доступ, OpenAI-compatible (альтернатива бесплатному прокси)
+- [[tech/subquadratic]] — SubQ: first fully sub-quadratic LLM, 12M token context (ещё один альтернативный провайдер)

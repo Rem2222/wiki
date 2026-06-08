@@ -1,6 +1,7 @@
 ---
 description: AnythingLLM — это open-source замена связке Ollama + LangChain + векторная БД + UI. Один workspace вместо кучи отдельных сервисов.
 tags: [tech]
+related: [[concepts/rag]] [[concepts/mcp]] [[tech/hermes-mcp-setup]]
 ---
 
 # anythingllm

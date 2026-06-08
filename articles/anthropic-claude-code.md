@@ -1,6 +1,7 @@
 ---
 description: Thdxr (Anthropic) — один из основателей Anthropic, где разрабатывают Claude.
 tags: [article]
+related: [[tech/codex-harness]] [[tech/free-claude-code]] [[tech/multica]]
 created: 2026-04-25
   - x-com
   - claude-code

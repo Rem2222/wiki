@@ -1,6 +1,7 @@
 ---
 description: Модели с большим контекстным окном (1M токенов) делают множество последовательных API-вызовов вместо того, чтобы прочитать всё за раз, подумать и выдать готовый код. Каждый вызов = списание квоты (...
 tags: [tech]
+related: [[tech/multica]] [[tech/opencode]] [[tech/subquadratic]]
 ---
 
 # optimizing-llm-api-calls-for-coding

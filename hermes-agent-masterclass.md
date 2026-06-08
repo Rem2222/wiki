@@ -2,6 +2,7 @@
 description: Hermes Agent перешагнул отметку в 90 000 звезд на GitHub за два месяца. Разработчики тихо строят персональных ИИ-агентов, которые изучают их рабочий процесс, помнят контекст и работают 24/7.
 title: "Hermes Agent Masterclass"
 tags: [hermes-agent, tutorial, guide, перевод]
+related: [[tech/hermes-memory-setup-vps]] [[tech/hermes-mcp-setup]] [[concepts/mcp]]
 source: "https://x.com/akshay_pachaar/status/2054564519280804028"
 author: "Akshay 🚀 (@akshay_pachaar)"
 date: 2026-05-13

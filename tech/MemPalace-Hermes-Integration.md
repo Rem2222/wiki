@@ -1,6 +1,7 @@
 ---
 description: MemPalace поставляет MCP-сервер с 29 инструментами (chroma storage, KG, diary), но протокол использования не выполнялся автоматически — агент просто не знал, когда вызывать `diary_write`, `kg_query...
 tags: [tech]
+related: [[tech/hermes-memory-setup-vps]] [[tech/gbrain-lossless-agent-memory]] [[tech/agentmemory-vs-current]]
 ---
 
 # MemPalace × Hermes Agent: интеграция через gateway hook

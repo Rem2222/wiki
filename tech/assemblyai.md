@@ -5,6 +5,7 @@ source: https://www.assemblyai.com
 website: https://www.assemblyai.com
 created: 2026-05-27
 updated: 2026-05-27
+related: [[tech/freellmapi]] [[tech/playsvideo]]
 ---
 
 # AssemblyAI

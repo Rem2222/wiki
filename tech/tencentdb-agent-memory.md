@@ -1,6 +1,7 @@
 ---
 description: Полностью локальная система долговременной памяти для AI-агентов, без внешних API-зависимостей.
 tags: [tech]
+related: [[tech/agentmemory-vs-current]] [[tech/gbrain-lossless-agent-memory]] [[tech/hermes-memory-setup-vps]]
 ---
 
 # tencentdb-agent-memory

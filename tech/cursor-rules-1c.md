@@ -2,9 +2,7 @@
 title: "Cursor rules for 1С"
 description: ├── agents/           # 11 AI-агентов
 tags: [cursor, 1С, AI coding, rules]
-related:
-  - [[mcp-1c-setup]]
-  - [[1c-mcp]]
+related: [[tech/1c-mcp]] [[tech/metadata-1c]] [[tools/v8std-mcp]]
 ---
 
 # cursor_rules_1c

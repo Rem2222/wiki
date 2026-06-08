@@ -1,6 +1,7 @@
 ---
 description: P2P-режим Hysteria, не требующий публичного IP и проброса портов. Сервер регистрирует realm (имя) в сервисе рандеву (rendezvous), клиент подключается к тому же realm — они пробивают UDP hole punchi...
 tags: [tech]
+related: [[tech/naiveproxy]] [[tech/hysteria-clients]]
 ---
 
 # Hysteria 2 Realm — P2P-режим без публичного IP

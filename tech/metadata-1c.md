@@ -6,6 +6,7 @@ author: norkins
 license: MIT
 created: 2026-05-27
 updated: 2026-05-27
+related: [[tech/1c-mcp]] [[tech/cursor-rules-1c]] [[tech/mcp-1c-setup]]
 ---
 
 # Metadata 1C

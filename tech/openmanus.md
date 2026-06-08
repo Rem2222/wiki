@@ -1,6 +1,7 @@
 ---
 description: OpenManus — open-source фреймворк-агент (MIT) от команды MetaGPT. Не LLM и не Ollama, а агент-фреймворк, аналогичный Hermes Agent.
 tags: [tech]
+related: [[tech/hermes-memory-setup-vps]] [[tech/agentation]] [[tech/gsd]]
 ---
 
 # OpenManus

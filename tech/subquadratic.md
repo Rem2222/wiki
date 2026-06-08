@@ -3,6 +3,7 @@ created: 2026-05-07
 type: concept
 tags: [LLM, AI-research, sub-quadratic, long-context]
 description: First fully sub-quadratic LLM, 12M token context, sparse attention O(n)
+related: [[tech/free-claude-code]] [[tech/opencode]] [[tech/optimizing-llm-api-calls-for-coding]]
 ---
 
 # Subquadratic (SubQ)

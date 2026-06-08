@@ -1,7 +1,7 @@
 ---
 description: Open-source managed agents platform. Turn coding agents into real teammates.
 tags: [agents, openclaw, claude-code, codebase]
-related: openclaw, [[tech/heisenberg-team-gpt]], [[mcp]]
+related: [[tech/heisenberg-team-gpt]] [[tech/optimizing-llm-api-calls-for-coding]] [[concepts/mcp]]
 ---
 
 # Multica
@@ -79,3 +79,8 @@ Multica решает проблему "у меня много агентов, к
 - Compound skills — навыки накапливаются
 
 Может быть полезен для масштабных проектов где несколько агентов работают параллельно.
+
+## Integrations
+
+- [[tech/bmad-multica-integration]] — BMAD × Multica: интеграция архитектурного SDD-фреймворка с платформой управления агентами
+- [[tech/optimizing-llm-api-calls-for-coding]] — оптимизация количества LLM-вызовов для агентов в Multica

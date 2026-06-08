@@ -1,6 +1,7 @@
 ---
 description: Автономный AI-агент (персона "Jinx") с infinite ReAct loop, SQLite, Qdrant и Telegram.
 tags: [tech]
+related: [[tech/jawl-architecture]] [[tech/jawl-config]] [[tech/jawl-context]] [[tech/jawl-dashboard]] [[tech/jawl-events]]
 created: 2026-05-01
 updated: 2026-05-01
   - ai-agents
@@ -18,6 +19,8 @@ type: tool
 **Dashboard:** Flask на порту 5000
 
 Автономный AI-агент (персона "Jinx") с infinite ReAct loop, SQLite, Qdrant и Telegram.
+
+Совместимые скиллы: [[tech/Mercury-Agent-Skills]] — библиотека скиллов Mercury Agent, расширяющая возможности JAWL.
 
 ## Слои архитектуры
 
