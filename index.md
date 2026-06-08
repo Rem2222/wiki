@@ -26,6 +26,7 @@ _Обновлено: 2026-06-01_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/dpi-zapret-netfix]] — DPI, Zapret, TgWsProxy и GUI-обёртка NetFix
 - [[tech/openprose-reactor]] — декларативный язык для AI-сессий (OpenProse) и runtime (Reactor)
 - [[tech/rag-projects-summary]] — обзор RAG-проектов из Hands-On AI Engineering
 - [[tech/mcp-projects-summary]] — обзор MCP-проектов из Hands-On AI Engineering
