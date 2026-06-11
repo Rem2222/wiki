@@ -149,6 +149,9 @@ _Обновлено: 2026-06-01_
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki
 - [[misc/calendar-events]] — календарь событий 2026
 
+## Промпты
+- [[prompts/human-like-text]] — промт для LLM: текст как человек, прохождение AI-детекции
+
 ## SDD-инструменты (детали)
 - [[tech/kiro]] — Kiro SDD-инструмент (kiro.dev)
 - [[tech/spec-kit]] — Spec-kit от GitHub
