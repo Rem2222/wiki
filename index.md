@@ -27,6 +27,7 @@ _Обновлено: 2026-06-01_
 
 ## Технологии
 - [[tech/dpi-zapret-netfix]] — DPI, Zapret, TgWsProxy и GUI-обёртка NetFix
+- [[tech/mimo-code]] — AI coding agent от Xiaomi, форк OpenCode с persistent memory
 - [[tech/openprose-reactor]] — декларативный язык для AI-сессий (OpenProse) и runtime (Reactor)
 - [[tech/rag-projects-summary]] — обзор RAG-проектов из Hands-On AI Engineering
 - [[tech/mcp-projects-summary]] — обзор MCP-проектов из Hands-On AI Engineering
