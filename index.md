@@ -17,6 +17,8 @@ _Обновлено: 2026-06-01_
 - [[concepts/mcp]] — Model Context Protocol, открытый протокол для AI-интеграций
 - [[concepts/doxygen]] — генератор документации из исходного кода (C++, Java, Python...)
 - [[concepts/tradingagents]] — Multi-agent LLM фреймворк для алгоритмической торговли (UCLA + MIT)
+- [[concepts/open-knowledge-format]] — Open Knowledge Format (OKF), открытый формат знаний от Google Cloud Platform
+
 
 ## SDD-Orchestrator v2 (2026-05-04)
 - [[tech/sdd-openspec-orchestrator-integration]] — Orchestrator Integration (что хотели для Оркестратора: QA Gate, multi-layer SDD, hybrid context)
@@ -100,6 +102,7 @@ _Обновлено: 2026-06-01_
 - [[tech/hermes-external-integrations]] — каталоги готовых интеграций для AI-агентов (aci.dev, composio, arcade.dev)
 - [[tech/mcpservers]] — каталог MCP-серверов (mcpservers.org)
 - [[tech/opencode]] — установка и настройка OpenCode на VPS (anomalyco/opencode)
+- [[tech/opencode-gigachat-plugin]] — плагин GigaChat для OpenCode (Сбер, OAuth, TLS РФ)
 - [[tech/free-claude-code]] — прокси для бесплатного Claude Code через альтернативные LLM-провайдеры
 - [[tech/poe-api-models]] — модели и цены Poe API
 - [[tech/poe-chutes-comparison]] — сравнение Poe API и Chutes AI

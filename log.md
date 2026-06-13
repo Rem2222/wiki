@@ -4,6 +4,12 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 ---
 
+## [2026-06-13] ingest | Open Knowledge Format (OKF)
+
+- Создана страница [[concepts/open-knowledge-format]] — открытый формат знаний от GCP для людей и AI-агентов
+- Добавлена секция «Идея на апгрейд wiki» — анализ того, как OKF соотносится с текущей wiki
+- Источник: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+
 ## [2026-04-05] setup | Создание вики
 
 - Создана структура папок (raw, assets, wiki/{people,tech,projects,concepts,books,misc})
