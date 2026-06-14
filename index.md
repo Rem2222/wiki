@@ -103,12 +103,14 @@ _Обновлено: 2026-06-01_
 - [[tech/mcpservers]] — каталог MCP-серверов (mcpservers.org)
 - [[tech/opencode]] — установка и настройка OpenCode на VPS (anomalyco/opencode)
 - [[tech/opencode-gigachat-plugin]] — плагин GigaChat для OpenCode (Сбер, OAuth, TLS РФ)
+- [[tech/ponytail]] — Ponytail: скилл «ленивый сеньор» для AI-агентов (80-94% меньше кода)
 - [[tech/free-claude-code]] — прокси для бесплатного Claude Code через альтернативные LLM-провайдеры
 - [[tech/poe-api-models]] — модели и цены Poe API
 - [[tech/poe-chutes-comparison]] — сравнение Poe API и Chutes AI
 - [[tech/optimizing-llm-api-calls-for-coding]] — оптимизация вызовов LLM API для кодинг-агентов
 
 ## Hermes Agent
+- [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
 - [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам
 
 ## 1С
@@ -170,6 +172,9 @@ _Обновлено: 2026-06-01_
 ## Прокси и инфраструктура
 - [[tech/openclaw-billing-proxy]] — OpenClaw Billing Proxy (автор: zacdcook)
 - [[tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
+- [[free-api-deepseek-qwen]] — обзор Free API прокси (DeepSeek / Qwen)
+- [[qwen-free-api]] — развёртывание FreeQwenApi
+- [[deepseek-free-api]] — развёртывание FreeDeepseekAPI
 
 ## Книги
 - [[books/ne-otkladyvay-na-zavtra]] — «Не откладывай на завтра» — Тимоти Пичил

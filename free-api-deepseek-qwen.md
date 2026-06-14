@@ -12,6 +12,8 @@ related: []
 
 ## FreeDeepseekAPI
 
+Подробнее: [[deepseek-free-api]] — развёртывание и настройка.
+
 - **Репозиторий:** <https://github.com/ForgetMeAI/FreeDeepseekAPI>
 - **Возраст:** июнь 2026 (2 дня)
 - **Язык:** Node.js 18+
@@ -38,6 +40,8 @@ related: []
 ---
 
 ## FreeQwenApi
+
+Подробнее: [[qwen-free-api]] — развёртывание и настройка.
 
 - **Репозиторий:** <https://github.com/ForgetMeAI/FreeQwenApi>
 - **Форк:** y13sint/FreeQwenApi
