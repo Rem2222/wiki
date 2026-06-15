@@ -1,4 +1,12 @@
 ---
+type: concept
+title: Openprose Reactor
+ingested_via: 'mcp:put_page'
+ingested_at: '2026-06-15T08:16:14.065Z'
+source_kind: 'mcp:put_page'
+---
+
+---
 description: OpenProse — декларативный язык для AI-сессий (Markdown-контракты *.prose.md). Reactor — runtime, который удерживает мир в этом состоянии. Новая парадигма для AI-агентов: «cost scales with surprise, not wall-clock time». С примерами кода, SDK, контрактами и сценариями для своей инфраструктуры.
 tags: [tech, ai-agents, declarative, reactor, mcp]
 related: [[concepts/rag]] [[concepts/mcp]] [[tech/hermes-agent-masterclass]] [[tech/openmanus]] [[tech/rag-projects-summary]]
@@ -8,8 +16,11 @@ related: [[concepts/rag]] [[concepts/mcp]] [[tech/hermes-agent-masterclass]] [[t
 
 **Репозиторий:** [openprose/prose](https://github.com/openprose/prose)  
 **Автор:** Организация OpenProse | **Лицензия:** MIT  
-**Звёзд:** 1.5k ★ | **Форков:** 110 | **Коммитов:** 240 | **Веток:** 73 | **Тегов:** 37  
-**Пакеты (npm):** `@openprose/reactor` 0.3.1, `@openprose/reactor-cli` 0.2.2, `@openprose/reactor-devtools` 0.2.0
+**Звёзд:** 1530 ★ (+30 за неделю) | **Форков:** 120 (+10) | **Коммитов:** ~250 | **Веток:** много активных | **Тегов:** 37+  
+**Последний push:** 2026-06-14 (вчера)  
+**Последний релиз:** skill-v0.15.0 (2026-06-04)  
+**Пакеты (npm):** `@openprose/reactor` 0.3.1, `@openprose/reactor-cli` 0.2.2, `@openprose/reactor-devtools` 0.2.0  
+**Открытых issues:** 31 (закрытых — 0 за всю историю)
 
 ---
 
@@ -408,4 +419,9 @@ npx reactor-devtools ./replay --describe
 4. **SDD-параллель** — как OpenSpec/SDD, но для AI runtime, не для разработки
 5. **Замена cron-дёргателям** — если сейчас задача запускается по расписанию, но данные не меняются, OpenProse пропустит LLM-вызов
 
-Стоит перепроверить через неделю-две — проект быстро развивается (последний коммит 6 часов назад). Поставлен cron на 15 июня 2026.
+---
+
+## Changelog
+
+- **2026-06-15:** +30 ★ (1500→1530), +10 forks (110→120), 10 commits за неделю без релиза. 0 закрытых issues. Проект жив, slow burn.
+- **2026-06-08:** Страница создана.

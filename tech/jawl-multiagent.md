@@ -311,4 +311,3 @@ cd /opt/jawl-multiagent
 cp .env.example .env  # настроить ключи
 nano config/agents.yaml  # настроить агентов
 python -m src.main
-```
