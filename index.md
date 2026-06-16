@@ -101,6 +101,7 @@ _Обновлено: 2026-06-01_
 - [[tech/ozon-purchase-history]] — Ozon история покупок: Chrome-расширение и Python-парсер для экспорта заказов
 - [[tech/hermes-external-integrations]] — каталоги готовых интеграций для AI-агентов (aci.dev, composio, arcade.dev)
 - [[tech/mcpservers]] — каталог MCP-серверов (mcpservers.org)
+- [[tech/fastmcp]] — FastMCP: MCP фреймворк от PrefectHQ (25.7k ⭐, ~70% всех MCP серверов)
 - [[tech/opencode]] — установка и настройка OpenCode на VPS (anomalyco/opencode)
 - [[tech/opencode-gigachat-plugin]] — плагин GigaChat для OpenCode (Сбер, OAuth, TLS РФ)
 - [[tech/ponytail]] — Ponytail: скилл «ленивый сеньор» для AI-агентов (80-94% меньше кода)

@@ -132,7 +132,90 @@ mcp.run(transport="stdio")
 - SDD-интеграции
 - MCP подключения
 
-## Быстрый старт
+---
+
+## Собственный MCP сервер для 1С (на FastMCP)
+
+**Идея:** Написать персональный MCP сервер (или набор) для работы с 1С на FastMCP.  
+**Инициатор:** @rem2222  
+**Статус:** Идея, проект в Multica
+
+### 4 ключевых модуля
+
+| Модуль | Что делает | Технология |
+|--------|-----------|------------|
+| **Metadata Explorer** | Получение структуры данных из конфигурации 1С (справочники, документы, регистры, реквизиты, измерения, ресурсы) | Парсинг XML выгрузки конфигурации / EDT / COM |
+| **Module Extractor** | Получение любого модуля и процедуры с выгрузкой в отдельную БД и автообновлением | SQLite/Postgres + триггеры обновления |
+| **Help Server** | Поиск по встроенной справке конфигурации 1С | RAG (векторная БД + эмбеддинги) |
+| **OData Gateway** | Подключение к 1С через OData — чтение справочников/документов, запуск отчетов | HTTP OData стандарт 1С |
+
+### Почему FastMCP
+
+1. **Единый фреймворк** для всех 4 модулей — не 4 разных решения, а 1 сервер с 4 группами инструментов
+2. **Декораторы** — каждый модуль = несколько Python-функций с `@mcp.tool`, минимум boilerplate
+3. **fastmcp-remote** — можно запустить на VPS или на работе, а подключиться через Claude Code/Cursor
+4. **Клиентская часть** — можно дёргать инструменты из Hermes (через native MCP) или из скриптов
+5. **OAuth/Security** — если OData требует авторизации, FastMCP умеет пробрасывать Bearer токены
+
+### Примерная архитектура
+
+```python
+from fastmcp import FastMCP
+from typing import Optional
+
+mcp = FastMCP("1C-Work")
+
+# --- Metadata Explorer ---
+@mcp.tool
+def get_metadata_structure(conf_path: str) -> list[dict]:
+    """Получить структуру метаданных из выгрузки CF"""
+    ...
+
+@mcp.tool
+def find_object(obj_name: str) -> dict | None:
+    """Найти объект метаданных по имени"""
+    ...
+
+# --- Module Extractor ---
+@mcp.tool
+def get_module_code(object_name: str, module_type: str) -> str:
+    """Получить код модуля объекта"""
+    ...
+
+@mcp.tool
+def search_procedure(name: str, conf_path: str) -> list[dict]:
+    """Найти процедуру по имени во всех модулях конфигурации"""
+    ...
+
+# --- OData Gateway ---
+@mcp.tool
+def odata_query(entity: str, filter: str = "", top: int = 100) -> list[dict]:
+    """Выполнить OData запрос к 1С"""
+    ...
+
+@mcp.tool
+def run_report(report_name: str, params: dict = {}) -> str:
+    """Запустить отчёт 1С"""
+    ...
+```
+
+### Связь с существующими решениями
+
+- **vibecoding1c.ru** — готовые Docker-серверы (HelpSearch, Metadata, SyntaxCheck, Forms). Их можно использовать как основу или поднять параллельно.
+- **Untru/1c-mcp** — EDT плагины и REST API, можно интегрировать как бэкенд для FastMCP сервера.
+- **onerpa.ru** (Graph Metadata Search) — Neo4j граф метаданных, можно использовать как источник данных для Metadata Explorer модуля.
+
+### План реализации
+
+1. Настроить FastMCP + базовый каркас сервера
+2. Metadata Explorer — парсинг XML выгрузки/EDT
+3. OData Gateway — подключение к рабочей базе
+4. Module Extractor — парсинг модулей + БД
+5. Help Server — RAG по справке конфигурации
+
+---
+
+## Быстрый старт (готовые серверы)
 
 ```bash
 ## HelpSearchServer — поиск по справке
