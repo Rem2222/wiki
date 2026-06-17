@@ -1,15 +1,8 @@
 ---
 title: "Heisenberg Team"
-description: ""
-tags: [openclaw, multi-agent, heisenberg, automation, production]
-related: 
----
-
----
-title: "Heisenberg Team"
 description: "Production-ready OpenClaw multi-agent team template with 8 agents"
 tags: [openclaw, multi-agent, heisenberg, automation]
-related: openclaw
+related: [[tech/multica]] [[tech/jawl]] [[tech/openclaw-billing-proxy]]
 ---
 
 # Heisenberg Team

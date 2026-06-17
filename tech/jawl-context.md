@@ -1,6 +1,8 @@
 ---
+description: Собирает промпт для LLM из множества источников.
 created: 2026-05-01
 tags: [jawl, context, prompt, reference]
+related: [[tech/jawl]] [[tech/jawl-architecture]] [[tech/jawl-config]]
 parent: "[[tech/jawl]]"
 ---
 

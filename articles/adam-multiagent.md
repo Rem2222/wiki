@@ -1,6 +1,8 @@
 ---
+description: Adam (adamdotdev) — AI developer, автор статей про multi-agent системы.
+tags: [article]
+related: [[articles/orchestrator-year]] [[tech/multica]] [[tech/heisenberg-team-gpt]]
 created: 2026-04-25
-tags:
   - x-com
   - multi-agent
   - architecture
@@ -36,7 +38,7 @@ Adam (adamdotdev) — AI developer, автор статей про multi-agent �
 
 ## Статус
 
-[[status.toread]]
+`status: toread`
 
 ## Источник
 

@@ -1,12 +1,7 @@
-# TradingAgents
-
-**Type:** concept
-**Created:** 2026-05-05
-**Updated:** 2026-05-05
-**Tags:** [multi-agent, llm, trading, fintech, react, rag]
-**Sources:** [raw/tradingagents.md]
-**Related:** [[concepts/multi-agent]], [[concepts/react]], Stock Trading
-
+---
+description: Мультиагентный LLM-фреймворк для алгоритмической торговли (UCLA + MIT)
+tags: [multi-agent, llm, trading, fintech]
+related: [[concepts/sdd]] [[concepts/mcp]]
 ---
 
 # TradingAgents
@@ -112,6 +107,7 @@ TradingAgents (arXiv:2412.20138, UCLA + MIT) — первый фреймворк
 - Paper: [arXiv:2412.20138](https://arxiv.org/abs/2412.20138)
 - Website: https://tradingagents-ai.github.io/
 - Authors: Yijia Xiao, Edward Sun, Di Luo, Wei Wang (UCLA, MIT)
+- Практическая реализация: [[videos/trading/claude-tradingview-connection]] — подключение Claude Code к TradingView для алготорговли
 
 ## Related
 <!-- openclaw:wiki:related:start -->

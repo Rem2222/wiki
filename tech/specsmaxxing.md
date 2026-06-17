@@ -1,3 +1,9 @@
+---
+description: _Записано: 2026-05-03_
+tags: [tech]
+related: [[concepts/sdd]] [[tech/gsd]] [[tech/openspec]]
+---
+
 # Specsmaxxing / Acai.sh — Spec-Driven Development с ACID tracking
 
 _Записано: 2026-05-03_
@@ -36,9 +42,9 @@ feature:
 
 Агент может сам нумеровать требования и ссылаться на них:
 ```python
-# AUTH-1
+## AUTH-1
 authHeader = req.headers["authorization"]
-# AUTH-2
+## AUTH-2
 isAuthorized = verifyBearerToken(authHeader)
 ```
 
@@ -51,12 +57,12 @@ isAuthorized = verifyBearerToken(authHeader)
 3. **Dashboard** — webapp + REST API (Elixir/Phoenix/Postgres)
 
 ```bash
-# Установка CLI
+## Установка CLI
 npm install -g @acai.sh/cli
-# или
+## или
 npx @acai.sh/cli skill  # научить агента работать с Acai
 
-# Пуш спеки в dashboard
+## Пуш спеки в dashboard
 acai push --all
 ```
 

@@ -1,4 +1,10 @@
-# Poe API — Models & Pricing
+---
+description: Подписки Poe включают API-доступ. OpenAI-compatible.
+tags: [tech]
+related: [[tech/poe-chutes-comparison]] [[tech/free-claude-code]] [[tech/9router-vs-openrouter]]
+---
+
+# poe-api-models
 
 **API Key:** `sk-poe-gF8zqW-x7iDLO_jLCbR1eW0Ogn9llHGj3CoIN4mELQY`
 
@@ -85,3 +91,5 @@ providers:
 - Tool calling поддерживается на большинстве моделей
 - Streaming работает
 - Cache read: ~50% от prompt цены
+
+Связано: [[tech/poe-chutes-comparison]] — сравнение Poe API и Chutes AI

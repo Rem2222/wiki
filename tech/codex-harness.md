@@ -1,3 +1,9 @@
+---
+description: _Записано: 2026-05-03_
+tags: [tech]
+related: [[tech/opencode]] [[tech/free-claude-code]] [[tech/multica]]
+---
+
 # Codex Harness — OpenClaw Plugin
 
 _Записано: 2026-05-03_
@@ -76,8 +82,8 @@ openclaw models auth login --provider openai-codex
 
 **Если хотели нативный Codex runtime:**
 ```bash
-# Изменить модель на openai/gpt-* и поставить agentRuntime.id: "codex"
-# Затем /new или /reset для новой сессии
+## Изменить модель на openai/gpt-* и поставить agentRuntime.id: "codex"
+## Затем /new или /reset для новой сессии
 ```
 
 ## Требования

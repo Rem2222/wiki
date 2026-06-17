@@ -1,8 +1,8 @@
 ---
 title: "Vibe Coding Workflow"
-description: ""
+description: Структурированный 5-phase workflow от идеи до работающего продукта:
 tags: [vibe-coding, workflow, AI-assisted, development]
-related: 
+related: [[tech/gsd]] [[tech/sdd-deep-guide]] [[tech/pre-mortem]]
 ---
 
 # Vibe Coding Workflow

@@ -1,6 +1,8 @@
 ---
+description: Thdxr (Anthropic) — один из основателей Anthropic, где разрабатывают Claude.
+tags: [article]
+related: [[tech/codex-harness]] [[tech/free-claude-code]] [[tech/multica]]
 created: 2026-04-25
-tags:
   - x-com
   - claude-code
   - anthropic
@@ -39,7 +41,7 @@ OpenClaw Subagents работают похожим образом:
 
 ## Статус
 
-[[status.toread]]
+`status: toread`
 
 ## Источник
 

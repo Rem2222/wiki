@@ -1,3 +1,9 @@
+---
+description: Заметка о 9Router vs OpenRouter
+tags: [tech]
+related: [[tech/openai-routing]] [[tech/poe-api-models]] [[tech/optimizing-llm-api-calls-for-coding]]
+---
+
 # 9Router vs OpenRouter
 
 ## 9Router

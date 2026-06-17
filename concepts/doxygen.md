@@ -1,4 +1,10 @@
-# Doxygen
+---
+description: | Разработчик | Dimitri van Heesch |
+tags: [concept]
+related: [[concepts/sdd]] [[tech/sourcecraft]] [[concepts/mcp]]
+---
+
+# doxygen
 
 **Doxygen** — генератор документации из исходного кода. Извлекает информацию из специально форматированных комментариев и генерирует документацию в различных форматах.
 
@@ -35,18 +41,18 @@ C/C++ (основной), Java, Python, C#, PHP, Fortran, Objective-C, VHDL, IDL
 
 ## GitHub интеграция
 
-Doxygen часто используется в [[tech/github-actions]] для автоматической сборки документации и деплоя на GitHub Pages. Доступны экшены:
+Doxygen часто используется в [[concepts/github-actions]] для автоматической сборки документации и деплоя на GitHub Pages. Доступны экшены:
 - `doxygen-action`
 - `Doxygen GitHub Pages Deploy Action`
 
-См. также: [[wiki/concepts/github-actions]]
+См. также: [[concepts/github-actions]]
 
 ## Альтернативы
 
 | Инструмент | Язык | Примечания |
 |---|---|---|
-| [[wiki/concepts/javadoc]] | Java | Аналог для Java |
-| [[wiki/concepts/sphinx]] | Python | Особенно для Python |
+| [[concepts/javadoc]] | Java | Аналог для Java |
+| [[concepts/sphinx]] | Python | Особенно для Python |
 | Doxygen | C/C++ | Стандарт де-факто |
 
 ## Ресурсы

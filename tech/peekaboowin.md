@@ -1,4 +1,10 @@
-# PeekabooWin
+---
+description: Windows-first desktop automation sidecar (port of macOS Peekaboo by steipete).
+tags: [tech]
+related: [[tech/cloakbrowser]] [[concepts/mcp]]
+---
+
+# peekaboowin
 
 **URL:** https://github.com/FelixKruger/PeekabooWin
 
@@ -23,17 +29,17 @@ Windows-first desktop automation sidecar (port of macOS Peekaboo by steipete).
 ## Installation
 
 ```bash
-# Clone
+## Clone
 git clone https://github.com/FelixKruger/PeekabooWin.git
 cd PeekabooWin
 
-# Install
+## Install
 npm install
 
-# Test
+## Test
 npm test
 
-# Run MCP server for AI tools
+## Run MCP server for AI tools
 npm run mcp
 ```
 
@@ -47,3 +53,5 @@ npm run mcp
 
 - [Peekaboo (macOS)](https://github.com/steipete/Peekaboo) — оригинальный macOS проект
 - [Peekaboo site](https://peekaboo.boo)
+## See also
+- [[tech/cloakbrowser]] — stealth Chromium с антифingerprint

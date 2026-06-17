@@ -4,6 +4,12 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 ---
 
+## [2026-06-13] ingest | Open Knowledge Format (OKF)
+
+- Создана страница [[concepts/open-knowledge-format]] — открытый формат знаний от GCP для людей и AI-агентов
+- Добавлена секция «Идея на апгрейд wiki» — анализ того, как OKF соотносится с текущей wiki
+- Источник: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
+
 ## [2026-04-05] setup | Создание вики
 
 - Создана структура папок (raw, assets, wiki/{people,tech,projects,concepts,books,misc})
@@ -96,4 +102,75 @@ _Append-only. Формат: `## [дата] type | описание`_
 - [[articles/orchestrator-year]] — Год оркестраторов статья (2026-04-25)
 
 ## [2026-05-05] ingest | TradingAgents
-Создана страница [[wiki/concepts/tradingagents]] — мультиагентный LLM фреймворк для торговли. Источник: https://tradingagents-ai.github.io/. Создан raw/tradingagents.md. 5 ролей: Analysts → Researchers (Bull/Bear debate) → Trader → Risk Manager → Fund Manager. Ключевое: ReAct prompting, structured reports + natural language debate, quick/deep thinking models. Результаты: AAPL +26.6% (B&H -5.2%), Sharpe 8.21, MaxDD 0.91%.
+Создана страница [[concepts/tradingagents]] — мультиагентный LLM фреймворк для торговли. Источник: https://tradingagents-ai.github.io/. Создан raw/tradingagents.md. 5 ролей: Analysts → Researchers (Bull/Bear debate) → Trader → Risk Manager → Fund Manager. Ключевое: ReAct prompting, structured reports + natural language debate, quick/deep thinking models. Результаты: AAPL +26.6% (B&H -5.2%), Sharpe 8.21, MaxDD 0.91%.
+
+## [2026-05-30] ingest | Moonin Papa — крипто-сканер
+Создана страница [[videos/moonin-papa-crypto-pumps-scanner]] — обзор видео Aaron Dishner (Moonin Papa) про бесплатный крипто-сканер bettertrader.io для поиска монет после пампа через spread и near 24h low фильтры. Расшифровка получена через Tor.
+
+## [2026-05-27] ingest | MemPalaceViz
+Создана страница [[tech/mempalace-viz]] — визуализация графа знаний для MemPalace (D3.js force-directed graph, MCP интеграция, Crystal Palace тема). Автор: Joe Guarino / G5 Labs. Репозиторий: https://github.com/JoeDoesJits/mempalace-viz. Версия v1.5.0, 25 коммитов, MIT лицензия. Zero-build single-file SPA. Cloudflare zero-trust hosting.
+
+## [2026-05-27] ingest | 8 источников (батч)
+Созданы страницы:
+- [[tech/assemblyai]] — AssemblyAI, API-first Speech-to-Text и аудиоинтеллект
+- [[tech/skillopt]] — Microsoft Research SkillOpt: оптимизация агентных скиллов через ReflACT
+- [[tech/webwright]] — Microsoft Research Webwright: веб-агенты через code-as-action
+- [[events/gpt5-free-announcement]] — GPT-5 стал полностью бесплатным (Greg Brockman, 27 мая 2026)
+- [[tech/agents-best-practices]] — provider-agnostic best practices для агентных систем (Denis Shiryaev)
+- [[tech/agentation]] — Enterprise-платформа оркестрации AI-агентов
+- [[tech/metadata-1c]] — генератор DevOps-отчётов по конфигурации 1С из XML
+- [[tools/find-skills]] — мета-скилл для поиска agent-скиллов (Vercel Labs, skills.sh)
+
+## [2026-05-27] ingest | Agent Memory Research
+- Создана [[tech/agent-memory-research-2026]] — исследование 40+ решений для долговременной памяти агентов
+- Обновлён index.md — добавлена секция "Память AI-агентов (Memory)"
+- Итог: выбраны связка agentmemory + GBrain для установки
+
+## 2026-05-27 18:00: ingest | 16 источников (статья на Habr про harness для Claude Code)
+
+Добавлены страницы из статьи «Рабочее место не-вайбкодера: настраиваем harness» (https://habr.com/ru/companies/yadro/articles/1038084/):
+- [[tech/cc-websearch]] — поисковый плагин для Claude Code
+- [[tech/context7]] — MCP документации библиотек
+- [[tech/z-ai]] — AI-поисковик с MCP
+- [[tech/serena-mcp]] — LSP через MCP
+- [[tech/caveman]] — сокращение многословия модели
+- [[tech/sequential-thinking]] — пошаговые рассуждения
+- [[tech/go-skills-claude-code]] — Go-плагины (3 шт.)
+- [[tech/gopilot]] — Go AI coding agent
+- [[tech/claude-plugin-dev-tools]] — plugin-dev, skill-creator, mcp-server-dev
+- [[tech/gsd]] — Get Shit Done SDD-фреймворк
+- [[tech/bmad-method]] — BMAD SDD-фреймворк
+- [[tech/agent-skills-marketplace]] — skillsmp.com
+- [[tech/sourcecraft]] — AI-объяснение кода
+- [[tech/deepseek-error400-fix]] — фикс DeepSeek V4
+- [[tools/go-enumsafety]] — Go enum linter
+
+## 2026-05-28 18:30: ingest | reveal.js
+
+- [[tech/revealjs]] — HTML Presentation Framework (Hakim El Hattab, 71.5k ⭐)
+
+## 2026-06-01 16:00: maintenance | полный аудит вики
+
+Полный аудит и обслуживание вики:
+- Созданы недостающие страницы концепций: concepts/sdd, concepts/mcp, concepts/rag, concepts/llm-wiki, concepts/memex, concepts/github-actions, concepts/javadoc, concepts/sphinx
+- Созданы tech/kiro и tech/tessl
+- Исправлены ~20 битых вики-ссылок (wiki/ → правильный путь)
+- Переименован tech/Mercury Agent Skills.md → tech/Mercury-Agent-Skills.md
+- Добавлен frontmatter tech/Mercury-Agent-Skills.md
+- Исправлены пути в index.md и log.md
+- Обновлён SCHEMA.md (удалены template artifacts)
+- Все wiki/ префиксы приведены к единому стандарту
+
+## [2026-06-01] ingest | Ozon API инструменты (2 страницы)
+
+- Создана [[tech/ozon-seller-api]] — MCP-серверы, SDK, библиотеки, парсеры для Ozon Seller API
+- Создана [[tech/ozon-purchase-history]] — расширение Chrome + Python-парсер для скачивания покупок из ЛК
+- Обновлён index.md
+
+## 2026-06-03 maintenance | wiki audit + fixes
+- Добавлен frontmatter 35 страницам (tech/)
+- Добавлены description 41 странице
+- Добавлены tags 7 страницам
+- Исправлены множественные H1 на 46 страницах (→ H2)
+- Исправлены битые вики-ссылки (30+) — редиректы, пути, созданы страницы-заглушки
+- Созданы 9 новых страниц: forgejo, gitea, defuddle, mcp-1c-setup, minimax, openclaw-billing-proxy, superpowers, graphviz, hermes-mcp-setup

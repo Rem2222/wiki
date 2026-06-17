@@ -1,6 +1,6 @@
 ---
 title: "SDD Deep Guide"
-description: ""
+description: Ключевое отличие от традиционной разработки:
 tags: [SDD, AI coding, specifications, documentation]
 related: [[sdd-deep-guide-ru]], [[tech/sdd-instruments]]
 ---

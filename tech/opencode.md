@@ -1,3 +1,9 @@
+---
+description: wget https://github.com/anomalyco/opencode/releases/latest/download/opencode-linux-x64.tar.gz
+tags: [tech]
+related: [[tech/free-claude-code]] [[tech/z-ai]] [[tech/codex-harness]]
+---
+
 # OpenCode v1.14.48 — VPS Setup
 
 ## Версия
@@ -5,18 +11,18 @@
 
 ## Установка на VPS 81.17.100.103
 ```bash
-# Скачать с GitHub (актуальная версия)
+## Скачать с GitHub (актуальная версия)
 wget https://github.com/anomalyco/opencode/releases/latest/download/opencode-linux-x64.tar.gz
 tar -xzf opencode-linux-x64.tar.gz
 sudo cp opencode /usr/bin/opencode
 
-# Старая версия (v0.0.55 из opencode.ai/releases) НЕ поддерживает `web` команду
+## Старая версия (v0.0.55 из opencode.ai/releases) НЕ поддерживает `web` команду
 ```
 
 ## Веб-интерфейс
 ```bash
 OPENCODE_SERVER_PASSWORD=smoon2026 \
-OPENAI_API_KEY=$(grep 'opencode-go' ~/.openclaw/openclaw.json | grep api_key | sed 's/.*"api_key": "\([^"]*\)".*/\1/') \
+OPENAI_API_KEY=$(grep 'opencode-go' ~/.openclaw/openclaw.json | grep api_key | sed 's/.*\"api_key\": \"\([^\"]*\)\".*/\1/') \
 /usr/bin/opencode web --port 4096 --hostname 0.0.0.0 &
 ```
 
@@ -35,3 +41,5 @@ OPENAI_API_KEY=$(grep 'opencode-go' ~/.openclaw/openclaw.json | grep api_key | s
 ## Модели (OpenCodeGo provider)
 - GLM 5.1 (MoE, 200K context)
 - Kimi K2.5 (MoE, 256K context)
+
+Связано: [[tech/free-claude-code]] — прокси для бесплатного Claude Code через OpenCode Zen

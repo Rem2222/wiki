@@ -1,3 +1,9 @@
+---
+description: Веб-интерфейс для хостинга Git-репозиториев — как GitHub, только self-hosted. Можно поставить на свой сервер, бесплатно и под полным контролем.
+tags: [tech]
+related: [[tech/gitea]] [[tech/forgejo]]
+---
+
 # GitNexus
 
 **Тег:** #инструмент #кодинг #model辅助
@@ -29,7 +35,7 @@ MIT
 - Скромнее GitHub
 
 ## Альтернативы
-[[Gitea]], [[Forgejo]], GitLab (self-hosted)
+[[tech/gitea]], [[tech/forgejo]], GitLab (self-hosted)
 
 ## Заметки
 - Используется как **инструмент для кодинга и помощи модели в знании кода**

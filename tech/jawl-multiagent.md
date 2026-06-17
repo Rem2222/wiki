@@ -1,15 +1,15 @@
 ---
+description: Мультиагентный режим позволяет запускать N независимых AI-агентов в одном процессе. Каждый агент имеет изолированную базу данных, свои настройки LLM, личную папку с конфигами SOUL.md/STYLE.md, собс...
+tags: [tech]
+related: [[tech/jawl]] [[tech/jawl-architecture]] [[tech/jawl-skills-registry]]
 created: 2026-05-16
 updated: 2026-05-16
 path: /home/rem/jawl_multi
-tags:
   - ai-agents
   - multiagent
   - jawl
   - moisha
   - jinx
-type: guide
----
 
 # JAWL — Мультиагентный режим
 
@@ -202,7 +202,7 @@ agents:
 
 ```bash
 mkdir -p src/utils/local/data/agents/новый_агент/
-# положить SOUL.md и/или STYLE.md в эту папку
+## положить SOUL.md и/или STYLE.md в эту папку
 ```
 
 ## Как смотреть за работой
@@ -305,10 +305,9 @@ curl http://localhost:8080/api/agents
 Код в `/home/rem/jawl_multi/` — это git worktree. Для продакшена:
 
 ```bash
-# скопировать в постоянное место или сделать deploy-скрипт
+## скопировать в постоянное место или сделать deploy-скрипт
 cp -r /home/rem/jawl_multi /opt/jawl-multiagent/
 cd /opt/jawl-multiagent
 cp .env.example .env  # настроить ключи
 nano config/agents.yaml  # настроить агентов
 python -m src.main
-```

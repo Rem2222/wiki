@@ -1,4 +1,11 @@
+---
+description: Исследование AI-агентов и Mercury Agent
+tags: [agent, ai, research]
+related: [[tech/hermes-memory-setup-vps]] [[tech/jawl-skills-registry]] [[tech/hermes-mcp-setup]]
+---
+
 # Mercury Agent Skills
+
 
 ## Описание
 
@@ -55,7 +62,7 @@ metadata:
   tags: [memory-management, context-window, vector-database, ...]
 ---
 
-# Memory Management for Long-Running Agents
+## Memory Management for Long-Running Agents
 
 ## Overview
 

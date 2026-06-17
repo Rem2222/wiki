@@ -3,6 +3,7 @@ type: concept
 tags: [decision-making, risk-analysis, gary-klein, structured-thinking, ai-agent-skills]
 created: 2026-05-05
 description: Pre-mortem — структурированный анализ провала. Метод Gary Klein, рекомендован Daniel Kahneman.
+related: [[tech/gsd]] [[tech/vibe-coding-workflow]] [[concepts/sdd]]
 ---
 
 # Pre-Mortem

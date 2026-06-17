@@ -1,4 +1,10 @@
-# playsvideo — Chrome Extension
+---
+description: Локальный видеоплеер в Chrome — воспроизводит любые видеофайлы прямо в браузере без загрузки на сервер.
+tags: [tech]
+related: [[tech/defuddle]] [[tech/assemblyai]]
+---
+
+# playsvideo
 
 **Тип:** Расширение Chrome для локального воспроизведения видео
 

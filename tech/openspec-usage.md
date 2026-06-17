@@ -1,6 +1,6 @@
 ---
 title: "OpenSpec: Практическое руководство"
-description: ""
+description: npm install -g @fission-ai/openspec@latest
 tags: [SDD, OpenSpec, spec-first, AI coding]
 related: [[openspec]], [[tech/sdd-instruments]]
 ---
@@ -16,17 +16,17 @@ related: [[openspec]], [[tech/sdd-instruments]]
 ### 1. Установка и инициализация
 
 ```bash
-# Установка
+## Установка
 npm install -g @fission-ai/openspec@latest
 
-# Перейти в проект
+## Перейти в проект
 cd your-project
 
-# Инициализация (указать инструмент)
+## Инициализация (указать инструмент)
 openspec init --tools cursor
-# Доступные: cursor, claude, windsurf, cline, github-copilot и др. (20+)
+## Доступные: cursor, claude, windsurf, cline, github-copilot и др. (20+)
 
-# Или для всех инструментов
+## Или для всех инструментов
 openspec init --tools all
 ```
 
@@ -73,7 +73,7 @@ project/
 Создаёт change и все артефакты:
 
 ```bash
-# Пример
+## Пример
 /opsx:propose add-dark-mode
 ```
 
@@ -111,7 +111,7 @@ openspec update            # Обновить после апгрейда
 Delta specs показывают изменения относительно текущих specs:
 
 ```markdown
-# Delta for Auth
+## Delta for Auth
 
 ## ADDED Requirements
 
@@ -240,7 +240,7 @@ OpenSpec собирает анонимную статистику (только 
 Отключить:
 ```bash
 export OPENSPEC_TELEMETRY=0
-# или
+## или
 export DO_NOT_TRACK=1
 ```
 

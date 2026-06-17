@@ -1,3 +1,9 @@
+---
+description: MemPalace поставляет MCP-сервер с 29 инструментами (chroma storage, KG, diary), но протокол использования не выполнялся автоматически — агент просто не знал, когда вызывать `diary_write`, `kg_query...
+tags: [tech]
+related: [[tech/hermes-memory-setup-vps]] [[tech/gbrain-lossless-agent-memory]] [[tech/agentmemory-vs-current]]
+---
+
 # MemPalace × Hermes Agent: интеграция через gateway hook
 
 ## Контекст
@@ -46,12 +52,12 @@ events:
 
 **Исправление:**
 ```python
-# БЫЛО (return value discarded):
+## БЫЛО (return value discarded):
 await self.hooks.emit("agent:start", ...)
 
-# СТАЛО (return value collected и инъектится в context):
+## СТАЛО (return value collected и инъектится в context):
 hook_results = await self.hooks.emit_collect("agent:start", ...)
-# hook_results["context"] инъектится в context_prompt
+## hook_results["context"] инъектится в context_prompt
 ```
 
 **Правило Романа:** этот патч **слетает при каждом обновлении Hermes**. После обновления — переприменить вручную.

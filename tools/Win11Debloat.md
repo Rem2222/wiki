@@ -1,8 +1,8 @@
 ---
 title: "Win11Debloat"
-description: ""
+description: PowerShell-скрипт для очистки Windows 10/11 от предустановленного мусора.
 tags: [Windows, PowerShell, debloat, privacy]
-related: 
+related: [[tech/revealjs]] [[tech/jawl-dashboard]]
 ---
 
 # Win11Debloat

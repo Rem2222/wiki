@@ -1,6 +1,8 @@
 ---
+description: "baseUrl": "https://api.example.com/v1",
 created: 2026-05-01
 tags: [jawl, howto, provider, llm]
+related: [[tech/jawl]] [[tech/jawl-config]] [[tech/jawl-howto-add-interface]]
 parent: "[[tech/jawl]]"
 ---
 

@@ -1,4 +1,10 @@
-# RTK — Rust Token Killer
+---
+description: CLI-прокси на Rust, который перехватывает вывод shell-команд и сжимает его перед отправкой в контекст LLM. Экономит 60–90% токенов на типовых dev-командах.
+tags: [tech]
+related: [[tools/rtk]]
+---
+
+# rtk
 
 **Ссылки:** [GitHub](https://github.com/rtk-ai/rtk) | [Сайт](https://www.rtk-ai.app) | [Discord](https://discord.gg/RySmvNF5kF)
 
@@ -28,13 +34,13 @@ CLI-прокси на Rust, который перехватывает вывод
 ## Установка
 
 ```bash
-# Homebrew (macOS)
+## Homebrew (macOS)
 brew install rtk
 
-# Linux
+## Linux
 curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh
 
-# Cargo
+## Cargo
 cargo install --git https://github.com/rtk-ai/rtk
 ```
 

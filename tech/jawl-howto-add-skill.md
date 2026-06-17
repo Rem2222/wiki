@@ -1,8 +1,9 @@
 ---
+description: Навык (skill) — метод Python с `@skill()` декоратором, возвращающий `SkillResult`. Привязан к L2 интерфейсу.
 created: 2026-05-01
 tags: [jawl, howto, skill]
+related: [[tech/jawl]] [[tech/jawl-skills-registry]] [[tech/jawl-howto-add-event]]
 parent: "[[tech/jawl]]"
----
 
 # HOWTO: Добавить навык в JAWL
 
@@ -26,7 +27,7 @@ parent: "[[tech/jawl]]"
 ### 2. Создать файл
 
 ```python
-# src/l2_interfaces/host/os/skills/my_skill.py
+## src/l2_interfaces/host/os/skills/my_skill.py
 
 from src.l3_agent.skills.registry import SkillResult, skill
 from src.l2_interfaces.host.os.client import HostOSClient

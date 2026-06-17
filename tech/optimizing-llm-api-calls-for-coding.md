@@ -1,4 +1,10 @@
-# Оптимизация вызовов LLM API для кодинг-агентов
+---
+description: Модели с большим контекстным окном (1M токенов) делают множество последовательных API-вызовов вместо того, чтобы прочитать всё за раз, подумать и выдать готовый код. Каждый вызов = списание квоты (...
+tags: [tech]
+related: [[tech/multica]] [[tech/opencode]] [[tech/subquadratic]]
+---
+
+# optimizing-llm-api-calls-for-coding
 
 **Дата:** 2026-05-11
 **Контекст:** Настройка трёх Multica-агентов на базе OpenCode Go моделей (DeepSeek V4 Pro, V4 Flash, Qwen3.6 Plus)

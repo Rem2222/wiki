@@ -1,15 +1,8 @@
 ---
 title: "NaiveProxy"
-description: ""
-tags: [naiveproxy, dpi-bypass, censorship, vpn, proxy]
-related: 
----
-
----
-title: "NaiveProxy"
 description: "Лучший способ обхода DPI в 2026. Использует сетевой стек Chromium для маскировки трафика."
-tags: [dpi-bypass, censorship, vpn, chromium, caddy]
-related: v2ray, vless, wireguard
+tags: [naiveproxy, dpi-bypass, censorship, vpn, proxy, chromium, caddy]
+related: [[tech/hysteria-clients]] [[tech/hysteria-realm]] [[tech/openclaw-billing-proxy]]
 ---
 
 # NaiveProxy
@@ -76,7 +69,7 @@ source ~/.profile
 ```bash
 go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 
-# Увеличиваем /tmp если мало места
+## Увеличиваем /tmp если мало места
 mkdir /root/tmp
 export TMPDIR=/root/tmp
 
@@ -186,6 +179,11 @@ warp-cli connect
 ```
 
 В Caddyfile добавить `upstream socks5://127.0.0.1:40000` в блок forward_proxy.
+
+## Альтернативы
+
+- [[tech/hysteria-clients]] — Hysteria 2 клиенты для Windows и Android (альтернативный протокол обхода DPI)
+- [[tech/hysteria-realm]] — Hysteria 2 Realm: P2P-режим без публичного IP (UDP hole punching)
 
 ## Источник
 

@@ -164,7 +164,7 @@ The system SHALL validate the token on each request.
 
 **В коде:**
 ```python
-# Requirement: auth.spec.md §3.1
+## Requirement: auth.spec.md §3.1
 # "The system SHALL validate token on each request"
 def validate_token(token: str) -> bool:
     ...
@@ -255,10 +255,10 @@ SDD-режим также автоматический если в проект�
 При создании нового проекта:
 
 ```bash
-# В Linear:
+## В Linear:
 python3 linear_api.py project-create "Название" "Описание"
 
-# В OpenSpec:
+## В OpenSpec:
 cd ~/.openclaw/workspace/projects/<название>
 openspec init --tools opencode
 ```

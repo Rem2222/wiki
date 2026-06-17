@@ -1,11 +1,11 @@
 ---
+description: Официальный инструмент от Model Context Protocol для отладки MCP серверов и клиентов.
+tags: [tech]
+related: [[concepts/mcp]] [[tech/hermes-mcp-setup]] [[tech/mcpservers]]
 created: 2026-04-25
-tags:
   - mcp
   - debugging
   - modelcontextprotocol
-type: tool
----
 
 # MCP Inspector
 
@@ -25,7 +25,7 @@ type: tool
 
 ```bash
 npx @modelcontextprotocol/inspector
-# или
+## или
 npm install -g @modelcontextprotocol/inspector
 mcp-inspector
 ```
@@ -51,7 +51,7 @@ mcp-inspector --command "npx" --args "server-команда"
 
 ## Статус
 
-[[status.ready]]
+`status: ready`
 
 ## Заметки
 

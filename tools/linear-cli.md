@@ -1,12 +1,12 @@
 ---
+description: CLI инструмент для Linear. Позволяет управлять задачами, коммитами, линковать GitHub/Lab коммиты к Linear.
+tags: [tools]
+related: [[tech/jawl]] [[projects/veritas-kanban]]
 created: 2026-04-25
-tags:
   - cli
   - linear
   - automation
   - git
-type: tool
----
 
 # Linear CLI
 
@@ -17,16 +17,16 @@ CLI инструмент для Linear. Позволяет управлять з
 ## Команды
 
 ```bash
-# Привязать коммит к Linear issue
+## Привязать коммит к Linear issue
 linear git-commit "commit message"
 
-# Линковать GitHub PR к Linear
+## Линковать GitHub PR к Linear
 linear git-link --pr 123
 
-# Создать issue из CLI
+## Создать issue из CLI
 linear issue create --title "Title" --description "Desc"
 
-# Список своих issues
+## Список своих issues
 linear issues list --assignee me
 ```
 
@@ -54,7 +54,7 @@ linear auth # однократно
 
 ## Статус
 
-[[status.todo]]
+`status: todo`
 
 ## Источник
 
