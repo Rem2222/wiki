@@ -1,6 +1,7 @@
 ---
 description: Домашняя рабочая станция XE2690 — характеристики, анализ узких мест, рекомендации по апгрейду
 tags: [hardware, pc, workstation, xeon, upgrade]
+related: [[llm/local-gemma-4-12b-setup]], [[tech/cockpit]], [[tech/openclaw-billing-proxy]]
 ---
 
 # XE2690 — Домашняя рабочая станция

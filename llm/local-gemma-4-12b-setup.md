@@ -1,19 +1,12 @@
 ---
 type: concept
 title: Local Gemma 4 12b Setup
-description: >-
-  Gemma 4 12B coder Q4_K_M — локальный запуск на домашнем ПК XE2690 через
-  llama-server (Windows, CPU). Используется для Cursor, OpenClaw и веб-чата.
+description: 'Gemma 4 12B coder Q4_K_M — локальный запуск на домашнем ПК XE2690 через llama-server (Windows, CPU). Используется для Cursor, OpenClaw и веб-чата.'
 ingested_via: 'mcp:put_page'
 ingested_at: '2026-06-16T15:40:59.505Z'
 source_kind: 'mcp:put_page'
-tags:
-  - gemma
-  - llama.cpp
-  - llm
-  - local
-  - setup
-  - windows
+tags: [gemma, llama.cpp, llm, local, setup, windows]
+related: [[hardware/xe2690-workstation]], [[tech/codex-harness]], [[tech/openclaw-billing-proxy]]
 ---
 
 # Gemma 4 12B coder — локальный запуск

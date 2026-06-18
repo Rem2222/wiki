@@ -1,15 +1,9 @@
 ---
 type: concept
-title: Openprose Reactor
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-06-15T08:16:14.065Z'
-source_kind: 'mcp:put_page'
----
-
----
+title: OpenProse / Reactor
 description: OpenProse — декларативный язык для AI-сессий (Markdown-контракты *.prose.md). Reactor — runtime, который удерживает мир в этом состоянии. Новая парадигма для AI-агентов: «cost scales with surprise, not wall-clock time». С примерами кода, SDK, контрактами и сценариями для своей инфраструктуры.
 tags: [tech, ai-agents, declarative, reactor, mcp]
-related: [[concepts/rag]] [[concepts/mcp]] [[tech/hermes-agent-masterclass]] [[tech/openmanus]] [[tech/rag-projects-summary]]
+related: [[concepts/rag]], [[concepts/mcp]], [[tech/hermes-agent-masterclass]], [[tech/openmanus]], [[tech/rag-projects-summary]]
 ---
 
 # OpenProse / Reactor

@@ -1,13 +1,7 @@
 ---
 description: SOUL.md — файл личности Hermes Agent. Как 50 строк задают характер агента: идентичность, голос, ценности, ограничения.
-tags:
-  - hermes
-  - personality
-  - soul
-  - agent-identity
-related:
-  - tech/hermes-agent-masterclass
-  - tech/hermes-memory-setup-vps
+tags: [hermes, personality, soul, agent-identity]
+related: [[tech/hermes-agent-masterclass]], [[tech/hermes-memory-setup-vps]]
 ---
 
 # SOUL.md — Личность Hermes Agent

@@ -110,15 +110,22 @@ _Обновлено: 2026-06-01_
 - [[tech/poe-chutes-comparison]] — сравнение Poe API и Chutes AI
 - [[tech/optimizing-llm-api-calls-for-coding]] — оптимизация вызовов LLM API для кодинг-агентов
 
+- [[tech/hermes-max-plugin]] — MAX Messenger (VK) plugin for Hermes Agent
+- [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy
 ## Hermes Agent
 - [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
 - [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам
 
+- [[secrets/hermes-telegram-bot-token]] — Telegram Bot Token для Hermes Gateway
 ## 1С
 - [[tech/1c-mcp]] — настройка и использование MCP для 1С
 - [[tech/1c-mcp]] — MCP vs Built-in Tools, анализ токенов
 - [[tech/onebase]] — open-source бизнес-платформа с 1С-подобным DSL (ERP/low-code)
 
+## Hardware
+- [[hardware/xe2690-workstation]] — домашняя рабочая станция XE2690
+## Tasks
+- [[tasks/mul-239-codegraph-in-gsd]] — MUL-239: добавить CodeGraph в GSD squad
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
 - [[tools/beads]] — Git-backed issue tracker для AI агентов (steveyegge/beads)
@@ -128,6 +135,8 @@ _Обновлено: 2026-06-01_
 - [[tools/v8std-mcp]] — стандарты разработки 1С для ИИ-помощников (v8std.ru/mcp)
 - [[tools/go-enumsafety]] — Go-линтер для безопасной работы с enum (sum types)
 
+## LLM
+- [[llm/local-gemma-4-12b-setup]] — локальный запуск Gemma 4 12B coder на XE2690
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
 - [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)
@@ -155,6 +164,8 @@ _Обновлено: 2026-06-01_
 ## Разное
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki
 - [[misc/calendar-events]] — календарь событий 2026
+
+- [[flag_rebuild]] — флаг пересборки для инфраструктурных пайплайнов
 
 ## Промпты
 - [[prompts/human-like-text]] — промт для LLM: текст как человек, прохождение AI-детекции

@@ -1,15 +1,9 @@
 ---
 type: concept
-title: Mul 239 Codegraph In Gsd
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-06-14T22:30:02.984Z'
-source_kind: 'mcp:put_page'
----
-
----
+title: "MUL-239: CodeGraph в GSD squad"
 description: Добавить CodeGraph (code knowledge graph) в экосистему GSD squad — интеграция с оркестратором и агентами
 tags: [gsd, codegraph, task, integration, ai-agents]
-related: [[tech/gsd]], [[tech/codegraph]], [[tech/gsd-multica-integration]]
+related: [[tech/gsd]], [[tech/gsd-multica-integration]]
 ---
 
 # MUL-239: Добавить CodeGraph в GSD squad

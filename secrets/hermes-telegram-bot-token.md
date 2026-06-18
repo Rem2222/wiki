@@ -5,11 +5,8 @@ description: Telegram Bot Token for Hermes Gateway Telegram integration
 ingested_via: 'mcp:put_page'
 ingested_at: '2026-06-14T21:46:35.039Z'
 source_kind: 'mcp:put_page'
-tags:
-  - bot
-  - hermes
-  - secrets
-  - telegram
+tags: [bot, hermes, secrets, telegram]
+related: [[tech/hermes-agent-masterclass]], [[tech/hermes-external-integrations]]
 ---
 
 # Telegram Bot Token

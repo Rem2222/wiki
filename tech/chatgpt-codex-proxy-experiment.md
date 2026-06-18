@@ -1,7 +1,7 @@
 ---
 description: Эксперимент по подключению ChatGPT Teacher (K12) подписки к Hermes через Codex API proxy
 tags: [chatgpt, teacher, codex, proxy, hermes, experiment]
-related: []
+related: [[tech/openai-routing]], [[tech/hermes-external-integrations]]
 date: 2026-06-17
 ---
 
