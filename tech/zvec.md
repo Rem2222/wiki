@@ -1,15 +1,12 @@
 ---
 type: concept
 title: Zvec
+description: Встраиваемая векторная БД от Alibaba — SQLite-подход для векторного поиска. pip install, одна коллекция, один файл.
+tags: [tech, vector-search, vector-db, opensource, alibaba, embedding, rag]
+related: "[[tech/rag-projects-summary]] [[concepts/rag]] [[tech/1c-mcp]]"
 ingested_via: 'mcp:put_page'
 ingested_at: '2026-06-19T20:23:59.597Z'
 source_kind: 'mcp:put_page'
----
-
----
-description: Встраиваемая векторная БД от Alibaba — SQLite-подход для векторного поиска. pip install, одна коллекция, один файл.
-tags: [tech, vector-search, vector-db, opensource, alibaba, embedding, rag]
-related: [[tech/rag-projects-summary]] [[concepts/rag]] [[tech/1c-mcp]]
 ---
 
 # zvec

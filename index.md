@@ -32,6 +32,7 @@ _Обновлено: 2026-06-01_
 - [[tech/mimo-code]] — AI coding agent от Xiaomi, форк OpenCode с persistent memory
 - [[tech/openprose-reactor]] — декларативный язык для AI-сессий (OpenProse) и runtime (Reactor)
 - [[tech/rag-projects-summary]] — обзор RAG-проектов из Hands-On AI Engineering
+- [[tech/pixelrag]] — PixelRAG: визуальный RAG-фреймворк, рендерящий документы в скриншоты вместо HTML
 - [[tech/mcp-projects-summary]] — обзор MCP-проектов из Hands-On AI Engineering
 - [[tech/1c-mcp]] — MCP серверы для экосистемы 1С (vibecoding1c.ru)
 - [[tech/mempalace-viz]] — визуализация графа знаний для MemPalace (D3.js, MCP, Cloudflare)
@@ -85,6 +86,7 @@ _Обновлено: 2026-06-01_
 - [[tech/cc-websearch]] — поисковый плагин для Claude Code (multi-engine: Google, Bing, SerpAPI, Tavily)
 - [[tech/context7]] — MCP-сервер документации библиотек для AI-агентов
 - [[tech/z-ai]] — AI-поисковик с MCP для Claude Code
+- [[tech/zvec]] — Zvec: встраиваемая векторная БД от Alibaba (SQLite-подход для векторного поиска)
 - [[tech/serena-mcp]] — LSP MCP-сервер — IDE-интеллект для Claude Code
 - [[tech/caveman]] — skill для Claude Code, сокращает многословие модели на ~75%
 - [[tech/sequential-thinking]] — Sequential Thinking skill для Claude Code
@@ -137,6 +139,7 @@ _Обновлено: 2026-06-01_
 
 ## LLM
 - [[llm/local-gemma-4-12b-setup]] — локальный запуск Gemma 4 12B coder на XE2690
+- [[chinese-ai-pricing-research]] — Исследование цен на подписки китайских AI-провайдеров (Qwen, GLM, Kimi, MiniMax)
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
 - [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)

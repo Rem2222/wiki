@@ -1,15 +1,12 @@
 ---
 type: concept
 title: Pixelrag
+description: PixelRAG — визуальный RAG-фреймворк, рендерящий документы в скриншоты вместо HTML-парсинга.
+tags: [tech, rag, vision, retrieval, mcp]
+related: "[[tech/rag-projects-summary]] [[tech/mcp-projects-summary]] [[tech/gbrain-lossless-agent-memory]]"
 ingested_via: 'mcp:put_page'
 ingested_at: '2026-06-21T11:41:26.639Z'
 source_kind: 'mcp:put_page'
----
-
----
-description: PixelRAG — визуальный RAG-фреймворк, рендерящий документы в скриншоты вместо HTML-парсинга
-tags: [tech, rag, vision, retrieval, mcp]
-related: [[tech/rag-projects-summary]] [[tech/mcp-projects-summary]] [[tech/gbrain]]
 ---
 
 # PixelRAG

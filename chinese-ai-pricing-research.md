@@ -1,18 +1,13 @@
 ---
 type: note
 title: Исследование цен на подписки китайских AI-провайдеров
+description: "Исследование цен на API-подписки китайских AI-провайдеров: Qwen (Alibaba), GLM (Zhipu AI), Kimi (Moonshot AI), MiniMax (Hailuo AI) — тарифы pay-as-you-go, периоды скидок, каналы отслеживания акций и рекомендации."
+tags: [chinese-ai, glm, kimi, minimax, pricing, qwen, research]
+related: "[[tech/free-claude-code]] [[tech/poe-api-models]] [[tech/opencode]]"
 created: '2026-06-19T00:00:00.000Z'
 ingested_via: 'mcp:put_page'
 ingested_at: '2026-06-19T20:11:13.511Z'
 source_kind: 'mcp:put_page'
-tags:
-  - chinese-ai
-  - glm
-  - kimi
-  - minimax
-  - pricing
-  - qwen
-  - research
 ---
 
 # Исследование цен на подписки китайских AI-провайдеров
