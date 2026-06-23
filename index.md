@@ -130,6 +130,7 @@ _Обновлено: 2026-06-01_
 - [[tasks/mul-239-codegraph-in-gsd]] — MUL-239: добавить CodeGraph в GSD squad
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
+- [[tech/make-interfaces-feel-better]] — UI-рекомендации (Jakub Krehel, 30K+ установок)
 - [[tools/beads]] — Git-backed issue tracker для AI агентов (steveyegge/beads)
 - [[tools/dashboards-comparison]] — сравнение Dashboard-ов для OpenClaw
 - [[tools/linear-cli]] — CLI-утилита для работы с Linear
