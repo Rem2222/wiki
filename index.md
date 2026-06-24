@@ -137,9 +137,11 @@ _Обновлено: 2026-06-01_
 - [[tools/openclawfice]] — AI-агенты как в Sims (openclawfice.com)
 - [[tools/v8std-mcp]] — стандарты разработки 1С для ИИ-помощников (v8std.ru/mcp)
 - [[tools/go-enumsafety]] — Go-линтер для безопасной работы с enum (sum types)
+- [[tech/devin-ai-agent]] — AI Software Engineer от Cognition Labs (Windsurf → Devin). Включает GLM-5.2 в Pro
 
 ## LLM
 - [[llm/local-gemma-4-12b-setup]] — локальный запуск Gemma 4 12B coder на XE2690
+- [[tech/codex-cli-inference-optimization]] — Лайфхак: оптимизация локального инференса LLM через Codex CLI (бенчмарк Qwen 3.5-9B на RTX 3070 8GB, 54 tok/s)
 - [[chinese-ai-pricing-research]] — Исследование цен на подписки китайских AI-провайдеров (Qwen, GLM, Kimi, MiniMax)
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
