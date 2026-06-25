@@ -142,6 +142,7 @@ _Обновлено: 2026-06-01_
 ## LLM
 - [[llm/local-gemma-4-12b-setup]] — локальный запуск Gemma 4 12B coder на XE2690
 - [[tech/codex-cli-inference-optimization]] — Лайфхак: оптимизация локального инференса LLM через Codex CLI (бенчмарк Qwen 3.5-9B на RTX 3070 8GB, 54 tok/s)
+- [[llm/vibethinker]] — VibeThinker 1.5B/3B: SOTA reasoning от WeiboAI. Обходит DeepSeek R1 на AIME, 1.8 GB в Q4
 - [[chinese-ai-pricing-research]] — Исследование цен на подписки китайских AI-провайдеров (Qwen, GLM, Kimi, MiniMax)
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
