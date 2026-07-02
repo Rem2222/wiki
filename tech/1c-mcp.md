@@ -204,6 +204,7 @@ def run_report(report_name: str, params: dict = {}) -> str:
 - **vibecoding1c.ru** — готовые Docker-серверы (HelpSearch, Metadata, SyntaxCheck, Forms). Их можно использовать как основу или поднять параллельно.
 - **Untru/1c-mcp** — EDT плагины и REST API, можно интегрировать как бэкенд для FastMCP сервера.
 - **onerpa.ru** (Graph Metadata Search) — Neo4j граф метаданных, можно использовать как источник данных для Metadata Explorer модуля.
+- **norkins/metadata** ([[tech/metadata-1c]]) — генератор `Report.txt` из XML-выгрузки 1С. Его `xml_reader.py` и `metadata_model.py` можно использовать как готовый парсер XML-структуры конфигурации для Metadata Explorer модуля, вместо написания с нуля.
 
 ### План реализации
 

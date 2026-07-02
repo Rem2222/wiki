@@ -1,11 +1,19 @@
 ---
+type: concept
+title: Metadata 1c
+ingested_via: 'mcp:put_page'
+ingested_at: '2026-07-02T16:13:13.191Z'
+source_kind: 'mcp:put_page'
+---
+
+---
 description: Инструмент для генерации отчёта по конфигурации 1С:Предприятие из XML-выгрузки для DevOps/CI/CD
 tags: [1c, devops, metadata, report, ci-cd]
 source: https://github.com/norkins/metadata
 author: norkins
 license: MIT
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-07-02
 related: [[tech/1c-mcp]] [[tech/cursor-rules-1c]] [[tech/mcp-1c-setup]]
 ---
 
@@ -43,3 +51,11 @@ tests/
 - 42/42 тестов OK
 - Расхождение с эталонным отчётом: ~151 строка из ~197,000
 - Проект в активной разработке
+
+## Связь с персональным MCP сервером 1С
+
+У @rem2222 в планах (проект MUL-278) написать собственный MCP сервер для 1С на FastMCP с модулями Metadata Explorer, Module Extractor, Help Server, OData Gateway.
+
+norkins/metadata может стать готовым XML-парсером для модуля **Metadata Explorer** — его `xml_reader.py` и `metadata_model.py` уже умеют читать структуру конфигурации 1С из XML-выгрузки. Вместо того чтобы писать парсер с нуля, можно взять его как бэкенд и обернуть в MCP-инструменты для поиска объектов, свойств и зависимостей.
+
+Подробнее о проекте MCP сервера: [[tech/1c-mcp]] → раздел «Собственный MCP сервер для 1С (на FastMCP)».
