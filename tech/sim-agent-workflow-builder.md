@@ -1,12 +1,4 @@
 ---
-type: concept
-title: Sim Agent Workflow Builder
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-05T09:39:55.155Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: Sim — визуальный конструктор воркфлоу для AI-агентов со встроенным AI Copilot, генерацией графов и трейсингом выполнения.
 tags: [tech, llm-tools, agent-frameworks]
 related: [[tech/langchain-open-agent-platform]] [[tech/no-code-agent-autoagent]]

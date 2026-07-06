@@ -1,12 +1,4 @@
 ---
-type: concept
-title: Pxpipe Context Compression
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-05T09:34:43.871Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: pxpipe — proxy, сжимающий токены контекста рендерингом текста в PNG (~59-70% экономии). 2.2k ⭐, npm-пакет.
 tags: [tech, llm-tools]
 related: [[tech/supermemory-agent-memory]] [[tech/agent-memory-research-2026]]

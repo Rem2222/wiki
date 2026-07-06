@@ -1,12 +1,4 @@
 ---
-type: concept
-title: Dify Agent Platform
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-05T09:39:50.348Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: Dify — open-source платформа для production-ready AI-приложений с RAG, агентами и observability. 15.5k ⭐.
 tags: [tech, llm-tools, agent-frameworks]
 related: [[tech/no-code-agent-autoagent]] [[tech/anythingllm-rag]] [[tech/pxpipe-context-compression]]

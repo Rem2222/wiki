@@ -114,6 +114,8 @@ _Обновлено: 2026-06-01_
 
 - [[tech/hermes-max-plugin]] — MAX Messenger (VK) plugin for Hermes Agent
 - [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy
+- [[tech/sim-agent-workflow-builder]]
+- [[tech/free-llm-api-resources]]
 ## Hermes Agent
 - [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
 - [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам

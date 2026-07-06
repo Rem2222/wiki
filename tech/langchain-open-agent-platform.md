@@ -1,12 +1,4 @@
 ---
-type: concept
-title: Langchain Open Agent Platform
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-05T09:39:53.648Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: LangChain Open Agent Platform — UI поверх LangGraph для визуального построения агентов с трейсингом и контролем потока.
 tags: [tech, llm-tools, agent-frameworks]
 related: [[tech/dify-agent-platform]] [[tech/no-code-agent-autoagent]]

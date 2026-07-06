@@ -1,12 +1,4 @@
 ---
-type: concept
-title: No Code Agent Autoagent
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-05T09:39:48.832Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: AutoAgent — fully-automated, zero-code LLM agent framework от HKUDS. Генерация агентов из природного языка без программирования.
 tags: [tech, llm-tools, agent-frameworks]
 related: [[tech/pxpipe-context-compression]] [[tech/agent-memory-research-2026]] [[tech/supermemory-agent-memory]]

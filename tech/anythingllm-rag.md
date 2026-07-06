@@ -1,12 +1,4 @@
 ---
-type: concept
-title: Anythingllm Rag
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-05T09:39:52.069Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: AnythingLLM — all-in-one AI app для RAG, чата с документами и агентов. Self-hosted, multi-user, простой запуск. MIT.
 tags: [tech, llm-tools, rag]
 related: [[tech/dify-agent-platform]] [[tech/no-code-agent-autoagent]]

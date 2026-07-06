@@ -1,12 +1,4 @@
 ---
-type: concept
-title: Supermemory Agent Memory
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-04T20:22:28.163Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: Supermemory — self-hosted memory & context for AI agents (28k ⭐). Graph engine, локальные embeddings, извлечение фактов, Memory API. Полностью локально.
 tags: [tech]
 related: [[tech/agentmemory-vs-current]] [[tech/hermes-memory-setup-vps]] [[tech/tencentdb-agent-memory]] [[tech/agent-memory-research-2026]]

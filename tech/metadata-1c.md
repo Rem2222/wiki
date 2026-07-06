@@ -1,12 +1,4 @@
 ---
-type: concept
-title: Metadata 1c
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-02T16:13:13.191Z'
-source_kind: 'mcp:put_page'
----
-
----
 description: Инструмент для генерации отчёта по конфигурации 1С:Предприятие из XML-выгрузки для DevOps/CI/CD
 tags: [1c, devops, metadata, report, ci-cd]
 source: https://github.com/norkins/metadata
