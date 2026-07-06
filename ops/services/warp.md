@@ -12,7 +12,7 @@ service:
   category: network
   purpose: Cloudflare WARP VPN (обход блокировок)
   install_date: 2025-06
-  last_verified: 2026-07-06
+  last_verified: 2026-07-07
   health_url: 
   type: standalone
   ports:

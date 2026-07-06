@@ -12,7 +12,7 @@ service:
   category: network
   purpose: Mesh VPN, exit node
   install_date: 2025-05
-  last_verified: 2026-07-06
+  last_verified: 2026-07-07
   health_url: 
   type: standalone
   depends_on:

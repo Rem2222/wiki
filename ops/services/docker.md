@@ -12,7 +12,7 @@ service:
   category: system
   purpose: Контейнеризация сервисов
   install_date: 2025-05
-  last_verified: 2026-07-06
+  last_verified: 2026-07-07
   health_url: 
   type: systemd
   systemd_units:
