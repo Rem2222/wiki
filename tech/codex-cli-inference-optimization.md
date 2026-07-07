@@ -1,5 +1,5 @@
 ---
-description: Лайфхак — скормить Codex CLI (или любой agent) детальный бенчмарк-гайд, чтобы он сам подобрал оптимальную конфигурацию инференса (quant, KV cache, batch, context) под железо и модель. Основано на статье Ахмеда про Qwen 3.5-9B на RTX 3070 8GB.
+|description: Лайфхак — скормить Codex CLI (или любой agent) детальный бенчмарк-гайд, чтобы он сам подобрал оптимальную конфигурацию инференса (quant, KV cache, batch, context) под железо и модель. Основано на статье Ахмеда про Qwen 3.5-9B.
 tags: [llm, inference, optimization, codex, benchmarking, llama.cpp, gguf, quantization]
 related: [llm/local-gemma-4-12b-setup, hardware/xe2690-workstation]
 ---
@@ -66,7 +66,7 @@ related: [llm/local-gemma-4-12b-setup, hardware/xe2690-workstation]
 | `-ngl / --n-gpu-layers` | Offload слоёв на GPU | 99 (максимум) |
 | `--no-kv-offload` | KV cache на GPU vs CPU | offload = быстрее, но больше VRAM |
 
-## Выводы для RTX 3070 8GB с Qwen 3.5-9B IQ3_XXS
+## Выводы для Qwen 3.5-9B IQ3_XXS
 
 - **q8_0 KV cache** даёт 54 tok/s при 180K контекста — этого достаточно для большинства задач
 - **q4_1 KV cache** позволяет расширить контекст до 262K, но скорость та же (~54 tok/s) или чуть ниже
