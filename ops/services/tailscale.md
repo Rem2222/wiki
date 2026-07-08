@@ -17,5 +17,6 @@ service:
   type: standalone
   depends_on:
     []
+  last_verified: 2026-07-08
   notes: v1.98.4. Online.
 ---

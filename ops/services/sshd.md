@@ -25,5 +25,6 @@ service:
     []
   depends_on:
     []
+  last_verified: 2026-07-08
   notes: Нестандартный порт.
 ---

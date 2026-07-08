@@ -23,5 +23,6 @@ service:
       description: warp-svc
   depends_on:
     []
+  last_verified: 2026-07-08
   notes: warp-svc активен. CLI требует --accept-tos. Есть systemd таймер auto-recovery.
 ---

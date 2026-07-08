@@ -19,5 +19,6 @@ service:
     - unattended-upgrades
   depends_on:
     []
+  last_verified: 2026-07-08
   notes: "Active. Последние обновления: vim, ncurses, libnghttp2."
 ---

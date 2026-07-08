@@ -32,5 +32,6 @@ service:
   depends_on:
     - hermes-agent
     - nginx
+  last_verified: 2026-07-08
   notes: "Через /skills/. Утверждение/отклонение pending навыков."
 ---
