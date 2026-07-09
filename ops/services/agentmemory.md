@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: Долговременная память агента
   install_date: 2025-06
-  last_verified: 2026-07-08
+  last_verified: 2026-07-10
   health_url: "http://localhost:3113/"
   type: docker + systemd
   ports:
@@ -51,7 +51,7 @@ service:
       pattern: iii --config
       description: III engine
     -
-      pattern: @agentmemory/mcp
+      pattern: "@agentmemory/mcp"
       description: MCP service
   config_paths:
     - /root/.hermes/config.yaml
