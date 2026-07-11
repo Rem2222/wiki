@@ -12,7 +12,7 @@ service:
   category: llm-proxy
   purpose: Gemini reverse proxy (OpenAI-compatible)
   install_date: 2025-06
-  last_verified: 2026-07-10
+  last_verified: 2026-07-12
   health_url: "http://localhost:8083/v1/models"
   type: docker
   ports:
