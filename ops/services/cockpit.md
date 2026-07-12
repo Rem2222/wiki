@@ -12,7 +12,7 @@ service:
   category: system
   purpose: Веб-интерфейс управления сервером
   install_date: 2025-06
-  last_verified: 2026-07-12
+  last_verified: 2026-07-13
   health_url: "http://localhost:9090/"
   type: systemd
   ports:
