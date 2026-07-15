@@ -12,7 +12,7 @@ service:
   category: core
   purpose: Веб-дашборд Hermes Agent
   install_date: 2025-06
-  last_verified: 2026-07-15
+  last_verified: 2026-07-16
   health_url: "http://localhost:9119/"
   type: systemd
   ports:

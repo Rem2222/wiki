@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: MCP-сервер для кодовой базы Multica
   install_date: 2026-07-03
-  last_verified: 2026-07-15
+  last_verified: 2026-07-16
   health_url: "http://localhost:51234/"
   type: systemd
   ports:

@@ -2,6 +2,10 @@
 description: Free API прокси на базе web-чатов DeepSeek и Qwen
 tags: [free-api, proxy, deepseek, qwen, deployment]
 related: []
+related:
+  - [[deepseek-free-api]]
+  - [[qwen-free-api]]
+  - [[chinese-ai-pricing-research]]
 ---
 
 # Free API прокси (DeepSeek / Qwen)

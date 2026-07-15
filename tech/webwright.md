@@ -8,6 +8,10 @@ blog: https://www.microsoft.com/en-us/research/articles/webwright-a-terminal-is-
 license: MIT
 created: 2026-05-27
 updated: 2026-05-27
+related:
+  - [[tech/skillopt]]
+  - [[tech/Mercury-Agent-Skills]]
+  - [[tech/agent-memory-research-2026]]
 ---
 
 # Webwright

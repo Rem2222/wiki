@@ -2,6 +2,9 @@
 description: GitHub Actions — CI/CD платформа от GitHub
 tags: [ci, cd, github, automation]
 related: []
+related:
+  - [[tech/heisenberg-team-gpt]]
+  - [[tools/openclawfice]]
 ---
 
 # GitHub Actions

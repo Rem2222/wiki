@@ -12,7 +12,7 @@ service:
   category: security
   purpose: SSO аутентификация, 2FA
   install_date: 2025-05
-  last_verified: 2026-07-15
+  last_verified: 2026-07-16
   health_url: "http://localhost:9091/"
   type: docker
   ports:
