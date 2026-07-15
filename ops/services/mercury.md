@@ -6,13 +6,13 @@ tags:
   - monitoring
 type: service
 related:
-  []
+  - ops/services/jawl
 service:
   name: mercury
   category: monitoring
   purpose: Дашборд Mercury Agent
   install_date: 2026-07-03
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:6174/"
   type: standalone
   ports:

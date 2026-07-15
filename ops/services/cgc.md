@@ -6,13 +6,13 @@ tags:
   - agent-platform
 type: service
 related:
-  []
+  - ops/services/codegraph
 service:
   name: cgc
   category: agent-platform
   purpose: MCP-сервер для кодовой базы Multica
   install_date: 2026-07-03
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:51234/"
   type: systemd
   ports:

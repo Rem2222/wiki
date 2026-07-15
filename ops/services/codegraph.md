@@ -6,13 +6,13 @@ tags:
   - agent-platform
 type: service
 related:
-  []
+  - ops/services/cgc
 service:
   name: codegraph
   category: agent-platform
   purpose: MCP-сервер для анализа кода
   install_date: 2025-06
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: 
   type: standalone (node)
   ports:

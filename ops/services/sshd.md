@@ -6,13 +6,13 @@ tags:
   - system
 type: service
 related:
-  []
+  - ops/services/ufw-fail2ban
 service:
   name: sshd
   category: system
   purpose: SSH-доступ к серверу
   install_date: 2025-05
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: 
   type: systemd
   ports:
@@ -25,6 +25,6 @@ service:
     []
   depends_on:
     []
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   notes: Нестандартный порт.
 ---

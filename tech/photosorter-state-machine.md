@@ -1,3 +1,15 @@
+---
+description: Полный автомат состояний Photo Sorter — приложения для сортировки фотографий по году снятия, матрица пересечений, dry run и организация файлов.
+tags:
+  - tech
+  - photo
+  - automation
+  - state-machine
+  - mermaid
+related:
+  - tools/photo-sorter
+---
+
 # Photo Sorter — автомат состояний
 
 ```mermaid

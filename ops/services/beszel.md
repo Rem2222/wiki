@@ -6,13 +6,13 @@ tags:
   - monitoring
 type: service
 related:
-  []
+  - ops/services/multi-exporter
 service:
   name: beszel
   category: monitoring
   purpose: Мониторинг CPU/RAM/диска
   install_date: 2025-06
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:9480/"
   type: docker
   ports:

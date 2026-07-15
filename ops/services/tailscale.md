@@ -6,17 +6,18 @@ tags:
   - network
 type: service
 related:
-  []
+  - ops/services/warp
+  - ops/services/tor
 service:
   name: tailscale
   category: network
   purpose: Mesh VPN, exit node
   install_date: 2025-05
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: 
   type: standalone
   depends_on:
     []
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   notes: v1.98.4. Online.
 ---

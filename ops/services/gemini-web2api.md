@@ -6,13 +6,14 @@ tags:
   - llm-proxy
 type: service
 related:
-  []
+  - ops/services/freellmapi
+  - ops/services/freedeepseekapi
 service:
   name: gemini-web2api
   category: llm-proxy
   purpose: Gemini reverse proxy (OpenAI-compatible)
   install_date: 2025-06
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:8083/v1/models"
   type: docker
   ports:

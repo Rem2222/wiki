@@ -6,13 +6,13 @@ tags:
   - agent-platform
 type: service
 related:
-  []
+  - ops/services/hermes-agent
 service:
   name: jawl
   category: agent-platform
   purpose: Автономный Python-агент (Jinx)
   install_date: 2025-06
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:5002/"
   type: systemd (user)
   ports:

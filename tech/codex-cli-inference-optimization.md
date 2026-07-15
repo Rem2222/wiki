@@ -1,7 +1,17 @@
 ---
-|description: Лайфхак — скормить Codex CLI (или любой agent) детальный бенчмарк-гайд, чтобы он сам подобрал оптимальную конфигурацию инференса (quant, KV cache, batch, context) под железо и модель. Основано на статье Ахмеда про Qwen 3.5-9B.
-tags: [llm, inference, optimization, codex, benchmarking, llama.cpp, gguf, quantization]
-related: [llm/local-gemma-4-12b-setup, hardware/xe2690-workstation]
+description: Лайфхак — скормить Codex CLI (или любой agent) детальный бенчмарк-гайд, чтобы он сам подобрал оптимальную конфигурацию инференса (quant, KV cache, batch, context) под железо и модель. Основано на статье Ахмеда про Qwen 3.5-9B.
+tags:
+  - llm
+  - inference
+  - optimization
+  - codex
+  - benchmarking
+  - llama.cpp
+  - gguf
+  - quantization
+related:
+  - tech/local-gemma-4-12b-setup
+  - tech/hermes-memory-setup-vps
 ---
 
 # Оптимизация локального инференса LLM через Codex CLI

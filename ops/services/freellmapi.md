@@ -6,13 +6,14 @@ tags:
   - llm-proxy
 type: service
 related:
-  []
+  - ops/services/freedeepseekapi
+  - ops/services/gemini-web2api
 service:
   name: freellmapi
   category: llm-proxy
   purpose: Unified LLM API router
   install_date: 2025-06
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:3010/v1/models"
   type: docker
   ports:

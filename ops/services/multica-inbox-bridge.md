@@ -6,13 +6,13 @@ tags:
   - core
 type: service
 related:
-  []
+  - ops/services/multica
 service:
   name: multica-inbox-bridge
   category: core
   purpose: Мост Multica → Telegram
   install_date: 2026-07-03
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: 
   type: systemd
   systemd_units:

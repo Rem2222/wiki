@@ -6,13 +6,13 @@ tags:
   - system
 type: service
 related:
-  []
+  - ops/services/cockpit
 service:
   name: duc
   category: system
   purpose: Визуализация использования диска
   install_date: 2025-05
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:8081/"
   type: standalone (python CGI)
   ports:

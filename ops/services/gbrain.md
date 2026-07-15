@@ -13,7 +13,7 @@ service:
   category: core
   purpose: Graph-based knowledge brain
   install_date: 2025-06
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: "http://localhost:3131/health"
   type: systemd + docker
   ports:

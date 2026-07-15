@@ -6,13 +6,14 @@ tags:
   - system
 type: service
 related:
-  []
+  - ops/services/unattended-upgrades
+  - ops/services/multica
 service:
   name: docker
   category: system
   purpose: Контейнеризация сервисов
   install_date: 2025-05
-  last_verified: 2026-07-13
+  last_verified: 2026-07-15
   health_url: 
   type: systemd
   systemd_units:
