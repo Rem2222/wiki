@@ -116,6 +116,7 @@ _Обновлено: 2026-06-01_
 - [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy
 - [[tech/sim-agent-workflow-builder]]
 - [[tech/free-llm-api-resources]]
+- [[tech/photosorter-state-machine]] — полный автомат состояний Photo Sorter
 ## Hermes Agent
 - [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
 - [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам
@@ -191,6 +192,7 @@ _Обновлено: 2026-06-01_
 - [[tech/defuddle]] — инструмент для извлечения контента из веб-страниц
 
 ## Прокси и инфраструктура
+- [[ops/services/server-architecture]] — полная карта серверной инфраструктуры
 - [[tech/openclaw-billing-proxy]] — OpenClaw Billing Proxy (автор: zacdcook)
 - [[tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
 - [[free-api-deepseek-qwen]] — обзор Free API прокси (DeepSeek / Qwen)
