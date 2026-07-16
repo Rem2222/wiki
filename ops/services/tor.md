@@ -13,7 +13,7 @@ service:
   category: proxies
   purpose: Анонимный SOCKS5 прокси для обхода блокировок и поиска через DuckDuckGo Onion
   install_date: "2024"
-  last_verified: 2026-07-16
+  last_verified: 2026-07-17
   health_url: ""
   type: systemd
   ports:

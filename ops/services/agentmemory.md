@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: Долговременная память агента
   install_date: 2025-06
-  last_verified: 2026-07-16
+  last_verified: 2026-07-17
   health_url: "http://localhost:3113/"
   type: docker + systemd
   ports:
