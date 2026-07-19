@@ -13,7 +13,7 @@ service:
   category: network
   purpose: Cloudflare WARP VPN (обход блокировок)
   install_date: 2025-06
-  last_verified: 2026-07-19
+  last_verified: 2026-07-20
   health_url: 
   type: standalone
   ports:
@@ -24,6 +24,6 @@ service:
       description: warp-svc
   depends_on:
     []
-  last_verified: 2026-07-19
+  last_verified: 2026-07-20
   notes: warp-svc активен. CLI требует --accept-tos. Есть systemd таймер auto-recovery.
 ---
