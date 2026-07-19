@@ -15,7 +15,9 @@ related: [[tech/hermes-agent-masterclass]], [[tech/hermes-external-integrations]
 
 **Расположение:** `/root/.hermes/.env`, переменная `TELEGRAM_BOT_TOKEN`
 
-**Формат:** `8600383341:AAFE..._r56iw` (46 символов, стандартный Bot API token)
+**Формат:** `8600383341:AAFEKFDaCZy4hCjSCUXJYTbawPqu__r56iw` (46 символов, стандартный Bot API token)
+
+**Dex Bot Token:** `8706838453:AAHiQnBPt6T9v6_9ddn89OBr4SdxY3jsKY` — отдельный бот для Dex
 
 **Chat ID:** `386235337` (Rem)
 
