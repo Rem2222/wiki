@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: Веб-дашборд для approval навыков Hermes
   install_date: 2026-07-06
-  last_verified: 2026-07-20
+  last_verified: 2026-07-22
   health_url: "http://localhost:8650/"
   type: systemd
   ports:
@@ -32,6 +32,6 @@ service:
   depends_on:
     - hermes-agent
     - nginx
-  last_verified: 2026-07-20
+  last_verified: 2026-07-22
   notes: "Через /skills/. Утверждение/отклонение pending навыков."
 ---
