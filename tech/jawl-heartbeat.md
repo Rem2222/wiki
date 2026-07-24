@@ -2,8 +2,10 @@
 description: Периодический тик, поддерживающий жизнь агента. Интервал: 300 секунд.
 created: 2026-05-01
 tags: [jawl, heartbeat, flow, reference]
-related: [[tech/jawl]] [[tech/jawl-events]] [[tech/jawl-config]]
+related: "[[tech/jawl]] [[tech/jawl-events]] [[tech/jawl-config]]"
 parent: "[[tech/jawl]]"
+
+---
 
 # JAWL Heartbeat
 

@@ -1,7 +1,7 @@
 ---
 description: Gitea — лёгкая self-hosted Git-платформа
 tags: [tech, git, selfhosted]
-related: [[tech/forgejo]] [[tech/GitNexus]]
+related: "[[tech/forgejo]] [[tech/GitNexus]]"
 ---
 
 # gitea

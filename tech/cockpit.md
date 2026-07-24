@@ -1,7 +1,7 @@
 ---
 description: Web-based серверное администрирование. Установка, reverse proxy через nginx, Authelia SSO, плагины, решение проблем.
 tags: [cockpit, admin, monitoring, nginx, sso, authelia]
-related: [[tech/authelia]], nginx, docker
+related: "[[tech/authelia]], nginx, docker"
 ---
 
 # Cockpit

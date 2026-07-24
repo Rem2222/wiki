@@ -33,6 +33,7 @@ related:
   - ops/services/multica-inbox-bridge
   - ops/services/multi-exporter
   - ops/services/unattended-upgrades
+  - hosting/rdp-monster
   - ops/services/sshd
   - ops/services/agentmemory-exporter
   - ops/services/skills-dashboard

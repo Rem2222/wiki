@@ -2,7 +2,7 @@
 title: "SDD: Оркестратор v2 — SDD Integration"
 description: "Интеграция OpenSpec/SDD workflow в Оркестратор. Multi-layer SDD, QA Gate, Traceability."
 tags: [SDD, OpenSpec, Orchestrator, Requirements, Traceability]
-related: [[openspec]], [[openspec-usage]], [[sdd-openspec-orchestrator]], [[tech/sdd-orchestrator-v2]]
+related: "[[openspec]], [[openspec-usage]], [[sdd-openspec-orchestrator]], [[tech/sdd-orchestrator-v2]]"
 ---
 
 # SDD: Оркестратор v2 — SDD Integration

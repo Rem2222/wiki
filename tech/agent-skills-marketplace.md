@@ -1,7 +1,7 @@
 ---
 description: Агрегатор skills и MCP для Claude Code
 tags: [claude-code, skills, marketplace, mcp]
-related: [[tech/claude-plugin-dev-tools]]
+related: "[[tech/claude-plugin-dev-tools]]"
 ---
 
 # Agent Skills Marketplace

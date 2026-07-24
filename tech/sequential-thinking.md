@@ -1,7 +1,7 @@
 ---
 description: Sequential Thinking skill для Claude Code — пошаговые рассуждения
 tags: [claude-code, skill, reasoning, thinking]
-related: [[tech/caveman]]
+related: "[[tech/caveman]]"
 ---
 
 # Sequential Thinking

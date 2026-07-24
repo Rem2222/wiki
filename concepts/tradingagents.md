@@ -1,7 +1,7 @@
 ---
 description: Мультиагентный LLM-фреймворк для алгоритмической торговли (UCLA + MIT)
 tags: [multi-agent, llm, trading, fintech]
-related: [[concepts/sdd]] [[concepts/mcp]]
+related: "[[concepts/sdd]] [[concepts/mcp]]"
 ---
 
 # TradingAgents

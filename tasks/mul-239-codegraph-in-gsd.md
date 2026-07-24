@@ -3,7 +3,7 @@ type: concept
 title: "MUL-239: CodeGraph в GSD squad"
 description: Добавить CodeGraph (code knowledge graph) в экосистему GSD squad — интеграция с оркестратором и агентами
 tags: [gsd, codegraph, task, integration, ai-agents]
-related: [[tech/gsd]], [[tech/gsd-multica-integration]]
+related: "[[tech/gsd]], [[tech/gsd-multica-integration]]"
 ---
 
 # MUL-239: Добавить CodeGraph в GSD squad

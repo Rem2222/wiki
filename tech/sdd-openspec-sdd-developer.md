@@ -2,7 +2,7 @@
 title: "SDD: SDD Developer — Agent Spec"
 description: "Spec для создания SDD Developer агента. Spec-first architect, never writes code."
 tags: [SDD, OpenSpec, SDD-Developer, Agent, Orchestrator, Requirements]
-related: [[openspec]], [[sdd-openspec-orchestrator-integration]], [[sdd-orchestrator-v2]]
+related: "[[openspec]], [[sdd-openspec-orchestrator-integration]], [[sdd-orchestrator-v2]]"
 ---
 
 # SDD: SDD Developer — Agent Spec

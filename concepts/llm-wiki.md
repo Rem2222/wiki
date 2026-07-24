@@ -1,7 +1,7 @@
 ---
 description: Паттерн персональных баз знаний с помощью LLM
 tags: [wiki, knowledge-base, llm, notes]
-related: [[concepts/rag]] [[concepts/memex]]
+related: "[[concepts/rag]] [[concepts/memex]]"
 ---
 
 # LLM-Wiki

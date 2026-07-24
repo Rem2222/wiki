@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Chatcut
-related: tools/ai-video-upscale
+related: tools/ai-video-upscale tools/officecli
 description: >-
   Agent-orchestrated video-editing studio — talking-head pipeline via Claude
   Code / Codex

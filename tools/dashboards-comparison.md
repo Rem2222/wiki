@@ -2,7 +2,7 @@
 title: "Сравнение Dashboard для OpenClaw"
 description: | Инструмент | Репозиторий | Стек | Порты |
 tags: [OpenClaw, dashboard, monitoring, agents]
-related: [[tech/jawl-dashboard]] [[tech/landing]] [[tech/nexus-dashboard]]
+related: "[[tech/jawl-dashboard]] [[tech/landing]] [[tech/nexus-dashboard]]"
 ---
 
 # Сравнение Dashboard-ов для OpenClaw

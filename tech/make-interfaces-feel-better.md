@@ -1,7 +1,7 @@
 ---
 description: Набор практических UI-рекомендаций от Jakub Krehel — микровзаимодействия, анимации, производительность, визуальные детали
 tags: [ui-ux, design, animation, performance, tool]
-related: [[tools/find-skills]]
+related: "[[tools/find-skills]]"
 ---
 
 # make-interfaces-feel-better

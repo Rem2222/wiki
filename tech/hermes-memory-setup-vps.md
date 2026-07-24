@@ -1,7 +1,7 @@
 ---
 description: На VPS настроены две системы долговременной памяти для Hermes Agent:
 tags: [tech]
-related: [[tech/agentmemory-vs-current]] [[tech/gbrain-lossless-agent-memory]] [[tech/MemPalace-Hermes-Integration]]
+related: "[[tech/agentmemory-vs-current]] [[tech/gbrain-lossless-agent-memory]] [[tech/MemPalace-Hermes-Integration]]"
 ---
 
 # hermes-memory-setup-vps

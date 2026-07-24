@@ -1,7 +1,7 @@
 ---
 description: | Разработчик | Dimitri van Heesch |
 tags: [concept]
-related: [[concepts/sdd]] [[tech/sourcecraft]] [[concepts/mcp]]
+related: "[[concepts/sdd]] [[tech/sourcecraft]] [[concepts/mcp]]"
 ---
 
 # doxygen

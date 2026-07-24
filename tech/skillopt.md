@@ -1,7 +1,7 @@
 ---
 description: Фреймворк от Microsoft Research для оптимизации skill-документов LLM-агентов через итеративный тренировочный цикл (ReflACT)
 tags: [microsoft, research, llm, agents, optimization, skills]
-related: [[tech/agents-best-practices]]
+related: "[[tech/agents-best-practices]]"
 source: https://github.com/microsoft/SkillOpt
 arxiv: https://arxiv.org/abs/2605.23904
 license: MIT

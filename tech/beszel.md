@@ -1,7 +1,7 @@
 ---
 description: Лёгкая система мониторинга серверов. Docker compose (Hub + Agent), решение проблем с сетью.
 tags: [beszel, monitoring, docker, metrics, hub, agent]
-related: [[tech/cockpit]], docker
+related: "[[tech/cockpit]], docker"
 ---
 
 # Beszel

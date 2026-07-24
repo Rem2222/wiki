@@ -1,7 +1,7 @@
 ---
 description: Заметка о CloakBrowser
 tags: [tech]
-related: [[tech/peekaboowin]] [[tech/cursor-proxy-fix]]
+related: "[[tech/peekaboowin]] [[tech/cursor-proxy-fix]]"
 ---
 
 # cloakbrowser

@@ -3,7 +3,7 @@ description: Flask-мониторинг на порту 5000. 15 API маршр�
 created: 2026-05-01
 tags: [jawl, dashboard, api, reference]
 parent: "[[tech/jawl]]"
-related: [[tech/landing]] [[tech/nexus-dashboard]]
+related: "[[tech/landing]] [[tech/nexus-dashboard]]"
 ---
 
 # JAWL Dashboard

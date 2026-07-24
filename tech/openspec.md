@@ -2,7 +2,7 @@
 title: "OpenSpec — Spec-Driven Development"
 description: "Spec-driven workflow для AI-агентов: proposal → specs → design → tasks → validate → archive"
 tags: [SDD, OpenSpec, spec-first, AI coding]
-related: [[openspec-usage]], [[superpowers]], [[tech/sdd-orchestrator-v2]]
+related: "[[openspec-usage]], [[superpowers]], [[tech/sdd-orchestrator-v2]]"
 ---
 
 # OpenSpec

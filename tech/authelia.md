@@ -1,7 +1,7 @@
 ---
 description: Self-hosted SSO (Single Sign-On) сервер. Docker compose, конфигурация, интеграция с nginx auth_request, решение проблем.
 tags: [authelia, sso, auth, nginx, docker, security]
-related: [[tech/cockpit]], nginx, docker
+related: "[[tech/cockpit]], nginx, docker"
 ---
 
 # Authelia

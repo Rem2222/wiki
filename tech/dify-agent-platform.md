@@ -1,7 +1,7 @@
 ---
 description: Dify — open-source платформа для production-ready AI-приложений с RAG, агентами и observability. 15.5k ⭐.
 tags: [tech, llm-tools, agent-frameworks]
-related: [[tech/no-code-agent-autoagent]] [[tech/anythingllm-rag]] [[tech/pxpipe-context-compression]]
+related: "[[tech/no-code-agent-autoagent]] [[tech/anythingllm-rag]] [[tech/pxpipe-context-compression]]"
 ---
 
 # dify-agent-platform

@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Llm Tier Strategy
-related: tech/gsd tech/optimizing-llm-api-calls-for-coding
+related: tech/gsd tech/optimizing-llm-api-calls-for-coding concepts/self-improving-agent-theory
 description: >-
   Анализ выбора LLM для разных этапов разработки — архитектура vs код vs
   итерации, модель «JPEG-сжатия» и заблуждение «стратегия требует умнейшей

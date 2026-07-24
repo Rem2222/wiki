@@ -1,7 +1,7 @@
 ---
 description: Интеграция GSD (Get Shit Done) и Multica — мультиагентный фреймворк для структурированной разработки встречает платформу управления AI-агентами.
 tags: [gsd, multica, agents, integration, orchestration]
-related: [[tech/multica]], [[tech/sdd-orchestrator-v2]], [[tech/heisenberg-team-gpt]]
+related: "[[tech/multica]], [[tech/sdd-orchestrator-v2]], [[tech/heisenberg-team-gpt]]"
 ---
 
 # GSD × Multica: интеграция мультиагентной разработки

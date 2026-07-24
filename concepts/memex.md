@@ -1,7 +1,7 @@
 ---
 description: Проект Вэнивара Буша 1945 года, ассоциативное хранилище знаний — прототип гипертекста
 tags: [history, hypertext, knowledge, memex]
-related: [[concepts/llm-wiki]] [[concepts/rag]]
+related: "[[concepts/llm-wiki]] [[concepts/rag]]"
 ---
 
 # Memex

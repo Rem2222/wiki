@@ -1,7 +1,7 @@
 ---
 description: Windows-first desktop automation sidecar (port of macOS Peekaboo by steipete).
 tags: [tech]
-related: [[tech/cloakbrowser]] [[concepts/mcp]]
+related: "[[tech/cloakbrowser]] [[concepts/mcp]]"
 ---
 
 # peekaboowin

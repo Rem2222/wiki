@@ -2,7 +2,7 @@
 title: "SDD: OpenSpec — интеграция в Оркестратор"
 description: "Spec-first workflow: OpenSpec change перед запуском subagent-ов"
 tags: [SDD, OpenSpec, Orchestrator, subagent]
-related: [[openspec]], [[openspec-usage]], [[sdd-openspec-real-project]], [[tech/sdd-orchestrator-v2]]
+related: "[[openspec]], [[openspec-usage]], [[sdd-openspec-real-project]], [[tech/sdd-orchestrator-v2]]"
 ---
 
 # SDD: Интеграция OpenSpec в Оркестратор

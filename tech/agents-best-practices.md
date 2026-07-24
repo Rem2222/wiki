@@ -1,7 +1,7 @@
 ---
 description: Универсальный провайдеро-независимый Agent Skill с best practices для проектирования, аудита и рефакторинга агентных систем
 tags: [agents, best-practices, architecture, safety, skills, harness]
-related: [[tech/skillopt]]
+related: "[[tech/skillopt]]"
 source: https://github.com/DenisSergeevitch/agents-best-practices
 author: Denis Shiryaev
 license: MIT

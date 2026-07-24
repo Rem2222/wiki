@@ -3,7 +3,7 @@ description: 20.4k звёзд, 3k форков, стабильный v1.0.0. А�
 title: "Анализ Claude Code Game Studios — скилы для геймдева"
 created: 2026-05-30
 tags: [gamedev, ccgs, skills, research, hermes-agent]
-related: [[tech/jawl]] [[tech/hermes-memory-setup-vps]]
+related: "[[tech/jawl]] [[tech/hermes-memory-setup-vps]]"
 type: research
 status: done
 sources:

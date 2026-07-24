@@ -1,7 +1,7 @@
 ---
 description: Go-линтер для безопасной работы с enum (sum types) в Go
 tags: [go, linter, enum, safety]
-related: [[tech/go-skills-claude-code]]
+related: "[[tech/go-skills-claude-code]]"
 ---
 
 # go-enumsafety

@@ -1,7 +1,7 @@
 ---
 description: MAX Messenger (VK) plugin for Hermes Agent — интеграция, архитектура, инструкция
 tags: [tech, integrations, hermes, max]
-related: [[tech/hermes-agent-masterclass]] [[tech/specsmaxxing]]
+related: "[[tech/hermes-agent-masterclass]] [[tech/specsmaxxing]]"
 ---
 
 # MAX Messenger Plugin for Hermes Agent

@@ -7,6 +7,7 @@ tags:
 type: service
 related:
   - ops/services/cgc
+  - ops/workflow/new-project-with-codegraph
 service:
   name: codegraph
   category: agent-platform

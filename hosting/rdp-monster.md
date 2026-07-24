@@ -9,6 +9,7 @@ ingested_at: '2026-07-17T21:29:51.731Z'
 source_kind: 'mcp:put_page'
 tags:
   - hosting vps no-kyc crypto anonymous
+related: "[[ops/services/server-architecture]]"
 ---
 
 # rdp.monster — No KYC Хостинг

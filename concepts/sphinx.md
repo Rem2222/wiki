@@ -1,7 +1,7 @@
 ---
 description: Генератор документации на Python, расширяемый, reStructuredText/Markdown
 tags: [documentation, python, sphinx]
-related: [[concepts/doxygen]] [[concepts/javadoc]]
+related: "[[concepts/doxygen]] [[concepts/javadoc]]"
 ---
 
 # Sphinx

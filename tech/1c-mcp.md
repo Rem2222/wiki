@@ -2,7 +2,7 @@
 title: "1С MCP Серверы"
 description: | № | Сервер | Порт | Что делает |
 tags: [1С, MCP, AI, Claude Code]
-related: [[1c-mcp]], [[cursor-rules-1c]], [[v8std-mcp]]
+related: "[[1c-mcp]], [[cursor-rules-1c]], [[v8std-mcp]]"
 ---
 
 # 1С MCP Серверы

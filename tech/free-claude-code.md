@@ -1,7 +1,7 @@
 ---
 description: Прокси для Claude Code, который перенаправляет запросы с Anthropic API на бесплатные LLM-провайдеры.
 tags: [tech]
-related: [[tech/opencode]] [[tech/poe-api-models]] [[tech/subquadratic]]
+related: "[[tech/opencode]] [[tech/poe-api-models]] [[tech/subquadratic]]"
 ---
 
 # Free Claude Code (fcc-server)

@@ -1,7 +1,7 @@
 ---
 description: AutoAgent — fully-automated, zero-code LLM agent framework от HKUDS. Генерация агентов из природного языка без программирования.
 tags: [tech, llm-tools, agent-frameworks]
-related: [[tech/pxpipe-context-compression]] [[tech/agent-memory-research-2026]] [[tech/supermemory-agent-memory]]
+related: "[[tech/pxpipe-context-compression]] [[tech/agent-memory-research-2026]] [[tech/supermemory-agent-memory]]"
 ---
 
 # no-code-agent-autoagent

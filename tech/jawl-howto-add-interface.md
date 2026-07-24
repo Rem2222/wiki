@@ -2,8 +2,10 @@
 description: Каждый L2 интерфейс состоит из 3 файлов:
 created: 2026-05-01
 tags: [jawl, howto, interface]
-related: [[tech/jawl]] [[tech/jawl-architecture]] [[tech/jawl-howto-add-provider]]
+related: "[[tech/jawl]] [[tech/jawl-architecture]] [[tech/jawl-howto-add-provider]]"
 parent: "[[tech/jawl]]"
+
+---
 
 # HOWTO: Добавить L2 интерфейс в JAWL
 

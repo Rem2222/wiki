@@ -1,7 +1,7 @@
 ---
 description: Unified API for hundreds of models. OpenAI-compatible.
 tags: [tech]
-related: [[tech/poe-api-models]] [[tech/free-claude-code]] [[tech/openai-routing]]
+related: "[[tech/poe-api-models]] [[tech/free-claude-code]] [[tech/openai-routing]]"
 ---
 
 # poe-chutes-comparison

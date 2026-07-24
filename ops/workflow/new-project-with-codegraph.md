@@ -2,6 +2,7 @@
 description: "При создании нового проекта — поднимать CodeGraph для навигации по коду"
 tags: [ops, workflow, new-project]
 type: guide
+related: "[[ops/services/codegraph]]"
 ---
 # Как создать новый проект с CodeGraph
 

@@ -1,7 +1,7 @@
 ---
 description: Обзор MCP-проектов из репозитория Sumanth077/Hands-On-AI-Engineering — 4 проекта с интеграцией Model Context Protocol через разные транспорты и библиотеки.
 tags: [tech, mcp, ai-agents]
-related: [[tech/hermes-memory-setup-vps]] [[tech/rag-projects-summary]] [[tech/openmanus]]
+related: "[[tech/hermes-memory-setup-vps]] [[tech/rag-projects-summary]] [[tech/openmanus]]"
 ---
 
 # MCP-проекты: Hands-On AI Engineering
