@@ -14,7 +14,7 @@ service:
   category: core
   purpose: AI-агент для автоматизации, gateway сообщений
   install_date: 2025-05-27
-  last_verified: 2026-07-22
+  last_verified: 2026-07-25
   health_url: "http://localhost:8642/health"
   type: standalone (python)
   ports:
