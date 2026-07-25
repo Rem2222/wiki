@@ -174,3 +174,12 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Исправлены множественные H1 на 46 страницах (→ H2)
 - Исправлены битые вики-ссылки (30+) — редиректы, пути, созданы страницы-заглушки
 - Созданы 9 новых страниц: forgejo, gitea, defuddle, mcp-1c-setup, minimax, openclaw-billing-proxy, superpowers, graphviz, hermes-mcp-setup
+## [2026-07-25] maintenance audit | wiki health check fixes
+
+- Merged double frontmatter: tech/freenimapi.md, concepts/self-improving-agent-theory.md
+- Added missing related links: 7 purchased/mcp-1c/* pages → [[tech/1c-mcp]]
+- Fixed broken YAML description: tech/1c-mcp.md (invalid literal block)
+- Added index.md entries for 12 orphan pages (concepts, tech, tools, purchased, hosting, ops)
+- Added backlinks from tech/1c-mcp.md to all purchased/mcp-1c pages
+- Updated index.md date to 2026-07-25
+- Health check: 25 issues → 0
