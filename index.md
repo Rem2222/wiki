@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-06-01_
+_Обновлено: 2026-07-25_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
@@ -18,6 +18,9 @@ _Обновлено: 2026-06-01_
 - [[concepts/doxygen]] — генератор документации из исходного кода (C++, Java, Python...)
 - [[concepts/tradingagents]] — Multi-agent LLM фреймворк для алгоритмической торговли (UCLA + MIT)
 - [[concepts/open-knowledge-format]] — Open Knowledge Format (OKF), открытый формат знаний от Google Cloud Platform
+- [[concepts/graph-engineering]] — от последовательных агентов к графу работ
+- [[concepts/hermes-knowledge-base]] — Hermes Agent как персональная БД
+- [[concepts/self-improving-agent-theory]] — теория Self-Improving Agent (Schmidhuber 2026)
 
 
 ## SDD-Orchestrator v2 (2026-05-04)
@@ -116,6 +119,8 @@ _Обновлено: 2026-06-01_
 - [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy
 - [[tech/sim-agent-workflow-builder]]
 - [[tech/free-llm-api-resources]]
+- [[tech/paperclip]] — платформа для оркестрации команды AI-агентов (Org Chart, heartbeats)
+- [[tech/ods-ai-server]] — локальный AI-сервер «всё-в-одном» (LLM, Open WebUI, RAG)
 - [[tech/photosorter-state-machine]] — полный автомат состояний Photo Sorter
 ## Hermes Agent
 - [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
@@ -126,11 +131,19 @@ _Обновлено: 2026-06-01_
 - [[tech/1c-mcp]] — настройка и использование MCP для 1С
 - [[tech/1c-mcp]] — MCP vs Built-in Tools, анализ токенов
 - [[tech/onebase]] — open-source бизнес-платформа с 1С-подобным DSL (ERP/low-code)
+- [[purchased/mcp-1c/help-search]] — MCP: поиск по справке 1С
+- [[purchased/mcp-1c/ssl-search]] — MCP: поиск по БСП
+- [[purchased/mcp-1c/graph-metadata-search]] — MCP: граф метаданных 1С
+- [[purchased/mcp-1c/syntax-check]] — MCP: проверка синтаксиса BSL
+- [[purchased/mcp-1c/1c-code-checker]] — MCP: проверка через 1С:Напарник
+- [[purchased/mcp-1c/templates-search]] — MCP: шаблоны кода 1С
+- [[purchased/mcp-1c/code-metadata-search]] — MCP: поиск по коду и метаданным
 
 ## Hardware
 - [[hardware/xe2690-workstation]] — домашняя рабочая станция XE2690
 ## Tasks
 - [[tasks/mul-239-codegraph-in-gsd]] — MUL-239: добавить CodeGraph в GSD squad
+- [[ops/workflow/new-project-with-codegraph]] — рабочий процесс: CodeGraph для новых проектов
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
 - [[tech/make-interfaces-feel-better]] — UI-рекомендации (Jakub Krehel, 30K+ установок)
@@ -140,6 +153,9 @@ _Обновлено: 2026-06-01_
 - [[tools/openclawfice]] — AI-агенты как в Sims (openclawfice.com)
 - [[tools/v8std-mcp]] — стандарты разработки 1С для ИИ-помощников (v8std.ru/mcp)
 - [[tools/go-enumsafety]] — Go-линтер для безопасной работы с enum (sum types)
+- [[tools/chatcut]] — нарезка и обработка чатов/диалогов
+- [[tools/ai-video-upscale]] — AI-модели для повышения разрешения видео
+- [[tools/officecli]] — CLI для создания Office-документов
 - [[tech/devin-ai-agent]] — AI Software Engineer от Cognition Labs (Windsurf → Devin). Включает GLM-5.2 в Pro
 
 ## LLM
@@ -174,6 +190,7 @@ _Обновлено: 2026-06-01_
 ## Разное
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki
 - [[misc/calendar-events]] — календарь событий 2026
+- [[hosting/rdp-monster]] — дешёвый RDP/VDS хостинг в криптовалюте
 
 - [[flag_rebuild]] — флаг пересборки для инфраструктурных пайплайнов
 

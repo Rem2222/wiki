@@ -4,6 +4,7 @@ title: HelpSearchServer — поиск по справке платформы 1�
 description: MCP-сервер для поиска по справке платформы 1С. Требует папку bin от установленной платформы
 tags: [1c, mcp, help, purchased]
 source: https://docs.onerpa.ru/mcp-servery-1c
+related: [[tech/1c-mcp]]
 ---
 
 # HelpSearchServer

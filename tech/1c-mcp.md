@@ -1,8 +1,8 @@
 ---
 title: "1С MCP Серверы"
-description: | № | Сервер | Порт | Что делает |
-tags: [1С, MCP, AI, Claude Code]
-related: "[[1c-mcp]], [[cursor-rules-1c]], [[v8std-mcp]]"
+description: Обзор MCP-серверов для 1С: экосистема готовых решений от vibecoding1c.ru для интеграции 1С с AI-агентами через Model Context Protocol.
+tags: [1c, mcp, ai, claude-code]
+related: "[[1c-mcp]], [[cursor-rules-1c]], [[v8std-mcp]], [[purchased/mcp-1c/help-search]], [[purchased/mcp-1c/ssl-search]], [[purchased/mcp-1c/graph-metadata-search]], [[purchased/mcp-1c/syntax-check]], [[purchased/mcp-1c/1c-code-checker]], [[purchased/mcp-1c/templates-search]], [[purchased/mcp-1c/code-metadata-search]]"
 ---
 
 # 1С MCP Серверы

@@ -1,15 +1,12 @@
 ---
 type: concept
-title: Freenimapi
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-19T00:09:24.873Z'
-source_kind: 'mcp:put_page'
----
-
----
+title: FreeNIMAPI
 description: FreeNIMAPI — локальный прокси-мост между NVIDIA NIM (бесплатный trial) и кодинг-агентами (Hermes, Codex, Claude Code, OpenCode). Работает с GLM-5.2, DeepSeek V4, MiniMax M3, GPT-OSS-120B.
 tags: [tech, llm, free, proxy, nvidia, hermes]
 related: [[tech/free-llm-api-resources]] [[tech/free-claude-code]] [[tech/freellmapi]]
+ingested_via: 'mcp:put_page'
+ingested_at: '2026-07-19T00:09:24.873Z'
+source_kind: 'mcp:put_page'
 ---
 
 # FreeNIMAPI

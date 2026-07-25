@@ -4,6 +4,7 @@ title: SSLSearchServer — поиск по Библиотеке стандарт
 description: MCP-сервер для поиска по Библиотеке стандартных подсистем 1С — готов к работе без подготовки данных
 tags: [1c, mcp, bsp, ssl, purchased]
 source: https://docs.onerpa.ru/mcp-servery-1c
+related: [[tech/1c-mcp]]
 ---
 
 # SSLSearchServer

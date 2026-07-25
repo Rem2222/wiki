@@ -1,16 +1,12 @@
 ---
 type: concept
-title: Self Improving Agent Theory
-ingested_via: 'mcp:put_page'
-ingested_at: '2026-07-18T23:24:18.322Z'
-source_kind: 'mcp:put_page'
----
-
----
 title: Self-Improving Agent — теория и фреймворк
 description: Разбор survey «Self-Improvements in Modern Agentic Systems» (arXiv:2607.13104, Jul 2026, Schmidhuber et al.). Формальная модель агента, Gödel Machine, Full Scaffolding, Curiosity-driven exploration и проактивность.
 tags: [ai, agents, self-improvement, theory, survey, schmidhuber, godel-machine]
 related: [[concepts/llm-tier-strategy]]
+ingested_via: 'mcp:put_page'
+ingested_at: '2026-07-18T23:24:18.322Z'
+source_kind: 'mcp:put_page'
 ---
 
 # Self-Improving Agent — Теория и Фреймворк
