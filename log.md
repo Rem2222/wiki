@@ -183,3 +183,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Added backlinks from tech/1c-mcp.md to all purchased/mcp-1c pages
 - Updated index.md date to 2026-07-25
 - Health check: 25 issues → 0
+## [2026-07-25] maintenance | wiki health fix
+- Удалён дубликат hermes-agent-masterclass.md из корня (оставлен в tech/)
+- Добавлены 4 концепции в index.md (llm-tier-strategy, github-actions, javadoc, sphinx)
+- Добавлен раздел «Сервисы» с 33 ops/services/* страницами
+- Добавлены 15+ tech-страниц в index.md
+- Добавлены страницы в Obsidian & экосистема (cli-printing-press, lightmem)
+- Добавлено видео (claude-tradingview-connection)
+- Обновлена дата index.md

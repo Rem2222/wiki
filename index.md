@@ -21,7 +21,45 @@ _Обновлено: 2026-07-25_
 - [[concepts/graph-engineering]] — от последовательных агентов к графу работ
 - [[concepts/hermes-knowledge-base]] — Hermes Agent как персональная БД
 - [[concepts/self-improving-agent-theory]] — теория Self-Improving Agent (Schmidhuber 2026)
+- [[concepts/llm-tier-strategy]] — стратегия выбора LLM для разных этапов разработки
+- [[concepts/github-actions]] — GitHub Actions — CI/CD платформа от GitHub
+- [[concepts/javadoc]] — генератор документации из Java-кода в HTML
+- [[concepts/sphinx]] — генератор документации на Python, reStructuredText/Markdown
 
+## Сервисы
+- [[ops/services/server-architecture]] — полная карта серверной инфраструктуры VPS
+- [[ops/services/nginx]] — обратный прокси, HTTPS, Authelia SSO
+- [[ops/services/docker]] — контейнеризация сервисов
+- [[ops/services/postgresql]] — реляционные БД
+- [[ops/services/authelia]] — SSO аутентификация, 2FA
+- [[ops/services/agentmemory]] — долговременная память агента
+- [[ops/services/agentmemory-exporter]] — Prometheus метрики AgentMemory
+- [[ops/services/beszel]] — мониторинг CPU/RAM/диска
+- [[ops/services/cgc]] — MCP-сервер для кодовой базы Multica
+- [[ops/services/cockpit]] — веб-интерфейс управления сервером
+- [[ops/services/codegraph]] — MCP-сервер для анализа кода
+- [[ops/services/dex]] — веб-дашборд и REST API для управления агентом Dex
+- [[ops/services/duc]] — визуализация использования диска
+- [[ops/services/freedeepseekapi]] — DeepSeek Web Chat proxy
+- [[ops/services/freellmapi]] — Unified LLM API router
+- [[ops/services/gbrain]] — Graph-based knowledge brain
+- [[ops/services/gemini-web2api]] — Gemini reverse proxy
+- [[ops/services/hermes-agent]] — AI-агент для автоматизации, gateway сообщений
+- [[ops/services/hermes-dashboard]] — веб-дашборд Hermes Agent
+- [[ops/services/jawl]] — автономный Python-агент (Jinx)
+- [[ops/services/mercury]] — дашборд Mercury Agent
+- [[ops/services/monitor-ui]] — панель управления ntfy
+- [[ops/services/multi-exporter]] — Prometheus метрики для нескольких сервисов
+- [[ops/services/multica]] — платформа управления AI-агентами
+- [[ops/services/multica-inbox-bridge]] — мост Multica → Telegram
+- [[ops/services/ntfy]] — push-уведомления
+- [[ops/services/skills-dashboard]] — веб-дашборд для approval навыков Hermes
+- [[ops/services/sshd]] — SSH-доступ к серверу
+- [[ops/services/tailscale]] — Mesh VPN, exit node
+- [[ops/services/tor]] — анонимный SOCKS5 прокси
+- [[ops/services/ufw-fail2ban]] — фаервол + защита от брутфорса
+- [[ops/services/unattended-upgrades]] — автообновления безопасности
+- [[ops/services/warp]] — Cloudflare WARP VPN
 
 ## SDD-Orchestrator v2 (2026-05-04)
 - [[tech/sdd-openspec-orchestrator-integration]] — Orchestrator Integration (что хотели для Оркестратора: QA Gate, multi-layer SDD, hybrid context)
@@ -122,6 +160,33 @@ _Обновлено: 2026-07-25_
 - [[tech/paperclip]] — платформа для оркестрации команды AI-агентов (Org Chart, heartbeats)
 - [[tech/ods-ai-server]] — локальный AI-сервер «всё-в-одном» (LLM, Open WebUI, RAG)
 - [[tech/photosorter-state-machine]] — полный автомат состояний Photo Sorter
+- [[tech/anythingllm]] — all-in-one AI app для RAG, чата с документами и агентов
+- [[tech/anythingllm-rag]] — AnythingLLM RAG: настройка и сравнение моделей
+- [[tech/bmad-multica-integration]] — интеграция BMAD с Multica
+- [[tech/dify-agent-platform]] — open-source платформа для AI-приложений
+- [[tech/freellmapi]] — Unified LLM API router (бесплатные AI-провайдеры)
+- [[tech/freenimapi]] — локальный прокси-мост NVIDIA NIM → coding-агенты
+- [[tech/gsd-multica-integration]] — интеграция GSD с Multica
+- [[tech/hermes-mcp-setup]] — настройка MCP в Hermes Agent
+- [[tech/openmanus]] — open-source универсальный AI-агент
+- [[tech/sdd-openspec-orchestrator]] — интеграция OpenSpec в Оркестратор
+- [[tech/supermemory-agent-memory]] — Supermemory: LTM для агентов
+- [[tech/9router-vs-openrouter]] — сравнение 9Router и OpenRouter
+- [[tech/GitNexus]] — веб-интерфейс для хостинга Git-репозиториев
+- [[tech/forgejo]] — self-hosted Git платформа (форк Gitea)
+- [[tech/gitea]] — лёгкая self-hosted Git платформа
+- [[tech/graphviz]] — визуализация графов через Graphviz
+- [[tech/hysteria-clients]] — клиенты Hysteria2 для обхода DPI
+- [[tech/hysteria-realm]] — Hysteria2 конфигурация Realm
+- [[tech/jawl-multiagent]] — мультиагентная архитектура JAWL
+- [[tech/mcp-1c-setup]] — настройка MCP для 1С
+- [[tech/minimax]] — Minimax AI модели и API
+- [[tech/nerve-recovery-timeline]] — таймлайн восстановления нерва (health)
+- [[tech/no-code-agent-autoagent]] — no-code платформа для AI-агентов
+- [[tech/pxpipe-context-compression]] — контекстная компрессия для LLM
+- [[tech/subquadratic]] — Subquadratic: архитектуры внимания быстрее O(n²)
+- [[tech/superpowers]] — Superpowers: платформа для AI-агентов
+- [[tech/ui-ux-pro-max-analysis]] — UI/UX анализ Pro Max
 ## Hermes Agent
 - [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
 - [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам
@@ -186,6 +251,7 @@ _Обновлено: 2026-07-25_
 ## Видео
 - [[videos/claude-opensource-llm-openclaw-runpod]] — Claude без подписки: Opensource LLM + OpenClaw на RunPod
 - [[videos/moonin-papa-crypto-pumps-scanner]] — Moonin Papa: бесплатный крипто-сканер для поиска монет после пампа
+- [[videos/trading/claude-tradingview-connection]] — Claude + TradingView: подключение и настройка
 
 ## Разное
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki
@@ -207,9 +273,10 @@ _Обновлено: 2026-07-25_
 - [[tech/obsidian-plugins]] — плагин для запросов к метаданным Obsidian
 - [[tech/marp]] — презентации на основе markdown
 - [[tech/defuddle]] — инструмент для извлечения контента из веб-страниц
+- [[wiki/tech/cli-printing-press]] — генератор CLI/MCP-серверов для любых API
+- [[wiki/tech/lightmem]] — лёгкий фреймворк управления памятью для LLM
 
 ## Прокси и инфраструктура
-- [[ops/services/server-architecture]] — полная карта серверной инфраструктуры
 - [[tech/openclaw-billing-proxy]] — OpenClaw Billing Proxy (автор: zacdcook)
 - [[tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
 - [[free-api-deepseek-qwen]] — обзор Free API прокси (DeepSeek / Qwen)
