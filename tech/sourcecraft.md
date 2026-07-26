@@ -1,7 +1,9 @@
 ---
 description: Помощник для понимания кода через AI (sourcecraft.dev)
 tags: [code, explanation, ai, tool]
-related: "[[concepts/doxygen]] [[concepts/sdd]]"
+related:
+  - concepts/doxygen
+  - concepts/sdd
 ---
 
 # SourceCraft

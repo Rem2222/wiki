@@ -1,7 +1,10 @@
 ---
 description: MiniMax — LLM провайдер, известный моделями Hailuo Video
 tags: [tech, llm, minimax]
-related: "[[tech/9router-vs-openrouter]] [[tech/freellmapi]] [[tech/poe-api-models]]"
+related:
+  - tech/9router-vs-openrouter
+  - tech/freellmapi
+  - tech/poe-api-models
 ---
 
 # minimax

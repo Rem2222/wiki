@@ -1,7 +1,8 @@
 ---
 description: Go AI coding agent — терминальный инструмент для Claude Code
 tags: [go, claude-code, agent, terminal]
-related: "[[tech/go-skills-claude-code]]"
+related:
+  - tech/go-skills-claude-code
 ---
 
 # gopilot

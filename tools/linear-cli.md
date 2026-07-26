@@ -1,7 +1,9 @@
 ---
 description: CLI инструмент для Linear. Позволяет управлять задачами, коммитами, линковать GitHub/Lab коммиты к Linear.
 tags: [tools]
-related: "[[tech/jawl]] [[projects/veritas-kanban]]"
+related:
+  - tech/jawl
+  - projects/veritas-kanban
 created: 2026-04-25
   - cli
   - linear

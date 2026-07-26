@@ -1,6 +1,5 @@
 ---
-description: | Разработчик | Dimitri van Heesch |
-tags: [concept]
+description: "tags: [concept]"
 related: "[[concepts/sdd]] [[tech/sourcecraft]] [[concepts/mcp]]"
 ---
 

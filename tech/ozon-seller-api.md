@@ -1,7 +1,8 @@
 ---
 description: Обзор инструментов для работы с Ozon Seller API — MCP-серверы, клиентские библиотеки (Python, Go, PHP, TypeScript, C#), парсеры и документация
 tags: [ozon, marketplace, seller-api, api-tools, ecommerce]
-related: "[[tech/ozon-purchase-history]]"
+related:
+  - tech/ozon-purchase-history
 ---
 
 # Ozon Seller API — инструменты

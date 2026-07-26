@@ -1,7 +1,12 @@
 ---
 description: Автономный AI-агент (персона "Jinx") с infinite ReAct loop, SQLite, Qdrant и Telegram.
 tags: [tech]
-related: "[[tech/jawl-architecture]] [[tech/jawl-config]] [[tech/jawl-context]] [[tech/jawl-dashboard]] [[tech/jawl-events]]"
+related:
+  - tech/jawl-architecture
+  - tech/jawl-config
+  - tech/jawl-context
+  - tech/jawl-dashboard
+  - tech/jawl-events
 created: 2026-05-01
 updated: 2026-05-01
   - ai-agents
@@ -10,6 +15,7 @@ updated: 2026-05-01
   - memory
   - jinx
 type: tool
+source: https://github.com/th0r3nt/jawl
 ---
 
 # JAWL — Just Another Workflow Library

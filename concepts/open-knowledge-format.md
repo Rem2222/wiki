@@ -6,7 +6,10 @@ created: 2026-06-13
 updated: 2026-06-13
 tags: [okf, knowledge, specification, knowledge-base, format, standard]
 source: https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md
-related: "[[llm-wiki]], [[memex]], [[SCHEMA]]"
+related:
+  - llm-wiki
+  - memex
+  - SCHEMA
 ---
 
 # Open Knowledge Format (OKF)

@@ -1,7 +1,11 @@
 ---
 description: Spec-Driven Development — подход к разработке через спецификации
 tags: [sdd, methodology, specification]
-related: "[[tech/openspec]] [[tech/gsd]] [[tech/bmad-method]] [[tech/spec-kit]]"
+related:
+  - tech/openspec
+  - tech/gsd
+  - tech/bmad-method
+  - tech/spec-kit
 ---
 
 # Spec-Driven Development (SDD)

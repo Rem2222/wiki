@@ -1,7 +1,10 @@
 ---
 description: Настройка MCP-серверов для Hermes Agent
 tags: [tech, hermes, mcp]
-related: "[[concepts/mcp]] [[tech/hermes-memory-setup-vps]] [[tech/mcp-inspector]]"
+related:
+  - concepts/mcp
+  - tech/hermes-memory-setup-vps
+  - tech/mcp-inspector
 ---
 
 # hermes-mcp-setup

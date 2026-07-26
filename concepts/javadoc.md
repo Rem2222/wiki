@@ -1,7 +1,8 @@
 ---
 description: Генератор документации из Java-кода в HTML
 tags: [documentation, java, javadoc]
-related: "[[concepts/doxygen]]"
+related:
+  - concepts/doxygen
 ---
 
 # Javadoc

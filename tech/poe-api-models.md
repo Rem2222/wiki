@@ -1,7 +1,10 @@
 ---
 description: Подписки Poe включают API-доступ. OpenAI-compatible.
 tags: [tech]
-related: "[[tech/poe-chutes-comparison]] [[tech/free-claude-code]] [[tech/9router-vs-openrouter]]"
+related:
+  - tech/poe-chutes-comparison
+  - tech/free-claude-code
+  - tech/9router-vs-openrouter
 ---
 
 # poe-api-models

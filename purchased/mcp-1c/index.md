@@ -3,7 +3,14 @@ type: purchased
 title: MCP-серверы для 1С (OneRPA)
 description: Набор Docker-контейнеров MCP для работы ИИ-ассистентов с платформой 1С — поиск по справке, метаданным, коду, БСП, проверка синтаксиса, шаблоны
 tags: [1c, mcp, purchased, cursor, bsl, docker]
-related: []
+related:
+  - purchased/mcp-1c/help-search
+  - purchased/mcp-1c/code-metadata-search
+  - purchased/mcp-1c/graph-metadata-search
+  - purchased/mcp-1c/ssl-search
+  - purchased/mcp-1c/syntax-check
+  - purchased/mcp-1c/templates-search
+  - purchased/mcp-1c/1c-code-checker
 source: https://docs.onerpa.ru/mcp-servery-1c
 vendor: OneRPA
 license: Куплено

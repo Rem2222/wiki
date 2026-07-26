@@ -1,5 +1,5 @@
 ---
-description: Обзор репозитория Hands-On AI Engineering (github.com/Sumanth077) — коллекция 30+ практических AI-проектов: RAG, AI-агенты, MCP, OCR, мультимодальные системы. 1.5k ★, активное сообщество.
+description: "Обзор репозитория Hands-On AI Engineering (github.com/Sumanth077) — коллекция 30+ практических AI-проектов: RAG, AI-агенты, MCP, OCR, мультимодальные системы. 1.5k ★, активное сообщество."
 tags: [articles, ai-engineering, rag, mcp, agents, reference]
 related: "[[concepts/rag]] [[concepts/mcp]] [[tech/rag-projects-summary]] [[tech/mcp-projects-summary]]"
 ---

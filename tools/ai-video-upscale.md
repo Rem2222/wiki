@@ -3,9 +3,9 @@ type: concept
 title: Ai Video Upscale
 related: tools/chatcut
 description: Обзор AI-моделей для повышения разрешения видео (VHS → HD/FHD/4K)
-ingested_via: 'mcp:put_page'
+ingested_via: "'mcp:put_page'"
 ingested_at: '2026-07-16T10:24:44.866Z'
-source_kind: 'mcp:put_page'
+source_kind: "'mcp:put_page'"
 tags:
   - video-upscale ai esrgan vhs restoration
 ---

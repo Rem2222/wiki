@@ -1,7 +1,9 @@
 ---
 description: pxpipe — proxy, сжимающий токены контекста рендерингом текста в PNG (~59-70% экономии). 2.2k ⭐, npm-пакет.
 tags: [tech, llm-tools]
-related: "[[tech/supermemory-agent-memory]] [[tech/agent-memory-research-2026]]"
+related:
+  - tech/supermemory-agent-memory
+  - tech/agent-memory-research-2026
 ---
 
 # pxpipe-context-compression

@@ -1,7 +1,10 @@
 ---
 description: Tessl Framework — docs.tessl.io
 tags: [sdd, framework, specification]
-related: "[[tech/openspec]] [[tech/gsd]] [[tech/bmad-method]]"
+related:
+  - tech/openspec
+  - tech/gsd
+  - tech/bmad-method
 ---
 
 # Tessl

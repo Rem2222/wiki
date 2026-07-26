@@ -1,7 +1,8 @@
 ---
 description: Остановка SMOON и очистка Docker. Команды docker compose down, docker system prune, структура образов.
 tags: [smoon, docker, cleanup, storage, compose]
-related: "[[tech/cockpit]]"
+related:
+  - tech/cockpit
 ---
 
 # SMOON shutdown + Docker overview

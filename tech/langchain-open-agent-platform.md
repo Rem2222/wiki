@@ -1,7 +1,9 @@
 ---
 description: LangChain Open Agent Platform — UI поверх LangGraph для визуального построения агентов с трейсингом и контролем потока.
 tags: [tech, llm-tools, agent-frameworks]
-related: "[[tech/dify-agent-platform]] [[tech/no-code-agent-autoagent]]"
+related:
+  - tech/dify-agent-platform
+  - tech/no-code-agent-autoagent
 ---
 
 # langchain-open-agent-platform

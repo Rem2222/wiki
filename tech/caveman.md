@@ -1,7 +1,8 @@
 ---
 description: Skill для Claude Code, сокращающий многословие модели на ~75%
 tags: [claude-code, skill, tokens, optimization]
-related: "[[tech/sequential-thinking]]"
+related:
+  - tech/sequential-thinking
 ---
 
 # Caveman

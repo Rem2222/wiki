@@ -1,7 +1,9 @@
 ---
 description: Три официальных инструмента Anthropic для разработки плагинов под Claude Code
 tags: [claude-code, plugins, mcp, development, skills]
-related: "[[tech/agents-best-practices]] [[concepts/mcp]]"
+related:
+  - tech/agents-best-practices
+  - concepts/mcp
 ---
 
 # Claude Code Plugin Dev Tools

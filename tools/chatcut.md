@@ -5,9 +5,9 @@ related: tools/ai-video-upscale tools/officecli
 description: >-
   Agent-orchestrated video-editing studio — talking-head pipeline via Claude
   Code / Codex
-ingested_via: 'mcp:put_page'
+ingested_via: "'mcp:put_page'"
 ingested_at: '2026-07-16T10:22:40.543Z'
-source_kind: 'mcp:put_page'
+source_kind: "'mcp:put_page'"
 tags:
   - video-editing ffmpeg ai-agent open-source talking-head
 ---

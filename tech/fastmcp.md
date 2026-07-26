@@ -2,7 +2,10 @@
 title: "FastMCP — MCP фреймворк от PrefectHQ"
 description: "FastMCP — стандартный Python-фреймворк для создания MCP серверов, клиентов и приложений. 25.7k ⭐, ~70% всех MCP серверов."
 tags: [MCP, Python, FastMCP, Prefect, сервер, клиент, фреймворк]
-related: "[[tech/1c-mcp]], [[concepts/mcp]], [[tech/hermes-mcp-setup]]"
+related:
+  - tech/1c-mcp
+  - concepts/mcp
+  - tech/hermes-mcp-setup
 ---
 
 # FastMCP 🚀

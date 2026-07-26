@@ -1,7 +1,9 @@
 ---
 description: Официальный список 3rd-party приложений с поддержкой Hysteria 2.
 tags: [tech]
-related: "[[tech/naiveproxy]] [[tech/hysteria-realm]]"
+related:
+  - tech/naiveproxy
+  - tech/hysteria-realm
 ---
 
 # Hysteria 2 — клиенты для Windows и Android

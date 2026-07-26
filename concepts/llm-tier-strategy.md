@@ -6,9 +6,9 @@ description: >-
   Анализ выбора LLM для разных этапов разработки — архитектура vs код vs
   итерации, модель «JPEG-сжатия» и заблуждение «стратегия требует умнейшей
   модели»
-ingested_via: 'mcp:put_page'
+ingested_via: "'mcp:put_page'"
 ingested_at: '2026-07-16T18:28:53.227Z'
-source_kind: 'mcp:put_page'
+source_kind: "'mcp:put_page'"
 tags:
   - llm strategy architecture reasoning planning cost-optimization
 ---

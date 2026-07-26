@@ -1,7 +1,9 @@
 ---
 description: AI-powered поисковик с MCP для Claude Code
 tags: [search, mcp, claude-code, api]
-related: "[[tech/cc-websearch]] [[tech/context7]]"
+related:
+  - tech/cc-websearch
+  - tech/context7
 ---
 
 # Z.AI

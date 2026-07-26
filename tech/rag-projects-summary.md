@@ -1,7 +1,9 @@
 ---
 description: Обзор RAG-проектов из репозитория Sumanth077/Hands-On-AI-Engineering — 11 проектов, архитектуры, технологии, фишки.
 tags: [tech, rag, ml]
-related: "[[tech/mcp-projects-summary]] [[tech/hermes-memory-setup-vps]]"
+related:
+  - tech/mcp-projects-summary
+  - tech/hermes-memory-setup-vps
 ---
 
 # RAG-проекты: Hands-On AI Engineering

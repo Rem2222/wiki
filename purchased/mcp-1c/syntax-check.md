@@ -4,7 +4,10 @@ title: SyntaxCheckServer — проверка синтаксиса BSL
 description: MCP-сервер для проверки синтаксиса кода 1С (BSL) — работает без подготовки данных
 tags: [1c, mcp, syntax, bsl, lsp, purchased]
 source: https://docs.onerpa.ru/mcp-servery-1c
-related: [[tech/1c-mcp]]
+related:
+  - purchased/mcp-1c/index
+related:
+  - tech/1c-mcp
 ---
 
 # SyntaxCheckServer

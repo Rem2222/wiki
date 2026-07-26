@@ -1,6 +1,5 @@
 ---
-description: | Параметр | Текущий стек | agentmemory |
-tags: [tech]
+description: "tags: [tech]"
 related: "[[tech/hermes-memory-setup-vps]] [[tech/gbrain-lossless-agent-memory]] [[tech/tencentdb-agent-memory]]"
 ---
 

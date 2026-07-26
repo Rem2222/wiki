@@ -1,7 +1,8 @@
 ---
 description: Инструменты для скачивания истории покупок из личного кабинета Ozon (для физических лиц) — Chrome-расширение и Python-парсер
 tags: [ozon, personal-account, purchase-history, export, chrome-extension, parser]
-related: "[[tech/ozon-seller-api]]"
+related:
+  - tech/ozon-seller-api
 ---
 
 # Ozon — история покупок (экспорт для физлиц)

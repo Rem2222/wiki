@@ -1,6 +1,5 @@
 ---
-description: | | UI/UX Pro Max | Наш скилл |
-tags: [tech]
+description: "tags: [tech]"
 related: "[[tech/gsd]] [[tech/skillopt]] [[tech/hermes-memory-setup-vps]]"
 ---
 

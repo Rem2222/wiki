@@ -41,3 +41,4 @@ service:
     - hermes-agent
   notes: "Proactive-агент Dex: heartbeat, poller, dashboard. Skill: dex-identity. Nginx: /dex/ (за Authelia)."
 ---
+---

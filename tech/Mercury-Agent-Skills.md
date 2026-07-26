@@ -1,7 +1,10 @@
 ---
 description: Исследование AI-агентов и Mercury Agent
 tags: [agent, ai, research]
-related: "[[tech/hermes-memory-setup-vps]] [[tech/jawl-skills-registry]] [[tech/hermes-mcp-setup]]"
+related:
+  - tech/hermes-memory-setup-vps
+  - tech/jawl-skills-registry
+  - tech/hermes-mcp-setup
 ---
 
 # Mercury Agent Skills

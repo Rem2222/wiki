@@ -2,7 +2,9 @@
 title: "OpenSpec: Практическое руководство"
 description: npm install -g @fission-ai/openspec@latest
 tags: [SDD, OpenSpec, spec-first, AI coding]
-related: "[[openspec]], [[tech/sdd-instruments]]"
+related:
+  - openspec
+  - tech/sdd-instruments
 ---
 
 # OpenSpec: Практическое руководство

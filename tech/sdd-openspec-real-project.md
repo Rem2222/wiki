@@ -2,7 +2,10 @@
 title: "SDD: OpenSpec — подключение к реальному проекту"
 description: "Spec-Driven Development для JAWL или Dashboard"
 tags: [SDD, OpenSpec, JAWL, Dashboard]
-related: "[[openspec]], [[openspec-usage]], [[sdd-openspec-orchestrator]]"
+related:
+  - openspec
+  - openspec-usage
+  - sdd-openspec-orchestrator
 ---
 
 # SDD: Подключение OpenSpec к реальному проекту

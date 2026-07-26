@@ -1,7 +1,9 @@
 ---
 description: Набор Go-плагинов для расширения Claude Code в экосистеме Go
 tags: [go, claude-code, skills, guidelines]
-related: "[[tech/gopilot]] [[tools/go-enumsafety]]"
+related:
+  - tech/gopilot
+  - tools/go-enumsafety
 ---
 
 # Go Skill Set для Claude Code

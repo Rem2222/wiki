@@ -1,7 +1,10 @@
 ---
 description: Model Context Protocol — открытый протокол для интеграции AI-агентов с внешними инструментами
 tags: [mcp, protocol, integration, ai]
-related: "[[tech/context7]] [[tech/serena-mcp]] [[tech/claude-plugin-dev-tools]]"
+related:
+  - tech/context7
+  - tech/serena-mcp
+  - tech/claude-plugin-dev-tools
 ---
 
 # Model Context Protocol (MCP)

@@ -2,7 +2,8 @@
 title: "Cookie Decryptor"
 description: "Извлечённые процедуры из CodexBar-Win для расшифровки Chromium cookies. Windows-only, DPAPI + AES-GCM."
 tags: [browser, cookies, decryption, Python, Chromium]
-related: "[[tech/codexbar-win-cookie-decryption]]"
+related:
+  - tech/codexbar-win-cookie-decryption
 ---
 
 # Cookie Decryptor

@@ -1,5 +1,5 @@
 ---
-description: 'baseUrl": "https://api.example.com/v1' ,
+description: "Инструкция по добавлению нового LLM-провайдера в JAWL. Поля: baseUrl, apiKey, модели."
 created: 2026-05-01
 tags: [jawl, howto, provider, llm]
 related: "[[tech/jawl]] [[tech/jawl-config]] [[tech/jawl-howto-add-interface]]"

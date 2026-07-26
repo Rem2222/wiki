@@ -1,7 +1,8 @@
 ---
 description: Fix для DeepSeek V4 Error 400 в thinking-mode при multi-turn agentic задачах
 tags: [deepseek, claude-code, fix, error, ccr, transformer]
-related: "[[concepts/sdd]]"
+related:
+  - concepts/sdd
 ---
 
 # DeepSeek V4 Error 400 Fix

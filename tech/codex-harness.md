@@ -1,5 +1,5 @@
 ---
-description: _Записано: 2026-05-03_
+description: "_Записано: 2026-05-03_"
 tags: [tech]
 related: "[[tech/opencode]] [[tech/free-claude-code]] [[tech/multica]]"
 ---

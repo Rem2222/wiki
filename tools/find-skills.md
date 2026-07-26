@@ -1,7 +1,8 @@
 ---
 description: Мета-скилл для поиска и установки agent-скиллов через CLI (npx skills) — «менеджер пакетов» для экосистемы skills.sh
 tags: [skills, cli, package-manager, meta-skill, agents]
-related: "[[tech/agents-best-practices]]"
+related:
+  - tech/agents-best-practices
 source: https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md
 author: Vercel Labs
 created: 2026-05-27

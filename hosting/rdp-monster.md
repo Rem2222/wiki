@@ -4,12 +4,14 @@ title: Rdp Monster
 description: >-
   Хостинг/VPS без KYC, оплата криптой (включая анонимные монеты), Нидерланды,
   без ограничения трафика
-ingested_via: 'mcp:put_page'
+ingested_via: "'mcp:put_page'"
 ingested_at: '2026-07-17T21:29:51.731Z'
-source_kind: 'mcp:put_page'
+source_kind: "'mcp:put_page'"
 tags:
   - hosting vps no-kyc crypto anonymous
-related: "[[ops/services/server-architecture]]"
+related:
+  - ops/services/server-architecture
+source: https://rdpmonster.com
 ---
 
 # rdp.monster — No KYC Хостинг

@@ -1,7 +1,10 @@
 ---
 description: OpenAI-совместимый прокси, агрегирующий бесплатные tier'ы от 11+ AI-провайдеров в единый `/v1/chat/completions` endpoint. Суммарно ~1.3 млрд токенов/мес.
 tags: [tech]
-related: "[[tech/free-llm-api-resources]] [[tech/assemblyai]] [[tech/openai-routing]]"
+related:
+  - tech/free-llm-api-resources
+  - tech/assemblyai
+  - tech/openai-routing
 ---
 
 # freellmapi

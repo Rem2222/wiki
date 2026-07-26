@@ -1,7 +1,8 @@
 ---
 description: https://www.youtube.com/watch?v=2LvuxpXNNw8
 tags: [video]
-related: "[[concepts/tradingagents]]"
+related:
+  - concepts/tradingagents
 ---
 
 # claude-tradingview-connection

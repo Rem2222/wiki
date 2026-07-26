@@ -2,7 +2,10 @@
 title: "SDD: Pre-commit hook для OpenSpec"
 description: "Git pre-commit hook валидирует spec.md на SHALL/MUST"
 tags: [SDD, OpenSpec, git, pre-commit]
-related: "[[openspec]], [[openspec-usage]], [[sdd-openspec-orchestrator]]"
+related:
+  - openspec
+  - openspec-usage
+  - sdd-openspec-orchestrator
 ---
 
 # SDD: Pre-commit Hook для OpenSpec

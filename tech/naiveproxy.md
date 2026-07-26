@@ -2,7 +2,10 @@
 title: "NaiveProxy"
 description: "Лучший способ обхода DPI в 2026. Использует сетевой стек Chromium для маскировки трафика."
 tags: [naiveproxy, dpi-bypass, censorship, vpn, proxy, chromium, caddy]
-related: "[[tech/hysteria-clients]] [[tech/hysteria-realm]] [[tech/openclaw-billing-proxy]]"
+related:
+  - tech/hysteria-clients
+  - tech/hysteria-realm
+  - tech/openclaw-billing-proxy
 ---
 
 # NaiveProxy

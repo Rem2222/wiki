@@ -1,5 +1,5 @@
 ---
-description: Исследование решений для долговременной памяти AI-агентов (2026). Сравнение 40+ проектов: mem0, agentmemory, GBrain, MemPalace, TencentDB, engram, MemOS и другие.
+description: "Исследование решений для долговременной памяти AI-агентов (2026). Сравнение 40+ проектов: mem0, agentmemory, GBrain, MemPalace, TencentDB, engram, MemOS и другие."
 tags: [memory, agent-memory, ltm, research, comparison, mcp, knowledge-graph]
 related: "[[tech/gbrain-lossless-agent-memory]], [[tech/MemPalace-Hermes-Integration]], [[tech/agentmemory-vs-current]], [[tech/tencentdb-agent-memory]]"
 ---

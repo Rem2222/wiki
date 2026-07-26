@@ -1,7 +1,8 @@
 ---
 description: LSP MCP-сервер — IDE-интеллект для Claude Code
 tags: [mcp, lsp, claude-code, ide]
-related: "[[concepts/mcp]]"
+related:
+  - concepts/mcp
 ---
 
 # Serena MCP

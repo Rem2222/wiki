@@ -4,7 +4,10 @@ title: Graph Metadata Search — графовый поиск связей мет
 description: MCP-сервер для графового поиска связей между объектами метаданных в конфигурации 1С
 tags: [1c, mcp, graph, metadata, purchased]
 source: https://docs.onerpa.ru/mcp-servery-1c
-related: [[tech/1c-mcp]]
+related:
+  - purchased/mcp-1c/index
+related:
+  - tech/1c-mcp
 ---
 
 # Graph Metadata Search

@@ -60,3 +60,4 @@ service:
     []
   notes: /agentmemory/health 404. REST consolidation не работает.
 ---
+---

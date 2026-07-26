@@ -1,7 +1,8 @@
 ---
 description: HTML Presentation Framework — создание презентаций через HTML/Markdown
 tags: [presentation, html, markdown, slides, javascript]
-related: "[[tech/landing]]"
+related:
+  - tech/landing
 ---
 
 # reveal.js

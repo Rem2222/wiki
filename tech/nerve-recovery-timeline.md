@@ -1,7 +1,8 @@
 ---
 description: Нервы растут со скоростью ~1 мм/день.
 tags: [tech]
-related: "[[misc/calendar-events]]"
+related:
+  - misc/calendar-events
 ---
 
 # Восстановление нервов: timeline и скорость роста

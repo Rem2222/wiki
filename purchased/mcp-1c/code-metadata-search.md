@@ -4,7 +4,10 @@ title: CodeMetadataSearchServer — поиск по метаданным и ко
 description: MCP-сервер для семантического поиска по метаданным и исходному коду конфигурации 1С
 tags: [1c, mcp, metadata, code, purchased]
 source: https://docs.onerpa.ru/mcp-servery-1c
-related: [[tech/1c-mcp]]
+related:
+  - purchased/mcp-1c/index
+related:
+  - tech/1c-mcp
 ---
 
 # CodeMetadataSearchServer

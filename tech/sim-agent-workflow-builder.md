@@ -1,7 +1,9 @@
 ---
 description: Sim — визуальный конструктор воркфлоу для AI-агентов со встроенным AI Copilot, генерацией графов и трейсингом выполнения.
 tags: [tech, llm-tools, agent-frameworks]
-related: "[[tech/langchain-open-agent-platform]] [[tech/no-code-agent-autoagent]]"
+related:
+  - tech/langchain-open-agent-platform
+  - tech/no-code-agent-autoagent
 ---
 
 # sim-agent-workflow-builder

@@ -1,7 +1,9 @@
 ---
 description: Плагин WebSearch + WebFetch для Claude Code на DuckDuckGo (без API-ключей)
 tags: [claude-code, search, plugin, duckduckgo, webfetch]
-related: "[[tech/context7]] [[tech/z-ai]]"
+related:
+  - tech/context7
+  - tech/z-ai
 ---
 
 # cc-websearch

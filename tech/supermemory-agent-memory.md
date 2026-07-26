@@ -1,7 +1,11 @@
 ---
 description: Supermemory — self-hosted memory & context for AI agents (28k ⭐). Graph engine, локальные embeddings, извлечение фактов, Memory API. Полностью локально.
 tags: [tech]
-related: "[[tech/agentmemory-vs-current]] [[tech/hermes-memory-setup-vps]] [[tech/tencentdb-agent-memory]] [[tech/agent-memory-research-2026]]"
+related:
+  - tech/agentmemory-vs-current
+  - tech/hermes-memory-setup-vps
+  - tech/tencentdb-agent-memory
+  - tech/agent-memory-research-2026
 ---
 
 # supermemory-agent-memory

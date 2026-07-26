@@ -1,7 +1,10 @@
 ---
 description: DPI (Deep Packet Inspection) — технология анализа трафика интернет-провайдерами для блокировок и замедлений. Zapret — инструмент для обхода DPI на уровне пакетов. TgWsProxy — локальный MTProto прокси для Telegram. NetFix — GUI-обёртка над ними.
 tags: [tech, dpi, zapret, bypass, network, russia]
-related: "[[tech/hysteria-clients]] [[tech/hysteria-realm]] [[tech/naiveproxy]]"
+related:
+  - tech/hysteria-clients
+  - tech/hysteria-realm
+  - tech/naiveproxy
 ---
 
 # DPI, Zapret, TgWsProxy и NetFix

@@ -1,7 +1,9 @@
 ---
 description: MiMo-Code — open-source AI coding agent от Xiaomi, форк OpenCode с persistent memory, goal/stop, subagent orchestration и self-improvement (dream/distill). Бесплатно (MIT), плата только за токены моделей.
 tags: [tech, ai-coding, mimocode, xiaomi, opencode]
-related: "[[tech/opencode]] [[tech/hermes-agent-masterclass]]"
+related:
+  - tech/opencode
+  - tech/hermes-agent-masterclass
 ---
 
 # MiMo-Code

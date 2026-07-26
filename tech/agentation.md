@@ -5,7 +5,10 @@ source: https://www.agentation.com
 website: https://www.agentation.com
 created: 2026-05-27
 updated: 2026-05-27
-related: "[[tech/hermes-memory-setup-vps]] [[tech/openmanus]] [[tech/gsd]]"
+related:
+  - tech/hermes-memory-setup-vps
+  - tech/openmanus
+  - tech/gsd
 ---
 
 # Agentation

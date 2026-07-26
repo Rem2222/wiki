@@ -1,7 +1,8 @@
 ---
 description: Disk usage визуализатор (sunburst-диаграммы). Фикс CGI redirect при клике на лепесток. Настройка duc-server.py.
 tags: [duc, disk-usage, storage, cgi, server]
-related: "[[tech/cockpit]], ncdu"
+related:
+  - tech/cockpit
 ---
 
 # Duc

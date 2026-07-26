@@ -1,7 +1,9 @@
 ---
 description: MCP-сервер документации библиотек и фреймворков для AI-агентов (проект Upstash)
 tags: [mcp, documentation, claude-code, libraries, cursor, opencode]
-related: "[[tech/cc-websearch]] [[concepts/mcp]]"
+related:
+  - tech/cc-websearch
+  - concepts/mcp
 ---
 
 # Context7

@@ -1,7 +1,11 @@
 ---
 description: Интеграция BMAD (Build More Architect Dreams) с Multica — архитектурный SDD-фреймворк + платформа управления AI-агентами
 tags: [sdd, framework, architecture, specification, multica, bmad, integration]
-related: "[[tech/bmad-method]] [[tech/multica]] [[tech/gsd-multica-integration]] [[tech/gsd]]"
+related:
+  - tech/bmad-method
+  - tech/multica
+  - tech/gsd-multica-integration
+  - tech/gsd
 ---
 
 # BMAD + Multica

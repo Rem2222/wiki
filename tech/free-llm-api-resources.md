@@ -1,7 +1,11 @@
 ---
 description: Список сервисов, предоставляющих бесплатный LLM API-доступ или триальные кредиты. Агрегировано из cheahjs/free-llm-api-resources (25.5k ⭐, обновлён 3 дня назад).
 tags: [tech, llm, free, api, providers]
-related: "[[tech/freellmapi]] [[tech/free-claude-code]] [[tech/jawl-howto-add-provider]] [[tech/freenimapi]]"
+related:
+  - tech/freellmapi
+  - tech/free-claude-code
+  - tech/jawl-howto-add-provider
+  - tech/freenimapi
 ---
 
 # Free LLM API Resources

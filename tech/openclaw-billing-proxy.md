@@ -1,7 +1,9 @@
 ---
 description: OpenClaw Billing Proxy — прокси для биллинга API-запросов
 tags: [tech, proxy, billing]
-related: "[[tech/naiveproxy]] [[tech/openai-routing]]"
+related:
+  - tech/naiveproxy
+  - tech/openai-routing
 ---
 
 # openclaw-billing-proxy

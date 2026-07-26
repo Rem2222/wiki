@@ -1,7 +1,10 @@
 ---
 description: Настройка MCP-сервера для платформы 1С
 tags: [tech, 1c, mcp]
-related: "[[tech/1c-mcp]] [[tech/cursor-rules-1c]] [[tools/v8std-mcp]]"
+related:
+  - tech/1c-mcp
+  - tech/cursor-rules-1c
+  - tools/v8std-mcp
 ---
 
 # mcp-1c-setup

@@ -1,7 +1,10 @@
 ---
 description: Заметка о OneBase
 tags: [tech]
-related: "[[tech/1c-mcp]] [[tech/cursor-rules-1c]] [[tech/metadata-1c]]"
+related:
+  - tech/1c-mcp
+  - tech/cursor-rules-1c
+  - tech/metadata-1c
 ---
 
 # onebase

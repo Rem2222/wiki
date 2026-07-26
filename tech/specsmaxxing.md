@@ -1,5 +1,5 @@
 ---
-description: _Записано: 2026-05-03_
+description: "_Записано: 2026-05-03_"
 tags: [tech]
 related: "[[concepts/sdd]] [[tech/gsd]] [[tech/openspec]]"
 ---

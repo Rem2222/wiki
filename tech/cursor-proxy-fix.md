@@ -2,7 +2,9 @@
 title: "Cursor + Proxy Fix"
 description: "Как починить доступ к Claude Sonnet в Cursor через Hiddify / OneXRay (VLESS/Xray)"
 tags: [cursor, proxy, vless, xray, onexray, hiddify, claude]
-related: "[[tech/naiveproxy]] [[tech/cursor-rules-1c]]"
+related:
+  - tech/naiveproxy
+  - tech/cursor-rules-1c
 ---
 
 # Cursor + Proxy Fix

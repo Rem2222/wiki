@@ -5,9 +5,9 @@ related: tools/chatcut
 description: >-
   CLI for AI agents to read, edit, create Word/Excel/PowerPoint — single binary,
   no Office required
-ingested_via: 'mcp:put_page'
+ingested_via: "'mcp:put_page'"
 ingested_at: '2026-07-16T16:17:42.765Z'
-source_kind: 'mcp:put_page'
+source_kind: "'mcp:put_page'"
 tags:
   - office automation ai-agent open-source docx xlsx pptx
 ---

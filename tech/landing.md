@@ -1,7 +1,10 @@
 ---
 description: Лендинг rem2222.top — стартовая страница с карточками сервисов на VPS.
 tags: [landing, rem2222, frontend, html, css, vps, services]
-related: "[[tech/revealjs]] [[tech/jawl-dashboard]] [[tech/authelia]]"
+related:
+  - tech/revealjs
+  - tech/jawl-dashboard
+  - tech/authelia
 ---
 
 # Лендинг rem2222.top

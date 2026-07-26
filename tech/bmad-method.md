@@ -1,7 +1,11 @@
 ---
 description: SDD-фреймворк «Build More Architect Dreams» — архитектура прежде всего
 tags: [sdd, framework, architecture, specification]
-related: "[[concepts/sdd]] [[tech/gsd]] [[tech/openspec]] [[tech/spec-kit]]"
+related:
+  - concepts/sdd
+  - tech/gsd
+  - tech/openspec
+  - tech/spec-kit
 ---
 
 # BMAD-METHOD
