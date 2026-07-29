@@ -13,11 +13,11 @@ service:
   category: network
   purpose: Mesh VPN, exit node
   install_date: 2025-05
-  last_verified: 2026-07-27
+  last_verified: 2026-07-30
   health_url: 
   type: standalone
   depends_on:
     []
-  last_verified: 2026-07-27
+  last_verified: 2026-07-30
   notes: v1.98.4. Online.
 ---

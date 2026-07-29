@@ -13,7 +13,7 @@ service:
   category: agent-platform
   purpose: MCP-сервер для анализа кода
   install_date: 2025-06
-  last_verified: 2026-07-27
+  last_verified: 2026-07-30
   health_url: 
   type: standalone (node)
   ports:
