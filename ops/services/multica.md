@@ -13,7 +13,7 @@ service:
   category: core
   purpose: Платформа управления AI-агентами
   install_date: 2025-05
-  last_verified: 2026-07-31
+  last_verified: 2026-08-01
   health_url: "http://localhost:8080/health"
   type: docker-compose
   ports:
@@ -31,12 +31,17 @@ service:
       port: 9092
       protocol: tcp
       bind: 127.0.0.1
-      description: Grafana
+      description: Backend internal web UI (host :9092 → container :9091)
+    -
+      port: 3002
+      protocol: tcp
+      bind: 0.0.0.0
+      description: Grafana (host network)
     -
       port: 9093
       protocol: tcp
-      bind: 127.0.0.1
-      description: Prometheus
+      bind: 0.0.0.0
+      description: Prometheus (host network)
     -
       port: 9100
       protocol: tcp

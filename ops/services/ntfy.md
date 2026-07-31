@@ -12,7 +12,7 @@ service:
   category: monitoring
   purpose: Push-уведомления
   install_date: 2025-06
-  last_verified: 2026-07-31
+  last_verified: 2026-08-01
   health_url: "http://localhost:2586/"
   type: docker
   ports:

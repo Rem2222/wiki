@@ -14,7 +14,7 @@ service:
   category: core
   purpose: AI-агент для автоматизации, gateway сообщений
   install_date: 2025-05-27
-  last_verified: 2026-07-31
+  last_verified: 2026-08-01
   health_url: "http://localhost:8642/health"
   type: standalone (python)
   ports:
@@ -35,6 +35,7 @@ service:
       description: Dashboard
   systemd_units:
     - hermes-dashboard
+    - hermes-gateway
   processes:
     -
       pattern: hermes_cli.main gateway
