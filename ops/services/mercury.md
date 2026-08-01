@@ -12,7 +12,7 @@ service:
   category: monitoring
   purpose: Дашборд Mercury Agent
   install_date: 2026-07-03
-  last_verified: 2026-08-01
+  last_verified: 2026-08-02
   health_url: "http://localhost:6174/"
   type: standalone
   ports:
