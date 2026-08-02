@@ -12,7 +12,7 @@ service:
   category: system
   purpose: Веб-интерфейс управления сервером
   install_date: 2025-06
-  last_verified: 2026-08-02
+  last_verified: 2026-08-03
   health_url: "http://localhost:9090/"
   type: systemd
   ports:
@@ -21,6 +21,11 @@ service:
       protocol: tcp
       bind: 127.0.0.1
       description: Web UI
+    -
+      port: 3114
+      protocol: tcp
+      bind: 0.0.0.0
+      description: Cockpit TCP proxy (socat, cockpit-tcp-proxy)
   systemd_units:
     - cockpit
     - cockpit-tcp-proxy
