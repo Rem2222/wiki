@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-07-25_
+_Обновлено: 2026-08-02_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)

@@ -191,3 +191,8 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Добавлены страницы в Obsidian & экосистема (cli-printing-press, lightmem)
 - Добавлено видео (claude-tradingview-connection)
 - Обновлена дата index.md
+## [2026-08-02] update | tech/tencentdb-agent-memory
+
+- Исправлен URL репозитория: Tencent → TencentCloud
+- Обновлена дата/статус (Backlog, MUL-715), добавлена секция Hermes-интеграции (provider memory_tencentdb, Gateway :8420, Docker, Windows-скрипт, безопасность)
+- Обновлены ссылки (Discord, related: agent-memory-research-2026, gbrain-lossless-agent-memory, supermemory-agent-memory)

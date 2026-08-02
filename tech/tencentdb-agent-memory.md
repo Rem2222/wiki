@@ -9,14 +9,15 @@ related:
 
 # tencentdb-agent-memory
 
-**Репозиторий:** https://github.com/Tencent/TencentDB-Agent-Memory
+**Репозиторий:** https://github.com/TencentCloud/TencentDB-Agent-Memory
 **Лицензия:** MIT
-**Автор:** Tencent (腾讯)
-**Дата:** Май 2026 (v0.3.4, 58 коммитов, 2k звезд)
+**Автор:** Tencent Cloud (腾讯云)
+**Дата:** 2026 (v0.3.4+, npm: @tencentdb-agent-memory/memory-tencentdb)
+**Статус:** ❓ Backlog — задача MUL-715 на тестирование
 
 ## Суть
 
-Полностью локальная система долговременной памяти для AI-агентов, без внешних API-зависимостей.
+Плагин памяти для AI-агентов (OpenClaw + Hermes Gateway). Девиз: «Agents remember, Humans innovate». Две опоры: символьная краткосрочная память + слоистая долгосрочная память. Вместо плоской векторной кучи — семантическая пирамида с полной трассируемостью.
 
 ## Архитектура
 
@@ -47,8 +48,14 @@ related:
 
 ## Интеграции
 
-- **OpenClaw plugin** — `openclaw plugins install @tencentdb-agent-memory/memory-tencentdb`
-- **Hermes Gateway** — есть адаптер + Docker-образ
+- **OpenClaw plugin** — `openclaw plugins install @tencentdb-agent-memory/memory-tencentdb` (zero-config, SQLite + sqlite-vec из коробки)
+- **Hermes Gateway** — провайдер `memory_tencentdb` (директория ОБЯЗАТЕЛЬНО с подчёркиванием: `memory_tencentdb`)
+  - `memory.provider: memory_tencentdb` в config.yaml
+  - Отдельный Gateway-процесс на :8420 (Node ≥22.16, `npx tsx src/gateway/server.ts`), авто-запуск через Popen при первом диалоге
+  - Env: `MEMORY_TENCENTDB_GATEWAY_CMD/HOST/PORT`, LLM через `TDAI_LLM_API_KEY/BASE_URL/MODEL` или конфиг `~/.memory-tencentdb/memory-tdai/tdai-gateway.json`
+  - Docker-образ: `docker/opensource/Dockerfile.hermes` (порт 8420)
+  - Windows-native: `scripts/setup-hermes-memory-tencentdb.bat`
+  - Безопасность (опционально): `TDAI_GATEWAY_API_KEY` (Bearer, кроме /health), `TDAI_CORS_ORIGINS`
 - **Бэкенды**: SQLite + sqlite-vec (из коробки), Tencent Cloud Vector Database
 - **Retrieval**: BM25 + векторный + RRF-фузия (hybrid)
 
@@ -72,10 +79,11 @@ related:
 
 ## Статус
 
-❓ На study, требуется тестирование и оценка применимости к текущему стеку (Hermes Agent + OpenClaw + MemPalace + ByteRover).
+❓ Backlog — MUL-715 (2026-08-02): протестировать на текущем стеке (Hermes + agentmemory). Ключевые вопросы: сосуществование с agentmemory (memory.provider — один слот), реальная экономия токенов на длинных задачах, качество PersonaMem. Даже если не ставить — взять идеи: Mermaid-канвас с node_id drill-down, прогрессивное раскрытие.
 
 ## Ссылки
 
-- [GitHub](https://github.com/Tencent/TencentDB-Agent-Memory)
+- [GitHub](https://github.com/TencentCloud/TencentDB-Agent-Memory)
 - [NPM](https://www.npmjs.com/package/@tencentdb-agent-memory/memory-tencentdb)
-- [Discord](https://discord.gg/kDtHb5RW2)
+- [Discord](https://discord.gg/dJQM6mKMF)
+- Связано: [[tech/agent-memory-research-2026]] [[tech/gbrain-lossless-agent-memory]] [[tech/supermemory-agent-memory]]
