@@ -13,9 +13,18 @@ service:
   category: storage
   purpose: Реляционные БД
   install_date: 2025-05
-  last_verified: 2026-08-03
+  last_verified: 2026-08-04
   health_url: 
   type: docker
+  ports:
+    - port: 5432
+      protocol: tcp
+      bind: 0.0.0.0
+      description: "Multica PostgreSQL"
+    - port: 5433
+      protocol: tcp
+      bind: 127.0.0.1
+      description: "GBrain PostgreSQL"
   docker_containers:
     - multica-postgres-1
     - gbrain-postgres

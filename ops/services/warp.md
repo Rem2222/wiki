@@ -13,7 +13,7 @@ service:
   category: network
   purpose: Cloudflare WARP VPN (обход блокировок)
   install_date: 2025-06
-  last_verified: 2026-08-03
+  last_verified: 2026-08-04
   health_url: 
   type: systemd
   ports:
