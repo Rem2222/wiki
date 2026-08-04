@@ -13,7 +13,7 @@ service:
   category: core
   purpose: Платформа управления AI-агентами
   install_date: 2025-05
-  last_verified: 2026-08-04
+  last_verified: 2026-08-05
   health_url: "http://localhost:8080/health"
   type: docker-compose
   ports:

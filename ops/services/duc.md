@@ -12,7 +12,7 @@ service:
   category: system
   purpose: Визуализация использования диска
   install_date: 2025-05
-  last_verified: 2026-08-04
+  last_verified: 2026-08-05
   health_url: "http://localhost:8081/"
   type: standalone (python CGI)
   ports:
