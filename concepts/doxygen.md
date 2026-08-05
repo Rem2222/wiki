@@ -1,6 +1,7 @@
 ---
-description: "tags: [concept]"
-related: "[[concepts/sdd]] [[tech/sourcecraft]] [[concepts/mcp]]"
+description: "Doxygen — генератор документации из исходного кода (C++, Java, Python и др.)."
+tags: [concept, documentation, cpp, code-generation]
+related: "[[concepts/javadoc]] [[concepts/sphinx]] [[tech/graphviz]]"
 ---
 
 # doxygen

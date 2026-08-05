@@ -5,6 +5,7 @@ related:
   - tech/no-code-agent-autoagent
   - tech/anythingllm-rag
   - tech/pxpipe-context-compression
+  - "[[tech/langchain-open-agent-platform]]"
 ---
 
 # dify-agent-platform

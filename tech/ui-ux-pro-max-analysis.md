@@ -1,6 +1,7 @@
 ---
-description: "tags: [tech]"
-related: "[[tech/gsd]] [[tech/skillopt]] [[tech/hermes-memory-setup-vps]]"
+description: Сравнение UI/UX Pro Max (73K ⭐, CSV-базы, Python CLI) с локальным текстовым скиллом Hermes — zero-dependency, работает везде.
+tags: [tech, ui-ux, design, skills]
+related: "[[tech/make-interfaces-feel-better]]"
 ---
 
 # ui-ux-pro-max-analysis

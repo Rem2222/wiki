@@ -1,3 +1,9 @@
+---
+description: "Оффлайн-копия статьи с Habr: нестандартные способы обхода блокировок — Pingtunnel (ICMP), DNSTT, SlipStream, MasterDnsVPN."
+tags: [vpn, proxy, tunnel, icmp, dns, archive]
+related: "[[archive/habr-vpn/habr-1065064-proxy-vpn-part2]] [[tech/naiveproxy]] [[tech/dpi-zapret-netfix]]"
+---
+
 # Немного извращений из мира прокси и VPN / Хабр
 
 XTLS-Reality, XHTTP, Naiveproxy и всякие там AnyTLS - это не интересно. Давайте копнем чуть глубже и посмотрим, где прячется настоящее безумие. Особенно учитывая, что мы живем во времена, когда даже самые, казалось бы, безумные вещи, могут оказаться весьма полезными чтобы не сойти с ума.

@@ -6,8 +6,8 @@ tags:
   - browser
 type: service
 related:
-  - ops/services/hermes-agent
-  - tech/lightpanda-browser
+  - "[[ops/services/hermes-agent]]"
+  - "[[tech/lightpanda-browser]]"
 service:
   name: lightpanda
   category: system

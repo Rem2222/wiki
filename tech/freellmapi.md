@@ -5,6 +5,7 @@ related:
   - tech/free-llm-api-resources
   - tech/assemblyai
   - tech/openai-routing
+  - "[[tech/wello-ai-api]]"
 ---
 
 # freellmapi

@@ -6,6 +6,7 @@ tags: [browser, headless, zig, web-scraping, ai-agents]
 related:
   - tech/hermes-agent-masterclass
   - tech/paperclip
+  - "[[ops/services/lightpanda]]"
 source: https://github.com/lightpanda-io/browser
 license: AGPL-3.0
 stars: 32700

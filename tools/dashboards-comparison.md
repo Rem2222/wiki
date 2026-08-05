@@ -1,6 +1,7 @@
 ---
 title: "Сравнение Dashboard для OpenClaw"
-description: "tags: [OpenClaw, dashboard, monitoring, agents]"
+description: "Сравнение dashboard-ов для мониторинга OpenClaw: JAWL, OpenClawfice, ClawMetry, OpenClaw Dashboard."
+tags: [tools, openclaw, dashboard, monitoring, agents]
 related: "[[tech/jawl-dashboard]] [[tech/landing]] [[tech/nexus-dashboard]]"
 ---
 

@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-08-02_
+_Обновлено: 2026-08-06_
 
 ## Projects
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
@@ -8,6 +8,7 @@ _Обновлено: 2026-08-02_
 
 ## GameDev
 - [[gamedev/ccgs-skills-research]] — анализ Claude Code Game Studios (49 AI-агентов, 73 скилла) для геймдева
+- [[tech/mengto-skills-gamedev]] — MengTo/Skills: портабельные agent skills для Three.js геймдева
 
 ## Концепции
 - [[concepts/llm-wiki]] — паттерн персональных баз знаний с помощью LLM
@@ -25,6 +26,7 @@ _Обновлено: 2026-08-02_
 - [[concepts/github-actions]] — GitHub Actions — CI/CD платформа от GitHub
 - [[concepts/javadoc]] — генератор документации из Java-кода в HTML
 - [[concepts/sphinx]] — генератор документации на Python, reStructuredText/Markdown
+- [[concepts/waku-agent]] — Waku Agent: локальный AI-ассистент (Agent Harness на практике, ~95 строк Python)
 
 ## Сервисы
 - [[ops/services/server-architecture]] — полная карта серверной инфраструктуры VPS
@@ -60,6 +62,7 @@ _Обновлено: 2026-08-02_
 - [[ops/services/ufw-fail2ban]] — фаервол + защита от брутфорса
 - [[ops/services/unattended-upgrades]] — автообновления безопасности
 - [[ops/services/warp]] — Cloudflare WARP VPN
+- [[ops/services/lightpanda]] — Lightpanda headless-браузер (Zig, CDP, порт 9222)
 
 ## SDD-Orchestrator v2 (2026-05-04)
 - [[tech/sdd-openspec-orchestrator-integration]] — Orchestrator Integration (что хотели для Оркестратора: QA Gate, multi-layer SDD, hybrid context)
@@ -187,6 +190,9 @@ _Обновлено: 2026-08-02_
 - [[tech/subquadratic]] — Subquadratic: архитектуры внимания быстрее O(n²)
 - [[tech/superpowers]] — Superpowers: платформа для AI-агентов
 - [[tech/ui-ux-pro-max-analysis]] — UI/UX анализ Pro Max
+- [[tech/lightpanda-browser]] — Lightpanda: headless-браузер на Zig для AI-агентов (в 9× быстрее headless Chrome)
+- [[tech/wello-ai-api]] — Wello: единый API для Claude, GPT, Gemini (до 90% дешевле)
+- [[tech/langchain-open-agent-platform]] — LangChain Open Agent Platform: UI поверх LangGraph
 ## Hermes Agent
 - [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
 - [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам
@@ -224,6 +230,8 @@ _Обновлено: 2026-08-02_
 - [[tools/chatcut]] — нарезка и обработка чатов/диалогов
 - [[tools/ai-video-upscale]] — AI-модели для повышения разрешения видео
 - [[tools/officecli]] — CLI для создания Office-документов
+- [[tools/rtk]] — RTK: Rust CLI-прокси для сжатия вывода команд перед LLM (60–90% токенов)
+- [[tools/openminis]] — OpenMinis: мобильный AI-агент с Linux shell
 - [[tech/devin-ai-agent]] — AI Software Engineer от Cognition Labs (Windsurf → Devin). Включает GLM-5.2 в Pro
 
 ## LLM
@@ -260,6 +268,8 @@ _Обновлено: 2026-08-02_
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki
 - [[misc/calendar-events]] — календарь событий 2026
 - [[hosting/rdp-monster]] — дешёвый RDP/VDS хостинг в криптовалюте
+- [[archive/habr-vpn/habr-1036100-proxy-vpn-part1]] — оффлайн-копия: извращения из мира прокси и VPN (часть 1)
+- [[archive/habr-vpn/habr-1065064-proxy-vpn-part2]] — оффлайн-копия: извращения из мира прокси и VPN (часть 2)
 
 - [[flag_rebuild]] — флаг пересборки для инфраструктурных пайплайнов
 

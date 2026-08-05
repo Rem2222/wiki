@@ -6,6 +6,8 @@ tags: [hermes, knowledge-base, memory, wiki, workflow]
 related:
   - concepts/graph-engineering
   - tech/hermes-agent-masterclass
+  - "[[concepts/waku-agent]]"
+  - "[[tools/openminis]]"
 source: https://telegra.ph/Kak-prevratit-Hermes-Agent-v-lichnuyu-bazu-znanij-07-24
 author: Влад Смирнов
 ingested_at: '2026-07-24'

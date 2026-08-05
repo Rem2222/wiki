@@ -1,5 +1,6 @@
 ---
-description: "tags: [tech]"
+description: "Сравнение agentmemory (rohitg00) с текущим стеком памяти Hermes: ByteRover + MemPalace."
+tags: [tech, memory, agents, comparison]
 related: "[[tech/hermes-memory-setup-vps]] [[tech/gbrain-lossless-agent-memory]] [[tech/tencentdb-agent-memory]]"
 ---
 
