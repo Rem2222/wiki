@@ -197,3 +197,6 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Обновлена дата/статус (Backlog, MUL-715), добавлена секция Hermes-интеграции (provider memory_tencentdb, Gateway :8420, Docker, Windows-скрипт, безопасность)
 - Обновлены ссылки (Discord, related: agent-memory-research-2026, gbrain-lossless-agent-memory, supermemory-agent-memory)
 ## [2026-08-03] nightly routine | реестр: last_verified обновлён (33 стр.), cockpit +port 3114; новые tools: yt-dlp, agent-reach, mcporter
+## [2026-08-05] update | ops/services/warp, ops/services/multi-exporter (MUL-746)
+- warp.md: задокументирована причина установки WARP (обрывы "incomplete chunked read" у opencode.ai), решение через WarpProxy :40000, и текущий статус — ALL_PROXY закомментирован, можно удалять
+- multi-exporter.md: CACHE_DURATION 30с → 1800с (30 мин) — раньше каждые 30с гонял gbrain doctor (bun-процесс), cgroup ~1.1-1.9G; теперь раз в 30 мин

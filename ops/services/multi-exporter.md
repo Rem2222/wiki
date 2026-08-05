@@ -26,5 +26,5 @@ service:
     - multi-exporter
   depends_on:
     []
-  notes: "1.2G RAM. CPU: 16ч за 2 дня. Возможно течёт память."
+  notes: "CACHE_DURATION поднят 30с → 1800с (30 мин) 2026-08-05: раньше каждые 30с гонял gbrain doctor (bun-процесс), из-за чего cgroup весила ~1.1-1.9G. Теперь doctor раз в 30 мин."
 ---
