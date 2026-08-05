@@ -12,7 +12,7 @@ service:
   category: monitoring
   purpose: Панель управления ntfy
   install_date: 2026-07-03
-  last_verified: 2026-08-05
+  last_verified: 2026-08-06
   health_url: "http://localhost:3003/"
   type: standalone (python)
   ports:
