@@ -13,7 +13,7 @@ service:
   category: llm-proxy
   purpose: DeepSeek Web Chat proxy
   install_date: 2026-07-03
-  last_verified: 2026-08-06
+  last_verified: 2026-08-07
   health_url: "http://localhost:9655/"
   type: systemd
   ports:
