@@ -13,7 +13,7 @@ service:
   category: agent-platform
   purpose: MCP-сервер для анализа кода
   install_date: 2025-06
-  last_verified: 2026-08-07
+  last_verified: 2026-08-08
   health_url: http://localhost:51234/health
   type: systemd
   ports:
