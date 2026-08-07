@@ -82,6 +82,7 @@ _Обновлено: 2026-08-06_
 - [[tech/mempalace-viz]] — визуализация графа знаний для MemPalace (D3.js, MCP, Cloudflare)
 - [[tech/agents-best-practices]] — best practices для проектирования агентных систем (provider-agnostic)
 - [[tech/agentation]] — Enterprise-платформа для оркестрации AI-агентов (no-code, HITL, on-premise)
+- [[tech/openworker]] — OpenWorker: open-source AI-коллега на десктопе от Andrew Ng (aisuite, BYOK, MCP)
 - [[tech/assemblyai]] — API-first распознавание речи и аудиоинтеллект (STT, LeMUR)
 - [[tech/authelia]] — Self-hosted SSO (Authelia) + nginx auth_request, Docker compose
 - [[tech/beszel]] — Лёгкая система мониторинга серверов (Hub + Agent)

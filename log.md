@@ -207,3 +207,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Добавлен frontmatter (description/tags/related) оффлайн-копиям Habr: archive/habr-vpn/habr-1036100-proxy-vpn-part1, habr-1065064-proxy-vpn-part2
 - 10 orphan-страниц получали ссылки (related + index.md): tech/mengto-skills-gamedev, tech/lightpanda-browser, tech/wello-ai-api, tech/langchain-open-agent-platform, concepts/waku-agent, tools/rtk, tools/openminis, ops/services/lightpanda, 2× archive/habr-vpn
 - Связанные пары: lightpanda-browser ↔ ops/services/lightpanda, tech/rtk ↔ tools/rtk, mengto-skills-gamedev ↔ ccgs-skills-research, wello-ai-api ↔ freellmapi, langchain-open-agent-platform ↔ dify-agent-platform, waku-agent/openminis → hermes-knowledge-base
+
+- [2026-08-04] ingest | tech/openworker — OpenWorker от Andrew Ng (aisuite, десктопный AI-коллега, BYOK, MCP, approval-gated)
