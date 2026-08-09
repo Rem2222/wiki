@@ -4,14 +4,10 @@ tags: [planning, gtd, covey, productivity, archive]
 related: "[[archive/habr-planning-4gen/index]]"
 ---
 
-Title: Планирование четвёртого поколения: почему списки дел не работают
 
-URL Source: https://habr.com/ru/companies/habr_rutube/articles/1067696/
 
-Published Time: 2026-08-07T09:13:26+03:00
 
-Markdown Content:
-## Планирование четвёртого поколения: почему списки дел не работают
+# Планирование четвёртого поколения: почему списки дел не работают
 
 Простой
 
