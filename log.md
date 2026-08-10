@@ -209,3 +209,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Связанные пары: lightpanda-browser ↔ ops/services/lightpanda, tech/rtk ↔ tools/rtk, mengto-skills-gamedev ↔ ccgs-skills-research, wello-ai-api ↔ freellmapi, langchain-open-agent-platform ↔ dify-agent-platform, waku-agent/openminis → hermes-knowledge-base
 
 - [2026-08-04] ingest | tech/openworker — OpenWorker от Andrew Ng (aisuite, десктопный AI-коллега, BYOK, MCP, approval-gated)
+- [2026-08-10] ingest | tech/qwen-mm-plugins — Qwen-MM-Plugins: мультимодальные плагины (skill+MCP) для агентных обвязок (core: изображения/видео/PDF, OCR, grounding, ASR)

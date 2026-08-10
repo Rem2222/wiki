@@ -72,6 +72,7 @@ _Обновлено: 2026-08-06_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/qwen-mm-plugins]] — Qwen-MM-Plugins: native-мультимодальные плагины (skill + MCP) для агентных обвязок: изображения/видео/PDF, OCR, grounding, ASR
 - [[tech/dpi-zapret-netfix]] — DPI, Zapret, TgWsProxy и GUI-обёртка NetFix
 - [[tech/mimo-code]] — AI coding agent от Xiaomi, форк OpenCode с persistent memory
 - [[tech/openprose-reactor]] — декларативный язык для AI-сессий (OpenProse) и runtime (Reactor)
