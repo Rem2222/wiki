@@ -13,7 +13,7 @@ service:
   category: proxies
   purpose: Анонимный SOCKS5 прокси для обхода блокировок и поиска через DuckDuckGo Onion
   install_date: "2024"
-  last_verified: 2026-08-10
+  last_verified: 2026-08-11
   health_url: ""
   type: systemd
   ports:
@@ -45,5 +45,4 @@ service:
     Установлен как systemd сервис tor@default.service.
     ALL_PROXY=socks5://127.0.0.1:40000 — основной прокси, Tor на :9050 для специальных случаев.
     В конфиге torrc настроен ExitNodes {ru}, StrictNodes 1 для российских выходных нод.
----
 ---

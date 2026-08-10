@@ -13,7 +13,7 @@ service:
   category: ai-platform
   purpose: Локальный запуск LLM-моделей и эмбеддингов (ollama serve + llama-server)
   install_date: 2026-08-05
-  last_verified: 2026-08-10
+  last_verified: 2026-08-11
   health_url: http://localhost:11434/
   type: systemd
   ports:

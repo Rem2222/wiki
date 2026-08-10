@@ -13,7 +13,7 @@ service:
   category: core
   purpose: Graph-based knowledge brain
   install_date: 2025-06
-  last_verified: 2026-08-10
+  last_verified: 2026-08-11
   health_url: "http://localhost:3131/health"
   type: systemd + docker
   ports:
@@ -46,5 +46,4 @@ service:
     - nginx
   data_size_hint: 42 MB (PG)
   notes: v0.41.26.0. 3 serve-процесса.
----
 ---
