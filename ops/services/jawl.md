@@ -17,10 +17,10 @@ service:
   type: systemd (user)
   ports:
     -
-      port: 37281
+      port: 46843
       protocol: tcp
       bind: 127.0.0.1
-      description: JAWL process
+      description: JAWL process terminal (динамический порт, см. terminal.port)
     -
       port: 5002
       protocol: tcp
@@ -36,7 +36,11 @@ service:
   depends_on:
     []
   notes: >
-    Занимает 1.8G RAM. Доступ через /jawl/.
-    Проверено 2026-08-12: юзер-юнит jawl.service в состоянии failed (Result: signal, KILL)
-    с 2026-07-06, порты 37281/5002 не слушаются. Требуется починка/перезапуск — см. MUL-805 отчёт.
+    Агент ~1.3G RAM, дашборд ~150M. Доступ через /jawl/.
+    Проверено 2026-08-12 (MUL-806): юнит был failed (Result: signal, KILL) с 2026-07-06;
+    причина — ручной kill/OOM не подтверждена (логи за дату ротированы, признаков OOM нет).
+    Перезапущен: агент активен (systemctl --user start jawl), Telegram-бот @Jawl_Jinx_bot
+    авторизован, LLM OpenRouter (nvidia/nemotron-3-nano-30b-a3b:free).
+    Дашборд :5002 поднят и включён (systemd jawl-dashboard enabled).
+    Системный jawl.service (legacy, /etc/systemd/system) оставлен disabled — работает только user-юнит.
 ---
