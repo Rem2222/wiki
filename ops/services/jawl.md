@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: Автономный Python-агент (Jinx)
   install_date: 2025-06
-  last_verified: 2026-08-11
+  last_verified: 2026-08-12
   health_url: "http://localhost:5002/"
   type: systemd (user)
   ports:
@@ -35,5 +35,8 @@ service:
     []
   depends_on:
     []
-  notes: Занимает 1.8G RAM. Доступ через /jawl/.
+  notes: >
+    Занимает 1.8G RAM. Доступ через /jawl/.
+    Проверено 2026-08-12: юзер-юнит jawl.service в состоянии failed (Result: signal, KILL)
+    с 2026-07-06, порты 37281/5002 не слушаются. Требуется починка/перезапуск — см. MUL-805 отчёт.
 ---

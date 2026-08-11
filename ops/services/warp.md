@@ -14,7 +14,7 @@ service:
   category: network
   purpose: Cloudflare WARP VPN (обход обрывов chunked read у opencode.ai)
   install_date: 2026-06-03
-  last_verified: 2026-08-11
+  last_verified: 2026-08-12
   health_url: 
   type: systemd
   ports:
@@ -31,4 +31,6 @@ service:
     Установлен 3 июня 2026 (apt-get install -y cloudflare-warp) из-за проблемы с opencode.ai.
     Есть systemd таймер warp-health (каждые 5 мин проверяет прокси). С 2 августа 2026
     ALL_PROXY в ~/.hermes/.env закомментирован — прокси никто не использует. Можно удалить.
+    Проверено 2026-08-12: warp-svc полностью удалён с сервера (нет процесса, бинарника,
+    /etc/warp, unit warp-svc.service). Запись оставлена как историческая; удалить при следующей чистке реестра.
 ---
