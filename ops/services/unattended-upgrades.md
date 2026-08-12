@@ -12,13 +12,13 @@ service:
   category: system
   purpose: Автообновления безопасности
   install_date: 2025-05
-  last_verified: 2026-08-12
+  last_verified: 2026-08-13
   health_url: 
   type: systemd
   systemd_units:
     - unattended-upgrades
   depends_on:
     []
-  last_verified: 2026-08-12
+  last_verified: 2026-08-13
   notes: "Active. Последние обновления: vim, ncurses, libnghttp2."
 ---
