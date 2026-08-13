@@ -211,3 +211,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 - [2026-08-04] ingest | tech/openworker — OpenWorker от Andrew Ng (aisuite, десктопный AI-коллега, BYOK, MCP, approval-gated)
 - [2026-08-10] ingest | tech/qwen-mm-plugins — Qwen-MM-Plugins: мультимодальные плагины (skill+MCP) для агентных обвязок (core: изображения/видео/PDF, OCR, grounding, ASR)
 ## [2026-08-11] ingest | tech/semantica (граф-тренд для агентов)
+## [2026-08-13] ingest | tech/lfm25-vl-3b (VLM Liquid AI для GUI-агентов)
