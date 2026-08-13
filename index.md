@@ -247,6 +247,7 @@ _Обновлено: 2026-08-06_
 - [[tech/gbrain-lossless-agent-memory]] — GBrain + Lossless для OpenClaw и Hermes
 - [[tech/MemPalace-Hermes-Integration]] — MemPalace × Hermes через gateway hook
 - [[tech/agentmemory-vs-current]] — agentmemory vs текущий стек памяти
+- [[tech/deepseek-harness]] — DeepSeek Harness: агентный harness «всё — плагин» (Cordis)
 - [[tech/lfm25-vl-3b]] — LFM2.5-VL-3B: лёгкая VLM для GUI-агентов (Liquid AI)
 - [[tech/semantica]] — Semantica: граф-нативная память для агентов (тренд Graph-RAG)
 - [[tech/tencentdb-agent-memory]] — TencentDB Agent Memory

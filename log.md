@@ -212,3 +212,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 - [2026-08-10] ingest | tech/qwen-mm-plugins — Qwen-MM-Plugins: мультимодальные плагины (skill+MCP) для агентных обвязок (core: изображения/видео/PDF, OCR, grounding, ASR)
 ## [2026-08-11] ingest | tech/semantica (граф-тренд для агентов)
 ## [2026-08-13] ingest | tech/lfm25-vl-3b (VLM Liquid AI для GUI-агентов)
+## [2026-08-13] ingest | tech/deepseek-harness (агентный harness DeepSeek, слежка за обновами)
