@@ -12,7 +12,7 @@ service:
   category: monitoring
   purpose: Prometheus метрики AgentMemory
   install_date: 2026-07-03
-  last_verified: 2026-08-13
+  last_verified: 2026-08-14
   health_url: 
   type: systemd
   ports:

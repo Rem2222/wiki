@@ -14,7 +14,7 @@ service:
   category: network
   purpose: Cloudflare WARP VPN (обход обрывов chunked read у opencode.ai)
   install_date: 2026-06-03
-  last_verified: 2026-08-13
+  last_verified: 2026-08-14
   health_url: 
   type: systemd
   ports:
