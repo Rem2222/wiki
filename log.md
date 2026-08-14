@@ -213,3 +213,8 @@ _Append-only. Формат: `## [дата] type | описание`_
 ## [2026-08-11] ingest | tech/semantica (граф-тренд для агентов)
 ## [2026-08-13] ingest | tech/lfm25-vl-3b (VLM Liquid AI для GUI-агентов)
 ## [2026-08-13] ingest | tech/deepseek-harness (агентный harness DeepSeek, слежка за обновами)
+## [2026-08-15] update | tech/deepseek-harness (MUL-832 TREND: вирусный рост +145%)
+- Звёзды 38 630 → 94 854 (+145%/сутки), forks 8 743, npm 0.1.0-rc.6
+- Причина скачка: хайп-волна после анонса 13.08 (preview v0.1 + MIT + npm, HN 718pts, китайские медиа, «тройной анонс» с V4-Pro и пересмотром цен)
+- Статус НЕ изменился: стабильного релиза нет, Docker-гайда нет, README предупреждает о breaking changes
+- Решение: не подключать в воркфлоу, следить дальше (критерии активации: stable release / Docker-гайд / готовые dsh-плагины)
