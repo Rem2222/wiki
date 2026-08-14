@@ -14,7 +14,7 @@ service:
   category: agent-platform
   purpose: Веб-дашборд и REST API для управления проактивным агентом Dex
   install_date: 2026-07-08
-  last_verified: 2026-08-14
+  last_verified: 2026-08-15
   health_url: "http://localhost:3333/"
   type: systemd (user)
   ports:
