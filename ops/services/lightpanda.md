@@ -27,6 +27,6 @@ service:
   depends_on:
     []
   data_size_hint: ~50 MB image
-  notes: "docker run lightpanda/browser (plain run, no compose). Используется Hermes browser tools как лёгкая альтернатива headless Chrome. Лимит памяти: 4GiB (поднят 2026-08-15 с 2GiB, MUL-831 — OOM-kill при пиковой конкуренции сессий на тяжёлых JS-сайтах)."
+  notes: "docker run lightpanda/browser (plain run, no compose). Используется Hermes browser tools как лёгкая альтернатива headless Chrome. Лимит памяти: 4GiB (поднят 2026-08-15 с 2GiB, MUL-831 — OOM-kill при пиковой конкуренции сессий на тяжёлых JS-сайтах). Образ обновлён 15.08 до nightly.8662 (mem-фиксы ArenaPool/blob/_proto, вышли 30-31.07; лик #2460 Frame.removeNode не освобождает память). Таймер lightpanda-restart.timer — рестарт каждые 6ч."
   memory_limit: 4GiB
 ---
