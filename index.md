@@ -250,6 +250,7 @@ _Обновлено: 2026-08-06_
 - [[tech/deepseek-harness]] — DeepSeek Harness: агентный harness «всё — плагин» (Cordis)
 - [[tech/lfm25-vl-3b]] — LFM2.5-VL-3B: лёгкая VLM для GUI-агентов (Liquid AI)
 - [[tech/semantica]] — Semantica: граф-нативная память для агентов (тренд Graph-RAG)
+- [[tech/buzz]] — Buzz: Nostr-workspace от Block (Дорси), люди + агенты в одних каналах
 - [[tech/tencentdb-agent-memory]] — TencentDB Agent Memory
 - [[tools/find-skills]] — мета-скилл для поиска agent-скиллов через CLI (npx skills, skills.sh)
 - [[tech/Mercury-Agent-Skills]] — библиотека скиллов Mercury Agent, совместимая с Hermes
