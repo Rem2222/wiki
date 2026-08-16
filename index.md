@@ -297,6 +297,7 @@ _Обновлено: 2026-08-06_
 - [[wiki/tech/lightmem]] — лёгкий фреймворк управления памятью для LLM
 
 ## Прокси и инфраструктура
+- [[tech/youtube-relay-setup]] — YouTube через собственный релей внутри страны (nginx+xray+sing-box+zapret)
 - [[tech/openclaw-billing-proxy]] — OpenClaw Billing Proxy (автор: zacdcook)
 - [[tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
 - [[free-api-deepseek-qwen]] — обзор Free API прокси (DeepSeek / Qwen)
