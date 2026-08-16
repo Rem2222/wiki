@@ -298,6 +298,7 @@ _Обновлено: 2026-08-06_
 
 ## Прокси и инфраструктура
 - [[tech/youtube-relay-setup]] — YouTube через собственный релей внутри страны (nginx+xray+sing-box+zapret)
+- [[tech/ru-marketplace-mcp]] — MCP-серверы для 9 российских маркетплейсов + Taobao (цены/отзывы, сравнение)
 - [[tech/openclaw-billing-proxy]] — OpenClaw Billing Proxy (автор: zacdcook)
 - [[tech/proxy-acpx-x]] — прокси-инструмент (автор: clonn)
 - [[free-api-deepseek-qwen]] — обзор Free API прокси (DeepSeek / Qwen)
