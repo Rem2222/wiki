@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: Автономный Python-агент (Jinx)
   install_date: 2025-06
-  last_verified: 2026-08-16
+  last_verified: 2026-08-17
   health_url: "http://localhost:5002/"
   type: systemd (user)
   ports:

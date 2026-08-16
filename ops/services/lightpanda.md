@@ -13,7 +13,7 @@ service:
   category: system
   purpose: Headless-браузер для AI-агентов и веб-скрейпинга (не форк Chromium, на Zig)
   install_date: 2026-07-27
-  last_verified: 2026-08-16
+  last_verified: 2026-08-17
   health_url: "http://localhost:9222/"
   type: docker
   ports:
