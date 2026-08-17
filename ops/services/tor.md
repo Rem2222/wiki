@@ -6,7 +6,6 @@ tags:
   - proxies
 type: service
 related:
-  - ops/services/warp
   - ops/services/tailscale
 service:
   name: tor

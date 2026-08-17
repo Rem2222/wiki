@@ -61,7 +61,6 @@ _Обновлено: 2026-08-06_
 - [[ops/services/tor]] — анонимный SOCKS5 прокси
 - [[ops/services/ufw-fail2ban]] — фаервол + защита от брутфорса
 - [[ops/services/unattended-upgrades]] — автообновления безопасности
-- [[ops/services/warp]] — Cloudflare WARP VPN
 - [[ops/services/lightpanda]] — Lightpanda headless-браузер (Zig, CDP, порт 9222)
 
 ## SDD-Orchestrator v2 (2026-05-04)

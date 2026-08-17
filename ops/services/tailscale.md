@@ -6,7 +6,6 @@ tags:
   - network
 type: service
 related:
-  - ops/services/warp
   - ops/services/tor
 service:
   name: tailscale
