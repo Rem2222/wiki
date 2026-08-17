@@ -25,7 +25,6 @@ related:
   - ops/services/freedeepseekapi
   - ops/services/ntfy
   - ops/services/codegraph
-  - ops/services/warp
   - ops/services/hermes-dashboard
   - ops/services/mercury
   - ops/services/monitor-ui
@@ -62,7 +61,6 @@ related:
 ## Network
 
 - [[ops/services/tailscale]] — mesh VPN
-- [[ops/services/warp]] — Cloudflare WARP VPN
 - [[ops/services/tor]] — Tor
 - [[ops/services/sshd]] — SSH-сервер
 - [[ops/services/ufw-fail2ban]] — файрвол + защита от брутфорса
