@@ -226,6 +226,7 @@ _Обновлено: 2026-08-06_
 - [[tools/v8std-mcp]] — стандарты разработки 1С для ИИ-помощников (v8std.ru/mcp)
 - [[tools/go-enumsafety]] — Go-линтер для безопасной работы с enum (sum types)
 - [[tools/diagram-design]] — 27 редакционных диаграмм (HTML/SVG) для AI-агентов (21k⭐)
+- [[tools/activitywatch]] — open-source трекер времени, приватный self-hosted (18.6k⭐)
 - [[tools/yt-dlp]] — CLI-утилита для скачивания видео/аудио (YouTube и др.)
 - [[tools/agent-reach]] — веб-доступ для AI-агентов («глаза в интернет»)
 - [[tools/mcporter]] — CLI-клиент для управления MCP-серверами

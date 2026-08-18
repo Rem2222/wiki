@@ -242,3 +242,7 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Ссылка от Rem: cathrynlavery/diagram-design, 21k⭐, MIT
 - 27 типов: block, flow, timeline, matrix, sankey, chord и др.; чистый HTML/SVG, без Mermaid
 - Полезная ссылка, не must have (у нас visual-design скилл для кастомных SVG)
+## [2026-08-18] ingest | tools/activitywatch (open-source трекер времени)
+- Ссылка от Rem: activitywatch.net, 18.6k⭐, MPL-2.0, Python
+- Автоматический трекер времени: приложения, окна, браузер. Приватно, self-hosted, localhost:5600
+- Релиз v0.13.2 (05.10.2024): Windows installer 81MB
