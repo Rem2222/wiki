@@ -238,3 +238,7 @@ _Append-only. Формат: `## [дата] type | описание`_
 - С VPS (Франция) анонимно: WB, Яндекс Маркет, Детский мир; Ozon через Chrome; Авито/Taobao/Мегамаркет — только домашний IP
 - v1.5.0 — бандл DeepSeek Harness (13 Agent Skills); v1.5.1 (16.08.2026)
 - Решение: в вики, не ставить (по правилу новых инструментов)
+## [2026-08-18] ingest | tools/diagram-design (27 редакционных диаграмм HTML/SVG для AI)
+- Ссылка от Rem: cathrynlavery/diagram-design, 21k⭐, MIT
+- 27 типов: block, flow, timeline, matrix, sankey, chord и др.; чистый HTML/SVG, без Mermaid
+- Полезная ссылка, не must have (у нас visual-design скилл для кастомных SVG)
