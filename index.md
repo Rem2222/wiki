@@ -218,6 +218,7 @@ _Обновлено: 2026-08-20_
 - [[hardware/xe2690-workstation]] — домашняя рабочая станция XE2690
 ## Tasks
 - [[tasks/mul-239-codegraph-in-gsd]] — MUL-239: добавить CodeGraph в GSD squad
+- [[tasks/hindsight-vs-memos-decision]] — решение MUL-874: Hindsight vs MemOS vs EverOS (стабильность, многослойность, хуки)
 - [[ops/workflow/new-project-with-codegraph]] — рабочий процесс: CodeGraph для новых проектов
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
