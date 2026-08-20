@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сравнение систем памяти для Hermes</title>
+<style>
+  :root{--bg:#0f1220;--panel:#181c30;--panel2:#1e2340;--line:#2a3158;
+        --txt:#e8eaf6;--muted:#9aa3c7;--good:#4ade80;--warn:#fbbf24;--bad:#f87171;
+        --acc:#818cf8;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--txt);padding:24px;line-height:1.45}
+  h1{font-size:24px;font-weight:700;margin-bottom:4px}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:20px}
+  h2{font-size:15px;margin:24px 0 10px;color:var(--acc);text-transform:uppercase;letter-spacing:.5px}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;background:var(--panel);border-radius:12px;overflow:hidden}
+  th,td{padding:9px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+  th{background:var(--panel2);font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);position:sticky;top:0}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#20265022}
+  .name{font-weight:600;white-space:nowrap}
+  .tag{display:inline-block;border-radius:6px;padding:1px 6px;font-size:10px;margin-left:4px;vertical-align:middle}
+  .t-h{background:#33415533;color:#cbd5e1;border:1px solid #47556944}
+  .t-3{background:#0f346033;color:#7cb6ff;border:1px solid #2563eb55}
+  .t-new{background:#3b2f0a22;color:#fcd34d;border:1px solid #ca8a0455}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
+  .g{background:var(--good)}.w{background:var(--warn)}.b{background:var(--bad)}.n{background:#64748b}
+  .foot{margin-top:18px;color:var(--muted);font-size:11px}
+  .pill{display:inline-block;background:#0ff2;border:1px solid #4ade8033;color:#86efac;padding:1px 8px;border-radius:20px;font-size:11px;margin:0 4px 4px 0}
+  .legend{font-size:11px;color:var(--muted);margin:8px 0 2px}
+  .badge-tl{background:#0ff2;border:1px solid #818cf844;color:#a5b4fc;padding:1px 8px;border-radius:12px;font-size:10px}
+</style>
+</head>
+<body>
+<h1>Память для Hermes — сравнение провайдеров</h1>
+<div class="sub">
+  По критериям из ТЗ (стабильность · durability · авто-retrieval · многослойность · сквозная память).
+  Оценки из официальной доки Hermes и README проектов, 20.08.2026.
+</div>
+
+<h2>Группа A · Встроенные провайдеры Hermes (hermes memory setup)</h2>
+<table>
+<thead>
+<tr>
+  <th>Провайдер</th>
+  <th>Хранилище / движок</th>
+  <th>Стаб.</th>
+  <th>Авто-retrieve</th>
+  <th>Авто-capture</th>
+  <th>Многослойн.</th>
+  <th>Сквозная</th>
+  <th>Цена</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="name">MEMORY.md / USER.md<span class="tag t-h">сейчас</span></td>
+  <td>Файлы, всегда в промпте</td>
+  <td><span class="dot g"></span>выс</td>
+  <td><span class="dot g"></span>всегда</td>
+  <td><span class="dot n"></span>нет</td>
+  <td><span class="dot w"></span>2 слоя</td>
+  <td><span class="dot b"></span>1 агент</td>
+  <td>free</td></tr>
+
+<tr><td class="name">agentmemory<span class="tag t-h">сейчас</span></td>
+  <td>Node-движок iii (docker) + npm</td>
+  <td><span class="dot b"></span>низк</td>
+  <td><span class="dot w"></span>по запросу</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot w"></span>~3 типа</td>
+  <td><span class="dot w"></span>MCP</td>
+  <td>free</td></tr>
+
+<tr><td class="name">OpenViking</td>
+  <td>self-host, файловая иерархия</td>
+  <td><span class="dot g"></span>выс</td>
+  <td><span class="dot w"></span>tiered</td>
+  <td><span class="dot w"></span>partial</td>
+  <td><span class="dot g"></span>слои</td>
+  <td><span class="dot w"></span>MCP/multi</td>
+  <td>free</td></tr>
+
+<tr><td class="name">Mem0</td>
+  <td>Cloud / self-host / OSS</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot w"></span>факты+проф</td>
+  <td><span class="dot g"></span>multi</td>
+  <td>free/paid</td></tr>
+
+<tr><td class="name">Hindsight</td>
+  <td>Cloud / локальный Postgres, KG</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да (auto_recall)</td>
+  <td><span class="dot g"></span>да (auto_retain)</td>
+  <td><span class="dot g"></span>граф</td>
+  <td><span class="dot g"></span>multi</td>
+  <td>free(лок)/paid</td></tr>
+
+<tr><td class="name">Holographic</td>
+  <td>локальный SQLite, 0 зависимостей</td>
+  <td><span class="dot g"></span>макс</td>
+  <td><span class="dot g"></span>probe/related</td>
+  <td><span class="dot w"></span>auto_extract off</td>
+  <td><span class="dot g"></span>trust+KG</td>
+  <td><span class="dot b"></span>локально</td>
+  <td>free</td></tr>
+
+<tr><td class="name">RetainDB</td>
+  <td>Cloud API</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>7 типов</td>
+  <td><span class="dot g"></span>multi</td>
+  <td><b>$20/мес</b></td></tr>
+
+<tr><td class="name">ByteRover</td>
+  <td>Local/Cloud, brv CLI, дерево</td>
+  <td><span class="dot g"></span>выс</td>
+  <td><span class="dot w"></span>tiered</td>
+  <td><span class="dot g"></span>pre-compress</td>
+  <td><span class="dot g"></span>дерево</td>
+  <td><span class="dot w"></span>cloud sync</td>
+  <td>free/paid</td></tr>
+
+<tr><td class="name">Supermemory</td>
+  <td>Cloud / self-host</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да (auto_recall)</td>
+  <td><span class="dot g"></span>да (auto_capture)</td>
+  <td><span class="dot g"></span>проф+контейнеры</td>
+  <td><span class="dot g"></span>multi-container</td>
+  <td>free/paid</td></tr>
+
+<tr><td class="name">Memori</td>
+  <td>Cloud</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot w"></span>структур.</td>
+  <td><span class="dot w"></span>мulti</td>
+  <td>free/paid</td></tr>
+
+<tr><td class="name">Honcho</td>
+  <td>Cloud / self-host</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да (session ctx)</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>dialectic</td>
+  <td><span class="dot g"></span>multi-peer</td>
+  <td>free/paid</td></tr>
+</tbody>
+</table>
+
+<h2>Группа B · Сторонние</h2>
+<table>
+<thead>
+<tr>
+  <th>Кандидат</th>
+  <th>Хранилище / движок</th>
+  <th>Стаб.</th>
+  <th>Авто-retrieve</th>
+  <th>Авто-capture</th>
+  <th>Многослойн.</th>
+  <th>Сквозная</th>
+  <th>Цена</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="name">engram</td>
+  <td>Go-бинарник + SQLite/FTS5, MCP+HTTP+CLI+TUI</td>
+  <td><span class="dot g"></span>макс</td>
+  <td><span class="dot w"></span>по запросу(MCP)</td>
+  <td><span class="dot w"></span>частично</td>
+  <td><span class="dot w"></span>flat+tags</td>
+  <td><span class="dot g"></span>multi/HTTP</td>
+  <td>free</td></tr>
+
+<tr><td class="name">ClawMem<span class="tag t-3">Hermes</span></td>
+  <td>local, hybrid RAG (BM25+vector+RRF), MCP+hooks</td>
+  <td><span class="dot g"></span>выс</td>
+  <td><span class="dot g"></span>да (RAG)</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>self-evolv</td>
+  <td><span class="dot w"></span>multi клиент</td>
+  <td>free</td></tr>
+
+<tr><td class="name">MemOS</td>
+  <td>self-evolving, вектор (SOTA точность)</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>многослойн</td>
+  <td><span class="dot w"></span>CLI/plugin</td>
+  <td>free</td></tr>
+
+<tr><td class="name">TencentDB Agent Memory</td>
+  <td>cloud, -61% токенов</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot w"></span>факты/сессии</td>
+  <td><span class="dot g"></span>multi</td>
+  <td>—</td></tr>
+
+<tr><td class="name">OpenWiki<span class="tag t-new">LangChain</span></td>
+  <td>CLI пишет linked-Markdown-вики; агент читает</td>
+  <td><span class="dot g"></span>выс</td>
+  <td><span class="dot w"></span>через файлы</td>
+  <td><span class="dot w"></span>при изменении</td>
+  <td><span class="dot g"></span>вики-структ</td>
+  <td><span class="dot g"></span>файлы/общие</td>
+  <td>free</td></tr>
+
+<tr><td class="name">OpenMemory (Cavira)</td>
+  <td>self-host, SQLite/Postgres, Python+Node</td>
+  <td><span class="dot w"></span>сред (rewrite)</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>эпизод+факты</td>
+  <td><span class="dot g"></span>multi/framework</td>
+  <td>free</td></tr>
+
+<tr><td class="name">nocturne_memory</td>
+  <td>SQLite/Postgres, graph-like</td>
+  <td><span class="dot g"></span>выс</td>
+  <td><span class="dot w"></span>по запросу</td>
+  <td><span class="dot w"></span>частично</td>
+  <td><span class="dot g"></span>граф</td>
+  <td><span class="dot w"></span>MCP</td>
+  <td>free</td></tr>
+
+<tr><td class="name">MemPalace</td>
+  <td>Python, граф-визуализация</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot w"></span>по запросу</td>
+  <td><span class="dot w"></span>частично</td>
+  <td><span class="dot g"></span>граф</td>
+  <td><span class="dot w"></span>локально</td>
+  <td>free</td></tr>
+
+<tr><td class="name">neo4j/agent-memory</td>
+  <td>Neo4j (офиц.), STM+LTM+Mem</td>
+  <td><span class="dot w"></span>сред</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>да</td>
+  <td><span class="dot g"></span>STM/LTM/Mem</td>
+  <td><span class="dot g"></span>multi</td>
+  <td>free/self</td></tr>
+
+<tr><td class="name">memvid</td>
+  <td>Rust single-file, без БД</td>
+  <td><span class="dot g"></span>выс</td>
+  <td><span class="dot w"></span>по запросу</td>
+  <td><span class="dot w"></span>частично</td>
+  <td><span class="dot w"></span>flat</td>
+  <td><span class="dot w"></span>—</td>
+  <td>free</td></tr>
+</tbody>
+</table>
+
+<div class="foot">
+  Легенда точек: <span class="dot g"></span>хорошо · <span class="dot w"></span>средне/частично · <span class="dot b"></span>слабо.<br>
+  Стабильность = устойчивость к падению/утечкам без ручного восстановления (Node-движок слабее Go/SQLite-бинарника).<br>
+  Авто-retrieve = сам ли ищет память перед turn («посмотри в памяти» без напоминаний).<br>
+  Durability влияет на стаб.: локальный диск цел при падении процесса, облако — нет сети = нет памяти.
+</div>
+</body>
+</html>

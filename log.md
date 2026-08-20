@@ -258,3 +258,7 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Добавлена страница [[tech/llm-as-a-verifier]] — LLM-as-a-Verifier: верификация ответов LLM через logprobs (Best-of-N, self-verification). Проверено на opencode-go: топ-k logprobs не отдаёт → пока НЕ применимо к текущему стеку; перспективный усилитель на больших/сложных задачах.
 - Источник: https://github.com/llm-as-a-verifier
 
+## [2026-08-20] ingest | +1 страница
+
+- Добавлена страница [[tools/hermes-memory-comparison]] — сравнение систем памяти для Hermes по 6 болям (стабильность, разгрузка MD, единая точка, многослойность, авто-retrieve, сквозная память). Рекомендация: Holographic (стабильность) / Hindsight, ClawMem (максимум болей). HTML-версия: /var/www/landing/hermes-memory.html → https://rem2222.top/hermes-memory.html
+
