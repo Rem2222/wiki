@@ -246,3 +246,7 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Ссылка от Rem: activitywatch.net, 18.6k⭐, MPL-2.0, Python
 - Автоматический трекер времени: приложения, окна, браузер. Приватно, self-hosted, localhost:5600
 - Релиз v0.13.2 (05.10.2024): Windows installer 81MB
+## [2026-08-20] ingest | projects/cloud-memory-external-agents (план облачной памяти для внешних агентов)
+- Контекст: clarify-опрос Rem о том, что разворачивать по облачной памяти для внешних агентов (MCP HTTP endpoints за bearer — AgentMemory + GBrain)
+- 4 варианта: 1=A+B сразу, 2=только Tailscale, 3=только публичный MCP на nginx, 4=не разворачивать, починить state.db и оставить план
+- Решение Rem (20.08.2026): вариант 4 — ничего не разворачивать пока, приоритет = починка state.db, план сохранён

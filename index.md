@@ -1,8 +1,9 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-08-06_
+_Обновлено: 2026-08-20_
 
 ## Projects
+- [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
 - [[projects/veritas-kanban]] — Kanban-доска для AI-агентов (Git worktree, Markdown storage)
 - [[projects/Оркестратор_v3_Руководство]] — руководство по Оркестратору v3, ИИ-ассистенту для распределения задач между субагентами
 
