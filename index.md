@@ -157,6 +157,7 @@ _Обновлено: 2026-08-20_
 - [[tech/poe-api-models]] — модели и цены Poe API
 - [[tech/poe-chutes-comparison]] — сравнение Poe API и Chutes AI
 - [[tech/optimizing-llm-api-calls-for-coding]] — оптимизация вызовов LLM API для кодинг-агентов
+- [[tech/llm-as-a-verifier]] — LLM-as-a-Verifier: верификация ответов LLM через logprobs (Best-of-N, self-verification). Усилитель для сложных задач, пока НЕ применимо к текущему стеку (нет top-k logprobs)
 
 - [[tech/hermes-max-plugin]] — MAX Messenger (VK) plugin for Hermes Agent
 - [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy

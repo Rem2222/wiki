@@ -253,3 +253,8 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 ## [2026-08-20] ingest | +1 страница
 - [[articles/1c-autonomous-ai-development]] — паттерн автономной разработки 1С с ИИ-агентами
+## [2026-08-20] ingest | +1 страница
+
+- Добавлена страница [[tech/llm-as-a-verifier]] — LLM-as-a-Verifier: верификация ответов LLM через logprobs (Best-of-N, self-verification). Проверено на opencode-go: топ-k logprobs не отдаёт → пока НЕ применимо к текущему стеку; перспективный усилитель на больших/сложных задачах.
+- Источник: https://github.com/llm-as-a-verifier
+
