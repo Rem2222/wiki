@@ -16,6 +16,7 @@ _Обновлено: 2026-08-20_
 - [[concepts/rag]] — Retrieval-Augmented Generation, альтернативный подход
 - [[concepts/memex]] — проект Вэнивара Буша 1945, ассоциативное хранилище знаний
 - [[concepts/sdd]] — Spec-Driven Development, подход к разработке через спецификации
+- [[concepts/memory-retrieve-middleware]] — идея middleware-слоя авто-retrieve перед запросом к LLM (роутер памяти: память+вики+сессии)
 - [[concepts/mcp]] — Model Context Protocol, открытый протокол для AI-интеграций
 - [[concepts/doxygen]] — генератор документации из исходного кода (C++, Java, Python...)
 - [[concepts/tradingagents]] — Multi-agent LLM фреймворк для алгоритмической торговли (UCLA + MIT)
