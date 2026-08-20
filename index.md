@@ -258,6 +258,7 @@ _Обновлено: 2026-08-20_
 - [[tech/Mercury-Agent-Skills]] — библиотека скиллов Mercury Agent, совместимая с Hermes
 
 ## Статьи
+- [[articles/1c-autonomous-ai-development]] — паттерн автономной разработки 1С с ИИ-агентами (два проекта, координатор + разработчик)
 - [[articles/hands-on-ai-engineering]] — обзор коллекции AI-проектов (RAG, MCP, агенты)
 - [[articles/adam-multiagent]] — мультиагентная система Adam
 - [[articles/anthropic-claude-code]] — использование Claude Code от Anthropic
