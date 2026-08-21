@@ -110,8 +110,3 @@ TradingAgents (arXiv:2412.20138, UCLA + MIT) — первый фреймворк
 - Website: https://tradingagents-ai.github.io/
 - Authors: Yijia Xiao, Edward Sun, Di Luo, Wei Wang (UCLA, MIT)
 - Практическая реализация: [[videos/trading/claude-tradingview-connection]] — подключение Claude Code к TradingView для алготорговли
-
-## Related
-<!-- openclaw:wiki:related:start -->
-- No related pages yet.
-<!-- openclaw:wiki:related:end -->
