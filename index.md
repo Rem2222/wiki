@@ -134,6 +134,7 @@ _Обновлено: 2026-08-20_
 - [[tech/context7]] — MCP-сервер документации библиотек для AI-агентов
 - [[tech/z-ai]] — AI-поисковик с MCP для Claude Code
 - [[tech/zvec]] — Zvec: встраиваемая векторная БД от Alibaba (SQLite-подход для векторного поиска)
+- [[tools/wiki-search-current-state]] — как сейчас ищем в вики (zvec-wiki vs GBrain, MCP для zvec)
 - [[tech/serena-mcp]] — LSP MCP-сервер — IDE-интеллект для Claude Code
 - [[tech/caveman]] — skill для Claude Code, сокращает многословие модели на ~75%
 - [[tech/sequential-thinking]] — Sequential Thinking skill для Claude Code
