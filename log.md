@@ -264,3 +264,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 
 - Добавлена страница [[tech/opencode-notifier-ntfy]] — плагин OpenCode (TypeScript, MIT) для ntfy-уведомлений о событиях: permission/complete/error/question. GitHub: ongyishen/opencode-notifier-ntfy (2★). Только в вику, НЕ ставился.
+
+- Добавлена страница [[tech/netbird]] — mesh VPN / Zero-Trust на WireGuard (Go, 28.6k★, BSD-3+AGPLv3), конкурент Tailscale. GitHub: netbirdio/netbird. Только в вику, НЕ ставился.

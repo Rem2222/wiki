@@ -60,6 +60,7 @@ _Обновлено: 2026-08-20_
 - [[ops/services/skills-dashboard]] — веб-дашборд для approval навыков Hermes
 - [[ops/services/sshd]] — SSH-доступ к серверу
 - [[ops/services/tailscale]] — Mesh VPN, exit node
+- [[tech/netbird]] — NetBird: mesh VPN / Zero-Trust на WireGuard, конкурент Tailscale
 - [[ops/services/tor]] — анонимный SOCKS5 прокси
 - [[ops/services/ufw-fail2ban]] — фаервол + защита от брутфорса
 - [[ops/services/unattended-upgrades]] — автообновления безопасности
