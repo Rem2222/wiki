@@ -154,6 +154,7 @@ _Обновлено: 2026-08-20_
 - [[tech/fastmcp]] — FastMCP: MCP фреймворк от PrefectHQ (25.7k ⭐, ~70% всех MCP серверов)
 - [[tech/opencode]] — установка и настройка OpenCode на VPS (anomalyco/opencode)
 - [[tech/opencode-gigachat-plugin]] — плагин GigaChat для OpenCode (Сбер, OAuth, TLS РФ)
+- [[tech/opencode-notifier-ntfy]] — плагин OpenCode, шлёт ntfy-уведомления о событиях (permission/complete/error/question)
 - [[tech/ponytail]] — Ponytail: скилл «ленивый сеньор» для AI-агентов (80-94% меньше кода)
 - [[tech/free-claude-code]] — прокси для бесплатного Claude Code через альтернативные LLM-провайдеры
 - [[tech/poe-api-models]] — модели и цены Poe API

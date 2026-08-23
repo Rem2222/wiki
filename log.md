@@ -262,3 +262,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 - Добавлена страница [[tools/hermes-memory-comparison]] — сравнение систем памяти для Hermes по 6 болям (стабильность, разгрузка MD, единая точка, многослойность, авто-retrieve, сквозная память). Рекомендация: Holographic (стабильность) / Hindsight, ClawMem (максимум болей). HTML-версия: /var/www/landing/hermes-memory.html → https://rem2222.top/hermes-memory.html
 
+
+- Добавлена страница [[tech/opencode-notifier-ntfy]] — плагин OpenCode (TypeScript, MIT) для ntfy-уведомлений о событиях: permission/complete/error/question. GitHub: ongyishen/opencode-notifier-ntfy (2★). Только в вику, НЕ ставился.
