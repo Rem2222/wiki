@@ -268,3 +268,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Добавлена страница [[tech/netbird]] — mesh VPN / Zero-Trust на WireGuard (Go, 28.6k★, BSD-3+AGPLv3), конкурент Tailscale. GitHub: netbirdio/netbird. Только в вику, НЕ ставился.
 
 - Ingest | 4 новых страниц (топ-5 GitHub недели): [[tech/cloudflare-computer]] (Cloudflare Computer), [[tech/openviking]] (self-evolving контекст-БД), [[tech/needle-cactus]] (Needle 2, 14MB модель), [[tech/omarchy]] (Linux от DHH). [[tech/semantica]] уже была (Ночная рутина). Только в вику, НЕ ставились.
+
+- Добавлена страница [[tech/backpass]] — gradient descent для памяти агента: читает транскрипты сессий (7 харнессов, incl. hermes state.db) и предлагает evidence-обоснованные правки. GitHub: kunchenguid/backpass (188★, JS, MIT). Только в вику, НЕ ставился.
