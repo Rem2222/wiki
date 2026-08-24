@@ -4,8 +4,6 @@ tags: [agent-memory,rag,context-database,volcengine,skills]
 related: [[tech/semantica]] [[tech/tencentdb-agent-memory]]
 ---
 
-# openviking
-
 # OpenViking
 
 **OpenViking** (Volcengine/ByteDance) — self-evolving контекст-БД для ИИ-агентов: единая память, RAG-знания и скиллы. (Python, AGPL-3.0, ★32.6k).
