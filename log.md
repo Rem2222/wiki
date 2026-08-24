@@ -266,3 +266,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Добавлена страница [[tech/opencode-notifier-ntfy]] — плагин OpenCode (TypeScript, MIT) для ntfy-уведомлений о событиях: permission/complete/error/question. GitHub: ongyishen/opencode-notifier-ntfy (2★). Только в вику, НЕ ставился.
 
 - Добавлена страница [[tech/netbird]] — mesh VPN / Zero-Trust на WireGuard (Go, 28.6k★, BSD-3+AGPLv3), конкурент Tailscale. GitHub: netbirdio/netbird. Только в вику, НЕ ставился.
+
+- Ingest | 4 новых страниц (топ-5 GitHub недели): [[tech/cloudflare-computer]] (Cloudflare Computer), [[tech/openviking]] (self-evolving контекст-БД), [[tech/needle-cactus]] (Needle 2, 14MB модель), [[tech/omarchy]] (Linux от DHH). [[tech/semantica]] уже была (Ночная рутина). Только в вику, НЕ ставились.

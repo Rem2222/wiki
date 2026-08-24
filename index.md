@@ -261,6 +261,10 @@ _Обновлено: 2026-08-20_
 - [[tech/semantica]] — Semantica: граф-нативная память для агентов (тренд Graph-RAG)
 - [[tech/buzz]] — Buzz: Nostr-workspace от Block (Дорси), люди + агенты в одних каналах
 - [[tech/tencentdb-agent-memory]] — TencentDB Agent Memory
+- [[tech/openviking]] — OpenViking: self-evolving контекст-БД для агентов (Volcengine, ★32.6k)
+- [[tech/cloudflare-computer]] — Cloudflare Computer: виртуальный «компьютер» для агентов (ФС в Durable Object)
+- [[tech/needle-cactus]] — Needle 2: 14MB tool-calling модель для edge (Cactus Compute)
+- [[tech/omarchy]] — Omarchy: Opinionated Linux от DHH (Basecamp)
 - [[tools/find-skills]] — мета-скилл для поиска agent-скиллов через CLI (npx skills, skills.sh)
 - [[tech/Mercury-Agent-Skills]] — библиотека скиллов Mercury Agent, совместимая с Hermes
 
