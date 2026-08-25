@@ -263,6 +263,7 @@ _Обновлено: 2026-08-20_
 - [[tech/tencentdb-agent-memory]] — TencentDB Agent Memory
 - [[tech/openviking]] — OpenViking: self-evolving контекст-БД для агентов (Volcengine, ★32.6k)
 - [[tech/backpass]] — backpass: gradient descent для памяти агента (evidence-правки по транскриптам)
+- [[tech/orca-ade]] — Orca: ADE для параллельной работы агентов (worktrees, Design Mode, ★53.6k)
 - [[tech/cloudflare-computer]] — Cloudflare Computer: виртуальный «компьютер» для агентов (ФС в Durable Object)
 - [[tech/needle-cactus]] — Needle 2: 14MB tool-calling модель для edge (Cactus Compute)
 - [[tech/omarchy]] — Omarchy: Opinionated Linux от DHH (Basecamp)
