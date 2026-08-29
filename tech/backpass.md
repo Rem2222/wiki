@@ -6,7 +6,6 @@ related: [[tech/openviking]] [[tech/semantica]] [[tech/hermes-memory-setup-vps]]
 
 # backpass
 
-# backpass
 
 **backpass** — «Gradient descent for your agent memory»: не пиши AGENTS.md руками — обучай её. (JavaScript, MIT, ★188, macOS/Linux, свежий 08.2026).
 

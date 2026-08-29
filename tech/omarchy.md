@@ -3,9 +3,8 @@ description: "Omarchy — «Beautiful, Modern & Opinionated Linux» от DHH (а
 tags: [linux,distro,arch,dhh,desktop]
 ---
 
-# omarchy
-
 # Omarchy
+
 
 **Omarchy** — «Beautiful, Modern & Opinionated Linux» от **DHH** (автор Rails, Basecamp). (Shell, MIT, ★29.4k).
 

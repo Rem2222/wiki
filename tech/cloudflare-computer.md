@@ -4,9 +4,8 @@ tags: [cloudflare,agent,computer,durable-object,serverless]
 related: [[tech/netbird]]
 ---
 
-# cloudflare-computer
-
 # GitHub Cloudflare Computer
+
 
 **Cloudflare Computer** — виртуальный «компьютер» для агентов: виртуальная ФС внутри Durable Object (TypeScript, MIT, ★8.5k).
 

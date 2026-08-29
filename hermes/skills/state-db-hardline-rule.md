@@ -1,3 +1,8 @@
+---
+description: "ЖЁСТКИЙ запрет: state.db НИКОГДА не удалять, не чистить, не перезаписывать"
+tags: [state-db,hermes,memory,backup,rules]
+---
+
 # ЖЁСТКИЙ запрет (hardline): state.db НИКОГДА не удалять
 
 **Канон сырых сессий Hermes.** `~/.hermes/state.db` — точная дословная запись всех разговоров

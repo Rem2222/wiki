@@ -1,3 +1,8 @@
+---
+description: "Плагин DSH → Hindsight: интеграция DeepSeek Harness с памятью (задача)"
+tags: [dsh,hindsight,plugin,tasks]
+---
+
 # Плагин DSH → Hindsight (детали из EverOS-рецепта)
 
 ## Контекст / зачем

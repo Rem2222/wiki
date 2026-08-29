@@ -3,9 +3,8 @@ description: "Needle 2 (Cactus Compute) — 14MB tool-calling модель дл�
 tags: [llm,edge,on-device,tool-calling,small-model]
 ---
 
-# needle-cactus
-
 # Needle 2 (Cactus Compute)
+
 
 > **Решение Романа (24.08.2026):** не ставить сейчас. Держать как кандидата **для умного дома на Raspberry Pi**, если заведёт — локально, офлайн, дешёво (14MB / ~28MB RAM). Для текущего function-calling у Романа используется локальный Qwen 2.5 7B на Ollama.
 

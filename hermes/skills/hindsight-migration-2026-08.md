@@ -1,3 +1,8 @@
+---
+description: "Переезд памяти на Hindsight: бэкфилл + архивтектура (2026-08-20)"
+tags: [hindsight,migration,memory,hermes]
+---
+
 # Переезд памяти на Hindsight: бэкфилл + архитектура (2026-08-20)
 
 Решение Романа: **Hindsight** как замена нестабильному agentmemory. Этот файл — исполняемые

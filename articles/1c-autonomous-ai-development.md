@@ -1,7 +1,7 @@
 ---
 description: Паттерн автономной разработки 1С с ИИ-агентами — два проекта, агент-координатор и агент-разработчик, MCP, перенос/доработка конфигураций и интеграции.
 tags: [1c, ai-agents, autonomous, mcp, workflow, development]
-related: [[concepts/autonomous-agent]] [[tech/claude-code]] [[tech/hermes]]
+related: [[tech/claude-code]] [[tech/hermes]]
 ---
 
 # 1С: автономная разработка с ИИ-агентами — паттерн двух проектов

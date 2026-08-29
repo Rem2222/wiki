@@ -4,9 +4,8 @@ tags: [ade,agents,electron,parallel,worktree,ide]
 related: [[tech/backpass]] [[tech/cloudflare-computer]]
 ---
 
-# orca-ade
-
 # Orca (ADE)
+
 
 **Orca** (`stablyai/orca`) — ADE (Agent Development Environment): десктопная среда для параллельной работы с флотом AI-агентов. Electron, TypeScript, **MIT**, **★53.6k** за полгода (создан 17.03.2026). Разработка Stably AI (Y Combinator). Сайт: onorca.dev
 

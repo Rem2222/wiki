@@ -1,3 +1,8 @@
+---
+description: "Проверка Hindsight вживую после переезда (verified 21.08.2026)"
+tags: [hindsight,verification,memory,hermes]
+---
+
 # Проверка Hindsight вживую после переезда (verified 21.08.2026)
 
 Когда переезд на Hindsight выполнен (MUL-875 развёрнуто, MUL-876 бэкфилл, MUL-877 провайдер
