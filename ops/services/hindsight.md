@@ -10,7 +10,7 @@ service:
   category: ai-platform
   purpose: "Семантическая долговременная память Hermes напарника: recall/retain/reflect, observations, mental models, knowledge pages. Выбрано как memory.provider в MUL-874."
   install_date: 2026-08-20
-  last_verified: 2026-08-28
+  last_verified: 2026-09-02
   health_url: http://localhost:8888/health
   type: docker
   ports:

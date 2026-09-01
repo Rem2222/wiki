@@ -272,3 +272,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Добавлена страница [[tech/backpass]] — gradient descent для памяти агента: читает транскрипты сессий (7 харнессов, incl. hermes state.db) и предлагает evidence-обоснованные правки. GitHub: kunchenguid/backpass (188★, JS, MIT). Только в вику, НЕ ставился.
 
 - Добавлена [[tech/orca-ade]] — Orca (stablyai/orca): ADE для параллельной работы агентов, ★53.6k за полгода, MIT. Источник: Habr news 1074212 (ссылка от Романа). НЕ ставить — только в вике.
+## [2026-08-29] ingest | Qwen3.8-27B local GPU case
