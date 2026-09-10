@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "patterns/vibe-coding-memory-architecture.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "vibe-coding-memory-architecture"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#1c  ",
+                "query": "Cognee",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "patterns/vibe-coding-memory-architecture.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": "1с"
@@ -185,17 +185,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9e2521d7ee1ee82d",
+  "active": "f97b909c80689d85",
   "lastOpenFiles": [
-    "tech/onebase.md",
+    "patterns/1c-multi-agent-development.md",
     "index.md",
+    "tech/onebase.md",
     "purchased/mcp-1c/1c-code-checker.md",
     "tasks/mul-239-codegraph-in-gsd.md",
     "purchased/mcp-1c/help-search.md",
     "purchased/mcp-1c/code-metadata-search.md",
     "tools/tgrep.md",
     "patterns/vibe-coding-memory-architecture.md",
-    "patterns/1c-multi-agent-development.md",
     "patterns",
     "log.md",
     "hardware/xe2690-workstation.md",
