@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/xe2690-workstation.md",
+                "file": "index.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xe2690-workstation"
+              "title": "index"
             }
           }
         ]
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hardware/xe2690-workstation.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,6 +187,8 @@
   },
   "active": "186cab0874bddfb5",
   "lastOpenFiles": [
+    "log.md",
+    "hardware/xe2690-workstation.md",
     "index.md",
     "tech/qwen-mm-plugins.md",
     "tech/jawl.md",
@@ -220,8 +222,6 @@
     "hermes/skills/memory-wiki-workflow.SKILL.md",
     "hermes/skills/hindsight-verify-live-2026-08.md",
     "hermes/skills/hindsight-mm-tags-and-zvec-mcp-2026-08.md",
-    "hermes/skills/hindsight-migration-2026-08.md",
-    "hermes/skills/hindsight-mental-models.SKILL.md",
-    "tools/ai-video-upscale.md"
+    "hermes/skills/hindsight-migration-2026-08.md"
   ]
 }
