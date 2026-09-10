@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "73ea8e93c7ced2ad",
+        "id": "8da7ff387d676642",
         "type": "tabs",
         "children": [
           {
-            "id": "186cab0874bddfb5",
+            "id": "f97b909c80689d85",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#1c  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,8 +159,8 @@
               "state": {
                 "file": "index.md",
                 "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "showSearch": true,
+                "searchQuery": "1с"
               },
               "icon": "lucide-list",
               "title": "Структура"
@@ -185,11 +185,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "186cab0874bddfb5",
+  "active": "9e2521d7ee1ee82d",
   "lastOpenFiles": [
+    "tech/onebase.md",
+    "index.md",
+    "purchased/mcp-1c/1c-code-checker.md",
+    "tasks/mul-239-codegraph-in-gsd.md",
+    "purchased/mcp-1c/help-search.md",
+    "purchased/mcp-1c/code-metadata-search.md",
+    "tools/tgrep.md",
+    "patterns/vibe-coding-memory-architecture.md",
+    "patterns/1c-multi-agent-development.md",
+    "patterns",
     "log.md",
     "hardware/xe2690-workstation.md",
-    "index.md",
     "tech/qwen-mm-plugins.md",
     "tech/jawl.md",
     "ops/services/warp.md",
@@ -205,10 +214,7 @@
     "purchased/mcp-1c/syntax-check.md",
     "purchased/mcp-1c/index.md",
     "purchased/mcp-1c/ssl-search.md",
-    "purchased/mcp-1c/help-search.md",
-    "purchased/mcp-1c/code-metadata-search.md",
     "purchased/mcp-1c/graph-metadata-search.md",
-    "purchased/mcp-1c/1c-code-checker.md",
     "purchased/mcp-1c",
     "purchased",
     "ops/workflow/new-project-with-codegraph.md",
@@ -216,12 +222,6 @@
     "ops/hermes/hindsight-consolidation-risk.md",
     "ops/hermes",
     "hosting/rdp-monster.md",
-    "hosting",
-    "hermes/skills/state-db-hardline-rule.md",
-    "hermes/skills/memory-management.SKILL.md",
-    "hermes/skills/memory-wiki-workflow.SKILL.md",
-    "hermes/skills/hindsight-verify-live-2026-08.md",
-    "hermes/skills/hindsight-mm-tags-and-zvec-mcp-2026-08.md",
-    "hermes/skills/hindsight-migration-2026-08.md"
+    "hermes/skills/state-db-hardline-rule.md"
   ]
 }
