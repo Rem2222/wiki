@@ -93,6 +93,46 @@ router = ModelRouterMiddleware(choices={
 | HTTP | `serve --port 8787` | POST /route, GET /capabilities |
 | MCP | `serve-mcp` | Один инструмент `jev_route` |
 
+### MCP-адаптер (детально)
+
+JevRouter peut быть подключён как MCP-сервер — один инструмент `jev_route`:
+
+**Что принимает:**
+- `request` — текущий запрос/состояние
+- `candidates` — массив кандидатов с типами:
+  - `model` — LLM-модели
+  - `subagent` — субагенты
+  - `mcp_tool` — MCP-серверы
+  - `skill` — навыки (Hermes skills)
+  - `cli` — CLI-команды
+  - `dsh` — DSH-плагины
+
+**Что возвращает:** `selected`, confidence, probabilities, policy status. **Ничего не исполняет.**
+
+**Регистрация в Hermes** (`.mcp.json` или `config.yaml`):
+```json
+{
+  "mcpServers": {
+    "jevrouter": {
+      "command": "npx",
+      "args": ["-y", "github:BillionsBobby/JevRouter", "serve-mcp"],
+      "env": { "OPENROUTER_API_KEY": "your-key" }
+    }
+  }
+}
+```
+
+**Smoke-test:**
+```bash
+printf '%s\n' \
+  '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"t","version":"0"}}}' \
+  '{"jsonrpc":"2.0","method":"notifications/initialized"}' \
+  '{"jsonrpc":"2.0","id":2,"method":"tools/list"}' \
+  | OPENROUTER_API_KEY="your-key" npx --yes github:BillionsBobby/JevRouter serve-mcp --provider openrouter
+```
+
+**Для нашего стека:** JevRouter как MCP-сервер в Hermes → один `jev_route` вызов решает: какую модель из {opencode-go, qwen-tp, deepseek} вызвать, какой MCP-сервер обработает, какой субагент (DSH/Multica) подключить. 70мс, ~$0.0004 за решение.
+
 ### Установка
 
 ```bash
