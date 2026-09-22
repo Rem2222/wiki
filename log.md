@@ -273,3 +273,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 - Добавлена [[tech/orca-ade]] — Orca (stablyai/orca): ADE для параллельной работы агентов, ★53.6k за полгода, MIT. Источник: Habr news 1074212 (ссылка от Романа). НЕ ставить — только в вике.
 ## [2026-08-29] ingest | Qwen3.8-27B local GPU case
+## [2026-09-12] ingest | AX (tech/ax.md)
