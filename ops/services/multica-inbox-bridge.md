@@ -12,7 +12,7 @@ service:
   category: core
   purpose: Мост Multica → Telegram
   install_date: 2026-07-03
-  last_verified: 2026-09-02
+  last_verified: 2026-09-24
   health_url: 
   type: systemd
   systemd_units:
