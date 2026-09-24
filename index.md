@@ -251,6 +251,7 @@ _Обновлено: 2026-08-20_
 - [[tech/codex-cli-inference-optimization]] — Лайфхак: Codex CLI сам подбирает оптимум инференса под железо (Qwen 3.5-9B, 54 tok/s)
 - [[llm/vibethinker]] — VibeThinker 1.5B/3B: SOTA reasoning от WeiboAI. Обходит DeepSeek R1 на AIME, 1.8 GB в Q4
 - [[chinese-ai-pricing-research]] — Исследование цен на подписки китайских AI-провайдеров (Qwen, GLM, Kimi, MiniMax)
+- [[tech/qwen38-flash-next-176b-1080ti]] — 176B-класс Qwen3.8-Flash-Next на GTX 1080 Ti 11 GB: llama.cpp offload + DSH, 11 tok/s
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
 - [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)

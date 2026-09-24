@@ -274,3 +274,7 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Добавлена [[tech/orca-ade]] — Orca (stablyai/orca): ADE для параллельной работы агентов, ★53.6k за полгода, MIT. Источник: Habr news 1074212 (ссылка от Романа). НЕ ставить — только в вике.
 ## [2026-08-29] ingest | Qwen3.8-27B local GPU case
 ## [2026-09-12] ingest | AX (tech/ax.md)
+
+## [2026-09-23] ingest | Qwen3.8-Flash-Next 176B на GTX 1080 Ti
+
+- Добавлена [[tech/qwen38-flash-next-176b-1080ti]] — разбор статьи Habr 1085544 (@SkalolazOther): запуск 176B-класса (125B main + 51B n-gram, ~6B активных) на 11 GB VRAM. Рецепт: Unsloth UD-Q4_K_XL (111 GB) -> llama.cpp (`qwen4exp`, PR #27742, стабильно с 0.4.1) -> llama-server -> DSH-плагин dsh-local-llm-controller. Ключевое: НЕ ставить -ngl 999, авто-размещение + --n-cpu-moe. Результат 11 tok/s decode / 19 prefill, VRAM 9.5 GB. Грабли: плагин ищет llama-server.exe (симлинк), chat_template_kwargs enable_thinking deprecated, --no-reasoning-preserve НЕ выключает reasoning. Для нашего железа не подходит напрямую (111 GB > 64 GB RAM, GT 1030 2GB) — кандидат сборка X99-TF + E5-2696 v4 + GPU 1080 Ti-класса.

@@ -1,7 +1,7 @@
 ---
 description: "Кейс запуска Qwen3.8-27B на домашней GPU: бенчмарки квантизации, реальные VRAM-требования, когда 4-bit = BF16, и когда 1-bit убивает модель"
 tags: [llm, qwen, quantization, gguf, local-ai, gpu]
-related: ["[[local-gguf-serving]]", "[[freellmapi-models-sync]]"]
+related: ["[[tech/qwen38-flash-next-176b-1080ti]]", "[[freellmapi-models-sync]]"]
 updated: 2026-08-29
 ---
 
