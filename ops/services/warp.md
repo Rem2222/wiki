@@ -13,7 +13,7 @@ service:
   category: network
   purpose: Cloudflare WARP VPN (обход блокировок)
   install_date: 2025-06
-  last_verified: 2026-09-24
+  last_verified: 2026-09-25
   health_url: 
   type: standalone
   ports:
@@ -24,7 +24,7 @@ service:
       description: warp-svc
   depends_on:
     []
-  last_verified: 2026-09-24
+  last_verified: 2026-09-25
   notes: >-
     2026-09-24: warp-svc/бинарь warp-cli/systemd-юнит в системе НЕ найдены — WARP полностью
     отсутствует (трекается в MUL-10035 / MUL-866). Исторически: CLI требовал --accept-tos,

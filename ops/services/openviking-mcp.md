@@ -14,7 +14,7 @@ service:
   category: memory
   purpose: MCP-мост для внешних клиентов (LLaMA, OpenClaw, DSH) к OpenViking REST API
   install_date: 2026-09-06
-  last_verified: 2026-09-24
+  last_verified: 2026-09-25
   health_url: "http://localhost:8901/"
   type: systemd
   ports:
