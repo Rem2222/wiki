@@ -128,6 +128,7 @@ _Обновлено: 2026-08-20_
 - [[tech/sdd-deep-guide-ru]] — русская версия глубокого погружения в SDD
 - [[tech/sdd-instruments]] — сравнение SDD-инструментов: Kiro, Spec-kit, Tessl, OpenSpec
 - [[tech/smoon-docker]] — Остановка SMOON, очистка Docker, команды и структура
+- [[tech/docker-agent-skills]] — Docker Skills: 11 официальных SKILL.md от Docker для агентов; у нас стоят 3 (destructive-guardrails, build-strategies, compose-patterns)
 - [[tech/specsmaxxing]] — Spec-Driven Development с ACID tracking (Acai.sh)
 - [[tech/vibe-coding-workflow]] — 5-phase structured workflow для AI-assisted development
 - [[tech/skillopt]] — Microsoft Research: оптимизация skill-документов через ReflACT тренировочный цикл
