@@ -167,7 +167,7 @@ _Обновлено: 2026-08-20_
 - [[tech/hermes-max-plugin]] — MAX Messenger (VK) plugin for Hermes Agent
 - [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy
 - [[tech/sim-agent-workflow-builder]]
-- [[tech/free-llm-api-resources]]
+- [[tech/free-llm-api-resources]] — бесплатный LLM API: cheahjs-список + обзор 6 сервисов (Atria 100M токенов, Vireonix без ключа, ShareLLM, OdiRouter, Selora, Routeway)
 - [[tech/paperclip]] — платформа для оркестрации команды AI-агентов (Org Chart, heartbeats)
 - [[tech/ods-ai-server]] — локальный AI-сервер «всё-в-одном» (LLM, Open WebUI, RAG)
 - [[tech/photosorter-state-machine]] — полный автомат состояний Photo Sorter
