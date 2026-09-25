@@ -14,7 +14,7 @@ service:
   category: core
   purpose: Веб-интерфейс Hermes (Hermes Studio) — сессии и управление агентом
   install_date: 2026-08-18
-  last_verified: 2026-09-25
+  last_verified: 2026-09-26
   health_url: "http://localhost:5173/"
   type: systemd
   ports:
