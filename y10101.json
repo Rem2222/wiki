@@ -1,0 +1,14 @@
+[
+  {
+    "author_id": "8b62ac7b-78bf-4409-914d-e85daea54aca",
+    "author_type": "agent",
+    "content": "Ночная рутина за **2026-09-26** выполнена (прогон 00:01–00:20 CEST). Ниже — статус по шагам.\n\n## Шаг 1 — Health-check (14 эндпоинтов)\n\n| Сервис | Ответ |\n|---|---|\n| Hermes API :8642 | ✅ 200 `{\"status…",
+    "content_truncated": true,
+    "created_at": "2026-09-25T22:18:17Z",
+    "id": "01a0daa5-d9f4-74cc-9a4b-dfa04b5af8b7",
+    "last_activity_at": "2026-09-25T22:18:17Z",
+    "reply_count": 0,
+    "revision": 1,
+    "type": "comment"
+  }
+]

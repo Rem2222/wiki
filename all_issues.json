@@ -1,0 +1,608 @@
+{
+  "has_more": true,
+  "issues": [
+    {
+      "id": "01a0dc15-d74c-7676-862f-fcda02b6556d",
+      "identifier": "MUL-10108",
+      "status": "done",
+      "title": "Обнова мультика 2026-09-26: релизов нет (v0.5.3 актуален), патчи MUL-11/MUL-10 проверены"
+    },
+    {
+      "id": "01a0dbde-e8da-77e3-8641-9ce8838d6ab9",
+      "identifier": "MUL-10106",
+      "status": "done",
+      "title": "2026-09-26 — Проверка резервных/бесплатных моделей: Hermes, OpenRouter, OpenCode"
+    },
+    {
+      "id": "01a0dacc-4036-79de-8470-991bd3b4fcfd",
+      "identifier": "MUL-10105",
+      "status": "done",
+      "title": "2026-09-26 — Ночной дозор: 1 сессия (Habr→wiki, docker-skills), 97 зависших, 2 идеи"
+    },
+    {
+      "id": "01a0da95-51c7-75a5-a802-67256a10f5e6",
+      "identifier": "MUL-10101",
+      "status": "done",
+      "title": "2026-09-26 — Ночная рутина: health-check, метрики, обслуживание, wiki sync"
+    },
+    {
+      "id": "01a0d726-69ab-71f0-af33-0f9e4f7f5d5c",
+      "identifier": "MUL-10099",
+      "status": "done",
+      "title": "2026-09-25 — Дайджест Адьютанта (GBrain 13-й день, диск 90%, протухшие токены, 3 агента без рабочей модели)"
+    },
+    {
+      "id": "01a0d6ef-7cdd-70b6-b9c5-7f2096d583e7",
+      "identifier": "MUL-10098",
+      "status": "done",
+      "title": "Обнова мультика v0.5.2 → v0.5.3 (патчи MUL-11/MUL-10 сохранены)"
+    },
+    {
+      "id": "01a0d6b8-8e79-73bb-90a7-1d3487503d9a",
+      "identifier": "MUL-10096",
+      "status": "done",
+      "title": "Аудит моделей: список Гермеса + бесплатные OpenRouter и OpenCode"
+    },
+    {
+      "id": "01a0d5a5-e5b5-7905-b6c8-77d17bba8044",
+      "identifier": "MUL-10095",
+      "status": "done",
+      "title": "2026-09-25 — Ночной дозор: 1 сессия (Habr→wiki), 92 зависших, 2 идеи"
+    },
+    {
+      "id": "01a0d56e-f76e-73eb-bc0b-e7dab6f393d0",
+      "identifier": "MUL-10093",
+      "status": "done",
+      "title": "2026-09-25 — Ночная рутина"
+    },
+    {
+      "id": "01a0d200-0f7b-7905-a9ae-e3b02cfccb18",
+      "identifier": "MUL-10091",
+      "status": "done",
+      "title": "2026-09-24 — Дайджест Адьютанта (GBrain лежит, GitHub PAT сломан, диск 89%)"
+    },
+    {
+      "id": "01a0d1c9-21ad-7973-85b6-3dd2959ede17",
+      "identifier": "MUL-10090",
+      "status": "done",
+      "title": "Обнова мультика 2026-09-24: релизов нет (v0.5.2 актуален), патчи проверены"
+    },
+    {
+      "id": "01a0d192-325b-7054-b019-f5f240d7f390",
+      "identifier": "MUL-10088",
+      "status": "done",
+      "title": "Проверка бесплатных моделей: Hermes / OpenRouter / OpenCode"
+    },
+    {
+      "id": "01a0d07f-89cf-772e-9acc-ee44ea1afc47",
+      "identifier": "MUL-10083",
+      "status": "done",
+      "title": "2026-09-24 — Ночной дозор: 1 сессия (квоты OpenCode Go, CodexBar, Ali), 92 зависших, 2 идеи"
+    },
+    {
+      "id": "01a0d048-9c1b-7401-9173-463367825de6",
+      "identifier": "MUL-10082",
+      "status": "done",
+      "title": "2026-09-24 — Ночная рутина (выполнено: health-check + метрики + обслуживание)"
+    },
+    {
+      "id": "01a0cdd7-0e2c-742a-944b-72f1ea7afb51",
+      "identifier": "MUL-10080",
+      "status": "done",
+      "title": "Обнова мультика v0.4.43 → v0.5.2 (патчи сохранены)"
+    },
+    {
+      "id": "01a05f09-43f2-7d62-97f8-cb4cb6c1569b",
+      "identifier": "MUL-10034",
+      "status": "done",
+      "title": "[BACKUP] Исправить pg-backup.sh: git push main → master"
+    },
+    {
+      "id": "01a07027-3bbb-79f0-8807-a6a55641cc5a",
+      "identifier": "MUL-10063",
+      "status": "done",
+      "title": "2026-09-05 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a065da-800f-7219-87e0-9853814d401c",
+      "identifier": "MUL-10048",
+      "status": "done",
+      "title": "2026-09-03 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a06ff0-7349-7981-b827-25743e636c20",
+      "identifier": "MUL-10062",
+      "status": "done",
+      "title": "Обнова мультика v0.4.39 → v0.4.40 ✅"
+    },
+    {
+      "id": "01a06fb9-84aa-7f3c-ba59-7fe312db15f1",
+      "identifier": "MUL-10060",
+      "status": "done",
+      "title": "Тест бесплатных моделей"
+    },
+    {
+      "id": "01a06ea6-dc2a-77fa-a0f4-6a29192b029c",
+      "identifier": "MUL-10059",
+      "status": "done",
+      "title": "2026-09-05 — Ночной дозор"
+    },
+    {
+      "id": "01a06e6f-a812-74a3-8db0-4c3732e02e6c",
+      "identifier": "MUL-10058",
+      "status": "done",
+      "title": "2026-09-05 — Ночная рутина"
+    },
+    {
+      "id": "01a06b00-bf84-7947-98cc-fcc3e53678d5",
+      "identifier": "MUL-10055",
+      "status": "done",
+      "title": "2026-09-04 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a06ac9-ed9b-775d-9c22-c6007a430585",
+      "identifier": "MUL-10054",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a06a92-ff01-7eb3-8f11-7418a2c6d07c",
+      "identifier": "MUL-10052",
+      "status": "done",
+      "title": "Тест бесплатных моделей"
+    },
+    {
+      "id": "01a06980-5695-7664-87ad-0acf412e3516",
+      "identifier": "MUL-10051",
+      "status": "done",
+      "title": "2026-09-04 — Ночной дозор"
+    },
+    {
+      "id": "01a06949-68a7-791a-a0e2-8042383d41c6",
+      "identifier": "MUL-10050",
+      "status": "done",
+      "title": "2026-09-04 — Ночная рутина"
+    },
+    {
+      "id": "01a05b8d-c46c-7ed0-aa93-bfe8b2c9785e",
+      "identifier": "MUL-10030",
+      "status": "done",
+      "title": "2026-09-01 — Дайджест Адьютанта (disk 93%, GHCR token expired, 25 models removed)"
+    },
+    {
+      "id": "01a0656c-bb36-736c-909a-a39a7caa432b",
+      "identifier": "MUL-10045",
+      "status": "done",
+      "title": "Тест бесплатных моделей"
+    },
+    {
+      "id": "01a0645a-1353-70c8-b71b-18631e2b70cb",
+      "identifier": "MUL-10044",
+      "status": "done",
+      "title": "2026-09-03 — Ночной дозор: 2 задачи in_review, нет новых идей"
+    },
+    {
+      "id": "01a06423-243d-77d1-b7b7-c7b88fc9a7ed",
+      "identifier": "MUL-10043",
+      "status": "done",
+      "title": "2026-09-03 — Ночная рутина"
+    },
+    {
+      "id": "01a065a3-a9b4-7412-b4f7-17e627eecd26",
+      "identifier": "MUL-10047",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a060b4-3c78-7bf3-bae8-28ad2287354f",
+      "identifier": "MUL-10041",
+      "status": "done",
+      "title": "2026-09-02 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a06046-5f6a-7d99-a59f-19ebed3ecd5c",
+      "identifier": "MUL-10038",
+      "status": "done",
+      "title": "Аудит бесплатных моделей — результат проверки 2026-09-02"
+    },
+    {
+      "id": "01a05f33-b6b7-7718-ba01-4cade39e558e",
+      "identifier": "MUL-10037",
+      "status": "done",
+      "title": "2026-09-02 — Ночной дозор: диск 57% ✅, Hindsight consolidation застряла"
+    },
+    {
+      "id": "01a05efc-c856-71e6-ab14-d2c10ee50f3d",
+      "identifier": "MUL-10032",
+      "status": "done",
+      "title": "2026-09-02 — Ночная рутина"
+    },
+    {
+      "id": "01a0607d-4e07-7dd9-b82e-01728a0f747e",
+      "identifier": "MUL-10040",
+      "status": "done",
+      "title": "Обнова Мультика (0.4.37 → latest) + патчи"
+    },
+    {
+      "id": "01a05b56-d617-79b6-8e59-9733576254e0",
+      "identifier": "MUL-10029",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a03b27-3990-7634-9b6b-848dde2b8eee",
+      "identifier": "MUL-923",
+      "status": "done",
+      "title": "2026-08-26 — Ночной дозор: 283 зависших, 2 идеи"
+    },
+    {
+      "id": "01a03ca7-bf60-7553-b53c-aa96d6d01477",
+      "identifier": "MUL-927",
+      "status": "done",
+      "title": "2026-08-26 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a0404d-958c-7b68-b0b5-8aef14279a53",
+      "identifier": "MUL-930",
+      "status": "done",
+      "title": "2026-08-27 — Ночной дозор"
+    },
+    {
+      "id": "01a041ce-0880-76ca-9ca2-5ad305aa86c4",
+      "identifier": "MUL-934",
+      "status": "done",
+      "title": "2026-08-27 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a046f4-9420-7207-b09b-b523576c579a",
+      "identifier": "MUL-941",
+      "status": "done",
+      "title": "2026-08-28 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a04c1a-b0a5-7127-80d6-3d6df3dbae1c",
+      "identifier": "MUL-10008",
+      "status": "done",
+      "title": "2026-08-29 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a04fc0-8727-75fd-979b-549a08db0cd7",
+      "identifier": "MUL-10012",
+      "status": "done",
+      "title": "2026-08-30 — Ночной дозор"
+    },
+    {
+      "id": "01a05141-0c9d-74d3-8b00-54569b0d9b45",
+      "identifier": "MUL-10016",
+      "status": "done",
+      "title": "2026-08-30 — Дайджест Адьютанта (Disk 92%, Load 10.59)"
+    },
+    {
+      "id": "01a05667-68a6-7228-b13a-5afd085f20ce",
+      "identifier": "MUL-10023",
+      "status": "done",
+      "title": "2026-08-31 — Дайджест Адьютанта (freellmapi ❌, диск 92%, бэкап ❌)"
+    },
+    {
+      "id": "01a05b1f-e783-7580-841f-5efb8ee91e92",
+      "identifier": "MUL-10027",
+      "status": "done",
+      "title": "Тест бесплатных моделей"
+    },
+    {
+      "id": "01a05a0d-3edb-7b87-92f4-d16b2e3b7296",
+      "identifier": "MUL-10026",
+      "status": "done",
+      "title": "2026-09-01 — Ночной дозор"
+    },
+    {
+      "id": "01a0dc4c-c5bb-7bbc-9c0c-7b15d01ad637",
+      "identifier": "MUL-10109",
+      "status": "in_review",
+      "title": "2026-09-26 — Дайджест Адьютанта (GBrain 194K рестартов, диск 91%, 3 агента без модели, 2 дашборда лежат)"
+    },
+    {
+      "id": "01a059d6-5085-7cf7-b497-3617ebc02117",
+      "identifier": "MUL-10025",
+      "status": "done",
+      "title": "2026-09-01 — Ночная рутина"
+    },
+    {
+      "id": "01a050d3-2f72-797f-ad95-5e427de39b78",
+      "identifier": "MUL-10013",
+      "status": "done",
+      "title": "Проверка бесплатных моделей — Hermes / OpenRouter / OpenCode"
+    },
+    {
+      "id": "01a05630-7a1d-7b43-96f5-f5f4483783a4",
+      "identifier": "MUL-10022",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a055f9-8b94-7321-a0bc-15546b5c24f0",
+      "identifier": "MUL-10020",
+      "status": "done",
+      "title": "Тест бесплатных моделей — проверка доступности"
+    },
+    {
+      "id": "01a054e6-e2ec-774f-bab3-71ae1c808b41",
+      "identifier": "MUL-10019",
+      "status": "done",
+      "title": "2026-08-31 — Ночной дозор"
+    },
+    {
+      "id": "01a054af-f4b0-7bef-a3fa-a1d1b2cd9018",
+      "identifier": "MUL-10018",
+      "status": "done",
+      "title": "2026-08-31 — Ночная рутина"
+    },
+    {
+      "id": "01a0510a-1dfc-79d3-b430-fcb8bc5b9165",
+      "identifier": "MUL-10015",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a04f89-98f1-7dea-b310-66803847fc87",
+      "identifier": "MUL-10011",
+      "status": "done",
+      "title": "2026-08-30 — Ночная рутина ✅"
+    },
+    {
+      "id": "01a04bad-1268-7f0d-8ee4-6920bc035720",
+      "identifier": "MUL-10005",
+      "status": "done",
+      "title": "Проверка бесплатных моделей — отчёт 29.08.2026"
+    },
+    {
+      "id": "01a04a9a-69b7-7132-83c4-d899491483c7",
+      "identifier": "MUL-10004",
+      "status": "done",
+      "title": "2026-08-29 — Ночной дозор"
+    },
+    {
+      "id": "01a094eb-d8a6-7989-b71d-0330cbb428a4",
+      "identifier": "MUL-10078",
+      "status": "in_review",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a04a63-7b89-7870-a4de-f1737f8432da",
+      "identifier": "MUL-943",
+      "status": "done",
+      "title": "2026-08-29 — Ночная рутина"
+    },
+    {
+      "id": "01a073cd-1264-7961-80c1-c3a7a552ae40",
+      "identifier": "MUL-10072",
+      "status": "in_review",
+      "title": "2026-09-06 — Ночной дозор"
+    },
+    {
+      "id": "01a04be4-00c3-7a4b-89ce-53ecc2b82f0b",
+      "identifier": "MUL-10007",
+      "status": "done",
+      "title": "Обнова мультика v0.4.35 → v0.4.36"
+    },
+    {
+      "id": "01a06d72-791f-7849-a99b-608a975f8c06",
+      "identifier": "MUL-10057",
+      "status": "in_review",
+      "title": "OpenViking: загрузка данных из Hermes state.db"
+    },
+    {
+      "id": "e268b168-00dc-4f08-be36-392939aa40a1",
+      "identifier": "MUL-872",
+      "status": "done",
+      "title": "2026-08-20 — Дайджест Адьютанта"
+    },
+    {
+      "id": "46440b2a-7115-428e-919e-96af09928071",
+      "identifier": "MUL-865",
+      "status": "done",
+      "title": "[ALERT] Disk usage at 92% — needs cleanup"
+    },
+    {
+      "id": "01a04160-3e6e-7beb-9d9f-fc3e6d22308a",
+      "identifier": "MUL-931",
+      "status": "done",
+      "title": "Аудит бесплатных моделей — OpenRouter, OpenCode, Hermes провайдеры"
+    },
+    {
+      "id": "01a046bd-7674-71db-b507-f8597116d1e0",
+      "identifier": "MUL-940",
+      "status": "done",
+      "title": "Обнова мультика: v0.4.35 → latest (12 коммитов)"
+    },
+    {
+      "id": "01a04686-8761-75cc-84a8-fa665f62057a",
+      "identifier": "MUL-938",
+      "status": "done",
+      "title": "Тест бесплатных моделей"
+    },
+    {
+      "id": "01a04573-dfab-75e8-8244-42995f95a6f9",
+      "identifier": "MUL-937",
+      "status": "done",
+      "title": "2026-08-28 — Ночной дозор: disk 83%, 7 зависших, 1 идея (auto-closure alert)"
+    },
+    {
+      "id": "01a0453c-f07b-7a27-8c28-7b008f053c99",
+      "identifier": "MUL-936",
+      "status": "done",
+      "title": "2026-08-28 — Ночная рутина"
+    },
+    {
+      "id": "01a02cfd-8fa5-790a-bb05-cb551f3275dd",
+      "identifier": "MUL-905",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a02d34-7e12-72ff-a073-a8354cf05d20",
+      "identifier": "MUL-906",
+      "status": "done",
+      "title": "2026-08-23 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a02cc6-a161-705a-acaf-0ab8f376c326",
+      "identifier": "MUL-903",
+      "status": "done",
+      "title": "Тест бесплатных моделей"
+    },
+    {
+      "id": "01a02bb3-f860-75bb-b876-eb2bb7343531",
+      "identifier": "MUL-902",
+      "status": "done",
+      "title": "2026-08-23 — Ночной дозор"
+    },
+    {
+      "id": "01a02b7d-0ad0-767c-a028-c04748579eb3",
+      "identifier": "MUL-901",
+      "status": "done",
+      "title": "2026-08-23 — Ночная рутина"
+    },
+    {
+      "id": "01a027d7-336f-7736-be20-d8ed5dd576b5",
+      "identifier": "MUL-897",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "01a0280e-228b-73e8-9cc3-7edb9b613db4",
+      "identifier": "MUL-898",
+      "status": "done",
+      "title": "2026-08-22 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a027a0-45f7-70c8-b37a-fc7547987c14",
+      "identifier": "MUL-895",
+      "status": "done",
+      "title": "Тест бесплатных моделей"
+    },
+    {
+      "id": "01a0268d-9c4f-72be-bb0d-35807746574f",
+      "identifier": "MUL-894",
+      "status": "done",
+      "title": "2026-08-22 — Ночной дозор"
+    },
+    {
+      "id": "01a02656-ae20-7b9c-bc86-2f2dd1369805",
+      "identifier": "MUL-893",
+      "status": "done",
+      "title": "2026-08-22 — Ночная рутина"
+    },
+    {
+      "id": "01a022e7-c55d-76ec-9eb6-5ed11172bfd3",
+      "identifier": "MUL-890",
+      "status": "done",
+      "title": "2026-08-21 — Дайджест Адьютанта"
+    },
+    {
+      "id": "b4f7a4cb-d979-430d-b801-b63d5e334aa2",
+      "identifier": "MUL-889",
+      "status": "done",
+      "title": "Обнова мультика"
+    },
+    {
+      "id": "b0f52974-acb7-44d6-a01c-6ae2a601cf96",
+      "identifier": "MUL-887",
+      "status": "done",
+      "title": "Тест бесплатных моделей — результаты: 26 OpenCode + 21 OpenRouter доступны"
+    },
+    {
+      "id": "54868135-dbf5-47b8-996f-fd4c69074c1e",
+      "identifier": "MUL-883",
+      "status": "done",
+      "title": "2026-08-21 — Ночная рутина"
+    },
+    {
+      "id": "5cf12573-d8fc-48fe-b6a8-ad1bb52d7fe7",
+      "identifier": "MUL-886",
+      "status": "done",
+      "title": "2026-08-21 — Ночной дозор"
+    },
+    {
+      "id": "01a04197-2cc1-77a3-9bf7-584e50121936",
+      "identifier": "MUL-933",
+      "status": "done",
+      "title": "Обнова мультика v0.4.34 → v0.4.35"
+    },
+    {
+      "id": "01a0daa4-1642-7a6e-b674-1987d0144f48",
+      "identifier": "MUL-10104",
+      "status": "todo",
+      "title": "[ALERT] Dex dashboard (:3333) не запущен, юниты dex-control/dex-poller not-found"
+    },
+    {
+      "id": "01a04016-a72f-739b-b6ac-8725feb04f40",
+      "identifier": "MUL-929",
+      "status": "done",
+      "title": "2026-08-27 — Ночная рутина"
+    },
+    {
+      "id": "01a0daa4-1607-7063-94ab-f91ca52b5553",
+      "identifier": "MUL-10103",
+      "status": "todo",
+      "title": "[ALERT] skills-dashboard (:8650) enabled, но не запущен с 2026-09-22"
+    },
+    {
+      "id": "01a0daa3-ee48-78b9-8fe0-58a660003a2a",
+      "identifier": "MUL-10102",
+      "status": "todo",
+      "title": "[ALERT] Метрики лежат: контейнеры Prometheus/Grafana/node-exporter отсутствуют, экспортеры disabled — сверить с реестром multica.md"
+    },
+    {
+      "id": "01a03781-634d-7188-96b8-ea912113909b",
+      "identifier": "MUL-920",
+      "status": "done",
+      "title": "2026-08-25 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a0d57b-e7e1-704e-b589-63abf43d3317",
+      "identifier": "MUL-10094",
+      "status": "todo",
+      "title": "[MAINT] Диск / на 89% (11G свободно) — нужна очистка"
+    },
+    {
+      "id": "bc041d67-5d48-414b-9ff6-0e088db8b1a5",
+      "identifier": "MUL-714",
+      "status": "done",
+      "title": "Проверить все эндпоинты провайдеров после восстановления config.yaml"
+    },
+    {
+      "id": "01a0d09a-67e6-7905-b824-6a7c91fea3d5",
+      "identifier": "MUL-10087",
+      "status": "todo",
+      "title": "Wiki maintenance audit — 63 проблемы (2026-09-24, порог \u003e10)"
+    },
+    {
+      "id": "01a0325a-d590-752d-8346-2b9e852dff33",
+      "identifier": "MUL-913",
+      "status": "done",
+      "title": "2026-08-24 — Дайджест Адьютанта"
+    },
+    {
+      "id": "01a0d09a-18e7-79e4-85cc-3ede169346ca",
+      "identifier": "MUL-10086",
+      "status": "todo",
+      "title": "[MEMORY] OpenViking + Hermes vision: 400 MissingSessionID (opencode-go требует x-opencode-session)"
+    },
+    {
+      "id": "01a0d099-f4e8-7434-aed8-10db80755361",
+      "identifier": "MUL-10085",
+      "status": "todo",
+      "title": "[ALERT] Git push сломан: невалидный GitHub PAT (wiki + server-pg-backups) + 197MB файл в индексе backups"
+    },
+    {
+      "id": "01a0d098-e7ad-752a-9951-fb5d73edc8e4",
+      "identifier": "MUL-10084",
+      "status": "todo",
+      "title": "[ALERT] GBrain лежит: gbrain-postgres Exited 11 дней, gbrain-http restart-loop (161K рестартов), autopilot.err 67K строк"
+    }
+  ],
+  "limit": 100,
+  "offset": 0,
+  "total": 640
+}
