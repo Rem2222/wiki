@@ -4,6 +4,7 @@ tags: [tech, llm, free, api, providers, habr]
 updated: 2026-09-23
 related:
   - tech/freellmapi
+  - tech/free-coding-agents-2026
   - tech/free-claude-code
   - tech/jawl-howto-add-provider
   - tech/freenimapi

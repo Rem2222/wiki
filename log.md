@@ -289,3 +289,22 @@ _Append-only. Формат: `## [дата] type | описание`_
 - УСТАНОВЛЕНО 3 из 11 в ~/.hermes/skills/devops/ (по согласованию Романа «ставь без подтверждения»): docker-destructive-guardrails (Tier1/Tier2 подтверждения — дополняет vps-disk-cleanup), docker-build-strategies (Multica собирает образы), docker-compose-patterns (healthchecks/depends_on для новых сервисов). Проверены skills_list — видны.
 - Локальная правка: в docker-compose-patterns перед File naming вставлен блок [!IMPORTANT] — правило «compose.yaml канон, docker-compose.yml legacy» на нашем хосте НЕ применяется, всё на docker-compose.* (Multica: -f selfhost -f override), переименовывать нельзя (selfhosted-services и скрипты обновления Multica разыменовывают имена явно). Без правки был бы конфликт.
 - Не ставили 8: sandboxes(4, у не используются), docker-agent(3, у нас Hermes), project-foundations(редко). Скрипты verify-*.sh прочитаны: только docker compose config --quiet и docker build - безопасно.
+
+## [2026-09-26] ingest | Бесплатные AI coding agents 2026
+
+- Добавлена [[tech/free-coding-agents-2026]] — Habr 1086812 (MihaDeev, данные 25.09.2026): 10 coding-агентов, что в них реально бесплатно. Ключевой тезис: бесплатный клиент != бесплатный inference, деньги всегда идут на inference. Типология автора: (1) агент+бесплатные модели = OpenCode/Freebuff, (2) агент+свой inference = Cline/Kilo/CodeGPT, (3) квота = Cursor/Codex/Antigravity/TRAE, (4) trial = ZCode 5 дней.
+- Freebuff разобран детально: два режима НЕ смешивать. Full 100 Freebucks/день (GLM 5.3 Flash до 20ч, MiMo 2.6 Flash до 10ч, DeepSeek V4.1 Flash до 6ч — не складываются). Limited fallback для регионов без Full: DeepSeek V4 Flash 6 сессий x 1ч.
+- Вердикт по нашему стеку: 8 из 10 уже закрыты (opencode-go основной+оплачен, qwen-tp, openrouter, freellmapi, FreeQwenApi:9656, FreeDeepseekAPI:9655, Ollama). Не закрыты: Freebuff и ZCode.
+- Исправлена ошибка статьи: в Codex два раза Pro — по факту Pro 5x $100 / Pro 20x $200.
+- Цены, которых в статье НЕТ (дознакомил отдельно): GLM Coding Lite $18/мес (промо -30
+
+## [2026-09-26] ingest | Бесплатные AI coding agents 2026
+
+- Добавлена [[tech/free-coding-agents-2026]] — Habr 1086812 (MihaDeev, данные 25.09.2026): 10 coding-агентов, что в них реально бесплатно. Ключевой тезис: бесплатный клиент != бесплатный inference, деньги всегда идут на inference. Типология автора: (1) агент+бесплатные модели = OpenCode/Freebuff, (2) агент+свой inference = Cline/Kilo/CodeGPT, (3) квота = Cursor/Codex/Antigravity/TRAE, (4) trial = ZCode 5 дней.
+- Freebuff разобран детально: два режима НЕ смешивать. Full 100 Freebucks/день (GLM 5.3 Flash до 20ч, MiMo 2.6 Flash до 10ч, DeepSeek V4.1 Flash до 6ч — не складываются). Limited fallback для регионов без Full: DeepSeek V4 Flash, 6 сессий x 1ч.
+- Вердикт по нашему стеку: 8 из 10 уже закрыты (opencode-go основной+оплачен, qwen-tp, openrouter, freellmapi, FreeQwenApi:9656, FreeDeepseekAPI:9655, Ollama). Не закрыты: Freebuff и ZCode.
+- Исправлена ошибка статьи: в Codex два раза «Pro» — по факту Pro 5x = $100 / Pro 20x = $200.
+- Цены, которых в статье НЕТ (дознакомил отдельно): GLM Coding Lite $18/мес (промо -30% = $12.60), Pro $72-80, Max $160-168; лимиты Lite ~80 prompts/5h + ~400/нед + контекст 1M. Google AI Pro $19.99/мес. ChatGPT Go $8.
+- Antigravity: квота привязана к Google AI подписке, отдельно не продаётся; на форуме Google жалобы, что лимит Claude Opus сбрасывается каждые 5ч, но бывает уезжает на 2 дня.
+- Рекомендации: бесплатно — Freebuff + ZCode триал; платно только GLM Coding Lite после триала; опционально Google AI Pro (ради Gemini, прокси 127.0.0.1:8083 ненадёжен) и ChatGPT Go $8 (только если ставить Codex CLI). Не брать: ClinePass $9.99, Kilo Pass $19, Cursor Pro $20, CodeGPT $10, TRAE Lite $3, GLM Pro/Max, ChatGPT Plus/Pro.
+- Перекрёстная ссылка добавлена в tech/free-llm-api-resources.
