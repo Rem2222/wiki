@@ -1,5 +1,5 @@
 ---
-description: Hermes Web UI (Hermes Studio) — веб-интерфейс Hermes Agent: сессии, чат, управление. Порт 5173.
+description: "Hermes Web UI (Hermes Studio) — веб-интерфейс Hermes Agent: сессии, чат, управление. Порт 5173."
 tags:
   - ops
   - service
