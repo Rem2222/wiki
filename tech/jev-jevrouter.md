@@ -2,9 +2,11 @@
 description: Jev (TypeSafe AI) — System One модель для быстрых структурированных решений. 40-200x быстрее LLM, 40-400x дешевле, 0% галлюцинаций. JevRouter — маршрутизатор для агентов.
 tags: [llm, routing, decision-model, typesafe, jev, system-one, guardrails, mcp, codex, claude-code]
 related:
+  - tech/jev-ultrafast
   - tech/ternary-bonsai-2
   - hardware/xe2690-workstation
   - tech/free-llm-api-resources
+updated: 2026-09-26
 ---
 
 # Jev + JevRouter (TypeSafe AI)
@@ -185,3 +187,7 @@ npx --yes github:BillionsBobby/JevRouter plan --provider openrouter \
 ## Статус
 
 ⏳ **Нужно попробовать** — особенно роутинг моделей и guardrails.
+
+Первый прод-кейс Jev уже существует — см. [[tech/jev-ultrafast]] (browser-use, 20.6k⭐ за 10 дней): Jev выбирает операцию и цель **в одном запросе**, медианная латентность 178 мс, 17 запросов на прогон. Это превращает «нужно попробовать» в конкретного кандидата: браузерная автоматизация через Jev вместо скриншотов (1 092 → 101 protocol calls).
+
+⚠️ `typesafe.ai/pricing` отдаёт **404** — официальной страницы цен нет, ключ только через waitlist (`console.typesafe.ai`). Цифра $0.042/MTok подтверждается лишь сторонними обзорами.

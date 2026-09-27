@@ -133,6 +133,8 @@ _Обновлено: 2026-08-20_
 - [[tech/vibe-coding-workflow]] — 5-phase structured workflow для AI-assisted development
 - [[tech/skillopt]] — Microsoft Research: оптимизация skill-документов через ReflACT тренировочный цикл
 - [[tech/webwright]] — Microsoft Research: веб-агенты через code-as-action (Python + Playwright)
+- [[tech/jev-ultrafast]] — браузерный агент Browser Use на Jev: динамическая индексированная область действий, 20.6k⭐ за 10 дней
+- [[tech/jev-jevrouter]] — Jev (TypeSafe System One): типизированные решения вместо генерации текста; JevRouter как MCP-роутер
 - [[tech/cc-websearch]] — поисковый плагин для Claude Code (multi-engine: Google, Bing, SerpAPI, Tavily)
 - [[tech/context7]] — MCP-сервер документации библиотек для AI-агентов
 - [[tech/z-ai]] — AI-поисковик с MCP для Claude Code
