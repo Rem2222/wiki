@@ -3,7 +3,9 @@ description: yt-dlp — командная утилита для скачива�
 tags: [tools, cli, video]
 related:
   - tech/agent-reach
+  - tools/youtube-transcript
 created: 2026-08-03
+updated: 2026-09-26
 ---
 
 # yt-dlp
@@ -27,3 +29,10 @@ yt-dlp --playlist-items 1-5 "URL"                     # часть плейли�
 - `-f <format>` — выбор формата (bestvideo+bestaudio)
 - `-x` — извлечь аудио
 - `--embed-thumbnail`, `--embed-metadata` — метаданные в файл
+
+## ⚠️ Субтитры/транскрипт на VPS НЕ получить
+
+IP датацентра заблокирован YouTube — `--write-sub` / `--list-subs` падают с
+`Sign in to confirm you're not a bot`, `--flat-playlist` при этом работает.
+
+Рабочий путь для расшифровки: [[tools/youtube-transcript]]

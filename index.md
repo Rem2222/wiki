@@ -239,6 +239,7 @@ _Обновлено: 2026-08-20_
 - [[tools/activitywatch]] — open-source трекер времени, приватный self-hosted (18.6k⭐)
 - [[tools/hermes-memory-comparison]] — сравнение систем памяти для Hermes по 6 болям + HTML-версия (rem2222.top/hermes-memory.html)
 - [[tools/yt-dlp]] — CLI-утилита для скачивания видео/аудио (YouTube и др.)
+- [[tools/youtube-transcript]] — расшифровка YouTube-видео с VPS (IP заблокирован): рабочий endpoint youtube-transcript.ai + 15 мёртвых путей
 - [[tools/agent-reach]] — веб-доступ для AI-агентов («глаза в интернет»)
 - [[tools/mcporter]] — CLI-клиент для управления MCP-серверами
 - [[tools/chatcut]] — нарезка и обработка чатов/диалогов

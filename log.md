@@ -308,3 +308,15 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Antigravity: квота привязана к Google AI подписке, отдельно не продаётся; на форуме Google жалобы, что лимит Claude Opus сбрасывается каждые 5ч, но бывает уезжает на 2 дня.
 - Рекомендации: бесплатно — Freebuff + ZCode триал; платно только GLM Coding Lite после триала; опционально Google AI Pro (ради Gemini, прокси 127.0.0.1:8083 ненадёжен) и ChatGPT Go $8 (только если ставить Codex CLI). Не брать: ClinePass $9.99, Kilo Pass $19, Cursor Pro $20, CodeGPT $10, TRAE Lite $3, GLM Pro/Max, ChatGPT Plus/Pro.
 - Перекрёстная ссылка добавлена в tech/free-llm-api-resources.
+
+
+## [2026-09-26] ingest | YouTube-транскрипт с заблокированного VPS
+
+- Добавлена [[tools/youtube-transcript]] — рабочий способ снять расшифровку ролика, когда IP VPS (80.241.218.110) заблокирован YouTube. Проверено на плейлисте Vizuara 'Build DeepSeek from Scratch' (30 видео).
+- РАБОЧЕЕ: `curl -sL https://youtube-transcript.ai/transcript/{VIDEO_ID}.txt` — открытый endpoint, они сами просят LLM-агентов им пользоваться (см. их llms.txt). Без ключей и rate limit. Отдаёт markdown с таймкодами [m:ss]. Реально: 42 КБ на ролик 15:13 / 7708 слов. Выбор языка `?lang=XX`.
+- АРТЕФАКТ ASR: автосубтитры повторяют каждую фразу ТРОЕкратно. Очистка — скользящий поиск 4/3/2-кратного повтора, порядок от большего к меньшему (иначе двойной съест середину тройного). 42085 -> 14287 символов.
+- ДВЕ ЛОВУШКИ ОЧИСТКИ: (1) таймкод [0:36] — первый токен строки, без его отдельного выкидывания сравнение перекрытий всегда проваливается; (2) ASR дублирует хвост предыдущего сегмента началом следующего — лечится сравнением toks[:L] == prev_tail[-L:] (L до ~14).
+- НЕ РАБОТАЕТ (15 путей, все проверены): youtube-transcript-api (RequestBlocked, cloud IP), yt-dlp --write-sub (Sign in to confirm you're not a bot), Tor socks5:9050 (таймаут, YouTube блокирует exit-ноды), video.google.com/timedtext (200 но 0 байт), 9 инстансов Invidious (все 502/503/500), pipedapi.kavin.rocks (502), youtubetotranscript.com (403), их серверный прокси server_vid2 (отвечает 'YouTube is currently blocking us'), kome.ai (429), tactiq (401), youtranscripts/tubetranscript/downloadyoutubesubtitles (429/404/404).
+- КЛЮЧЕВОЙ ДИАГНОЗ: страница YouTube отдаёт 200, но playabilityStatus=LOGIN_REQUIRED -> 'Sign in to confirm you're not a bot', блока captions нет. Поэтому curl 200 ничего не доказывает — смотреть playabilityStatus.
+- РАБОТАЕТ при заблокированном IP: oembed (заголовок/автор/превью) и yt-dlp --flat-playlist (30 ID плейлиста за ~2 сек).
+- Перекрёстная ссылка + предупреждение добавлены в tools/yt-dlp (там секции про субтитры не было вовсе).
