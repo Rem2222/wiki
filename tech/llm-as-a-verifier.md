@@ -1,7 +1,7 @@
 ---
 description: LLM-as-a-Verifier — фреймворк верификации ответов/доработок LLM через logprobs. Вариант усиления LLM на больших и сложных задачах (Best-of-N, self-verification). Оценка для текущего стека: пока не применимо (нет top-k logprobs).
 tags: [llm, verification, logprobs, deepseek, best-of-n, framework]
-related: [[tech/llm-tier-strategy]] [[concepts/llm-wiki]] [[articles/1c-autonomous-ai-development]]
+related: [[concepts/llm-tier-strategy]] [[concepts/llm-wiki]] [[articles/1c-autonomous-ai-development]]
 ---
 
 # LLM-as-a-Verifier

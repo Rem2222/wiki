@@ -2,6 +2,9 @@
 name: memory-management
 description: Управление всеми системами памяти пользователя — AgentMemory, GBrain, Obsidian Wiki, Session DB — их консолидация, health-мониторинг и координация
 tags: [memory, consolidation, agentmemory, gbrain, wiki, obsidian, nightly]
+related:
+  - ops/services/agentmemory
+  - tasks/hindsight-memory-migration
 ---
 
 # Memory Management

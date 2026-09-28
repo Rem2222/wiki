@@ -2,9 +2,11 @@
 title: RDP Monster
 created: 2026-09-05
 status: reference
+description: RDP Monster — VPS-провайдер без KYC с оплатой криптой и безлимитным трафиком; рекомендован для анонимного хостинга.
 tags: [vps, hosting, anonymous, crypto]
 related:
-  - [[ops/services/server_services]]
+  - hosting/rdp-monster
+  - ops/services/server-architecture
 ---
 
 # RDP Monster

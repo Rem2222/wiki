@@ -1,6 +1,9 @@
 ---
 description: "Omarchy — «Beautiful, Modern & Opinionated Linux» от DHH (автор Rails). США минималистичная среда на Arch. (MIT, ★29.4k)."
 tags: [linux,distro,arch,dhh,desktop]
+related:
+  - hardware/xe2690-workstation
+  - tools/Win11Debloat
 ---
 
 # Omarchy

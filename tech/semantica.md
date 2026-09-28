@@ -1,7 +1,7 @@
 ---
 description: Semantica — граф-нативная инфраструктура контекста для агентов (Context Graph + KG + provenance + decision intelligence). Сравнение с нашим стеком GBrain/codegraph/AgentMemory.
 tags: [graph-rag, knowledge-graph, agent-memory, mcp, rag, trend]
-related: [[tech/tencentdb-agent-memory]] [[tech/gbrain]]
+related: [[tech/tencentdb-agent-memory]] [[tech/gbrain-lossless-agent-memory]]
 ---
 
 # Semantica (semantica-agi/semantica)

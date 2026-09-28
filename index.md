@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-08-20_
+_Обновлено: 2026-09-28_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -10,6 +10,7 @@ _Обновлено: 2026-08-20_
 ## GameDev
 - [[gamedev/ccgs-skills-research]] — анализ Claude Code Game Studios (49 AI-агентов, 73 скилла) для геймдева
 - [[tech/mengto-skills-gamedev]] — MengTo/Skills: портабельные agent skills для Three.js геймдева
+- [[tools/unity-ai-agents-plugin]] — Unity AI Agents Plugin: официальный MCP-плагин Unity, 29 навыков движка
 
 ## Концепции
 - [[concepts/llm-wiki]] — паттерн персональных баз знаний с помощью LLM
@@ -65,6 +66,10 @@ _Обновлено: 2026-08-20_
 - [[ops/services/ufw-fail2ban]] — фаервол + защита от брутфорса
 - [[ops/services/unattended-upgrades]] — автообновления безопасности
 - [[ops/services/lightpanda]] — Lightpanda headless-браузер (Zig, CDP, порт 9222)
+- [[ops/services/ollama]] — локальный LLM-сервер (bge-m3 эмбеддинги, qwen2.5:7b)
+- [[ops/services/warp]] — Cloudflare WARP VPN (обход блокировок)
+- [[ops/services/hermes-web-ui]] — Hermes Web UI (Studio): веб-интерфейс Hermes, порт 5173
+- [[ops/services/openviking-mcp]] — OpenViking MCP Bridge: Streamable HTTP → OpenViking REST, порт 8901
 
 ## SDD-Orchestrator v2 (2026-05-04)
 - [[tech/sdd-openspec-orchestrator-integration]] — Orchestrator Integration (что хотели для Оркестратора: QA Gate, multi-layer SDD, hybrid context)
@@ -205,9 +210,24 @@ _Обновлено: 2026-08-20_
 - [[tech/lightpanda-browser]] — Lightpanda: headless-браузер на Zig для AI-агентов (в 9× быстрее headless Chrome)
 - [[tech/wello-ai-api]] — Wello: единый API для Claude, GPT, Gemini (до 90% дешевле)
 - [[tech/langchain-open-agent-platform]] — LangChain Open Agent Platform: UI поверх LangGraph
+- [[tech/cognee]] — open-source память для агентов: ECL-пайплайн, knowledge graph + векторный поиск
+- [[tech/qwen-tp]] — токен-план провайдер Alibaba в стеке Hermes (vision qwen3.7-plus, дефолт deepseek-v4-flash)
+- [[tech/sol-pi-nvidia]] — SoL-Pi (NVIDIA): автоулучшение harness агентов рекурсивным auto-research, −50% токенов
+- [[tech/trace-moe]] — trace.moe: поиск аниме-сцен по скриншоту (название, эпизод, таймкод)
+- [[tech/zvec-mcp-wiki-search]] — Zvec MCP: нативный read-only поиск по вики для Hermes (bge-m3 + FTS)
+- [[tech/amneziawg-keenetic]] — AmneziaWG 3.0 на Keenetic: ставить через AWG-Manager, не через штатный WireGuard
+- [[tech/ai-guardrails]] — AI Guardrails: классификация и блокировка рискованных tool calls до выполнения
+- [[tech/cloudflare-tunnel]] — Cloudflare Tunnel: localhost по публичному URL за одну команду, без VPN
 ## Hermes Agent
 - [[tech/hermes-soulmd]] — SOUL.md: как 50 строк задают характер агента
 - [[tech/hermes-agent-masterclass]] — перевод мастеркласса по архитектуре Hermes Agent, памяти и скиллам
+- [[hermes/skills/memory-wiki-workflow.SKILL]] — скилл работы с вики (wiki-write, zvec-поиск, аудит здоровья)
+- [[hermes/skills/memory-management.SKILL]] — скилл управления системами памяти (консолидация, health-мониторинг)
+- [[hermes/skills/state-db-hardline-rule]] — жёсткий запрет трогать state.db (канон сырых сессий Hermes)
+- [[hermes/skills/hindsight-mental-models.SKILL]] — скилл: mental models и knowledge pages Hindsight
+- [[hermes/skills/hindsight-migration-2026-08]] — переезд на Hindsight: бэкфилл и архитектура (2026-08-20)
+- [[hermes/skills/hindsight-mm-tags-and-zvec-mcp-2026-08]] — verified learnings: MM tags-scoping + zvec MCP/wiki-write
+- [[hermes/skills/hindsight-verify-live-2026-08]] — проверка Hindsight вживую после переезда (verified 21.08)
 
 - [[secrets/hermes-telegram-bot-token]] — Telegram Bot Token для Hermes Gateway
 ## 1С
@@ -221,6 +241,8 @@ _Обновлено: 2026-08-20_
 - [[purchased/mcp-1c/1c-code-checker]] — MCP: проверка через 1С:Напарник
 - [[purchased/mcp-1c/templates-search]] — MCP: шаблоны кода 1С
 - [[purchased/mcp-1c/code-metadata-search]] — MCP: поиск по коду и метаданным
+- [[tools/1c-mcp-catalog]] — 1c-mcp: каталог 35+ MCP-серверов для 1С (AI-разработка, интеграции, DevOps)
+- [[tools/1c-ai-connector]] — ИИкона (КИИ): AI-коннектор для 1С 8.3 — RAG, агентская петля, MCP-сервер
 
 ## Hardware
 - [[hardware/xe2690-workstation]] — домашняя рабочая станция XE2690
@@ -228,6 +250,10 @@ _Обновлено: 2026-08-20_
 - [[tasks/mul-239-codegraph-in-gsd]] — MUL-239: добавить CodeGraph в GSD squad
 - [[tasks/hindsight-vs-memos-decision]] — решение MUL-874: Hindsight vs MemOS vs EverOS (стабильность, многослойность, хуки)
 - [[ops/workflow/new-project-with-codegraph]] — рабочий процесс: CodeGraph для новых проектов
+- [[tasks/zvec-mcp-and-wiki-write]] — MUL-891: MCP-поиск по вики + единый writer wiki-write
+- [[tasks/dsh-hindsight-plugin]] — плагин DeepSeek Harness → Hindsight (общая память с Hermes)
+- [[tasks/hindsight-memory-migration]] — переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain
+- [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
 - [[tech/make-interfaces-feel-better]] — UI-рекомендации (Jakub Krehel, 30K+ установок)
@@ -250,6 +276,10 @@ _Обновлено: 2026-08-20_
 - [[tools/rtk]] — RTK: Rust CLI-прокси для сжатия вывода команд перед LLM (60–90% токенов)
 - [[tools/openminis]] — OpenMinis: мобильный AI-агент с Linux shell
 - [[tech/devin-ai-agent]] — AI Software Engineer от Cognition Labs (Windsurf → Devin). Включает GLM-5.2 в Pro
+- [[tools/tgrep]] — tgrep: trigram-индексированный grep от Microsoft (до 52× быстрее rg на монорепах)
+- [[tools/cmu-agents]] — CMU Agents: материал по AI-агентам от Carnegie Mellon для геймдева (MUL-10074)
+- [[tools/browser-skill]] — BrowserSkill: ИИ-агент в твоём браузере с логинами и куками (Tencent, MIT)
+- [[tools/codex-chatgpt-web]] — codex-chatgpt-web: ChatGPT Web (включая Pro) как нативные модели Codex
 
 ## LLM
 - [[llm/local-gemma-4-12b-setup]] — локальный запуск Gemma 4 12B coder на XE2690
@@ -257,6 +287,9 @@ _Обновлено: 2026-08-20_
 - [[llm/vibethinker]] — VibeThinker 1.5B/3B: SOTA reasoning от WeiboAI. Обходит DeepSeek R1 на AIME, 1.8 GB в Q4
 - [[chinese-ai-pricing-research]] — Исследование цен на подписки китайских AI-провайдеров (Qwen, GLM, Kimi, MiniMax)
 - [[tech/qwen38-flash-next-176b-1080ti]] — 176B-класс Qwen3.8-Flash-Next на GTX 1080 Ti 11 GB: llama.cpp offload + DSH, 11 tok/s
+- [[tech/ternary-bonsai-2]] — Ternary Bonsai 2: 27B на Qwen3.8, трёхзначное квантование, 5.9 ГБ, vision + tools
+- [[tech/freetoken-edge-moe-serving-for-personal-hardware]] — FreeToken: MoE до 753B на персональном железе (CPU+GPU+RAM как единый пул)
+- [[tools/wemm-embedding]] — WeMM-Embedding: мультимодальные эмбеддинги Tencent (text/image/video, matryoshka)
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
 - [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)
@@ -276,6 +309,11 @@ _Обновлено: 2026-08-20_
 - [[tech/omarchy]] — Omarchy: Opinionated Linux от DHH (Basecamp)
 - [[tools/find-skills]] — мета-скилл для поиска agent-скиллов через CLI (npx skills, skills.sh)
 - [[tech/Mercury-Agent-Skills]] — библиотека скиллов Mercury Agent, совместимая с Hermes
+- [[ops/hermes/hindsight-consolidation-risk]] — риск: консолидация Hindsight на opencode-go/mimo-v2.5 без fallback
+
+## Паттерны
+- [[patterns/vibe-coding-memory-architecture]] — память для вайбкодинга: Cognee + OpenViking как MCP-серверы
+- [[patterns/1c-multi-agent-development]] — мультиагентная разработка 1С: координатор + агенты разработки
 
 ## Статьи
 - [[articles/1c-autonomous-ai-development]] — паттерн автономной разработки 1С с ИИ-агентами (два проекта, координатор + разработчик)
@@ -300,6 +338,7 @@ _Обновлено: 2026-08-20_
 - [[archive/habr-vpn/habr-1036100-proxy-vpn-part1]] — оффлайн-копия: извращения из мира прокси и VPN (часть 1)
 - [[archive/habr-vpn/habr-1065064-proxy-vpn-part2]] — оффлайн-копия: извращения из мира прокси и VPN (часть 2)
 - [[archive/habr-planning-4gen/index]] — оффлайн-копия: планирование 4-го поколения (Кови + GTD), шаблон промпта для агента
+- [[archive/habr-planning-4gen/habr-1067696-planning-4gen]] — Habr 1067696: планирование 4-го поколения (Кови + GTD)
 
 - [[flag_rebuild]] — флаг пересборки для инфраструктурных пайплайнов
 

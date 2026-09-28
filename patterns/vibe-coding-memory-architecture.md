@@ -3,7 +3,12 @@ title: "Архитектура памяти для вайбкодинга: Cogne
 type: pattern
 source: community (vibe-coding курс, обновление 2026-09)
 date: 2026-09-09
+description: Паттерн памяти для вайбкодинга — Cognee (графовая память) плюс OpenViking (RAG, файловая система) как MCP-серверы для любых AI-агентов.
 tags: [cognee, openviking, mcp, memory, vibe-coding, architecture]
+related:
+  - tech/cognee
+  - ops/services/openviking
+  - patterns/1c-multi-agent-development
 ---
 
 # Архитектура памяти для вайбкодинга
@@ -66,6 +71,6 @@ tags: [cognee, openviking, mcp, memory, vibe-coding, architecture]
 
 ## Связано
 
-- [[cognee]] — графовая память
+- [[tech/cognee]] — графовая память
 - [[openviking]] — RAG с FS-интерфейсом
-- [[hindsight]] — альтернатива (entity graph, CTE)
+- [[ops/services/hindsight]] — альтернатива (entity graph, CTE)

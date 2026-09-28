@@ -3,7 +3,11 @@ title: BrowserSkill (Tencent)
 type: tool
 source: https://github.com/Tencent/BrowserSkill
 date: 2026-09-11
+description: BrowserSkill (Tencent) — CLI-утилита и расширение, дающие ИИ-агенту доступ к настоящему браузеру пользователя, логинам, кукам и капчам.
 tags: [browser, ai-agent, mcp, tencent, tool, codex, claude-code, cursor, hermes]
+related:
+  - tech/jev-ultrafast
+  - tech/lightpanda-browser
 ---
 
 # BrowserSkill (Tencent)

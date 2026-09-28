@@ -1,6 +1,9 @@
 ---
 description: "ЖЁСТКИЙ запрет: state.db НИКОГДА не удалять, не чистить, не перезаписывать"
 tags: [state-db,hermes,memory,backup,rules]
+related:
+  - tasks/hindsight-memory-migration
+  - ops/services/hermes-agent
 ---
 
 # ЖЁСТКИЙ запрет (hardline): state.db НИКОГДА не удалять

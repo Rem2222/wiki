@@ -1,3 +1,11 @@
+---
+description: "Задача: выгрузка сессий и сообщений из Hermes state.db в OpenViking для долгосрочной памяти агента (экспорт, загрузка, semantic processing)."
+tags: [openviking, state-db, memory, migration, task]
+related:
+  - ops/services/openviking
+  - hermes/skills/state-db-hardline-rule
+---
+
 # OpenViking: загрузка данных из Hermes state.db
 
 ## Контекст

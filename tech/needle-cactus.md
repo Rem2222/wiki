@@ -1,6 +1,9 @@
 ---
 description: "Needle 2 (Cactus Compute) — 14MB tool-calling модель для edge-устройств (смартфоны, Raspberry Pi, ~28MB RAM)."
 tags: [llm,edge,on-device,tool-calling,small-model]
+related:
+  - tech/lfm25-vl-3b
+  - ops/services/ollama
 ---
 
 # Needle 2 (Cactus Compute)

@@ -3,7 +3,11 @@ title: Unity AI Agents Plugin
 type: tool
 source: https://unity.com/ai-agents (ожидается ссылка)
 date: 2026-09-09
+description: Официальный MCP-плагин Unity для ИИ-агентов — 29 навыков движка, поддержка Claude Code, Codex и Grok.
 tags: [unity, ai-agents, mcp, gamedev, claude-code, codex, grok]
+related:
+  - gamedev/ccgs-skills-research
+  - tools/cmu-agents
 ---
 
 # Unity AI Agents Plugin
@@ -28,7 +32,7 @@ UI, Rendering, Audio, Physics, Scenes, Multiplayer, Localization и другие
 
 Codex + Unity MCP + Blender MCP: агент создаёт модели → риг → анимации в Blender → переносит в Unity → пишет и запускает автотесты.
 
-## Зачем для我们的游戏
+## Зачем для нашей игры
 
 - MCP-плагин = стандартный интерфейс для AI-разработки в Unity
 - Команда Unity сама пишет навыки — качество выше community-плагинов
@@ -36,6 +40,6 @@ Codex + Unity MCP + Blender MCP: агент создаёт модели → ри
 
 ## Связано
 
-- [[unity_mcp]] — MCP для Unity (community)
+- `unity_mcp` — MCP для Unity (community)
 - [[mengto-skills-gamedev]] — Three.js skills для геймдева
-- [[ccgs-ux-spec]] — CCGS game design patterns
+- `ccgs-ux-spec` — CCGS game design patterns (скилл Hermes)

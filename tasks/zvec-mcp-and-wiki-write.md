@@ -1,6 +1,9 @@
 ---
 description: "MCP-поиск по вики + writer-скрипт wiki-write (задача MUL-891)"
 tags: [wiki,mcp,zvec,wiki-write,tasks]
+related:
+  - tech/zvec-mcp-wiki-search
+  - tools/wiki-search-current-state
 ---
 
 # 10. MCP-поиск по вики (read-only) + единый writer-скрипт wiki-write

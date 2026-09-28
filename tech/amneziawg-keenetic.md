@@ -3,6 +3,9 @@ description: "Как установить AmneziaWG 3.0 на Keenetic (не за
 tags: [tech, vpn, keenetic, awg, networking]
 source: https://share.google/3tmM4KVXdatexWGbK
 source_date: 2026-08-28
+related:
+  - tech/netbird
+  - ops/services/warp
 ---
 
 # AmneziaWG 3.0 на Keenetic

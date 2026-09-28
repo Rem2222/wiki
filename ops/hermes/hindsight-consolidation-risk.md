@@ -6,7 +6,7 @@ tags:
   - opencode-go
   - риск
 related:
-  - "[[tech/hindsight]]"
+  - "[[ops/services/hindsight]]"
   - "[[ops/hermes]]"
 created: 2026-08-21
 ---

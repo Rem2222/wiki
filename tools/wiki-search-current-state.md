@@ -1,7 +1,7 @@
 ---
 description: "Текущее состояние поиска по вики (2026-08-21): zvec-wiki (индекс bge-m3+FTS) основной, GBrain запас; наличие официального MCP-сервера zvec-mcp-server и оценка текущего варианта."
 tags: [wiki, zvec, gbrain, semantic-search, mcp, vector-db]
-related: "[[tools/zvec]] [[concepts/memory-retrieve-middleware]] [[tasks/hindsight-memory-migration]]"
+related: "[[tech/zvec]] [[concepts/memory-retrieve-middleware]] [[tasks/hindsight-memory-migration]]"
 status: current
 ---
 
@@ -57,6 +57,6 @@ status: current
 
 ## Связанные материалы
 
-- [[tools/zvec]] — сама встраиваемая векторная БД от Alibaba.
+- [[tech/zvec]] — сама встраиваемая векторная БД от Alibaba.
 - [[concepts/memory-retrieve-middleware]] — идея middleware-роутера над памятью/вики.
 - MUL-878 (GBrain→Zvec) — parent-задача в Multica.

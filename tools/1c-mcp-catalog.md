@@ -4,6 +4,9 @@ tags: [tools, 1c, ai, mcp, devops, catalog]
 source: https://github.com/Untru/1c-mcp
 version: v2026.08.25
 release_date: 2026-08-25
+related:
+  - tech/1c-mcp
+  - tools/1c-ai-connector
 ---
 
 # 1c-mcp — Каталог MCP-серверов для 1С

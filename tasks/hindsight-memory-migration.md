@@ -1,6 +1,9 @@
 ---
 description: "Переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain (задача)"
 tags: [hindsight,migration,memory,gbrain,tasks]
+related:
+  - ops/services/hindsight
+  - ops/services/agentmemory
 ---
 
 # Переезд памяти Hermes: agentmemory → Hindsight (+ разбор GBrain)

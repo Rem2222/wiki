@@ -3,6 +3,9 @@ description: "ChatGPT Web для Codex — использовать ChatGPT Web 
 tags: [tools, codex, chatgpt, ai, coding]
 source: https://github.com/miuuyy/codex-chatgpt-web
 stars: 2900
+related:
+  - tech/codex-cli-inference-optimization
+  - tech/free-claude-code
 ---
 
 # codex-chatgpt-web

@@ -3,7 +3,11 @@ title: tgrep
 type: tool
 source: https://github.com/microsoft/tgrep
 date: 2026-09-07
+description: Trigram-индексированный grep от Microsoft с клиент-серверной архитектурой — индекс строится один раз, запросы идут по нему (до 52× быстрее ripgrep на монорепах).
 tags: [search, code, rust, microsoft, grep]
+related:
+  - ops/services/codegraph
+  - tech/deepseek-harness
 ---
 
 # tgrep
@@ -61,5 +65,5 @@ tgrep search --server localhost:9999 "pattern"
 
 ## Связано
 
-- [[codegraph]] — граф зависимостей (tgrep для быстрого grep, codegraph для анализа)
-- [[deepseek_harness]] — DSH может использовать для навигации по коду
+- [[ops/services/codegraph]] — граф зависимостей (tgrep для быстрого grep, codegraph для анализа)
+- [[tech/deepseek-harness]] — DSH может использовать для навигации по коду

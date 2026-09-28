@@ -6,7 +6,7 @@ related: [[tech/agentation]] [[tech/Mercury-Agent-Skills]] [[concepts/mcp]]
 
 # AX
 
-# AX — оркестратор ИИ-агентов от Google
+## AX — оркестратор ИИ-агентов от Google
 
 **Сайт:** https://agentexecutor.io/
 **GitHub:** [google/ax](https://github.com/google/ax)

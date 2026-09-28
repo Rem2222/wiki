@@ -1,6 +1,9 @@
 ---
 description: "Проверка Hindsight вживую после переезда (verified 21.08.2026)"
 tags: [hindsight,verification,memory,hermes]
+related:
+  - ops/services/hindsight
+  - tasks/hindsight-memory-migration
 ---
 
 # Проверка Hindsight вживую после переезда (verified 21.08.2026)

@@ -1,6 +1,9 @@
 ---
 description: "Переезд памяти на Hindsight: бэкфилл + архивтектура (2026-08-20)"
 tags: [hindsight,migration,memory,hermes]
+related:
+  - ops/services/hindsight
+  - tasks/hindsight-memory-migration
 ---
 
 # Переезд памяти на Hindsight: бэкфилл + архитектура (2026-08-20)

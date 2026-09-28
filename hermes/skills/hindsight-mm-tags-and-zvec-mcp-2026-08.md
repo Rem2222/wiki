@@ -1,6 +1,9 @@
 ---
 description: "Hindsight MM scoping + zvec MCP/wiki-write: verified learnings (2026-08-21)"
 tags: [hindsight,zvec,mcp,wiki,hermes]
+related:
+  - ops/services/hindsight
+  - tech/zvec-mcp-wiki-search
 ---
 
 # Hindsight MM scoping + zvec MCP/wiki-write (2026-08-21)

@@ -9,6 +9,9 @@ metadata:
   hermes:
     tags: [hindsight, memory, mental-models, knowledge-pages, hermes, mcp]
     related_skills: [memory-management]
+related:
+  - ops/services/hindsight
+  - tasks/hindsight-memory-migration
 ---
 
 # Hindsight Mental Models & Knowledge Pages

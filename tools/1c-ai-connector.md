@@ -5,6 +5,9 @@ source: https://github.com/andromanpro/1c-ai-connector
 version: v1.3.1
 release_date: 2026-08-24
 stars: 89
+related:
+  - tech/1c-mcp
+  - tools/1c-mcp-catalog
 ---
 
 # ИИкона (КИИ) — AI-коннектор для 1С

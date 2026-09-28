@@ -3,7 +3,12 @@ title: "Мультиагентная разработка 1С: классиче�
 type: pattern
 source: community (vibe-coding курс, 2026-09)
 date: 2026-09-09
+description: Паттерн мультиагентной разработки 1С — координирующий агент (Hermes/OpenClaw) плюс агенты разработки (Cursor/Claude Code/Codex) со shared memory через MCP.
 tags: [1c, multi-agent, development, cursor, claude-code, codex, hermes, pattern]
+related:
+  - patterns/vibe-coding-memory-architecture
+  - articles/1c-autonomous-ai-development
+  - tech/1c-mcp
 ---
 
 # Мультиагентная разработка 1С
@@ -105,8 +110,8 @@ tags: [1c, multi-agent, development, cursor, claude-code, codex, hermes, pattern
 
 ## Связано
 
-- [[vibe-coding-memory-architecture]] — Cognee + OpenViking как MCP
-- [[cognee]] — графовая память
+- [[patterns/vibe-coding-memory-architecture]] — Cognee + OpenViking как MCP
+- [[tech/cognee]] — графовая память
 - [[openviking]] — RAG память
-- [[deepseek_harness]] — пример кодинг-агента
-- [[1c_mcp_project]] — MCP для 1С
+- [[tech/deepseek-harness]] — пример кодинг-агента
+- [[tech/1c-mcp]] — MCP для 1С

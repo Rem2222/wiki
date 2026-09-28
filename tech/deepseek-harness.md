@@ -1,7 +1,7 @@
 ---
 description: DeepSeek Harness (dsh) — агентный harness от DeepSeek AI «Everything is a Plugin» на Cordis. Developer preview (13.08.2026), 94.8k⭐ за 2 дня (вирусный рост +145%/сутки). Мониторинг: Ночная рутина (шаг 5.5).
 tags: [deepseek, agent-harness, cordis, plugins, acp, trend]
-related: [[tech/semantica]] [[tech/agent-harness-research]]
+related: [[tech/semantica]] [[concepts/waku-agent]]
 ---
 
 # DeepSeek Harness (dsh)

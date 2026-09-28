@@ -1,5 +1,6 @@
 ---
 title: WeMM-Embedding
+description: Мультимодальная модель эмбеддингов от Tencent (WeChat Vision team) — текст, изображения, видео и документы, matryoshka-размерности 64–4096.
 created: 2026-09-05
 status: reference
 tags: [embedding, multimodal, tencent, wechat, ai]

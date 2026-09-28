@@ -1,10 +1,14 @@
 ---
 name: memory-wiki-workflow
-description: Work with Rem2222's personal LLM-wiki — a markdown wiki at ~/Documents/wiki/ with [[wiki-links]], YAML frontmatter, and cross-referenced pages. Based on SCHEMA.md and AGENTS.md from the wiki itself.
+description: Work with Rem2222's personal LLM-wiki — a markdown wiki at ~/Documents/wiki/ with wiki-links, YAML frontmatter, and cross-referenced pages. Based on SCHEMA.md and AGENTS.md from the wiki itself.
 version: 1.2.0
 author: Rem2222
 license: MIT
 platforms: [linux]
+tags: [wiki, zvec, memory, workflow, skill]
+related:
+  - tasks/zvec-mcp-and-wiki-write
+  - tech/zvec
 ---
 
 # Memory Wiki Workflow
@@ -76,7 +80,11 @@ wiki-write --title "Название" --dir tech \
 ---
 description: Краткое описание (2-3 предложения, суть)
 tags: [тег1, тег2]
-related: [[Связанная страница1]] [[Связанная страница2]]
+updated: YYYY-MM-DD
+source: "https://..."
+related:
+  - tech/связанная-страница1
+  - tools/связанная-страница2
 ---
 
 # Название
@@ -88,7 +96,20 @@ related: [[Связанная страница1]] [[Связанная стра�
 **Поля frontmatter для content-страниц:**
 - `description:` — обязателен. Одно предложение.
 - `tags:` — массив lowercase-тегов. Хотя бы один.
-- `related:` — `[[wikilinks]]` на связанные страницы. Если связей нет — можно убрать поле.
+- `related:` — **многострочный список голых путей** (см. формат выше). Поле обязано содержать хотя бы один реальный путь: пустое `related: []` и отсутствие поля `related` дают одинаковую запись в health-check (`U+1F517 No related links`) — проверено запуском `audit_page` на обоих вариантах. Если связей совсем нет — добавь одну уместную соседнюю страницу, а не оставляй пустым.
+- `updated:` — дата последней правки (встречается почти на всех свежих страницах).
+- `source:` — URL источника, если страница сделана по внешней статье/репо.
+
+⚠️ **Формат `related:`: реальность важнее примера.** Замер по всему вики (232 страницы с полем):
+
+| Формат | Кол-во |
+|---|---|
+| `related:` + `- path/to/page` (многострочный) | **191 страница / 258 элементов** |
+| inline-строка (`related: tech/x tools/y`) | 59 |
+| `related: [[tech/x]]` в квадратах | 17 |
+| `related: [[a]] [[b]]` — формат, который раньше был в этом скилле | **0** |
+
+Пиши **многострочный список голых путей** (`- tech/x`, `- devops/y`) — это де-факто стандарт вики и то, что понимает `wiki-health-check.py`. Путь бери такой же, как в wikilink (`tech/`, `tools/`, `devops/`, `ops/services/`…). Никогда не смешивай стили внутри одного блока — один элемент в `"[[]]"`, другой голым путём, выглядит как мусор.
 
 **⚠️ SCHEMA.md может быть устаревшим.** В SCHEMA.md указаны поля `title/type/created/updated/sources`, но реальные страницы вики используют `description/tags/related`. Опирайся на фактический формат существующих страниц, а не на SCHEMA.md.
 
@@ -148,7 +169,7 @@ related: [[Связанная страница1]] [[Связанная стра�
 2. **Потом index.md** — если zvec не дал результата, прочитай `index.md` для поиска по категориям
 3. **Прочитать нужные страницы** — `read_file` из `~/Documents/wiki/`
 4. **Синтезировать ответ**
-5. Если ответ ценный — сохранить как новую страницу (в локальную вику; GBrain остаётся как бэкап до cutover)
+5. Если ответ ценный — сохранить как новую страницу (в локальную вику)
 
 **Почему zvec первым:** zvec покрывает все Markdown-файлы вики с полным текстом (FTS) + векторными эмбеддингами (bge-m3). `index.md` — это ручной каталог, который может устаревать. zvec находит даже то, что не было явно залинковано в index.md.
 
@@ -160,7 +181,7 @@ related: [[Связанная страница1]] [[Связанная стра�
 python3 /root/.hermes/scripts/wiki-health-check.py
 ```
 
-Проверяет: frontmatter, description/tags/related, множественные H1, битые [[wikilinks]], страницы-сироты, git conflicts.
+Проверяет: frontmatter, description/tags/related, множественные H1, битые wikilinks, страницы-сироты, git conflicts.
 
 Если проблем > 10 — агент создаёт подзадачу на полный Maintenance Audit (см. ниже).
 
@@ -192,65 +213,28 @@ python3 /root/.hermes/scripts/wiki-health-check.py
 - **Не трогать `raw/`** — это read-only источники
 - **`log.md` append-only** — только добавлять записи
 
-## GBrain Wiki Workflow (альтернативный путь)
+## ⛔ GBrain ВЫКЛЮЧЕН 23.08.2026
 
-У Rem теперь **два места** для вики-страниц:
+**GBrain больше не работает** (systemd `gbrain-http` + docker `gbrain-postgres` остановлены, MCP-сервер `gbrain` убран из `/root/.hermes/config.yaml`). Cutover GBrain→Zvec выполнен (MUL-878). Всю работу с вики — через локальные файлы `~/Documents/wiki/` + **zvec-wiki** (поиск) + **wiki-health-check.py** (аудит). НЕ использовать `gbrain doctor`, `mcp_gbrain_*`, `http://localhost:3131`. Ниже отсечено ненужное наследие.
 
-1. **Локальная файловая система:** `~/Documents/wiki/` — описана выше. Синхронизируется с Obsidian через CouchDB/LiveSync.
-2. **GBrain (MCP):** через `mcp_gbrain_put_page` — живёт в векторной БД. Доступна через GBrain search/query.
+## Вики — только локальная (Obsidian-файлы `~/Documents/wiki/`)
 
-### Когда что использовать
+Единственный источник вики — локальные markdown-файлы в `~/Documents/wiki/` (синхронизируются с Obsidian через CouchDB/LiveSync). GBrain-путь удалён.
 
-| Сценарий | Куда писать |
+- Полнотекстовый/семантический поиск: **`zvec-wiki "<query>"`** (гибрид вектор bge-m3 + FTS по `~/Documents/wiki/`)
+- Запись новых страниц: **`wiki-write`** (единый writer, сам git commit + rebuild zvec-индекса)
+- Аудит здоровья: **`python3 /root/.hermes/scripts/wiki-health-check.py`**
+
+| Сценарий | Куда писать / как искать |
 |---|---|
 | Заметка для Obsidian, файл нужен в редакторе | Локальная вика (`~/Documents/wiki/`) |
 | Краткий обзор инструмента/проекта для быстрого поиска | Локальная вика (+ zvec-wiki её индексирует) |
 | Нужна интеграция с вики-ссылками `[[wikilinks]]` | Локальная вика |
 | Нужен full-text/семантический поиск | **zvec-wiki** (гибрид вектор bge-m3 + FTS по `~/Documents/wiki/`) |
-| Пользователь сказал «в вики» — и не уточнил | Уточни: локальная вика или GBrain |
 
-> **Семантический поиск теперь на zvec.** GBrain (MCP) остаётся как бэкап до подтверждённого cutover (MUL-878): его НЕ удалять, в него по-прежнему можно писать `mcp_gbrain_put_page`, но читать/искать вики семантически нужно через `zvec-wiki`.
-
-### GBrain put_page формат
-
-Формат страницы — markdown с YAML frontmatter, как и в локальной вике, но с дополнительным source-контекстом:
-
-```markdown
----
-description: Краткое описание
-tags: [тег1, тег2]
-related: [[related-page]]
----
-
-# Заголовок
-
-## Что это
-
-## Детали
-```
-
-**Особенности:**
-- Slug выбирается по структуре: `tools/name`, `tech/name`, `projects/name` и т.д.
-- Tags и description обязательны — из них GBrain строит поисковые индексы
-- GBrain сам парсит `[[wikilinks]]` из контента в граф связей (но только при включённом auto_link — на удалённом вызове может быть `skipped: "remote"`, как в этой сессии)
-- `mcp_gbrain_put_page` создаёт или обновляет страницу по slug
-- Для большого контента (свыше ~45KB) используй `gbrain capture --file PATH --slug SLUG` из terminal
-
-### Сопоставление slug-префиксов с категориями
-
-| Категория | GBrain slug-prefix | Локальная вика |
-|---|---|---|
-| Технологии | `tech/` | `~/Documents/wiki/tech/` |
-| Инструменты | `tools/` | `~/Documents/wiki/tools/` |
-| Проекты | `projects/` | `~/Documents/wiki/projects/` |
-| События | `events/` | `~/Documents/wiki/events/` |
-| Концепции | `concepts/` | `~/Documents/wiki/concepts/` |
-| Статьи | `articles/` | `~/Documents/wiki/articles/` |
-
-Старайся сохранять единый slug-префикс в GBrain для согласованности с локальной викой.
 - **⚠️ Инфраструктура в вики может быть устаревшей.** Вики содержит записи со старого VPS (81.17.100.103 / rem2222.top) — CouchDB, Obsidian LiveSync, Authelia, сервисы — данные которого утеряны. Опираться только на то, что делали вместе на текущем сервере (80.241.218.110). Не ссылаться на сервисы из старых страниц как на рабочие, если не проверено.
 - **🚫 НИКОГДА не перезагружать сервер, Hermes Agent, gateway или другие тулзы без явного разрешения Rem.** На сервере могут работать несколько агентов — перезагрузка нарушит их работу.
-- **🔍 Когда Rem просит «поищи в памяти» / «вспомни» / «что там по …» — используй ВСЕ доступные источники памяти:** session_search (прошлые сессии), wiki (база знаний), agentmemory (MCP), GBrain (MCP), любой другой подключённый memory MCP. Не ограничивайся одним источником. Загрузи соответствующие скиллы, если нужно.
+- **🔍 Когда Rem просит «поищи в памяти» / «вспомни» / «что там по …» — используй ВСЕ доступные источники памяти:** session_search (прошлые сессии), wiki (база знаний), Hindsight (память-напарник), zvec-wiki (вики). Не ограничивайся одним источником. Загрузи соответствующие скиллы, если нужно.
 
 ### Pitfalls
 
@@ -264,6 +248,8 @@ related: [[related-page]]
 
 ⚠️ **После коммита предупреди Rem о возможном Git конфликте в Obsidian.** Obsidian Git plugin делает авто `git pull --rebase` при синке. Если за время работы на сервере появились новые коммиты — пользователь увидит диалог конфликта на мобилке.
 - **При масс-фиксе (100+ страниц):** после `git commit` делай `git pull --rebase origin master` перед `git push`. Obsidian Git plugin мог записать коммиты за время твоей работы.
+
+⚠️ **При вставке новой секции в конец файла не дублируй разделитель `---`.** Уже существующая секция почти всегда заканчивается строкой `---`. Если в `new_string` для `patch` добавить свой `---` перед `## `, получаются два подряд — валидность YAML не ломается, но рендер Obsidian показывает мусор. Перед патчем смотри на строку выше цели (grep -B1 '^---$'), и если разделитель уже есть — начинай `new_string` сразу с `\n## `. После вставки проверяй: `grep -c '^---$'` не должен вырасти больше чем на 1.
 
 ⚠️ **Дубликаты `tags:` в frontmatter.** При конвертации старых страниц (# title + **Field:** метаданные → YAML ---) может остаться пустое `tags:` в теле frontmatter после уже добавленного `tags: [tech]`. Проявляется как 2 строки `tags:` — одна с содержимым, вторая пустая. После механического фикса запусти проверку: если grep находит 2+ `tags:` в одном файле — удали лишнюю.
 
