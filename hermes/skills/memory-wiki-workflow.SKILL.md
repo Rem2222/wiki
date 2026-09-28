@@ -181,7 +181,7 @@ related:
 python3 /root/.hermes/scripts/wiki-health-check.py
 ```
 
-Проверяет: frontmatter, description/tags/related, множественные H1, битые [[wikilinks]], страницы-сироты, git conflicts.
+Проверяет: frontmatter, description/tags/related, множественные H1, битые wikilinks, страницы-сироты, git conflicts.
 
 ⚠️ Аудит битых ссылок игнорирует `[[...]]` внутри ```code```-блоков и `code`-спанов (примеры документации — Obsidian не линкует код). Патч в `wiki-health-check.py` → `audit_links()` (strip code перед regex). Поэтому почти все «битые» ссылки из `hermes/skills/*.SKILL.md` — ложные; реальные битые ссылки ищи в обычных контент-страницах.
 
