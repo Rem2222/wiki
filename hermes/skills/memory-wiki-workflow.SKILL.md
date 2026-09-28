@@ -181,9 +181,13 @@ related:
 python3 /root/.hermes/scripts/wiki-health-check.py
 ```
 
-Проверяет: frontmatter, description/tags/related, множественные H1, битые wikilinks, страницы-сироты, git conflicts.
+Проверяет: frontmatter, description/tags/related, множественные H1, битые [[wikilinks]], страницы-сироты, git conflicts.
+
+⚠️ Аудит битых ссылок игнорирует `[[...]]` внутри ```code```-блоков и `code`-спанов (примеры документации — Obsidian не линкует код). Патч в `wiki-health-check.py` → `audit_links()` (strip code перед regex). Поэтому почти все «битые» ссылки из `hermes/skills/*.SKILL.md` — ложные; реальные битые ссылки ищи в обычных контент-страницах.
 
 Если проблем > 10 — агент создаёт подзадачу на полный Maintenance Audit (см. ниже).
+
+⚠️ **Zvec rebuild блокирует поиск.** Полный `build_index.py` (~35 мин на ~1580 док) держит эксклюзивный LOCK — на время rebuild CLI `zvec-wiki` падает с `Can't lock read-only collection` (это норма, ждать окончания). Rebuild без `--force` делает upsert по детерминированным id (`w_<sha1(page)>_<i>`). Страницы, созданные ПОСЛЕ старта `os.walk` в начале rebuild, в индекс не попадут — нужен следующий rebuild или точечный insert (открыть коллекцию, вставить чанки страницы тем же кодом, flush+optimize).
 
 После масс-фикса (100+ страниц) — обязательно `git pull --rebase` перед `git push`, иначе Obsidian Git plugin создаст конфликт на телефоне Rem.
 
