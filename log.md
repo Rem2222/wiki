@@ -347,3 +347,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - wiki-health-check.py: аудит ссылок игнорирует [[...]] внутри ```code``` и `code` — 48 «битых» ссылок-примеров в скилле были ложными (Obsidian не линкует код). Скилл memory-wiki-workflow: убран [[wiki-links]] из description, wiki-копия синхронизирована с источником + tags/related.
 - Zvec: полный rebuild (1582 чанка, ~35 мин) держит эксклюзивный LOCK — zvec-wiki временно падает с "Can't lock read-only collection" (норма). tech/qwen-tp создан после старта walk rebuild'а — добавлен в индекс точечным insert.
 - git: коммиты "wiki: Cognee", "wiki: qwen-tp", "wiki-health 2026-09-28" — push OK, рабочее дерево чистое.
+
+## [2026-09-28] ingest | deepseek-4-1 — Assistant Operating Specification
+
+- Источник: https://github.com/togg53192-cmd/jailbreaks/blob/main/deepseek-4-1.md — репо описывает себя как «LIST OF ALL MY JAILBREAKS», публичное, 1 475⭐ / 225 форков, 25 файлов по одному на модель, без лицензии. Последний пуш 24.09.2026.
+- Создана страница [[prompts/deepseek-4-1-assistant-spec]] — разбор: структура (10 разделов), 8 приёмов механики (перенос линии из категории в вред, замыкание списка из 5 запретов, over-refusal как дефект, блок переоценки §7, заряженные слова = параметры, защита от дрейфа §10, снятие аудитории, мимикрия под продуктовую спецификацию), ограничения.
+- Оригинал сохранён как [[raw/deepseek-4-1]] — 14 788 байт, 120 строк, sha256 6b6d56797e68c10e0ffb4274fe0cf8aca1b55b8f74c9b2d89e0089d972dff7ed (совпадает с выкачанным из raw.githubusercontent). Лежит в raw/, а не в prompts/: SCHEMA определяет raw как «исходники, не менять», и wiki-health-check.py его не сканирует — так оригиналу не добавляют YAML-фронтматтер и портят sha256.
+- index.md: +2 записи в секцию «Промпты».
+- Проверено, что credentials.json токена Qwen в публичном репо github.com/Staks-sor/qwen_free_api НЕ утёк — в дереве только .gitignore и credentials.example.json.
