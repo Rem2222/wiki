@@ -337,3 +337,13 @@ _Append-only. Формат: `## [дата] type | описание`_
 - ЦЕНА: $0.042/MTok вход, вывод бесплатно. Но typesafe.ai/pricing отдаёт 404 - официальной страницы цен НЕТ, ключ только через waitlist (console.typesafe.ai). Цифра подтверждается лишь сторонними обзорами.
 - Правки: в tech/jev-jevrouter обновлён раздел Статус (был 'нужно попробовать' -> теперь есть конкретный кандидат) + добавлены оговорки про цену.
 - ПРОБЕЛ ИСПРАВЛЕН: tech/jev-jevrouter вообще отсутствовала в index.md, хотя страница была создана раньше. Добавлены обе записи рядом с webwright.
+
+## [2026-09-28] health | wiki-health: 63 → 0 проблем
+
+- Еженедельный аудит wiki-health-check.py: 63 проблемы на 322 страницах → все исправлены, финальный прогон "Wiki health: OK".
+- Frontmatter: +description (9 страниц), +tags (1), +related (26), frontmatter целиком для openviking-task-description.md.
+- Битые wikilinks (21 реальный): исправлены на существующие пути ([[deepseek_harness]] → [[tech/deepseek-harness]], [[tools/zvec]] → [[tech/zvec]], [[tech/ollama-on-vps]] → [[ops/services/ollama]], [[hindsight]] → [[ops/services/hindsight]], [[tech/gbrain]] → [[tech/gbrain-lossless-agent-memory]], [[tech/llm-tier-strategy]] → [[concepts/llm-tier-strategy]] и др.); для [[cognee]] и [[tech/qwen-tp]] созданы новые страницы через wiki-write.
+- tech/ax.md: demote второго H1. Сироты (33): все прописаны в index.md (новая секция ## Паттерны + Сервисы/Технологии/LLM/1С/Инструменты/GameDev/Память/Tasks/Hermes Agent/Разное), дата индекса → 2026-09-28.
+- wiki-health-check.py: аудит ссылок игнорирует [[...]] внутри ```code``` и `code` — 48 «битых» ссылок-примеров в скилле были ложными (Obsidian не линкует код). Скилл memory-wiki-workflow: убран [[wiki-links]] из description, wiki-копия синхронизирована с источником + tags/related.
+- Zvec: полный rebuild (1582 чанка, ~35 мин) держит эксклюзивный LOCK — zvec-wiki временно падает с "Can't lock read-only collection" (норма). tech/qwen-tp создан после старта walk rebuild'а — добавлен в индекс точечным insert.
+- git: коммиты "wiki: Cognee", "wiki: qwen-tp", "wiki-health 2026-09-28" — push OK, рабочее дерево чистое.
