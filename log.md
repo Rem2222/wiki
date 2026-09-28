@@ -355,3 +355,22 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Оригинал сохранён как [[raw/deepseek-4-1]] — 14 788 байт, 120 строк, sha256 6b6d56797e68c10e0ffb4274fe0cf8aca1b55b8f74c9b2d89e0089d972dff7ed (совпадает с выкачанным из raw.githubusercontent). Лежит в raw/, а не в prompts/: SCHEMA определяет raw как «исходники, не менять», и wiki-health-check.py его не сканирует — так оригиналу не добавляют YAML-фронтматтер и портят sha256.
 - index.md: +2 записи в секцию «Промпты».
 - Проверено, что credentials.json токена Qwen в публичном репо github.com/Staks-sor/qwen_free_api НЕ утёк — в дереве только .gitignore и credentials.example.json.
+
+## [2026-09-28] ingest | harvard-ai-tutor-rct — Гарвард: ИИ-тьютор против профессоров
+
+- Источник: https://www.nature.com/articles/s41598-025-97652-6 — «AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting», Scientific Reports. 213k просмотров, 202 цитирования.
+- Создана [[tech/harvard-ai-tutor-rct]] с тегом `ииобучение` — материал к проекту-«обучалке» Романа.
+- ВСЕ цифры сверены с первоисточником (curl полной страницы, 355 КБ, разбор скриптом), а не по пересказу:
+  - PS2, Fall 2023, зачислено 233 → в анализе 194 ✓
+  - crossover: неделя 1 одни группы с ИИ / другие в классе, неделя 2 условия меняются ✓
+  - медианный пост-тест: ИИ M=4.5 (N=142) vs класс M=3.5 (N=174) ✓
+  - базовая линия pre-test M=2.75 (N=316), прирост в ИИ-группе «over double» ✓ (Mann–Whitney z=−5.6)
+  - 70% в ИИ-группе <60 мин, медиана 49 мин (класс — 60 мин из 75-минутного занятия) ✓
+  - вовлечённость 4.1 vs 3.6 (t(311)=−4.5, p<0.0001), мотивация 3.4 vs 3.1 (t(311)=−3.4, p<0.001) ✓
+  - enjoyment и growth mindset — значимой разницы НЕТ
+  - 83% сочли объяснения ИИ не хуже/лучше человеческих
+- 7 педагогических принципов подтверждены дословной цитатой статьи: (i) active learning, (ii) cognitive load, (iii) growth mindset, (iv) scaffolding, (v) accuracy of information/feedback, (vi) targeted & timely feedback, (vii) self-pacing. Отмечено, что (vi)–(vii) физически недоступны одному преподавателю на потоке.
+- Анти-галлюцинационный приём подтверждён: «we avoided relying solely on GPT-4 ... enriched our prompts with comprehensive, step-by-step answers».
+- **Не подтверждено первоисточником** (на странице помечено отдельно): термин «угодничество»/sycophancy в статье отсутствует (0 совпадений по sycophan/people-pleas/agreeable) — есть только тезис «designed to be helpful, not to promote learning»; упоминаний Musk/Grok Educational/Сальвадор/PISA/Sweden в статье нет вообще (0 совпадений) — это авторская параллель Романа, помечена как таковая.
+- index.md: +1 запись в секцию «Статьи».
+- Ошибочно созданная ранее страница tech/free-proxy-auth-diagnostics.md удалена по решению Романа (я принял «закинь в Вики» за речь про диагностику прокси, тогда как оно относилось к тексту про Гарвард). В вики не попадала: index/log не трогались, коммита не было.

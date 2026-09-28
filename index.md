@@ -321,6 +321,7 @@ _Обновлено: 2026-09-28_
 - [[articles/adam-multiagent]] — мультиагентная система Adam
 - [[articles/anthropic-claude-code]] — использование Claude Code от Anthropic
 - [[articles/orchestrator-year]] — оркестрация AI-агентов, год работы
+- [[tech/harvard-ai-tutor-rct]] — Гарвардский RCT в Nature: ИИ-тьютор против профессоров (crossover, 194 студента, 4.5 vs 3.5) — 7 педагогических принципов дизайн
 
 ## События
 - [[events/1cvibeconf-2026]] — 2-я практическая конференция по вайбкодингу в 1С (22-23 мая 2026)
