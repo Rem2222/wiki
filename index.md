@@ -171,6 +171,8 @@ _Обновлено: 2026-09-28_
 - [[tech/poe-chutes-comparison]] — сравнение Poe API и Chutes AI
 - [[tech/optimizing-llm-api-calls-for-coding]] — оптимизация вызовов LLM API для кодинг-агентов
 - [[tech/llm-as-a-verifier]] — LLM-as-a-Verifier: верификация ответов LLM через logprobs (Best-of-N, self-verification). Усилитель для сложных задач, пока НЕ применимо к текущему стеку (нет top-k logprobs)
+- [[tech/command-code]] — Command Code: кодинг-агент taste-1 + Provider API (88 моделей, OpenAI/Anthropic-совместимый endpoint)
+- [[tech/opencode-deepseek]] — мост к бесплатному веб-чату DeepSeek как OpenAI-API (резерв, tool calling эмулируется)
 
 - [[tech/hermes-max-plugin]] — MAX Messenger (VK) plugin for Hermes Agent
 - [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy
