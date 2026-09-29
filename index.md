@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-09-28_
+_Обновлено: 2026-09-30_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -163,6 +163,7 @@ _Обновлено: 2026-09-28_
 - [[tech/mcpservers]] — каталог MCP-серверов (mcpservers.org)
 - [[tech/fastmcp]] — FastMCP: MCP фреймворк от PrefectHQ (25.7k ⭐, ~70% всех MCP серверов)
 - [[tech/opencode]] — установка и настройка OpenCode на VPS (anomalyco/opencode)
+- [[tech/opencode-go]] — основной inference-провайдер Hermes: подписка OpenCode Go, endpoint opencode.ai/zen/go/v1
 - [[tech/opencode-gigachat-plugin]] — плагин GigaChat для OpenCode (Сбер, OAuth, TLS РФ)
 - [[tech/opencode-notifier-ntfy]] — плагин OpenCode, шлёт ntfy-уведомления о событиях (permission/complete/error/question)
 - [[tech/ponytail]] — Ponytail: скилл «ленивый сеньор» для AI-агентов (80-94% меньше кода)

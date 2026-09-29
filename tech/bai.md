@@ -1,10 +1,8 @@
 ---
 description: "AI-платформа с полным LLM API на OpenAI/Anthropic-совместимых протоколах (api.b.ai/v1): мульти-модельный чат, оплата картой или криптой, без привязки личности."
 tags: [ai,provider,llm,api,web3]
-related: [[tech/command-code]] [[tech/opencode-deepseek]] [[tools/hermes]]
+related: [[tech/command-code]] [[tech/opencode-deepseek]] [[ops/services/hermes-agent]]
 ---
-
-# B.AI
 
 # B.AI (chat.b.ai)
 
@@ -76,7 +74,7 @@ AI-платформа: мульти-модельный чат + полный LLM
 
 ## Для чего это тебе (Rem)
 
-- ✅ **Настоящий API с нативным tool calling** — в отличие от эмуляции в [[tech/opencode-deepseek]]. Можно подключить к [[tools/hermes]] как custom provider (base_url `https://api.b.ai/v1`), к DSH/claude-code — через Anthropic-совместимый `/messages`.
+- ✅ **Настоящий API с нативным tool calling** — в отличие от эмуляции в [[tech/opencode-deepseek]]. Можно подключить к [[ops/services/hermes-agent]] как custom provider (base_url `https://api.b.ai/v1`), к DSH/claude-code — через Anthropic-совместимый `/messages`.
 - ✅ Дил на MiMo-V2.6-Flash (10%) — самый дешёвый мимо из виденного, а mimo у тебя основная модель.
 - ✅ Один ключ покрывает Claude/GPT/Gemini/Grok/DeepSeek — альтернатива [[tech/command-code]] (там 88 моделей за $15/мес PAYG, здесь без подписки но и без включённых кредитов).
 - ⚠️ Крипто-платформа: юрисдикция, стабильность и судьба баланса — риски. Реферальная связь на 2 года при регистрации по invite-ссылке.
@@ -86,4 +84,4 @@ AI-платформа: мульти-модельный чат + полный LLM
 
 - [[tech/command-code]] — прямой конкурент (Provider API, no markup)
 - [[tech/opencode-deepseek]] — бесплатный, но эмулирует tool calling; B.AI как раз закрывает этот пробел нормально
-- [[tools/hermes]], [[software/dsh]]
+- [[ops/services/hermes-agent]], [[tech/deepseek-harness]]

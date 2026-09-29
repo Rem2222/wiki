@@ -393,3 +393,10 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Осталось за владельцем: удалить блок `mcp_servers.codegraph` из /root/.hermes/config.yaml (агентам не трогать, MUL-696); данные графа (111 MB + 525 MB) не удалялись.
 - Также обновлены: автопилоты «Обнова мультика» (шаг 4) и «Ночная рутина» (health-check → «ожидается inactive, не алертить»), скилл multica-workflow.
 
+## [2026-09-30] audit | Wiki maintenance audit MUL-10087 — health-check 9 → 0
+
+- Битые wikilinks (5 целей): `[[software/freellmapi]]` → `[[tech/freellmapi]]`; `[[software/dsh]]` (3 страницы) → `[[tech/deepseek-harness]]`; `[[software/opencode-go]]` → `[[tech/opencode-go]]`; `[[tools/hermes]]` (7 вхождений в tech/opencode-deepseek, tech/bai, tech/command-code) → `[[ops/services/hermes-agent]]`.
+- Множественные H1 (3): в tech/opencode-deepseek, tech/bai, tech/command-code убран дублирующий голый `# Название`, оставлен описательный H1.
+- Новая страница: [[tech/opencode-go]] — основной inference-провайдер Hermes (подписка OpenCode Go, `opencode.ai/zen/go/v1`, fallback-цепочка, лимиты, `*-free` ≠ go); + запись в index.md.
+- Итог: `python3 /root/.hermes/scripts/wiki-health-check.py` → `Wiki health: OK` (330 контент-страниц), порог ночного правила >10 не достигнут. Закрыты как дубли старые audit-задачи.
+

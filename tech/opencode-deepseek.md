@@ -1,10 +1,8 @@
 ---
 description: "Локальный OpenAI-совместимый мост к бесплатному веб-чату DeepSeek — эмулирует API без ключа, но tool calling парсится из прозы и запросы сериализуются."
 tags: [ai,deepseek,free-api,bridge,opencode]
-related: [[tech/command-code]] [[tools/hermes]] [[software/freellmapi]]
+related: [[tech/command-code]] [[ops/services/hermes-agent]] [[tech/freellmapi]]
 ---
-
-# opencode-deepseek
 
 # opencode-deepseek (мост к бесплатному DeepSeek)
 
@@ -57,9 +55,9 @@ python app.py                    # http://127.0.0.1:8000
 
 - ✅ Экономия: полноценный бесплатный LLM-endpoint локально, без API-ключа.
 - ❌ **Не подходит для tool-heavy агентов** (Hermes, DSH, Mercury): эмулируемый tool calling ломается на нетривиальных цепочках, а сериализация убивает параллельные задачи.
-- ❌ Дублирует бесплатные пути к DeepSeek, уже имеющиеся в стеке: [[software/freellmapi]], opencode-go free-модели, дилы Command Code на deepseek-v4.1-flash.
+- ❌ Дублирует бесплатные пути к DeepSeek, уже имеющиеся в стеке: [[tech/freellmapi]], opencode-go free-модели, дилы Command Code на deepseek-v4.1-flash.
 - 📌 Резерв: если freellmapi или free-каналы отвалятся — этот мост как запасной вариант, когда нужно разово сэкономить.
 
 ## Связи
 
-- Родственные темы: [[tools/hermes]], [[tech/command-code]] (дешёвый официальный endpoint), [[software/dsh]]
+- Родственные темы: [[ops/services/hermes-agent]], [[tech/command-code]] (дешёвый официальный endpoint), [[tech/deepseek-harness]]

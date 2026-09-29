@@ -1,10 +1,8 @@
 ---
 description: "Кодинг-агент с системой taste-1 и Provider API — 88 моделей (Claude, GPT, DeepSeek, Kimi, GLM) через OpenAI/Anthropic-совместимый эндпоинт."
 tags: [ai,provider,llm,api,coding-agent]
-related: [[tools/hermes]] [[software/dsh]] [[tech/opencode-go]]
+related: [[ops/services/hermes-agent]] [[tech/deepseek-harness]] [[tech/opencode-go]]
 ---
-
-# Command Code
 
 # Command Code (commandcode.ai)
 
@@ -85,7 +83,7 @@ DeepSeek V4 Pro/Flash — off-peak тариф (17ч/день), peak в пн-пт
 - **Как дешёвый OpenAI-совместимый endpoint:** Provider plan $15/мес + DeepSeek V4 Flash по $0.15/$0.60 — дёшево для вспомогательных задач.
 - **Для DSH/Hermes:** можно подключить как кастомного провайдера (base_url `https://api.commandcode.ai/provider/v1`, key из Studio).
 - **Не для:** замены основной подписки Claude — там свой CLI-харнесс с taste-1, а API отдаёт голые модели.
-- Родственные темы: [[tools/hermes]], [[software/opencode-go]] (похожий по роли агрегатор моделей), [[software/dsh]].
+- Родственные темы: [[ops/services/hermes-agent]], [[tech/opencode-go]] (похожий по роли агрегатор моделей), [[tech/deepseek-harness]].
 
 ## Ссылки
 
