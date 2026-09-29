@@ -12,13 +12,13 @@ service:
   category: security
   purpose: Фаервол + защита от брутфорса
   install_date: 2025-05
-  last_verified: 2026-09-29
+  last_verified: 2026-09-30
   health_url: 
   type: systemd
   systemd_units:
     - fail2ban
   depends_on:
     []
-  last_verified: 2026-09-29
+  last_verified: 2026-09-30
   notes: "UFW: active. Fail2ban: 4 banned IP."
 ---

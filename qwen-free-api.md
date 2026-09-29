@@ -1,7 +1,7 @@
 ---
 description: Развёртывание FreeQwenApi — бесплатный Qwen API через web-чат на VPS
 tags: [qwen, api, proxy, selfhosted]
-related: [free-api-deepseek-qwen]
+related: [free-api-deepseek-qwen, "[[ops/services/freeqwenapi]]"]
 ---
 
 # FreeQwenApi

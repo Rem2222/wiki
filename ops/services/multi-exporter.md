@@ -13,7 +13,7 @@ service:
   category: monitoring
   purpose: Prometheus метрики для нескольких сервисов
   install_date: 2026-07-03
-  last_verified: 2026-09-29
+  last_verified: 2026-09-30
   health_url: 
   type: systemd
   ports:

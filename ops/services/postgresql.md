@@ -13,7 +13,7 @@ service:
   category: storage
   purpose: Реляционные БД
   install_date: 2025-05
-  last_verified: 2026-09-29
+  last_verified: 2026-09-30
   health_url: 
   type: docker
   ports:

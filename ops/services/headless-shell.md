@@ -13,7 +13,7 @@ service:
   category: proxies
   purpose: "Настоящий рендеринг и скриншоты через CDP (Playwright chromium_headless_shell). Появился как основной CDP-браузер для Hermes browser tools; lightpanda остаётся лёгкой альтернативой без реального рендера."
   install_date: 2026-09-28
-  last_verified: 2026-09-29
+  last_verified: 2026-09-30
   health_url: http://127.0.0.1:9222/json/version
   type: systemd
   ports:

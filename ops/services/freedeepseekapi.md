@@ -7,13 +7,14 @@ tags:
 type: service
 related:
   - ops/services/freellmapi
+  - "[[ops/services/freeqwenapi]]"
   - ops/services/gemini-web2api
 service:
   name: freedeepseekapi
   category: llm-proxy
   purpose: DeepSeek Web Chat proxy
   install_date: 2026-07-03
-  last_verified: 2026-09-29
+  last_verified: 2026-09-30
   health_url: "http://localhost:9655/"
   type: systemd
   ports:
