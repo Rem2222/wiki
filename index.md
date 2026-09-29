@@ -40,9 +40,9 @@ _Обновлено: 2026-09-28_
 - [[ops/services/agentmemory]] — долговременная память агента
 - [[ops/services/agentmemory-exporter]] — Prometheus метрики AgentMemory
 - [[ops/services/beszel]] — мониторинг CPU/RAM/диска
-- [[ops/services/cgc]] — MCP-сервер для кодовой базы Multica
+- [[ops/services/cgc]] — MCP-сервер для кодовой базы Multica (отключён 2026-09-29)
 - [[ops/services/cockpit]] — веб-интерфейс управления сервером
-- [[ops/services/codegraph]] — MCP-сервер для анализа кода
+- [[ops/services/codegraph]] — MCP-сервер для анализа кода (отключён 2026-09-29)
 - [[ops/services/dex]] — веб-дашборд и REST API для управления агентом Dex
 - [[ops/services/duc]] — визуализация использования диска
 - [[ops/services/freedeepseekapi]] — DeepSeek Web Chat proxy
