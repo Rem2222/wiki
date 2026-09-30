@@ -1,12 +1,13 @@
 ---
 description: "Промпт-гайд из 4 слоёв (Memory/Agent/Pulse/Screen) для превращения агента в ИОС: signpost-карта с двумя хопами, git-синк двух машин, реестр рутин с пробками, дашборд 'show, don't store'."
 tags: [ai,agent,memory,dashboard,prompts,framework]
-related: [[tech/maps-ideas]] [[tools/hermes]] [[wiki/tech/sdd]]
+related:
+  - tech/idei-iz-maps-dlya-steka-rem
+  - ops/services/hermes-agent
+  - concepts/sdd
 ---
 
 # MAPS — AI Operating System
-
-# MAPS — AI Operating System (прамп-гайд)
 
 ## Что это
 
@@ -119,10 +120,10 @@ links: [{s, t}]
 | Pulse | Hermes cron (ночная рутина, адъютант, ночной дозор, обнова мультика...), капы частично через `/gquota` |
 | Screen | Beszel + Grafana + Prometheus + skills dashboard. «Show, don't store» выполняется у Beszel/Grafana по построению |
 
-Отдельно: [[tech/maps-ideas]] — четыре конкретные идеи отсюда, разобранные под стек Rem.
+Отдельно: [[tech/idei-iz-maps-dlya-steka-rem]] — четыре конкретные идеи отсюда, разобранные под стек Rem.
 
 ## Связи
 
-- [[tech/maps-ideas]] — какие идеи взять
-- [[wiki/tech/sdd]] — другой подход к дисциплине агента
-- [[tools/hermes]], [[software/hermes]]
+- [[tech/idei-iz-maps-dlya-steka-rem]] — какие идеи взять
+- [[concepts/sdd]] — другой подход к дисциплине агента
+- [[ops/services/hermes-agent]] — cron, профили, approvals

@@ -175,6 +175,8 @@ _Обновлено: 2026-09-30_
 - [[tech/command-code]] — Command Code: кодинг-агент taste-1 + Provider API (88 моделей, OpenAI/Anthropic-совместимый endpoint)
 - [[tech/bai]] — B.AI: LLM API на api.b.ai/v1 (OpenAI/Anthropic-совместимо), мульти-модель, оплата картой/криптой
 - [[tech/opencode-deepseek]] — мост к бесплатному веб-чату DeepSeek как OpenAI-API (резерв, tool calling эмулируется)
+- [[tech/maps-ai-operating-system]] — MAPS: гайд из 4 слоёв (Memory/Agent/Pulse/Screen) для превращения агента в ИОС
+- [[tech/idei-iz-maps-dlya-steka-rem]] — 4 идеи из MAPS под стек Rem: один дом для фактов, пробки на cron, brain.json, профиль-ограничение
 
 - [[tech/hermes-max-plugin]] — MAX Messenger (VK) plugin for Hermes Agent
 - [[tech/chatgpt-codex-proxy-experiment]] — эксперимент ChatGPT Teacher → Hermes через Codex proxy

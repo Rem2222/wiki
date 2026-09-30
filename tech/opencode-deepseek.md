@@ -1,7 +1,10 @@
 ---
 description: "Локальный OpenAI-совместимый мост к бесплатному веб-чату DeepSeek — эмулирует API без ключа, но tool calling парсится из прозы и запросы сериализуются."
 tags: [ai,deepseek,free-api,bridge,opencode]
-related: [[tech/command-code]] [[ops/services/hermes-agent]] [[tech/freellmapi]]
+related:
+  - tech/command-code
+  - ops/services/hermes-agent
+  - tech/freellmapi
 ---
 
 # opencode-deepseek (мост к бесплатному DeepSeek)

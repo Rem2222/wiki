@@ -1,7 +1,10 @@
 ---
 description: "AI-платформа с полным LLM API на OpenAI/Anthropic-совместимых протоколах (api.b.ai/v1): мульти-модельный чат, оплата картой или криптой, без привязки личности."
 tags: [ai,provider,llm,api,web3]
-related: [[tech/command-code]] [[tech/opencode-deepseek]] [[ops/services/hermes-agent]]
+related:
+  - tech/command-code
+  - tech/opencode-deepseek
+  - ops/services/hermes-agent
 ---
 
 # B.AI (chat.b.ai)

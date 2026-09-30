@@ -1,7 +1,10 @@
 ---
 description: "Кодинг-агент с системой taste-1 и Provider API — 88 моделей (Claude, GPT, DeepSeek, Kimi, GLM) через OpenAI/Anthropic-совместимый эндпоинт."
 tags: [ai,provider,llm,api,coding-agent]
-related: [[ops/services/hermes-agent]] [[tech/deepseek-harness]] [[tech/opencode-go]]
+related:
+  - ops/services/hermes-agent
+  - tech/deepseek-harness
+  - tech/opencode-go
 ---
 
 # Command Code (commandcode.ai)

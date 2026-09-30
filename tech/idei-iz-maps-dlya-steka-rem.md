@@ -1,14 +1,15 @@
 ---
 description: "Четыре идеи из MAPS-гайда под стек Rem: правило 'один дом' для фактов, rolling-пробки на cron, ночной brain.json для графа вики, профиль-ограничение для безнадзорной машины."
 tags: [ai,agent,memory,cron,roadmap,ideas]
-related: [[tech/ai-os-maps]] [[software/zvec]] [[tools/hermes]]
+related:
+  - tech/maps-ai-operating-system
+  - tech/zvec
+  - ops/services/hermes-agent
 ---
 
 # Идеи из MAPS для стека Rem
 
-# Идеи из MAPS для стека Rem
-
-Четыре конкретные идеи из [[tech/ai-os-maps]], разобранные под то, что уже стоит на VPS и домашнем ПК. Уровень полезности — от самого большого к меньшему.
+Четыре конкретные идеи из [[tech/maps-ai-operating-system]], разобранные под то, что уже стоит на VPS и домашнем ПК. Уровень полезности — от самого большого к меньшему.
 
 ## 1. «У каждого факта ровно один дом» — правило, а не инструмент
 
@@ -62,7 +63,7 @@ related: [[tech/ai-os-maps]] [[software/zvec]] [[tools/hermes]]
 **Суть MAPS:** один JSON, который ночной скрипт пишет, обходя карту: каждый файл — узел, каждый wikilink — ребро. Страница рисует **один и тот же файл** шестью видами: rings / circle / areas / links / timeline / 3d orbit.
 
 **Что есть у Rem:**
-- Вики с `[[wikilinks]]` — уже граф, готовые `source → target` пары.
+- Вики с `wikilinks` — уже граф, готовые `source → target` пары.
 - zvec-индекс, где у чанков есть `page` / `category` / `title` — готовые атрибуты узла.
 - Ночной скрипт — уже есть (ночная рутина Multica, шаг 5.5).
 - Инструменты визуализации: скилл `markdown-viewer` (диаграммы, визуализации), `mermaid`, есть `visual-design`.
@@ -111,7 +112,7 @@ related: [[tech/ai-os-maps]] [[software/zvec]] [[tools/hermes]]
 
 ## Связи
 
-- [[tech/ai-os-maps]] — источник и все промпты целиком
-- [[tools/hermes]] — cron, профили, approvals
-- [[software/zvec]] — источник данных для графа
-- [[wiki/tech/sdd]] — соседний подход к дисциплине
+- [[tech/maps-ai-operating-system]] — источник и все промпты целиком
+- [[ops/services/hermes-agent]] — cron, профили, approvals
+- [[tech/zvec]] — источник данных для графа
+- [[concepts/sdd]] — соседний подход к дисциплине
