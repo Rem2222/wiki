@@ -1,12 +1,16 @@
 ---
 description: "Вердикт по 4 идеям MAPS: (1) один дом на факт — в работу, (2) пробки на cron — на будущее, (3) граф вики и (4) профиль-ограничение — мимо. Идея 1 расписана по файлам."
 tags: [ai,agent,memory,cron,roadmap,ideas]
-related: [[tech/maps-ai-operating-system]] [[tech/zvec]] [[ops/services/hermes-agent]] [[concepts/sdd]]
+related:
+  - tech/maps-ai-operating-system
+  - tech/zvec
+  - ops/services/hermes-agent
+  - concepts/sdd
 ---
 
 # Идеи из MAPS для стека Rem
 
-Вердикт Rem от 2026-09-30 по четырём идеям из [[tech/ai-os-maps]]:
+Вердикт Rem от 2026-09-30 по четырём идеям из [[tech/maps-ai-operating-system]]:
 
 | # | Идея | Вердикт |
 |---|---|---|

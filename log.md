@@ -414,3 +414,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 - **Бэкапы**: `github.com/Rem2222/dex-agent` (запушено `ef3030b`), архив `/root/backups/dex-proactive-20260930_*.tgz`.
 
 - MAPS (pavrus117/ai-os-maps-guide): 2 страницы tech/ai-os-maps и tech/maps-ideas (slug: maps-ai-operating-system, idei-iz-maps-dlya-steka-rem), записи в index.md. Попутно: related в 5 свежих страницах переведён в эталонный многострочный формат, убраны дубли H1, исправлены битые [[tools/hermes]]/[[wiki/tech/sdd]]/[[software/zvec]].
+- Идеи MAPS: вердикт Rem — (1) один дом на факт в работу и расписан по файлам, (2) пробки на cron отложены, (3) граф вики и (4) профиль-ограничение отклонены (Obsidian graph view).
