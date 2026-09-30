@@ -37,11 +37,23 @@ service:
   config_paths:
     - ~/.hermes/proactive/identity.yaml
     - ~/.hermes/proactive/.env
+    - ~/.hermes/proactive/heartbeat.py
+    - ~/.hermes/proactive/dex_poller.py
+    - ~/.hermes/proactive/dex_control.py
+    - ~/.hermes/proactive/vec_build.py
+    - ~/.hermes/proactive/lib/vec0.so
   depends_on:
-    - hermes-agent
-  notes: >
-    Proactive-агент Dex: heartbeat, poller, dashboard. Skill: dex-identity. Nginx: /dex/ (за Authelia).
-    Проверено 2026-08-12: systemd-юниты dex-control/dex-poller inactive, но dex_control.py
-    запущен вручную (python3 dex_control.py --port 3333, с 2026-07-19) — дашборд на :3333 жив.
-    dex-poller (Telegram poller) НЕ запущен — проверить, нужен ли.
+    - gemini-web2api
+  notes: >-
+    Проактивный агент: три процесса — dex-poller (Telegram, 3 с), dex-control
+    (Flask :3333), dex-heartbeat (cron каждые 10 мин, no-agent). Красная кнопка:
+    touch ~/.hermes/proactive/DISABLED. LLM — gemini-web2api :8083 (env
+    DEX_API_URL/DEX_API_KEY/DEX_MODEL в .env, сейчас gemini-3.5-flash).
+    Nginx: /dex/ за Authelia. Свой venv ~/.hermes/proactive/venv (flask 3.1.3) —
+    в venv Hermes flask НЕТ, ставить туда не надо. Векторная память:
+    sqlite-vec (vec0.so из wheel, без pip из-за PEP 668) + bge-m3 через Ollama,
+    сборка vec_build.py (дедупликация: 1362 тика = 69 уникальных текстов).
+    Проверено 2026-09-30: оба юнита enabled+active, NRestarts=0 (был crash-loop
+    из-за отсутствия flask, счётчик дошёл до 290 794). Git: Rem2222/dex-agent.
+    Подробное устройство: [[tech/dex-internals]].
 ---
