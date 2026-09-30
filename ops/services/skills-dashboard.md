@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: Веб-дашборд для approval навыков Hermes
   install_date: 2026-07-06
-  last_verified: 2026-09-30
+  last_verified: 2026-10-01
   health_url: "http://localhost:8650/"
   type: systemd
   ports:

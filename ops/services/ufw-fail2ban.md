@@ -12,7 +12,7 @@ service:
   category: security
   purpose: Фаервол + защита от брутфорса
   install_date: 2025-05
-  last_verified: 2026-09-30
+  last_verified: 2026-10-01
   health_url: 
   type: systemd
   systemd_units:

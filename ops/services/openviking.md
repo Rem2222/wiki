@@ -3,7 +3,7 @@ title: OpenViking
 description: Контекстная база данных OpenViking от ByteDance (Volcengine) — память, ресурсы и навыки агента как виртуальная файловая система viking:// (слои L0/L1/L2).
 created: 2026-09-04
 status: partial
-last_verified: 2026-09-30
+last_verified: 2026-10-01
 tags: [memory, ai, context-database, bytedance]
 related:
   - [[ops/services/hindsight]]
