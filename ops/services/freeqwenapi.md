@@ -37,6 +37,9 @@ service:
   depends_on: []
   data_size_hint: ~300MB (node + Playwright headless chromium, +swap ~225MB)
   notes: >-
+    30.09 (днём) — СЕРВИС ОСТАНОВЛЕН по решению Рома: completion-эндпоинт упирался в Aliyun WAF
+    (FAIL_SYS_USER_VALIDATE / RGV587_ERROR), а Playwright-браузер юнита съедал 54% CPU и 475 МБ RSS.
+    Юнит inactive, MainPID=0. Включить обратно: systemctl start freeqwenapi.
     2026-09-30: страница создана ночной рутиной (MUL-10138) — сервис работал, но не был в реестре.
     Nginx: https://rem2222.top/qwen/ → 127.0.0.1:9656 (за Authelia). Модель qwen3.7-max используется
     Multica-агентом «FreeQwenApi» (freeqwenapi:qwen3.7-max). Требует живой сессии chat.qwen.ai —
