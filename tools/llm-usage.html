@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLM-расход · 30 дней · сравнение провайдеров</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5/dist/echarts.min.js"></script>
+<style>
+:root{--bg:#0f1220;--card:#171b2e;--line:#2a3050;--fg:#e6e9f5;--mut:#9aa3c2;--green:#6cb27a;--yellow:#e0b94f;--red:#e06a5a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;padding:28px;max-width:1180px;margin:0 auto}
+h1{font-size:22px;margin-bottom:4px}
+.sub{color:var(--mut);margin-bottom:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:22px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.kpi .l{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.kpi .v{font-size:20px;font-weight:700}
+.kpi .v small{font-size:13px;color:var(--mut);font-weight:400}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:20px}
+.card h2{font-size:15px;margin-bottom:12px}
+.chart{width:100%;height:340px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+td.b{font-weight:700}
+.t-дешёвый td:first-child{border-left:3px solid var(--green)}
+.t-средний td:first-child{border-left:3px solid var(--yellow)}
+.t-топовый td:first-child{border-left:3px solid var(--red)}
+.leg{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:12px;color:var(--mut)}
+.leg span b{color:var(--fg)}
+.foot{color:var(--mut);font-size:12px;line-height:1.6}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+@media(max-width:700px){.chart{height:260px} body{padding:14px}}
+</style></head><body>
+<h1>Ваш LLM-расход · 30 дней (с 01.09 по 01.10.2026)</h1>
+<div class="sub">Hermes за 30 дней (01.09—01.10.2026): чат, агенты и кодинг-вызовы Мультики (идут через Hermes). Сколько тот же объём токенов стоил бы на разных провайдерах — в ₽, с учётом кэша.</div>
+
+<div class="kpis">
+  <div class="kpi"><div class="l">Вызовов</div><div class="v">99</div></div>
+  <div class="kpi"><div class="l">Вход (без кэша)</div><div class="v">25.9M</div></div>
+  <div class="kpi"><div class="l">Выход (с reasoning)</div><div class="v">4.3M</div></div>
+  <div class="kpi"><div class="l">Cache-read</div><div class="v">618.5M <small>≈24× входа</small></div></div>
+  <div class="kpi"><div class="l">Сейчас платите ≈</div><div class="v">0 ₽/токен <small>+512₽/мес neuraldeep</small></div></div>
+</div>
+
+<div class="card"><div class="leg">
+<span class="dot" style="background:#6cb27a"></span><span>дешёвый</span>
+<span class="dot" style="background:#e0b94f"></span><span>средний</span>
+<span class="dot" style="background:#e06a5a"></span><span>топовый</span>
+</div><h2>Стоимость того же объёма в разных провайдерах (₽/месяц)</h2>
+<div class="chart" id="ch1"></div></div>
+
+<div class="card"><h2>Из чего складывается цена (вход / выход / cache-read)</h2>
+<div class="chart" id="ch2"></div></div>
+
+<div class="card"><h2>Динамика токенов по дням</h2>
+<div class="chart" id="ch3"></div></div>
+
+<div class="card"><h2>Полная таблица</h2>
+<table>
+<thead><tr><th>Провайдер</th><th>Тир</th><th>Вх ₽/M</th><th>Вых ₽/M</th><th>Кэш ₽/M</th><th>Вх ₽/мес</th><th>Вых ₽/мес</th><th>Кэш ₽/мес</th><th>Итого ₽/мес</th></tr></thead>
+<tbody><tr class="t-дешёвый">
+      <td>DeepSeek V4.1 Flash · b.ai (off-peak)</td><td>дешёвый</td>
+      <td class="n">12.553</td><td class="n">50.214</td><td class="n">0.251</td>
+      <td class="n">325</td><td class="n">218</td><td class="n">155</td>
+      <td class="n b">698</td></tr><tr class="t-дешёвый">
+      <td>Qwen3.6-35b-a3b · neuraldeep</td><td>дешёвый</td>
+      <td class="n">7.140</td><td class="n">40.800</td><td class="n">0.710</td>
+      <td class="n">185</td><td class="n">177</td><td class="n">439</td>
+      <td class="n b">801</td></tr><tr class="t-средний">
+      <td>Qwen3.6-fp8 · neuraldeep</td><td>средний</td>
+      <td class="n">7.140</td><td class="n">40.800</td><td class="n">0.710</td>
+      <td class="n">185</td><td class="n">177</td><td class="n">439</td>
+      <td class="n b">801</td></tr><tr class="t-дешёвый">
+      <td>DeepSeek V4.1 Flash · TeamoRouter</td><td>дешёвый</td>
+      <td class="n">9.457</td><td class="n">37.744</td><td class="n">0.946</td>
+      <td class="n">245</td><td class="n">164</td><td class="n">585</td>
+      <td class="n b">993</td></tr><tr class="t-средний">
+      <td>Claude Haiku 4.5 · TeamoRouter</td><td>средний</td>
+      <td class="n">10.126</td><td class="n">50.632</td><td class="n">1.013</td>
+      <td class="n">262</td><td class="n">220</td><td class="n">626</td>
+      <td class="n b">1,108</td></tr><tr class="t-средний">
+      <td>GPT-6 Sol · TeamoRouter</td><td>средний</td>
+      <td class="n">16.738</td><td class="n">83.690</td><td class="n">1.674</td>
+      <td class="n">433</td><td class="n">363</td><td class="n">1,035</td>
+      <td class="n b">1,831</td></tr><tr class="t-топовый">
+      <td>Qwen3.8-27b · neuraldeep</td><td>топовый</td>
+      <td class="n">24.480</td><td class="n">122.400</td><td class="n">2.450</td>
+      <td class="n">633</td><td class="n">531</td><td class="n">1,515</td>
+      <td class="n b">2,680</td></tr><tr class="t-топовый">
+      <td>Claude Opus 5.5 · TeamoRouter</td><td>топовый</td>
+      <td class="n">83.020</td><td class="n">415.102</td><td class="n">8.302</td>
+      <td class="n">2,148</td><td class="n">1,801</td><td class="n">5,135</td>
+      <td class="n b">9,084</td></tr><tr class="t-топовый">
+      <td>Kimi K2.6 · neuraldeep</td><td>топовый</td>
+      <td class="n">99.750</td><td class="n">420.000</td><td class="n">16.320</td>
+      <td class="n">2,580</td><td class="n">1,822</td><td class="n">10,094</td>
+      <td class="n b">14,497</td></tr><tr class="t-топовый">
+      <td>GPT-6 Astra (Fast) · TeamoRouter</td><td>топовый</td>
+      <td class="n">167.380</td><td class="n">836.900</td><td class="n">16.738</td>
+      <td class="n">4,330</td><td class="n">3,631</td><td class="n">10,353</td>
+      <td class="n b">18,314</td></tr></tbody></table></div>
+
+<div class="card"><h2>Допущения</h2>
+<div class="foot">
+• Окно — 30 дней, данные из Hermes <code>session_model_usage</code> (state.db).<br>
+• Выход = output+reasoning (reasoning тарифицируется как выход). Cache-write = 0, не учитывается.<br>
+• Курс ₽/$ = 83.69 (01.10.2026). Цены обновляются в реальном времени — сверять перед покупкой.<br>
+• Кэш-коэффициенты: b.ai DS cache-read фикс. $0.003/M (0.02×); TeamoRouter — принято 0.1× от входа; neuraldeep — как в тарифе (qwen ~0.1×, kimi ~0.16×); Anthropic cache-read 0.1× (для сонета/опуса у Teamo принято 0.1×).<br>
+• ⚠️ Cache-read 618.5M токенов — доминирующая статья: длинные сессии пересылают контекст как кэш. Если провайдер плохо дёшев по кэшу, итог резко дорожает — это видно по Astra/Kimi/Opus.<br>
+• Сейчас реальная оплата ≈ 0 ₽/токен (opencode-go бесплатно) + подписка neuraldeep 512₽/мес безлимит. Если бы тот же объём шёл per-token: дешевле всего DeepSeek V4.1 Flash (b.ai) ≈ DeepSeek V4.1 Flash · b.ai (off-peak) · 698 ₽.
+</div></div>
+
+<script>
+const NAMES=["DeepSeek V4.1 Flash \u00b7 b.ai (off-peak)", "Qwen3.6-35b-a3b \u00b7 neuraldeep", "Qwen3.6-fp8 \u00b7 neuraldeep", "DeepSeek V4.1 Flash \u00b7 TeamoRouter", "Claude Haiku 4.5 \u00b7 TeamoRouter", "GPT-6 Sol \u00b7 TeamoRouter", "Qwen3.8-27b \u00b7 neuraldeep", "Claude Opus 5.5 \u00b7 TeamoRouter", "Kimi K2.6 \u00b7 neuraldeep", "GPT-6 Astra (Fast) \u00b7 TeamoRouter"];
+const NAMES_SHORT=["DeepSeek V4.1 Flash", "Qwen3.6-35b-a3b", "Qwen3.6-fp8", "DeepSeek V4.1 Flash", "Claude Haiku 4.5", "GPT-6 Sol", "Qwen3.8-27b", "Claude Opus 5.5", "Kimi K2.6", "GPT-6 Astra (Fast)"];
+const TIERS=["\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439"];
+const COLORS=["#6cb27a", "#6cb27a", "#e0b94f", "#6cb27a", "#e0b94f", "#e0b94f", "#e06a5a", "#e06a5a", "#e06a5a", "#e06a5a"];
+const TOT=[697.89, 800.87, 800.87, 993.34, 1107.99, 1831.38, 2679.7, 9083.63, 14496.97, 18313.76];
+const CIN=[324.75, 184.71, 184.71, 244.65, 261.97, 433.0, 633.28, 2147.69, 2580.47, 4330.01],COUT=[217.85, 177.01, 177.01, 163.75, 219.67, 363.09, 531.03, 1800.91, 1822.16, 3630.87],CCR=[155.29, 439.15, 439.15, 584.94, 626.35, 1035.29, 1515.39, 5135.03, 10094.34, 10352.88];
+const DF=["2026-09-01", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-09", "2026-09-12", "2026-09-16", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01"],DIN=[439063, 84819, 2129506, 173258, 1642, 362190, 1001852, 789697, 7527756, 6755132, 533720, 3695082, 16338, 2359296],DOUT=[24131, 6768, 364984, 25637, 3228, 48211, 44636, 27374, 1562207, 1137230, 218608, 614435, 912, 260119],DCACHE=[2728064, 281152, 27902848, 1381504, 448, 3398656, 11598400, 3954048, 304918848, 104536128, 8196736, 112688448, 4352, 36935936];
+echarts.init(document.getElementById('ch1')).setOption({
+ tooltip:{trigger:'axis',axisPointer:{type:'shadow'},valueFormatter:v=>v.toLocaleString('ru-RU')+' ₽'},
+ grid:{left:70,right:16,top:10,bottom:70},
+ xAxis:{type:'value',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1000?(v/1000)+'k':v},splitLine:{lineStyle:{color:'#2a3050'}}},
+ yAxis:{type:'category',data:NAMES_SHORT.slice().reverse(),axisLabel:{color:'#e6e9f5',fontSize:11},axisLine:{show:false}},
+ series:[{type:'bar',data:TOT.slice().reverse().map((v,i)=>({value:v,itemStyle:{color:COLORS.slice().reverse()[i]}})),barWidth:'58%',
+   label:{show:true,position:'right',color:'#e6e9f5',formatter:p=>p.value.toLocaleString('ru-RU')+' ₽'}}],
+});
+echarts.init(document.getElementById('ch2')).setOption({
+ tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
+ legend:{data:['Вход','Выход','Cache-read'],textStyle:{color:'#9aa3c2'},top:0},
+ grid:{left:70,right:16,top:32,bottom:8},
+ xAxis:{type:'value',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1000?(v/1000)+'k':v},splitLine:{lineStyle:{color:'#2a3050'}}},
+ yAxis:{type:'category',data:NAMES_SHORT.slice().reverse(),axisLabel:{color:'#e6e9f5',fontSize:11},axisLine:{show:false}},
+ series:[
+  {name:'Вход',type:'bar',stack:'x',data:CIN.slice().reverse(),itemStyle:{color:'#6cb27a'}},
+  {name:'Выход',type:'bar',stack:'x',data:COUT.slice().reverse(),itemStyle:{color:'#5aa0c7'}},
+  {name:'Cache-read',type:'bar',stack:'x',data:CCR.slice().reverse(),itemStyle:{color:'#9a6fd0'},
+    label:{show:true,position:'right',color:'#e6e9f5',fontSize:11,formatter:p=>Math.round(p.value).toLocaleString('ru-RU')}},
+ ]});
+echarts.init(document.getElementById('ch3')).setOption({
+ tooltip:{trigger:'axis',valueFormatter:v=>v>=1e6?(v/1e6).toFixed(2)+'M':v.toLocaleString('ru-RU')},
+ legend:{data:['Вход+Выход','Cache-read'],textStyle:{color:'#9aa3c2'},top:0},
+ grid:{left:60,right:16,top:32,bottom:40},
+ xAxis:{type:'category',data:DF,axisLabel:{color:'#9aa3c2',showMaxLabel:true},axisLine:{show:false}},
+ yAxis:{type:'value',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1e6?(v/1e6)+'M':v},splitLine:{lineStyle:{color:'#2a3050'}}},
+ series:[
+  {name:'Вход+Выход',type:'line',smooth:true,data:DIN.map((v,i)=>(v+(DOUT[i]||0))),itemStyle:{color:'#6cb27a'},areaStyle:{opacity:.15},showSymbol:false},
+  {name:'Cache-read',type:'line',smooth:true,data:DCACHE,itemStyle:{color:'#9a6fd0'},showSymbol:false},
+ ]});
+</script>
+</body></html>
