@@ -38,7 +38,7 @@ td.b{font-weight:700}
   <div class="kpi"><div class="l">Вход (без кэша)</div><div class="v">25.9M</div></div>
   <div class="kpi"><div class="l">Выход (с reasoning)</div><div class="v">4.3M</div></div>
   <div class="kpi"><div class="l">Cache-read</div><div class="v">618.5M <small>≈24× входа</small></div></div>
-  <div class="kpi"><div class="l">Сейчас платите ≈</div><div class="v">0 ₽/токен <small>+512₽/мес neuraldeep</small></div></div>
+  <div class="kpi"><div class="l">Фикс-подписки ≈</div><div class="v">≈2000 ₽/мес <small>OK Go $10 + Ali $7.67 + ND 512₽</small></div></div>
 </div>
 
 <div class="card"><div class="leg">
@@ -106,7 +106,9 @@ td.b{font-weight:700}
 • Курс ₽/$ = 83.69 (01.10.2026). Цены обновляются в реальном времени — сверять перед покупкой.<br>
 • Кэш-коэффициенты: b.ai DS cache-read фикс. $0.003/M (0.02×); TeamoRouter — принято 0.1× от входа; neuraldeep — как в тарифе (qwen ~0.1×, kimi ~0.16×); Anthropic cache-read 0.1× (для сонета/опуса у Teamo принято 0.1×).<br>
 • ⚠️ Cache-read 618.5M токенов — доминирующая статья: длинные сессии пересылают контекст как кэш. Если провайдер плохо дёшев по кэшу, итог резко дорожает — это видно по Astra/Kimi/Opus.<br>
-• Сейчас реальная оплата ≈ 0 ₽/токен (opencode-go бесплатно) + подписка neuraldeep 512₽/мес безлимит. Если бы тот же объём шёл per-token: дешевле всего DeepSeek V4.1 Flash (b.ai) ≈ DeepSeek V4.1 Flash · b.ai (off-peak) · 698 ₽.
+• Фикс-подписки: opencode-go $10/мес + Ali $7.67/мес + neuraldeep 512₽/мес (≈2000₽/мес при курсе 83.69) — дают безлимит по токенам.<br>
+• Если бы тот же объём шёл per-token: дешевле всего DeepSeek V4.1 Flash (b.ai) ≈ DeepSeek V4.1 Flash · b.ai (off-peak) · 698 ₽.<br>
+• Cache-read — не баг, а штатный кэш: длинные агентные сессии перечитывают накопленный контекст из кэша на каждом шаге цикла (нового входа мало — ~5-16k/вызов, кэш-рид большой — ~100-300k/вызов). Кэш тарифицируется в разы дешевле входа, так что это удешевляет, а не раздувает цену.
 </div></div>
 
 <script>
