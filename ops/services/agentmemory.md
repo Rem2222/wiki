@@ -43,7 +43,6 @@ service:
       description: III WS engine
   systemd_units:
     - agentmemory
-    - agentmemory-exporter
   docker_containers:
     - agentmemory-iii-engine-1
   processes:

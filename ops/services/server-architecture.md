@@ -35,7 +35,6 @@ related:
   - ops/services/unattended-upgrades
   - hosting/rdp-monster
   - ops/services/sshd
-  - ops/services/agentmemory-exporter
   - ops/services/skills-dashboard
 ---
 
@@ -79,7 +78,6 @@ related:
 - [[ops/services/ntfy]] — push-уведомления
 - [[ops/services/monitor-ui]] — панель управления ntfy
 - [[ops/services/multi-exporter]] — Prometheus exporter (ntfy, GBrain, Hermes, FreeLLMAPI)
-- [[ops/services/agentmemory-exporter]] — Prometheus метрики AgentMemory
 - [[ops/services/hermes-dashboard]] — веб-дашборд Hermes
 - [[ops/services/skills-dashboard]] — Skills Approval Dashboard
 - [[ops/services/mercury]] — Mercury Agent Dashboard
