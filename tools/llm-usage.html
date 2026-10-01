@@ -16,6 +16,9 @@ h1{font-size:22px;margin-bottom:4px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:20px}
 .card h2{font-size:15px;margin-bottom:12px}
 .chart{width:100%;height:340px}
+.dual{display:flex;gap:16px;flex-wrap:wrap}
+.dual .half{flex:1 1 340px}
+.nc{color:var(--mut);font-size:12px;margin:-6px 0 14px}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left}
 th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.03em}
@@ -25,19 +28,18 @@ td.b{font-weight:700}
 .t-средний td:first-child{border-left:3px solid var(--yellow)}
 .t-топовый td:first-child{border-left:3px solid var(--red)}
 .leg{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:12px;color:var(--mut)}
-.leg span b{color:var(--fg)}
 .foot{color:var(--mut);font-size:12px;line-height:1.6}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
 @media(max-width:700px){.chart{height:260px} body{padding:14px}}
 </style></head><body>
 <h1>Ваш LLM-расход · 30 дней (с 01.09 по 01.10.2026)</h1>
-<div class="sub">Hermes за 30 дней (01.09—01.10.2026): чат, агенты и кодинг-вызовы Мультики (идут через Hermes). Сколько тот же объём токенов стоил бы на разных провайдерах — в ₽, с учётом кэша.</div>
+<div class="sub">Hermes за 30 дней: чат, агенты и кодинг-вызовы Мультики (идут через Hermes). Сколько тот же объём токенов стоил бы на разных провайдерах — в ₽, с учётом кэша.</div>
 
 <div class="kpis">
   <div class="kpi"><div class="l">Вызовов</div><div class="v">99</div></div>
-  <div class="kpi"><div class="l">Вход (без кэша)</div><div class="v">25.9M</div></div>
-  <div class="kpi"><div class="l">Выход (с reasoning)</div><div class="v">4.3M</div></div>
-  <div class="kpi"><div class="l">Cache-read</div><div class="v">618.5M <small>≈24× входа</small></div></div>
+  <div class="kpi"><div class="l">Вход (без кэша)</div><div class="v">26.2M</div></div>
+  <div class="kpi"><div class="l">Выход (с reasoning)</div><div class="v">4.4M</div></div>
+  <div class="kpi"><div class="l">Cache-read</div><div class="v">624.6M <small>≈24× входа</small></div></div>
   <div class="kpi"><div class="l">Фикс-подписки ≈</div><div class="v">≈2000 ₽/мес <small>OK Go $10 + Ali $7.67 + ND 512₽</small></div></div>
 </div>
 
@@ -45,7 +47,21 @@ td.b{font-weight:700}
 <span class="dot" style="background:#6cb27a"></span><span>дешёвый</span>
 <span class="dot" style="background:#e0b94f"></span><span>средний</span>
 <span class="dot" style="background:#e06a5a"></span><span>топовый</span>
-</div><h2>Стоимость того же объёма в разных провайдерах (₽/месяц)</h2>
+<span style="margin-left:10px">точка = модель · лог-шкала</span>
+</div><h2>Провайдеры — сравнение на одном графике (₽/мес, log)</h2>
+<div class="nc">Один столбец = провайдер, точки = его модели по тирам (дешёвый/средний/топ). Наведите на точку — модель и цена.</div>
+<div class="chart" id="ch4"></div></div>
+
+<div class="dual">
+<div class="card half"><h2>Гермес (чат/агент) — ₽/мес</h2>
+<div class="nc">телеграм/чат + subagent/агент + desktop/cli. Объём: вход 25.6M · выход 4.2M · кэш 615.8M.</div>
+<div class="chart" id="ch5"></div></div>
+<div class="card half"><h2>Мультика (кодинг, cron/api) — ₽/мес</h2>
+<div class="nc">cron (ночные рутины/автопилот Мультики). Объём: вход 631.0K · выход 236.9K · кэш 8.8M.</div>
+<div class="chart" id="ch6"></div></div>
+</div>
+
+<div class="card"><h2>Стоимость того же объёма (все модели, отсортировано)</h2>
 <div class="chart" id="ch1"></div></div>
 
 <div class="card"><h2>Из чего складывается цена (вход / выход / cache-read)</h2>
@@ -60,85 +76,119 @@ td.b{font-weight:700}
 <tbody><tr class="t-дешёвый">
       <td>DeepSeek V4.1 Flash · b.ai (off-peak)</td><td>дешёвый</td>
       <td class="n">12.553</td><td class="n">50.214</td><td class="n">0.251</td>
-      <td class="n">325</td><td class="n">218</td><td class="n">155</td>
-      <td class="n b">698</td></tr><tr class="t-дешёвый">
+      <td class="n">329</td><td class="n">222</td><td class="n">157</td>
+      <td class="n b">708</td></tr><tr class="t-дешёвый">
       <td>Qwen3.6-35b-a3b · neuraldeep</td><td>дешёвый</td>
       <td class="n">7.140</td><td class="n">40.800</td><td class="n">0.710</td>
-      <td class="n">185</td><td class="n">177</td><td class="n">439</td>
-      <td class="n b">801</td></tr><tr class="t-средний">
+      <td class="n">187</td><td class="n">181</td><td class="n">443</td>
+      <td class="n b">811</td></tr><tr class="t-средний">
       <td>Qwen3.6-fp8 · neuraldeep</td><td>средний</td>
       <td class="n">7.140</td><td class="n">40.800</td><td class="n">0.710</td>
-      <td class="n">185</td><td class="n">177</td><td class="n">439</td>
-      <td class="n b">801</td></tr><tr class="t-дешёвый">
+      <td class="n">187</td><td class="n">181</td><td class="n">443</td>
+      <td class="n b">811</td></tr><tr class="t-дешёвый">
       <td>DeepSeek V4.1 Flash · TeamoRouter</td><td>дешёвый</td>
       <td class="n">9.457</td><td class="n">37.744</td><td class="n">0.946</td>
-      <td class="n">245</td><td class="n">164</td><td class="n">585</td>
-      <td class="n b">993</td></tr><tr class="t-средний">
+      <td class="n">248</td><td class="n">167</td><td class="n">591</td>
+      <td class="n b">1,006</td></tr><tr class="t-средний">
       <td>Claude Haiku 4.5 · TeamoRouter</td><td>средний</td>
       <td class="n">10.126</td><td class="n">50.632</td><td class="n">1.013</td>
-      <td class="n">262</td><td class="n">220</td><td class="n">626</td>
-      <td class="n b">1,108</td></tr><tr class="t-средний">
+      <td class="n">266</td><td class="n">224</td><td class="n">633</td>
+      <td class="n b">1,122</td></tr><tr class="t-средний">
       <td>GPT-6 Sol · TeamoRouter</td><td>средний</td>
       <td class="n">16.738</td><td class="n">83.690</td><td class="n">1.674</td>
-      <td class="n">433</td><td class="n">363</td><td class="n">1,035</td>
-      <td class="n b">1,831</td></tr><tr class="t-топовый">
+      <td class="n">439</td><td class="n">370</td><td class="n">1,045</td>
+      <td class="n b">1,855</td></tr><tr class="t-топовый">
       <td>Qwen3.8-27b · neuraldeep</td><td>топовый</td>
       <td class="n">24.480</td><td class="n">122.400</td><td class="n">2.450</td>
-      <td class="n">633</td><td class="n">531</td><td class="n">1,515</td>
-      <td class="n b">2,680</td></tr><tr class="t-топовый">
+      <td class="n">642</td><td class="n">542</td><td class="n">1,530</td>
+      <td class="n b">2,714</td></tr><tr class="t-топовый">
       <td>Claude Opus 5.5 · TeamoRouter</td><td>топовый</td>
       <td class="n">83.020</td><td class="n">415.102</td><td class="n">8.302</td>
-      <td class="n">2,148</td><td class="n">1,801</td><td class="n">5,135</td>
-      <td class="n b">9,084</td></tr><tr class="t-топовый">
+      <td class="n">2,178</td><td class="n">1,837</td><td class="n">5,186</td>
+      <td class="n b">9,200</td></tr><tr class="t-топовый">
       <td>Kimi K2.6 · neuraldeep</td><td>топовый</td>
       <td class="n">99.750</td><td class="n">420.000</td><td class="n">16.320</td>
-      <td class="n">2,580</td><td class="n">1,822</td><td class="n">10,094</td>
-      <td class="n b">14,497</td></tr><tr class="t-топовый">
+      <td class="n">2,617</td><td class="n">1,858</td><td class="n">10,194</td>
+      <td class="n b">14,669</td></tr><tr class="t-топовый">
       <td>GPT-6 Astra (Fast) · TeamoRouter</td><td>топовый</td>
       <td class="n">167.380</td><td class="n">836.900</td><td class="n">16.738</td>
-      <td class="n">4,330</td><td class="n">3,631</td><td class="n">10,353</td>
-      <td class="n b">18,314</td></tr></tbody></table></div>
+      <td class="n">4,392</td><td class="n">3,703</td><td class="n">10,455</td>
+      <td class="n b">18,549</td></tr></tbody></table></div>
 
 <div class="card"><h2>Допущения</h2>
 <div class="foot">
 • Окно — 30 дней, данные из Hermes <code>session_model_usage</code> (state.db).<br>
-• Выход = output+reasoning (reasoning тарифицируется как выход). Cache-write = 0, не учитывается.<br>
-• Курс ₽/$ = 83.69 (01.10.2026). Цены обновляются в реальном времени — сверять перед покупкой.<br>
-• Кэш-коэффициенты: b.ai DS cache-read фикс. $0.003/M (0.02×); TeamoRouter — принято 0.1× от входа; neuraldeep — как в тарифе (qwen ~0.1×, kimi ~0.16×); Anthropic cache-read 0.1× (для сонета/опуса у Teamo принято 0.1×).<br>
-• ⚠️ Cache-read 618.5M токенов — доминирующая статья: длинные сессии пересылают контекст как кэш. Если провайдер плохо дёшев по кэшу, итог резко дорожает — это видно по Astra/Kimi/Opus.<br>
-• Фикс-подписки: opencode-go $10/мес + Ali $7.67/мес + neuraldeep 512₽/мес (≈2000₽/мес при курсе 83.69) — дают безлимит по токенам.<br>
-• Если бы тот же объём шёл per-token: дешевле всего DeepSeek V4.1 Flash (b.ai) ≈ DeepSeek V4.1 Flash · b.ai (off-peak) · 698 ₽.<br>
-• Cache-read — не баг, а штатный кэш: длинные агентные сессии перечитывают накопленный контекст из кэша на каждом шаге цикла (нового входа мало — ~5-16k/вызов, кэш-рид большой — ~100-300k/вызов). Кэш тарифицируется в разы дешевле входа, так что это удешевляет, а не раздувает цену.
+• Выход = output+reasoning. Cache-write = 0.<br>
+• Курс ₽/$ = 83.69 (01.10.2026).<br>
+• Кэш-коэффициенты: b.ai DS $0.003/M (0.02×); TeamoRouter 0.1×; neuraldeep как в тарифе (qwen ~0.1×, kimi ~0.16×); Anthropic 0.1×.<br>
+• ⚠️ Cache-read 624.6M ток. — доминирующая статья: длинные сессии пересылают контекст как кэш.<br>
+• Фикс-подписки ≈ 2000₽/мес (OK Go $10 + Ali $7.67 + ND 512₽).<br>
+• Per-token дешевле всего: DeepSeek V4.1 Flash · b.ai (off-peak) · 708 ₽.<br>
+• Cache-read — штатный кэш (не баг): ~5-16k входа/вызов vs ~100-300k кэша/вызов в длинных агентных сессиях; кэш тарифицируется в разы дешевле входа.<br>
+• ⚠️ Мультика в Hermes-usage видна только по <code>cron</code> (~20₽/мес). Если кодинг-агенты Мультики не видны здесь — они ходят мимо Hermes (opencode напрямую) и в этот дашборд не попадают.
 </div></div>
-
 <script>
-const NAMES=["DeepSeek V4.1 Flash \u00b7 b.ai (off-peak)", "Qwen3.6-35b-a3b \u00b7 neuraldeep", "Qwen3.6-fp8 \u00b7 neuraldeep", "DeepSeek V4.1 Flash \u00b7 TeamoRouter", "Claude Haiku 4.5 \u00b7 TeamoRouter", "GPT-6 Sol \u00b7 TeamoRouter", "Qwen3.8-27b \u00b7 neuraldeep", "Claude Opus 5.5 \u00b7 TeamoRouter", "Kimi K2.6 \u00b7 neuraldeep", "GPT-6 Astra (Fast) \u00b7 TeamoRouter"];
-const NAMES_SHORT=["DeepSeek V4.1 Flash", "Qwen3.6-35b-a3b", "Qwen3.6-fp8", "DeepSeek V4.1 Flash", "Claude Haiku 4.5", "GPT-6 Sol", "Qwen3.8-27b", "Claude Opus 5.5", "Kimi K2.6", "GPT-6 Astra (Fast)"];
-const TIERS=["\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439"];
-const COLORS=["#6cb27a", "#6cb27a", "#e0b94f", "#6cb27a", "#e0b94f", "#e0b94f", "#e06a5a", "#e06a5a", "#e06a5a", "#e06a5a"];
-const TOT=[697.89, 800.87, 800.87, 993.34, 1107.99, 1831.38, 2679.7, 9083.63, 14496.97, 18313.76];
-const CIN=[324.75, 184.71, 184.71, 244.65, 261.97, 433.0, 633.28, 2147.69, 2580.47, 4330.01],COUT=[217.85, 177.01, 177.01, 163.75, 219.67, 363.09, 531.03, 1800.91, 1822.16, 3630.87],CCR=[155.29, 439.15, 439.15, 584.94, 626.35, 1035.29, 1515.39, 5135.03, 10094.34, 10352.88];
-const DF=["2026-09-01", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-09", "2026-09-12", "2026-09-16", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01"],DIN=[439063, 84819, 2129506, 173258, 1642, 362190, 1001852, 789697, 7527756, 6755132, 533720, 3695082, 16338, 2359296],DOUT=[24131, 6768, 364984, 25637, 3228, 48211, 44636, 27374, 1562207, 1137230, 218608, 614435, 912, 260119],DCACHE=[2728064, 281152, 27902848, 1381504, 448, 3398656, 11598400, 3954048, 304918848, 104536128, 8196736, 112688448, 4352, 36935936];
+const NAMES=["DeepSeek V4.1 Flash \u00b7 b.ai (off-peak)", "Qwen3.6-35b-a3b \u00b7 neuraldeep", "Qwen3.6-fp8 \u00b7 neuraldeep", "DeepSeek V4.1 Flash \u00b7 TeamoRouter", "Claude Haiku 4.5 \u00b7 TeamoRouter", "GPT-6 Sol \u00b7 TeamoRouter", "Qwen3.8-27b \u00b7 neuraldeep", "Claude Opus 5.5 \u00b7 TeamoRouter", "Kimi K2.6 \u00b7 neuraldeep", "GPT-6 Astra (Fast) \u00b7 TeamoRouter"], NAMES_SHORT=["DeepSeek V4.1 Flash", "Qwen3.6-35b-a3b", "Qwen3.6-fp8", "DeepSeek V4.1 Flash", "Claude Haiku 4.5", "GPT-6 Sol", "Qwen3.8-27b", "Claude Opus 5.5", "Kimi K2.6", "GPT-6 Astra (Fast)"], TIERS=["\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439"], COLORS=["#6cb27a", "#6cb27a", "#e0b94f", "#6cb27a", "#e0b94f", "#e0b94f", "#e06a5a", "#e06a5a", "#e06a5a", "#e06a5a"];
+const TOT=[708.36, 811.32, 811.32, 1005.81, 1122.23, 1854.91, 2714.13, 9200.35, 14669.01, 18549.11], CIN=[329.37, 187.33, 187.33, 248.12, 265.69, 439.16, 642.28, 2178.21, 2617.15, 4391.56], COUT=[222.17, 180.52, 180.52, 167.0, 224.03, 370.29, 541.57, 1836.64, 1858.31, 3702.91], CCR=[156.82, 443.47, 443.47, 590.69, 632.51, 1045.46, 1530.28, 5185.5, 10193.55, 10454.64];
+const DF=["2026-09-01", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-09", "2026-09-12", "2026-09-16", "2026-09-18", "2026-09-22", "2026-09-23", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01"], DIN=[439063, 84819, 2129506, 173258, 1642, 362190, 1001852, 789697, 7527756, 6757300, 533720, 3695082, 16338, 2724853], DOUT=[24131, 6768, 364984, 25637, 3228, 48211, 44636, 27374, 1562207, 1156194, 218608, 614435, 912, 327230], DCACHE=[2728064, 281152, 27902848, 1381504, 448, 3398656, 11598400, 3954048, 304918848, 104536128, 8196736, 112688448, 4352, 43015168];
+const PROVS=["b.ai (off-peak)", "TeamoRouter", "neuraldeep"], PROVCOL=['#5aa0c7','#e0b94f','#9a6fd0'];
+const HERM_TOT=[686, 983, 791], MULT_TOT=[22.02, 23.21, 20.4], PROV_MOD=["DeepSeek V4.1 Flash", "DeepSeek V4.1 Flash", "Qwen3.6-35b-a3b"];
+
+// ---------- ch4: провайдеры на одном графике (scatter, log) ----------
+function provIdx(nm){const p=nm.split(' · ')[1];return PROVS.indexOf(p);}
+const scat=NAMES.map((nm,i)=>({prov:provIdx(nm),cost:TOT[i],tier:TIERS[i],col:COLORS[i],short:NAMES_SHORT[i]}));
+const scatX=scat.map((s,i)=>{
+  const same=scat.filter(q=>q.prov===s.prov); const k=same.findIndex(q=>q===s);
+  return same.length>1 ? s.prov+(k-(same.length-1)/2)*0.09 : s.prov;
+});
+echarts.init(document.getElementById('ch4')).setOption({
+ tooltip:{formatter:p=>{const s=scat[p.dataIndex];return '<b>'+s.short+'</b> · '+PROVS[s.prov]+'<br>'+s.tier+' · '+s.cost.toLocaleString('ru-RU')+' ₽/мес';}},
+ legend:{data:['дешёвый','средний','топовый'],textStyle:{color:'#9aa3c2'},top:0},
+ grid:{left:56,right:20,top:30,bottom:44},
+ xAxis:{type:'category',data:PROVS,axisLabel:{color:'#9aa3c2',fontSize:11},axisLine:{show:false}},
+ yAxis:{type:'log',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1000?(v/1000)+'k':v},splitLine:{lineStyle:{color:'#2a3050'}}},
+ series:[{type:'scatter',symbolSize:17,data:scatX.map((x,i)=>({value:[x,scat[i].cost],itemStyle:{color:scat[i].col}})),emphasis:{focus:'series'}}]
+});
+
+// ---------- ch5/ch6: идентичные графики Гермес vs Мультика ----------
+function buckChart(id,tot,mods){
+ echarts.init(document.getElementById(id)).setOption({
+  tooltip:{formatter:p=>{const v=tot[p.dataIndex];return PROVS[p.dataIndex]+'<br>'+mods[p.dataIndex]+' · '+v.toLocaleString('ru-RU')+' ₽/мес';}},
+  grid:{left:56,right:20,top:10,bottom:44},
+  xAxis:{type:'category',data:PROVS,axisLabel:{color:'#9aa3c2',fontSize:11,interval:0},axisLine:{show:false}},
+  yAxis:{type:'value',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1000?(v/1000)+'k':v},splitLine:{lineStyle:{color:'#2a3050'}}},
+  series:[{type:'bar',barWidth:'46%',data:tot.map((v,i)=>({value:v,itemStyle:{color:PROVCOL[i]}})),
+    label:{show:true,position:'top',color:'#e6e9f5',fontSize:11,formatter:function(p){return p.value<10?p.value.toFixed(1):p.value.toLocaleString('ru-RU')+'₽';}}}]});
+}
+buckChart('ch5',HERM_TOT,PROV_MOD);
+buckChart('ch6',MULT_TOT,PROV_MOD);
+
+// ---------- ch1: отсортированная цена ----------
 echarts.init(document.getElementById('ch1')).setOption({
  tooltip:{trigger:'axis',axisPointer:{type:'shadow'},valueFormatter:v=>v.toLocaleString('ru-RU')+' ₽'},
- grid:{left:70,right:16,top:10,bottom:70},
+ grid:{left:130,right:20,top:10,bottom:70},
  xAxis:{type:'value',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1000?(v/1000)+'k':v},splitLine:{lineStyle:{color:'#2a3050'}}},
- yAxis:{type:'category',data:NAMES_SHORT.slice().reverse(),axisLabel:{color:'#e6e9f5',fontSize:11},axisLine:{show:false}},
+ yAxis:{type:'category',data:NAMES_SHORT.slice().reverse(),axisLabel:{color:'#e6e9f5',fontSize:11,formatter:f=>f.length>16?f.slice(0,15)+'…':f},axisLine:{show:false}},
  series:[{type:'bar',data:TOT.slice().reverse().map((v,i)=>({value:v,itemStyle:{color:COLORS.slice().reverse()[i]}})),barWidth:'58%',
-   label:{show:true,position:'right',color:'#e6e9f5',formatter:p=>p.value.toLocaleString('ru-RU')+' ₽'}}],
+   label:{show:true,position:'right',color:'#e6e9f5',formatter:p=>p.value.toLocaleString('ru-RU')+' ₽'}}]
 });
+
+// ---------- ch2: стек вход/выход/кэш ----------
 echarts.init(document.getElementById('ch2')).setOption({
  tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
  legend:{data:['Вход','Выход','Cache-read'],textStyle:{color:'#9aa3c2'},top:0},
- grid:{left:70,right:16,top:32,bottom:8},
+ grid:{left:130,right:30,top:32,bottom:8},
  xAxis:{type:'value',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1000?(v/1000)+'k':v},splitLine:{lineStyle:{color:'#2a3050'}}},
- yAxis:{type:'category',data:NAMES_SHORT.slice().reverse(),axisLabel:{color:'#e6e9f5',fontSize:11},axisLine:{show:false}},
+ yAxis:{type:'category',data:NAMES_SHORT.slice().reverse(),axisLabel:{color:'#e6e9f5',fontSize:11,formatter:f=>f.length>16?f.slice(0,15)+'…':f},axisLine:{show:false}},
  series:[
   {name:'Вход',type:'bar',stack:'x',data:CIN.slice().reverse(),itemStyle:{color:'#6cb27a'}},
   {name:'Выход',type:'bar',stack:'x',data:COUT.slice().reverse(),itemStyle:{color:'#5aa0c7'}},
   {name:'Cache-read',type:'bar',stack:'x',data:CCR.slice().reverse(),itemStyle:{color:'#9a6fd0'},
-    label:{show:true,position:'right',color:'#e6e9f5',fontSize:11,formatter:p=>Math.round(p.value).toLocaleString('ru-RU')}},
- ]});
+   label:{show:true,position:'right',color:'#e6e9f5',fontSize:11,formatter:p=>Math.round(p.value).toLocaleString('ru-RU')}}
+ ]
+});
+
+// ---------- ch3: динамика по дням ----------
 echarts.init(document.getElementById('ch3')).setOption({
  tooltip:{trigger:'axis',valueFormatter:v=>v>=1e6?(v/1e6).toFixed(2)+'M':v.toLocaleString('ru-RU')},
  legend:{data:['Вход+Выход','Cache-read'],textStyle:{color:'#9aa3c2'},top:0},
@@ -146,8 +196,9 @@ echarts.init(document.getElementById('ch3')).setOption({
  xAxis:{type:'category',data:DF,axisLabel:{color:'#9aa3c2',showMaxLabel:true},axisLine:{show:false}},
  yAxis:{type:'value',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1e6?(v/1e6)+'M':v},splitLine:{lineStyle:{color:'#2a3050'}}},
  series:[
-  {name:'Вход+Выход',type:'line',smooth:true,data:DIN.map((v,i)=>(v+(DOUT[i]||0))),itemStyle:{color:'#6cb27a'},areaStyle:{opacity:.15},showSymbol:false},
-  {name:'Cache-read',type:'line',smooth:true,data:DCACHE,itemStyle:{color:'#9a6fd0'},showSymbol:false},
- ]});
+  {name:'Вход+Выход',type:'line',smooth:true,data:DIN.map((v,i)=>v+(DOUT[i]||0)),itemStyle:{color:'#6cb27a'},areaStyle:{opacity:.15},showSymbol:false},
+  {name:'Cache-read',type:'line',smooth:true,data:DCACHE,itemStyle:{color:'#9a6fd0'},showSymbol:false}
+ ]
+});
 </script>
 </body></html>
