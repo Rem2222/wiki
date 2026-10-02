@@ -12,7 +12,7 @@ service:
   category: monitoring
   purpose: Мониторинг CPU/RAM/диска
   install_date: 2025-06
-  last_verified: 2026-10-02
+  last_verified: 2026-10-03
   health_url: "http://localhost:9480/"
   type: docker
   ports:
