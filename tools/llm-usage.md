@@ -1,8 +1,12 @@
 ---
 title: LLM-расход Hermes 30 дней — сравнение провайдеров
+description: "Интерактивный дашборд расхода LLM Hermes за 30 дней (state.db) и стоимость того же объёма по провайдерам в ₽/мес."
 tags: [llm, usage, pricing, dashboard]
 updated: 2026-10-01
 html: https://rem2222.top/llm-usage.html
+related:
+  - llm/ru-providers-pricing
+  - llm/bench-prompts
 ---
 
 # LLM-расход · 30 дней · сравнение провайдеров

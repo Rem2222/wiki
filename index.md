@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-09-30_
+_Обновлено: 2026-10-03_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -286,6 +286,7 @@ _Обновлено: 2026-09-30_
 - [[tools/cmu-agents]] — CMU Agents: материал по AI-агентам от Carnegie Mellon для геймдева (MUL-10074)
 - [[tools/browser-skill]] — BrowserSkill: ИИ-агент в твоём браузере с логинами и куками (Tencent, MIT)
 - [[tools/codex-chatgpt-web]] — codex-chatgpt-web: ChatGPT Web (включая Pro) как нативные модели Codex
+- [[tools/llm-usage]] — LLM-расход Hermes за 30 дней: дашборд и стоимость по провайдерам (rem2222.top/llm-usage.html)
 
 ## LLM
 - [[llm/local-gemma-4-12b-setup]] — локальный запуск Gemma 4 12B coder на XE2690
@@ -296,6 +297,10 @@ _Обновлено: 2026-09-30_
 - [[tech/ternary-bonsai-2]] — Ternary Bonsai 2: 27B на Qwen3.8, трёхзначное квантование, 5.9 ГБ, vision + tools
 - [[tech/freetoken-edge-moe-serving-for-personal-hardware]] — FreeToken: MoE до 753B на персональном железе (CPU+GPU+RAM как единый пул)
 - [[tools/wemm-embedding]] — WeMM-Embedding: мультимодальные эмбеддинги Tencent (text/image/video, matryoshka)
+- [[llm/clef-decision-models]] — Clef/Clef-flash (Cloudflare): decision-модели и 4 варианта в пайплайне Романа (пункт 3 — маршрутизация памяти)
+- [[llm/bench-prompts]] — промты и эндпоинты бенчмарка «солнечная система» (конкурс HTML-кода)
+- [[llm/ru-providers-pricing]] — недорогие LLM-провайдеры РФ: сравнение цен (TeamoRouter, b.ai, neuraldeep)
+- [[llm/teamo-verdict]] — вердикт по TeamoRouter: роутер-реселлер на пуле чужих аккаунтов
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
 - [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)
@@ -337,6 +342,7 @@ _Обновлено: 2026-09-30_
 - [[videos/claude-opensource-llm-openclaw-runpod]] — Claude без подписки: Opensource LLM + OpenClaw на RunPod
 - [[videos/moonin-papa-crypto-pumps-scanner]] — Moonin Papa: бесплатный крипто-сканер для поиска монет после пампа
 - [[videos/trading/claude-tradingview-connection]] — Claude + TradingView: подключение и настройка
+- [[videos/20-knig-o-zhelaniyah-v-ii]] — 20 книг о желаниях в ИИ: 4 общих принципа, споры авторов и миф «Секрета» про благодарность
 
 ## Разное
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki

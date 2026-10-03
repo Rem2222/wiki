@@ -1,8 +1,13 @@
 ---
 title: Clef / Clef-flash (Cloudflare) — decision-модели и 4 варианта в пайплайне Романа
+description: "Decision-модели Clef/Clef-flash от Cloudflare и 4 варианта их встраивания в пайплайн Романа; фокус — пункт 3, маршрутизация памяти выбирающей моделью."
 tags: [llm, clef, cloudflare, workers-ai, decision-model, memory-routing, triage]
 created: 2026-10-02
 status: отложено — вернуться (пилот: пункт 3, маршрутизация памяти)
+related:
+  - llm/ru-providers-pricing
+  - llm/teamo-verdict
+  - tech/openviking
 ---
 
 # Clef и Workers AI: что это и куда вставить в пайплайн

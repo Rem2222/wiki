@@ -1,7 +1,12 @@
 ---
 title: Недорогие LLM-провайдеры РФ — сравнение цен
+description: "Сравнение цен недорогих LLM-провайдеров (TeamoRouter, b.ai, neuraldeep и др.) для Hermes и агентов: вход/выход за 1 млн токенов."
 tags: [llm, providers, pricing, cheap]
 updated: 2026-10-01
+related:
+  - llm/teamo-verdict
+  - tools/llm-usage
+  - ops/services/server-architecture
 ---
 
 # Недорогие LLM-провайдеры РФ: сравнитель цен

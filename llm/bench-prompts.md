@@ -1,7 +1,12 @@
 ---
 title: Промты и эндпоинты бенчмарка (солнечная система)
+description: "Единый усиленный промт и эндпоинты бенчмарка «солнечная система» — конкурс HTML-кода для раскладки моделей от слабых к сильным."
 tags: [llm, benchmark, prompts, endpoints, opencode-go, alibaba, teamorouter]
 created: 2026-10-01
+related:
+  - llm/teamo-verdict
+  - llm/ru-providers-pricing
+  - tools/llm-usage
 ---
 
 # Промты и эндпоинты бенчмарка LLM

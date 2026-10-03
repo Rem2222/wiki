@@ -1,7 +1,11 @@
 ---
 title: Вердикт по TeamoRouter и дешёвым роутерам
+description: "Вердикт по TeamoRouter: настоящие модели, но роутер-реселлер на пуле чужих аккаунтов — признаки, наблюдения с бенчей, решение Романа."
 tags: [llm, providers, teamorouter, reseller]
 created: 2026-10-01
+related:
+  - llm/ru-providers-pricing
+  - llm/bench-prompts
 ---
 
 # Вердикт: TeamoRouter и дешёвые LLM-роутеры

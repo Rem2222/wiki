@@ -49,8 +49,14 @@ td.b{font-weight:700}
 <span class="dot" style="background:#e06a5a"></span><span>топовый</span>
 <span style="margin-left:10px">точка = модель · лог-шкала</span>
 </div><h2>Провайдеры — сравнение на одном графике (₽/мес, log)</h2>
-<div class="nc">Один столбец = провайдер, точки = его модели по тирам (дешёвый/средний/топ). Наведите на точку — модель и цена.</div>
+<div class="nc">Один столбец = провайдер, точки = его модели по тирам (дешёвый/средний/топ). Наведите на точку — модель и цена. b.ai добавлен из каталога docs.b.ai (референсные $/M, ₽ на твой объём).</div>
 <div class="chart" id="ch4"></div></div>
+
+<div class="card"><h2>Провайдер b.ai — каталог и цены (твой объём за 30 дней)</h2>
+<div class="nc">Цены $/M вход/выход — референс docs.b.ai (01.10.2026); ₽/мес = на твой фактический объём 26.2M вход / 4.4M выход, без кэша. У b.ai цены tier по длине контекста (≤272K / &gt;272K) — показан базовый tier.</div>
+<table>
+<thead><tr><th>Модель</th><th>Тир</th><th>Вх $/M</th><th>Вых $/M</th><th>₽/мес на твой объём</th></tr></thead>
+<tbody><tr class="t-дешёвый"><td>b.ai · gpt-6-luna</td><td>дешёвый</td><td class="n">$0.10</td><td class="n">$0.12</td><td class="n b">266 ₽</td></tr><tr class="t-дешёвый"><td>b.ai · deepseek-v4.1-flash</td><td>дешёвый</td><td class="n">$0.15</td><td class="n">$0.60</td><td class="n b">552 ₽</td></tr><tr class="t-средний"><td>b.ai · deepseek-v4-pro</td><td>средний</td><td class="n">$0.66</td><td class="n">$0.66</td><td class="n b">1,694 ₽</td></tr><tr class="t-средний"><td>b.ai · glm-5.3</td><td>средний</td><td class="n">$1.40</td><td class="n">$1.40</td><td class="n b">3,593 ₽</td></tr><tr class="t-средний"><td>b.ai · gemini-3.5-flash</td><td>средний</td><td class="n">$1.50</td><td class="n">$1.50</td><td class="n b">3,849 ₽</td></tr><tr class="t-средний"><td>b.ai · gpt-6-sol</td><td>средний</td><td class="n">$2.00</td><td class="n">$2.50</td><td class="n b">5,317 ₽</td></tr><tr class="t-средний"><td>b.ai · gpt-6.1-sol</td><td>средний</td><td class="n">$2.00</td><td class="n">$2.50</td><td class="n b">5,317 ₽</td></tr><tr class="t-топовый"><td>b.ai · kimi-k3</td><td>топовый</td><td class="n">$3.00</td><td class="n">$3.00</td><td class="n b">7,698 ₽</td></tr><tr class="t-топовый"><td>b.ai · gpt-6-astra</td><td>топовый</td><td class="n">$10.00</td><td class="n">$12.50</td><td class="n b">26,586 ₽</td></tr></tbody></table></div>
 
 <div class="dual">
 <div class="card half"><h2>Гермес (чат/агент) — ₽/мес</h2>
@@ -135,17 +141,24 @@ const PROVS=["b.ai (off-peak)", "TeamoRouter", "neuraldeep"], PROVCOL=['#5aa0c7'
 const HERM_TOT=[686, 983, 791], MULT_TOT=[22.02, 23.21, 20.4], PROV_MOD=["DeepSeek V4.1 Flash", "DeepSeek V4.1 Flash", "Qwen3.6-35b-a3b"];
 
 // ---------- ch4: провайдеры на одном графике (scatter, log) ----------
+const BAI_=[["gpt-6-luna", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", 0.1, 0.125, 265.86446503775], ["deepseek-v4.1-flash", "\u0434\u0435\u0448\u0451\u0432\u044b\u0439", 0.15, 0.6, 551.541738336], ["deepseek-v4-pro", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", 0.66, 0.66, 1693.6074529373998], ["glm-5.3", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", 1.4, 1.4, 3592.500657745999], ["gemini-3.5-flash", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", 1.5, 1.5, 3849.1078475849995], ["gpt-6-sol", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", 2.0, 2.5, 5317.289300755], ["gpt-6.1-sol", "\u0441\u0440\u0435\u0434\u043d\u0438\u0439", 2.0, 2.5, 5317.289300755], ["kimi-k3", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", 3.0, 3.0, 7698.215695169999], ["gpt-6-astra", "\u0442\u043e\u043f\u043e\u0432\u044b\u0439", 10.0, 12.5, 26586.446503774998]];                                    // [имя, тир, вх$, вых$, ₽/мес]
+const BAI_PROV=PROVS.findIndex(p=>String(p).indexOf('b.ai')>=0);  // колонка b.ai (off-peak) уже есть в usage
+const AXIS= BAI_PROV>=0 ? PROVS : PROVS.concat(['b.ai']);
+const baiX= BAI_PROV>=0 ? BAI_PROV : PROVS.length;
+const baiPts=BAI_.map(b=>({prov:baiX,x:baiX,cost:b[4],tier:b[1],col:(b[1]==='дешёвый'?'#6cb27a':b[1]==='средний'?'#e0b94f':'#e06a5a'),short:b[0],unit:'$'+b[2]+' / $'+b[3],isBai:true}));
 function provIdx(nm){const p=nm.split(' · ')[1];return PROVS.indexOf(p);}
-const scat=NAMES.map((nm,i)=>({prov:provIdx(nm),cost:TOT[i],tier:TIERS[i],col:COLORS[i],short:NAMES_SHORT[i]}));
+const scat=NAMES.map((nm,i)=>({prov:provIdx(nm),cost:TOT[i],tier:TIERS[i],col:COLORS[i],short:NAMES_SHORT[i]})).concat(baiPts);
 const scatX=scat.map((s,i)=>{
-  const same=scat.filter(q=>q.prov===s.prov); const k=same.findIndex(q=>q===s);
-  return same.length>1 ? s.prov+(k-(same.length-1)/2)*0.09 : s.prov;
+  const same=scat.filter(q=>q.prov===s.prov);
+  if(same.length<=1) return (s.x!==undefined? s.x : s.prov);
+  const k=same.findIndex(q=>q===s);
+  return s.prov+(k-(same.length-1)/2)*0.09;
 });
 echarts.init(document.getElementById('ch4')).setOption({
- tooltip:{formatter:p=>{const s=scat[p.dataIndex];return '<b>'+s.short+'</b> · '+PROVS[s.prov]+'<br>'+s.tier+' · '+s.cost.toLocaleString('ru-RU')+' ₽/мес';}},
+ tooltip:{formatter:p=>{const s=scat[p.dataIndex];return '<b>'+s.short+'</b> · '+(AXIS[s.prov]||'?')+'<br>'+s.tier+(s.isBai?' · '+s.unit:'')+' · '+s.cost.toLocaleString('ru-RU')+' ₽/мес';}},
  legend:{data:['дешёвый','средний','топовый'],textStyle:{color:'#9aa3c2'},top:0},
  grid:{left:56,right:20,top:30,bottom:44},
- xAxis:{type:'category',data:PROVS,axisLabel:{color:'#9aa3c2',fontSize:11},axisLine:{show:false}},
+ xAxis:{type:'category',data:AXIS,axisLabel:{color:'#9aa3c2',fontSize:11},axisLine:{show:false}},
  yAxis:{type:'log',axisLabel:{color:'#9aa3c2',formatter:v=>v>=1000?(v/1000)+'k':v},splitLine:{lineStyle:{color:'#2a3050'}}},
  series:[{type:'scatter',symbolSize:17,data:scatX.map((x,i)=>({value:[x,scat[i].cost],itemStyle:{color:scat[i].col}})),emphasis:{focus:'series'}}]
 });
