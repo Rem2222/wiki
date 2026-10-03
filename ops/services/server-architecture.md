@@ -84,7 +84,7 @@ related:
 
 ## Agent Platform
 
-- [[ops/services/jawl]] — Just Another Workflow Library
+- [[ops/services/jawl]] — Just Another Workflow Library (демонтирован 2026-10-03, заменён [[ops/services/dex]])
 - [[ops/services/codegraph]] — MCP-сервер графа кода
 - [[ops/services/cgc]] — CodeGraphContext MCP-сервер
 
