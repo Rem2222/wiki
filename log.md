@@ -444,3 +444,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 ## [2026-10-03] ops | GBrain удалён (gbrain.md -> status: removed)
 ## [2026-10-03] ops | JAWL удалён (jawl.md -> status: removed): юниты user jawl + system jawl + jawl-dashboard, nginx-роут /jawl/, каталог /root/JAWL (1.1G); архив /root/backups/jawl-final-20261003.tar.gz (226M). Причина: заменён Дексом + 404 на бесплатной модели LLM
 ## [2026-10-03] ops | Графы CodeGraph (Kuzu) почищены: ~/.codegraphcontext 526M -> 52K (db удалены, .env/конфиги сохранены); движок Kuzu заархивирован командой 2025-10-10, сервисы codegraph/cgc-daemon inactive с 2026-09-29
+## [2026-10-03] ops | server-architecture: codegraph и cgc помечены отключёнными 2026-09-29 (страницы codegraph.md/cgc.md уже имели status: disabled), старый граф /root/.codegraph/graph 116M удалён -> /root/.codegraph 112M -> 64K

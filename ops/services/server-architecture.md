@@ -85,8 +85,8 @@ related:
 ## Agent Platform
 
 - [[ops/services/jawl]] — Just Another Workflow Library (демонтирован 2026-10-03, заменён [[ops/services/dex]])
-- [[ops/services/codegraph]] — MCP-сервер графа кода
-- [[ops/services/cgc]] — CodeGraphContext MCP-сервер
+- [[ops/services/codegraph]] — MCP-сервер графа кода (отключён 2026-09-29, графовые данные Kuzu удалены 2026-10-03)
+- [[ops/services/cgc]] — CodeGraphContext MCP-сервер (отключён 2026-09-29)
 
 ## System
 
