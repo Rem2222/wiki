@@ -442,3 +442,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 - **Коммиты:** `12c0f96` (run_cmd) → `65269ea` (уровни) → `6e89dd3` (fetch_url + развязка интереса). Бэкапы `dex-proactive-20260930_200500.tgz`, `_221500.tgz`.
 ## [2026-10-03] wiki-health: frontmatter (description/related) для 5 страниц llm/+tools/llm-usage, +2 страницы ops/services (multi-exporter — демонтирован, skills-dashboard — не запущен), +6 записей в index.md
 ## [2026-10-03] ops | GBrain удалён (gbrain.md -> status: removed)
+## [2026-10-03] ops | JAWL удалён (jawl.md -> status: removed): юниты user jawl + system jawl + jawl-dashboard, nginx-роут /jawl/, каталог /root/JAWL (1.1G); архив /root/backups/jawl-final-20261003.tar.gz (226M). Причина: заменён Дексом + 404 на бесплатной модели LLM
+## [2026-10-03] ops | Графы CodeGraph (Kuzu) почищены: ~/.codegraphcontext 526M -> 52K (db удалены, .env/конфиги сохранены); движок Kuzu заархивирован командой 2025-10-10, сервисы codegraph/cgc-daemon inactive с 2026-09-29
