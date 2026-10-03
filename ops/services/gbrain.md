@@ -1,49 +1,29 @@
 ---
-description: GBrain — графовая база знаний, семантический поиск, код-граф, MCP.
+description: GBrain — графовая база знаний, семантический поиск, код-граф, MCP. УДАЛЁН 2026-10-03.
 tags:
   - ops
   - service
-  - core
+  - archived
 type: service
+status: removed
 related:
-  - ops/services/postgresql
-  - ops/services/nginx
+  - ops/services/zvec-wiki
 service:
   name: gbrain
   category: core
   purpose: Graph-based knowledge brain
   install_date: 2025-06
+  removed_date: 2026-10-03
+  removed_reason: Полная замена на zvec-wiki (поиск) + wiki-health-check.py (аудит); удалены systemd-юнит, контейнер, том, /root/gbrain
   last_verified: 2026-10-03
-  health_url: "http://localhost:3131/health"
   type: systemd + docker
-  ports:
-    -
-      port: 3131
-      protocol: tcp
-      bind: 127.0.0.1
-      description: HTTP (Admin + MCP)
-  systemd_units:
-    - gbrain-http
-  docker_containers:
-    - gbrain-postgres
-  processes:
-    -
-      pattern: gbrain.*serve
-      description: HTTP-сервер
-    -
-      pattern: gbrain.*autopilot
-      description: Автопилот wiki
-    -
-      pattern: gbrain.*jobs
-      description: Worker
-  config_paths:
-    - /root/gbrain/
-    - /root/.gbrain/
-  logs:
-    - /root/.gbrain/autopilot.err
-  depends_on:
-    - postgresql
-    - nginx
-  data_size_hint: 42 MB (PG)
-  notes: v0.41.26.0. 3 serve-процесса.
+  ports: []
+  systemd_units: []
+  docker_containers: []
+  processes: []
+  config_paths: []
+  logs: []
+  depends_on: []
+  data_size_hint: "0 B (удалён)"
+  notes: Удалён полностью 2026-10-03 по решению Романа. Не использовать, не поднимать заново. Поиск по вики — zvec-wiki, аудит — wiki-health-check.py (см. ops/services/zvec-wiki).
 ---
