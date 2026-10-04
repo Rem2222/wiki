@@ -56,4 +56,5 @@ service:
     Проверено 2026-09-30: оба юнита enabled+active, NRestarts=0 (был crash-loop
     из-за отсутствия flask, счётчик дошёл до 290 794). Git: Rem2222/dex-agent.
     Подробное устройство: [[tech/dex-internals]].
+last_verified: 2026-10-05
 ---

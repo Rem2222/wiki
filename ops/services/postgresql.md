@@ -31,4 +31,5 @@ service:
   depends_on:
     []
   notes: "Multica: 12 conn, 152 MB. GBrain: 9 conn, 42 MB."
+last_verified: 2026-10-05
 ---

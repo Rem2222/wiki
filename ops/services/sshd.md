@@ -27,4 +27,5 @@ service:
     []
   last_verified: 2026-10-04
   notes: Нестандартный порт.
+last_verified: 2026-10-05
 ---

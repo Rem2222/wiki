@@ -27,4 +27,5 @@ service:
   depends_on:
     []
   notes: Через /v1/ и /freellmapi/.
+last_verified: 2026-10-05
 ---

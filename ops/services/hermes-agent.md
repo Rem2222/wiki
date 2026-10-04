@@ -53,4 +53,5 @@ service:
   depends_on:
     - nginx
   notes: v0.18.0. SOCKS proxy блокирует pip.
+last_verified: 2026-10-05
 ---

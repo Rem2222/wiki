@@ -24,4 +24,5 @@ service:
   depends_on:
     - nginx
   notes: "Через /mercury/. Уже есть страница в wiki: tech/Mercury-Agent-Skills.md."
+last_verified: 2026-10-05
 ---
