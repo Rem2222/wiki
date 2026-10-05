@@ -13,7 +13,7 @@ service:
   category: storage
   purpose: Реляционные БД
   install_date: 2025-05
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: 
   type: docker
   ports:
@@ -31,5 +31,5 @@ service:
   depends_on:
     []
   notes: "Multica: 12 conn, 152 MB. GBrain: 9 conn, 42 MB."
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---

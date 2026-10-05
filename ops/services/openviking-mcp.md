@@ -14,7 +14,7 @@ service:
   category: memory
   purpose: MCP-мост для внешних клиентов (LLaMA, OpenClaw, DSH) к OpenViking REST API
   install_date: 2026-09-06
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:8901/"
   type: systemd
   ports:
@@ -38,7 +38,7 @@ service:
     FastMCP-bridge (Python). Инструменты: viking_search, viking_read, viking_browse, viking_remember.
     Auth: Authorization: Bearer <key> через Starlette middleware — GET / без ключа отдаёт 401 (норма).
     Внешний URL: https://rem2222.top/openviking-mcp/ (nginx proxy, CORS для браузерных MCP-клиентов).
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---
 
 # OpenViking MCP Bridge

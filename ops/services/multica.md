@@ -13,7 +13,7 @@ service:
   category: core
   purpose: Платформа управления AI-агентами
   install_date: 2025-05
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:8080/health"
   type: docker-compose
   ports:
@@ -64,5 +64,5 @@ service:
     - postgresql
   data_size_hint: 152 MB (PG)
   notes: v0.3.31.
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---

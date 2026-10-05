@@ -13,7 +13,7 @@ service:
   category: llm-proxy
   purpose: Gemini reverse proxy (OpenAI-compatible)
   install_date: 2025-06
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:8083/v1/models"
   type: docker
   ports:
@@ -27,5 +27,5 @@ service:
   depends_on:
     []
   notes: "401 invalid API key = запрос без заголовка Authorization — это норма, а не поломка. /v1/* требует Bearer-ключ из config.json (api_keys, сейчас sk-gemini). Провайдер Hermes: providers.gemini-local (models discovers автоматически). Порт публикуется docker'ом на 0.0.0.0 — в обход UFW."
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---

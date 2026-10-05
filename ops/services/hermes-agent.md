@@ -14,7 +14,7 @@ service:
   category: core
   purpose: AI-агент для автоматизации, gateway сообщений
   install_date: 2025-05-27
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:8642/health"
   type: standalone (python)
   ports:
@@ -53,5 +53,5 @@ service:
   depends_on:
     - nginx
   notes: v0.18.0. SOCKS proxy блокирует pip.
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---

@@ -13,7 +13,7 @@ service:
   category: llm-proxy
   purpose: Unified LLM API router
   install_date: 2025-06
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:3010/v1/models"
   type: docker
   ports:
@@ -27,5 +27,5 @@ service:
   depends_on:
     []
   notes: Через /v1/ и /freellmapi/.
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---

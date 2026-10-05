@@ -10,7 +10,7 @@ service:
   category: ai-platform
   purpose: "Семантическая долговременная память Hermes напарника: recall/retain/reflect, observations, mental models, knowledge pages. Выбрано как memory.provider в MUL-874."
   install_date: 2026-08-20
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: http://localhost:8888/health
   type: docker
   ports:
@@ -37,7 +37,7 @@ service:
     - postgresql
   data_size_hint: "Postgres hindsight_db, ~31k memory_units"
   notes: "Двойной гейт консолидации: глобальный env HINDSIGHT_API_ENABLE_AUTO_CONSOLIDATION + bank config.enable_observations (оба должны быть true, случай 22.08). Внешний доступ: rem2222.top/hindsight-api/ через nginx (rewrite strip) + сам Bearer-токен."
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---
 
 # Hindsight

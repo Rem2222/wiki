@@ -15,7 +15,7 @@ service:
   category: llm-proxy
   purpose: Бесплатный Qwen API через Qwen Web Chat (chat.qwen.ai)
   install_date: 2026-09-28
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:9656/api"
   type: systemd
   ports:
@@ -47,5 +47,5 @@ service:
     qwen-prep-tokens. 29.09 юнит 4 раза падал на старте (16:01–16:30, инъекция кук), с 16:37 работает
     стабильно. Живость: GET /api → 200 (/ и /v1/models отдают JSON «Эндпоинт не найден» — это норма).
     Бэкап дистрибутива: /root/backups/FreeQwenApi-20260928_142745.tgz.
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---

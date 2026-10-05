@@ -12,7 +12,7 @@ service:
   category: agent-platform
   purpose: Долговременная память агента
   install_date: 2025-06
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:3113/"
   type: docker + systemd
   ports:
@@ -58,5 +58,5 @@ service:
   depends_on:
     []
   notes: /agentmemory/health 404. REST consolidation не работает.
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---

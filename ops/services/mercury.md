@@ -12,7 +12,7 @@ service:
   category: monitoring
   purpose: Дашборд Mercury Agent
   install_date: 2026-07-03
-  last_verified: 2026-10-04
+  last_verified: 2026-10-06
   health_url: "http://localhost:6174/"
   type: standalone
   ports:
@@ -24,5 +24,5 @@ service:
   depends_on:
     - nginx
   notes: "Через /mercury/. Уже есть страница в wiki: tech/Mercury-Agent-Skills.md."
-last_verified: 2026-10-05
+last_verified: 2026-10-06
 ---
