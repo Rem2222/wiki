@@ -12,7 +12,7 @@ service:
   category: security
   purpose: SSO аутентификация, 2FA
   install_date: 2025-05
-  last_verified: 2026-10-06
+  last_verified: 2026-10-07
   health_url: "http://localhost:9091/"
   type: docker
   ports:
@@ -27,5 +27,5 @@ service:
   depends_on:
     []
   notes: Nginx error_page 401/403.
-last_verified: 2026-10-06
+last_verified: 2026-10-07
 ---

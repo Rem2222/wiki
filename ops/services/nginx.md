@@ -14,7 +14,7 @@ service:
   category: core
   purpose: Обратный прокси, HTTPS, Authelia SSO
   install_date: 2025-05
-  last_verified: 2026-10-06
+  last_verified: 2026-10-07
   health_url: "http://localhost:80/"
   type: systemd
   ports:
@@ -38,5 +38,5 @@ service:
   depends_on:
     - authelia
   notes: 20+ location блоков.
-last_verified: 2026-10-06
+last_verified: 2026-10-07
 ---

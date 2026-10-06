@@ -12,7 +12,7 @@ service:
   category: monitoring
   purpose: Push-уведомления
   install_date: 2025-06
-  last_verified: 2026-10-06
+  last_verified: 2026-10-07
   health_url: "http://localhost:2586/"
   type: docker
   ports:
@@ -26,5 +26,5 @@ service:
   depends_on:
     []
   notes: Вспомогательный канал (основной — Telegram).
-last_verified: 2026-10-06
+last_verified: 2026-10-07
 ---

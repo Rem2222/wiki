@@ -14,7 +14,7 @@ service:
   category: agent-platform
   purpose: Веб-дашборд и REST API для управления проактивным агентом Dex
   install_date: 2026-07-08
-  last_verified: 2026-10-06
+  last_verified: 2026-10-07
   health_url: "http://localhost:3333/"
   type: systemd (user)
   ports:
@@ -56,5 +56,5 @@ service:
     Проверено 2026-09-30: оба юнита enabled+active, NRestarts=0 (был crash-loop
     из-за отсутствия flask, счётчик дошёл до 290 794). Git: Rem2222/dex-agent.
     Подробное устройство: [[tech/dex-internals]].
-last_verified: 2026-10-06
+last_verified: 2026-10-07
 ---

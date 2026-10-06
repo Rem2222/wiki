@@ -12,7 +12,7 @@ service:
   category: network
   purpose: Mesh VPN, exit node
   install_date: 2025-05
-  last_verified: 2026-10-06
+  last_verified: 2026-10-07
   health_url: 
   type: systemd
   systemd_units:
@@ -20,5 +20,5 @@ service:
   depends_on:
     []
   notes: v1.98.4. Online.
-last_verified: 2026-10-06
+last_verified: 2026-10-07
 ---

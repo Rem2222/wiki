@@ -12,7 +12,7 @@ service:
   category: system
   purpose: Визуализация использования диска
   install_date: 2025-05
-  last_verified: 2026-10-06
+  last_verified: 2026-10-07
   health_url: "http://localhost:8081/"
   type: standalone (python CGI)
   ports:
@@ -26,5 +26,5 @@ service:
   depends_on:
     []
   notes: Через /duc/. Индекс обновляется каждые 2ч.
-last_verified: 2026-10-06
+last_verified: 2026-10-07
 ---

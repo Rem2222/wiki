@@ -14,7 +14,7 @@ service:
   category: core
   purpose: Веб-интерфейс Hermes (Hermes Studio) — сессии и управление агентом
   install_date: 2026-08-18
-  last_verified: 2026-10-06
+  last_verified: 2026-10-07
   health_url: "http://localhost:5173/"
   type: systemd
   ports:
@@ -38,7 +38,7 @@ service:
     Пакет v0.6.44 в /usr/lib/node_modules/hermes-web-ui, бинарь /usr/bin/hermes-web-ui.
     Type=forking, PIDFile /root/.hermes-web-ui/server.pid, NODE_ENV=production.
     Отвечает 200 на /. Не путать с hermes-dashboard (:9119) — это отдельный дашборд.
-last_verified: 2026-10-06
+last_verified: 2026-10-07
 ---
 
 # Hermes Web UI
