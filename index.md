@@ -159,6 +159,7 @@ _Обновлено: 2026-10-03_
 - [[tech/revealjs]] — HTML Presentation Framework (презентации из Markdown, 71.5k ⭐)
 - [[tech/ozon-seller-api]] — Ozon Seller API: MCP, SDK, библиотеки для Python/Go/PHP/TS/C#
 - [[tech/ozon-purchase-history]] — Ozon история покупок: Chrome-расширение и Python-парсер для экспорта заказов
+- [[tech/freshauto]] — freshauto.ru: SSR-блоб `_piniaInitialState`, path-фидеры, инкремент по sitemap, дамп 10 417 авто
 - [[tech/hermes-external-integrations]] — каталоги готовых интеграций для AI-агентов (aci.dev, composio, arcade.dev)
 - [[tech/mcpservers]] — каталог MCP-серверов (mcpservers.org)
 - [[tech/fastmcp]] — FastMCP: MCP фреймворк от PrefectHQ (25.7k ⭐, ~70% всех MCP серверов)
@@ -286,6 +287,8 @@ _Обновлено: 2026-10-03_
 - [[tools/cmu-agents]] — CMU Agents: материал по AI-агентам от Carnegie Mellon для геймдева (MUL-10074)
 - [[tools/browser-skill]] — BrowserSkill: ИИ-агент в твоём браузере с логинами и куками (Tencent, MIT)
 - [[tools/codex-chatgpt-web]] — codex-chatgpt-web: ChatGPT Web (включая Pro) как нативные модели Codex
+- [[tools/aquilum]] — Aquilum: аналог Obsidian на Rust, 27 МБ ОЗУ. ⚠️ исходники НЕ открыты, Windows-only
+- [[tools/rea]] — REA: MCP+CLI для реверса (PE/Ghidra/JS/.NET), MIT, 4.2k⭐. Статика — да, динамика сетевого стека — нет
 - [[tools/llm-usage]] — LLM-расход Hermes за 30 дней: дашборд и стоимость по провайдерам (rem2222.top/llm-usage.html)
 
 ## LLM
