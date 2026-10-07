@@ -15,7 +15,7 @@ service:
   category: llm-proxy
   purpose: Бесплатный Qwen API через Qwen Web Chat (chat.qwen.ai)
   install_date: 2026-09-28
-  last_verified: 2026-10-07
+  last_verified: 2026-10-08
   health_url: "http://localhost:9656/api"
   type: systemd
   ports:

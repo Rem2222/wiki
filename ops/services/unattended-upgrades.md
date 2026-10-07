@@ -12,7 +12,7 @@ service:
   category: system
   purpose: Автообновления безопасности
   install_date: 2025-05
-  last_verified: 2026-10-07
+  last_verified: 2026-10-08
   health_url: 
   type: systemd
   systemd_units:

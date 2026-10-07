@@ -22,7 +22,7 @@ service:
     nginx-роут /jawl/ снят ещё 2026-10-02. Хроническая причина неработоспособности:
     LLM отвечает 404 «model unavailable for free» (slug nemotron-3-nano-30b-a3b)
     плюс TelegramConflictError getUpdates/webhook ~66 часов.
-  last_verified: 2026-10-07
+  last_verified: 2026-10-08
   type: systemd (user) — удалён
   backup: /root/backups/jawl-final-20261003.tar.gz (226M, 1155 файлов, без venv)
   notes: >-

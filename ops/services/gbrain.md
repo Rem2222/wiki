@@ -15,7 +15,7 @@ service:
   install_date: 2025-06
   removed_date: 2026-10-03
   removed_reason: Полная замена на zvec-wiki (поиск) + wiki-health-check.py (аудит); удалены systemd-юнит, контейнер, том, /root/gbrain
-  last_verified: 2026-10-07
+  last_verified: 2026-10-08
   type: systemd + docker
   ports: []
   systemd_units: []
