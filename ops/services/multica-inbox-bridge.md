@@ -20,5 +20,5 @@ service:
   depends_on:
     - multica
   notes: Доставляет уведомления из Multica в Telegram.
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---

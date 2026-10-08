@@ -42,7 +42,7 @@ service:
     только внутри контейнера) — запись lightpanda.md про "0.0.0.0:9222" устарела.
     Обслуживание: профиль переживает рестарты, при утечке памяти — systemctl restart
     headless-shell. Регистрация: ночная рутина 2026-09-29 (MUL-10126).
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---
 # Chrome Headless Shell (headless-shell)
 

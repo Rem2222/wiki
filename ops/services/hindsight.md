@@ -37,7 +37,7 @@ service:
     - postgresql
   data_size_hint: "Postgres hindsight_db, ~31k memory_units"
   notes: "Двойной гейт консолидации: глобальный env HINDSIGHT_API_ENABLE_AUTO_CONSOLIDATION + bank config.enable_observations (оба должны быть true, случай 22.08). Внешний доступ: rem2222.top/hindsight-api/ через nginx (rewrite strip) + сам Bearer-токен."
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---
 
 # Hindsight

@@ -30,5 +30,5 @@ service:
   data_size_hint: ~50 MB image
   notes: "docker run lightpanda/browser (plain run, no compose). Используется Hermes browser tools как лёгкая альтернатива headless Chrome. Лимит памяти: 4GiB (поднят 2026-08-15 с 2GiB, MUL-831 — OOM-kill при пиковой конкуренции сессий на тяжёлых JS-сайтах). Образ обновлён 15.08 до nightly.8662 (mem-фиксы ArenaPool/blob/_proto, вышли 30-31.07; лик #2460 Frame.removeNode не освобождает память). Таймер lightpanda-restart.timer — рестарт каждые 6ч. 2026-09-29: на хосте 127.0.0.1:9222 слушает headless-shell.service (у контейнера lightpanda маппинга портов нет, слушает только внутри bridge-сети) — см. ops/services/headless-shell."
   memory_limit: 4GiB
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---

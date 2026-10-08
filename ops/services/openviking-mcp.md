@@ -38,7 +38,7 @@ service:
     FastMCP-bridge (Python). Инструменты: viking_search, viking_read, viking_browse, viking_remember.
     Auth: Authorization: Bearer <key> через Starlette middleware — GET / без ключа отдаёт 401 (норма).
     Внешний URL: https://rem2222.top/openviking-mcp/ (nginx proxy, CORS для браузерных MCP-клиентов).
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---
 
 # OpenViking MCP Bridge

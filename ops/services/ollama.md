@@ -44,5 +44,5 @@ service:
     вместо OpenRouter text-embedding-3-small — синк больше не зависит от кредитов OpenRouter.
     qwen2.5:7b — локальная LLM для экспериментов. Проверка эмбеддингов:
     curl -s http://127.0.0.1:11434/api/embed -d '{"model":"bge-m3","input":"тест"}' → 1024 dims.
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---

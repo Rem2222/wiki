@@ -44,5 +44,5 @@ service:
     Установлен как systemd сервис tor@default.service.
     ALL_PROXY=socks5://127.0.0.1:40000 — основной прокси, Tor на :9050 для специальных случаев.
     В конфиге torrc настроен ExitNodes {ru}, StrictNodes 1 для российских выходных нод.
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---

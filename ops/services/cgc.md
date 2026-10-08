@@ -28,7 +28,7 @@ service:
   notes: "Python uv tool (CodeGraphContext). ОТКЛЮЧЁН 2026-09-29 вместе с codegraph — детали в теле страницы."
   disabled_at: 2026-09-29
   status: disabled
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---
 
 # CGC (CodeGraphContext)

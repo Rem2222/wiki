@@ -32,5 +32,5 @@ service:
   depends_on:
     - nginx
   notes: Через /cockpit/.
-last_verified: 2026-10-07
+last_verified: 2026-10-09
 ---
