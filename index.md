@@ -131,6 +131,7 @@ _Обновлено: 2026-10-03_
 - [[tech/pre-mortem]] — Pre-Mortem анализ провала по Gary Klein
 - [[tech/sdd-deep-guide]] — полное погружение в SDD для опытного программиста
 - [[tech/sdd-deep-guide-ru]] — русская версия глубокого погружения в SDD
+- [[tech/kun-chen-tdd-eval]] — Kun Chen vs TDD на DeepSWE: расчёт мощности (выборка не показательна), 3 искажения пересказа, граница Iron Law, список доработок
 - [[tech/sdd-instruments]] — сравнение SDD-инструментов: Kiro, Spec-kit, Tessl, OpenSpec
 - [[tech/smoon-docker]] — Остановка SMOON, очистка Docker, команды и структура
 - [[tech/docker-agent-skills]] — Docker Skills: 11 официальных SKILL.md от Docker для агентов; у нас стоят 3 (destructive-guardrails, build-strategies, compose-patterns)
