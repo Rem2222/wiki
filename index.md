@@ -290,6 +290,8 @@ _Обновлено: 2026-10-03_
 - [[tools/codex-chatgpt-web]] — codex-chatgpt-web: ChatGPT Web (включая Pro) как нативные модели Codex
 - [[tools/aquilum]] — Aquilum: аналог Obsidian на Rust, 27 МБ ОЗУ. ⚠️ исходники НЕ открыты, Windows-only
 - [[tools/rea]] — REA: MCP+CLI для реверса (PE/Ghidra/JS/.NET), MIT, 4.2k⭐. Статика — да, динамика сетевого стека — нет
+- [[tools/axi]] — AXI: 10 принципов агентоцентричных CLI против MCP. gh-axi 100%/$0.050/3 хода против MCP 87%/$0.148/6 ходов. Записано, НЕ устанавливалось
+- [[tools/no-mistakes]] — no-mistakes: git-прокси, пайплайн review→test→lint→PR→CI в одноразовом worktree, человек главный над интентом. 8.8k⭐, MIT. Записан, НЕ устанавливался
 - [[tools/llm-usage]] — LLM-расход Hermes за 30 дней: дашборд и стоимость по провайдерам (rem2222.top/llm-usage.html)
 
 ## LLM
