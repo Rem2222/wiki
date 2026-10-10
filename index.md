@@ -294,6 +294,7 @@ _Обновлено: 2026-10-03_
 - [[tools/axi]] — AXI: 10 принципов агентоцентричных CLI против MCP. gh-axi 100%/$0.050/3 хода против MCP 87%/$0.148/6 ходов. Записано, НЕ устанавливалось
 - [[tools/no-mistakes]] — no-mistakes: git-прокси, пайплайн review→test→lint→PR→CI в одноразовом worktree, человек главный над интентом. 8.8k⭐, MIT. Записан, НЕ устанавливался
 - [[tools/ai-tools-proxy-domains]] — Списки хостов и масок Proxifier для split-tunnel AI-инструментов (Cursor/Codex/Claude/Hermes) без полного VPN. Точный список Hermes покрывает 4 из 17 доменов. Записано, НЕ применялось
+- [[tools/page-mascot]] — Питомец на странице сайта (koboyo, MIT): следит за курсором, моргает при клике, 58 персонажей. УСТАНОВЛЕНО на rem2222.top (fox-paper, vanilla-JS порт) + камень nginx с regex-локейшном Multica
 - [[tools/llm-usage]] — LLM-расход Hermes за 30 дней: дашборд и стоимость по провайдерам (rem2222.top/llm-usage.html)
 
 ## LLM
