@@ -133,6 +133,7 @@ _Обновлено: 2026-10-03_
 - [[tech/sdd-deep-guide-ru]] — русская версия глубокого погружения в SDD
 - [[tech/kun-chen-tdd-eval]] — Kun Chen vs TDD на DeepSWE: расчёт мощности (выборка не показательна), 3 искажения пересказа, граница Iron Law, список доработок
 - [[tech/gauntlet-loop]] — Gauntlet Loop (Matt Shumer): цель + внешний бар, builder и отдельный harsh critic, blind A/B, бесконечный цикл. Промпт Claude of Duty целиком. Та же посылка, что у Kun Chen, но противоположный вывод
+- [[tech/kanal-svyazi-pri-glushenii]] — Канал связи с агентом при глушении мобильного интернета (белый список): VK-плагин Hermes без барьеров, MAX только для юрлиц/ИП/самозанятых, сертификат Минцифры, проверки API с VPS
 - [[tech/sdd-instruments]] — сравнение SDD-инструментов: Kiro, Spec-kit, Tessl, OpenSpec
 - [[tech/smoon-docker]] — Остановка SMOON, очистка Docker, команды и структура
 - [[tech/docker-agent-skills]] — Docker Skills: 11 официальных SKILL.md от Docker для агентов; у нас стоят 3 (destructive-guardrails, build-strategies, compose-patterns)
