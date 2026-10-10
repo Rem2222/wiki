@@ -350,6 +350,9 @@ _Обновлено: 2026-10-03_
 - [[videos/moonin-papa-crypto-pumps-scanner]] — Moonin Papa: бесплатный крипто-сканер для поиска монет после пампа
 - [[videos/trading/claude-tradingview-connection]] — Claude + TradingView: подключение и настройка
 - [[videos/20-knig-o-zhelaniyah-v-ii]] — 20 книг о желаниях в ИИ: 4 общих принципа, споры авторов и миф «Секрета» про благодарность
+- [[videos/gpu-vybor-dlya-neyrosetey-2026]] — Run Bot Run: какую GPU взять для нейросетей в 2026 — P40/V100/3060/3090/5090, цены и подвохи серверных (серия 1 из 3)
+- [[videos/gpu-v100-pg503-32gb]] — Кибер Кузница: Tesla V100 PG503 32GB за 55–60к, сборка с СЖО, обход TCC, тесты LLM/изображений/игр (серия 2 из 3)
+- [[videos/gpu-qwen36-27b-odna-v100-gaid]] — l2oot: Qwen3.6-27B-AWQ на одной V100 через 1Cat-vLLM, бенчмарк 4K–128K и влияние MTP4 (серия 3 из 3)
 
 ## Разное
 - [[links-from-sessions]] — собранные ссылки из чатов, не добавленные в wiki
