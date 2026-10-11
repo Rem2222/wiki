@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-10-03_
+_Обновлено: 2026-10-11_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -187,6 +187,7 @@ _Обновлено: 2026-10-03_
 - [[tech/sim-agent-workflow-builder]]
 - [[tech/free-llm-api-resources]] — бесплатный LLM API: cheahjs-список + обзор 6 сервисов (Atria 100M токенов, Vireonix без ключа, ShareLLM, OdiRouter, Selora, Routeway)
 - [[tech/free-coding-agents-2026]] — бесплатные AI coding agents 2026 (Habr 1086812): 10 сервисов, 8 из 10 уже закрыты нашим стеком; покупать только GLM Coding Lite $12.60–18
+- [[tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265]] — Agents Anywhere: control plane для агентов; наш ACP-рантайм для Hermes end-to-end на VPS (MUL-10265), PR отложен на проверку
 - [[tech/paperclip]] — платформа для оркестрации команды AI-агентов (Org Chart, heartbeats)
 - [[tech/ods-ai-server]] — локальный AI-сервер «всё-в-одном» (LLM, Open WebUI, RAG)
 - [[tech/photosorter-state-machine]] — полный автомат состояний Photo Sorter
