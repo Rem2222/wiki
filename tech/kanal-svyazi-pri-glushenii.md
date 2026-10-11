@@ -105,6 +105,36 @@ created: 2026-10-10
 **Требование:** плагин требует **Hermes ≥ 0.21.3**, у нас сейчас **v0.21.0**
 («23615 commits behind») — перед установкой нужен апдейт.
 
+## Статус внедрения (11.10.2026)
+
+**Сделано:**
+
+- Плагин `web3blind/hermes-vk-platform` v0.2.6 (MIT) установлен и включён:
+  `/root/.hermes/plugins/vk-platform/`
+- Независимый аудит кода: только stdlib + модули Hermes; нет `subprocess`, `os.system`,
+  `eval`, `exec`, `base64`; сеть только к `api.vk.com` и `vk.com`; файлов вне `/tmp` не пишет
+- `.env`: `VK_GROUP_TOKEN`, `VK_GROUP_ID=242186684` (сообщество «Hermes vps»), права 600
+- VK: Long Poll включён, события `message_new`, `message_reply`, `message_edit`,
+  `message_event`, `message_allow`, `message_deny` — все активны
+- **Дефолт безопасности плагина:** при пустом allowlist `_is_authorized()` возвращает
+  `False` для всех → агент никого не пустит, пока не задан `VK_ALLOWED_USERS`
+
+**Первый барьер (снят):** плагин требует Hermes **≥0.21.3** — конкретно метод
+`BasePlatformAdapter._event_session_key`. На 0.21.0 `hermes plugins doctor` давал
+`ERROR: Plugin registration failed ... Missing host APIs: BasePlatformAdapter._event_session_key`.
+
+**Апдейт Hermes выполнен 11.10.2026:** v0.21.6 (main @ `ae3598c7cd`). После него доктор
+плагина — **OK**. Попутно: 4 наших правленых скилла сохранены, из ядра в плагины вынесены
+`openviking` и `homeassistant`, наш патч `telegram-forward-prefix.py` **адаптирован под
+новую структуру** (версия 2: текст теперь строится через `expand_link_entities`, сигнатура
+`_build_message_event` в одну строку) и применён.
+
+**Осталось:** перезапустить gateway — он работал процессом от 04.10 на старых модулях.
+Побочный эффект до рестарта: cron-задачи падают с
+`cron external worker exited before ownership acknowledgement` (новая фича restart-safe
+воркеров не стыкуется со старым процессом; сами скрипты исправны — проверено запуском
+вручную). И нужен VK user id в `VK_ALLOWED_USERS`.
+
 ## Вариант 2. MAX — есть плагин, но есть юридический барьер
 
 **Плагин у Романа уже написан:** `/root/.hermes/plugins/max/` — `max-platform` v1.0.0,
