@@ -447,3 +447,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 ## [2026-10-03] ops | server-architecture: codegraph и cgc помечены отключёнными 2026-09-29 (страницы codegraph.md/cgc.md уже имели status: disabled), старый граф /root/.codegraph/graph 116M удалён -> /root/.codegraph 112M -> 64K
 ## [2026-10-11] Agents Anywhere ACP-рантайм (MUL-10265) — новая страница
 - tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265.md: что сделано (фазы 0–3, end-to-end на VPS, доступ через Cloudflare tunnel), как продолжить (фаза 4 PR), ограничения (моб. приложение = только облако)
+## [2026-10-11] Control plane — обзор альтернатив
+- tech/control-plane-dlya-vseh-agentov-obzor-alternativ.md: Mission Control (6.3k⭐, OpenClaw нативно), Kandev (ACP), Agency, Codeg (Telegram!), AgentMonitor, Agent Dashboard; вывод: AA закрывает весь стек (Hermes=acp, DSX=dsh в апстриме, OpenClaw/OpenCode=acp)
