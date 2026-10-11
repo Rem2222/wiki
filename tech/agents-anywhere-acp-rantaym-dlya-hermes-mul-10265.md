@@ -1,10 +1,10 @@
 ---
 description: "Open-source control plane для удалённого управления AI-агентами; наш универсальный ACP-рантайм для Hermes доведён до end-to-end на VPS, PR отложен на проверку"
 tags: [agents,control-plane,acp,hermes,vps]
-related: [[tech/free-coding-agents-2026]] [[tech/devin-ai-agent]]
+related:
+  - tech/free-coding-agents-2026
+  - tech/devin-ai-agent
 ---
-
-# Agents Anywhere — ACP-рантайм для Hermes (MUL-10265)
 
 # Agents Anywhere — ACP-рантайм для Hermes (MUL-10265)
 
