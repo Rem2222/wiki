@@ -1,10 +1,10 @@
 ---
 description: "Карта вариантов, если Agents Anywhere не устроит: Mission Control (6.3k⭐, OpenClaw), Kandev (ACP), Agency, Codeg, AgentMonitor; вывод — AA закрывает весь стек Романа"
 tags: [agents,control-plane,research,acp,self-hosted]
-related: [[tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265]] [[tech/free-coding-agents-2026]]
+related:
+  - tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265
+  - tech/free-coding-agents-2026
 ---
-
-# Control plane для всех агентов — обзор альтернатив
 
 # Control plane для всех агентов — обзор альтернатив (2026-10-11)
 
