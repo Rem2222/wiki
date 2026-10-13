@@ -139,6 +139,24 @@ node tools/dev-server.mjs --port=8080 --no-open
 и `UILayout.js`, поэтому без авторизации его публиковать нельзя. Если понадобится — только через
 Authelia-локейшн.
 
+**Сервис игры — systemd-юнит `arcengine-game.service`** (создан 13.10.2026, `enable --now`):
+
+```
+[Service]
+WorkingDirectory=/root/arcengine
+ExecStart=/usr/bin/node tools/dev-server.mjs --port=8082 --no-open
+Restart=always
+```
+
+Уроки:
+- **Node берём системный `/usr/bin/node` (v22 LTS)**. `which node` в сессии Hermes отдаёт
+  `/root/.hermes/tools/node-26.7.0-linux-x64/bin/node` — путь внутри тулчейна Hermes; юнит на нём
+  сломается при обновлении/чистке Hermes. На v22 набор проходит все 89 тестов, вариант node 26 не обязателен.
+- без systemd сервер жил фоновым процессом сессии и умирал при рестарте — ссылка на игру отваливалась.
+- бэкап юнита с тулчейновым node: `/root/backups/arcengine-game.service.bak`
+- редактор поднимается отдельно (`node _utils/editor/server.mjs --port=8095 --no-open`) и на systemd
+  не переведён — при перезапуске сессии его надо поднять заново.
+
 ## Открытые вопросы к Roman (перед разработкой игры)
 
 1. Что за игра: цель, победа/проигрыш, противники или препятствия
