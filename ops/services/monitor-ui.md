@@ -25,5 +25,5 @@ service:
     - ntfy
     - nginx
   notes: "Через /monitor/. Вкладки: компрессия, логи."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
