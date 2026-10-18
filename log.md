@@ -451,3 +451,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 - tech/control-plane-dlya-vseh-agentov-obzor-alternativ.md: Mission Control (6.3k⭐, OpenClaw нативно), Kandev (ACP), Agency, Codeg (Telegram!), AgentMonitor, Agent Dashboard; вывод: AA закрывает весь стек (Hermes=acp, DSX=dsh в апстриме, OpenClaw/OpenCode=acp)
 ## [2026-10-18] tools | openverse-api — Openverse API (звуки/картинки CC0 без ключа)
 - tools/openverse-api.md: проверено на VPS 18.10 — анонимный доступ 200, лимиты 20/мин и 200/сутки, фильтры license=cc0,by,pdm + source=freesound,jamendo, качать по полю url (поле files пустое), attribution → credits.txt; страница добавлена в index (раздел Инструменты)
+## [2026-10-18] ingest | DeepSeekBot (DSB)
