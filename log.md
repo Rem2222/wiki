@@ -452,3 +452,4 @@ _Append-only. Формат: `## [дата] type | описание`_
 ## [2026-10-18] tools | openverse-api — Openverse API (звуки/картинки CC0 без ключа)
 - tools/openverse-api.md: проверено на VPS 18.10 — анонимный доступ 200, лимиты 20/мин и 200/сутки, фильтры license=cc0,by,pdm + source=freesound,jamendo, качать по полю url (поле files пустое), attribution → credits.txt; страница добавлена в index (раздел Инструменты)
 ## [2026-10-18] ingest | DeepSeekBot (DSB)
+## [2026-10-18] ingest | Blender AI MCP Addon

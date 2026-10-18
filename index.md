@@ -328,6 +328,7 @@ _Обновлено: 2026-10-11_
 - [[tech/agentmemory-vs-current]] — agentmemory vs текущий стек памяти
 - [[tech/deepseek-harness]] — DeepSeek Harness: агентный harness «всё — плагин» (Cordis)
 - [[tech/deepseekbot]] — DeepSeekBot (DSB): плагин для DSH, боты с Git-памятью, выходят в Slack/Discord/飞书/QQ/WeChat
+- [[tech/blender-mcp-addon]] — Blender AI MCP Addon: ассистент в Blender 4.2+, 21 инструмент, MCP-сервер, мультиагентная команда
 - [[tech/lfm25-vl-3b]] — LFM2.5-VL-3B: лёгкая VLM для GUI-агентов (Liquid AI)
 - [[tech/semantica]] — Semantica: граф-нативная память для агентов (тренд Graph-RAG)
 - [[tech/buzz]] — Buzz: Nostr-workspace от Block (Дорси), люди + агенты в одних каналах
