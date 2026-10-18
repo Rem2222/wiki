@@ -220,6 +220,7 @@ _Обновлено: 2026-10-11_
 - [[tech/superpowers]] — Superpowers: платформа для AI-агентов
 - [[tech/ui-ux-pro-max-analysis]] — UI/UX анализ Pro Max
 - [[tech/lightpanda-browser]] — Lightpanda: headless-браузер на Zig для AI-агентов (в 9× быстрее headless Chrome)
+- [[tech/e2e-framework]] — e2e (TesterArmy): агентные e2e-тесты web/mobile — агент выполняет шаг, следующий прогон реплеит без вызовов модели
 - [[tech/wello-ai-api]] — Wello: единый API для Claude, GPT, Gemini (до 90% дешевле)
 - [[tech/langchain-open-agent-platform]] — LangChain Open Agent Platform: UI поверх LangGraph
 - [[tech/cognee]] — open-source память для агентов: ECL-пайплайн, knowledge graph + векторный поиск

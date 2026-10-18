@@ -4,6 +4,7 @@ title: Lightpanda Browser — headless браузер для AI-агентов �
 description: Headless браузер, написанный с нуля на Zig (не форк Chromium). В 9× быстрее и в 16× меньше памяти, чем headless Chrome. CDP-совместим.
 tags: [browser, headless, zig, web-scraping, ai-agents]
 related:
+  - tech/e2e-framework
   - tech/hermes-agent-masterclass
   - tech/paperclip
   - "[[ops/services/lightpanda]]"

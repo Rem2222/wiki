@@ -453,3 +453,6 @@ _Append-only. Формат: `## [дата] type | описание`_
 - tools/openverse-api.md: проверено на VPS 18.10 — анонимный доступ 200, лимиты 20/мин и 200/сутки, фильтры license=cc0,by,pdm + source=freesound,jamendo, качать по полю url (поле files пустое), attribution → credits.txt; страница добавлена в index (раздел Инструменты)
 ## [2026-10-18] ingest | DeepSeekBot (DSB)
 ## [2026-10-18] ingest | Blender AI MCP Addon
+
+## [2026-10-18] tech | e2e-framework — e2e (TesterArmy): агентные e2e-тесты web/mobile
+- tech/e2e-framework.md: проверено по GitHub API + npm 18.10 — 11 184⭐ (на скриншоте было 3.9k), создан 22.07.2026, v0.21.2, Apache-2.0; идея «агент выполняет шаг → реплей без модели»; пакеты e2e/@e2e-dev/*, движок web на Playwright, mobile через симуляторы, включает Lightpanda; postinstall нет; в вики, не установлен
