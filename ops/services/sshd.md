@@ -12,7 +12,7 @@ service:
   category: system
   purpose: SSH-доступ к серверу
   install_date: 2025-05
-  last_verified: 2026-10-13
+  last_verified: 2026-10-19
   health_url: 
   type: systemd
   ports:
@@ -25,7 +25,7 @@ service:
     []
   depends_on:
     []
-  last_verified: 2026-10-13
+  last_verified: 2026-10-19
   notes: Нестандартный порт.
-last_verified: 2026-10-14
+last_verified: 2026-10-19
 ---
