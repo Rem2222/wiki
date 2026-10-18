@@ -283,8 +283,13 @@ _Обновлено: 2026-10-11_
 - [[tools/agent-reach]] — веб-доступ для AI-агентов («глаза в интернет»)
 - [[tools/mcporter]] — CLI-клиент для управления MCP-серверами
 - [[tools/chatcut]] — нарезка и обработка чатов/диалогов
+- [[tools/openverse-api]] — бесплатные звуки и картинки (CC0) без ключа: 200 запросов/сутки, проверенные параметры для игр и видео
 - [[tools/ai-video-upscale]] — AI-модели для повышения разрешения видео
 - [[tools/officecli]] — CLI для создания Office-документов
+- [[tools/craft-office]] — WordCraft/GridCraft/DeckCraft: open-source аналоги Word/Excel/PowerPoint на Rust c MCP+CLI (storytold, автор PhotoCraft). Apache-2.0, alpha, v0.7.0. Записано, НЕ устанавливалось
+- [[tools/openbot]] — OpenBot (CopilotKit): self-hosted AI-сотрудники, каждому свой компьютер (контейнер+Chromium) и governance-шлюз: CEL-политика до действия + аудит после. AG-UI, MCP, MIT, alpha. Записано, НЕ устанавливалось
+- [[tools/xkiro]] — xKiro (api.xkiro.com/v1): AI-шлюз, 51 бесплатная модель (Qwen 3.5–3.8, Mistral, Cohere, LongCat) при 500К ток/сутки (1М после привязки Telegram). Посредник-реселлер. Разведано, НЕ подключено
+- [[tools/airi]] — AIRI (moeru-ai/airi): self-hosted AI-вайфу/VTuber (пересоздание Neuro-sama) — голос, VRM/Live2D, играет в Minecraft/Factorio, чаты TG/Discord; MIT, 50k⭐, beta 0.12. Памяти пока нет. Разобрано, НЕ устанавливалось
 - [[tools/rtk]] — RTK: Rust CLI-прокси для сжатия вывода команд перед LLM (60–90% токенов)
 - [[tools/openminis]] — OpenMinis: мобильный AI-агент с Linux shell
 - [[tech/devin-ai-agent]] — AI Software Engineer от Cognition Labs (Windsurf → Devin). Включает GLM-5.2 в Pro
@@ -293,7 +298,7 @@ _Обновлено: 2026-10-11_
 - [[tools/browser-skill]] — BrowserSkill: ИИ-агент в твоём браузере с логинами и куками (Tencent, MIT)
 - [[tools/codex-chatgpt-web]] — codex-chatgpt-web: ChatGPT Web (включая Pro) как нативные модели Codex
 - [[tools/aquilum]] — Aquilum: аналог Obsidian на Rust, 27 МБ ОЗУ. ⚠️ исходники НЕ открыты, Windows-only
-- [[tools/rea]] — REA: MCP+CLI для реверса (PE/Ghidra/JS/.NET), MIT, 4.2k⭐. Статика — да, динамика сетевого стека — нет
+- [[tools/rea]] — REA: MCP+CLI для реверса (Ghidra/IDA/Frida, разбор pcap/HAR/SAZ/qlog), MIT. 17.10.2026: v6.5.0, 289.5k⭐ (вирусный рост с 4.2k за 11 дней). Статика — да, разбор сохранённого трафика — да, перехват «в кадре» — нет
 - [[tools/axi]] — AXI: 10 принципов агентоцентричных CLI против MCP. gh-axi 100%/$0.050/3 хода против MCP 87%/$0.148/6 ходов. Записано, НЕ устанавливалось
 - [[tools/no-mistakes]] — no-mistakes: git-прокси, пайплайн review→test→lint→PR→CI в одноразовом worktree, человек главный над интентом. 8.8k⭐, MIT. Записан, НЕ устанавливался
 - [[tools/ai-tools-proxy-domains]] — Списки хостов и масок Proxifier для split-tunnel AI-инструментов (Cursor/Codex/Claude/Hermes) без полного VPN. Точный список Hermes покрывает 4 из 17 доменов. Записано, НЕ применялось

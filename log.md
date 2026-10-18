@@ -449,3 +449,5 @@ _Append-only. Формат: `## [дата] type | описание`_
 - tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265.md: что сделано (фазы 0–3, end-to-end на VPS, доступ через Cloudflare tunnel), как продолжить (фаза 4 PR), ограничения (моб. приложение = только облако)
 ## [2026-10-11] Control plane — обзор альтернатив
 - tech/control-plane-dlya-vseh-agentov-obzor-alternativ.md: Mission Control (6.3k⭐, OpenClaw нативно), Kandev (ACP), Agency, Codeg (Telegram!), AgentMonitor, Agent Dashboard; вывод: AA закрывает весь стек (Hermes=acp, DSX=dsh в апстриме, OpenClaw/OpenCode=acp)
+## [2026-10-18] tools | openverse-api — Openverse API (звуки/картинки CC0 без ключа)
+- tools/openverse-api.md: проверено на VPS 18.10 — анонимный доступ 200, лимиты 20/мин и 200/сутки, фильтры license=cc0,by,pdm + source=freesound,jamendo, качать по полю url (поле files пустое), attribution → credits.txt; страница добавлена в index (раздел Инструменты)
