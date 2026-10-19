@@ -27,5 +27,5 @@ service:
     - hermes-agent
     - nginx
   notes: Через /hermes/. SPA.
-last_verified: 2026-10-19
+last_verified: 2026-10-20
 ---

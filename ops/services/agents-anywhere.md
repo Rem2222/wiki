@@ -49,5 +49,5 @@ service:
     контейнер agents-anywhere-migrate-next-1 (одноразовый, Exited 0 — норма).
     Обслуживание: рестарт через docker compose в /root/agents-anywhere/docker;
     обновления — git pull + пересборка образа.
-last_verified: 2026-10-19
+last_verified: 2026-10-20
 ---

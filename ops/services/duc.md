@@ -26,5 +26,5 @@ service:
   depends_on:
     []
   notes: Через /duc/. Индекс обновляется каждые 2ч.
-last_verified: 2026-10-19
+last_verified: 2026-10-20
 ---

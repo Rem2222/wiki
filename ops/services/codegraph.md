@@ -34,7 +34,7 @@ service:
   notes: "Tree-sitter код-граф + MCP (SSE, :3748). ОТКЛЮЧЁН 2026-09-29 — детали в теле страницы."
   disabled_at: 2026-09-29
   status: disabled
-last_verified: 2026-10-19
+last_verified: 2026-10-20
 ---
 
 # CodeGraph (npm @leanlabsinnov/codegraph, v1.1.11)
