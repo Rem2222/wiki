@@ -456,3 +456,9 @@ _Append-only. Формат: `## [дата] type | описание`_
 
 ## [2026-10-18] tech | e2e-framework — e2e (TesterArmy): агентные e2e-тесты web/mobile
 - tech/e2e-framework.md: проверено по GitHub API + npm 18.10 — 11 184⭐ (на скриншоте было 3.9k), создан 22.07.2026, v0.21.2, Apache-2.0; идея «агент выполняет шаг → реплей без модели»; пакеты e2e/@e2e-dev/*, движок web на Playwright, mobile через симуляторы, включает Lightpanda; postinstall нет; в вики, не установлен
+
+## [2026-10-19] tech | remade-catalog — каталог переписей коммерческого софта
+- tech/remade-catalog.md: проверено по GitHub API 19.10 — remade.wiki живой (123 проекта, 13 инструментов), репо replicraft/remade MIT создан 09.10.2026 (86⭐); проекты реальные: storytold/photocraft 68 403⭐ (12 054 форка, 2 814 issues, Rust, Apache-2.0), pdfcraft 16 217⭐, filmcraft 15 056⭐, wordcraft 14 688⭐, cadcraft 5 965⭐, gridcraft 5 876⭐; организация с 2020 (66 репо, 213k⭐), свежая именно волна *Craft (22 репо в октябре 2026). Главное: архитектура «every action is a command» — 500+ команд в реестре, UI/CLI/JSON/MCP как потребители, ; ничего не ставим.
+
+## [2026-10-19] tech | rag-platforms + ragflow — AnythingLLM / Dify / RAGFlow
+- tech/rag-platforms.md (сравнение) + tech/ragflow.md (новая). Метрики GitHub API 19.10: AnythingLLM 67 323⭐ MIT v1.18.0, Dify 158 910⭐ (Apache-2.0 С ДОП. УСЛОВИЯМИ) 1.17.1, RAGFlow 92 480⭐ Apache-2.0 v1.0.0-rc2 (16.10, 1.0 ещё RC). Ресурсы: AnythingLLM ~1.1 ГБ в простое (единственный, кто влезает в наш VPS 11 ГБ / свободно 18 ГБ диска), Dify 16 контейнеров ~9 ГБ, RAGFlow 16–32 ГБ + диск от 100 ГБ. Обновлены устаревшие метрики в tech/anythingllm-rag.md (25k→67k) и тех/ tech/dify-agent-platform.md (15.5k→158k + уточнение лицензии). Ничего не ставим.

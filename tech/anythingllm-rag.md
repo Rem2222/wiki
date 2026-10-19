@@ -3,6 +3,8 @@ description: AnythingLLM — all-in-one AI app для RAG, чата с доку�
 tags: [tech, llm-tools, rag]
 related:
   - tech/dify-agent-platform
+  - tech/rag-platforms
+  - tech/ragflow
   - tech/no-code-agent-autoagent
 ---
 
@@ -10,7 +12,7 @@ related:
 
 **Репозиторий:** https://github.com/Mintplex-Labs/anything-llm
 **Лицензия:** MIT
-**Звёзды:** ~25k+ ⭐
+**Звёзды:** 67 323 ⭐ (19.10.2026)
 
 ## Суть
 

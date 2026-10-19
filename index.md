@@ -196,6 +196,9 @@ _Обновлено: 2026-10-11_
 - [[tech/anythingllm-rag]] — AnythingLLM RAG: настройка и сравнение моделей
 - [[tech/bmad-multica-integration]] — интеграция BMAD с Multica
 - [[tech/dify-agent-platform]] — open-source платформа для AI-приложений
+- [[tech/rag-platforms]] — AnythingLLM vs Dify vs RAGFlow: три разных зверя, ресурсы, лицензии, что влезает в VPS 11 ГБ
+- [[tech/ragflow]] — RAGFlow: RAG-движок с глубоким разбором PDF (DeepDoc, таблицы, OCR, цитаты)
+- [[tech/remade-catalog]] — Remade.wiki: каталог open-source переписей софта (Photoshop→PhotoCraft, Excel→GridCraft); паттерн «всё есть команда» → CLI/MCP
 - [[tech/freellmapi]] — Unified LLM API router (бесплатные AI-провайдеры)
 - [[tech/freenimapi]] — локальный прокси-мост NVIDIA NIM → coding-агенты
 - [[tech/gsd-multica-integration]] — интеграция GSD с Multica
