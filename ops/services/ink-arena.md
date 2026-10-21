@@ -9,7 +9,7 @@ service:
   category: game
   purpose: "Игровая арена (INKED arena) — воркеры ботов, публикуется наружу как wss://s2.isroleplay.fr (central hub play.isroleplay.fr)"
   install_date: "2026-10-12"
-  last_verified: 2026-10-21
+  last_verified: 2026-10-22
   health_url: "https://s2.isroleplay.fr/ping"
   type: systemd
   ports:
@@ -37,7 +37,7 @@ service:
     отвечает 204. Активной инфраструктуры на самом VPS не хранит (только бинарь + maps,
     "arena owns nothing на disk"). Порт 8090 у этого сервиса на 127.0.0.1 — НЕ путать с
     beszel hub, который внутри контейнера тоже слушает 8090.
-last_verified: 2026-10-21
+last_verified: 2026-10-22
 ---
 # ink-arena (INKED arena)
 
