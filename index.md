@@ -59,6 +59,7 @@ _Обновлено: 2026-10-11_
 - [[ops/services/multica-inbox-bridge]] — мост Multica → Telegram
 - [[ops/services/ntfy]] — push-уведомления
 - [[ops/services/skills-dashboard]] — веб-дашборд для approval навыков Hermes
+- [[ops/services/smiths-chat]] — SmithsChat: чат людей и агентов на одном MCP-эндпоинте, порт 8790
 - [[ops/services/sshd]] — SSH-доступ к серверу
 - [[ops/services/tailscale]] — Mesh VPN, exit node
 - [[tech/netbird]] — NetBird: mesh VPN / Zero-Trust на WireGuard, конкурент Tailscale

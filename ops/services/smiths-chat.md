@@ -6,6 +6,9 @@ tags:
   - chat
   - mcp
 type: service
+related:
+  - ops/services/nginx
+  - ops/services/hermes-agent
 service:
   name: smiths-chat
   category: communication
