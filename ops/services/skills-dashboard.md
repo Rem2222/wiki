@@ -5,7 +5,7 @@ tags:
   - service
   - hermes
 type: service
-last_verified: 2026-10-22
+last_verified: 2026-10-23
 related:
   - ops/services/server-architecture
   - ops/services/hermes-agent

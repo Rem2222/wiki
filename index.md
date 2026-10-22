@@ -52,6 +52,7 @@ _Обновлено: 2026-10-11_
 - [[ops/services/hermes-agent]] — AI-агент для автоматизации, gateway сообщений
 - [[ops/services/hermes-dashboard]] — веб-дашборд Hermes Agent
 - [[ops/services/jawl]] — автономный Python-агент (Jinx)
+- [[ops/services/login-notify]] — PAM-хук: уведомление в ntfy о каждом SSH-входе
 - [[ops/services/mercury]] — дашборд Mercury Agent
 - [[ops/services/monitor-ui]] — панель управления ntfy
 - [[ops/services/multi-exporter]] — Prometheus метрики для нескольких сервисов
