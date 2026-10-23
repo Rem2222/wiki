@@ -32,5 +32,5 @@ service:
   depends_on:
     []
   notes: Доступ через /beszel/.
-last_verified: 2026-10-23
+last_verified: 2026-10-24
 ---

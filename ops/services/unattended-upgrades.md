@@ -21,5 +21,5 @@ service:
     []
   last_verified: 2026-10-23
   notes: "Active. Последние обновления: vim, ncurses, libnghttp2."
-last_verified: 2026-10-23
+last_verified: 2026-10-24
 ---

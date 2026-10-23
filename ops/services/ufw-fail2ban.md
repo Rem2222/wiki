@@ -21,5 +21,5 @@ service:
     []
   last_verified: 2026-10-23
   notes: "UFW: active. Fail2ban: 4 banned IP."
-last_verified: 2026-10-23
+last_verified: 2026-10-24
 ---

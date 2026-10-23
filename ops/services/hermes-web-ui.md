@@ -38,7 +38,7 @@ service:
     Пакет v0.6.44 в /usr/lib/node_modules/hermes-web-ui, бинарь /usr/bin/hermes-web-ui.
     Type=forking, PIDFile /root/.hermes-web-ui/server.pid, NODE_ENV=production.
     Отвечает 200 на /. Не путать с hermes-dashboard (:9119) — это отдельный дашборд.
-last_verified: 2026-10-23
+last_verified: 2026-10-24
 ---
 
 # Hermes Web UI

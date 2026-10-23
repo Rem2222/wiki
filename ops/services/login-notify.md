@@ -34,7 +34,7 @@ service:
     Работает только на PAM_TYPE=open_session (закрытие сессии игнорируется). При любом сбое логин
     не ломается (флаг optional). Тема/URL берутся из /root/.hermes/.env (NTFY_TOPIC, NTFY_URL);
     если NTFY_URL пуст — фолбэк http://127.0.0.1:2586.
-last_verified: 2026-10-23
+last_verified: 2026-10-24
 ---
 
 # login-notify

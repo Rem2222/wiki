@@ -64,5 +64,5 @@ service:
     - postgresql
   data_size_hint: 152 MB (PG)
   notes: v0.3.31.
-last_verified: 2026-10-23
+last_verified: 2026-10-24
 ---
