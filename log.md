@@ -488,3 +488,12 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Замена Google проверена по коду: solver/improver идут через OpenCode в формате provider/model (наши провайдеры подходят); судья переопределяется HARNESS2_JUDGE_BASE_URL + HARNESS2_JUDGE_API_KEY — при заданном ключе gcloud не вызывается (jobbench.py:1089-1096); в LAB префикс vertex добавляется только для claude/gemini (config.py:133). Единственное жёсткое место — WorkBuddy: URL собирается из GOOGLE_CLOUD_PROJECT (workbuddy.py:623), нужен патч или GCP.
 - Готовность VPS: Node v26.7, uv 0.11.16, Docker 29.6, OpenCode есть; нет pandoc/poppler/gcloud, Python 3.14 вместо 3.12; в .env только GEMINI_FREE_API_KEY (AI Studio, для Vertex не годится). Данные JobBench: MIT, n<1K, 985 файлов.
 - Не установлено, не запускалось.
+
+## [2026-10-24] tech | awesome-gamedev-agent-skills — 74 геймдев-скилла для агентов
+- tech/awesome-gamedev-agent-skills-74-skilla-dlya-geymdeva-v-formate-skillmd.md: проверено 24.10 по GitHub API — 3 896⭐, 354 форка, Apache-2.0, создан 24.06.2026, push 24.10.2026, 242 файла, 77 SKILL.md (74 скилла + router).
+- Состав: disciplines 15, genres 9 (в т.ч. card-game), godot 16, unity 8, unreal 6, other-engines 11 (Bevy/Defold/LÖVE/pygame/Roblox), web-engines 6 (Phaser/PixiJS/three.js), ebitengine 1, workflows 4 (prototype-fast, game-jam, itch-publish, steam-publish).
+- «Автоподбор» = скилл-диспетчер router/SKILL.md: определяет движок по отпечатку, классифицирует задачу, отдаёт минимальный набор; сам ничего не переучивает.
+- Формат SKILL.md (frontmatter name+description) совпадает с нашим — переносится без переделки. Поддержка Claude Code (.claude-plugin/marketplace.json) и Codex (router/agents/openai.yaml) подтверждена файлами.
+- Качество на примерах: card-game 138 строк с «When to use» и «When NOT to use»; steam-publish 247 строк, детали вынесены в references/ (правильный on-demand подход, см. harness2).
+- Точечно полезно: card-game под ccgs, phaser/threejs+gltf под HTML5 и датасет Scenario, create-game-assets/shader-programming под arcengine. Ставить все 77 не нужно — список скиллов висит в контексте каждого прогона.
+- Не подключено.
