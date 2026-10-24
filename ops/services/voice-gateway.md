@@ -13,13 +13,13 @@ service:
   purpose: "Голосовой ассистент: браузерная PWA шлёт аудио в realtime-модель qwen-audio (Aliyun MaaS), инструменты ходят в OpenViking; рядом HTTP-сервис выжимки сессий Hermes для системного промта"
   install_date: "2026-10-24"
   last_verified: 2026-10-25
-  health_url: "http://127.0.0.1:8798/"
+  health_url: "http://127.0.0.1:8799/health"
   type: systemd
   ports:
     - port: 8799
       protocol: tcp
       bind: 127.0.0.1
-      description: "WebSocket realtime qwen-audio (только HTTP-проба даёт 426 — нужен Upgrade)"
+      description: "WebSocket realtime qwen-audio; GET /health → JSON 200/503 (с 25.10), прочие HTTP-пути → 426 (нужен Upgrade)"
     - port: 8798
       protocol: tcp
       bind: 127.0.0.1
@@ -57,8 +57,13 @@ service:
     Android: пакет top.rem2222.voiceassistant, TWA-сборка /root/twa-build
     (app-release-signed.apk 24.10.2026), для неё 24.10 поставлены openjdk-17 и
     /opt/android-sdk; подпись подтверждена в /.well-known/assetlinks.json.
-    Health: 8798 → 200; 8799 по HTTP → 426 (норма, только WS). Докачка ключа
-    alibaba/tokenplan — см. строки с маркерами в gen_brief.py.
+    Health: 8799/health → 200 (JSON: апстрим Али, OpenViking, клиенты/сессии),
+    при проблемах 503; 8798 → 200; корень 8799 → 426 (норма, только WS).
+    Исходники с 25.10 в git: https://github.com/Rem2222/voice-gateway (публичный),
+    автокоммит+push — секция VOICE-GATEWAY GIT PUSH в /root/scripts/pg-backup.sh
+    (ночная рутина, MUL-10397). Докачка ключа
+    alibaba/tokenplan — см. строки с маркерами в gen_brief.py; ротация ключа
+    Aliyun и keystore TWA зарегистрирована (см. MUL-10140).
 last_verified: 2026-10-25
 ---
 # Voice Gateway (voice-gateway + voice-brief)
@@ -83,11 +88,20 @@ last_verified: 2026-10-25
 
 ## Обслуживание
 
-- Проверка: `systemctl is-active voice-gateway voice-brief`; brief —
-  `curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8798/` → 200.
+- Проверка: `systemctl is-active voice-gateway voice-brief`;
+  `curl -sf http://127.0.0.1:8799/health` → 200 = ok, 503 = degraded (JSON:
+  `upstream.reachable`/`state` — апстрим Али, `openviking.healthy`,
+  `clients`/`sessions`, `tool_calls`, `problems`);
+  brief — `curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8798/` → 200.
 - Логи: `journalctl -u voice-gateway -n 50`; на HTTP-пробу к 8799 в лог падает
   `websockets.exceptions.InvalidUpgrade: missing Connection header` — это норма.
 - Платёж/ключ Aliyun MaaS — внешняя зависимость: при отказе апстрима WS
-  обрывается молча (своего health-endpoint у gateway нет).
+  обрывается молча; теперь обрыв виден в `/health` (`upstream.state: error`,
+  `reachable: false`, текст в `last_error`/`problems`).
+- Исходники: `/root/voice-gateway` — git-репозиторий
+  https://github.com/Rem2222/voice-gateway (создан 25.10.2026, MUL-10397),
+  коммит+push при каждом ночном `pg-backup.sh`. Секреты в репозиторий не кладутся:
+  ключ Aliyun читается из `/root/.hermes/.env`, пароль keystore лежит рядом со
+  сборкой; ротация обоих — в реестре секретов (см. MUL-10140).
 - Пересборка APK: `/root/twa-build` (gradle, keystore-пароль в `.keystore-pass`,
   mode 600), нужен `/opt/android-sdk` + openjdk-17.
