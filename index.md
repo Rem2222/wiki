@@ -200,6 +200,7 @@ _Обновлено: 2026-10-11_
 - [[tech/dify-agent-platform]] — open-source платформа для AI-приложений
 - [[tech/rag-platforms]] — AnythingLLM vs Dify vs RAGFlow: три разных зверя, ресурсы, лицензии, что влезает в VPS 11 ГБ
 - [[tech/ragflow]] — RAGFlow: RAG-движок с глубоким разбором PDF (DeepDoc, таблицы, OCR, цитаты)
+- [[tech/scenario-3d-collection-1342-ai-modeli-s-cc-by-40-hugging-face]] — Scenario 3D Collection: 1342 AI-модели (CC BY 4.0), GLB/Blender/SPZ, ~39 ГБ; манифест parquet и точечное скачивание
 - [[tech/free-my-tv-domashniy-ekran-bez-reklamy-dlya-google-tv-lg-i-samsung]] — Free My TV: домашний экран без рекламы (Google TV — замена лаунчера, LG/Samsung — только приложение); разбор заявлений и совместимость с UE32N5300
 - [[tech/remade-catalog]] — Remade.wiki: каталог open-source переписей софта (Photoshop→PhotoCraft, Excel→GridCraft); паттерн «всё есть команда» → CLI/MCP
 - [[tech/freellmapi]] — Unified LLM API router (бесплатные AI-провайдеры)
