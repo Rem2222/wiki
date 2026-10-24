@@ -480,3 +480,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Отдельно найден 3d-collection-hunyuan (393 примера, 1144 файла) с лицензией \`other\` — условия Tencent, не CC BY; в постах о нём не упоминают.
 - Оговорки авторов: проверки только структурные, качество рендера/анимации не сертифицируется, в одной Blender-сцене нет двух текстур.
 - Не скачано: полный набор 39 ГБ не влезает в наш VPS (свободно 25 ГБ), брать точечно по манифесту. Применение: arcengine (заглушки), ccgs (визуал инвентаря), 3DGS-эксперименты на .spz.
+
+## [2026-10-24] tech | harness2 — рекурсивный харнессинг агентов (Google Research)
+- tech/harness-google-research-rekursivnyy-harnessing-agentov-bez-obucheniya-vesov.md: проверено по GitHub API, README и исходникам 24.10 — google-research/harness2, 18 923⭐, 1 838 форков, создан 06.10.2026, Apache-2.0, arXiv 2610.14224, сайт harness2.github.io.
+- Метод: два уровня рекурсии при фиксированных весах — task-level Propose–Probe–Compose (правки harness → зондирование на той же задаче → сборка по поведенческим контрастам, БЕЗ ground-truth) и harnessing-level (persistent improvement harness с уроками).
+- Цифры README: до +11.5 WorkBuddy-Bench, +11.8 п.п. LAB partial, +4.5 JobBench (GLM-5, Gemini 3.5 Flash). «10+ везде» из пересказа — неточно, на JobBench вдвое меньше.
+- Замена Google проверена по коду: solver/improver идут через OpenCode в формате provider/model (наши провайдеры подходят); судья переопределяется HARNESS2_JUDGE_BASE_URL + HARNESS2_JUDGE_API_KEY — при заданном ключе gcloud не вызывается (jobbench.py:1089-1096); в LAB префикс vertex добавляется только для claude/gemini (config.py:133). Единственное жёсткое место — WorkBuddy: URL собирается из GOOGLE_CLOUD_PROJECT (workbuddy.py:623), нужен патч или GCP.
+- Готовность VPS: Node v26.7, uv 0.11.16, Docker 29.6, OpenCode есть; нет pandoc/poppler/gcloud, Python 3.14 вместо 3.12; в .env только GEMINI_FREE_API_KEY (AI Studio, для Vertex не годится). Данные JobBench: MIT, n<1K, 985 файлов.
+- Не установлено, не запускалось.
