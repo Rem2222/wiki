@@ -2,10 +2,15 @@
 title: OpenBot (CopilotKit) — self-hosted платформа AI-сотрудников с governance-шлюзом
 type: tool
 status: new
+description: "Self-hosted платформа AI-сотрудников от CopilotKit: каждому боту — свой контейнер с Chromium, логинами и workspace; любые агенты через открытый протокол AG-UI. MIT, статус alpha, «шаблон, а не продукт»."
 tags: [agents, governance, audit, ag-ui, mcp, self-hosted, docker, security]
 url: https://github.com/CopilotKit/OpenBot
 license: MIT
 added: 2026-10-16
+updated: 2026-10-24
+related:
+  - ops/services/multica
+  - ops/services/dex
 ---
 
 # OpenBot (CopilotKit) — «AI-coworkers» со своим компьютером и шлюзом управления

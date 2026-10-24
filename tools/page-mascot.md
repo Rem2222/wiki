@@ -4,6 +4,10 @@ description: "Сервис/скилл page-mascot от Kamran Ahmed (koboyo.com)
 tags: [tool, web, mascot, frontend, rem2222]
 status: установлено на rem2222.top
 created: 2026-10-10
+updated: 2026-10-24
+related:
+  - tools/trueconf-bot
+  - ops/services/nginx
 ---
 
 # page-mascot
@@ -165,4 +169,4 @@ toaster, tv, wizard.
 ## Связи
 
 - [[tools/ai-tools-proxy-domains]] — тоже разбор присланного инструмента
-- [[ops/services/server-services]] — реестр сервисов сервера
+- [[ops/services/server-architecture]] — карта сервисов сервера

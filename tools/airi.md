@@ -2,11 +2,15 @@
 title: AIRI (Project AIRI) — self-hosted AI-вайфу / киберсущество (Neuro-sama своими руками)
 type: tool
 status: checked
+description: "Open-source пересоздание Neuro-sama: self-hosted AI-вайфу/киберсущество (moeru-ai/airi), говорит голосом, играет в игры, живёт в чатах. MIT, десктоп-версия с NVIDIA CUDA и Apple Metal."
 tags: [ai-companion, ai-vtuber, neuro-sama, live2d, vrm, tts, stt, minecraft, factorio, self-hosted]
 url: https://github.com/moeru-ai/airi
 license: MIT
 added: 2026-07-29
-updated: 2026-10-17
+updated: 2026-10-24
+related:
+  - ops/services/dex
+  - tools/openbot
 ---
 
 # AIRI — «контейнер душ» AI-вайфу/VTuber (moeru-ai/airi)

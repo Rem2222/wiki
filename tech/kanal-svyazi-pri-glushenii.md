@@ -4,6 +4,10 @@ description: "Задача: общаться с Hermes, когда операт�
 tags: [messengers, vk, max, trueconf, hermes, whitelist, connectivity]
 status: разобрано, решение не внедрено
 created: 2026-10-10
+updated: 2026-10-24
+related:
+  - tech/hermes-max-plugin
+  - tools/trueconf-bot
 ---
 
 # Канал связи с агентом при глушении интернета

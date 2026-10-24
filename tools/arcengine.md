@@ -2,10 +2,15 @@
 title: ArcEngine — 3D-игры в браузере под LLM-кодинг
 type: tool
 status: active
+description: "Стартовый набор для 3D-игр в браузере на Babylon.js, заточенный под LLM-кодинг: агент пишет логику игры, человек правит сцену и UI в визуальном редакторе. MIT, ванильный JS без сборки и npm-зависимостей."
 tags: [gamedev, 3d, babylonjs, llm-coding, browser]
 url: https://github.com/xaidan777/ArcEngine
 license: MIT
 added: 2026-10-13
+updated: 2026-10-24
+related:
+  - gamedev/ccgs-skills-research
+  - tools/unity-ai-agents-plugin
 ---
 
 # ArcEngine (xaidan777)

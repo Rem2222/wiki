@@ -2,10 +2,16 @@
 title: xKiro — AI-шлюз с бесплатными моделями (api.xkiro.com)
 type: tool
 status: checked
+description: "AI-шлюз xKiro (api.xkiro.com/v1): один OpenAI-совместимый API на 129 моделей от 22 провайдеров, 51 chat-модель в бесплатном тире, отдельные эндпоинты картинок, TTS и веб-поиска."
 tags: [llm, api-gateway, free-models, openai-compatible, aggregator, reseller]
 url: https://xkiro.com
 license: сервис (не open-source)
 added: 2026-10-16
+updated: 2026-10-24
+related:
+  - ops/services/freellmapi
+  - ops/services/freeqwenapi
+  - ops/services/freedeepseekapi
 ---
 
 # xKiro — AI-агрегатор с бесплатным тиром (api.xkiro.com/v1)

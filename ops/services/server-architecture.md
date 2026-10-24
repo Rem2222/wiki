@@ -91,3 +91,7 @@ related:
 ## System
 
 - [[ops/services/unattended-upgrades]] — автообновления безопасности
+
+## Games
+
+- [[ops/services/ink-arena]] — Rust-сервер арены INKED (isroleplay.fr), юнит ink-arena-s2

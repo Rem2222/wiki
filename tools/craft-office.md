@@ -2,10 +2,15 @@
 title: Craft-аналоги Office (WordCraft / GridCraft / DeckCraft) от storytold
 type: tool
 status: new
+description: "Clean-room пересоздания Word / Excel / PowerPoint на Rust от автора PhotoCraft (storytold): WordCraft, GridCraft, DeckCraft. Лицензии Apache-2.0, статус альфа, релизы v0.7.0 от 14.10.2026."
 tags: [office, rust, mcp, cli, reverse-engineering, open-source]
 url: https://github.com/storytold/wordcraft
 license: Apache-2.0
 added: 2026-10-15
+updated: 2026-10-24
+related:
+  - tools/officecli
+  - tech/remade-catalog
 ---
 
 # Craft — аналоги Microsoft Office на Rust (storytold / Danny)

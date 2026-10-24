@@ -4,6 +4,11 @@ description: "Официальный механизм ботов в TrueConf Ser
 tags: [tool, messengers, trueconf, bot, integration, hermes]
 status: разобрано, НЕ устанавливалось
 created: 2026-10-10
+updated: 2026-10-24
+related:
+  - tech/kanal-svyazi-pri-glushenii
+  - tools/page-mascot
+  - ops/services/server-architecture
 ---
 
 # TrueConf — боты и интеграция
@@ -196,4 +201,4 @@ TrueConf у Романа связан с **1С**: в публикации веб
 ## Связи
 
 - [[tools/page-mascot]] — тоже разбор присланного инструмента
-- [[ops/services/server-services]] — реестр сервисов сервера
+- [[ops/services/server-architecture]] — карта сервисов сервера
