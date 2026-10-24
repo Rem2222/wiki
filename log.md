@@ -497,3 +497,9 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Качество на примерах: card-game 138 строк с «When to use» и «When NOT to use»; steam-publish 247 строк, детали вынесены в references/ (правильный on-demand подход, см. harness2).
 - Точечно полезно: card-game под ccgs, phaser/threejs+gltf под HTML5 и датасет Scenario, create-game-assets/shader-programming под arcengine. Ставить все 77 не нужно — список скиллов висит в контексте каждого прогона.
 - Не подключено.
+
+## [2026-10-25] ops | voice-gateway — голосовой шлюз (PWA /rt/ ↔ realtime qwen-audio)
+- ops/services/voice-gateway.md: создано ночным прогоном (MUL-10396); юниты voice-gateway.service и voice-brief.service поставлены 24.10.2026 (enabled, Restart=always), порты 127.0.0.1:8799 (WS realtime qwen-audio-3.0-realtime-plus через Aliyun MaaS) и 127.0.0.1:8798 (HTTP-выжимка сессий Hermes из /root/.hermes/state.db, кэш 30 мин).
+- Инструменты gateway — OpenViking :8900 (search, content/read); наружу nginx location = /rt/ws и = /rt/brief под Authelia, статика PWA публично из /var/www/landing (manifest/sw/иконки + /.well-known/assetlinks.json).
+- Android: пакет top.rem2222.voiceassistant, TWA-сборка /root/twa-build (app-release-signed.apk, 24.10), ради неё поставлены openjdk-17 и /opt/android-sdk (24.10 15:05 apt).
+- last_verified у всех 44 существующих страниц реестра ops/services обновлён на 2026-10-25.

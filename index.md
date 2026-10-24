@@ -67,6 +67,7 @@ _Обновлено: 2026-10-11_
 - [[ops/services/tor]] — анонимный SOCKS5 прокси
 - [[ops/services/ufw-fail2ban]] — фаервол + защита от брутфорса
 - [[ops/services/unattended-upgrades]] — автообновления безопасности
+- [[ops/services/voice-gateway]] — голосовой шлюз: PWA /rt/ ↔ realtime qwen-audio (8799) + выжимка сессий (8798)
 - [[ops/services/lightpanda]] — Lightpanda headless-браузер (Zig, CDP, порт 9222)
 - [[ops/services/ollama]] — локальный LLM-сервер (bge-m3 эмбеддинги, qwen2.5:7b)
 - [[ops/services/warp]] — Cloudflare WARP VPN (обход блокировок)
