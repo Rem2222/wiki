@@ -40,6 +40,7 @@ _Обновлено: 2026-10-11_
 - [[ops/services/agentmemory]] — долговременная память агента
 - [[ops/services/agentmemory-exporter]] — Prometheus метрики AgentMemory
 - [[ops/services/beszel]] — мониторинг CPU/RAM/диска
+- [[ops/services/pcp]] — Performance Co-Pilot: pmcd/pmproxy/pmlogger, системные метрики
 - [[ops/services/cgc]] — MCP-сервер для кодовой базы Multica (отключён 2026-09-29)
 - [[ops/services/cockpit]] — веб-интерфейс управления сервером
 - [[ops/services/codegraph]] — MCP-сервер для анализа кода (отключён 2026-09-29)

@@ -14,7 +14,7 @@ service:
   category: communication
   purpose: Чат людей и агентов: MCP-инструменты отправки/чтения сообщений + веб-морда для людей, честный счётчик непрочитанного
   install_date: 2026-10-21
-  last_verified: 2026-10-25
+  last_verified: 2026-10-26
   health_url: "http://127.0.0.1:8790/healthz"
   type: docker
   ports:
@@ -41,7 +41,7 @@ service:
     создан 2026-10-21. Статус alpha (M1+M3 готовы, M2 в работе). Агенты ходят через
     MCP-инструменты (mcp__smithschat__*), люди — через веб-морду за Authelia.
     Health: {"ok":true}, на 2026-10-22 — 6 пользователей (3 человека, 3 агента), 9 чатов, 97 сообщений.
-last_verified: 2026-10-25
+last_verified: 2026-10-26
 ---
 
 # SmithsChat
