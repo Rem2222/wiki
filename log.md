@@ -1,3 +1,10 @@
+## [2026-10-28] ops | ArcEngine — dev-server 3D-кита (MUL-10427)
+- ops/services/arcengine.md: создано ночным прогоном; arcengine-game.service (enabled, active с 18.10), node tools/dev-server.mjs на 127.0.0.1:8082, nginx location ^~ /arcengine/ → https://rem2222.top/arcengine/ (200, без Authelia)
+- Клон github.com/xaidan777/ArcEngine (Babylon.js, 0 npm-зависимостей), коммит 16fc587, /root/arcengine ≈ 24 МБ
+- ops/services/agents-anywhere.md: добавлен юнит agents-anywhere-connector.service (создан 20.10, enabled, uv run anywhere-cli start)
+- index.md: arcengine + agents-anywhere в списке сервисов
+- last_verified у всех 47 страниц реестра ops/services обновлён на 2026-10-28.
+
 # Log — Журнал вики
 
 _Append-only. Формат: `## [дата] type | описание`_

@@ -14,7 +14,7 @@ service:
   category: agents
   purpose: Self-hosted рабочий стол для AI-агентов (Codex / Claude Code / DeepSeek Harness / Hermes): сессии, файлы, терминал с телефона или Web
   install_date: 2026-10-11
-  last_verified: 2026-10-26
+  last_verified: 2026-10-28
   health_url: "http://localhost:5174/"
   type: docker
   ports:
@@ -23,7 +23,8 @@ service:
       protocol: tcp
       bind: 0.0.0.0
       description: Web UI сервера (docker-proxy → контейнер :8000)
-  systemd_units: []
+  systemd_units:
+    - agents-anywhere-connector
   docker_containers:
     - agents-anywhere-server-next-1
     - agents-anywhere-postgres-next-1
@@ -48,6 +49,11 @@ service:
     URL, меняется при рестарте; сам процесс не в автозапуске. Миграции БД —
     контейнер agents-anywhere-migrate-next-1 (одноразовый, Exited 0 — норма).
     Обслуживание: рестарт через docker compose в /root/agents-anywhere/docker;
-    обновления — git pull + пересборка образа.
-last_verified: 2026-10-26
+    обновления — git pull + пересборка образа. Рядом крутится отдельный
+    юнит agents-anywhere-connector.service (создан 2026-10-20 20:08,
+    enabled, active): `uv run anywhere-cli start --config
+    /root/.agents-anywhere/connector.json`, WorkingDirectory
+    /root/agents-anywhere/connector — коннектор, который держит связь с
+    удалённым сервером Agents Anywhere (см. MUL-10274).
+last_verified: 2026-10-28
 ---

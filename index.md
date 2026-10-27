@@ -39,6 +39,8 @@ _Обновлено: 2026-10-11_
 - [[ops/services/authelia]] — SSO аутентификация, 2FA
 - [[ops/services/agentmemory]] — долговременная память агента
 - [[ops/services/agentmemory-exporter]] — Prometheus метрики AgentMemory
+- [[ops/services/arcengine]] — ArcEngine: 3D-кит для агентов, dev-server :8082 (/arcengine/)
+- [[ops/services/agents-anywhere]] — Agents Anywhere: self-hosted рабочий стол агентов (:5174 + коннектор)
 - [[ops/services/beszel]] — мониторинг CPU/RAM/диска
 - [[ops/services/pcp]] — Performance Co-Pilot: pmcd/pmproxy/pmlogger, системные метрики
 - [[ops/services/cgc]] — MCP-сервер для кодовой базы Multica (отключён 2026-09-29)

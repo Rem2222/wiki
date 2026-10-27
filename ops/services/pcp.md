@@ -14,7 +14,7 @@ service:
   category: monitoring
   purpose: "System-level performance metrics (PMCD + archive logger + proxy)"
   install_date: 2026-05-28
-  last_verified: 2026-10-26
+  last_verified: 2026-10-28
   health_url: "http://localhost:44322/"
   type: systemd-bundle
   ports:
@@ -60,7 +60,7 @@ service:
     - nginx
   data_size_hint: "/var/log/pcp ≈ 134 МБ (архивы метрик), /var/lib/pcp ≈ 1 МБ"
   notes: "Установлен пакетом pcp 6.2.0-1.1build4 (28.05.2026). Все юниты enabled от загрузки. Использования в Hermes/дашбордах не найдено — кандидат на отключение, если Роман не подключал внешний сбор."
-last_verified: 2026-10-26
+last_verified: 2026-10-28
 ---
 
 # Performance Co-Pilot (PCP)
