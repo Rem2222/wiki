@@ -201,6 +201,7 @@ _Обновлено: 2026-10-11_
 - [[tech/anythingllm]] — all-in-one AI app для RAG, чата с документами и агентов
 - [[tech/anythingllm-rag]] — AnythingLLM RAG: настройка и сравнение моделей
 - [[tech/cherry-studio]] — Cherry Studio: десктопный AI-клиент с агентами, MCP-серверами и локальными базами знаний (53k ⭐, AGPL-3.0)
+- [[tech/nvidia-auto-ontology]] — NVIDIA Auto Ontology: онтология данных для SQL-агентов через MCP/CLI/API (481 ⭐, Apache-2.0), разбор применимости к 1С-PostgreSQL
 - [[tech/bmad-multica-integration]] — интеграция BMAD с Multica
 - [[tech/dify-agent-platform]] — open-source платформа для AI-приложений
 - [[tech/rag-platforms]] — AnythingLLM vs Dify vs RAGFlow: три разных зверя, ресурсы, лицензии, что влезает в VPS 11 ГБ
@@ -272,6 +273,7 @@ _Обновлено: 2026-10-11_
 - [[purchased/mcp-1c/code-metadata-search]] — MCP: поиск по коду и метаданным
 - [[tools/1c-mcp-catalog]] — 1c-mcp: каталог 35+ MCP-серверов для 1С (AI-разработка, интеграции, DevOps)
 - [[tools/1c-ai-connector]] — ИИкона (КИИ): AI-коннектор для 1С 8.3 — RAG, агентская петля, MCP-сервер
+- [[tech/1c-postgres-readonly]] — доступ агенту к базе 1С в PostgreSQL: роль только на чтение, запрет записи на сессии, таймауты, копия вместо рабочей базы
 
 ## Hardware
 - [[hardware/xe2690-workstation]] — домашняя рабочая станция XE2690
