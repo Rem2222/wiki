@@ -12,7 +12,7 @@ service:
   category: ai-voice
   purpose: "Голосовой ассистент: браузерная PWA шлёт аудио в realtime-модель qwen-audio (Aliyun MaaS), инструменты ходят в OpenViking; рядом HTTP-сервис выжимки сессий Hermes для системного промта"
   install_date: "2026-10-24"
-  last_verified: 2026-10-28
+  last_verified: 2026-10-29
   health_url: "http://127.0.0.1:8799/health"
   type: systemd
   ports:
@@ -64,7 +64,7 @@ service:
     (ночная рутина, MUL-10397). Докачка ключа
     alibaba/tokenplan — см. строки с маркерами в gen_brief.py; ротация ключа
     Aliyun и keystore TWA зарегистрирована (см. MUL-10140).
-last_verified: 2026-10-28
+last_verified: 2026-10-29
 ---
 # Voice Gateway (voice-gateway + voice-brief)
 

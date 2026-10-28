@@ -14,7 +14,7 @@ service:
   category: agents
   purpose: Self-hosted рабочий стол для AI-агентов (Codex / Claude Code / DeepSeek Harness / Hermes): сессии, файлы, терминал с телефона или Web
   install_date: 2026-10-11
-  last_verified: 2026-10-28
+  last_verified: 2026-10-29
   health_url: "http://localhost:5174/"
   type: docker
   ports:
@@ -55,5 +55,5 @@ service:
     /root/.agents-anywhere/connector.json`, WorkingDirectory
     /root/agents-anywhere/connector — коннектор, который держит связь с
     удалённым сервером Agents Anywhere (см. MUL-10274).
-last_verified: 2026-10-28
+last_verified: 2026-10-29
 ---

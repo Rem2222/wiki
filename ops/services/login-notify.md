@@ -14,7 +14,7 @@ service:
   category: security
   purpose: Уведомлять в ntfy о каждом открытии SSH-сессии с классификацией источника (Tailscale / внешний / локальный)
   install_date: 2026-10-17
-  last_verified: 2026-10-28
+  last_verified: 2026-10-29
   health_url:
   type: pam hook (bash script)
   processes:
@@ -34,7 +34,7 @@ service:
     Работает только на PAM_TYPE=open_session (закрытие сессии игнорируется). При любом сбое логин
     не ломается (флаг optional). Тема/URL берутся из /root/.hermes/.env (NTFY_TOPIC, NTFY_URL);
     если NTFY_URL пуст — фолбэк http://127.0.0.1:2586.
-last_verified: 2026-10-28
+last_verified: 2026-10-29
 ---
 
 # login-notify
