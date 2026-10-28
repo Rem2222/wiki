@@ -200,6 +200,7 @@ _Обновлено: 2026-10-11_
 - [[tech/photosorter-state-machine]] — полный автомат состояний Photo Sorter
 - [[tech/anythingllm]] — all-in-one AI app для RAG, чата с документами и агентов
 - [[tech/anythingllm-rag]] — AnythingLLM RAG: настройка и сравнение моделей
+- [[tech/cherry-studio]] — Cherry Studio: десктопный AI-клиент с агентами, MCP-серверами и локальными базами знаний (53k ⭐, AGPL-3.0)
 - [[tech/bmad-multica-integration]] — интеграция BMAD с Multica
 - [[tech/dify-agent-platform]] — open-source платформа для AI-приложений
 - [[tech/rag-platforms]] — AnythingLLM vs Dify vs RAGFlow: три разных зверя, ресурсы, лицензии, что влезает в VPS 11 ГБ

@@ -5,6 +5,7 @@ related:
   - concepts/rag
   - concepts/mcp
   - tech/hermes-mcp-setup
+  - tech/cherry-studio
 ---
 
 # anythingllm
