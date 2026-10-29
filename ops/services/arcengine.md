@@ -14,7 +14,7 @@ service:
   category: dev
   purpose: "3D-игровой кит под кодинг-агентов: dev-server отдаёт статику проекта /root/arcengine (index.html + js/libs/assets)"
   install_date: 2026-10-13
-  last_verified: 2026-10-29
+  last_verified: 2026-10-30
   health_url: "http://127.0.0.1:8082/"
   type: systemd
   ports:
@@ -46,7 +46,7 @@ service:
     отдаёт только /root/arcengine, данные игры лежат внутри клона.
     Обслуживание: обновление — `git -C /root/arcengine pull`; рестарт —
     `systemctl restart arcengine-game`.
-last_verified: 2026-10-29
+last_verified: 2026-10-30
 ---
 
 # ArcEngine (dev-server, :8082)
