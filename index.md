@@ -202,6 +202,7 @@ _Обновлено: 2026-10-11_
 - [[tech/anythingllm-rag]] — AnythingLLM RAG: настройка и сравнение моделей
 - [[tech/cherry-studio]] — Cherry Studio: десктопный AI-клиент с агентами, MCP-серверами и локальными базами знаний (53k ⭐, AGPL-3.0)
 - [[tech/nvidia-auto-ontology]] — NVIDIA Auto Ontology: онтология данных для SQL-агентов через MCP/CLI/API (481 ⭐, Apache-2.0), разбор применимости к 1С-PostgreSQL
+- [[tech/herdr]] — Herdr: терминальный рантайм для кодинг-агентов на Rust (46,8k ⭐, Apache-2.0) — панели с состояниями, detach без остановки, socket API для агентов
 - [[tech/bmad-multica-integration]] — интеграция BMAD с Multica
 - [[tech/dify-agent-platform]] — open-source платформа для AI-приложений
 - [[tech/rag-platforms]] — AnythingLLM vs Dify vs RAGFlow: три разных зверя, ресурсы, лицензии, что влезает в VPS 11 ГБ
