@@ -5,7 +5,7 @@ tags:
   - architecture
   - index
 type: map
-last_verified: 2026-10-30
+last_verified: 2026-10-31
 related:
   - ops/services/hermes-agent
   - ops/services/gbrain
