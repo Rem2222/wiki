@@ -10,7 +10,7 @@ tags:
   - gguf
   - quantization
 related:
-  - tech/local-gemma-4-12b-setup
+  - llm/local-gemma-4-12b-setup
   - tech/hermes-memory-setup-vps
 ---
 

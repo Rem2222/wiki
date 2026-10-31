@@ -1,7 +1,9 @@
 ---
 description: "OpenViking (Volcengine/ByteDance) — self-evolving контекст-БД для агентов: единая память+RAG+скиллы, файловая парадигма. (AGPL-3.0, ★32.6k)."
 tags: [agent-memory,rag,context-database,volcengine,skills]
-related: [[tech/semantica]] [[tech/tencentdb-agent-memory]]
+related:
+  - tech/semantica
+  - tech/tencentdb-agent-memory
 ---
 
 # OpenViking

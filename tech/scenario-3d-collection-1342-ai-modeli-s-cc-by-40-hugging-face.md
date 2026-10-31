@@ -1,7 +1,9 @@
 ---
 description: "Датасет AI-сгенерированных 3D-моделей на Hugging Face: 1342 примера, ~39 ГБ, GLB/Blender/SPZ, лицензия CC BY 4.0. Проверено 24.10.2026: форматы, манифест parquet, отдельный датасет Hunyuan с лицензией other, точечное скачивание под наш диск."
 tags: [3d, assets, huggingface, dataset, cc-by, blender, glb, gaussian-splatting]
-related: [[tech/remade-catalog]] [[tech/rag-platforms]]
+related:
+  - tech/remade-catalog
+  - tech/rag-platforms
 ---
 
 # Scenario 3D Collection — 1342 AI-модели с CC BY 4.0 (Hugging Face)

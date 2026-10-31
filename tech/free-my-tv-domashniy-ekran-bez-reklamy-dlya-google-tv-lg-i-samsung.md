@@ -1,7 +1,9 @@
 ---
 description: "Открытый launcher без рекламы (MIT, Java, 1531 звезда за двое суток). Проверено по исходникам 21.10.2026: на Android TV заменяет домашний экран, на LG/Samsung — только приложение. Разбор заявлений из поста и совместимость с Samsung UE32N5300."
 tags: [tv, launcher, android-tv, tizen, webos, open-source, debloat]
-related: [[tech/remade-catalog]] [[tech/e2e-framework]]
+related:
+  - tech/remade-catalog
+  - tech/e2e-framework
 ---
 
 # Free My TV — домашний экран без рекламы для Google TV, LG и Samsung

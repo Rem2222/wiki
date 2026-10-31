@@ -1,7 +1,9 @@
 ---
 description: "Библиотека gamedev-skills/awesome-gamedev-agent-skills (3 896 звёзд, Apache-2.0): 74 скилла для Godot/Unity/Unreal/Bevy/Phaser/three.js, роутер-диспетчер, workflows steam-publish/itch. Формат SKILL.md совместим с Hermes. Проверено 24.10.2026; не подключено."
 tags: [skills, gamedev, agents, godot, unity, unreal, steam, ccgs, arcengine]
-related: [[tech/harness-google-research-rekursivnyy-harnessing-agentov-bez-obucheniya-vesov]] [[tech/scenario-3d-collection-1342-ai-modeli-s-cc-by-40-hugging-face]]
+related:
+  - tech/harness-google-research-rekursivnyy-harnessing-agentov-bez-obucheniya-vesov
+  - tech/scenario-3d-collection-1342-ai-modeli-s-cc-by-40-hugging-face
 ---
 
 # awesome-gamedev-agent-skills — 74 скилла для геймдева в формате SKILL.md

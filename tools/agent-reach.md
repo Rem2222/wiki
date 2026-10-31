@@ -3,7 +3,7 @@ description: Agent Reach — CLI-инструмент, дающий AI-аген�
 tags: [tools, cli, ai, web]
 related:
   - tools/yt-dlp
-  - tech/agent-reach
+  - tools/browser-skill
 created: 2026-08-03
 ---
 

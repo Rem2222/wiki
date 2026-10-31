@@ -1,5 +1,5 @@
 ---
-description: Herdr — терминальный рантайм и мультиплексор на Rust для AI-кодинг-агентов: панели с состояниями «работает/ждёт/простаивает», отсоединение без остановки работы, много машин в одном окне, управление агентами через CLI и socket API.
+description: "Herdr — терминальный рантайм и мультиплексор на Rust для AI-кодинг-агентов: панели с состояниями «работает/ждёт/простаивает», отсоединение без остановки работы, много машин в одном окне, управление агентами через CLI и socket API."
 tags: [herdr, terminal, multiplexer, coding-agents, rust, claude-code, codex, opencode, agent-runtime]
 source: https://github.com/herdrdev/herdr
 website: https://herdr.dev
@@ -8,9 +8,9 @@ license: Apache-2.0
 created: 2026-10-28
 updated: 2026-10-28
 related:
-  - [[tech/gvs5h-pyat-instansov-odnoy-modeli-vmesto-bolshoy-metod-i-nezavisimoe-vosproizvedenie]]
-  - [[tech/cherry-studio]]
-  - [[concepts/mcp]]
+  - tech/gvs5h-pyat-instansov-odnoy-modeli-vmesto-bolshoy-metod-i-nezavisimoe-vosproizvedenie
+  - tech/cherry-studio
+  - concepts/mcp
 ---
 
 # Herdr

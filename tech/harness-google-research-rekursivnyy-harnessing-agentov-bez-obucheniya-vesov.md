@@ -1,7 +1,9 @@
 ---
 description: "Фреймворк google-research/harness2 (18.9k звёзд, Apache-2.0, arXiv 2610.14224): оптимизация обвязки агента при фиксированных весах через Propose–Probe–Compose без ground-truth. Заявленные приросты +11.5 WorkBuddy, +11.8 п.п. LAB, +4.5 JobBench. Проверено 24.10.2026: требования, готовность VPS, блокер Vertex AI, перенос метода на Dex."
 tags: [agents, harness, google-research, llm, benchmarks, dex, arxiv]
-related: [[tech/rag-platforms]] [[tech/remade-catalog]]
+related:
+  - tech/rag-platforms
+  - tech/remade-catalog
 ---
 
 # Harness² (Google Research) — рекурсивный харнессинг агентов без обучения весов

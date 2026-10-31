@@ -1,7 +1,9 @@
 ---
 description: "Нативный MCP-сервер read-only для семантического поиска по вики Rem через Zvec (гибрид bge-m3 + FTS, stdio, без OpenAI-ключа). Единая точка read поверх markdown-вики."
 tags: [zvec,mcp,wiki,vector-db,hermes]
-related: [[tech/zvec]] [[tools/wiki-search-current-state]]
+related:
+  - tech/zvec
+  - tools/wiki-search-current-state
 ---
 
 # Zvec MCP — нативный поиск по вики для Hermes

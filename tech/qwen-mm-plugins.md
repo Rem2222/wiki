@@ -1,7 +1,9 @@
 ---
-description: Qwen-MM-Plugins — набор native-плагинов от QwenLM (skill + MCP), добавляющий агентным обвязкам мультимодальные инструменты: чтение изображений/видео/документов, OCR, grounding, ASR, генерация медиа, 3D/CAD.
+description: "Qwen-MM-Plugins — набор native-плагинов от QwenLM (skill + MCP), добавляющий агентным обвязкам мультимодальные инструменты: чтение изображений/видео/документов, OCR, grounding, ASR, генерация медиа, 3D/CAD."
 tags: [qwen, multimodal, mcp, vision, plugins, ai]
-related: [[tools/yt-dlp]] [[tech/Mercury-Agent-Skills]]
+related:
+  - tools/yt-dlp
+  - tech/Mercury-Agent-Skills
 ---
 
 # Qwen-MM-Plugins

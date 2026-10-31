@@ -1,7 +1,7 @@
 ---
 type: comparison
 title: AnythingLLM vs Dify vs RAGFlow — что выбрать под RAG на своём железе
-description: Три разных зверя: AnythingLLM — лёгкий workspace для документов, Dify — платформа AI-приложений с workflow, RAGFlow — движок глубокого разбора PDF. Метрики, лицензии, ресурсы и выбор под VPS 11 ГБ.
+description: "Три разных зверя: AnythingLLM — лёгкий workspace для документов, Dify — платформа AI-приложений с workflow, RAGFlow — движок глубокого разбора PDF. Метрики, лицензии, ресурсы и выбор под VPS 11 ГБ."
 tags: [rag, self-hosted, comparison, knowledge-base, llm-tools]
 related:
   - tech/anythingllm-rag

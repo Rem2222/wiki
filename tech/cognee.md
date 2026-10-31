@@ -1,7 +1,10 @@
 ---
 description: "Cognee — open-source платформа памяти для AI-агентов: ECL-пайплайн, knowledge graph + векторный и реляционный поиск; кандидат на единый memory-провайдер."
 tags: [memory,cognee,agent-memory,knowledge-graph,rag,mcp]
-related: [[patterns/vibe-coding-memory-architecture]] [[patterns/1c-multi-agent-development]] [[ops/services/hindsight]]
+related:
+  - patterns/vibe-coding-memory-architecture
+  - patterns/1c-multi-agent-development
+  - ops/services/hindsight
 ---
 
 # Cognee

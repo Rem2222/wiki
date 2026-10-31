@@ -1,7 +1,10 @@
 ---
 description: "qwen-tp — токен-план провайдер Alibaba (Aliyun MaaS TokenPlan) в стеке Hermes: vision qwen3.7-plus, дефолт deepseek-v4-flash, ~14 моделей."
 tags: [llm,provider,qwen,alibaba,token-plan,inference]
-related: [[tech/qwen-mm-plugins]] [[tech/free-coding-agents-2026]] [[ops/services/freellmapi]]
+related:
+  - tech/qwen-mm-plugins
+  - tech/free-coding-agents-2026
+  - ops/services/freellmapi
 ---
 
 # qwen-tp

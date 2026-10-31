@@ -2,7 +2,7 @@
 description: yt-dlp — командная утилита для скачивания видео/аудио с YouTube и 1000+ сайтов.
 tags: [tools, cli, video]
 related:
-  - tech/agent-reach
+  - tools/agent-reach
   - tools/youtube-transcript
   - tools/openverse-api
 created: 2026-08-03

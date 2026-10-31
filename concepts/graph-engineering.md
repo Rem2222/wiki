@@ -4,7 +4,6 @@ title: Graph Engineering — построение надежных систем 
 description: Переход от последовательных агентов к графу работ — узлы, рёбра, state, проверки, fan-out/barrier/fan-in, worktree-изоляция
 tags: [agents, architecture, graph, parallel, delegation, workflow]
 related:
-  - concepts/proactive-agents
   - tech/hermes-agent-masterclass
   - tech/zvec
 source: https://telegra.ph/Graph-Engineering-kak-stroit-nadezhnye-sistemy-iz-AI-agentov-07-22

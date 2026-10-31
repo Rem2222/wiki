@@ -1,7 +1,7 @@
 ---
 description: Devin — AI Software Engineer от Cognition Labs (бывший Windsurf). IDE + облачные агенты. Включает GLM-5.2 в подписке Pro.
 tags: [devin, cognition, glm, ai-coding-assistant, windsurf]
-related: [tech/z-ai, tech/buyglm-com, tech/hermes-mcp]
+related: [tech/z-ai, tech/hermes-mcp-setup]
 ---
 
 # Devin (Cognition Labs)

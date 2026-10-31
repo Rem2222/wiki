@@ -5,8 +5,8 @@ created: 2026-10-05
 source: https://github.com/Freaction/Aquilum
 related:
   - tools/ponytail
-  - tools/mcp_obsidian
-  - software/obsidian
+  - tech/obsidian-plugins
+  - tech/obsidian-livesync
 ---
 
 # Aquilum — аналог Obsidian на Rust

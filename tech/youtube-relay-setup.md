@@ -1,7 +1,9 @@
 ---
-description: Инструкция: YouTube через собственный релей внутри страны — телефон смотрит видео из локального кэша Google (nginx маскировка + xray mux.cool + sing-box маршрутизация + zapret DPI). Видеопоток не выходит за границу.
+description: "Инструкция: YouTube через собственный релей внутри страны — телефон смотрит видео из локального кэша Google (nginx маскировка + xray mux.cool + sing-box маршрутизация + zapret DPI). Видеопоток не выходит за границу."
 tags: [youtube, vpn, vless, zapret, dpi, sing-box, xray, nginx, relay, dpi-bypass]
-related: "[[ops/services/lightpanda]] [[tech/lightpanda-browser]]"
+related:
+  - ops/services/lightpanda
+  - tech/lightpanda-browser
 ---
 
 # YouTube через собственный релей внутри страны

@@ -7,12 +7,12 @@ tags:
   - acp
 type: service
 related:
-  - "[[ops/services/hermes-agent]]"
-  - "[[ops/services/docker]]"
+  - ops/services/hermes-agent
+  - ops/services/docker
 service:
   name: agents-anywhere
   category: agents
-  purpose: Self-hosted рабочий стол для AI-агентов (Codex / Claude Code / DeepSeek Harness / Hermes): сессии, файлы, терминал с телефона или Web
+  purpose: "Self-hosted рабочий стол для AI-агентов (Codex / Claude Code / DeepSeek Harness / Hermes): сессии, файлы, терминал с телефона или Web"
   install_date: 2026-10-11
   last_verified: 2026-10-31
   health_url: "http://localhost:5174/"

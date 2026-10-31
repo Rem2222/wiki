@@ -1,7 +1,12 @@
 ---
 description: "Основной inference-провайдер Hermes — подписка OpenCode Go ($10/мес) на endpoint opencode.ai/zen/go/v1: deepseek-v4-flash/mimo, chat_completions, первый канал fallback-цепочки."
 tags: [ai,provider,llm,api,inference]
-related: [[tech/qwen-tp]] [[tech/free-coding-agents-2026]] [[concepts/llm-tier-strategy]] [[tech/llm-as-a-verifier]] [[tech/opencode]]
+related:
+  - tech/qwen-tp
+  - tech/free-coding-agents-2026
+  - concepts/llm-tier-strategy
+  - tech/llm-as-a-verifier
+  - tech/opencode
 ---
 
 # opencode-go

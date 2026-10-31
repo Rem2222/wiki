@@ -1,7 +1,9 @@
 ---
-description: LFM2.5-VL-3B — лёгкая vision-language модель Liquid AI (3B, SigLIP2 NaFlex): GUI-агентность, grounding, OCR, 228 tok/s на M5 Max. Проверена по HF 12.08.2026.
+description: "LFM2.5-VL-3B — лёгкая vision-language модель Liquid AI (3B, SigLIP2 NaFlex): GUI-агентность, grounding, OCR, 228 tok/s на M5 Max. Проверена по HF 12.08.2026."
 tags: [vlm, vision, gui-agent, grounding, ocr, liquid-ai, edge, llm]
-related: [[tech/qwen-tp]] [[ops/services/ollama]]
+related:
+  - tech/qwen-tp
+  - ops/services/ollama
 ---
 
 # LFM2.5-VL-3B (Liquid AI)

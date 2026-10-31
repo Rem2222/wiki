@@ -1,5 +1,5 @@
 ---
-description: SoL-Pi (NVIDIA) — автоматическое улучшение обвязки ИИ-агентов через рекурсивные auto-research циклы. −50% расход токенов без потери качества. 4 механизма: Action Fusion, ObservationPack, context compression, reduced reading.
+description: "SoL-Pi (NVIDIA) — автоматическое улучшение обвязки ИИ-агентов через рекурсивные auto-research циклы. −50% расход токенов без потери качества. 4 механизма: Action Fusion, ObservationPack, context compression, reduced reading."
 tags: [ai, agent, harness, optimization, nvidia, cost-reduction, pi, token-saving]
 related:
   - tech/jev-jevrouter

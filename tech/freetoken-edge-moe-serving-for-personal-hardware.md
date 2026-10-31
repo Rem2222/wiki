@@ -1,7 +1,9 @@
 ---
 description: "Edge-native MoE serving: запуск больших MoE (до 753B) на персональном железе, CPU+GPU+RAM как единый пул. Репо FlashML-org/FreeToken, статья arxiv 2608.16157."
 tags: [freetoken,moe,inference,edge,arxiv,hermes]
-related: [[tech/deepseek-harness]] [[ops/hermes]]
+related:
+  - tech/deepseek-harness
+  - tech/ods-ai-server
 ---
 
 # FreeToken — edge-MoE serving for personal hardware

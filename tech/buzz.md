@@ -1,7 +1,10 @@
 ---
 description: Buzz — self-hostable workspace от Block (Джека Дорси) на Nostr, где люди и ИИ-агенты работают в одних комнатах/каналах. Агенты — участники с собственными ключами и аудит-трейлом, а не боты. Rust, Apache-2.0, 27.5k⭐ (15.08.2026).
 tags: [nostr, agents, workspace, block, jack-dorsey, rust, self-hosted, team-collaboration]
-related: [[tech/deepseek-harness]] [[tech/semantica]] [[tech/agent-memory-research-2026]]
+related:
+  - tech/deepseek-harness
+  - tech/semantica
+  - tech/agent-memory-research-2026
 ---
 
 # Buzz

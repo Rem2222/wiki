@@ -6,8 +6,8 @@ tags:
   - opencode-go
   - риск
 related:
-  - "[[ops/services/hindsight]]"
-  - "[[ops/hermes]]"
+  - ops/services/hindsight
+  - ops/services/hermes-agent
 created: 2026-08-21
 ---
 # Риск: консолидация Hindsight без fallback на opencode-go

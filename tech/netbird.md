@@ -1,7 +1,9 @@
 ---
 description: "Mesh VPN / Zero-Trust-сеть на WireGuard, конкурент Tailscale (Go, сеть SSO/MFA, P2P)."
 tags: [vpn,wireguard,mesh,zerotrust,networking]
-related: [[ops/services/tailscale]] [[tech/dpi-zapret-netfix]]
+related:
+  - ops/services/tailscale
+  - tech/dpi-zapret-netfix
 ---
 
 # netbird

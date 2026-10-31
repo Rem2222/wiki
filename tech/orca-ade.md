@@ -1,7 +1,9 @@
 ---
 description: "Orca (stablyai/orca) — ADE для параллельной работы агентов: worktrees, Design Mode, mobile companion. Electron, MIT, ★53.6k."
 tags: [ade,agents,electron,parallel,worktree,ide]
-related: [[tech/backpass]] [[tech/cloudflare-computer]]
+related:
+  - tech/backpass
+  - tech/cloudflare-computer
 ---
 
 # Orca (ADE)

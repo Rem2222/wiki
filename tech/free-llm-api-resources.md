@@ -1,5 +1,5 @@
 ---
-description: Сервисы с бесплатным LLM API-доступом и триальные кредиты. Две части: cheahjs/free-llm-api-resources (25.5k ⭐) + полевой обзор шести малоизвестных сервисов @Ungated из Habr 1085352 (сент. 2026): Atria, Vireonix, ShareLLM, OdiRouter, Selora, Routeway.
+description: "Сервисы с бесплатным LLM API-доступом и триальные кредиты. Две части: cheahjs/free-llm-api-resources (25.5k ⭐) + полевой обзор шести малоизвестных сервисов @Ungated из Habr 1085352 (сент. 2026): Atria, Vireonix, ShareLLM, OdiRouter, Selora, Routeway."
 tags: [tech, llm, free, api, providers, habr]
 updated: 2026-09-23
 related:

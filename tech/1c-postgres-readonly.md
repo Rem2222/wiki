@@ -1,12 +1,12 @@
 ---
-description: Как дать агенту прямой доступ к базе 1С в PostgreSQL — только на чтение: отдельная роль, запрет записи на уровне сессии, таймауты, копия вместо рабочей базы и закрытая сеть.
+description: "Как дать агенту прямой доступ к базе 1С в PostgreSQL — только на чтение: отдельная роль, запрет записи на уровне сессии, таймауты, копия вместо рабочей базы и закрытая сеть."
 tags: [1c, postgresql, readonly, security, mcp, ai-agents]
 created: 2026-10-28
 updated: 2026-10-28
 related:
-  - [[tech/nvidia-auto-ontology]]
-  - [[concepts/mcp]]
-  - [[tech/hermes-mcp-setup]]
+  - tech/nvidia-auto-ontology
+  - concepts/mcp
+  - tech/hermes-mcp-setup
 ---
 
 # PostgreSQL 1С: доступ агенту только на чтение

@@ -4,7 +4,7 @@ title: Wello — единый API для Claude, GPT, Gemini
 description: Российский сервис-прокси к топовым AI-моделям с Dev API, веб-чатом и десктоп-агентом. До 90% дешевле официальных API. Оплата в рублях и крипте.
 tags: [api, llm, proxy, claude, gpt, gemini, dev-api, russia]
 related:
-  - tech/openrouter
+  - tech/9router-vs-openrouter
   - tech/freellmapi
 source: https://wello.dev
 stars: 45000

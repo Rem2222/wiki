@@ -1,7 +1,9 @@
 ---
 description: "Плагин OpenCode, шлёт ntfy-уведомления о событиях (permission/complete/error/question)."
 tags: [opencode,ntfy,plugin,notifications]
-related: [[tech/opencode]] [[ops/services/ntfy]]
+related:
+  - tech/opencode
+  - ops/services/ntfy
 ---
 
 # opencode-notifier-ntfy

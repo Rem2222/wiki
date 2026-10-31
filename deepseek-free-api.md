@@ -1,7 +1,7 @@
 ---
 description: Развёртывание FreeDeepseekAPI — бесплатный DeepSeek API через web-чат на VPS
 tags: [deepseek, api, proxy, selfhosted]
-related: [ai-services]
+related: [ops/services/freedeepseekapi]
 ---
 
 # FreeDeepseekAPI

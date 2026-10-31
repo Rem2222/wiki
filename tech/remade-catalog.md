@@ -1,7 +1,7 @@
 ---
 type: reference
 title: Remade.wiki — каталог open-source переписей известного софта
-description: Каталог независимых реализаций коммерческих программ (Photoshop → PhotoCraft, Excel → GridCraft и т.д.). Проверено 19.10.2026: проекты реальные, серия storytold/*Craft на Rust с CLI и MCP.
+description: "Каталог независимых реализаций коммерческих программ (Photoshop → PhotoCraft, Excel → GridCraft и т.д.). Проверено 19.10.2026: проекты реальные, серия storytold/*Craft на Rust с CLI и MCP."
 tags: [open-source, rust, mcp, catalog, reference]
 related:
   - tech/rag-platforms

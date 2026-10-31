@@ -6,7 +6,7 @@ tags: [local-ai, llm, open-webui, ollama, selfhosted, agents]
 related:
   - tech/paperclip
   - concepts/llm-tier-strategy
-  - tech/local-gguf-serving
+  - ops/services/ollama
 source: https://github.com/Osmantic/ODS
 ingested_at: '2026-07-23'
 ---

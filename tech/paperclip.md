@@ -5,7 +5,6 @@ description: Open-source платформа для оркестрации ком
 tags: [agents, orchestration, management, open-source, hermess]
 related:
   - tech/hermes-agent-masterclass
-  - concepts/proactive-agents
   - concepts/graph-engineering
 source: https://paperclip.ing/
 source_github: https://github.com/paperclipai/paperclip

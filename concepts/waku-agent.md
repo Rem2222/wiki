@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Waku Agent — локальный AI-ассистент (Agent Harness на практике)
-description: Open-source личный AI-ассистент от Shen Sean Chen. Полный цикл агента в ~95 строках Python: память → агент → инструменты → оценка → развитие навыков. SQLite, Telegram, голос.
+description: "Open-source личный AI-ассистент от Shen Sean Chen. Полный цикл агента в ~95 строках Python: память → агент → инструменты → оценка → развитие навыков. SQLite, Telegram, голос."
 tags: [agent, harness, loop-engineering, python, sqlite, telegram, eval]
 related:
   - concepts/graph-engineering

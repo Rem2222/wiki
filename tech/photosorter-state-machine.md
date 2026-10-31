@@ -7,7 +7,7 @@ tags:
   - state-machine
   - mermaid
 related:
-  - tools/photo-sorter
+  - tools/diagram-design
 ---
 
 # Photo Sorter — автомат состояний

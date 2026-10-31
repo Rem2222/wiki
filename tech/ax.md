@@ -1,7 +1,10 @@
 ---
 description: "AX — открытый агентный оркестратор Google: декларативно объявляешь задачу агента в YAML, AX песочничит, собирает workspace (git/MCP/скиллы) и запускает миллиарды задач на кластере. «Kubernetes для ИИ-агентов»."
 tags: [agents,orchestrator,google,kubernetes,sandbox]
-related: [[tech/agentation]] [[tech/Mercury-Agent-Skills]] [[concepts/mcp]]
+related:
+  - tech/agentation
+  - tech/Mercury-Agent-Skills
+  - concepts/mcp
 ---
 
 # AX

@@ -7,7 +7,7 @@ tags:
 type: service
 status: removed
 related:
-  - ops/services/zvec-wiki
+  - tech/zvec
 service:
   name: gbrain
   category: core
@@ -25,6 +25,6 @@ service:
   logs: []
   depends_on: []
   data_size_hint: "0 B (удалён)"
-  notes: Удалён полностью 2026-10-03 по решению Романа. Не использовать, не поднимать заново. Поиск по вики — zvec-wiki, аудит — wiki-health-check.py (см. ops/services/zvec-wiki).
+  notes: Удалён полностью 2026-10-03 по решению Романа. Не использовать, не поднимать заново. Поиск по вики — zvec-wiki, аудит — wiki-health-check.py (см. tech/zvec).
 last_verified: 2026-10-31
 ---

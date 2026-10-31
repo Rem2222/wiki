@@ -1,7 +1,7 @@
 ---
 type: tool
 title: RAGFlow — RAG-движок с глубоким разбором документов (DeepDoc)
-description: Open-source RAG-движок (Apache-2.0) от InfiniFlow. Сильная сторона — layout-aware парсинг PDF: таблицы, колонки, сканы, OCR и цитаты с указанием страницы. Тяжёлый по ресурсам.
+description: "Open-source RAG-движок (Apache-2.0) от InfiniFlow. Сильная сторона — layout-aware парсинг PDF: таблицы, колонки, сканы, OCR и цитаты с указанием страницы. Тяжёлый по ресурсам."
 tags: [rag, document-parsing, ocr, self-hosted, knowledge-base]
 related:
   - tech/rag-platforms

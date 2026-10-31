@@ -1,7 +1,9 @@
 ---
 description: "Blender AI MCP Addon (LiCinCan) — AI-ассистент и MCP-сервер прямо в Blender 4.2+: визуальный чат со сценой, 21 инструмент, мультиагентная команда (manager/worker/reviewer), свои провайдеры, Windows x64, MIT."
 tags: [blender, mcp, ai-assistant, 3d, addon]
-related: [[tech/deepseek-harness]] [[concepts/waku-agent]]
+related:
+  - tech/deepseek-harness
+  - concepts/waku-agent
 ---
 
 # Blender AI MCP Addon (mcp-for-blender-pro)

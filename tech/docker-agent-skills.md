@@ -4,9 +4,9 @@ tags: [docker, skills, ai-agents, devops, claude-code, codex, habr]
 updated: 2026-09-25
 source: "https://github.com/docker/skills"
 related:
-  - "[[tech/free-llm-api-resources]]"
-  - devops/selfhosted-services
-  - devops/vps-disk-cleanup
+  - tech/free-llm-api-resources
+  - ops/services/docker
+  - tools/find-skills
 ---
 
 # Docker Skills — официальные навыки Docker для агентов
