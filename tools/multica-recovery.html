@@ -1,0 +1,656 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multica: разбор зависших задач + итоги 3 недель</title>
+<style>
+:root{color-scheme:dark}
+body{margin:0;background:#0d1117;color:#e6edf3;font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:26px;margin:0 0 6px}
+.sub{color:#8b949e;margin:0 0 26px;font-size:14px}
+h2{font-size:19px;margin:38px 0 12px;padding-bottom:6px;border-bottom:1px solid #21262d}
+.kpi{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 8px}
+.kpi div{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:12px 16px;min-width:132px}
+.kpi b{display:block;font-size:23px;line-height:1.2}
+.kpi span{color:#8b949e;font-size:12.5px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+.q{border:1px solid #21262d;border-radius:12px;background:#0f141b;overflow:hidden}
+.q header{padding:12px 16px;border-bottom:1px solid #21262d;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.q header h3{margin:0;font-size:15.5px}
+.q header .cnt{font-size:12.5px;color:#8b949e;white-space:nowrap}
+.q header small{display:block;color:#8b949e;font-weight:400;font-size:12.5px;margin-top:3px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:1px}
+ul.items{list-style:none;margin:0;padding:6px 16px 14px}
+ul.items li{padding:8px 0;border-bottom:1px dashed #1c222b;font-size:13.6px}
+ul.items li:last-child{border-bottom:0}
+ul.items .k{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#7ee787;font-size:12.6px;margin-right:5px}
+ul.items .meta{display:block;color:#8b949e;font-size:11.8px;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:13.4px;margin-top:8px}
+th,td{padding:7px 10px;border-bottom:1px solid #21262d;text-align:left}
+th{color:#8b949e;font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+tr.bad td{background:#2a1517}
+details{margin-top:12px;border:1px solid #21262d;border-radius:10px;background:#0f141b}
+summary{cursor:pointer;padding:11px 16px;font-size:13.6px;color:#c9d1d9}
+details ul{margin:0;padding:0 16px 14px}
+details ul li{list-style:none;padding:6px 0;border-bottom:1px dashed #1c222b;font-size:13px}
+details ul li:last-child{border-bottom:0}
+.bar{height:7px;background:#1c222b;border-radius:4px;overflow:hidden;min-width:70px}
+.bar i{display:block;height:100%;background:#4c9be2}
+footer{margin-top:40px;color:#6e7681;font-size:12.4px}
+</style></head><body><div class="wrap">
+<h1>Multica: зависшие задачи и итоги трёх недель</h1>
+<p class="sub">Срез на 1 ноября 2026, 00:30 МСК (данные напрямую из БД Multica). Разбивка — матрица Эйзенхауэра (срочность × важность), а не декартов квадрат.</p>
+<div class="kpi">
+<div><b>502</b><span>всего открытых</span></div>
+<div><b>321</b><span>на ревью</span></div>
+<div><b>103</b><span>к выполнению</span></div>
+<div><b>56</b><span>в бэклоге</span></div>
+<div><b>10</b><span>заблокировано</span></div>
+<div><b>282</b><span>из них отчёты автопилотов</span></div>
+<div><b>68</b><span>закрыто за 21 день</span></div>
+<div><b>31</b><span>упавших прогонов</span></div>
+</div>
+<div class="grid">
+<section class="q"><header><div><h3><span class="dot" style="background:#e2574c"></span>Срочно и важно<small>Делать сейчас: риски для сервера, данных и безопасности</small></h3></div><span class="cnt">11 задач</span></header><ul class="items">
+<li><span class="k">MUL-10273</span> [BACKUP] server-pg-backups не коммитится с 09.10 + hermes-config архив раздулся до 600МБ<span class="meta">к выполнению · Routine · 3 дн. без движения</span></li>
+<li><span class="k">MUL-10408</span> [ALERT] qwen-tp (Alibaba token-plan): месячная квота исчерпана — дефолтная модель Hermes отдаёт 429 до 19.11<span class="meta">к выполнению · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10291</span> [ALERT] Email IMAP: 6 fetch-фейлов за 24ч (timeout/EOF), адаптер сам восстанавливается<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10377</span> [DISK] Диск 87% и растёт ~1%/сутки: нужна чистка (docker/npm/journal/.hermes/backups)<span class="meta">заблокировано · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10085</span> [ALERT] Git push сломан: невалидный GitHub PAT (wiki + server-pg-backups) + 197MB файл в индексе backups<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li style="color:#8b949e">… и ещё 6 в полном списке ниже</li>
+</ul></section>
+<section class="q"><header><div><h3><span class="dot" style="background:#4c9be2"></span>Важно, не срочно<small>Планировать: настройки, которые деградируют тихо</small></h3></div><span class="cnt">56 задач</span></header><ul class="items">
+<li><span class="k">MUL-10463</span> ТЗ: голосовой ассистент — PWA /rt/ + Android TWA (состояние и остаток работ)<span class="meta">бэклог · Голосовой ассистент · 0 дн. без движения</span></li>
+<li><span class="k">MUL-10343</span> [MODELS] opencode-go убрал 8 моделей, включая default_model и первый фолбэк (deepseek-v4-flash)<span class="meta">к выполнению · Routine · 2 дн. без движения</span></li>
+<li><span class="k">MUL-10238</span> [MODELS] FreeLLMAPI: чат-пробы 0/5 второй день — OpenRouter 401 (User not found), Ollama Cloud 410 (retired), <span class="meta">к выполнению · Routine · 5 дн. без движения</span></li>
+<li><span class="k">MUL-10410</span> Память переполнена: новые правила Романа не записываются (USER.md 3813/2000, MEMORY.md 3265/3300) → сжать до л<span class="meta">на ревью · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-713</span> Почистить память Hermes (MEMORY.md / USER.md переполнены)<span class="meta">бэклог · — · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10334</span> Веб-поиск: поставить ddgs (backend падает на резервный движок)<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10335</span> OpenViking recall: разобрать таймаут и пропажу контекста памяти<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10397</span> [NEW TOOL] Voice Gateway (8799/8798, поставлен 24.10): код не в git, нет health-endpoint<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10398</span> [FIX] config.yaml web: search_backend=ddgs без пакета + extract_backend пуст — web_extract всегда падает<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10268</span> Фаза 2: код адаптера (скелет + reducer + жизнь сессий)<span class="meta">на ревью · Agents Anywhere · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10086</span> [MEMORY] OpenViking + Hermes vision: 400 MissingSessionID (opencode-go требует x-opencode-session)<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10079</span> ИИ-репетитор: система обучения школьников<span class="meta">бэклог · ИИ-Репетитор · 38 дн. без движения</span></li>
+<li style="color:#8b949e">… и ещё 44 в полном списке ниже</li>
+</ul></section>
+<section class="q"><header><div><h3><span class="dot" style="background:#e2a44c"></span>Срочно, не важно<small>Делегировать/закрыть пачкой: отчёты, зависшие прогоны, шум</small></h3></div><span class="cnt">327 задач</span></header><ul class="items">
+<li><span class="k">MUL-10462</span> Скидки на AI подписки на 2026-10-31 (19:00) — истекла −50% MiniMax M Plan, цены вернулись к полным; у GLM и Ki<span class="meta">на ревью · Routine · 0 дн. без движения</span></li>
+<li><span class="k">MUL-10456</span> Паттерн: дайджест закрыл 4 чужих отчёта в done (30.10 09:04) → запрет менять статусы чужих задач + время прове<span class="meta">заблокировано · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10460</span> 2026-10-31 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10461</span> Wiki Health — 2026-10-31: 19 битых related, 37 невалидных YAML, AgentMemory мёртв<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10457</span> Аудит бесплатных моделей 31.10: Hermes / OpenRouter / OpenCode<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10458</span> Скидки на AI подписки на 2026-10-31 (07:00) — изменений нет, −50% M Plan MiniMax истекает сегодня 19:00 MSK, K<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10459</span> Обнова мультика 2026-10-31: проверка релиза и патчей MUL-11/MUL-10<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10454</span> 2026-10-31 — Ночной дозор: 8 прогонов без падений, рутина 2 ч ждала переиндексацию, дайджест закрыл 4 чужих от<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li style="color:#8b949e">… и ещё 319 в полном списке ниже</li>
+</ul></section>
+<section class="q"><header><div><h3><span class="dot" style="background:#7d8590"></span>Не срочно, не важно<small>Выбросить или в бэклог: хлам старше месяца</small></h3></div><span class="cnt">108 задач</span></header><ul class="items">
+<li><span class="k">MUL-10076</span> Тест подключения к ДСХ на работе<span class="meta">к выполнению · — · 50 дн. без движения</span></li>
+<li><span class="k">MUL-10077</span> Тест DSH-рантайма (1c-work)<span class="meta">к выполнению · — · 50 дн. без движения</span></li>
+<li><span class="k">MUL-10074</span> Изучить cmu-agents.com<span class="meta">бэклог · Routine · 52 дн. без движения</span></li>
+<li><span class="k">MUL-10073</span> Установить tgrep при старте нового проекта<span class="meta">бэклог · Routine · 52 дн. без движения</span></li>
+<li><span class="k">MUL-10068</span> [INFRA] Cloudflare WARP — DOWN (warp-cli не найден)<span class="meta">бэклог · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10071</span> [MAINT] Journald — 728 MB, нужна очистка<span class="meta">бэклог · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10057</span> OpenViking: загрузка данных из Hermes state.db<span class="meta">на ревью · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10065</span> [BACKUP] Облако для хранения бэкапов<span class="meta">к выполнению · Routine · 57 дн. без движения</span></li>
+<li style="color:#8b949e">… и ещё 100 в полном списке ниже</li>
+</ul></section>
+</div>
+<h2>Полные списки по квадрантам</h2>
+<details><summary>Срочно и важно — 11 задач (раскрыть)</summary><ul>
+<li><span class="k">MUL-866</span> [ALERT] Cloudflare WARP not running<span class="meta">к выполнению · Routine · 73 дн. без движения</span></li>
+<li><span class="k">MUL-10128</span> [ALERT] Hindsight лежит: hindsight-app/db Exited 3 недели, https://rem2222.top/hindsight-api/ → 502<span class="meta">к выполнению · Routine · 33 дн. без движения</span></li>
+<li><span class="k">MUL-10085</span> [ALERT] Git push сломан: невалидный GitHub PAT (wiki + server-pg-backups) + 197MB файл в индексе backups<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10188</span> [ALERT] Hermes cron: «unreadable acknowledgement / ownership-uncertain» — 6 ошибок за 24ч, 14 за 7д, с 23.09<span class="meta">к выполнению · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10200</span> [ALERT] headless-shell: crash-loop 8764/24ч (бинарь Playwright 1187 удалён) — CDP :9222 мёртв<span class="meta">к выполнению · Routine · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10211</span> [ALERT] dex-heartbeat: таймаут 30s на Gemini :8083 роняет 7 тиков за 24ч (heartbeat.py exit 1)<span class="meta">к выполнению · Routine · 26 дн. без движения</span></li>
+<li><span class="k">MUL-10387</span> [ALERT] fal.ai: исчерпан баланс — генерация изображений падает (User is locked, 23.10 22:59)<span class="meta">к выполнению · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10377</span> [DISK] Диск 87% и растёт ~1%/сутки: нужна чистка (docker/npm/journal/.hermes/backups)<span class="meta">заблокировано · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10291</span> [ALERT] Email IMAP: 6 fetch-фейлов за 24ч (timeout/EOF), адаптер сам восстанавливается<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10408</span> [ALERT] qwen-tp (Alibaba token-plan): месячная квота исчерпана — дефолтная модель Hermes отдаёт 429 до 19.11<span class="meta">к выполнению · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10273</span> [BACKUP] server-pg-backups не коммитится с 09.10 + hermes-config архив раздулся до 600МБ<span class="meta">к выполнению · Routine · 3 дн. без движения</span></li>
+</ul></details>
+<details><summary>Важно, не срочно — 56 задач (раскрыть)</summary><ul>
+<li><span class="k">MUL-110</span> Исследовать и внедрить CLI Printing Press<span class="meta">бэклог · Routine · 139 дн. без движения</span></li>
+<li><span class="k">MUL-591</span> premium_widget.py: fix duplicate main() init<span class="meta">бэклог · — · 98 дн. без движения</span></li>
+<li><span class="k">MUL-882</span> 8. Сквозная память VPS↔Windows (отдельный этап, ПОЗЖЕ)<span class="meta">бэклог · переезд памяти · 72 дн. без движения</span></li>
+<li><span class="k">MUL-881</span> 7. Cutover: деактивация agentmemory/GBrain + правила памяти (после «ок»)<span class="meta">бэклог · переезд памяти · 72 дн. без движения</span></li>
+<li><span class="k">MUL-880</span> 6. A/B-сравнение hindsight vs agentmemory (сценарий Романа)<span class="meta">на ревью · переезд памяти · 71 дн. без движения</span></li>
+<li><span class="k">MUL-879</span> 5. Чистка вики: убрать лишние слои, оставить Obsidian<span class="meta">на ревью · переезд памяти · 71 дн. без движения</span></li>
+<li><span class="k">MUL-878</span> 4. GBrain → Zvec: семантический индекс вики<span class="meta">на ревью · переезд памяти · 71 дн. без движения</span></li>
+<li><span class="k">MUL-10079</span> ИИ-репетитор: система обучения школьников<span class="meta">бэклог · ИИ-Репетитор · 38 дн. без движения</span></li>
+<li><span class="k">MUL-10086</span> [MEMORY] OpenViking + Hermes vision: 400 MissingSessionID (opencode-go требует x-opencode-session)<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-441</span> 🔴 Gemini-web2api: 401 invalid API key<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10165</span> [WIKI] maintenance audit: 16 проблем health-check (2 битые ссылки, 4 orphan без description/related)<span class="meta">к выполнению · Routine · 30 дн. без движения</span></li>
+<li><span class="k">MUL-10258</span> Флуд-контроль Telegram: 2 обрыва доставки 10.10 (11:29, 13:04 МСК) — алерт недоставки в ntfy<span class="meta">на ревью · Routine · 21 дн. без движения</span></li>
+<li><span class="k">MUL-10260</span> browser_exec на Lightpanda: визуальные проверки молча неверны → правило Playwright<span class="meta">на ревью · Routine · 21 дн. без движения</span></li>
+<li><span class="k">MUL-10259</span> Декс: outreach-тик без сверки с замером — ложная тревога headless_shell (10.10, 18:00)<span class="meta">к выполнению · Routine · 21 дн. без движения</span></li>
+<li><span class="k">MUL-10270</span> Фаза 4: публикация — форк, PR в anywhere-labs, комментарий в #276<span class="meta">бэклог · Agents Anywhere · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10265</span> ACP runtime для Agents Anywhere — эпик<span class="meta">бэклог · Agents Anywhere · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10268</span> Фаза 2: код адаптера (скелет + reducer + жизнь сессий)<span class="meta">на ревью · Agents Anywhere · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10267</span> Фаза 1: дизайн универсального ACP-рантайма<span class="meta">на ревью · Agents Anywhere · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10266</span> Фаза 0: разведка коннектора Agents Anywhere + поверхность hermes acp<span class="meta">на ревью · Agents Anywhere · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10274</span> [NEW TOOL] Agents Anywhere — новый сервис на сервере (поставлен 11.10): автозапуск и туннель?<span class="meta">к выполнению · Routine · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10276</span> Паттерн: api_server — ответ не доходит, Роман задал один вопрос 3 раза за 7 минут (10.11)<span class="meta">к выполнению · Routine · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10223</span> Паттерн: правка файла без чтения — 32 предупреждения was not read by this agent за 9 дней → правило read_file <span class="meta">на ревью · Routine · 18 дн. без движения</span></li>
+<li><span class="k">MUL-10333</span> Язык ответа: китайский из отчётов субагентов просачивается в чат → требование языка в промпте делегирования<span class="meta">на ревью · Routine · 13 дн. без движения</span></li>
+<li><span class="k">MUL-10332</span> Мониторинг: чеки смотрят системный systemctl/journalctl, пока gateway — user-юнит → ложный спам и молчащие про<span class="meta">на ревью · Routine · 13 дн. без движения</span></li>
+<li><span class="k">MUL-10356</span> Паттерн: непроверенное утверждение ушло в скилл как факт (rate-limit SmithsChat, 20.10) → правило: факт в знан<span class="meta">на ревью · Routine · 11 дн. без движения</span></li>
+<li><span class="k">MUL-10355</span> Паттерн: дата в контексте отстаёт на дни — ассистент заподозрил уехавшие часы сервера (20.10) → правило сверят<span class="meta">на ревью · Routine · 11 дн. без движения</span></li>
+<li><span class="k">MUL-10367</span> Паттерн: правка промпта/скрипта фонового сервиса не проверяется живым прогоном — smiths-wake падал, relay без <span class="meta">на ревью · Routine · 10 дн. без движения</span></li>
+<li><span class="k">MUL-10368</span> Паттерн: долгие раскопки без промежуточного статуса — «Чего ты там молотишь?» / «Я думаю что ты повис» (21.10,<span class="meta">на ревью · Routine · 10 дн. без движения</span></li>
+<li><span class="k">MUL-10369</span> Паттерн: утверждение о действии Романа из памяти без сверки записи — «ты сам прислал .env» (21.10) → правило с<span class="meta">на ревью · Routine · 10 дн. без движения</span></li>
+<li><span class="k">MUL-10342</span> [FIX] freeqwenapi: restart-loop 942 раз — устаревший CHROME_PATH (Playwright 1243)<span class="meta">на ревью · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10379</span> Паттерн: ночная переиндексация zvec будит Романа ложным CPU-алертом в 02:00 (22.10+23.10) → allowlist известно<span class="meta">на ревью · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10380</span> Паттерн: ночная рутина заводит дубли alert-задач без assignee (freeqwenapi ×3, opencode-go ×3, диск/бэкап без <span class="meta">на ревью · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10376</span> [BACKUP] Шифрование бэкапов выключено с 15.10: на сервере нет /root/.backup-pass<span class="meta">к выполнению · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10389</span> Паттерн: чистка E2E-данных smiths-chat падает на SQL-промахах 3-4 раза подряд (22.10+23.10) → правило «PRAGMA <span class="meta">на ревью · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10335</span> OpenViking recall: разобрать таймаут и пропажу контекста памяти<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10400</span> Паттерн: штатный STT молча сломан — 7 голосовых 24.10 не расшифрованы автоматически → faster-whisper в рантайм<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10334</span> Веб-поиск: поставить ddgs (backend падает на резервный движок)<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10365</span> [WIKI] Maintenance-аудит вики: 19 проблем (description/related, битая ссылка, сироты)<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10398</span> [FIX] config.yaml web: search_backend=ddgs без пакета + extract_backend пуст — web_extract всегда падает<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10397</span> [NEW TOOL] Voice Gateway (8799/8798, поставлен 24.10): код не в git, нет health-endpoint<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10410</span> Память переполнена: новые правила Романа не записываются (USER.md 3813/2000, MEMORY.md 3265/3300) → сжать до л<span class="meta">на ревью · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-713</span> Почистить память Hermes (MEMORY.md / USER.md переполнены)<span class="meta">бэклог · — · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10412</span> skill_manage молча теряет запись: санитайзер подменяет аргументы пустым объектом (4 случая с 21.10) → референс<span class="meta">на ревью · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10411</span> Секрет в открытый канал: пароль Agents Anywhere с логином ушёл в ntfy-топик без авторизации → закрыть топик и <span class="meta">к выполнению · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10238</span> [MODELS] FreeLLMAPI: чат-пробы 0/5 второй день — OpenRouter 401 (User not found), Ollama Cloud 410 (retired), <span class="meta">к выполнению · Routine · 5 дн. без движения</span></li>
+<li><span class="k">MUL-10421</span> Отчётные задачи автопилотов копятся в in_review: 64 из 149 зависших — автозакрытие через 72 ч<span class="meta">к выполнению · Routine · 5 дн. без движения</span></li>
+<li><span class="k">MUL-10420</span> smiths-wake: 35 холостых пробуждений за 3 ч — стоп-кран после серии провалов + причина провала в лог<span class="meta">к выполнению · Routine · 5 дн. без движения</span></li>
+<li><span class="k">MUL-10430</span> Ложная заглушка «Your request was not processed»: турн продолжился и ответил через 6 мин → слать notice только<span class="meta">к выполнению · Routine · 4 дн. без движения</span></li>
+<li><span class="k">MUL-10429</span> Тихая смерть vision: конфиг указывал на снятую модель 13 ч → аудит моделей должен сверять ключи config.yaml, а<span class="meta">к выполнению · Routine · 4 дн. без движения</span></li>
+<li><span class="k">MUL-10344</span> [WIKI] Maintenance audit: 17 проблем wiki-health (битая ссылка, сирота, 11 страниц без description/related)<span class="meta">к выполнению · Routine · 3 дн. без движения</span></li>
+<li><span class="k">MUL-10438</span> Паттерн: цифры о сервере из памяти (26 ГБ/74% вместо 20 ГБ/80%) → числа о состоянии инфраструктуры только из d<span class="meta">на ревью · Routine · 3 дн. без движения</span></li>
+<li><span class="k">MUL-10439</span> Паттерн: турн на 21 шаг и 112 с без статуса → триггер статуса по времени (45 с), а не по счёту шагов<span class="meta">на ревью · Routine · 3 дн. без движения</span></li>
+<li><span class="k">MUL-10447</span> Паттерн: дайджест объявил сделанное невыполненным (вердикт по статусу in_review) → перед «не сделано» проверка<span class="meta">на ревью · Routine · 2 дн. без движения</span></li>
+<li><span class="k">MUL-10343</span> [MODELS] opencode-go убрал 8 моделей, включая default_model и первый фолбэк (deepseek-v4-flash)<span class="meta">к выполнению · Routine · 2 дн. без движения</span></li>
+<li><span class="k">MUL-10455</span> Паттерн: ночная рутина спит на переиндексации zvec — 3 ночи из 8 по 107–152 мин (до 92% прогона в sleep) → зап<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10463</span> ТЗ: голосовой ассистент — PWA /rt/ + Android TWA (состояние и остаток работ)<span class="meta">бэклог · Голосовой ассистент · 0 дн. без движения</span></li>
+</ul></details>
+<details><summary>Срочно, не важно — 327 задач (раскрыть)</summary><ul>
+<li><span class="k">MUL-65</span> Адаптировать CCGS Skills P1: UX-спек, HUD, Entity Inventory, Formulas<span class="meta">заблокировано · GSD · 152 дн. без движения</span></li>
+<li><span class="k">MUL-148</span> 🔥 Тест Кворум: «Сознание требует биологической основы — ИИ никогда не будет обладать настоящим сознанием»<span class="meta">в работе · Кворум (размышлять тут) · 149 дн. без движения</span></li>
+<li><span class="k">MUL-2</span> Step 2 — Create your first Multica Agent<span class="meta">заблокировано · — · 148 дн. без движения</span></li>
+<li><span class="k">MUL-1</span> Step 1 — Connect a runtime to start using agents<span class="meta">заблокировано · — · 148 дн. без движения</span></li>
+<li><span class="k">MUL-275</span> Тест: Xiaomi-MiMo-Pro (mimo-v2.5-pro)<span class="meta">заблокировано · Проверка Мимо · 137 дн. без движения</span></li>
+<li><span class="k">MUL-276</span> Тест: Xiaomi-MiMo-Flash (mimo-v2.5)<span class="meta">заблокировано · Проверка Мимо · 137 дн. без движения</span></li>
+<li><span class="k">MUL-277</span> Тест: Xiaomi-MiMo (mimo-v2-omni)<span class="meta">заблокировано · Проверка Мимо · 137 дн. без движения</span></li>
+<li><span class="k">MUL-311</span> Скидки на AI подписки на 2026-06-20<span class="meta">на ревью · — · 134 дн. без движения</span></li>
+<li><span class="k">MUL-315</span> Скидки на AI подписки на 2026-06-20<span class="meta">на ревью · — · 133 дн. без движения</span></li>
+<li><span class="k">MUL-318</span> Скидки на AI подписки на 2026-06-21<span class="meta">на ревью · — · 133 дн. без движения</span></li>
+<li><span class="k">MUL-322</span> Скидки на AI подписки на 2026-06-21<span class="meta">на ревью · — · 132 дн. без движения</span></li>
+<li><span class="k">MUL-331</span> Скидки на AI подписки на 2026-06-22<span class="meta">в работе · — · 131 дн. без движения</span></li>
+<li><span class="k">MUL-334</span> Скидки на AI подписки на 2026-06-23<span class="meta">на ревью · — · 131 дн. без движения</span></li>
+<li><span class="k">MUL-339</span> Скидки на AI подписки на 2026-06-23 — результаты проверки<span class="meta">на ревью · — · 130 дн. без движения</span></li>
+<li><span class="k">MUL-354</span> Скидки на AI подписки на 2026-06-24<span class="meta">на ревью · — · 130 дн. без движения</span></li>
+<li><span class="k">MUL-359</span> Скидки на AI подписки на 2026-06-24<span class="meta">на ревью · — · 129 дн. без движения</span></li>
+<li><span class="k">MUL-370</span> Скидки на AI подписки на 2026-06-26<span class="meta">на ревью · — · 128 дн. без движения</span></li>
+<li><span class="k">MUL-372</span> 2026-06-26 — Сбор дайджеста Адьютанта<span class="meta">на ревью · Routine · 128 дн. без движения</span></li>
+<li><span class="k">MUL-378</span> Скидки на AI подписки на 2026-06-27<span class="meta">на ревью · — · 127 дн. без движения</span></li>
+<li><span class="k">MUL-385</span> Скидки на AI подписки на 2026-06-28 — проверено<span class="meta">на ревью · — · 126 дн. без движения</span></li>
+<li><span class="k">MUL-392</span> Скидки на AI подписки на 2026-06-29<span class="meta">на ревью · — · 125 дн. без движения</span></li>
+<li><span class="k">MUL-395</span> Скидки на AI подписки на 2026-06-29<span class="meta">на ревью · — · 124 дн. без движения</span></li>
+<li><span class="k">MUL-399</span> Скидки на AI подписки на 2026-06-30<span class="meta">на ревью · — · 124 дн. без движения</span></li>
+<li><span class="k">MUL-402</span> Скидки на AI подписки на 2026-06-30<span class="meta">на ревью · — · 123 дн. без движения</span></li>
+<li><span class="k">MUL-413</span> Скидки на AI подписки на 2026-07-02<span class="meta">на ревью · — · 122 дн. без движения</span></li>
+<li><span class="k">MUL-330</span> Установка RTK + Headroom и тест экономии токенов<span class="meta">в работе · Routine · 121 дн. без движения</span></li>
+<li><span class="k">MUL-416</span> Скидки на AI подписки на 2026-07-02<span class="meta">на ревью · — · 121 дн. без движения</span></li>
+<li><span class="k">MUL-420</span> Скидки на AI подписки на 2026-07-03<span class="meta">на ревью · — · 121 дн. без движения</span></li>
+<li><span class="k">MUL-423</span> Скидки на AI подписки на 2026-07-03<span class="meta">на ревью · — · 120 дн. без движения</span></li>
+<li><span class="k">MUL-427</span> Скидки на AI подписки на 2026-07-04<span class="meta">на ревью · — · 120 дн. без движения</span></li>
+<li><span class="k">MUL-430</span> Скидки на AI подписки на 2026-07-04: проверка цен GLM/Kimi/MiniMax/Hailuo<span class="meta">на ревью · — · 119 дн. без движения</span></li>
+<li><span class="k">MUL-437</span> Скидки на AI подписки 2026-07-05 — проверка цен GLM/MiniMax/Kimi+/Hailuo<span class="meta">на ревью · — · 118 дн. без движения</span></li>
+<li><span class="k">MUL-446</span> Скидки на AI подписки на 2026-07-06<span class="meta">на ревью · — · 118 дн. без движения</span></li>
+<li><span class="k">MUL-450</span> Скидки на AI подписки на 2026-07-06 — проверка цен z.ai, open.bigmodel.cn, MiniMax, Kimi+, Hailuo<span class="meta">на ревью · — · 117 дн. без движения</span></li>
+<li><span class="k">MUL-456</span> Скидки на AI подписки на 2026-07-07 — проверено<span class="meta">на ревью · — · 117 дн. без движения</span></li>
+<li><span class="k">MUL-460</span> 2026-07-08 — Ночная рутина<span class="meta">на ревью · Routine · 116 дн. без движения</span></li>
+<li><span class="k">MUL-461</span> 2026-07-08 — Ночной дозор<span class="meta">в работе · Routine · 116 дн. без движения</span></li>
+<li><span class="k">MUL-463</span> Скидки на AI подписки на 2026-07-08<span class="meta">на ревью · — · 116 дн. без движения</span></li>
+<li><span class="k">MUL-471</span> Скидки на AI подписки на 2026-07-09<span class="meta">на ревью · — · 115 дн. без движения</span></li>
+<li><span class="k">MUL-474</span> Скидки на AI подписки на 2026-07-09<span class="meta">на ревью · — · 114 дн. без движения</span></li>
+<li><span class="k">MUL-479</span> Скидки на AI подписки на 2026-07-10<span class="meta">на ревью · — · 114 дн. без движения</span></li>
+<li><span class="k">MUL-482</span> Скидки на AI подписки на 2026-07-10<span class="meta">на ревью · — · 113 дн. без движения</span></li>
+<li><span class="k">MUL-486</span> Скидки на AI подписки на 2026-07-11<span class="meta">на ревью · — · 113 дн. без движения</span></li>
+<li><span class="k">MUL-489</span> Скидки на AI подписки на 2026-07-11 (актуальные цены)<span class="meta">на ревью · — · 112 дн. без движения</span></li>
+<li><span class="k">MUL-493</span> Скидки на AI подписки на 2026-07-12<span class="meta">на ревью · — · 112 дн. без движения</span></li>
+<li><span class="k">MUL-496</span> Скидки на AI подписки на 2026-07-12<span class="meta">на ревью · — · 111 дн. без движения</span></li>
+<li><span class="k">MUL-497</span> 2026-07-13 — Ночная рутина (выполнена)<span class="meta">на ревью · Routine · 111 дн. без движения</span></li>
+<li><span class="k">MUL-499</span> 2026-07-13 — Ночной дозор<span class="meta">на ревью · Routine · 111 дн. без движения</span></li>
+<li><span class="k">MUL-502</span> Обнова мультика<span class="meta">к выполнению · Routine · 111 дн. без движения</span></li>
+<li><span class="k">MUL-501</span> Скидки на AI подписки на 2026-07-13<span class="meta">к выполнению · — · 111 дн. без движения</span></li>
+<li><span class="k">MUL-500</span> Тест бесплатных моделей<span class="meta">к выполнению · Routine · 111 дн. без движения</span></li>
+<li><span class="k">MUL-503</span> 2026-07-13 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 111 дн. без движения</span></li>
+<li><span class="k">MUL-504</span> Скидки на AI подписки на 2026-07-13<span class="meta">к выполнению · — · 110 дн. без движения</span></li>
+<li><span class="k">MUL-505</span> 2026-07-14 — Ночная рутина<span class="meta">к выполнению · Routine · 110 дн. без движения</span></li>
+<li><span class="k">MUL-506</span> 2026-07-14 — Ночной дозор<span class="meta">к выполнению · Routine · 110 дн. без движения</span></li>
+<li><span class="k">MUL-509</span> Обнова мультика<span class="meta">к выполнению · Routine · 110 дн. без движения</span></li>
+<li><span class="k">MUL-508</span> Скидки на AI подписки на 2026-07-14<span class="meta">к выполнению · — · 110 дн. без движения</span></li>
+<li><span class="k">MUL-507</span> Тест бесплатных моделей<span class="meta">к выполнению · Routine · 110 дн. без движения</span></li>
+<li><span class="k">MUL-510</span> 2026-07-14 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 110 дн. без движения</span></li>
+<li><span class="k">MUL-511</span> Скидки на AI подписки на 2026-07-14<span class="meta">к выполнению · — · 109 дн. без движения</span></li>
+<li><span class="k">MUL-512</span> 2026-07-15 — Ночная рутина<span class="meta">к выполнению · Routine · 109 дн. без движения</span></li>
+<li><span class="k">MUL-615</span> Wiki Health — проверка качества базы знаний<span class="meta">бэклог · — · 99 дн. без движения</span></li>
+<li><span class="k">MUL-630</span> Скидки на AI подписки на 2026-07-26<span class="meta">на ревью · — · 98 дн. без движения</span></li>
+<li><span class="k">MUL-633</span> Скидки на AI подписки на 2026-07-26 — отчёт<span class="meta">на ревью · — · 97 дн. без движения</span></li>
+<li><span class="k">MUL-637</span> 2026-07-27 — Ночной дозор (сессии пусты, 5 зависших задач)<span class="meta">на ревью · Routine · 97 дн. без движения</span></li>
+<li><span class="k">MUL-648</span> 2026-07-28 — Ночной дозор<span class="meta">на ревью · Routine · 96 дн. без движения</span></li>
+<li><span class="k">MUL-652</span> 2026-07-28 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 96 дн. без движения</span></li>
+<li><span class="k">MUL-653</span> Скидки на AI подписки на 2026-07-28<span class="meta">к выполнению · — · 95 дн. без движения</span></li>
+<li><span class="k">MUL-654</span> 2026-07-29 — Ночная рутина<span class="meta">к выполнению · Routine · 95 дн. без движения</span></li>
+<li><span class="k">MUL-655</span> 2026-07-29 — Ночной дозор<span class="meta">к выполнению · Routine · 95 дн. без движения</span></li>
+<li><span class="k">MUL-658</span> Обнова мультика<span class="meta">к выполнению · Routine · 95 дн. без движения</span></li>
+<li><span class="k">MUL-657</span> Скидки на AI подписки на 2026-07-29<span class="meta">к выполнению · — · 95 дн. без движения</span></li>
+<li><span class="k">MUL-656</span> Тест бесплатных моделей<span class="meta">к выполнению · Routine · 95 дн. без движения</span></li>
+<li><span class="k">MUL-661</span> Обнова мультика<span class="meta">к выполнению · Routine · 95 дн. без движения</span></li>
+<li><span class="k">MUL-675</span> Скидки на AI подписки на 2026-07-30 — проверка<span class="meta">на ревью · — · 94 дн. без движения</span></li>
+<li><span class="k">MUL-687</span> Скидки на AI подписки на 2026-07-31<span class="meta">на ревью · — · 93 дн. без движения</span></li>
+<li><span class="k">MUL-700</span> Обнова мультика<span class="meta">в работе · Routine · 92 дн. без движения</span></li>
+<li><span class="k">MUL-699</span> Скидки на AI подписки на 2026-08-01 — проверка цен (GLM, MiniMax, Kimi+)<span class="meta">на ревью · — · 92 дн. без движения</span></li>
+<li><span class="k">MUL-702</span> Wiki Health — 2026-08-01<span class="meta">на ревью · — · 92 дн. без движения</span></li>
+<li><span class="k">MUL-701</span> 2026-08-01 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 92 дн. без движения</span></li>
+<li><span class="k">MUL-707</span> 2026-08-02 — Ночной дозор: анализ сессий за 1 августа<span class="meta">на ревью · Routine · 91 дн. без движения</span></li>
+<li><span class="k">MUL-710</span> Скидки на AI подписки на 2026-08-02<span class="meta">на ревью · — · 91 дн. без движения</span></li>
+<li><span class="k">MUL-712</span> 2026-08-02 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 91 дн. без движения</span></li>
+<li><span class="k">MUL-711</span> Обнова мультика до v0.4.16 (2026-08-02)<span class="meta">в работе · Routine · 91 дн. без движения</span></li>
+<li><span class="k">MUL-716</span> Скидки на AI подписки на 2026-08-02<span class="meta">на ревью · — · 90 дн. без движения</span></li>
+<li><span class="k">MUL-724</span> Скидки на AI подписки на 2026-08-03<span class="meta">на ревью · — · 90 дн. без движения</span></li>
+<li><span class="k">MUL-726</span> 2026-08-03 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 90 дн. без движения</span></li>
+<li><span class="k">MUL-727</span> Скидки на AI подписки на 2026-08-03<span class="meta">на ревью · — · 89 дн. без движения</span></li>
+<li><span class="k">MUL-737</span> 2026-08-04 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 89 дн. без движения</span></li>
+<li><span class="k">MUL-738</span> Скидки на AI подписки на 2026-08-04<span class="meta">на ревью · — · 88 дн. без движения</span></li>
+<li><span class="k">MUL-745</span> Скидки на AI подписки на 2026-08-05 — изменений нет<span class="meta">на ревью · — · 88 дн. без движения</span></li>
+<li><span class="k">MUL-735</span> Обзор цен и акций AI-подписок (GLM, MiniMax, Kimi+) на 2026-08-04<span class="meta">в работе · — · 88 дн. без движения</span></li>
+<li><span class="k">MUL-749</span> Скидки на AI подписки на 2026-08-05<span class="meta">на ревью · — · 87 дн. без движения</span></li>
+<li><span class="k">MUL-758</span> Скидки на AI подписки на 2026-08-06<span class="meta">на ревью · — · 86 дн. без движения</span></li>
+<li><span class="k">MUL-764</span> Скидки на AI подписки на 2026-08-07<span class="meta">в работе · — · 86 дн. без движения</span></li>
+<li><span class="k">MUL-766</span> 2026-08-07 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 86 дн. без движения</span></li>
+<li><span class="k">MUL-767</span> Скидки на AI подписки на 2026-08-07 — цены без изменений, зафиксирован флеш-сейл Zhipu<span class="meta">на ревью · — · 85 дн. без движения</span></li>
+<li><span class="k">MUL-774</span> Скидки на AI подписки на 2026-08-08<span class="meta">на ревью · — · 85 дн. без движения</span></li>
+<li><span class="k">MUL-777</span> Wiki Health — 2026-08-08<span class="meta">на ревью · — · 85 дн. без движения</span></li>
+<li><span class="k">MUL-776</span> 2026-08-08 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 85 дн. без движения</span></li>
+<li><span class="k">MUL-778</span> Скидки на AI подписки на 2026-08-08 — изменений нет<span class="meta">на ревью · — · 84 дн. без движения</span></li>
+<li><span class="k">MUL-783</span> Скидки на AI подписки на 2026-08-09<span class="meta">на ревью · — · 84 дн. без движения</span></li>
+<li><span class="k">MUL-785</span> 2026-08-09 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 84 дн. без движения</span></li>
+<li><span class="k">MUL-786</span> Скидки на AI подписки на 2026-08-09 (вечер) — подтверждён флеш-сейл Zhipu, анонс разделения Kimi/Kimi Code<span class="meta">на ревью · — · 83 дн. без движения</span></li>
+<li><span class="k">MUL-793</span> Скидки на AI подписки на 2026-08-10 — изменений нет<span class="meta">на ревью · — · 83 дн. без движения</span></li>
+<li><span class="k">MUL-796</span> Скидки на AI подписки на 2026-08-10 — изменений нет<span class="meta">на ревью · — · 82 дн. без движения</span></li>
+<li><span class="k">MUL-801</span> Скидки на AI подписки на 2026-08-11 — изменений нет<span class="meta">на ревью · — · 82 дн. без движения</span></li>
+<li><span class="k">MUL-803</span> 2026-08-11 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 82 дн. без движения</span></li>
+<li><span class="k">MUL-809</span> Проверка цен и акций на AI подписки (GLM, MiniMax, Kimi) — 2026-08-12<span class="meta">в работе · — · 81 дн. без движения</span></li>
+<li><span class="k">MUL-812</span> Скидки на AI подписки на 2026-08-12 — изменений нет<span class="meta">на ревью · — · 80 дн. без движения</span></li>
+<li><span class="k">MUL-819</span> Скидки на AI подписки на 2026-08-13 — изменений нет<span class="meta">на ревью · — · 80 дн. без движения</span></li>
+<li><span class="k">MUL-821</span> 2026-08-13 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 80 дн. без движения</span></li>
+<li><span class="k">MUL-822</span> Скидки на AI подписки на 2026-08-13 — изменений нет<span class="meta">на ревью · — · 79 дн. без движения</span></li>
+<li><span class="k">MUL-826</span> Скидки на AI подписки на 2026-08-14 — изменений нет (MiniMax Invite &amp; Earn видна на публичной странице)<span class="meta">на ревью · — · 79 дн. без движения</span></li>
+<li><span class="k">MUL-828</span> 2026-08-14 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 79 дн. без движения</span></li>
+<li><span class="k">MUL-829</span> Скидки на AI подписки на 2026-08-14<span class="meta">на ревью · — · 78 дн. без движения</span></li>
+<li><span class="k">MUL-835</span> Скидки на AI подписки на 2026-08-15<span class="meta">на ревью · — · 78 дн. без движения</span></li>
+<li><span class="k">MUL-838</span> Wiki Health — 2026-08-15<span class="meta">на ревью · — · 78 дн. без движения</span></li>
+<li><span class="k">MUL-839</span> Скидки на AI подписки на 2026-08-15<span class="meta">к выполнению · — · 77 дн. без движения</span></li>
+<li><span class="k">MUL-844</span> Скидки на AI подписки на 2026-08-16 — изменений нет<span class="meta">на ревью · — · 77 дн. без движения</span></li>
+<li><span class="k">MUL-846</span> 2026-08-16 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 77 дн. без движения</span></li>
+<li><span class="k">MUL-859</span> Скидки на AI подписки на 2026-08-18<span class="meta">в работе · — · 75 дн. без движения</span></li>
+<li><span class="k">MUL-863</span> Скидки на AI подписки на 2026-08-18<span class="meta">на ревью · — · 74 дн. без движения</span></li>
+<li><span class="k">MUL-870</span> Скидки на AI подписки на 2026-08-20<span class="meta">на ревью · — · 73 дн. без движения</span></li>
+<li><span class="k">MUL-873</span> Скидки на AI подписки на 2026-08-20<span class="meta">на ревью · — · 72 дн. без движения</span></li>
+<li><span class="k">MUL-888</span> Скидки на AI подписки на 2026-08-21<span class="meta">на ревью · — · 72 дн. без движения</span></li>
+<li><span class="k">MUL-892</span> Скидки на AI подписки на 2026-08-21<span class="meta">к выполнению · — · 71 дн. без движения</span></li>
+<li><span class="k">MUL-896</span> Скидки на AI подписки на 2026-08-22<span class="meta">к выполнению · — · 71 дн. без движения</span></li>
+<li><span class="k">MUL-900</span> Скидки на AI подписки на 2026-08-22<span class="meta">к выполнению · — · 70 дн. без движения</span></li>
+<li><span class="k">MUL-904</span> Скидки на AI подписки на 2026-08-23<span class="meta">к выполнению · — · 70 дн. без движения</span></li>
+<li><span class="k">MUL-907</span> Скидки на AI подписки на 2026-08-23<span class="meta">к выполнению · — · 69 дн. без движения</span></li>
+<li><span class="k">MUL-911</span> Скидки на AI подписки на 2026-08-24<span class="meta">к выполнению · — · 69 дн. без движения</span></li>
+<li><span class="k">MUL-924</span> Тест бесплатных моделей<span class="meta">на ревью · Routine · 67 дн. без движения</span></li>
+<li><span class="k">MUL-932</span> Скидки на AI подписки на 2026-08-27<span class="meta">на ревью · — · 66 дн. без движения</span></li>
+<li><span class="k">MUL-935</span> Скидки на AI подписки на 2026-08-27<span class="meta">на ревью · — · 65 дн. без движения</span></li>
+<li><span class="k">MUL-942</span> Скидки на AI подписки на 2026-08-28<span class="meta">к выполнению · — · 64 дн. без движения</span></li>
+<li><span class="k">MUL-10014</span> Скидки на AI подписки — GLM/MiniMax/Kimi — 2026-08-30<span class="meta">на ревью · — · 63 дн. без движения</span></li>
+<li><span class="k">MUL-10017</span> Скидки на AI подписки на 2026-08-30<span class="meta">на ревью · — · 62 дн. без движения</span></li>
+<li><span class="k">MUL-10028</span> Скидки на AI подписки на 2026-09-01<span class="meta">на ревью · — · 61 дн. без движения</span></li>
+<li><span class="k">MUL-10031</span> Проверка цен AI подписок CN-провайдеров<span class="meta">в работе · — · 60 дн. без движения</span></li>
+<li><span class="k">MUL-10039</span> Скидки на AI подписки на 2026-09-02 — проверка цен (GLM, MiniMax, Kimi)<span class="meta">на ревью · — · 60 дн. без движения</span></li>
+<li><span class="k">MUL-10046</span> Скидки на AI подписки на 2026-09-03<span class="meta">на ревью · — · 59 дн. без движения</span></li>
+<li><span class="k">MUL-10061</span> Скидки на AI подписки на 2026-09-05<span class="meta">на ревью · — · 57 дн. без движения</span></li>
+<li><span class="k">MUL-10066</span> Скидки на AI подписки на 2026-09-05<span class="meta">на ревью · — · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10067</span> 2026-09-06 — Ночная рутина<span class="meta">в работе · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10072</span> 2026-09-06 — Ночной дозор<span class="meta">на ревью · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10078</span> Обнова мультика<span class="meta">на ревью · Routine · 50 дн. без движения</span></li>
+<li><span class="k">MUL-10081</span> Скидки на AI подписки на 2026-09-23 — цены без изменений, ночная акция GLM завершена<span class="meta">на ревью · — · 38 дн. без движения</span></li>
+<li><span class="k">MUL-10089</span> Скидки на AI подписки на 2026-09-24 — цены без изменений, новых акций нет<span class="meta">на ревью · — · 38 дн. без движения</span></li>
+<li><span class="k">MUL-10092</span> Скидки на AI подписки на 2026-09-24 (вечер 19:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 37 дн. без движения</span></li>
+<li><span class="k">MUL-10097</span> Скидки на AI подписки на 2026-09-25 — цены без изменений, новых акций нет<span class="meta">на ревью · — · 37 дн. без движения</span></li>
+<li><span class="k">MUL-10100</span> Скидки на AI подписки на 2026-09-25 (вечер 19:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 36 дн. без движения</span></li>
+<li><span class="k">MUL-10107</span> Скидки на AI подписки на 2026-09-26 — цены без изменений, новых акций нет<span class="meta">на ревью · — · 36 дн. без движения</span></li>
+<li><span class="k">MUL-10109</span> 2026-09-26 — Дайджест Адьютанта (GBrain 194K рестартов, диск 91%, 3 агента без модели, 2 дашборда лежат)<span class="meta">на ревью · Routine · 36 дн. без движения</span></li>
+<li><span class="k">MUL-10111</span> Скидки на AI подписки на 2026-09-26 (19:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 35 дн. без движения</span></li>
+<li><span class="k">MUL-10112</span> 2026-09-27 — Ночная рутина: 12/14 сервисов, GBrain 203K рестартов, диск 90%, wiki запушена<span class="meta">на ревью · Routine · 35 дн. без движения</span></li>
+<li><span class="k">MUL-10115</span> Скидки на AI подписки на 2026-09-27 (07:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 35 дн. без движения</span></li>
+<li><span class="k">MUL-10118</span> Скидки на AI подписки на 2026-09-27 (19:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 34 дн. без движения</span></li>
+<li><span class="k">MUL-10122</span> Скидки на AI подписки на 2026-09-28 (07:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 34 дн. без движения</span></li>
+<li><span class="k">MUL-10124</span> 2026-09-28 — Дайджест Адьютанта (GBrain 222K рестартов, диск 95%→65%, freellmapi мёртв)<span class="meta">на ревью · Routine · 34 дн. без движения</span></li>
+<li><span class="k">MUL-10125</span> Скидки на AI подписки на 2026-09-28 (19:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 33 дн. без движения</span></li>
+<li><span class="k">MUL-10127</span> [NEW TOOL] headless-shell.service — Chrome Headless Shell (CDP :9222), создан 28.09, не был в реестре<span class="meta">к выполнению · Routine · 33 дн. без движения</span></li>
+<li><span class="k">MUL-10131</span> Скидки на AI подписки на 2026-09-29 (07:00) — цены без изменений, новых акций нет<span class="meta">на ревью · — · 33 дн. без движения</span></li>
+<li><span class="k">MUL-10133</span> 2026-09-29 — Дайджест Адьютанта (GBrain 17-й день внизу, Hindsight 502, git-PAT; Multica v0.6.0 ✅)<span class="meta">на ревью · Routine · 33 дн. без движения</span></li>
+<li><span class="k">MUL-10134</span> Скидки на AI подписки на 2026-09-29 (19:00) — цены без изменений, MiniMax анонсировал M Plan (−50% первый меся<span class="meta">на ревью · — · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10135</span> Паттерн: угадывание объекта действия (2× «Стой» 28.09) → правило уточнения<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10087</span> Wiki maintenance audit — 63 проблемы (2026-09-24, порог &gt;10)<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-239</span> Добавить CodeGraph в GSD squad<span class="meta">заблокировано · — · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10142</span> Паттерн: старые сессии переиспользуются под новые темы — мешанина контекста и компрессия<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10141</span> Паттерн: переборный дебаг без лимита итераций — правило остановки и эскалации<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10140</span> Паттерн: секреты в чат — ротация показанных токенов + хранилище /root/.secrets<span class="meta">к выполнению · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10136</span> Паттерн: напоминания по серверному времени → timezone: Europe/Moscow в config.yaml<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10137</span> Паттерн: забывчивость — Gmail App Password (EMAIL_* в .env закомментирован 2-й день)<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10145</span> Обнова мультика 2026-09-30: релизов нет (v0.6.0 актуален), патчи MUL-11/MUL-10 проверены<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10144</span> Скидки на AI подписки на 2026-09-30 (07:00) — цены без изменений, M Plan ещё не запущен<span class="meta">на ревью · — · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10146</span> 2026-09-30 — Дайджест Адьютанта (mark_read 400, GBrain 25/100, 89 зависших, freellmapi 1/31)<span class="meta">на ревью · Routine · 32 дн. без движения</span></li>
+<li><span class="k">MUL-10147</span> Скидки на AI подписки на 2026-09-30 (19:00) — MiniMax M Plan запущена: −50% первый месяц<span class="meta">на ревью · — · 31 дн. без движения</span></li>
+<li><span class="k">MUL-10158</span> Скидки на AI подписки на 2026-10-01 — цены без изменений, стартовал Unlimited Week MiniMax (01–07.10)<span class="meta">на ревью · — · 31 дн. без движения</span></li>
+<li><span class="k">MUL-10160</span> 2026-10-01 — Дайджест Адьютанта (freeqwenapi остановлен, mark_read 400, 98 зависших, bai 0/25)<span class="meta">на ревью · Routine · 31 дн. без движения</span></li>
+<li><span class="k">MUL-10161</span> Скидки на AI подписки на 2026-10-01 (19:00) — цены без изменений, Unlimited Week MiniMax активна<span class="meta">на ревью · — · 30 дн. без движения</span></li>
+<li><span class="k">MUL-10168</span> Первая итерация без сверки с первоисточником: доки провайдера + чек-лист требований до генерации<span class="meta">на ревью · Routine · 30 дн. без движения</span></li>
+<li><span class="k">MUL-10167</span> Свои правки ломают зависимых потребителей: Post-change sweep в task-execution<span class="meta">на ревью · Routine · 30 дн. без движения</span></li>
+<li><span class="k">MUL-10170</span> Скидки на AI подписки на 2026-10-02 — цены без изменений, Unlimited Week MiniMax активна<span class="meta">на ревью · — · 30 дн. без движения</span></li>
+<li><span class="k">MUL-10172</span> 2026-10-02 — Дайджест Адьютанта (GBrain sync BLOCKED, 106 зависших, freellmapi 1/31, Multica → v0.6.1)<span class="meta">на ревью · Routine · 30 дн. без движения</span></li>
+<li><span class="k">MUL-10173</span> Скидки на AI подписки на 2026-10-02 (19:00) — цены без изменений, Unlimited Week MiniMax активна<span class="meta">на ревью · — · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10175</span> [GBRAIN] Глубокий doctor: 22 slug в не том source, extract_atoms backlog 186, реранкер на закрывающемся провай<span class="meta">к выполнению · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10178</span> Паттерн: разовые скрипты спотыкаются на heredoc/кавычках, не-ASCII-тире и локали grep (4× за 02.10) → правило <span class="meta">на ревью · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10179</span> Битые заголовки MUL-10154/10155/10156: декод \uXXXX в названиях задач (вторые сутки на доске)<span class="meta">на ревью · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10177</span> Паттерн: договорённость «потом вернёмся» не закрепляется задачей → правило «хвост = задача/wakeup» + напоминан<span class="meta">на ревью · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10180</span> Вернуться к маршрутизации памяти выбирающей моделью (Clef, пункт 3 из разговора 02.10)<span class="meta">бэклог · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10156</span> Явные пути в git-коммитах: запрет add -A / reset --hard без git status --short<span class="meta">на ревью · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10155</span> Сверка предмета вопроса перед ответом: «отвечаю на …», на «повтори» — сводка ≤5 строк<span class="meta">на ревью · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10154</span> Доходчивость: схема и ≤5 тезисов вместо простыней про устройство<span class="meta">на ревью · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10182</span> Скидки на AI подписки на 2026-10-03 (07:00) — цены без изменений, Unlimited Week MiniMax (3-й день), −50% M Pl<span class="meta">на ревью · — · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10185</span> Wiki Health — 2026-10-03: 16 битых related-ссылок, AgentMemory-сервис не отвечает (read-only отчёт)<span class="meta">на ревью · — · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10184</span> 2026-10-03 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 29 дн. без движения</span></li>
+<li><span class="k">MUL-10186</span> Скидки на AI подписки на 2026-10-03 (19:00) — цены без изменений, Unlimited Week MiniMax (3-й день), −50% M Pl<span class="meta">на ревью · — · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10191</span> Паттерн: крон-отчёт в общем чате без маркировки читается как слова бота → префикс «🤖 Регулярный отчёт» на все <span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10193</span> Паттерн: скилл task-execution велит pipe-таблицы в Telegram → сырые отчёты → правка Platform-Specific Formatti<span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-645</span> 2026-07-28 — Ночная рутина<span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10190</span> Паттерн: install/restart поднимает второй экземпляр гейтвея → обрывы и 56 дублей в state.db → правило «один ин<span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-704</span> 2026-08-02 — Ночная рутина<span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10192</span> После демонтажей 03.10: 20 устаревших задач об удалённых сервисах (GBrain/JAWL/codegraph/Grafana) → отмена<span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-634</span> 2026-07-27 — Ночная рутина (Nightly Server Routine)<span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10195</span> Скидки на AI подписки на 2026-10-04 (07:00) — цены без изменений, Unlimited Week MiniMax (4-й день), −50% M Pl<span class="meta">на ревью · — · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10197</span> 2026-10-04 — Дайджест Адьютанта: 4 🔴 (cron-баг MUL-10188, подписки Multica, mark_read, freeqwenapi) + 6 ⚠️; но<span class="meta">на ревью · Routine · 28 дн. без движения</span></li>
+<li><span class="k">MUL-10198</span> Скидки на AI подписки на 2026-10-04 (19:00) — цены без изменений, Unlimited Week MiniMax (4-й день), −50% M Pl<span class="meta">на ревью · — · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10199</span> 2026-10-05 — Ночная рутина<span class="meta">на ревью · Routine · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10204</span> Паттерн: новый термин в плане без расшифровки → 2 волны вопросов Романа (04.10 «Har что такое?») → правило «те<span class="meta">на ревью · Routine · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10203</span> Паттерн: отчёт-дельта без базы читается как противоречие (04.10, 17:22) → правило «дельта + база сейчас»<span class="meta">на ревью · Routine · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10202</span> Паттерн: одно «Да» на два вопроса → старт без уточнения (04.10, 4 стоп-реплики за 34 с) → правило «к чему „Да“<span class="meta">на ревью · Routine · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10206</span> Скидки на AI подписки на 2026-10-05 (07:00) — цены без изменений, Unlimited Week MiniMax (5-й день), −50% M Pl<span class="meta">на ревью · — · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10208</span> 2026-10-05 — Дайджест Адьютанта: 3 🔴 (crash-loop CDP MUL-10200, cron-баг MUL-10188, mark_read) + 5 ⚠️; ночь бе<span class="meta">на ревью · Routine · 27 дн. без движения</span></li>
+<li><span class="k">MUL-10209</span> Скидки на AI подписки на 2026-10-05 (19:00) — цены без изменений, Unlimited Week MiniMax (5-й день), −50% M Pl<span class="meta">на ревью · — · 26 дн. без движения</span></li>
+<li><span class="k">MUL-10210</span> 2026-10-06 — Ночная рутина<span class="meta">на ревью · Routine · 26 дн. без движения</span></li>
+<li><span class="k">MUL-10214</span> Паттерн: browser_exec спотыкался 5 минут без справки (05.10, js() без IIFE) → правило: справка инструмента одн<span class="meta">на ревью · Routine · 26 дн. без движения</span></li>
+<li><span class="k">MUL-10213</span> Паттерн: цифра из HTML-страницы уходит в ответ до сверки через API (05.10, «1 звезда» → 59) → правило: числа т<span class="meta">на ревью · Routine · 26 дн. без движения</span></li>
+<li><span class="k">MUL-10216</span> Скидки на AI подписки на 2026-10-06 (07:00) — цены без изменений, Unlimited Week MiniMax (6-й день), −50% M Pl<span class="meta">на ревью · — · 26 дн. без движения</span></li>
+<li><span class="k">MUL-10218</span> 2026-10-06 — Дайджест Адьютанта: 4 🔴 (CDP crash-loop MUL-10200, dex-heartbeat MUL-10211, cron-баг MUL-10188, m<span class="meta">на ревью · Routine · 26 дн. без движения</span></li>
+<li><span class="k">MUL-10219</span> Скидки на AI подписки на 2026-10-06 (19:00) — цены без изменений, Unlimited Week MiniMax (6-й день), −50% M Pl<span class="meta">на ревью · — · 25 дн. без движения</span></li>
+<li><span class="k">MUL-10222</span> Паттерн: wiki-правки не попадают в git — Шаг 9 ночника коммитит только ops/services (5 файлов с 04.10) → разов<span class="meta">на ревью · Routine · 25 дн. без движения</span></li>
+<li><span class="k">MUL-10225</span> Скидки на AI подписки на 2026-10-07 (07:00) — цены без изменений, Unlimited Week MiniMax (7-й день), −50% M Pl<span class="meta">на ревью · — · 25 дн. без движения</span></li>
+<li><span class="k">MUL-10227</span> 2026-10-07 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 25 дн. без движения</span></li>
+<li><span class="k">MUL-10228</span> Скидки на AI подписки на 2026-10-07 (19:00) — цены без изменений, Unlimited Week MiniMax (последний день), −50<span class="meta">на ревью · — · 24 дн. без движения</span></li>
+<li><span class="k">MUL-10231</span> Паттерн: web_extract (ddgs) падает — ручной обход каждый раз (10 из 15 вызовов за октябрь) → правило фолбэка в<span class="meta">на ревью · Routine · 24 дн. без движения</span></li>
+<li><span class="k">MUL-10233</span> Скидки на AI подписки на 2026-10-08 (07:00) — цены без изменений, GLM-Flash кампания и MiniMax Unlimited Week <span class="meta">на ревью · — · 24 дн. без движения</span></li>
+<li><span class="k">MUL-10235</span> 2026-10-08 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 24 дн. без движения</span></li>
+<li><span class="k">MUL-10236</span> Скидки на AI подписки на 2026-10-08 (19:00) — цены без изменений, −50% M Plan до 14.10, объявление MiniMax отд<span class="meta">на ревью · — · 23 дн. без движения</span></li>
+<li><span class="k">MUL-10241</span> Паттерн: веб-парсинг объявлений вместо свежей локальной базы (08.10, Captiva 2 → фрешавто) → правило «сначала <span class="meta">на ревью · Routine · 23 дн. без движения</span></li>
+<li><span class="k">MUL-10243</span> Скидки на AI подписки на 2026-10-09 (07:00) — цены без изменений, −50% M Plan до 14.10, GLM-Flash и Unlimited <span class="meta">на ревью · — · 23 дн. без движения</span></li>
+<li><span class="k">MUL-10245</span> 2026-10-09 — Дайджест Адьютанта: 3 🔴 (crash-loop MUL-10200, freellmapi MUL-10238, mark_read MUL-10145) + 10 ⚠️<span class="meta">на ревью · Routine · 23 дн. без движения</span></li>
+<li><span class="k">MUL-10246</span> Скидки на AI подписки на 2026-10-09 (19:00) — цены без изменений, −50% M Plan до 14.10, notice GLM-Flash убран<span class="meta">на ревью · — · 22 дн. без движения</span></li>
+<li><span class="k">MUL-10240</span> Паттерн: ложный блок gateway-хука на многострочной команде (08.10 08:10, heredoc-юнит-тест) → сузить матчинг и<span class="meta">на ревью · Routine · 22 дн. без движения</span></li>
+<li><span class="k">MUL-10251</span> Скидки на AI подписки на 2026-10-10 (07:00) — цены без изменений, −50% M Plan до 14.10, текст GLM-Flash кампан<span class="meta">на ревью · — · 22 дн. без движения</span></li>
+<li><span class="k">MUL-10254</span> Wiki Health — 2026-10-10: 19 битых related-ссылок, AgentMemory-сервис не отвечает (read-only отчёт)<span class="meta">на ревью · — · 22 дн. без движения</span></li>
+<li><span class="k">MUL-10253</span> 2026-10-10 — Дайджест Адьютанта: 4 🔴 (crash-loop 16 462/24ч, mark_read 37 непрочитанных, MUL-10249 blocked, fr<span class="meta">на ревью · Routine · 22 дн. без движения</span></li>
+<li><span class="k">MUL-10255</span> Скидки на AI подписки на 2026-10-10 (19:00) — цены без изменений, −50% M Plan до 14.10 (4 дня)<span class="meta">на ревью · — · 21 дн. без движения</span></li>
+<li><span class="k">MUL-10262</span> Скидки на AI подписки на 2026-10-11 (07:00) — цены без изменений, −50% M Plan до 14.10 (3 дня), Limited-Time P<span class="meta">на ревью · — · 21 дн. без движения</span></li>
+<li><span class="k">MUL-10264</span> 2026-10-11 — Дайджест Адьютанта: 4 🔴 (crash-loop 16 463/24ч, mark_read 49 непрочитанных, MUL-10249 blocked, fr<span class="meta">на ревью · Routine · 21 дн. без движения</span></li>
+<li><span class="k">MUL-10271</span> Скидки на AI подписки на 2026-10-11 (19:00) — цены без изменений, −50% M Plan до 14.10 (3 дня), Limited-Time P<span class="meta">на ревью · — · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10278</span> Скидки на AI подписки на 2026-10-12 (07:00) — цены без изменений, −50% M Plan до 14.10 (2 дня), Limited-Time P<span class="meta">на ревью · — · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10280</span> 2026-10-12 — Дайджест Адьютанта: 5 🔴 (headless-shell 16.5K/сут, mark_read 57, MUL-10249 blocked, бэкапы без ко<span class="meta">на ревью · Routine · 20 дн. без движения</span></li>
+<li><span class="k">MUL-10281</span> Скидки на AI подписки на 2026-10-12 (19:00) — цены без изменений, −50% M Plan до 14.10 (2 дня), Limited-Time P<span class="meta">на ревью · — · 19 дн. без движения</span></li>
+<li><span class="k">MUL-10286</span> Скидки на AI подписки на 2026-10-13 (07:00) — цены без изменений, −50% M Plan до 14.10 (1 день), Limited-Time <span class="meta">на ревью · — · 19 дн. без движения</span></li>
+<li><span class="k">MUL-10288</span> 2026-10-13 — Дайджест Адьютанта: 5 🔴 (headless-shell 16.5K/сут, mark_read ждёт «да», MUL-10249 blocked, бэкапы<span class="meta">на ревью · Routine · 19 дн. без движения</span></li>
+<li><span class="k">MUL-10289</span> Скидки на AI подписки на 2026-10-13 (19:00) — цены без изменений, −50% M Plan до 14.10 (1 день), Limited-Time <span class="meta">на ревью · — · 18 дн. без движения</span></li>
+<li><span class="k">MUL-10294</span> Скидки на AI подписки на 2026-10-14 (07:00) — цены без изменений, −50% M Plan: последний день 14.10, Limited-T<span class="meta">на ревью · — · 18 дн. без движения</span></li>
+<li><span class="k">MUL-10296</span> 2026-10-14 — Дайджест Адьютанта: 6 🔴 (диск 81 %, crash-loop 16.5K/сут, mark_read ждёт «да», MUL-10249 blocked,<span class="meta">на ревью · Routine · 18 дн. без движения</span></li>
+<li><span class="k">MUL-10297</span> Скидки на AI подписки на 2026-10-14 (19:00) — цены без изменений, −50% M Plan: последний день, баннер активен;<span class="meta">на ревью · — · 17 дн. без движения</span></li>
+<li><span class="k">MUL-10298</span> 2026-10-15 — Ночная рутина<span class="meta">к выполнению · Routine · 17 дн. без движения</span></li>
+<li><span class="k">MUL-10299</span> 2026-10-15 — Ночной дозор<span class="meta">к выполнению · Routine · 17 дн. без движения</span></li>
+<li><span class="k">MUL-10302</span> Обнова мультика<span class="meta">к выполнению · Routine · 17 дн. без движения</span></li>
+<li><span class="k">MUL-10301</span> Скидки на AI подписки на 2026-10-15<span class="meta">к выполнению · — · 17 дн. без движения</span></li>
+<li><span class="k">MUL-10300</span> Тест бесплатных моделей<span class="meta">к выполнению · Routine · 17 дн. без движения</span></li>
+<li><span class="k">MUL-10303</span> 2026-10-15 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 17 дн. без движения</span></li>
+<li><span class="k">MUL-10304</span> Скидки на AI подписки на 2026-10-15<span class="meta">к выполнению · — · 16 дн. без движения</span></li>
+<li><span class="k">MUL-10305</span> 2026-10-16 — Ночная рутина<span class="meta">к выполнению · Routine · 16 дн. без движения</span></li>
+<li><span class="k">MUL-10306</span> 2026-10-16 — Ночной дозор<span class="meta">к выполнению · Routine · 16 дн. без движения</span></li>
+<li><span class="k">MUL-10309</span> Обнова мультика<span class="meta">к выполнению · Routine · 16 дн. без движения</span></li>
+<li><span class="k">MUL-10307</span> Тест бесплатных моделей<span class="meta">к выполнению · Routine · 16 дн. без движения</span></li>
+<li><span class="k">MUL-10308</span> Скидки на AI подписки на 2026-10-16<span class="meta">к выполнению · — · 16 дн. без движения</span></li>
+<li><span class="k">MUL-10310</span> 2026-10-16 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 16 дн. без движения</span></li>
+<li><span class="k">MUL-10311</span> Скидки на AI подписки на 2026-10-16<span class="meta">к выполнению · — · 15 дн. без движения</span></li>
+<li><span class="k">MUL-10312</span> 2026-10-17 — Ночная рутина<span class="meta">к выполнению · Routine · 15 дн. без движения</span></li>
+<li><span class="k">MUL-10313</span> 2026-10-17 — Ночной дозор<span class="meta">к выполнению · Routine · 15 дн. без движения</span></li>
+<li><span class="k">MUL-10316</span> Обнова мультика<span class="meta">к выполнению · Routine · 15 дн. без движения</span></li>
+<li><span class="k">MUL-10314</span> Тест бесплатных моделей<span class="meta">к выполнению · Routine · 15 дн. без движения</span></li>
+<li><span class="k">MUL-10249</span> Паттерн: фоновый куратор спотыкается — 17 отказов skill_manage «user-owned skills off-limits» за 7 дней + сбой<span class="meta">заблокировано · Routine · 15 дн. без движения</span></li>
+<li><span class="k">MUL-10317</span> 2026-10-17 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 15 дн. без движения</span></li>
+<li><span class="k">MUL-10320</span> 2026-10-18 — Ночная рутина<span class="meta">к выполнению · Routine · 14 дн. без движения</span></li>
+<li><span class="k">MUL-10321</span> 2026-10-18 — Ночной дозор<span class="meta">к выполнению · Routine · 14 дн. без движения</span></li>
+<li><span class="k">MUL-10324</span> Обнова мультика<span class="meta">к выполнению · Routine · 14 дн. без движения</span></li>
+<li><span class="k">MUL-10322</span> Тест бесплатных моделей<span class="meta">к выполнению · Routine · 14 дн. без движения</span></li>
+<li><span class="k">MUL-10325</span> 2026-10-18 — Дайджест Адьютанта<span class="meta">к выполнению · Routine · 14 дн. без движения</span></li>
+<li><span class="k">MUL-10339</span> 2026-10-19 — Дайджест Адьютанта: 2 🔴 (freeqwenapi crash-loop 390 рестартов, диск 82%) + 7 ⚠️; Multica v0.6.3, <span class="meta">на ревью · Routine · 13 дн. без движения</span></li>
+<li><span class="k">MUL-10346</span> Ночной дозор молча падает на провайдерской ошибке (4 ночи без отчёта, 14–17.10) → watchdog «дозор отчитался?» <span class="meta">на ревью · Routine · 12 дн. без движения</span></li>
+<li><span class="k">MUL-10351</span> 2026-10-20 — Дайджест Адьютанта: 3 🔴 (freeqwenapi 1209 рестартов, диск 83%, opencode-go без default_model) + 5<span class="meta">на ревью · Routine · 12 дн. без движения</span></li>
+<li><span class="k">MUL-10360</span> 2026-10-21 — Дайджест Адьютанта: 3 🔴 (freeqwenapi 2023 рестарта, диск 84%, opencode-go без default_model) + 5 <span class="meta">на ревью · Routine · 11 дн. без движения</span></li>
+<li><span class="k">MUL-10373</span> 2026-10-22 — Дайджест Адьютанта: 3 🔴 (freeqwenapi 2836 рестарта, диск 88%, opencode-go без default_model) + 5 <span class="meta">на ревью · Routine · 10 дн. без движения</span></li>
+<li><span class="k">MUL-10384</span> 2026-10-23 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 9 дн. без движения</span></li>
+<li><span class="k">MUL-10393</span> 2026-10-24 — Дайджест Адьютанта: 1 🔴 (fal.ai без баланса) + 6 ⚠️; Multica v0.7.0, ночь без аварий<span class="meta">на ревью · Routine · 8 дн. без движения</span></li>
+<li><span class="k">MUL-10395</span> Скидки на AI подписки на 2026-10-24 (19:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10394</span> Wiki Health — 2026-10-24: 14 битых related, 32 сломанных YAML, AgentMemory 404<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10391</span> Скидки на AI подписки на 2026-10-24 (07:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10385</span> Скидки на AI подписки на 2026-10-23 (19:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10382</span> Скидки на AI подписки на 2026-10-23 (07:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10374</span> Скидки на AI подписки на 2026-10-22 (19:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10371</span> Скидки на AI подписки на 2026-10-22 (07:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10361</span> Скидки на AI подписки на 2026-10-21 (19:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10358</span> Скидки на AI подписки на 2026-10-21 (07:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10352</span> Скидки на AI подписки на 2026-10-20 (19:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10349</span> Скидки на AI подписки на 2026-10-20 (07:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10340</span> Скидки на AI подписки на 2026-10-19 (19:00) — MiniMax вернул −50% первый месяц до 31.10 и добавил M2.5/M2.7 в <span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10337</span> Скидки на AI подписки на 2026-10-19 (07:00) — цены и акции без изменений; у MiniMax сегодня закрытие M2.5/M2.7<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10326</span> Скидки на AI подписки на 2026-10-18 (19:00) — цены без изменений, акция MiniMax −50% первый месяц снята после <span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10323</span> Скидки на AI подписки на 2026-10-18<span class="meta">к выполнению · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10319</span> Скидки на AI подписки на 2026-10-17<span class="meta">к выполнению · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10318</span> Wiki Health — 2026-10-17<span class="meta">к выполнению · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10315</span> Скидки на AI подписки на 2026-10-17<span class="meta">к выполнению · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10401</span> Паттерн: автопилоты «Скидки» и «Wiki Health» создают issue без проекта Routine (18 мимо проекта за неделю) → в<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10403</span> Скидки на AI подписки на 2026-10-25 (07:00) — цены и акции без изменений, −50% M Plan MiniMax активна до 31.10<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10405</span> 2026-10-25 — Дайджест Адьютанта: 2 🔴 (fal.ai 3-й день, web_extract) + 5 ⚠️, ночь без аварий<span class="meta">на ревью · Routine · 7 дн. без движения</span></li>
+<li><span class="k">MUL-10406</span> Скидки на AI подписки на 2026-10-25 (19:00) — изменений нет: цены и баннеры как утром, −50% M Plan MiniMax акт<span class="meta">на ревью · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10414</span> Скидки на AI подписки на 2026-10-26 (07:00) — проверка цен GLM/MiniMax/Kimi<span class="meta">на ревью · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10416</span> 2026-10-26 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 6 дн. без движения</span></li>
+<li><span class="k">MUL-10417</span> Скидки на AI подписки на 2026-10-26 (19:00) — проверка цен GLM/MiniMax/Kimi<span class="meta">на ревью · Routine · 5 дн. без движения</span></li>
+<li><span class="k">MUL-10423</span> Скидки на AI подписки на 2026-10-27 (07:00) — изменений нет, −50% M Plan MiniMax до 31.10 (4 дня), K2 у Kimi д<span class="meta">на ревью · Routine · 5 дн. без движения</span></li>
+<li><span class="k">MUL-10425</span> 2026-10-27 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 5 дн. без движения</span></li>
+<li><span class="k">MUL-10426</span> Скидки на AI подписки на 2026-10-27 (19:00) — изменений нет, −50% M Plan MiniMax до 31.10 (4 дня), у Kimi ново<span class="meta">на ревью · Routine · 4 дн. без движения</span></li>
+<li><span class="k">MUL-10432</span> Скидки на AI подписки на 2026-10-28 (07:00) — изменений нет, −50% M Plan MiniMax до 31.10 (3 дня), K2 у Kimi з<span class="meta">на ревью · Routine · 4 дн. без движения</span></li>
+<li><span class="k">MUL-10434</span> 2026-10-28 — Дайджест Адьютанта: 3 🔴 (мёртвая цепочка фолбэков, бэкап-долг) + 7 ⚠️; резерв OpenCode go 28/38 →<span class="meta">на ревью · Routine · 4 дн. без движения</span></li>
+<li><span class="k">MUL-10435</span> Скидки на AI подписки на 2026-10-28 (19:00) — ценовых изменений нет, Kimi переписал текст доков без правки цен<span class="meta">на ревью · Routine · 3 дн. без движения</span></li>
+<li><span class="k">MUL-10441</span> Скидки на AI подписки на 2026-10-29 (07:00) — изменений нет, −50% M Plan MiniMax до 31.10 (2 дня), K2 у Kimi з<span class="meta">на ревью · Routine · 3 дн. без движения</span></li>
+<li><span class="k">MUL-10443</span> 2026-10-29 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 3 дн. без движения</span></li>
+<li><span class="k">MUL-10444</span> Скидки на AI подписки на 2026-10-29 (19:00) — цены без изменений, MiniMax переписал док об акции (ended 14.10)<span class="meta">на ревью · Routine · 2 дн. без движения</span></li>
+<li><span class="k">MUL-10449</span> Скидки на AI подписки на 2026-10-30 (07:00) — изменений нет, −50% M Plan до 31.10 (~1.5 сут), K2 для новых зак<span class="meta">на ревью · Routine · 2 дн. без движения</span></li>
+<li><span class="k">MUL-10451</span> 2026-10-30 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 2 дн. без движения</span></li>
+<li><span class="k">MUL-10452</span> Скидки на AI подписки на 2026-10-30 (19:00) — изменений нет, −50% M Plan MiniMax истекает 31.10 19:00 MSK, K2 <span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10453</span> 2026-10-31 — Ночная рутина (выполнена)<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10454</span> 2026-10-31 — Ночной дозор: 8 прогонов без падений, рутина 2 ч ждала переиндексацию, дайджест закрыл 4 чужих от<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10459</span> Обнова мультика 2026-10-31: проверка релиза и патчей MUL-11/MUL-10<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10457</span> Аудит бесплатных моделей 31.10: Hermes / OpenRouter / OpenCode<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10458</span> Скидки на AI подписки на 2026-10-31 (07:00) — изменений нет, −50% M Plan MiniMax истекает сегодня 19:00 MSK, K<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10461</span> Wiki Health — 2026-10-31: 19 битых related, 37 невалидных YAML, AgentMemory мёртв<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10456</span> Паттерн: дайджест закрыл 4 чужих отчёта в done (30.10 09:04) → запрет менять статусы чужих задач + время прове<span class="meta">заблокировано · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10460</span> 2026-10-31 — Дайджест Адьютанта<span class="meta">на ревью · Routine · 1 дн. без движения</span></li>
+<li><span class="k">MUL-10462</span> Скидки на AI подписки на 2026-10-31 (19:00) — истекла −50% MiniMax M Plan, цены вернулись к полным; у GLM и Ki<span class="meta">на ревью · Routine · 0 дн. без движения</span></li>
+</ul></details>
+<details><summary>Не срочно, не важно — 108 задач (раскрыть)</summary><ul>
+<li><span class="k">MUL-5</span> Интегрировать BMAD (Build More Architect Dreams) с Multica<span class="meta">к выполнению · — · 156 дн. без движения</span></li>
+<li><span class="k">MUL-12</span> Доработки функционала \ Патчи<span class="meta">к выполнению · Multica · 156 дн. без движения</span></li>
+<li><span class="k">MUL-11</span> Мультика F5<span class="meta">на ревью · Multica · 156 дн. без движения</span></li>
+<li><span class="k">MUL-23</span> Project Timeline<span class="meta">бэклог · GSD · 156 дн. без движения</span></li>
+<li><span class="k">MUL-67</span> Адаптировать CCGS Skills P3: Canvas Engine Reference, Art Bible Lite<span class="meta">бэклог · GSD · 155 дн. без движения</span></li>
+<li><span class="k">MUL-66</span> Адаптировать CCGS Skills P2: Interaction Patterns, Quick Design, Balance, Accessibility<span class="meta">бэклог · GSD · 155 дн. без движения</span></li>
+<li><span class="k">MUL-109</span> Test Gemini Web agent<span class="meta">к выполнению · — · 153 дн. без движения</span></li>
+<li><span class="k">MUL-112</span> АПИ для Ozon<span class="meta">к выполнению · — · 152 дн. без движения</span></li>
+<li><span class="k">MUL-111</span> Прошивка магнитолы<span class="meta">на ревью · — · 152 дн. без движения</span></li>
+<li><span class="k">MUL-121</span> Тест Zen Free<span class="meta">на ревью · — · 151 дн. без движения</span></li>
+<li><span class="k">MUL-119</span> Тест Free Zen Agent v2<span class="meta">к выполнению · — · 151 дн. без движения</span></li>
+<li><span class="k">MUL-129</span> Добавить в Codexbar Xiaomi<span class="meta">бэклог · — · 150 дн. без движения</span></li>
+<li><span class="k">MUL-130</span> Внедрить msrv-tech/skills — 82 1С-скила для AI-агентов<span class="meta">бэклог · — · 150 дн. без движения</span></li>
+<li><span class="k">MUL-142</span> Метод сократа<span class="meta">на ревью · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-144</span> Тест Кворум: «ИИ уничтожит человечество?»<span class="meta">на ревью · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-143</span> Вижн для 1С<span class="meta">к выполнению · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-155</span> Судья: анализ стенограммы дебатов — сознание требует биологической основы<span class="meta">на ревью · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-150</span> Оппонент: «Сознание требует биологической основы — ИИ никогда не будет обладать настоящим сознанием»<span class="meta">к выполнению · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-153</span> Оппонент: Раунд 2 — ответ на дилемму эволюции и qualia<span class="meta">на ревью · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-152</span> Сократ: Раунд 2 — углублённый вопрос к Оппоненту<span class="meta">на ревью · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-147</span> Тест multi-agent дебатов: «Свобода воли существует?»<span class="meta">на ревью · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-149</span> Сократ: «Сознание требует биологической основы — ИИ никогда не будет обладать настоящим сознанием»<span class="meta">бэклог · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-151</span> Судья: «Сознание требует биологической основы — ИИ никогда не будет обладать настоящим сознанием»<span class="meta">бэклог · — · 149 дн. без движения</span></li>
+<li><span class="k">MUL-141</span> Mercury ↔ AgentMemory Bridge<span class="meta">бэклог · Routine · 144 дн. без движения</span></li>
+<li><span class="k">MUL-203</span> FreeDeepseekAPI + FreeQwenApi — получить ключи сессий<span class="meta">к выполнению · Routine · 142 дн. без движения</span></li>
+<li><span class="k">MUL-209</span> AgentMemory: авто-инжект наблюдений в system prompt после рестарта<span class="meta">к выполнению · Multica · 142 дн. без движения</span></li>
+<li><span class="k">MUL-215</span> Обновлятор<span class="meta">бэклог · — · 141 дн. без движения</span></li>
+<li><span class="k">MUL-216</span> Изучить opencode-gigachat-plugin — интеграция GigaChat в OpenCode<span class="meta">к выполнению · — · 140 дн. без движения</span></li>
+<li><span class="k">MUL-223</span> Ponytail: плагин «ленивый сеньор» для AI-агентов<span class="meta">к выполнению · — · 140 дн. без движения</span></li>
+<li><span class="k">MUL-225</span> Skill Sentinel: проверка скиллов на малварь перед установкой<span class="meta">бэклог · — · 139 дн. без движения</span></li>
+<li><span class="k">MUL-224</span> Paperclip: оркестратор AI-агентов (изучить и в вики)<span class="meta">к выполнению · — · 139 дн. без движения</span></li>
+<li><span class="k">MUL-232</span> Project Timeline<span class="meta">бэклог · MAX integrations · 139 дн. без движения</span></li>
+<li><span class="k">MUL-226</span> MAX messenger: адаптер для Hermes (MCP-сервер vs платформенный адаптер)<span class="meta">бэклог · MAX integrations · 139 дн. без движения</span></li>
+<li><span class="k">MUL-238</span> MAX Messenger — подключение и проверка работы<span class="meta">бэклог · Подключение и Проверка работы · 139 дн. без движения</span></li>
+<li><span class="k">MUL-113</span> Настроить мониторинг VPS через ntfy push-уведомления<span class="meta">на ревью · — · 139 дн. без движения</span></li>
+<li><span class="k">MUL-247</span> Deliver: CodeGraph в GSD<span class="meta">на ревью · — · 139 дн. без движения</span></li>
+<li><span class="k">MUL-246</span> Project Result: CodeGraph в GSD<span class="meta">бэклог · — · 139 дн. без движения</span></li>
+<li><span class="k">MUL-242</span> Почистить список моделей в Telegram<span class="meta">бэклог · — · 139 дн. без движения</span></li>
+<li><span class="k">MUL-259</span> Jawl жрет память<span class="meta">на ревью · — · 137 дн. без движения</span></li>
+<li><span class="k">MUL-278</span> MCP сервер для 1С на FastMCP<span class="meta">к выполнению · 1С · 137 дн. без движения</span></li>
+<li><span class="k">MUL-288</span> Project Timeline<span class="meta">бэклог · 1С · 137 дн. без движения</span></li>
+<li><span class="k">MUL-297</span> Исследовать PandoraNext для ChatGPT Teacher<span class="meta">бэклог · — · 136 дн. без движения</span></li>
+<li><span class="k">MUL-326</span> Обзор цен и акций AI провайдеров на 22.06.2026<span class="meta">на ревью · — · 132 дн. без движения</span></li>
+<li><span class="k">MUL-338</span> Установить make-interfaces-feel-better<span class="meta">бэклог · Routine · 130 дн. без движения</span></li>
+<li><span class="k">MUL-352</span> Project Timeline<span class="meta">бэклог · CodexBar win · 130 дн. без движения</span></li>
+<li><span class="k">MUL-342</span> Доработка Сквада: процесс составления спецификаций<span class="meta">бэклог · CodexBar win · 130 дн. без движения</span></li>
+<li><span class="k">MUL-341</span> Тест квен<span class="meta">к выполнению · — · 130 дн. без движения</span></li>
+<li><span class="k">MUL-358</span> лайфхак по запуску локалок<span class="meta">бэклог · — · 130 дн. без движения</span></li>
+<li><span class="k">MUL-362</span> Обзор цен и акций AI провайдеров на 2026-06-25<span class="meta">на ревью · — · 129 дн. без движения</span></li>
+<li><span class="k">MUL-366</span> Обзор цен и акций AI провайдеров на 2026-06-25 (вечер)<span class="meta">на ревью · — · 128 дн. без движения</span></li>
+<li><span class="k">MUL-374</span> Проверка цен и акций AI подписок (z.ai, open.bigmodel.cn, MiniMax, Kimi, Hailuo) — 2026-06-26<span class="meta">на ревью · — · 127 дн. без движения</span></li>
+<li><span class="k">MUL-381</span> Обзор цен и акций AI провайдеров на 27.06.2026<span class="meta">на ревью · — · 126 дн. без движения</span></li>
+<li><span class="k">MUL-388</span> Актуальные цены и скидки AI провайдеров (GLM, MiniMax, Kimi, Hailuo) на 2026-06-28<span class="meta">на ревью · — · 125 дн. без движения</span></li>
+<li><span class="k">MUL-406</span> Проверка скидок на AI подписки 2026-07-01<span class="meta">на ревью · — · 123 дн. без движения</span></li>
+<li><span class="k">MUL-409</span> Актуальные цены и скидки AI провайдеров (GLM, MiniMax, Kimi, Hailuo) на 2026-07-01<span class="meta">на ревью · — · 122 дн. без движения</span></li>
+<li><span class="k">MUL-434</span> Актуальные цены и скидки AI провайдеров (GLM, MiniMax, Kimi, Hailuo) на 2026-07-05<span class="meta">на ревью · — · 119 дн. без движения</span></li>
+<li><span class="k">MUL-438</span> Инициализация проекта 1С MCP<span class="meta">бэклог · 1С · 118 дн. без движения</span></li>
+<li><span class="k">MUL-449</span> Попробовать бесплатный ChatGPT через K-12 invite<span class="meta">бэклог · Routine · 118 дн. без движения</span></li>
+<li><span class="k">MUL-459</span> Мониторинг цен и акций AI подписок (GLM, MiniMax, Kimi, Hailuo) на 2026-07-07<span class="meta">на ревью · — · 116 дн. без движения</span></li>
+<li><span class="k">MUL-466</span> Мониторинг цен на AI подписки (GLM, MiniMax, Kimi, Hailuo) — 2026-07-08<span class="meta">на ревью · — · 115 дн. без движения</span></li>
+<li><span class="k">MUL-521</span> Hermes Gateway: API credit exhaustion (OpenCode + OpenRouter)<span class="meta">бэклог · Routine · 108 дн. без движения</span></li>
+<li><span class="k">MUL-549</span> Установить FreeNIMAPI — локальный мост к NVIDIA NIM (бесплатные GLM, DeepSeek)<span class="meta">бэклог · Routine · 105 дн. без движения</span></li>
+<li><span class="k">MUL-585</span> Настроить GSD на использование CodeGraph в проектах<span class="meta">бэклог · — · 101 дн. без движения</span></li>
+<li><span class="k">MUL-588</span> Fetchers: small bugfixes (dead code, PTY path, shadowing, debug scan)<span class="meta">бэклог · — · 98 дн. без движения</span></li>
+<li><span class="k">MUL-589</span> cookie_decryptor: harden ctypes + SQL hygiene + tmp file cleanup<span class="meta">бэклог · — · 98 дн. без движения</span></li>
+<li><span class="k">MUL-590</span> Widgets: deduplicate click-through, settings IO, opacity levels<span class="meta">бэклог · — · 98 дн. без движения</span></li>
+<li><span class="k">MUL-586</span> Рефакторинг codexbar.py — разбить на модули<span class="meta">на ревью · CodexBar win · 98 дн. без движения</span></li>
+<li><span class="k">MUL-626</span> Отчёт о ценах и акциях AI подписок на 2026-07-25<span class="meta">на ревью · — · 98 дн. без движения</span></li>
+<li><span class="k">MUL-639</span> Актуальные цены и акции AI подписок на 2026-07-27<span class="meta">на ревью · — · 97 дн. без движения</span></li>
+<li><span class="k">MUL-642</span> Отчёт по ценам и акциям AI провайдеров на 2026-07-27<span class="meta">на ревью · — · 96 дн. без движения</span></li>
+<li><span class="k">MUL-644</span> Minis: Wiki MCP доступ<span class="meta">бэклог · Обучалка · 96 дн. без движения</span></li>
+<li><span class="k">MUL-643</span> Minis: AgentMemory MCP через Nginx<span class="meta">бэклог · Обучалка · 96 дн. без движения</span></li>
+<li><span class="k">MUL-650</span> Обзор цен и акций AI провайдеров на 2026-07-28<span class="meta">на ревью · — · 96 дн. без движения</span></li>
+<li><span class="k">MUL-664</span> Обзор цен и акций AI провайдеров на 2026-07-29<span class="meta">на ревью · — · 94 дн. без движения</span></li>
+<li><span class="k">MUL-665</span> ОСТАВШИЕСЯ ПРОБЛЕМЫ (что точно надо чинить):<span class="meta">к выполнению · CodexBar win · 94 дн. без движения</span></li>
+<li><span class="k">MUL-678</span> Проверка цен и акций на AI подписки (z.ai, open.bigmodel.cn, MiniMax, Kimi+, Hailuo) — 2026-07-30<span class="meta">на ревью · — · 93 дн. без движения</span></li>
+<li><span class="k">MUL-691</span> Проверка цен и акций: GLM Coding Plan, MiniMax, Kimi+ (2026-07-31)<span class="meta">на ревью · — · 92 дн. без движения</span></li>
+<li><span class="k">MUL-703</span> Проверка цен и акций на AI подписки (GLM, MiniMax, Kimi+) — 2026-08-01<span class="meta">на ревью · — · 91 дн. без движения</span></li>
+<li><span class="k">MUL-708</span> Внедрить идеи Waku Agent в Dex (retrieval gate + консолидация батчами)<span class="meta">бэклог · Routine · 91 дн. без движения</span></li>
+<li><span class="k">MUL-715</span> Протестировать TencentDB Agent Memory (память для Hermes)<span class="meta">бэклог · Routine · 90 дн. без движения</span></li>
+<li><span class="k">MUL-755</span> Проверка цен и скидок на AI подписки (GLM/MiniMax/Kimi) — 2026-08-06<span class="meta">на ревью · — · 87 дн. без движения</span></li>
+<li><span class="k">MUL-768</span> Деплой 3x-ui + VLESS+REALITY+XHTTP на VPS (VPN)<span class="meta">бэклог · Routine · 85 дн. без движения</span></li>
+<li><span class="k">MUL-771</span> [MAINT] Сервер: pending reboot — ядро 6.8.0-137 не загружено (работает 6.8.0-134)<span class="meta">к выполнению · Routine · 85 дн. без движения</span></li>
+<li><span class="k">MUL-787</span> Методика планирования 4-го поколения (Кови+GTD) — как применить<span class="meta">бэклог · Routine · 83 дн. без движения</span></li>
+<li><span class="k">MUL-798</span> [AgentMemory] Semantic consolidation blocked — circuit_breaker_open (summarize)<span class="meta">бэклог · Routine · 82 дн. без движения</span></li>
+<li><span class="k">MUL-804</span> Цены и скидки на AI подписки (GLM, MiniMax, Kimi) — 2026-08-11<span class="meta">на ревью · — · 81 дн. без движения</span></li>
+<li><span class="k">MUL-832</span> [TREND] deepseek-harness: вирусный рост звёзд (+145% за сутки)<span class="meta">на ревью · Routine · 78 дн. без движения</span></li>
+<li><span class="k">MUL-847</span> Проверка цен и акций AI подписок (GLM, MiniMax, Kimi) на 2026-08-16<span class="meta">на ревью · — · 76 дн. без движения</span></li>
+<li><span class="k">MUL-851</span> Мониторинг цен и акций: GLM Coding Plan (z.ai/bigmodel), MiniMax Token Plan, Kimi — 2026-08-17<span class="meta">на ревью · — · 76 дн. без движения</span></li>
+<li><span class="k">MUL-854</span> Мониторинг цен и акций: GLM Coding Plan (z.ai/bigmodel), MiniMax Token Plan, Kimi — 2026-08-17 (вечер)<span class="meta">на ревью · — · 75 дн. без движения</span></li>
+<li><span class="k">MUL-85</span> Project Timeline<span class="meta">бэклог · Обучалка · 72 дн. без движения</span></li>
+<li><span class="k">MUL-884</span> Project Timeline<span class="meta">бэклог · переезд памяти · 71 дн. без движения</span></li>
+<li><span class="k">MUL-891</span> 10. MCP-поиск по вики (read-only) + единый writer wiki-write<span class="meta">бэклог · переезд памяти · 71 дн. без движения</span></li>
+<li><span class="k">MUL-925</span> Проверка цен на AI подписки китайских провайдеров (2026-08-26)<span class="meta">на ревью · — · 67 дн. без движения</span></li>
+<li><span class="k">MUL-939</span> Цены и акции на AI подписки — 28.08.2026<span class="meta">на ревью · — · 65 дн. без движения</span></li>
+<li><span class="k">MUL-10003</span> BACKLOG: Исследовать Cognee как общую память (VPS + дома + телефон/MinIS)<span class="meta">бэклог · переезд памяти · 64 дн. без движения</span></li>
+<li><span class="k">MUL-885</span> 9. Плагин DSH → Hindsight (по EverOS-рецепту, детали внутри)<span class="meta">бэклог · переезд памяти · 64 дн. без движения</span></li>
+<li><span class="k">MUL-10010</span> Отчёт: цены и акции на AI подписки 2026-08-29<span class="meta">на ревью · — · 63 дн. без движения</span></li>
+<li><span class="k">MUL-10035</span> [INFRA] Восстановить WARP (warp-svc)<span class="meta">к выполнению · Routine · 60 дн. без движения</span></li>
+<li><span class="k">MUL-10033</span> [HINDSIGHT] Диагностика stuck consolidation (11,570 unconsolidated)<span class="meta">к выполнению · Routine · 60 дн. без движения</span></li>
+<li><span class="k">MUL-10065</span> [BACKUP] Облако для хранения бэкапов<span class="meta">к выполнению · Routine · 57 дн. без движения</span></li>
+<li><span class="k">MUL-10057</span> OpenViking: загрузка данных из Hermes state.db<span class="meta">на ревью · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10071</span> [MAINT] Journald — 728 MB, нужна очистка<span class="meta">бэклог · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10068</span> [INFRA] Cloudflare WARP — DOWN (warp-cli не найден)<span class="meta">бэклог · Routine · 56 дн. без движения</span></li>
+<li><span class="k">MUL-10073</span> Установить tgrep при старте нового проекта<span class="meta">бэклог · Routine · 52 дн. без движения</span></li>
+<li><span class="k">MUL-10074</span> Изучить cmu-agents.com<span class="meta">бэклог · Routine · 52 дн. без движения</span></li>
+<li><span class="k">MUL-10077</span> Тест DSH-рантайма (1c-work)<span class="meta">к выполнению · — · 50 дн. без движения</span></li>
+<li><span class="k">MUL-10076</span> Тест подключения к ДСХ на работе<span class="meta">к выполнению · — · 50 дн. без движения</span></li>
+</ul></details>
+<h2>Что происходило за 21 день: по суткам</h2>
+<table><tr><th>Дата</th><th class="num">Создано</th><th class="num">Закрыто</th><th class="num">Провалов</th><th></th></tr>
+<tr class=""><td>10.10</td><td class="num">11</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:69%"></i></div></td></tr>
+<tr class=""><td>11.10</td><td class="num">16</td><td class="num">5</td><td class="num">0</td><td><div class="bar"><i style="width:100%"></i></div></td></tr>
+<tr class=""><td>12.10</td><td class="num">8</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:50%"></i></div></td></tr>
+<tr class=""><td>13.10</td><td class="num">8</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:50%"></i></div></td></tr>
+<tr class="bad"><td>14.10</td><td class="num">7</td><td class="num">4</td><td class="num">2</td><td><div class="bar"><i style="width:44%"></i></div></td></tr>
+<tr class="bad"><td>15.10</td><td class="num">7</td><td class="num">0</td><td class="num">7</td><td><div class="bar"><i style="width:44%"></i></div></td></tr>
+<tr class="bad"><td>16.10</td><td class="num">7</td><td class="num">0</td><td class="num">7</td><td><div class="bar"><i style="width:44%"></i></div></td></tr>
+<tr class="bad"><td>17.10</td><td class="num">8</td><td class="num">0</td><td class="num">9</td><td><div class="bar"><i style="width:50%"></i></div></td></tr>
+<tr class="bad"><td>18.10</td><td class="num">14</td><td class="num">0</td><td class="num">4</td><td><div class="bar"><i style="width:88%"></i></div></td></tr>
+<tr class=""><td>19.10</td><td class="num">11</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:69%"></i></div></td></tr>
+<tr class=""><td>20.10</td><td class="num">10</td><td class="num">5</td><td class="num">0</td><td><div class="bar"><i style="width:62%"></i></div></td></tr>
+<tr class=""><td>21.10</td><td class="num">13</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:81%"></i></div></td></tr>
+<tr class=""><td>22.10</td><td class="num">9</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:56%"></i></div></td></tr>
+<tr class=""><td>23.10</td><td class="num">11</td><td class="num">5</td><td class="num">0</td><td><div class="bar"><i style="width:69%"></i></div></td></tr>
+<tr class=""><td>24.10</td><td class="num">12</td><td class="num">5</td><td class="num">0</td><td><div class="bar"><i style="width:75%"></i></div></td></tr>
+<tr class=""><td>25.10</td><td class="num">11</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:69%"></i></div></td></tr>
+<tr class="bad"><td>26.10</td><td class="num">9</td><td class="num">4</td><td class="num">1</td><td><div class="bar"><i style="width:56%"></i></div></td></tr>
+<tr class=""><td>27.10</td><td class="num">9</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:56%"></i></div></td></tr>
+<tr class=""><td>28.10</td><td class="num">9</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:56%"></i></div></td></tr>
+<tr class="bad"><td>29.10</td><td class="num">8</td><td class="num">4</td><td class="num">1</td><td><div class="bar"><i style="width:50%"></i></div></td></tr>
+<tr class=""><td>30.10</td><td class="num">9</td><td class="num">4</td><td class="num">0</td><td><div class="bar"><i style="width:56%"></i></div></td></tr>
+<tr class=""><td>31.10</td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td><div class="bar"><i style="width:75%"></i></div></td></tr>
+</table>
+<h2>Провалы прогонов: чем болели</h2>
+<table><tr><th>Причина</th><th class="num">Прогонов</th><th>Когда</th></tr>
+<tr><td>429 · лимит OpenCode Go исчерпан</td><td class="num">13</td><td>15.10, 16.10</td></tr>
+<tr><td>400 · невалидная модель</td><td class="num">9</td><td>16.10, 17.10</td></tr>
+<tr><td>401 · ключ/доступ отклонён</td><td class="num">7</td><td>17.10, 18.10</td></tr>
+<tr><td>400 · ошибка запроса</td><td class="num">1</td><td>29.10</td></tr>
+<tr><td>окружение · нет модуля yaml</td><td class="num">1</td><td>26.10</td></tr>
+</table>
+<h2>Автопилоты: 152 прогона за 21 день, все завершены</h2>
+<table><tr><th>Автопилот</th><th class="num">Прогонов</th><th>Последний</th></tr>
+<tr><td>Мониторинг скидок на китайские AI подписки</td><td class="num">42</td><td>2026-10-31</td></tr>
+<tr><td>Ночная рутина</td><td class="num">23</td><td>2026-10-30</td></tr>
+<tr><td>Адьютант</td><td class="num">21</td><td>2026-10-31</td></tr>
+<tr><td>Ночной дозор</td><td class="num">21</td><td>2026-10-30</td></tr>
+<tr><td>Обнова мультика</td><td class="num">21</td><td>2026-10-31</td></tr>
+<tr><td>Тест бесплатных моделей</td><td class="num">21</td><td>2026-10-31</td></tr>
+<tr><td>Wiki Health — еженедельная проверка</td><td class="num">3</td><td>2026-10-31</td></tr>
+</table>
+<footer>Источник: PostgreSQL Multica (issue, activity_log, agent_task_queue, autopilot_run). Классификация квадрантов — правилами по статусу, приоритету, возрасту и теме задачи; отчёты автопилотов вынесены отдельно и в «важное» не попадают.</footer>
+</div></body></html>
