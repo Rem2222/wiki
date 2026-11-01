@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-10-11_
+_Обновлено: 2026-11-01_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -85,6 +85,7 @@ _Обновлено: 2026-10-11_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti]] — Agent Desktop от Vercel Labs: computer use через дерево доступности ОС без скриншотов, 6 352⭐, Rust, Apache-2.0 (Записано, НЕ устанавливалось)
 - [[tech/ax]] — AX: открытый агентный оркестратор Google, «Kubernetes для ИИ-агентов» (YAML-декларация задач, песочницы, миллиарды задач на кластер)
 - [[tech/qwen-mm-plugins]] — Qwen-MM-Plugins: native-мультимодальные плагины (skill + MCP) для агентных обвязок: изображения/видео/PDF, OCR, grounding, ASR
 - [[tech/dpi-zapret-netfix]] — DPI, Zapret, TgWsProxy и GUI-обёртка NetFix

@@ -1,7 +1,12 @@
 ---
 description: "CLI и C-библиотека от Vercel Labs: агент управляет приложениями рабочего стола через дерево доступности ОС, без скриншотов. Модель snapshot -> ref -> действие -> snapshot с защитой от устаревших ссылок; несколько агентов с отдельными курсорами."
 tags: [computer-use,accessibility,agents,rust,vercel,desktop-automation]
-related: tech/control-plane-dlya-vseh-agentov-obzor-alternativ tools/axi tech/rtk
+related:
+  - tech/control-plane-dlya-vseh-agentov-obzor-alternativ
+  - tools/axi
+  - tech/rtk
+updated: 2026-11-01
+source: "https://github.com/vercel-labs/agent-desktop"
 ---
 
 # Agent Desktop от Vercel Labs — computer use через дерево доступности
