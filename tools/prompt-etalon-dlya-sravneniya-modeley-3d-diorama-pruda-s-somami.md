@@ -1,7 +1,11 @@
 ---
 description: "Готовая задача для бенча моделей: единый index.html с анимированной 3D-сценой японского пруда и шестью сомами на Three.js, всё процедурно. Полный текст промпта, критерии приёмки (мостик дугой, усы и плавники у сомов, рыба видна сквозь воду), порядок прогона через субагентов и результаты прогона 18.10.2026."
 tags: [benchmark,llm,prompt,threejs,agents,render]
-related: tech/herdr tech/orca-gui-orkestrator-flota-koding-agentov
+related:
+  - tech/herdr
+  - tech/orca-gui-orkestrator-flota-koding-agentov
+updated: 2026-11-02
+source: "промпт Романа (документ 3d.md), прогон 18.10.2026"
 ---
 
 # Промпт-эталон для сравнения моделей: 3D-диорама пруда с сомами
