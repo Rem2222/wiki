@@ -85,6 +85,7 @@ _Обновлено: 2026-11-01_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/alibaba-token-plan-ostatki-cherez-ofitsialnyy-openapi-vmesto-parsinga]] — Alibaba Token Plan: официальный OpenAPI вместо парсинга страницы, Playwright и cookie не нужны
 - [[tech/codexbar-win-varianty-perevoda-s-python-na-nativnyy-stek-2026]] — CodexBar-Win: варианты перевода с Python (Tauri 2, Avalonia 12, Wails 3, PySide6) с рекомендацией
 - [[tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla]] — OpenCode Go: остатки лимитов через API-ключ (console/api/go/status + zen/go/v1/usage), cookies умерли; починка CodexBar-Win коммитом 03ae34b
 - [[tech/orca-gui-orkestrator-flota-koding-agentov]] — Orca: GUI-оркестратор флота кодинг-агентов (113 135⭐, MIT), worktrees, мобильный компаньон, SSH; поддерживает Hermes Agent и DSH (Записано, НЕ устанавливалось)

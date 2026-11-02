@@ -1,7 +1,11 @@
 ---
 description: "У Token Plan из Alibaba Model Studio есть документированный OpenAPI: GetSubscriptionStats и ListSubscriptionSharedPackages отдают остатки кредитов и срок подписки по AccessKey, без браузера и cookie. Разбор эндпоинтов, регионов, схемы подписи ACS3-HMAC-SHA256 и того, что уже внедрено в CodexBar-Win."
 tags: [alibaba,modelstudio,token-plan,openapi,codexbar,windows,playwright]
-related: tech/codexbar-win-varianty-perevoda-s-python-na-nativnyy-stek-2026 tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla
+related:
+  - tech/codexbar-win-varianty-perevoda-s-python-na-nativnyy-stek-2026
+  - tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla
+updated: 2026-11-02
+source: "bailian-docs-llm-wiki + живые пробы curl, 02.11.2026"
 ---
 
 # Alibaba Token Plan: остатки через официальный OpenAPI вместо парсинга
