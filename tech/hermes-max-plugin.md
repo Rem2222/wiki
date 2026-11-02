@@ -4,6 +4,7 @@ tags: [tech, integrations, hermes, max]
 related:
   - tech/hermes-agent-masterclass
   - tech/specsmaxxing
+  - tech/kanal-svyazi-pri-glushenii
 ---
 
 # MAX Messenger Plugin for Hermes Agent
@@ -18,6 +19,18 @@ related:
 ## Статус проекта
 
 MVP завершён (2026-06-14)
+
+**Проверено 02.11.2026 под Hermes 0.21.6:** плагин грузится штатно — импорт пакета ок,
+`register(ctx)` → `register_platform(name="max", required_env=["MAX_TOKEN"],
+max_message_length=4096)`, `MaxAdapter` реализует все абстрактные методы базового класса
+(`connect`/`disconnect`/`get_chat_info`/`send`), host-API `_event_session_key` и
+`MessageEvent.allow_gateway_control` на месте. Зависимости в venv есть (`aiohttp 3.14.3`,
+`python-multipart 0.0.32`).
+
+**Чего ждём:** `MAX_TOKEN`. Плагин включает себя сам через `_env_enablement()`, как только
+токен появится в `.env` — правка `config.yaml` не нужна. Барьер: бота MAX дают только
+юрлицам/ИП/самозанятым (подробный разбор и обходные пути —
+[[tech/kanal-svyazi-pri-glushenii]]).
 
 ## Архитектура
 
