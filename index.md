@@ -85,6 +85,7 @@ _Обновлено: 2026-11-01_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/orca-gui-orkestrator-flota-koding-agentov]] — Orca: GUI-оркестратор флота кодинг-агентов (113 135⭐, MIT), worktrees, мобильный компаньон, SSH; поддерживает Hermes Agent и DSH (Записано, НЕ устанавливалось)
 - [[tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti]] — Agent Desktop от Vercel Labs: computer use через дерево доступности ОС без скриншотов, 6 352⭐, Rust, Apache-2.0 (Записано, НЕ устанавливалось)
 - [[tech/ax]] — AX: открытый агентный оркестратор Google, «Kubernetes для ИИ-агентов» (YAML-декларация задач, песочницы, миллиарды задач на кластер)
 - [[tech/qwen-mm-plugins]] — Qwen-MM-Plugins: native-мультимодальные плагины (skill + MCP) для агентных обвязок: изображения/видео/PDF, OCR, grounding, ASR
@@ -288,7 +289,7 @@ _Обновлено: 2026-11-01_
 - [[tasks/hindsight-memory-migration]] — переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
-- [[tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa]] — unslop: скилл, убирающий ИИ-вид из интерфейса (5 443⭐, CC-BY-4.0) — Записано, НЕ устанавливалось
+- [[tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa]] — unslop: скилл, убирающий ИИ-вид из интерфейса (5 443⭐, CC-BY-4.0) — **Установлен 02.11.2026**
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
 - [[tech/make-interfaces-feel-better]] — UI-рекомендации (Jakub Krehel, 30K+ установок)
 - [[tools/beads]] — Git-backed issue tracker для AI агентов (steveyegge/beads)

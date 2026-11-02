@@ -12,6 +12,10 @@ related:
 
 ## Кандидаты (по убыванию перспективности)
 
+### Orca (stablyai) — ⭐113135 (добавлено 02.11.2026)
+
+Обзор от 11.10.2026 этот проект пропустил, а он крупнее всех перечисленных ниже вместе взятых. GUI-приложение на Electron для флота кодинг-агентов: каждый агент в своём git-worktree, параллельный фан-аут одного промпта на пять агентов с выбором победителя, терминалы класса Ghostty, Design Mode (клик по элементу в Chromium отправляет его HTML, CSS и скриншот в промпт), SSH-worktrees для работы на удалённой машине, нативные GitHub и Linear, мобильный компаньон для iOS и Android, Computer Use. MIT, TypeScript, релиз v1.4.246 от 02.11.2026. В списке поддерживаемых агентов есть **Hermes Agent** и **DeepSeek Harness**. Минусы: 7 894 открытых issue, вес сборки 150–275 МБ, требуется графическая сессия. Подробный разбор — [[tech/orca-gui-orkestrator-flota-koding-agentov]].
+
 ### Mission Control (builderz-labs) — ⭐6340
 - Репо: github.com/builderz-labs/mission-control — self-hosted control plane для AI-агентов: диспатч задач, ревью, трекинг расходов, координация рантаймов, SQLite
 - Адаптеры: OpenClaw, Claude Code, Codex, CrewAI, LangGraph, AutoGen, Claude SDK (OpenClaw — первый класс!)

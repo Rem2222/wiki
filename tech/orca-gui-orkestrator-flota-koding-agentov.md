@@ -1,7 +1,15 @@
 ---
 description: "Orca (stablyai/orca): приложение для работы с несколькими кодинг-агентами разом — каждый в своём git-worktree, мобильный компаньон, SSH-worktrees, Design Mode с отправкой HTML и CSS элемента в промпт. 113 135 звёзд, MIT, официально поддерживает Hermes Agent и DeepSeek Harness."
 tags: [agents,orchestration,worktrees,desktop,gui,hermes-agent,terraform]
-related: tech/herdr tech/ax tech/control-plane-dlya-vseh-agentov-obzor-alternativ tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa tech/cherry-studio
+related:
+  - tech/herdr
+  - tech/ax
+  - tech/control-plane-dlya-vseh-agentov-obzor-alternativ
+  - tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti
+  - tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa
+  - tech/cherry-studio
+updated: 2026-11-02
+source: "https://github.com/stablyai/orca"
 ---
 
 # Orca — GUI-оркестратор флота кодинг-агентов

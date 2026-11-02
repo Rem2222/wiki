@@ -4,7 +4,7 @@ tags: [ui,design,skill,claude,frontend,unslop]
 related:
   - tech/ui-ux-pro-max-analysis
   - tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti
-updated: 2026-11-01
+updated: 2026-11-02
 source: "https://github.com/heydamir/unslop"
 ---
 
@@ -66,7 +66,19 @@ source: "https://github.com/heydamir/unslop"
 
 **Где применить.** HTML-страницы, которые Роман отдаёт людям: `rem2222.top/hermes-memory.html`, отчёты, дашборды, интерфейс Мультики. Скилл ровно про то, чтобы такие страницы перестали выглядеть сгенерированными.
 
-**Статус: записано, НЕ устанавливалось.** Установка — отдельным решением Романа; скилл кладётся копированием в каталог скиллов, ничего в системе не меняет.
+## Статус на 02.11.2026 — УСТАНОВЛЕНО
+
+Роман попросил поставить. Скилл перенесён в Hermes:
+
+- Путь: `/root/.hermes/skills/creative/unslop/` (SKILL.md 33 589 символов, references 5 файлов, scripts, картинки-примеры, всего 1,5 МБ)
+- `playwright` установлен локально в каталог скилла (`node_modules`), браузер не качался — используется уже имеющийся Chromium от Playwright Python: перед запуском скриптов выставляется `CHROME_PATH=/root/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome`. Без этой переменной Playwright ищет свою сборку 1248 и падает с `Executable doesn't exist`
+- `ffmpeg` уже был в PATH (`/root/.hermes/tools/ffmpeg-9.0.1-linux-x64/bin/ffmpeg`), story-видео собирать можно
+- В SKILL.md добавлен раздел «Запуск в Hermes»: наши пути, `CHROME_PATH`, рабочий каталог `~/.hermes/cache/scratch/unslop-<страница>/`, правило не перезаписывать оригинал. В `references/visuals.md` генерация картинок переадресована с fal/Replicate/Higgsfield на **neuraldeep** (Qwen-Image-2.1)
+- Атрибуция автора сохранена: CC BY 4.0 этого требует при любой копии и адаптации
+- **Живая проверка:** `snapshot.mjs` прогнан на `https://rem2222.top/hermes-memory.html` — сохранил `original.html` (51 КБ) и `original.live.png` (23,8 КБ), то есть скрипт на нашем окружении рабочий
+- Hermes видит скилл: `skill_view('unslop')` отдаёт `readiness_status: available`, все пять references на месте
+
+Отличие от оригинала одно — раздел адаптации; сам девятипроходный процесс, каталог признаков и скрипты не менялись.
 
 ## Источники
 
