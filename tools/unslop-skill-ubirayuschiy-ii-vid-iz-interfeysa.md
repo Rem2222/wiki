@@ -1,7 +1,11 @@
 ---
 description: "Скилл для Claude Code и Codex: находит признаки вайбкодного интерфейса (фиолетовые градиенты, свечения, эмодзи-иконки) и переделывает экран проходами дизайнера — отступы, цвет, иконки, тексты, типографика, вёрстка. Работает по любому стеку и по одной ссылке на живой сайт."
 tags: [ui,design,skill,claude,frontend,unslop]
-related: tech/ui-ux-pro-max-analysis tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti
+related:
+  - tech/ui-ux-pro-max-analysis
+  - tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti
+updated: 2026-11-01
+source: "https://github.com/heydamir/unslop"
 ---
 
 # unslop — скилл, убирающий ИИ-вид из интерфейса

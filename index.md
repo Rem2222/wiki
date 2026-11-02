@@ -288,6 +288,7 @@ _Обновлено: 2026-11-01_
 - [[tasks/hindsight-memory-migration]] — переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
+- [[tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa]] — unslop: скилл, убирающий ИИ-вид из интерфейса (5 443⭐, CC-BY-4.0) — Записано, НЕ устанавливалось
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
 - [[tech/make-interfaces-feel-better]] — UI-рекомендации (Jakub Krehel, 30K+ установок)
 - [[tools/beads]] — Git-backed issue tracker для AI агентов (steveyegge/beads)
