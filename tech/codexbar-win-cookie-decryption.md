@@ -123,3 +123,5 @@ print(cookie.value)  # xxxxxx...
 ---
 
 *Технология: DPAPI + AES-256-GCM, Python, ctypes (без внешних крипто-библиотек)*
+
+> **Обновление 02.11.2026:** для OpenCode этот путь больше не нужен — консольный API принимает API-ключ в заголовке Authorization (схема Bearer), а cookies и x-org-id не работают. Механика расшифровки осталась полезной для других провайдеров, у которых API нет. Детали — [[tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla]].

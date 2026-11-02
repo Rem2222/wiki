@@ -85,6 +85,7 @@ _Обновлено: 2026-11-01_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla]] — OpenCode Go: остатки лимитов через API-ключ (console/api/go/status + zen/go/v1/usage), cookies умерли; починка CodexBar-Win коммитом 03ae34b
 - [[tech/orca-gui-orkestrator-flota-koding-agentov]] — Orca: GUI-оркестратор флота кодинг-агентов (113 135⭐, MIT), worktrees, мобильный компаньон, SSH; поддерживает Hermes Agent и DSH (Записано, НЕ устанавливалось)
 - [[tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti]] — Agent Desktop от Vercel Labs: computer use через дерево доступности ОС без скриншотов, 6 352⭐, Rust, Apache-2.0 (**Установлен на Windows-ПК 01.11.2026**)
 - [[tech/ax]] — AX: открытый агентный оркестратор Google, «Kubernetes для ИИ-агентов» (YAML-декларация задач, песочницы, миллиарды задач на кластер)

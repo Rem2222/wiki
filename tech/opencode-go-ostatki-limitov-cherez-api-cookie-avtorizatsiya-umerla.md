@@ -1,7 +1,11 @@
 ---
 description: "Консольный API OpenCode Go теперь принимает API-ключ в Authorization: Bearer — /console/api/go/status отдаёт полные метры (лимиты, расход, даты сброса, период подписки), /zen/go/v1/usage — готовые проценты. Cookies и x-org-id больше не работают. Здесь структура ответа, что не работает, и починка CodexBar-Win коммитом 03ae34b."
 tags: [opencode,api,limits,codexbar,quota,bearer]
-related: tech/codexbar-win-cookie-decryption tech/cookie-decryptor
+related:
+  - tech/codexbar-win-cookie-decryption
+  - tech/cookie-decryptor
+updated: 2026-11-02
+source: "живая проверка эндпоинтов 02.11.2026 + коммит 03ae34b"
 ---
 
 # OpenCode Go — остатки лимитов через API (cookie-авторизация умерла)
