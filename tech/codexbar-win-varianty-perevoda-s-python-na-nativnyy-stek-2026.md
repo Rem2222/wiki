@@ -1,7 +1,12 @@
 ---
 description: "Разбор вариантов миграции CodexBar-Win с Python: Tauri 2 на Rust, Avalonia 12 на C#/.NET, Wails 3 на Go, PySide6 6.12 поверх Qt. Версии и звёзды на 02.11.2026, сравнение по весу, памяти, трею, автозапуску, переиспользованию кода и рискам, с рекомендацией."
 tags: [codexbar,windows,desktop,tauri,avalonia,wails,pyside6,migration]
-related: tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla tech/codexbar-win-cookie-decryption tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa
+related:
+  - tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla
+  - tech/codexbar-win-cookie-decryption
+  - tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa
+updated: 2026-11-02
+source: "GitHub API + официальные релизы, проверено 02.11.2026"
 ---
 
 # CodexBar-Win: варианты перевода с Python на нативный стек (2026)
