@@ -60,7 +60,7 @@ service:
     - nginx
   data_size_hint: "/var/log/pcp ≈ 134 МБ (архивы метрик), /var/lib/pcp ≈ 1 МБ"
   notes: "Установлен пакетом pcp 6.2.0-1.1build4 (28.05.2026). Все юниты enabled от загрузки. Использования в Hermes/дашбордах не найдено — кандидат на отключение, если Роман не подключал внешний сбор."
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 ---
 
 # Performance Co-Pilot (PCP)

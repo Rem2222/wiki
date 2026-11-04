@@ -64,7 +64,7 @@ service:
     (ночная рутина, MUL-10397). Докачка ключа
     alibaba/tokenplan — см. строки с маркерами в gen_brief.py; ротация ключа
     Aliyun и keystore TWA зарегистрирована (см. MUL-10140).
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 ---
 # Voice Gateway (voice-gateway + voice-brief)
 

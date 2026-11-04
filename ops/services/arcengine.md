@@ -46,7 +46,7 @@ service:
     отдаёт только /root/arcengine, данные игры лежат внутри клона.
     Обслуживание: обновление — `git -C /root/arcengine pull`; рестарт —
     `systemctl restart arcengine-game`.
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 ---
 
 # ArcEngine (dev-server, :8082)

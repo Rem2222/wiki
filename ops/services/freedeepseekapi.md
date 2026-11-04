@@ -28,5 +28,5 @@ service:
   depends_on:
     []
   notes: "Через /deepseek/. Модель: deepseek-chat."
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 ---

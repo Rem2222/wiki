@@ -55,5 +55,5 @@ service:
     /root/.agents-anywhere/connector.json`, WorkingDirectory
     /root/agents-anywhere/connector — коннектор, который держит связь с
     удалённым сервером Agents Anywhere (см. MUL-10274).
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 ---

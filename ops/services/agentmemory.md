@@ -58,5 +58,5 @@ service:
   depends_on:
     []
   notes: /agentmemory/health 404. REST consolidation не работает.
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 ---

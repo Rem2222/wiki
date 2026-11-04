@@ -38,5 +38,5 @@ service:
   depends_on:
     - authelia
   notes: 20+ location блоков.
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 ---
