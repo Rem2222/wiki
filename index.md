@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-11-01_
+_Обновлено: 2026-11-05_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -85,6 +85,7 @@ _Обновлено: 2026-11-01_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/yandex-station-extended-otkrytaya-viki-o-dostupe-k-kolonkam-yandeksa]] — Yandex Station Extended (hackalice.me): community-вики о root на колонках Яндекса, своей LLM вместо Алисы, внутренностях прошивки quasar; 73 страницы, 17 моделей, 862⭐ за две недели (Записано, НЕ устанавливалось)
 - [[tech/alibaba-token-plan-ostatki-cherez-ofitsialnyy-openapi-vmesto-parsinga]] — Alibaba Token Plan: официальный OpenAPI вместо парсинга страницы, Playwright и cookie не нужны
 - [[tech/codexbar-win-varianty-perevoda-s-python-na-nativnyy-stek-2026]] — CodexBar-Win: варианты перевода с Python (Tauri 2, Avalonia 12, Wails 3, PySide6) с рекомендацией
 - [[tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla]] — OpenCode Go: остатки лимитов через API-ключ (console/api/go/status + zen/go/v1/usage), cookies умерли; починка CodexBar-Win коммитом 03ae34b

@@ -1,7 +1,11 @@
 ---
 description: "Открытая community-вики hackalice.me о получении root на умных колонках Яндекса, своей LLM вместо Алисы и внутренностях прошивки quasar."
 tags: [yandex,smart-speakers,iot,hardware,community-wiki,root]
-related: tech/free-my-tv-domashniy-ekran-bez-reklamy-dlya-google-tv-lg-i-samsung tech/qwen38-27b-local-gpu
+updated: 2026-11-05
+source: "https://hackalice.me"
+related:
+  - tech/free-my-tv-domashniy-ekran-bez-reklamy-dlya-google-tv-lg-i-samsung
+  - tech/qwen38-27b-local-gpu
 ---
 
 # Yandex Station Extended — открытая вики о доступе к колонкам Яндекса
