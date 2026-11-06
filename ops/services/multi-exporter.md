@@ -5,7 +5,7 @@ tags:
   - service
   - monitoring
 type: service
-last_verified: 2026-11-06
+last_verified: 2026-11-07
 related:
   - ops/services/server-architecture
   - ops/services/beszel
