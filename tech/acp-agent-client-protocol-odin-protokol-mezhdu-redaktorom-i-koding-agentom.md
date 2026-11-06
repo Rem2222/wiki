@@ -1,7 +1,12 @@
 ---
 description: "Открытый стандарт связи редактора и кодинг-агента: JSON-RPC 2.0, сессии, апрувы, экосистема из полусотни агентов; разграничение с MCP, A2A и архивированным IBM ACP."
 tags: [acp,agents,protocols,zed,hermes]
-related: tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265 tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat
+updated: 2026-11-05
+source: "https://agentclientprotocol.com"
+related:
+  - tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265
+  - ops/services/agents-anywhere
+  - tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat
 ---
 
 # ACP (Agent Client Protocol): один протокол между редактором и кодинг-агентом

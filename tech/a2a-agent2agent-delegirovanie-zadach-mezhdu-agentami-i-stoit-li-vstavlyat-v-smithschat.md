@@ -1,7 +1,12 @@
 ---
 description: "Открытый протокол Agent2Agent: Agent Card, задачи и артефакты, SSE и push-уведомления, версия 1.0 под Agentic AI Foundation; разбор применимости к SmithsChat."
 tags: [a2a,agents,protocols,smiths-chat,interop]
-related: tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265 ops/services/smiths-chat
+updated: 2026-11-05
+source: "https://a2a-protocol.org"
+related:
+  - tech/agents-anywhere-acp-rantaym-dlya-hermes-mul-10265
+  - ops/services/smiths-chat
+  - tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom
 ---
 
 # A2A (Agent2Agent): делегирование задач между агентами и стоит ли вставлять в SmithsChat

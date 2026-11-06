@@ -85,6 +85,8 @@ _Обновлено: 2026-11-05_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom]] — ACP (Agent Client Protocol): один протокол между редактором и кодинг-агентом, как LSP для языков; JSON-RPC 2.0, сессии, апрувы; 4 585⭐, Apache-2.0, Hermes в официальном списке агентов
+- [[tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat]] — A2A (Agent2Agent): делегирование задач между агентами, Agent Card, SSE и push-уведомления; 26 434⭐, v1.0, Agentic AI Foundation; разбор «вставлять ли в SmithsChat» (вывод: слоем рядом, не вместо чата)
 - [[tech/yandex-station-extended-otkrytaya-viki-o-dostupe-k-kolonkam-yandeksa]] — Yandex Station Extended (hackalice.me): community-вики о root на колонках Яндекса, своей LLM вместо Алисы, внутренностях прошивки quasar; 73 страницы, 17 моделей, 862⭐ за две недели (Записано, НЕ устанавливалось)
 - [[tech/alibaba-token-plan-ostatki-cherez-ofitsialnyy-openapi-vmesto-parsinga]] — Alibaba Token Plan: официальный OpenAPI вместо парсинга страницы, Playwright и cookie не нужны
 - [[tech/codexbar-win-varianty-perevoda-s-python-na-nativnyy-stek-2026]] — CodexBar-Win: варианты перевода с Python (Tauri 2, Avalonia 12, Wails 3, PySide6) с рекомендацией
