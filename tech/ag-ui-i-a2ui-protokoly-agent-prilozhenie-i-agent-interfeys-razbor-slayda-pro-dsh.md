@@ -1,7 +1,12 @@
 ---
 description: "AG-UI (17 056⭐, MIT) как событийный контракт агент↔приложение, CopilotKit как фронтенд-стек, A2UI (Apache-2.0) как генеративный UI; карта пяти протоколов агентского стека и поправки к выводам слайда про DSH."
 tags: [ag-ui,a2ui,copilotkit,protocols,dsh,agents,hitl]
-related: tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat tools/openbot
+updated: 2026-11-07
+source: "https://github.com/ag-ui-protocol/ag-ui"
+related:
+  - tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom
+  - tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat
+  - tools/openbot
 ---
 
 # AG-UI и A2UI: протоколы «агент ↔ приложение» и «агент ↔ интерфейс» — разбор слайда про DSH
