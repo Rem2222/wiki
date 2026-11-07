@@ -1,7 +1,12 @@
 ---
 description: "Aura Autopilot (ramenvr/autopilot): автономный плейтестер для UE5, Unity 6 и Godot 4 — четыре типа промптов, память в виде notes.md и lib.py, MCP для Claude Code и Codex; разбор бенчмарка и поправка к цифрам из анонса."
 tags: [gamedev,agents,testing,unreal,unity,godot,autopilot]
-related: tools/unity-ai-agents-plugin tech/mengto-skills-gamedev gamedev/ccgs-skills-research
+updated: 2026-11-07
+source: "https://github.com/ramenvr/autopilot"
+related:
+  - tools/unity-ai-agents-plugin
+  - tech/mengto-skills-gamedev
+  - gamedev/ccgs-skills-research
 ---
 
 # Aura Autopilot: открытый агент-плейтестер для Unreal, Unity и Godot

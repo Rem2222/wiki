@@ -11,6 +11,7 @@ _Обновлено: 2026-11-05_
 - [[gamedev/ccgs-skills-research]] — анализ Claude Code Game Studios (49 AI-агентов, 73 скилла) для геймдева
 - [[tech/mengto-skills-gamedev]] — MengTo/Skills: портабельные agent skills для Three.js геймдева
 - [[tools/unity-ai-agents-plugin]] — Unity AI Agents Plugin: официальный MCP-плагин Unity, 29 навыков движка
+- [[tools/aura-autopilot-otkrytyy-agent-pleytester-dlya-unreal-unity-i-godot]] — Aura Autopilot: открытый агент-плейтестер для UE5, Unity 6 и Godot 4; память в notes.md, MCP для Claude Code и Codex; поправка к цифрам анонса (реально 1.7×, а не 3×)
 
 ## Концепции
 - [[concepts/llm-wiki]] — паттерн персональных баз знаний с помощью LLM
