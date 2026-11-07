@@ -1,7 +1,11 @@
 ---
 description: "Дизайн структурного подтверждения в SmithsChat: таблица approvals, только человек как решающий, TTL, хеш полезной нагрузки, long-poll вместо лишних пробуждений; экономика 2–3 пробуждения → 1, объём 350–450 строк."
 tags: [smiths-chat,approvals,hitl,design,wake,безопасность]
-related: ops/services/smiths-chat tech/ag-ui-i-a2ui-protokoly-agent-prilozhenie-i-agent-interfeys-razbor-slayda-pro-dsh
+updated: 2026-11-07
+source: "локальный репозиторий /root/smiths-chat, alpha.7"
+related:
+  - ops/services/smiths-chat
+  - tech/ag-ui-i-a2ui-protokoly-agent-prilozhenie-i-agent-interfeys-razbor-slayda-pro-dsh
 ---
 
 # SmithsChat: подтверждение структурой — approval вместо «напиши да»

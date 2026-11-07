@@ -87,6 +87,7 @@ _Обновлено: 2026-11-05_
 
 ## Технологии
 - [[tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom]] — ACP (Agent Client Protocol): один протокол между редактором и кодинг-агентом, как LSP для языков; JSON-RPC 2.0, сессии, апрувы; 4 585⭐, Apache-2.0, Hermes в официальном списке агентов
+- [[tech/smithschat-podtverzhdenie-strukturoy-approval-vmesto-napishi-da]] — SmithsChat: подтверждение структурой — таблица approvals, только человек решает, TTL, хеш полезной нагрузки, long-poll; 2–3 пробуждения → 1, объём 350–450 строк
 - [[tech/ag-ui-i-a2ui-protokoly-agent-prilozhenie-i-agent-interfeys-razbor-slayda-pro-dsh]] — AG-UI и A2UI: два протокола «агент ↔ приложение» и «агент ↔ интерфейс»; карта пяти протоколов стека и поправки к выводу про DSH (HITL, а не «HTL»; совместимость ≠ готовые клиенты)
 - [[tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat]] — A2A (Agent2Agent): делегирование задач между агентами, Agent Card, SSE и push-уведомления; 26 434⭐, v1.0, Agentic AI Foundation; разбор «вставлять ли в SmithsChat» (вывод: слоем рядом, не вместо чата)
 - [[tech/yandex-station-extended-otkrytaya-viki-o-dostupe-k-kolonkam-yandeksa]] — Yandex Station Extended (hackalice.me): community-вики о root на колонках Яндекса, своей LLM вместо Алисы, внутренностях прошивки quasar; 73 страницы, 17 моделей, 862⭐ за две недели (Записано, НЕ устанавливалось)
