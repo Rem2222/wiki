@@ -94,6 +94,7 @@ _Обновлено: 2026-11-05_
 - [[tech/alibaba-token-plan-ostatki-cherez-ofitsialnyy-openapi-vmesto-parsinga]] — Alibaba Token Plan: официальный OpenAPI вместо парсинга страницы, Playwright и cookie не нужны
 - [[tech/codexbar-win-varianty-perevoda-s-python-na-nativnyy-stek-2026]] — CodexBar-Win: варианты перевода с Python (Tauri 2, Avalonia 12, Wails 3, PySide6) с рекомендацией
 - [[tech/opencode-go-ostatki-limitov-cherez-api-cookie-avtorizatsiya-umerla]] — OpenCode Go: остатки лимитов через API-ключ (console/api/go/status + zen/go/v1/usage), cookies умерли; починка CodexBar-Win коммитом 03ae34b
+- [[tools/xlsx-editor-dlya-orca-pravka-knig-excel-s-sohraneniem-netronutyh-chastey-zip]] — XLSX Editor для Orca: правит .xlsx/.xlsm с форматированием, при сохранении переписывает только изменённые XML, остальные части ZIP остаются исходными байтами (макросы и сводные кэши целы). MIT, trusted-worker, требует Orca 1.4.248+. У нас Orca не стоит
 - [[tech/orca-gui-orkestrator-flota-koding-agentov]] — Orca: GUI-оркестратор флота кодинг-агентов (113 135⭐, MIT), worktrees, мобильный компаньон, SSH; поддерживает Hermes Agent и DSH (Записано, НЕ устанавливалось)
 - [[tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti]] — Agent Desktop от Vercel Labs: computer use через дерево доступности ОС без скриншотов, 6 352⭐, Rust, Apache-2.0 (**Установлен на Windows-ПК 01.11.2026**)
 - [[tech/ax]] — AX: открытый агентный оркестратор Google, «Kubernetes для ИИ-агентов» (YAML-декларация задач, песочницы, миллиарды задач на кластер)

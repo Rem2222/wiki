@@ -67,6 +67,12 @@ Orca (`stablyai/orca`) — GUI-приложение для работы с **ф�
 
 **Статус: записано, НЕ устанавливалось.** Решение об установке — за Романом; ставится как обычное приложение на ПК.
 
+## Плагины (обновление 08.11.2026)
+
+У Orca есть каталог плагинов, включая community-раздел, который ставится из `Settings → Plugins`. Плагины объявляют манифест `orca-plugin.json` (manifestVersion 2, pluginApi 1) с полями `execution`, `capabilities` и `contributes.customEditors` — то есть видно, какие права запрашивает плагин, до установки.
+
+Разобранный пример — [[tools/xlsx-editor-dlya-orca-pravka-knig-excel-s-sohraneniem-netronutyh-chastey-zip]]: редактор Excel-книг, который при сохранении переписывает только изменённые XML, а остальные части ZIP оставляет исходными байтами.
+
 ## Источники
 
 - Репозиторий: https://github.com/stablyai/orca (113 135 ⭐, MIT, TypeScript, релиз v1.4.246 от 02.11.2026)

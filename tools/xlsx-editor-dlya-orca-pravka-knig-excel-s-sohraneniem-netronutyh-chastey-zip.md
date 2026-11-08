@@ -1,7 +1,12 @@
 ---
 description: "Плагин XLSX Editor к Orca: открывает .xlsx/.xlsm с форматированием, правит значения, формулы, строки и столбцы, при сохранении переписывает только затронутые XML, остальные записи ZIP остаются исходными сжатыми байтами (макросы, диаграммы, сводные кэши целы). Манифест: trusted-worker, frame isolated, capabilities только agent:read и terminal:send. Репо трёхдневное, 3 звезды, MIT, требует Orca 1.4.248+. У нас Orca не установлена ни на VPS, ни на ПК."
 tags: [orca, xlsx, excel, plugins, документы, разбор]
-related: tech/orca-gui-orkestrator-flota-koding-agentov tech/orca-ade
+created: 2026-11-08
+updated: 2026-11-08
+source: https://github.com/narimanisakhanov-creator/orca-xlsx-editor
+related:
+  - tech/orca-gui-orkestrator-flota-koding-agentov
+  - tech/orca-ade
 ---
 
 # XLSX Editor для Orca — правка книг Excel с сохранением нетронутых частей ZIP
