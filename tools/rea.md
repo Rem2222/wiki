@@ -1,8 +1,8 @@
 ---
-description: "REA (Reverse Engineer Anything) — MCP + CLI для реверса: нативные бинарники (Ghidra/Hopper/IDA), JS/Electron, .NET, Android/ADB, браузер, Frida-инструментация и разбор сохранённых захватов (pcap/HAR/SAZ/qlog). MIT. Разобрано 05.10.2026, обновлено 17.10.2026: v6.5.0, 289.5k⭐ (вирусный рост). PE через Ghidra на Linux — да; Frida — есть (проверено на Linux/Node); перехват сокетов «в реальном времени» — нет."
+description: "REA (Reverse Engineer Anything) — MCP + CLI для реверса: нативные бинарники (Ghidra/Hopper/IDA), JS/Electron, .NET, Android/ADB, браузер, Frida-инструментация и разбор сохранённых захватов (pcap/HAR/SAZ/qlog). MIT. Разобрано 05.10.2026, обновлено 08.11.2026 (родной плагин Hermes + каталог Awesome-REA): v6.5.0, 289.5k⭐ (вирусный рост). PE через Ghidra на Linux — да; Frida — есть (проверено на Linux/Node); перехват сокетов «в реальном времени» — нет."
 tags: [tools, reverse-engineering, mcp, ghidra, frida, decompiler, binary-analysis, cli]
 created: 2026-10-05
-updated: 2026-10-17
+updated: 2026-11-08
 source: https://github.com/morluto/rea
 related:
   - tools/aquilum
@@ -170,3 +170,56 @@ Windsurf (Devin только детектирует). Сначала показ�
 - 🌐 docs/native-investigation.md — нативные операции Ghidra
 - 🌐 docs/process-capture.md — что умеет capture-process (и чего не умеет)
 - 🌐 SECURITY.md — модель безопасности
+
+## Обновление 08.11.2026: родной плагин Hermes и каталог Awesome-REA
+
+Проверено живыми запросами к GitHub и npm (08.11.2026, 09:1x МСК).
+
+**Цифры:** `morluto/rea` — **441 835 ⭐**, push в тот же день 07:16 UTC, MIT, TypeScript. npm `rea-agents` — latest **6.8.0**, 49,3 МБ распакованного, 42 зависимости. Прежняя оценка «аномально мало подписчиков при таких звёздах» остаётся в силе, но npm-загрузки были реальные (231 579 за неделю 06–12.10), так что инструмент используется, а не только звёздный.
+
+### Главное: появился официальный плагин под Hermes
+
+`github.com/NousResearch/hermes-official-plugins/tree/main/rea` — версия **0.2.0**, MIT, часть официального каталога плагинов Nous. Раньше в этой странице было записано «в `rea setup` Hermes нет, подключать MCP руками» — теперь это не так.
+
+```bash
+hermes plugins install rea     # из каталога Nous
+hermes plugins enable rea
+```
+
+Что ставится одним пакетом Agent Plugins v1:
+
+- `mcp.json` — MCP-сервер `rea` через `npx -y rea-agents@6.7.0 mcp` (stdio), поднимается на каждую новую сессию, пока плагин включён. Правка `config.yaml` не нужна
+- `skills/reverse-engineer-anything/` — родной workflow-скилл REA, адаптированный под Hermes: маршрутизация по цели, постраничная выдача Evidence (сначала сводка), планирование расследования; спрашивает разрешение перед шагами, которые что-то запускают или меняют
+- `skills/crash-triage/` — из core dump и бинарника в причину падения и готовый баг-репорт. Читает краш через `inspect_recorded_crash`, ставит program counter через `inspect_binary_layout`, сам декодирует список отображённых файлов ядра и сверяет build ID бинарника с ядром, классифицирует тип (NULL-разыменование, переполнение стека, abort). **Программу не запускает**, работает и со stripped-бинарниками (имена функций берёт из unwind-таблиц). Адаптировано из `crashlens` (MIT)
+
+### Каталог Awesome-REA
+
+`github.com/reacher-z/Awesome-REA` — библиотека-каталог (не путать с самим REA): 1 817 ⭐, MIT, создан 16.10.2026, push в день проверки, 54 МБ, README 316 КБ. Около 1 850 открытых issue — это не спам и не свалка: робот-куратор заводит по issue на каждое добавление («Add genmc», «Add Ouroboros»), поэтому счётчик и растёт.
+
+Устройство, которое делает каталог пригодным для агента:
+
+- `data/rea-resources.json` — 123 записи с полями `id`, `name`, `url`, `category`, `relationship`, `description_en`, `description_zh`, `evidence_url`, `verified_at`, `verification`, `requirements`, `targets`, `kind`. Категории: community-case-studies 38, reconstruction-cases 33, workflow-guides 16, related-lists 10, official-case-studies 9, community-integrations 9, core 5, community-labs 3
+- `data/papers.json` (1,3 МБ) — библиография, 207 научных работ
+- `data/case-coverage.json` (956 КБ) — покрытие кейсов
+- `scripts/catalog.py <query>` — поиск по каталогу (`--papers` — по библиографии, `--source-index` — по автоматическим записям)
+- `docs/` — workflow-гайды: static Android APK analysis (через JADX-интеграцию REA), native binary investigation, packet capture inspection, pcap summaries, signal decoding, web network captures
+- `AGENTS.md` и `docs/agent-contributing.md` — правила для агентов, которые каталог пополняют
+- `llms.txt` в репозитории **нет**, хотя в анонсах он упоминается: каталог отдаётся JSON-файлами и скриптом поиска
+
+### Что из этого прикладного
+
+- **crash-triage** — самая быстрая польза для админа VPS: упал процесс, есть core dump → разбор без запуска бинаря
+- **Android/APK** — статический разбор пакета через JADX-интеграцию; кейсы: Aegis (разбор расчёта кода входа), MXQ PRO RK3229 (Android-прошивка TV-бокса, переделка под Armbian + userspace-драйвер геймпада)
+- **Протоколы** — не живой перехват, а разбор сохранённых захватов: pcap через TShark, HAR, Fiddler SAZ, QUIC qlog. Живой трафик снимается отдельно (Wireshark, mitmproxy), REA его только читает
+- **Игры** — кейсы LLM-assisted декомпиляции (N64 matching decomp, Super Smash Bros), Rust-переписывание Minecraft
+- **Agent-first десктоп `Zfinix/eleven`** (977 ⭐, TypeScript) — открывает Mach-O, ELF, PE, APK и GPU-ядра, отдаёт их любому ACP-агенту. Для VPS не подходит (нужен GUI), полезно на домашней машине
+
+### Требования на нашем VPS (проверено 08.11.2026)
+
+- Node **v26.7.0** и npx 11.19.0 — есть (требуется 22.19+), лежат в `/root/.hermes/tools/node-26.7.0-linux-x64/bin`
+- Java — **17.0.20.1**, а Ghidra 12.1.4 требует JDK 21: для нативного слоя JDK 21 придётся доставить
+- Ghidra не установлена (нужна только для нативного слоя: PE/ELF/Mach-O; JS/Electron, .NET, APK-граф, захваты работают без неё)
+- Диск: 29 ГБ свободно из 96 (70% занято)
+- Плагин пиннит `rea-agents@6.7.0`, в npm уже 6.8.0 — при установке плагина версия будет отставать на один релиз, это нормально для пина
+
+**Статус: не устанавливалось.** Решение за Романом.
