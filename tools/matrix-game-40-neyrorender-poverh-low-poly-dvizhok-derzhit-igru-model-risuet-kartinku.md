@@ -1,7 +1,13 @@
 ---
 description: "Matrix-Game 4.0 (Skywork AI) — открытая серия интерактивных мировых моделей: исполняемый движок отвечает за геймплей и физику, причинная видеомодель превращает low-poly RGB в детализированную картинку. Три сцены, 38-39 FPS на A100 80 ГБ, до 67 FPS на RTX 5080, Apache-2.0 для 4.0 и MIT для ранних версий. На нашем железе не запускается: нужен GPU от 16 ГБ VRAM. Проверено 08.11.2026, ничего не устанавливалось."
 tags: [world-models, generative-video, neural-rendering, games, gpu, skywork, обзор]
-related: videos/gpu-vybor-dlya-neyrosetey-2026 tech/scenario-3d-collection-1342-ai-modeli-s-cc-by-40-hugging-face tools/rea
+created: 2026-11-08
+updated: 2026-11-08
+source: https://github.com/SkyworkAI/Matrix-Game
+related:
+  - videos/gpu-vybor-dlya-neyrosetey-2026
+  - tech/scenario-3d-collection-1342-ai-modeli-s-cc-by-40-hugging-face
+  - tools/rea
 ---
 
 # Matrix-Game 4.0 — нейрорендер поверх low-poly: движок держит игру, модель рисует картинку
