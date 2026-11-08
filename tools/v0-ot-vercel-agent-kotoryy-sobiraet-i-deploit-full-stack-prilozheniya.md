@@ -1,7 +1,13 @@
 ---
 description: "v0 (v0.app) — продукт Vercel: промпт превращается в работающее full-stack приложение с деплоем. Внутри агент с web search, browser use и автоисправлением ошибок, песочница Vercel Sandbox с настоящим Node.js, MCP-интеграции. Тарифы: Free $0 с лимитом 7 сообщений в день, Plus $30/чел (акция, было $90), Business $100 с отказом от обучения по умолчанию, Enterprise по договору. MCP-инструменты доступны агенту при генерации, но НЕ коду, который он создаёт. Стек Next.js и фреймворки Vercel. Проверено по официальному сайту 08.11.2026, подписки нет."
 tags: [v0, vercel, генерация-приложений, mcp, песочница, цены, обзор]
-related: tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti tools/xlsx-editor-dlya-orca-pravka-knig-excel-s-sohraneniem-netronutyh-chastey-zip tech/control-plane-dlya-vseh-agentov-obzor-alternativ
+created: 2026-11-08
+updated: 2026-11-08
+source: https://v0.app
+related:
+  - tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti
+  - tools/xlsx-editor-dlya-orca-pravka-knig-excel-s-sohraneniem-netronutyh-chastey-zip
+  - tech/control-plane-dlya-vseh-agentov-obzor-alternativ
 ---
 
 # v0 от Vercel — агент, который собирает и деплоит full-stack приложения
