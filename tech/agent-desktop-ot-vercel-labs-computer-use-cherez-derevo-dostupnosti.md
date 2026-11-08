@@ -5,7 +5,7 @@ related:
   - tech/control-plane-dlya-vseh-agentov-obzor-alternativ
   - tools/axi
   - tech/rtk
-updated: 2026-11-01
+updated: 2026-11-08
 source: "https://github.com/vercel-labs/agent-desktop"
 ---
 
@@ -90,8 +90,27 @@ source: "https://github.com/vercel-labs/agent-desktop"
 
 **Статус: установлено на Windows-ПК, проверено живым snapshot. На VPS не ставится.** Решение об установке — за Романом; на VPS ставить не имеет смысла, кандидат — рабочий ПК.
 
+## Проверка 08.11.2026: где стоит, а где нет
+
+Вопрос Романа был прямой — «у нас такой стоит?». Ответ разный для двух машин.
+
+**Домашний Windows-ПК — стоит.** Установлен Клешнёй 01.11.2026 через `npm install -g agent-desktop`, версия **1.0.2**, проверен живым `snapshot --app notepad.exe` (16 элементов, `complete: true`). Детали отчёта — выше. Ничего с тех пор не менялось: переустановок и обновлений не было.
+
+**VPS — не стоит, и проверено это четырьмя способами** (08.11.2026):
+
+- `which agent-desktop` — пусто
+- `npm ls -g --depth=0` — только `bailian-cli@2.8.4` и сам npm
+- `ls ~/.cargo/bin` — только штатный тулчейн Rust (`cargo`, `clippy`, `rls`, `rust-analyzer`), самого инструмента нет
+- `/root/.hermes/plugins/` — `agentmemory`, `hermes-achievements`, `homeassistant`, `max`, `model-providers`, `openviking`, `vk-platform`; `config.yaml` упоминаний не содержит
+
+Ставить на VPS по-прежнему нет смысла: графической сессии нет, а для веба есть Playwright.
+
+**Состояние проекта на 08.11.2026.** `vercel-labs/agent-desktop`: **19 163 ⭐** (было 6 352 01.11 — рост втрое за неделю), 1 409 форков, 198 открытых issue, Rust, Apache-2.0, около 71 МБ, создан 19.02.2026, последний push в день проверки. Такой рост при неизменном описании «Computer use CLI for AI agents» — хайп вокруг computer use, а не смена назначения.
+
+**Как проверить версию на ПК самому:** `agent-desktop version` — отдаёт JSON с `os`, `target` и `version`, как в отчёте Клешни.
+
 ## Источники
 
-- Репозиторий: https://github.com/vercel-labs/agent-desktop (6 352 звезды, 463 форка, 86 issues, Rust, Apache-2.0, создан 19.02.2026, последний push 01.11.2026, релиз v1.0.2 от 30.10.2026)
+- Репозиторий: https://github.com/vercel-labs/agent-desktop — на 01.11.2026 было 6 352 звезды, 463 форка, 86 issues; на 08.11.2026 — 19 163 звезды, 1 409 форков, 198 issues, push в день проверки. Rust, Apache-2.0, создан 19.02.2026, релиз v1.0.2 от 30.10.2026
 - README и CONCEPTS.md проекта
 - Демо-видео, присланное Романом 01.11.2026
