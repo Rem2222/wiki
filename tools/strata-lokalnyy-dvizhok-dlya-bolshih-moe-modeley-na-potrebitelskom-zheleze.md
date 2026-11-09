@@ -1,10 +1,14 @@
 ---
 description: "Strata (Niko1221/Strata, MIT, C++, 42 тыс. звёзд) — движок локального вывода для больших MoE-моделей: десктоп-приложение и терминал с TUI, OpenAI- и Anthropic-совместимый API на localhost, картинки опционально. Модели Qwen3.8-Flash-Next (37,6-54,8 ГБ RAM+VRAM), Qwen3.6-35B-A3B (32-52 ГБ), DeepSeek V4.1-Flash (239-274 ГБ диска, 12 ГБ GPU + 46-64 ГБ RAM). Эксперты в RAM, видеокарта как кэш, остальное считает CPU на AVX-512/AVX2. Нужна карта от 12 ГБ; 2 ГБ GT 1030 в документации названа неспособной удержать ни одной части модели. Телеметрии нет, движок без сетевого кода, релизы подписаны, есть --access tailscale и поддержка Hermes Agent в strata connect."
 tags: [strata, локальный-инференс, gguf, moe, qwen, deepseek, потребительское-железо, обзор]
-related: videos/gpu-vybor-dlya-neyrosetey-2026 tools/matrix-game-40-neyrorender-poverh-low-poly-dvizhok-derzhit-igru-model-risuet-kartinku tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti
+related:
+  - videos/gpu-vybor-dlya-neyrosetey-2026
+  - tools/matrix-game-40-neyrorender-poverh-low-poly-dvizhok-derzhit-igru-model-risuet-kartinku
+  - tech/agent-desktop-ot-vercel-labs-computer-use-cherez-derevo-dostupnosti
+created: 2026-11-08
+updated: 2026-11-08
+source: https://github.com/Niko1221/Strata
 ---
-
-# Strata — локальный движок для больших MoE-моделей на потребительском железе
 
 ## Что это
 
