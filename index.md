@@ -299,6 +299,7 @@ _Обновлено: 2026-11-05_
 - [[tasks/hindsight-memory-migration]] — переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
+- [[tools/elephant-goldfish-model-slon-derzhit-kontekst-zolotaya-rybka-revyuit-bez-nego]] — EGM от Google: слон пишет спеку с полным контекстом, свежие субагенты-«золотые рыбки» её ревьюят; Hermes пока не поддержан (issue #116)
 - [[tools/prompt-etalon-dlya-sravneniya-modeley-3d-diorama-pruda-s-somami]] — промпт-эталон для бенча моделей: 3D-диорама пруда с сомами на Three.js, полный текст + критерии приёмки
 - [[tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa]] — unslop: скилл, убирающий ИИ-вид из интерфейса (5 443⭐, CC-BY-4.0) — **Установлен 02.11.2026**
 - [[tools/Win11Debloat]] — скрипт для отключения телеметрии и мусора в Windows 11
