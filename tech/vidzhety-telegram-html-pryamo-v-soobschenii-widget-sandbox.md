@@ -40,6 +40,7 @@ source: "https://github.com/TelegramMessenger/widget-sandbox"
 - `editMessageWidgetData` по отправленному виджету → `ok: true`, состояние меняется без нового сообщения
 - `deleteMessage` по виджет-сообщению работает как с обычным сообщением
 - обычные методы Bot API на виджет-сообщении не падают: `editMessageReplyMarkup` отвечает «message is not modified», то есть сообщение живое и редактируемое
+- **`message_thread_id` обязателен в форуме**: без него виджет прилетает в тему General, и человек его не видит. С указанием темы приходит `is_topic_message: true` и нужный `message_thread_id`; `editMessageWidgetData` тоже его принимает
 
 Отдельно: отобразился ли виджет на конкретном клиенте — вопрос к клиенту. Если Telegram старый, вместо карточки будет «неподдерживаемое медиа» с подписью.
 
