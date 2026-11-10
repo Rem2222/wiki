@@ -677,3 +677,12 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Вывод: для русских сценариев не годится (языка нет в обучении), для английского быстрая и дешёвая
 - Телефон: PocketPal AI (Play, поиск GGUF в HF) — рабочий путь; ChatterUI (APK); MNN Chat от Alibaba, но MNN-Pocket нет в его каталоге из 159 моделей, только adb push; LM Studio мобильной версии не имеет
 - Серверы погашены, порты свободны. Страница: tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve
+## 2026-11-10 — Виджеты Telegram (widget-sandbox)
+- Прислан https://github.com/TelegramMessenger/widget-sandbox — официальный репозиторий Telegram: HTML-виджет как медиа сообщения
+- 163 звезды, создан 12.10.2026, версия 0.6.3, файла LICENSE нет; клиенты web/iOS/macOS/Android/desktop
+- Формат: `messageMediaWidget` (layer 233), payload — zlib; лимиты ≤4 КБ сжатого, ≤32 КБ распакованного, служебные данные по 1024 байта
+- Песочница: QuickJS на своём потоке, DOM-шим, сеть заглушена, allowlist элементов/CSS/URL, квоты CPU и 64 МБ памяти
+- **Проверено живьём на нашем боте**: `sendWidget` работает в обычном Bot API (не только в бете); отправка ok (message_id 29159), `editMessageWidgetData` ok, `deleteMessage` ok
+- Лимит подтверждён отказом: 6 КБ несжимаемого HTML и 40 КБ → `INPUT_MEDIA_WIDGET_TOO_LARGE`
+- Open issue #2: лимит после zlib съедают base64-картинки — рисовать надо CSS/SVG, не изображениями
+- Страница: tech/vidzhety-telegram-html-pryamo-v-soobschenii-widget-sandbox. В Hermes не встраивалось, плагинов не ставилось

@@ -86,6 +86,7 @@ _Обновлено: 2026-11-10_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/vidzhety-telegram-html-pryamo-v-soobschenii-widget-sandbox]] — виджеты Telegram: интерактивный HTML прямо в сообщении (до 32 КБ, песочница QuickJS без сети, правка состояния ботом); **проверено живьём 10.11.2026** — `sendWidget` работает в обычном Bot API, лимит по сжатому подтверждён
 - [[tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve]] — MNN-Pocket-0.3B: 300M модель от Alibaba MNN под работу на устройстве — Apache-2.0, 32K контекста, 184 МБ в Q4_1; **проверено живьём**: 65 tok/s на CPU VPS, английский связно, русский разваливается даже в Q8_0 и с few-shot; как ставить на телефон — PocketPal / ChatterUI / MNN Chat
 - [[tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom]] — ACP (Agent Client Protocol): один протокол между редактором и кодинг-агентом, как LSP для языков; JSON-RPC 2.0, сессии, апрувы; 4 585⭐, Apache-2.0, Hermes в официальном списке агентов
 - [[tech/smithschat-podtverzhdenie-strukturoy-approval-vmesto-napishi-da]] — SmithsChat: подтверждение структурой — таблица approvals, только человек решает, TTL, хеш полезной нагрузки, long-poll; 2–3 пробуждения → 1, объём 350–450 строк

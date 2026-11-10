@@ -1,7 +1,12 @@
 ---
 description: "Официальный фреймворк Telegram для интерактивных HTML-виджетов внутри сообщения: до 32 КБ HTML, песочница QuickJS без сети, интерактив и правка состояния ботом. Метод sendWidget проверен живьём на нашем боте 10.11.2026 — работает в обычном Bot API."
 tags: [telegram,html,widgets,bot-api,agent-output,ui]
-related: tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve tools/hermes-agent
+related:
+  - tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve
+  - tech/hermes-external-integrations
+created: 2026-11-10
+updated: 2026-11-10
+source: "https://github.com/TelegramMessenger/widget-sandbox"
 ---
 
 # Виджеты Telegram: HTML прямо в сообщении (widget-sandbox)
