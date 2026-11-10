@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-11-05_
+_Обновлено: 2026-11-10_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -86,6 +86,7 @@ _Обновлено: 2026-11-05_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve]] — MNN-Pocket-0.3B: 300M модель от Alibaba MNN под работу на устройстве — Apache-2.0, контекст до 32K, INT4 весит 173 МБ, по замерам авторов обгоняет Qwen3-0.6B; языки только en/zh, русского нет (Записано, НЕ устанавливалось)
 - [[tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom]] — ACP (Agent Client Protocol): один протокол между редактором и кодинг-агентом, как LSP для языков; JSON-RPC 2.0, сессии, апрувы; 4 585⭐, Apache-2.0, Hermes в официальном списке агентов
 - [[tech/smithschat-podtverzhdenie-strukturoy-approval-vmesto-napishi-da]] — SmithsChat: подтверждение структурой — таблица approvals, только человек решает, TTL, хеш полезной нагрузки, long-poll; 2–3 пробуждения → 1, объём 350–450 строк
 - [[tech/ag-ui-i-a2ui-protokoly-agent-prilozhenie-i-agent-interfeys-razbor-slayda-pro-dsh]] — AG-UI и A2UI: два протокола «агент ↔ приложение» и «агент ↔ интерфейс»; карта пяти протоколов стека и поправки к выводу про DSH (HITL, а не «HTL»; совместимость ≠ готовые клиенты)

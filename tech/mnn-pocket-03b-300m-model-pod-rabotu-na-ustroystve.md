@@ -1,7 +1,13 @@
 ---
 description: "MNN-Pocket-0.3B — компактная инструктивная модель на 300M параметров от команды Alibaba MNN, сделанная под работу на устройстве: Apache-2.0, контекст до 32K, INT4-сборка весит 173 МБ, по бенчмаркам авторов обгоняет Qwen3-0.6B и MiniCPM4-0.5B. Языки только английский и китайский, русского нет."
 tags: [llm,on-device,mnn,qwen3,quantization,cpu,edge-ai]
-related: tech/local-models-1c-sept2026 tech/needle-cactus tech/ternary-bonsai-2
+related:
+  - tech/local-models-1c-sept2026
+  - tech/needle-cactus
+  - tech/ternary-bonsai-2
+created: 2026-11-10
+updated: 2026-11-10
+source: "https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B"
 ---
 
 # MNN-Pocket-0.3B — 300M модель под работу на устройстве
