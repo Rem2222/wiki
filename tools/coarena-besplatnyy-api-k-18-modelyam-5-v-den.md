@@ -1,7 +1,12 @@
 ---
 description: "Coarena (Coasty Systems, YC) раздаёт Free Model API: один ключ, 18 моделей включая наш deepseek-v4.1-flash-1017, бесплатно $5 использования в день при 30 запросах/мин. Проверено по живому API 12.11.2026: в доках обещано 22 модели и GPT-6, но API отдаёт 18 без GPT. Риск: арена видит промпты. Решение: подключать резервом, не дефолтом."
 tags: [coarena,api,models,free,deepseek,providers]
-related: tools/hermes-agent tools/coarena-free-model-api tech/vidzhety-telegram-html-pryamo-v-soobschenii-widget-sandbox
+related:
+  - tech/vidzhety-telegram-html-pryamo-v-soobschenii-widget-sandbox
+  - tech/hermes-external-integrations
+created: 2026-11-12
+updated: 2026-11-12
+source: "https://coarena.ai/"
 ---
 
 # Coarena: бесплатный API к 18 моделям, $5 в день

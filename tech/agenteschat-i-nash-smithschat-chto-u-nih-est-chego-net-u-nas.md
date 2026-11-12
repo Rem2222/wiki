@@ -1,7 +1,13 @@
 ---
 description: "Сравнение чужого self-hosted чата с агентами (TypeScript, 129 МБ, AGPL-3.0, 1082 звезды, 120 issue) с нашим SmithsChat (Python, 10 тыс. строк, 562 теста). Где мы сильнее: вес, подтверждения по хешу payload, MCP-вход. Где они: бюджеты агентов, роутер, routines, скиллы с версиями, вики с графом, Drive, канбан, приложения. Код не берём (AGPL), три идеи берём."
 tags: [smithschat,agentes-chat,sravnenie,agents,chat,approvals,mcp]
-related: tech/smithschat-podtverzhdenie-strukturoy-approval-vmesto-napishi-da tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat tech/a2ui-10-protokol-google-po-kotoromu-agent-opisyvaet-interfeys
+related:
+  - tech/smithschat-podtverzhdenie-strukturoy-approval-vmesto-napishi-da
+  - tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat
+  - tech/a2ui-10-protokol-google-po-kotoromu-agent-opisyvaet-interfeys
+created: 2026-11-12
+updated: 2026-11-12
+source: "https://github.com/agentes-chat/agentes-chat"
 ---
 
 # agentes.chat и наш SmithsChat: что у них есть, чего нет у нас

@@ -86,6 +86,7 @@ _Обновлено: 2026-11-12_
 - [[tech/sdd-openspec-real-project]] — Real project integration
 
 ## Технологии
+- [[tech/agenteschat-i-nash-smithschat-chto-u-nih-est-chego-net-u-nas]] — agentes.chat (129 МБ TypeScript, AGPL) против нашего SmithsChat (10 тыс. строк Python): где мы сильнее, где они, и три идеи на забрать — бюджет агента, роутер, routines
 - [[tech/a2ui-10-protokol-google-po-kotoromu-agent-opisyvaet-interfeys]] — A2UI 1.0 от Google: агент описывает сцену, приложение рисует нативными компонентами; протокол stable, но библиотеки 0.x (React 0.15, Python 0.11, Kotlin legacy) — **как зависимость не берём**, берём принцип «сцена как данные»
 - [[tech/vidzhety-telegram-html-pryamo-v-soobschenii-widget-sandbox]] — виджеты Telegram: интерактивный HTML прямо в сообщении (до 32 КБ, песочница QuickJS без сети, правка состояния ботом); **проверено живьём 10.11.2026** — `sendWidget` работает в обычном Bot API, лимит по сжатому подтверждён
 - [[tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve]] — MNN-Pocket-0.3B: 300M модель от Alibaba MNN под работу на устройстве — Apache-2.0, 32K контекста, 184 МБ в Q4_1; **проверено живьём**: 65 tok/s на CPU VPS, английский связно, русский разваливается даже в Q8_0 и с few-shot; как ставить на телефон — PocketPal / ChatterUI / MNN Chat
@@ -302,6 +303,7 @@ _Обновлено: 2026-11-12_
 - [[tasks/hindsight-memory-migration]] — переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
+- [[tools/coarena-besplatnyy-api-k-18-modelyam-5-v-den]] — Coarena — бесплатный API к 18 моделям, $5 использования в день; наш deepseek-v4.1-flash-1017 без оплаты, но арена видит промпты → только резерв
 - [[tools/elephant-goldfish-model-slon-derzhit-kontekst-zolotaya-rybka-revyuit-bez-nego]] — EGM от Google: слон пишет спеку с полным контекстом, свежие субагенты-«золотые рыбки» её ревьюят; Hermes пока не поддержан (issue #116)
 - [[tools/prompt-etalon-dlya-sravneniya-modeley-3d-diorama-pruda-s-somami]] — промпт-эталон для бенча моделей: 3D-диорама пруда с сомами на Three.js, полный текст + критерии приёмки
 - [[tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa]] — unslop: скилл, убирающий ИИ-вид из интерфейса (5 443⭐, CC-BY-4.0) — **Установлен 02.11.2026**
