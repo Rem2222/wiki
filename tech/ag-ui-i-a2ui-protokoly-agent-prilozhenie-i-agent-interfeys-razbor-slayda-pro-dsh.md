@@ -4,6 +4,7 @@ tags: [ag-ui,a2ui,copilotkit,protocols,dsh,agents,hitl]
 updated: 2026-11-07
 source: "https://github.com/ag-ui-protocol/ag-ui"
 related:
+  - tech/a2ui-10-protokol-google-po-kotoromu-agent-opisyvaet-interfeys
   - tech/acp-agent-client-protocol-odin-protokol-mezhdu-redaktorom-i-koding-agentom
   - tech/a2a-agent2agent-delegirovanie-zadach-mezhdu-agentami-i-stoit-li-vstavlyat-v-smithschat
   - tools/openbot
@@ -126,6 +127,10 @@ related:
 **Порядок для SmithsChat, если Син возьмётся:** (1) `/ag-ui` адаптер над существующим стором с сообщениями и state; (2) approval-события как замена «напиши да»; (3) события инструментов, если рантайм агента их отдаёт; (4) внешний клиент на CopilotKit для проверки; (5) A2UI — только после этого и отдельным решением.
 
 **Главный вывод тот же, что и по DSH:** не тащить CopilotKit внутрь своей морды и не переписывать MCP — добавить протокол наружу, оставив внутри свою дизайн-систему.
+
+## Обновление 12.11.2026
+
+Google выпустила A2UI 1.0 (протокол помечен stable, он же бывшая 0.10; библиотеки остались 0.x). Разбор релиза и живая проверка — на странице [A2UI 1.0](a2ui-10-protokol-google-po-kotoromu-agent-opisyvaet-interfeys.md).
 
 ## Статус
 

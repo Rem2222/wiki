@@ -1,7 +1,13 @@
 ---
 description: "Открытый протокол Google для генеративного UI: агент присылает JSON-описание, приложение рисует нативными компонентами. Проверено по первоисточникам 12.11.2026: протокол 1.0 стабилен, библиотеки всё ещё 0.x (React 0.15, Python SDK 0.11, Kotlin legacy). Вывод: как зависимость не берём, принцип «сцена как данные» — берём."
 tags: [google,protocol,generative-ui,agents,mcp,ui]
-related: tech/vidzhety-telegram-html-pryamo-v-soobschenii-widget-sandbox tech/hermes-external-integrations
+related:
+  - tech/vidzhety-telegram-html-pryamo-v-soobschenii-widget-sandbox
+  - tech/ag-ui-i-a2ui-protokoly-agent-prilozhenie-i-agent-interfeys-razbor-slayda-pro-dsh
+  - tech/hermes-external-integrations
+created: 2026-11-12
+updated: 2026-11-12
+source: "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/"
 ---
 
 # A2UI 1.0 — протокол Google, по которому агент описывает интерфейс
