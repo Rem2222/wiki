@@ -6,7 +6,7 @@ website: https://herdr.dev
 docs: https://herdr.dev/docs/
 license: Apache-2.0
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-11-13
 related:
   - tech/gvs5h-pyat-instansov-odnoy-modeli-vmesto-bolshoy-metod-i-nezavisimoe-vosproizvedenie
   - tech/cherry-studio
@@ -19,12 +19,12 @@ related:
 
 Девиз проекта: *the runtime your coding agents live on*.
 
-## Факты по репозиторию (проверено 2026-10-28)
+## Факты по репозиторию (сверено 2026-11-13)
 
-- `herdrdev/herdr`: **46 852 ⭐**, 3 738 форков, **Apache-2.0**
+- `herdrdev/herdr`: **50 883 ⭐**, 4 115 форков, **Apache-2.0**, 492 открытых issues (сверено через GitHub API 2026-11-13; на 2026-10-28 было 46 852 ⭐ / 3 738 форков / 406 issues)
 - Язык: Rust (плюс Python, PowerShell, TypeScript, Shell)
-- Создан 2026-03-27, последний push 2026-10-29, 406 открытых issues
-- Последний релиз: **v0.9.5** от 2026-10-14 (5 артефактов)
+- Создан 2026-03-27, последний push 2026-11-07, не архивирован
+- Последний релиз: **v0.9.5** от 2026-10-14 (с тех пор тегов нет — проект живой по коммитам, но релизной версии почти месяц)
 - Один бинарник на Rust, **без Electron** — работает в том терминале, который уже открыт
 - Десктопная оболочка вынесена в отдельный репозиторий `herdrdev/herdr-app` (**718 ⭐**, Apache-2.0, создан 2026-10-16 — появилась буквально на днях)
 
