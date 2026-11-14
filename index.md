@@ -460,3 +460,4 @@ _Обновлено: 2026-11-12_
 ## Проактивные агенты
 - [[tech/dex-internals]] — устройство Dex: три процесса, два «мозга», луп из 7 шагов, драйвы, память, слабые места
 - [[tech/jawl-heartbeat]] — heartbeat в JAWL (предшественник Dex)
+- [[tools/ai-body-desk-emoji-xiaozhi-i-ostalnye]] — Тело для ИИ: desk-emoji (ESP32-S3, 2 сервы, мозг внутри, GPL-3.0, $150), платформа xiaozhi (33k/11k ⭐, MCP на облаке) и саммари по StackChan, Flashduck, Microduck, Reachy, PiDog

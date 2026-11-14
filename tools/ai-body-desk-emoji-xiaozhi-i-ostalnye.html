@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тело для ИИ: desk-emoji, платформа xiaozhi, остальные</title>
+<style>
+  :root{
+    --bg:#12141a; --card:#191c24; --line:#2a2f3b; --fg:#e6e8ee; --mut:#9aa3b2;
+    --ok:#6cb27a; --warn:#e0a83c; --bad:#d96b6b; --acc:#7aa2f7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:28px 20px 60px;background:var(--bg);color:var(--fg);
+       font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1100px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 6px}
+  h2{font-size:20px;margin:38px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3{font-size:17px;margin:24px 0 8px;color:var(--acc)}
+  .sub{color:var(--mut);font-size:14px;margin-bottom:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+  .kv{margin:0}
+  .kv div{display:flex;gap:10px;padding:4px 0;border-bottom:1px dashed rgba(255,255,255,.05)}
+  .kv div:last-child{border-bottom:none}
+  .kv b{min-width:170px;color:var(--mut);font-weight:600}
+  ul{margin:8px 0 8px 20px;padding:0}
+  li{margin:4px 0}
+  code{background:#0e1015;border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:14px;color:#c8d3f5}
+  a{color:var(--acc)}
+  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin-left:6px}
+  .t-ok{color:var(--ok);border-color:rgba(108,178,122,.4)}
+  .t-warn{color:var(--warn);border-color:rgba(224,168,60,.4)}
+  .t-bad{color:var(--bad);border-color:rgba(217,107,107,.4)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.03em}
+  tr:last-child td{border-bottom:none}
+  .verdict{margin-top:26px;border-left:3px solid var(--ok);background:rgba(108,178,122,.07)}
+  .note{color:var(--mut);font-size:13.5px}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+  .flow span{background:#0e1015;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:14px}
+  .flow i{color:var(--mut);font-style:normal}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Физическое «тело» для ИИ — разбор</h1>
+<div class="sub">desk-emoji · платформа xiaozhi · саммари по остальным. Собрано 15.11.2026 с живых страниц и GitHub API. Ничего не покупалось и не ставилось.</div>
+
+<h2>1. desk-emoji (uncle-mark/desk-emoji)</h2>
+<div class="card">
+  <p class="kv">
+    <div><b>Что это</b><span>настольный робот-эмодзи: круглый экран вместо лица, две сервы (пан/наклон), микрофон, динамик, датчик, LED-подсветка. Говорит, показывает эмоции, поворачивает голову.</span></div>
+    <div><b>Репозиторий</b><span>598 ⭐, 102 форка, ~26 МБ, <b>GPL-3.0</b>, последний пуш 05.11.2026</span></div>
+    <div><b>Цена набора</b><span><b>$150</b> на краудфандинге PledgeBox / Rally (плюс доставка). Автор — Mark Yang (ewen.ltd), продаёт и на Taobao, ведёт Bilibili</span></div>
+    <div><b>Железо</b><span><b>ESP32-S3</b> (в репо есть прошивки и под ESP32, Arduino UNO R3, UNO R4 Minima) + круглый экран + 2 сервы + I2S-микрофон + динамик</span></div>
+    <div><b>3D-модели</b><span class="t-bad tag">нет</span><span>STL/STEP/3MF в репозитории отсутствуют — корпус только покупной</span></div>
+  </p>
+</div>
+
+<h3>Как устроена прошивка (28 файлов Arduino C++)</h3>
+<div class="flow">
+  <span>кнопка / жест</span><i>→</i><span>микрофон (I2S)</span><i>→</i><span>ASR по WebSocket</span><i>→</i>
+  <span>LLM: <code>api.openai.com</code> напрямую</span><i>→</i><span>движения (async-последовательность) + TTS</span>
+</div>
+<ul>
+  <li><code>net.cpp</code> — робот поднимает Wi-Fi-точку доступа с веб-страницей настройки: сеть и ключ вводятся в браузере телефона, без перепрошивки. Плюс UDP и OTA</li>
+  <li><code>asr.cpp</code> / <code>tts.cpp</code> — стриминговый звук по WebSocket, китайский сервис с <code>appid</code> (свой ключ в настройках)</li>
+  <li><code>llm.cpp</code> — вызов OpenAI-совместимого чата с ключом из настроек; модель возвращает не только текст, но и <b>эмоцию + действие</b> из фиксированного набора</li>
+  <li><code>emoji.cpp</code>, <code>animation.cpp</code>, <code>head/act</code> — анимации глаз и плавные последовательности движений серв</li>
+  <li>в простое «живёт»: случайные микродвижения каждые 6–10 секунд, LED показывает состояние (слушает / думает)</li>
+</ul>
+
+<h3>Где здесь мозг</h3>
+<div class="card">
+  <p><b>Мозг внутри робота.</b> ESP32-S3 сам ходит в ASR, LLM и TTS по WebSocket и сам решает, какое движение выполнить. ПК-клиент (Python, customtkinter, версии 3.9–3.11) нужен только для настройки, теста и заливки прошивки — в репозитории есть и отдельная ветка <code>pc_client_gemini_v3.1</code> под Gemini realtime.</p>
+  <p class="note">Это принципиально другая схема, чем у «куклы на поводке» (робот = исполнитель команд с ПК): здесь робот живёт сам, а компьютер только обслуживает.</p>
+</div>
+
+<h3>Чего в нём нет</h3>
+<ul>
+  <li><b>MCP и вызова инструментов</b> — LLM умеет только текст + эмоция/движение, внешние сервисы звать нечем</li>
+  <li>камеры, распознавания лица, памяти между разговорами, локальной автономности без Wi-Fi</li>
+  <li>3D-моделей корпуса (см. выше) и схем платы в открытом виде</li>
+</ul>
+<div class="card" style="border-color:rgba(217,107,107,.35)">
+  <b>Лицензия</b>: GPL-3.0, но в README автор отдельно пишет «коммерческое использование запрещено». Формулировка противоречит GPL — трактовать в свою пользу не стоит. <b>Для нас: код не копировать, брать только идеи.</b>
+</div>
+
+<h2>2. Платформа, на которой сидят почти все — xiaozhi</h2>
+<div class="card">
+  <p><b>Раскладка простая: прошивка = клиент, сервер = мозг.</b> Производители плат (M5Stack, наборы для уток, десятки ESP32-плат) не пишут своё — берут прошивку xiaozhi и продают железо. Меняешь сервер — меняешь «личность» робота, не трогая железо.</p>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h3 style="margin-top:0">78/xiaozhi-esp32 — прошивка</h3>
+    <p class="kv">
+      <div><b>Звёзды</b><span>33 227 ⭐, MIT</span></div>
+      <div><b>Платы</b><span>171 вариант конфигурации</span></div>
+      <div><b>Умеет</b><span>офлайн-вейкворд, эхоподавление, аудио Opus-потоком, экран и эмоции, камера, <b>MCP — и на устройстве, и на облаке</b></span></div>
+      <div><b>Ссылка</b><span><a href="https://github.com/78/xiaozhi-esp32">github.com/78/xiaozhi-esp32</a></span></div>
+    </p>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">xinnan-tech/xiaozhi-esp32-server — свой сервер</h3>
+    <p class="kv">
+      <div><b>Звёзды</b><span>11 292 ⭐, MIT</span></div>
+      <div><b>Стек</b><span>Python + Java + Vue, есть <code>docker-setup.sh</code> и Dockerfile'ы</span></div>
+      <div><b>Транспорт</b><span>MQTT+UDP и WebSocket по протоколу Xiaozhi Communication Protocol</span></div>
+      <div><b>Ссылка</b><span><a href="https://github.com/xinnan-tech/xiaozhi-esp32-server">github.com/xinnan-tech/xiaozhi-esp32-server</a></span></div>
+    </p>
+  </div>
+</div>
+
+<h3>Что у сервера внутри (по каталогу документации)</h3>
+<ul>
+  <li><b>MCP-точка доступа</b> — <code>docs/mcp-endpoint-enable.md</code>, <code>mcp-endpoint-integration.md</code>, <code>mcp-vision-integration.md</code>, <code>mcp-get-device-info.md</code>: устройство зовёт внешние инструменты через MCP</li>
+  <li>идентификация по голосу (voiceprint), база знаний через RAGFlow, интеграция Home Assistant</li>
+  <li>плагины: веб-поиск, погода, новости, цифровой человек, клонирование голоса, OTA-обновление прошивок с сервера</li>
+  <li>два режима установки: упрощённый (Docker без БД, конфиг в файлах, один агент) и полный (MySQL + Redis + веб-консоль, много пользователей и агентов)</li>
+  <li>в README прямо сказано: проект учебный, <b>не проходил аудит безопасности, в прод не ставить</b></li>
+</ul>
+<div class="card">
+  <b>Почему это важно для нас:</b> у сервера есть MCP-endpoint. Значит тело можно связать с нашим SmithsChat MCP (<code>127.0.0.1:8790</code>) — робот будет не только болтать, но и звать инструменты. Официальных требований по железу в доках нет: самое тяжёлое — локальный FunASR, с облачными API хватает скромной машины.
+</div>
+
+<h2>3. Саммари по остальным</h2>
+<table>
+  <tr><th>Проект</th><th>Цена · лицензия · звёзды</th><th>Что это по факту</th><th>Нам</th></tr>
+  <tr>
+    <td><b>StackChan</b> (M5Stack)<br><span class="note">stack-chan/stack-chan</span></td>
+    <td>$99, с пультом $125 · Apache-2.0 · 1 874 ⭐</td>
+    <td>готовый десктоп-робот: ESP32-S3, 2" тач-экран, камера, 2 сервы, NFC, батарея; работает на прошивке xiaozhi-семейства, есть полностью домашний форк dotty-stackchan (127 ⭐ MIT: ASR/TTS локально, LLM любой)</td>
+    <td><span class="tag t-ok">лучший вход</span></td>
+  </tr>
+  <tr>
+    <td><b>Flashduck</b><br><span class="note">FlashCat-Jordan/Flashduck</span></td>
+    <td>набор «闪猫 Otto AI» · MIT · 174–182 ⭐</td>
+    <td>утка на ESP32-S3, 6 серв, корпус печатается, сборка ~30 мин. Голос через xiaozhi.me или свой сервер. Вторая прошивка <b>DuckClaw</b> — агент внутри робота рулит шестью суставами через MCP</td>
+    <td><span class="tag t-ok">самое близкое к «телу агента»</span></td>
+  </tr>
+  <tr>
+    <td><b>Microduck</b> (Pollen Robotics)</td>
+    <td>$399 до налогов · Apache-2.0 · 13 798 ⭐ (+RL 2 897 ⭐)</td>
+    <td>25 см, 800 г, 15 сервоприводов, RK3566, камера, катается на роликах, поднимает предметы клювом. «ИИ» = обучение движению (MuJoCo + PPO → ONNX). Диалога и MCP нет</td>
+    <td><span class="tag t-bad">не под задачу</span></td>
+  </tr>
+  <tr>
+    <td><b>Reachy Mini Lite</b> (Pollen / HF)</td>
+    <td>$399 (DIY-набор, ~2.5 ч сборки), Hoverboard отдельно $149 · 1 660 ⭐</td>
+    <td>выразительный десктоп-робот для AI-билдеров, SDK Python/JS, реальные примеры «real-time voice brain» на Reddit</td>
+    <td><span class="tag t-warn">дорого, но честно</span></td>
+  </tr>
+  <tr>
+    <td><b>desk-emoji</b></td>
+    <td>$150 набор · GPL-3.0 · 598 ⭐</td>
+    <td>эмоции + 2 сервы, мозг в устройстве, MCP нет, корпус только покупной</td>
+    <td><span class="tag t-warn">образец архитектуры</span></td>
+  </tr>
+  <tr>
+    <td><b>PiDog</b> (SunFounder)</td>
+    <td>$149.99 · набор · под него <code>rockywuest/pidog-embodiment</code> MIT</td>
+    <td>робопёс, «дай ИИ физическое тело» — буквально про наш сценарий, но железо крупнее и настольным не будет</td>
+    <td><span class="tag t-warn">вариант</span></td>
+  </tr>
+  <tr>
+    <td><b>OpenCat</b> (Petoi)</td>
+    <td>MIT · 5 563 ⭐</td>
+    <td>четвероногий конструктор, своя прошивка, MCP не из коробки</td>
+    <td><span class="tag">мимо</span></td>
+  </tr>
+  <tr>
+    <td><b>LeRobot</b> (Hugging Face)</td>
+    <td>28 879 ⭐</td>
+    <td>манипуляторы и обучение с подкреплением, не компаньон</td>
+    <td><span class="tag">не то</span></td>
+  </tr>
+</table>
+
+<div class="card verdict">
+  <b>Вывод</b>
+  <ul>
+    <li><b>Дешёвый и правильный путь:</b> StackChan $99 (или голая ESP32-S3 + прошивка xiaozhi) + свой xiaozhi-esp32-server, в него MCP-endpoint на SmithsChat. Тело начнёт звать инструменты, а не только болтать.</li>
+    <li><b>desk-emoji</b> — не как код (GPL + запрет коммерческого), а как учебник: настройка Wi-Fi через веб-страницу самого устройства, асинхронные последовательности движений, эмоции на экране, режим «жизни» в простое. Это ровно те приёмы, которых не хватает своим поделкам.</li>
+    <li><b>Microduck и Reachy</b> — про моторику и дорого; для «тела агента» не нужны.</li>
+    <li>Покупать ничего не будем без слова. Если решим — первым берём StackChan: единственная цена, подтверждённая живой страницей ($99 у M5Stack; DigiKey и Pi Hut отдают 429/403 на наш IP, AliExpress-поиск — 302).</li>
+  </ul>
+</div>
+
+<h2>Ссылки</h2>
+<ul>
+  <li>desk-emoji: <a href="https://github.com/uncle-mark/desk-emoji">github.com/uncle-mark/desk-emoji</a> · набор: <a href="https://rally.pledgebox.com/projects/desk-emoji-desktop-robot">rally.pledgebox.com/projects/desk-emoji-desktop-robot</a></li>
+  <li>xiaozhi прошивка: <a href="https://github.com/78/xiaozhi-esp32">github.com/78/xiaozhi-esp32</a> · сервер: <a href="https://github.com/xinnan-tech/xiaozhi-esp32-server">github.com/xinnan-tech/xiaozhi-esp32-server</a> · облако: <a href="https://xiaozhi.me">xiaozhi.me</a></li>
+  <li>StackChan: <a href="https://shop.m5stack.com/products/stackchan-kawaii-co-created-open-source-ai-desktop-robot">shop.m5stack.com</a> · <a href="https://github.com/stack-chan/stack-chan">stack-chan/stack-chan</a> · <a href="https://github.com/BrettKinny/dotty-stackchan">dotty-stackchan</a></li>
+  <li>Flashduck: <a href="https://github.com/FlashCat-Jordan/Flashduck">github.com/FlashCat-Jordan/Flashduck</a></li>
+  <li>Microduck: <a href="https://pollen-robotics.com/microduck/">pollen-robotics.com/microduck</a> · <a href="https://github.com/pollen-robotics/microduck">GitHub</a> (осторожно: <code>microduck-robotics.com</code> и <code>microduck.homes</code> — двойники, к Pollen отношения не имеют)</li>
+  <li>Reachy Mini: <a href="https://pollen-robotics.com/reachy-mini/">pollen-robotics.com/reachy-mini</a> · PiDog: <a href="https://www.sunfounder.com/products/pidog-kit">sunfounder.com/products/pidog-kit</a></li>
+</ul>
+
+</div>
+</body>
+</html>
