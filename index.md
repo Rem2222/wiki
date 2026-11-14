@@ -305,6 +305,7 @@ _Обновлено: 2026-11-12_
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
 - [[tools/coarena-besplatnyy-api-k-18-modelyam-5-v-den]] — Coarena — бесплатный API к 18 моделям, $5 использования в день; наш deepseek-v4.1-flash-1017 без оплаты, но арена видит промпты → только резерв
+- [[tools/apmix-ai-relej-free-plan-zamer-skorosti]] — APMIX (apmix.ai): релей к моделям, free-план 4 млн токенов и 2 модели, но TTFT медиана **27 с** против 0.84 с у qwen-tp; 8 параллельных запросов → очередь до 113 с и два таймаута. Резерв для фоновых задач, в интерактив не берём
 - [[tools/elephant-goldfish-model-slon-derzhit-kontekst-zolotaya-rybka-revyuit-bez-nego]] — EGM от Google: слон пишет спеку с полным контекстом, свежие субагенты-«золотые рыбки» её ревьюят; Hermes пока не поддержан (issue #116)
 - [[tools/prompt-etalon-dlya-sravneniya-modeley-3d-diorama-pruda-s-somami]] — промпт-эталон для бенча моделей: 3D-диорама пруда с сомами на Three.js, полный текст + критерии приёмки
 - [[tools/unslop-skill-ubirayuschiy-ii-vid-iz-interfeysa]] — unslop: скилл, убирающий ИИ-вид из интерфейса (5 443⭐, CC-BY-4.0) — **Установлен 02.11.2026**
