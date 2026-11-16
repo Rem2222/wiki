@@ -86,6 +86,41 @@ last_verified: 2026-11-09
 | Источник выжимки | `/root/.hermes/state.db` (последние N дней, без tool-результатов и секретов) |
 | Android TWA | пакет `top.rem2222.voiceassistant`, сборка `/root/twa-build` |
 
+## Провайдеры realtime-голоса
+
+Клиент (`/rt/`, настройки → «Провайдер голоса») выбирает бэкенд, шлюз принимает
+`start.provider`:
+
+| Провайдер | Модель | Состояние |
+|---|---|---|
+| `ali` (по умолчанию) | `qwen-audio-3.0-realtime-plus` через token-plan | квота месячная, при 429 шлюз отдаёт `Апстрим Aliyun недоступен` |
+| `gemini` | `gemini-3.8-live` (`gemini_session.py`) | работает, бесплатный ключ `GEMINI_FREE_API_KEY` |
+
+Особенности Gemini-пути (выяснено живыми пробами 16.11.2026, коммит `3325fc9`):
+
+- Вход — `realtime_input.audio` (объект, **один блоб на сообщение**); в gemini-3.x
+  `media_chunks` объявлен deprecated, пачка 2+ → close `1007`.
+- Встроенный VAD отключён (`automatic_activity_detection.disabled`), границы хода
+  задаёт шлюз: `activity_start` → аудио → `activity_end`. Пустой
+  `client_content.turns` работал только на первом ходу, дальше `turnComplete` без
+  `modelTurn` (аудио не приходило).
+- `thought:true` парты — внутренние размышления модели (по-английски). В клиент не
+  отдаются: раньше из-за них в пузыре был трактат вместо ответа.
+- `output_audio_transcription` → сообщение `type:"text"` клиенту (в пузыре ровно
+  то, что озвучено); `input_audio_transcription` → `/debug`.
+- Живой замер через шлюз, 4 фразы подряд: first_audio 0,91–1,25 с, аудио везде.
+  Старая `gemini-2.5-flash-native-audio-preview-09-2025` на речи давала 2,8–4,5 с
+  и теряла аудио на 3-м ходу — не использовать.
+- `GET http://127.0.0.1:8799/debug` — кольцевой журнал (120 событий), только
+  localhost.
+
+
+### Выбор голоса и расшифровка пользователя (16.11.2026, BUILD 0.5.5)
+- Селектор «Голос» в настройках PWA, отдельное значение для каждого провайдера в localStorage; смена переподключает сессию.
+- Али, `qwen-audio-3.0-realtime-plus`: системные голоса `longanqian` (по умолчанию), `longanlingxin`, `longanlingxi`, `longanxiaoxin`, `longanlufeng`. По документации voice задаётся **только в первом** `session.update` — шлюз делает именно так. Источник: `raw/model-api-reference/realtime-api-directory/audio-realtime-api-directory/fun-audiochat-client-events.md`, строка 45 (скилл bailian-docs-llm-wiki).
+- Gemini 3.8 Live: голоса Aoede, Kore, Fenrir, Puck, Charon, Leda, Orus через `generation_config.speech_config.voice_config.prebuilt_voice_config.voice_name`; пустое значение = голос модели. Все семь проверены живо.
+- `serverContent.inputTranscription.text` → сообщение `type:"user_text"` клиенту: в «Расшифровке» вместо «Голосовая фраза · N с» появляется распознанный текст. До этого текст был только в локальном `/debug`. У Али входная расшифровка не включена.
+
 ## Обслуживание
 
 - Проверка: `systemctl is-active voice-gateway voice-brief`;
