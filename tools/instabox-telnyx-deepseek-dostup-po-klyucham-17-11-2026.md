@@ -73,3 +73,10 @@ Telnyx — VoIP/телеком-оператор, его номер попада�
 3. Попросить Романа зайти в портал Telnyx и уточнить статус Pretrial/$25 и апгрейд, если нужен inference; затем уже проверять по API.
 4. Для Coarena — создать ключ через Google-вход Романа; для ZCode/Qiniu — зарегистрироваться; для Epic — просто забрать игру в лаунчере.
 5. Для Codex — использовать реальный мобильный номер; Telnyx-номер даже если получится, для верификации не годится.
+
+## Что выполнено по команде «всё сделай» (17.11.2026, 01:53 МСК)
+
+- **InstaBox ВМ создана.** `POST /v1/machines` с `templateId: agent-browser`, `Idempotency-Key` обязателен. Имя `hermes-sandbox`, id `m_agq6ncsyx7knosqoh24myyglxi`, state `running`, 4 vCPU / 8192 MiB, persistent disk 20 ГиБ, шаблон `2026-11-14.2815`. `POST /v1/machines/<id>/exec` вернул `exitCode 0`: Linux 6.18.60-instabox, 4 ядра, 7.8 ГБ памяти. `autoSuspendAfterSeconds=1800`, `maxRunMinutes=120` — бесплатная машина засыпает после 30 минут простоя и имеет лимит 2 ч непрерывной работы.
+- SSH-токен выпущен и сохранён в `/root/.hermes/cache/scratch/instabox_ssh.json` (режим 600), хост `ssh.instabox.sh:2222`. **Токен и команду в вику и чат не кладём**.
+- **DeepSeek подключён фолбэком.** Ключ из письма уже совпадал с `DEEPSEEK_API_KEY` в `~/.hermes/.env`, новый секрет не понадобился. В `fallback_providers` добавлен `{provider: deepseek, model: deepseek-flash}` после существующего `opencode-go`. Эффективная цепочка проверена через `get_fallback_chain()`. Живой тест `hermes -z 'Reply with exactly: OK' -m deepseek-flash --provider deepseek` → `OK`. `model.default` **не менялся**. Бэкап конфига: `/root/backups/config-before-deepseek-fallback-20261116-234951.yaml`.
+- **Порталы требуют ручного входа.** Telnyx: форма логина с Cloudflare Turnstile, попытка magic-link в почту прервана проверкой «Security verification failed». Coarena: «Sign in to make an API key» через Google, сохранённых логинов в vault нет. ZCode: своя страница входа; Qiniu — регистрация. Epic — лаунчер на домашнем ПК. Без действий Романа эти четыре шага не закрываются.
