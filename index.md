@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-11-12_
+_Обновлено: 2026-11-17_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -305,6 +305,7 @@ _Обновлено: 2026-11-12_
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
 - [[tools/coarena-besplatnyy-api-k-18-modelyam-5-v-den]] — Coarena — бесплатный API к 18 моделям, $5 использования в день; наш deepseek-v4.1-flash-1017 без оплаты, но арена видит промпты → только резерв
+- [[tools/instabox-telnyx-deepseek-dostup-po-klyucham-17-11-2026]] — проверка ключей из почты живыми API: InstaBox free 4 vCPU/8 ГБ (машин 0), Telnyx ключ жив, но inference 403 на account level и баланс 0, DeepSeek 19.88 CNY; Coarena/ZCode/Qiniu/Epic ключей нет; VoIP-номер Telnyx не годится для верификации Codex — OpenAI запрещает VoIP
 - [[tools/apmix-ai-relej-free-plan-zamer-skorosti]] — APMIX (apmix.ai): релей к моделям, free-план 4 млн токенов и 2 модели, но TTFT медиана **27 с** против 0.84 с у qwen-tp; 8 параллельных запросов → очередь до 113 с и два таймаута. Резерв для фоновых задач, в интерактив не берём
 - [[tools/synthetic-new-provayder-open-source-modeley-limity-ceny-otzyvy]] — Synthetic (synthetic.new): 12 open-source моделей (DeepSeek V4.1 Flash, GLM 5.3, Kimi K3.1 Pro, Qwen3.8), контекст до 512k, от $0.10/Mtok, OpenAI+Anthropic API. **Бесплатного тарифа нет** (402 без подписки), лимиты окнами по 5 ч, fast-режим 2× быстрее за 2× лимита, infinite — бесплатный фон только на плане $90. Скорость замерить не удалось, отзывы расходятся: 132 ток/с против TTFT 10 с
 - [[tools/subq-snap-decision-model-veroyatnosti-vmesto-teksta]] — SubQ Snap (Subquadratic): не чат, а decision-модель на SSA — отвечает вероятностями на noul/choice/score вопросы, 384k контекста, вход $0.04/Mtok, выход бесплатный. Замер 14.11.2026: медиана 398 мс, ответы побайтово идентичны. AA Decision Index 73 (#2/22, вничью с Drex Max и GLiDE), 162 мс/задача, $137 за 1M задач; прирост 1.2 получен в основном отказами отвечать. Savant 1.4 (4M контекста, $0.10/$0.50) — early access, наш ключ получает 403
