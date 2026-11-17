@@ -1,7 +1,7 @@
 ---
 description: Домашняя рабочая станция XE2690 — характеристики, анализ узких мест, рекомендации по апгрейду
 tags: [hardware, pc, workstation, xeon, upgrade]
-updated: 2026-10-12
+updated: 2026-11-17
 related:
   - llm/local-gemma-4-12b-setup
   - tech/cockpit
@@ -141,5 +141,6 @@ related:
 
 ## Прочее
 
+- **Локальный инференс на Windows:** [[tools/llama-for-windows]] — Llama for Windows: трей-сервер llama.cpp с OpenAI/Anthropic API на :9931, автоподбор под RAM/VRAM; под GT 1030 2 ГБ пригоден только для маленьких моделей. Записано, не устанавливалось
 - **Сеть:** Tailscale, WireGuard (wg100-skogorev), hide.my.name VPN, WSL, Wi-Fi
 - **OS:** на базе Windows (домашняя станция и сервер LLM в одном лице)

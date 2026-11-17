@@ -1,7 +1,13 @@
 ---
+created: 2026-11-17
+updated: 2026-11-17
+source: "https://llama.app/"
 description: "Локальный трей-сервер инференса от llama.cpp и Hugging Face для Windows 11 с OpenAI и Anthropic API на порту 9931, автоподбором настроек под RAM/VRAM и общим кэшем моделей. Записано, не устанавливалось."
 tags: [llama,llama-cpp,windows,local-llm,tools]
-related: hardware/xe2690-workstation ops/services/ollama tech/codex-cli-inference-optimization
+related:
+  - hardware/xe2690-workstation
+  - ops/services/ollama
+  - tech/codex-cli-inference-optimization
 ---
 
 # Llama for Windows

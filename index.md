@@ -304,6 +304,7 @@ _Обновлено: 2026-11-17_
 - [[tasks/hindsight-memory-migration]] — переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
+- [[tools/llama-for-windows]] — Llama for Windows: трей-сервер llama.cpp+Hugging Face для Windows 11, OpenAI/Anthropic API на :9931, автоподбор под RAM/VRAM и общий HF-кэш; факт-чекинг поста (1 МБ — это Mac, Windows-бандл 133,2 МБ; в Store уже с 10.11). Записано, НЕ устанавливалось
 - [[tools/coarena-besplatnyy-api-k-18-modelyam-5-v-den]] — Coarena — бесплатный API к 18 моделям, $5 использования в день; наш deepseek-v4.1-flash-1017 без оплаты, но арена видит промпты → только резерв
 - [[tools/instabox-telnyx-deepseek-dostup-po-klyucham-17-11-2026]] — проверка ключей из почты живыми API: InstaBox free 4 vCPU/8 ГБ (машин 0), Telnyx ключ жив, но inference 403 на account level и баланс 0, DeepSeek 19.88 CNY; Coarena/ZCode/Qiniu/Epic ключей нет; VoIP-номер Telnyx не годится для верификации Codex — OpenAI запрещает VoIP
 - [[tools/apmix-ai-relej-free-plan-zamer-skorosti]] — APMIX (apmix.ai): релей к моделям, free-план 4 млн токенов и 2 модели, но TTFT медиана **27 с** против 0.84 с у qwen-tp; 8 параллельных запросов → очередь до 113 с и два таймаута. Резерв для фоновых задач, в интерактив не берём
