@@ -46,3 +46,7 @@ service:
     curl -s http://127.0.0.1:11434/api/embed -d '{"model":"bge-m3","input":"тест"}' → 1024 dims.
 last_verified: 2026-11-09
 ---
+
+## Связанное
+
+- [[articles/4-kompaktnye-lokalnye-llm-razbor-podborki-kompyuterry]] — разбор четырёх компактных локальных моделей для Ollama/llama.cpp; проверка карточек HF и ограничений по железу

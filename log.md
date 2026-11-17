@@ -758,3 +758,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Факт-чекинг: «ВК стучит» без доказательств и схема от этого не зависит; splitting по списку российских сетей, при сбое 2ip покажет заграницу; Wi‑Fi через API не на всех моделях; Debian 11/12/13 и Ubuntu 22/24, нужен IPv4; рефссылки — не часть техники
 - Страница: tools/matreshka-v10-vpn-iz-dvuh-serverov
 
+## [2026-11-17] ingest | 4 компактные локальные LLM — разбор подборки Компьютерры
+- Роман прислал `share.google/ZeylypHcHgaPU1CUP` → статья «Компьютерра» 16.11.2026 19:01, автор Евгения Залавская; полный текст взят через Jina Reader и сохранён в `raw/4-kompaktnye-lokalnye-llm.md`, SHA256 `6af26dc49edc61a9bf2c0369c4805159756431f1cb7977ba1252da9a8c81dd50`
+- Проверка по API Hugging Face 17.11: все четыре модели существуют. Qwen3.8-9B-Distill (apache-2.0, 530 994 загрузки GGUF), Ornith-1.5-9B (MIT, 5 706 316), Qwythos-9B-v2 (apache-2.0, 221 744), Llama-3.2-3B-Instruct (llama3.2, gated, 184 501 у bartowski)
+- Поправки к статье: «Ornith от DeepReinforce» не совпадает с org `ornith-ai` на HF; ≈30 tok/s на RTX 3060 — замер автора, а не системный эффект; Llama 3.2 официально поддерживает 8 языков, русского нет; Q8_0 для KV-кэша экономит относительно fp16, но не Q5_1; «function calling/vision» у Qwen подтверждено карточкой, vision — отдельным `mmproj`
+- Локально проверено: `ollama` есть, только `qwen2.5:7b` и `bge-m3`; RAM 11 ГБ (доступно ~8), диск 6,9 ГБ свободно (93% занято), GPU на VPS нет. Ничего не скачивалось и не запускалось
+- Страница: articles/4-kompaktnye-lokalnye-llm-razbor-podborki-kompyuterry
+
+

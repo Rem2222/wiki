@@ -1,7 +1,14 @@
 ---
+created: 2026-11-17
+updated: 2026-11-17
+source: "https://www.computerra.ru/375391/4-kompaktnye-lokalnye-llm-kotorye-stoit-poprobovat/"
 description: "Факт-чекинг подборки Компьютерры от 16 ноября 2026: Qwen3.8-9B-Distill, Ornith-1.5-9B, Qwythos-9B-v2 и Llama-3.2-3B-Instruct по карточкам Hugging Face, с поправками про языки, лицензии и железо. Записано, не устанавливалось."
 tags: [llm,local-llm,ollama,models,quantization]
-related: ops/services/ollama hardware/xe2690-workstation tools/llama-for-windows tech/qwen38-flash-next-176b-1080ti
+related:
+  - ops/services/ollama
+  - hardware/xe2690-workstation
+  - tools/llama-for-windows
+  - tech/qwen38-flash-next-176b-1080ti
 ---
 
 # 4 компактные локальные LLM — разбор подборки Компьютерры

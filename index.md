@@ -398,6 +398,7 @@ _Обновлено: 2026-11-17_
 - [[patterns/1c-multi-agent-development]] — мультиагентная разработка 1С: координатор + агенты разработки
 
 ## Статьи
+- [[articles/4-kompaktnye-lokalnye-llm-razbor-podborki-kompyuterry]] — разбор подборки Компьютерры (16.11): Qwen3.8-9B-Distill, Ornith-1.5-9B, Qwythos-9B-v2, Llama-3.2-3B; карточки HF, поправки про языки и лицензии, локальные проверки. Записано, НЕ устанавливалось
 - [[articles/1c-autonomous-ai-development]] — паттерн автономной разработки 1С с ИИ-агентами (два проекта, координатор + разработчик)
 - [[articles/hands-on-ai-engineering]] — обзор коллекции AI-проектов (RAG, MCP, агенты)
 - [[articles/adam-multiagent]] — мультиагентная система Adam
