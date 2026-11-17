@@ -304,6 +304,7 @@ _Обновлено: 2026-11-17_
 - [[tasks/hindsight-memory-migration]] — переезд памяти Hermes: agentmemory → Hindsight + разбор GBrain
 - [[openviking-task-description]] — задача: выгрузка сессий state.db в OpenViking для долгосрочной памяти
 ## Инструменты
+- [[tools/matreshka-v10-vpn-iz-dvuh-serverov]] — «Матрёшка» v1.0: VPN из двух серверов (вход в РФ, зарубежный выход) с автонастройкой Keenetic и Wi‑Fi Matryoshka; разобран архив со скриптами, факт-чекинг поста, оригинал в raw/. Записано, НЕ запускалось
 - [[tools/llama-for-windows]] — Llama for Windows: трей-сервер llama.cpp+Hugging Face для Windows 11, OpenAI/Anthropic API на :9931, автоподбор под RAM/VRAM и общий HF-кэш; факт-чекинг поста (1 МБ — это Mac, Windows-бандл 133,2 МБ; в Store уже с 10.11). Записано, НЕ устанавливалось
 - [[tools/coarena-besplatnyy-api-k-18-modelyam-5-v-den]] — Coarena — бесплатный API к 18 моделям, $5 использования в день; наш deepseek-v4.1-flash-1017 без оплаты, но арена видит промпты → только резерв
 - [[tools/instabox-telnyx-deepseek-dostup-po-klyucham-17-11-2026]] — проверка ключей из почты живыми API: InstaBox free 4 vCPU/8 ГБ (машин 0), Telnyx ключ жив, но inference 403 на account level и баланс 0, DeepSeek 19.88 CNY; Coarena/ZCode/Qiniu/Epic ключей нет; VoIP-номер Telnyx не годится для верификации Codex — OpenAI запрещает VoIP

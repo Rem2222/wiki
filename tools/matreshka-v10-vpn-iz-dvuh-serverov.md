@@ -1,7 +1,13 @@
 ---
+created: 2026-11-17
+updated: 2026-11-17
+source: "https://t.me/Abuz_ai_soft/30"
 description: "Рецепт VPN из двух серверов с входом в РФ, зарубежным выходом и автоматической настройкой Keenetic. Разобран архив с скриптами, факт-чекинг поста, ничего не запускалось."
 tags: [vpn,matryoshka,keenetic,amneziawg,tools]
-related: tech/amneziawg-keenetic ops/services/tailscale hardware/xe2690-workstation
+related:
+  - tech/amneziawg-keenetic
+  - ops/services/tailscale
+  - hardware/xe2690-workstation
 ---
 
 # Матрёшка v1.0 — VPN из двух серверов

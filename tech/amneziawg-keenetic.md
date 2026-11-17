@@ -3,6 +3,7 @@ description: "Как установить AmneziaWG 3.0 на Keenetic (не за
 tags: [tech, vpn, keenetic, awg, networking]
 source: https://share.google/3tmM4KVXdatexWGbK
 source_date: 2026-08-28
+updated: 2026-11-17
 related:
   - tech/netbird
   - ops/services/warp
@@ -98,6 +99,10 @@ wget -qO- http://repo.hoaxisr.ru/install.sh | sh
 - Либо обработка через sing-box (рекомендуется)
 
 AWG-Manager определяет, какой вариант AWG реально запущен, и показывает это в интерфейсе.
+
+## Связанное
+
+- Связанная схема: [[tools/matreshka-v10-vpn-iz-dvuh-serverov]] — двухсерверная матрёшка с входом в РФ, зарубежным выходом и автонастройкой Keenetic; разобрана, не запускалась.
 
 ## Дисклеймер
 
