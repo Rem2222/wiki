@@ -15,7 +15,7 @@ service:
   install_date: 2025-06
   removed_date: 2026-10-03
   removed_reason: Полная замена на zvec-wiki (поиск) + wiki-health-check.py (аудит); удалены systemd-юнит, контейнер, том, /root/gbrain
-  last_verified: 2026-11-09
+  last_verified: 2026-11-19
   type: systemd + docker
   ports: []
   systemd_units: []
@@ -25,6 +25,6 @@ service:
   logs: []
   depends_on: []
   data_size_hint: "0 B (удалён)"
-  notes: Удалён полностью 2026-10-03 по решению Романа. Не использовать, не поднимать заново. Поиск по вики — zvec-wiki, аудит — wiki-health-check.py (см. tech/zvec).
-last_verified: 2026-11-09
+  notes: Удалён полностью 2026-10-03 по решению Романа. Не использовать, не поднимать заново. Поиск по вики — zvec-wiki, аудит — wiki-health-check.py (см. tech/zvec). 19.11.2026: вычищены nginx-роут /gbrain/, дампы gbrain/hindsight в pg-backup.sh, GBrain-проверки в автопилотах «Ночная рутина» и «Адьютант».
+last_verified: 2026-11-19
 ---
