@@ -1,6 +1,6 @@
 # Index — Каталог вики
 
-_Обновлено: 2026-11-17_
+_Обновлено: 2026-11-21_
 
 ## Projects
 - [[projects/cloud-memory-external-agents]] — план облачной памяти для внешних агентов (MCP HTTP endpoints AgentMemory+GBrain), решение Rem: не разворачивать пока
@@ -370,6 +370,7 @@ _Обновлено: 2026-11-17_
 - [[llm/bench-prompts]] — промты и эндпоинты бенчмарка «солнечная система» (конкурс HTML-кода)
 - [[llm/ru-providers-pricing]] — недорогие LLM-провайдеры РФ: сравнение цен (TeamoRouter, b.ai, neuraldeep)
 - [[llm/teamo-verdict]] — вердикт по TeamoRouter: роутер-реселлер на пуле чужих аккаунтов
+- [[tech/inkling-2-mini-otkrytaya-loop-model-thinking-machines]] — Inkling 2 Mini: открытая loop-модель Thinking Machines, разбор рекламного поста против первоисточников
 ## Память AI-агентов (Memory)
 - [[tech/hermes-memory-setup-vps]] — **Актуальная настройка** памяти Hermes на VPS (agentmemory + GBrain autopilot)
 - [[tech/agent-memory-research-2026]] — Исследование решений для LTM агентов (2026)

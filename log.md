@@ -765,4 +765,10 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Локально проверено: `ollama` есть, только `qwen2.5:7b` и `bge-m3`; RAM 11 ГБ (доступно ~8), диск 6,9 ГБ свободно (93% занято), GPU на VPS нет. Ничего не скачивалось и не запускалось
 - Страница: articles/4-kompaktnye-lokalnye-llm-razbor-podborki-kompyuterry
 
+## [2026-11-21] ingest | Inkling 2 Mini — разбор рекламного поста
+- Роман прислал скриншот таблицы бенчмарков и пост про loop-трансформер Thinking Machines; оригинал в `raw/inkling-2-mini-promo-post.md` (SHA256 `6570e8e0c450f6769786bd7037b52cc581271a6d09538ed30e4bd83e9d08608f`), скриншот в `raw/inkling-2-mini-benchmark-table.jpg` (SHA256 `1effe4343be56797cb136d458a0885054d6a717adfac0c8e0c7e3f9748aaf89d`)
+- Проверено по блогу Thinking Machines, карточке Hugging Face, Artificial Analysis и The Verge: модель реальна, но «раскрытие секрета Astra», «превзошла Qwen почти по всем» и «16 ГБ VRAM» — преувеличения; «2,8×» — прокси от Artificial Analysis, не замер FLOPs
+- Решение: не ставить, наблюдать за независимыми прогонами кодинг-бенчмарков и за поддержкой русского; на VPS модель не помещается по памяти и нет GPU
+- Страница: tech/inkling-2-mini-otkrytaya-loop-model-thinking-machines.md
+
 

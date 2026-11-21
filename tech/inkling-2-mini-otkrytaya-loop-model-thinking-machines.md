@@ -1,7 +1,13 @@
 ---
-description: "Открытая loop-модель Thinking Machines Lab от 20 ноября 2026 года с 26,4B параметров и лицензией Apache 2.0. Разбор рекламного поста против первоисточников и оценка применимости к нашему стеку."
+description: Открытая loop-модель Thinking Machines Lab от 20 ноября 2026 года с 26,4B параметров и лицензией Apache 2.0. Разбор рекламного поста против первоисточников и оценка применимости к нашему стеку.
 tags: [inkling,llm,loop-transformer,slm,local-models]
-related: tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve tools/strata-lokalnyy-dvizhok-dlya-bolshih-moe-modeley-na-potrebitelskom-zheleze articles/4-kompaktnye-lokalnye-llm-razbor-podborki-kompyuterry
+related:
+  - tech/mnn-pocket-03b-300m-model-pod-rabotu-na-ustroystve
+  - tools/strata-lokalnyy-dvizhok-dlya-bolshih-moe-modeley-na-potrebitelskom-zheleze
+  - articles/4-kompaktnye-lokalnye-llm-razbor-podborki-kompyuterry
+created: 2026-11-21
+updated: 2026-11-21
+source: https://thinkingmachines.ai/news/inkling-2-mini/
 ---
 
 # Inkling 2 Mini — открытая loop-модель Thinking Machines
