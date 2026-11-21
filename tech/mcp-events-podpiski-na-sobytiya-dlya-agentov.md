@@ -1,7 +1,14 @@
 ---
-description: "Расширение MCP io.modelcontextprotocol/events для подписки агентов на внешние события. Разбор SEP-3415, трёх режимов доставки и готовности реализаций по состоянию на 21 ноября 2026 года."
+description: Расширение MCP io.modelcontextprotocol/events для подписки агентов на внешние события. Разбор SEP-3415, трёх режимов доставки и готовности реализаций по состоянию на 21 ноября 2026 года.
 tags: [mcp,events,agents,protocol,automation]
-related: tech/mcp-projects-summary tech/hermes-mcp-setup tech/smithschat-podtverzhdenie-strukturoy-approval-vmesto-napishi-da tech/ag-ui-i-a2ui-protokoly-agent-prilozhenie-i-agent-interfeys-razbor-slayda-pro-dsh
+related:
+  - tech/mcp-projects-summary
+  - tech/hermes-mcp-setup
+  - tech/smithschat-podtverzhdenie-strukturoy-approval-vmesto-napishi-da
+  - tech/ag-ui-i-a2ui-protokoly-agent-prilozhenie-i-agent-interfeys-razbor-slayda-pro-dsh
+created: 2026-11-21
+updated: 2026-11-21
+source: https://github.com/modelcontextprotocol/ext-events
 ---
 
 # MCP Events — подписки на события для агентов

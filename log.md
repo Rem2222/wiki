@@ -771,4 +771,11 @@ _Append-only. Формат: `## [дата] type | описание`_
 - Решение: не ставить, наблюдать за независимыми прогонами кодинг-бенчмарков и за поддержкой русского; на VPS модель не помещается по памяти и нет GPU
 - Страница: tech/inkling-2-mini-otkrytaya-loop-model-thinking-machines.md
 
+## [2026-11-21] ingest | MCP Events — подписки на события для агентов
+- Роман прислал пост и схему poll-взаимодействия `events/list` → `events/poll`; оригинал в `raw/mcp-events-promo-post.md` (SHA256 `869f4808de53267149b3a7407f639686cf704955474bee6ab19d180cbbed6127`), схема в `raw/mcp-events-poll-diagram.jpg` (SHA256 `d15328d473399f07636f8c561856755dd0fb9d9ca66e7a08064132e92783ad2b`)
+- Проверено по GitHub API, README, SEP-3415 и Beta-спецификации: репозиторий официальный, но экспериментальный; SEP Final, расширение Beta; режимы — `events/poll`, `events/stream`, `events/subscribe`
+- Готовность реализаций низкая: TypeScript PR draft, Python SDK без готового клиента; в Hermes webhook-платформа выключена и обработки `events/*` нет
+- Решение: не подключать, наблюдать за стабилизацией расширения и поддержкой в SDK
+- Страница: tech/mcp-events-podpiski-na-sobytiya-dlya-agentov.md
+
 

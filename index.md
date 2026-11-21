@@ -110,6 +110,7 @@ _Обновлено: 2026-11-21_
 - [[tech/rag-projects-summary]] — обзор RAG-проектов из Hands-On AI Engineering
 - [[tech/pixelrag]] — PixelRAG: визуальный RAG-фреймворк, рендерящий документы в скриншоты вместо HTML
 - [[tech/mcp-projects-summary]] — обзор MCP-проектов из Hands-On AI Engineering
+- [[tech/mcp-events-podpiski-na-sobytiya-dlya-agentov]] — MCP Events: подписки агентов на внешние события; SEP-3415 Final, расширение Beta, поддержка в SDK пока незрелая
 - [[tech/1c-mcp]] — MCP серверы для экосистемы 1С (vibecoding1c.ru)
 - [[tech/mempalace-viz]] — визуализация графа знаний для MemPalace (D3.js, MCP, Cloudflare)
 - [[tech/agents-best-practices]] — best practices для проектирования агентных систем (provider-agnostic)
